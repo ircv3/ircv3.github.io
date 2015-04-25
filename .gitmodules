@@ -1,0 +1,3 @@
+[submodule "specs"]
+	path = specs
+	url = https://github.com/ircv3/ircv3-specifications.git
