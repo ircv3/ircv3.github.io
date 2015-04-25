@@ -1,0 +1,48 @@
+{% assign current = page.url | downcase | split: '/' %}
+<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ site.baseurl }}/">IRCv3</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://ircv3.org/"><span class="fa fw-fw fa-external-link-square"></span> IRCv3</a></li>
+      </ul> -->
+      <ul class="nav navbar-nav">
+        <li{% if current[1] == 'index.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/index.html"><span class="fa fa-fw fa-home"></span> Home</a></li>
+        <li class="dropdown">
+          <li{% if current[1] == 'charter.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/charter.html"><span class="fa fa-fw fa-book"></span> Charter</a></li>
+          <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-fw fa-folder-open"></span> Specs <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ site.baseurl }}/irc/3.1.html"><span class="fa fa-fw fa-check-circle spec-light-go"></span> v3.1</a></li>
+              <li><a href="{{ site.baseurl }}/irc/3.2.html"><span class="fa fa-fw fa-minus-circle spec-light-holdup"></span> v3.2</a></li>
+              <li><a href="{{ site.baseurl }}/irc/3.3.html"><span class="fa fa-fw fa-minus-circle spec-light-stop"></span> v3.3</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-fw fa-folder-open"></span> Docs <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ site.baseurl }}/docs/sasl-mechs.html"><span class="fa fa-fw fa-key"></span> SASL Mechanisms</a></li>
+              <li><a href="{{ site.baseurl }}/docs/batch-types.html"><span class="fa fa-fw fa-group"></span> Batch Types</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-fw fa-folder-open"></span> Software <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ site.baseurl }}/software/clients.html"><span class="fa fa-fw fa-desktop"></span> Clients</a></li>
+              <li><a href="{{ site.baseurl }}/software/servers.html"><span class="fa fa-fw fa-server"></span> Servers</a></li>
+              <li><a href="{{ site.baseurl }}/software/libraries.html"><span class="fa fa-fw fa-code"></span> Libraries</a></li>
+            </ul>
+          </li>
+        </li>
+<!--        <li{% if current[1] == 'blog.html' %} class="active"{% endif %}><a href="/blog.html"><span class="fa fa-fw fa-rss"></span> Blog</a></li> -->
+        <li><a href="https://github.com/ircv3/"><span class="fa fw-fw fa-github"></span> GitHub</a></li>
+        <li{% if current[1] == 'contact.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/contact.html"><span class="fa fw-fw fa-envelope"></span> Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

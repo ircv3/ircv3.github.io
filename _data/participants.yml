@@ -1,0 +1,38 @@
+- name: atheme.org
+  url: http://www.atheme.org/
+
+- name: BitchX
+  url: http://www.bitchx.ca/
+
+- name: EsperNet
+  url: http://www.esper.net/
+
+- name: freenode
+  url: http://www.freenode.net/
+
+- name: InspIRCd
+  url: http://www.inspircd.org/
+
+- name: IRCCloud
+  url: https://www.irccloud.com/
+
+- name: Mibbit
+  url: http://www.mibbit.com/
+
+- name: mIRC
+  url: http://www.mirc.co.uk/
+
+- name: Nefarious IRCd
+  url: https://github.com/evilnet/nefarious/wiki
+
+- name: ngIRCd
+  url: http://ngircd.barton.de/
+
+- name: Undernet
+  url: http://www.undernet.org/
+
+- name: UnrealIRCd
+  url: http://www.unrealircd.org/
+
+- name: ZNC
+  url: http://znc.in/

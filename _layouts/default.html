@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>IRCv3 - {{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IRCv3 development community">
+    <meta name="author" content="Andrew Northall">
+
+    <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/ircv3-style.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+      <script src="{{ site.baseurl }}/js/html5shiv.js"></script>
+      <script src="{{ site.baseurl }}/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="whole">
+      {% include menu.html %} 
+      <div class="container">
+        {{ content }}
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <p>&copy; <a href="{{ site.baseurl }}/" style="color:black;">IRCv3 Working Group</a> 2015</p>
+      </div>
+    </footer>
+    <script src="{{ site.baseurl }}/js/jquery-1.11.0.min.js"></script>
+    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+  </body>
+</html>
