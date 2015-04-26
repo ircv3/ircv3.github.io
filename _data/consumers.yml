@@ -1,0 +1,11 @@
+- name: mIRC
+  url: http://www.mirc.com/
+
+- name: Mibbit
+  url: http://www.mibbit.com/
+
+- name: ngIRCd
+  url: http://ngircd.barton.de/
+
+- name: BitchX
+  url: http://www.bitchx.ca/
