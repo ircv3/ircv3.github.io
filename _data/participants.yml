@@ -22,6 +22,9 @@
 - name: UnrealIRCd
   url: http://www.unrealircd.org/
 
+- name: mammon-ircd
+  url: http://www.mammon.io/
+
 - name: IRCAnywhere
   url: http://ircanywhere.com/
 
