@@ -2,3 +2,5 @@ name: IRCv3 Working Group
 markdown: kramdown
 highlighter: pygments
 # baseurl: http://ircv3.org
+exclude:
+  - README.md
