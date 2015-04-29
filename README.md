@@ -9,8 +9,7 @@ If you want to test your changes to this website locally before submitting a pul
 1. Install [Jekyll](http://jekyllrb.com/)
 2. `git clone` this repository
 3. `cd ircv3.github.io/`
-4. `git submodule init`
-5. `git submodule update`
-6. `jekyll serve`
+4. `git submodule update --init --recursive`
+5. `jekyll serve`
 
 After you finish those steps, you will be able to go to [http://127.0.0.1:4000/](http://127.0.0.1:4000/) and view a local copy of the website. As you make changes to your files, they will be reflected on that local copy.
