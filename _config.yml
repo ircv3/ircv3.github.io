@@ -4,3 +4,7 @@ highlighter: pygments
 # baseurl: http://ircv3.org
 exclude:
   - README.md
+gems:
+  - jekyll-sitemap
+sitemap:
+  file: "/sitemap.xml"
