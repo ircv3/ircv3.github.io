@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://ircv3.net/sitemap.xml
