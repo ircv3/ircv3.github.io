@@ -1,0 +1,4 @@
+### {{ type.name }}
+
+{% for sw in type.software %}
+* {% if sw.link %}[{{ sw.name }}]({{ sw.link }}){% else %}{{ sw.name }}{% endif %} {% if sw.version %}<span class="sw-version">{{ sw.version }}</span>{% endif %} {% if sw.irc %}<span class="irc-version">{{ sw.irc }}</span>{% else %}<span class="irc-version">3.1</span>{% endif %} {% if sw.dead %}<span class="dead-software">dead</span>{% endif %} {% endfor %}

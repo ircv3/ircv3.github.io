@@ -1,0 +1,24 @@
+- name: Servers
+  software:
+    - name: Charybdis
+      link: http://www.stack.nl/~jilles/irc/#charybdis
+      version: 3.0 or later
+    - name: Elemental IRCd
+      link: https://github.com/lyska/elemental-ircd
+    - name: IRCCloud
+      link: https://www.irccloud.com
+    - name: InspIRCd
+      link: http://www.inspircd.org
+      version: 1.2 or later
+    - name: mammon-ircd
+      link: http://mammon.io
+      irc: 3.2
+    - name: Nefarious IRCu
+      link: https://github.com/evilnet/nefarious2
+      version: 2.0 or later
+    - name: ShadowIRCd
+      version: 6.0 or later
+      dead: true
+    - name: UnrealIRCd
+      link: http://www.unrealircd.org
+      version: 3.2.10 or later

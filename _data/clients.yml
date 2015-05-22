@@ -1,0 +1,93 @@
+- name: Bouncers
+  software:
+    - name: ZNC
+      link: http://znc.in/
+      version: 0.207 or later
+    - name: IRCCloud
+      link: https://www.irccloud.com
+
+- name: Bots
+  software:
+    - name: Limnoria
+      link: https://github.com/ProgVal/Limnoria
+      version: 2015.02.08 or later
+    - name: Willie
+      link: http://willie.dftba.net
+      version: 4.1.0 or later
+
+- name: Desktop Clients
+  software:
+    - name: BitchX
+      link: http://www.bitchx.ca
+      version: 1.2 or later
+    - name: Colloquy
+      link: http://www.colloquy.info
+      version: 2.4 or later
+    - name: Conspire
+      link: http://tortois.es/conspire
+      version: 0.20 or later
+    - name: HexChat
+      link: http://hexchat.github.io
+      version: 2.9.4 or later
+    - name: Instantbird
+      link: http://instantbird.com
+      version: 1.4 or later
+    - name: Konversation
+      link: http://konversation.kde.org
+      version: 1.5 or later
+    - name: KVIrc
+      link: http://www.kvirc.net
+      version: 4.0 or later
+    - name: Limechat
+      link: http://limechat.net/mac/
+      version: 2.23 or later
+    - name: Mozilla Thunderbird
+      link: https://www.mozilla.org/thunderbird
+      version: 21 or later
+    - name: Quassel
+      link: http://www.quassel-irc.org
+      version: 0.6.1 or later
+    - name: Textual
+      link: http://www.codeux.com/textual
+      version: 2.1 or later
+    - name: Weechat
+      link: http://www.weechat.org
+      version: 0.3.2 or later
+
+- name: Web Clients
+  software:
+    - name: IRCCloud
+      link: https://www.irccloud.com
+    - name: Iris
+      link: http://www.atheme.net/iris.html
+    - name: Kiwi IRC
+      link: https://kiwiirc.com
+    - name: Mibbit
+      link: http://www.mibbit.com
+
+- name: Mobile Clients
+  software:
+    - name: AndChat
+      link: http://www.andchat.net
+      version: 1.3.8 or later
+    - name: Android IRC
+      link: http://www.countercultured.net/android/
+      version: 1.8.21 or later
+    - name: AndroIRC
+      link: http://www.androirc.com
+      version: 2.0 or later
+    - name: Colloquy
+      link: http://www.colloquy.info
+    - name: IRC7
+      link: http://www.windowsphone.com/en-us/store/app/irc/345e96da-fa2a-457f-95ce-f09e6f3b28a3
+      version: 1.6 or later
+    - name: IRCCloud
+      link: https://www.irccloud.com
+    - name: Limechat
+      link: http://limechat.net/iphone/
+      version: 2.10 or later
+    - name: Palaver
+      link: http://palaverapp.com/
+    - name: YAAIC
+      link: http://www.yaaic.org
+      version: 0.9 or later

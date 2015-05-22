@@ -1,0 +1,10 @@
+- name: Libraries
+  software:
+    - name: cinch
+      link: https://github.com/cinchrb/cinch
+    - name: Communi
+      link: https://communi.github.io
+    - name: Net::Async::IRC
+      link: https://metacpan.org/pod/Net::Async::IRC
+    - name: pydle
+      link: https://pypi.python.org/pypi/pydle

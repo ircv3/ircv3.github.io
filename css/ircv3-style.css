@@ -41,6 +41,27 @@ warn + p {
   margin-top: 1.3rem;
 }
 
+.irc-version {
+    font-size: 74%;
+    vertical-align: 2px;
+    margin-left: 0.34rem;
+    color: #6694AA;
+}
+.irc-version + .sw-version {
+    padding-left: 0.5em;
+}
+.dead-software {
+    font-size: 80%;
+    font-weight: bold;
+    margin-left: 0.16rem;
+}
+.dead-software:before {
+    content: "(";
+}
+.dead-software:after {
+    content: ")";
+}
+
 .navbar, .navbar-inverse .dropdown-menu {
 	background-color: #145960;
 	border-color: #145960;
