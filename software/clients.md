@@ -37,7 +37,7 @@ This software is compliant natively; other software may be compliant with extens
 * [Android IRC](http://www.countercultured.net/android/) 1.8.21 or later
 * [AndroIRC](http://www.androirc.com/) 2.0 or later
 * [Colloquy](http://www.colloquy.info)
-* [IRC7](http://www.softwaremk.org/irc/) 1.6 or later
+* [IRC7](http://www.windowsphone.com/en-us/store/app/irc/345e96da-fa2a-457f-95ce-f09e6f3b28a3) 1.6 or later
 * [IRCCloud](https://www.irccloud.com)
 * [Limechat](http://limechat.net/iphone/) 2.10 or later
 * [Palaver](http://palaverapp.com/)
