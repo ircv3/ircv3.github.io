@@ -73,6 +73,18 @@ warn + p {
 .sw-table tr:not(:first-child) {
   border-top: 1px #C0C0C0 solid;
 }
+.sw-table tbody tr:first-child td:first-child {
+  border-top-left-radius: 0.25em;
+}
+.sw-table tbody tr:first-child td:last-child {
+  border-top-right-radius: 0.25em;
+}
+.sw-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 0.25em;
+}
+.sw-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 0.25em;
+}
 a.irc-extension {
   margin: 0 0.5rem;
 }
