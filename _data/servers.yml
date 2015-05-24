@@ -47,7 +47,7 @@
           userhost-in-names: 1.2.0 +
       partial:
         v3.2:
-          cap: In Extras
+          cap-notify: In Extras
           invite-notify: In Extras
           echo-message: In Extras
     - name: mammon-ircd
@@ -55,9 +55,10 @@
       support:
         v3.1:
           - cap
-          - multi-prefix
+          - away-notify
         v3.2:
           - cap
+          - cap-notify
           - metadata
           - monitor
           - echo-message
@@ -68,21 +69,24 @@
       support:
         v3.1:
           cap:
-          multi-prefix: 2011-12-18
+          away-notify: 2013-06-02
+          multi-prefix: 2011-12-19
           sasl: 2013-06-07
           account-notify: 2013-06-02
           extended-join: 2013-06-02
           tls: 2013-05-26
         v3.2:
-          away-notify: 2013-06-02
-          userhost-in-names: 2011-12-18
+          userhost-in-names: 2011-12-19
     - name: UnrealIRCd
       link: http://www.unrealircd.org
       support:
         v3.1:
           cap: 3.2.9 +
           multi-prefix: 3.2.9 +
-          account-notify: 3.2.9 +
-        v3.2:
+          account-notify: 3.2.10 +
           away-notify: 3.2.9 +
+          account-notify: 3.2.9 +
+          sasl: 3.2.10 +
+          tls: 3.2.10 +
+        v3.2:
           userhost-in-names: 3.2.9 +

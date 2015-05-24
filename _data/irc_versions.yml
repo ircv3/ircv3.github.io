@@ -49,6 +49,10 @@ v3.2:
       name: Monitor
       description: Monitor
       link: http://ircv3.net/specs/core/monitor-3.2.html
+    cap-notify:
+      name: cap-notify
+      description: cap-notify Extension
+      link: http://ircv3.net/specs/extensions/cap-notify-3.2.html
     echo-message:
       name: echo-message
       description: echo-message Extension
@@ -59,7 +63,7 @@ v3.2:
       link: http://ircv3.net/specs/extensions/invite-notify-3.2.html
     sasl:
       name: sasl
-      description: SASL
+      description: sasl Extension
       link: http://ircv3.net/specs/extensions/sasl-3.2.html
     server-time:
       name: server-time
