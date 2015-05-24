@@ -62,6 +62,39 @@ warn + p {
     content: ")";
 }
 
+table.sw-table {
+  overflow-x: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+tr:nth-child(odd) .support {
+  background-color: #eaeaea;
+}
+tr:nth-child(odd) .support.supported {
+  background-color: #a9eaac;
+}
+tr .support.supported {
+  background-color: #a7eeaa;
+  color: #0E3010;
+  font-size: 140%;
+  text-align: center
+}
+tr .support.supported:after {
+  content: "✓";
+}
+a.irc-extension {
+  margin: 0 0.5rem;
+}
+.sw-table .name {
+  width: 25%;
+}
+.sw-table .version {
+  width: 20%;
+}
+.sw-table .support {
+  width: 2em;
+}
+
 .navbar, .navbar-inverse .dropdown-menu {
 	background-color: #145960;
 	border-color: #145960;

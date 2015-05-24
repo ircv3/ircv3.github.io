@@ -2,9 +2,17 @@
   software:
     - name: cinch
       link: https://github.com/cinchrb/cinch
+      support:
+        - v3.1
     - name: Communi
       link: https://communi.github.io
+      support:
+        - v3.1
     - name: Net::Async::IRC
       link: https://metacpan.org/pod/Net::Async::IRC
+      support:
+        - v3.1
     - name: pydle
       link: https://pypi.python.org/pypi/pydle
+      support:
+        - v3.1

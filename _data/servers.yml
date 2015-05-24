@@ -3,22 +3,44 @@
     - name: Charybdis
       link: http://www.stack.nl/~jilles/irc/#charybdis
       version: 3.0 or later
+      support:
+        - v3.1
+      extensions:
+        - monitor
     - name: Elemental IRCd
       link: https://github.com/lyska/elemental-ircd
+      support:
+        - v3.1
     - name: IRCCloud
       link: https://www.irccloud.com
+      support:
+        - v3.1
     - name: InspIRCd
       link: http://www.inspircd.org
       version: 1.2 or later
+      support:
+        - v3.1
     - name: mammon-ircd
       link: http://mammon.io
-      irc: 3.2
+      support:
+        - v3.1
+        - v3.2
+      extensions:
+        - monitor
+        - echo-message
+        - server-time
     - name: Nefarious IRCu
       link: https://github.com/evilnet/nefarious2
       version: 2.0 or later
+      support:
+        - v3.1
     - name: ShadowIRCd
       version: 6.0 or later
+      support:
+        - v3.1
       dead: true
     - name: UnrealIRCd
       link: http://www.unrealircd.org
       version: 3.2.10 or later
+      support:
+        - v3.1

@@ -1,4 +1,34 @@
 ### {{ type.name }}
 
-{% for sw in type.software %}
-* {% if sw.link %}[{{ sw.name }}]({{ sw.link }}){% else %}{{ sw.name }}{% endif %} {% if sw.version %}<span class="sw-version">{{ sw.version }}</span>{% endif %} {% if sw.irc %}<span class="irc-version">{{ sw.irc }}</span>{% else %}<span class="irc-version">3.1</span>{% endif %} {% if sw.dead %}<span class="dead-software">dead</span>{% endif %} {% endfor %}
+<table class="sw-table">
+    <colgroup class="name"></colgroup>
+    <colgroup class="version"></colgroup>
+    <colgroup class="support"></colgroup>
+    <colgroup class="support"></colgroup>
+    <colgroup class="extensions"></colgroup>
+    <thead>
+        <th></th>
+        <th>Version</th>
+        <th>3.1</th>
+        <th>3.2</th>
+        <th>Extensions</th>
+    </thead>
+    <tbody>
+        {% for sw in type.software %}
+        <tr>
+            <td>
+                {% if sw.link %}<a href="{{ sw.link }}">{{ sw.name }}</a>{% else %}{{ sw.name }}{% endif %}
+                {% if sw.dead %}<span class="dead-software">dead</span>{% endif %}
+            </td>
+            <td>{{ sw.version }}</td>
+            <td class="support{% if sw.support contains "v3.1" %} supported{% endif %}"></td>
+            <td class="support{% if sw.support contains "v3.2" %} supported{% endif %}"></td>
+            <td>
+                {% for extension in sw.extensions %}
+                    {% include extension.html %}
+                {% endfor %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
