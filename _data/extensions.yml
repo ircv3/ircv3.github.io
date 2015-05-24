@@ -1,14 +1,15 @@
-monitor:
-  name: MONITOR
-  description: IRCv3.2 MONITOR Command
-  link: http://ircv3.net/specs/core/monitor-3.2.html
+v3.2:
+  monitor:
+    name: MONITOR
+    description: IRCv3.2 MONITOR Command
+    link: http://ircv3.net/specs/core/monitor-3.2.html
 
-echo-message:
-  name: echo-message
-  description: IRCv3.2 echo-message
-  link: http://ircv3.net/specs/extensions/echo-message-3.2.html
+  echo-message:
+    name: echo-message
+    description: IRCv3.2 echo-message
+    link: http://ircv3.net/specs/extensions/echo-message-3.2.html
 
-server-time:
-  name: server-time
-  description: IRCv3.2 server-time
-  link: http://ircv3.net/specs/extensions/server-time-3.2.html
+  server-time:
+    name: server-time
+    description: IRCv3.2 server-time
+    link: http://ircv3.net/specs/extensions/server-time-3.2.html

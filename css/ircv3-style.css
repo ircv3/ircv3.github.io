@@ -62,37 +62,44 @@ warn + p {
     content: ")";
 }
 
-table.sw-table {
+.sw-table {
   overflow-x: auto;
   width: 100%;
   margin: 0 auto;
-}
-tr:nth-child(odd) .support {
-  background-color: #eaeaea;
-}
-tr:nth-child(odd) .support.supported {
-  background-color: #a9eaac;
-}
-tr .support.supported {
-  background-color: #a7eeaa;
-  color: #0E3010;
-  font-size: 140%;
-  text-align: center
-}
-tr .support.supported:after {
-  content: "✓";
 }
 a.irc-extension {
   margin: 0 0.5rem;
 }
 .sw-table .name {
-  width: 25%;
+  /*width: 25%;*/
 }
-.sw-table .version {
-  width: 20%;
+.sw-table .support-head {
+  text-align: center;
 }
 .sw-table .support {
-  width: 2em;
+  min-width: 2em;
+  text-align: center;
+}
+.sw-table .supported {
+  background-color: #a7eeaa;
+  color: #0E3010;
+}
+.sw-table tr:nth-child(odd) .supported {
+  background-color: #a9eaac;
+}
+.sw-table .partial {
+  background-color: #eeeeaa;
+  color: #303010;
+}
+.sw-table tr:nth-child(odd) .partial {
+  background-color: #e9e9ac;
+}
+.sw-table .unsupported {
+  background-color: #eeaaa7;
+  color: #30100E;
+}
+.sw-table tr:nth-child(odd) .unsupported {
+  background-color: #e7a6a3;
 }
 
 .navbar, .navbar-inverse .dropdown-menu {
