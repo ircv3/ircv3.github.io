@@ -3,16 +3,34 @@
     - name: cinch
       link: https://github.com/cinchrb/cinch
       support:
-        - v3.1
+        v3.1:
+          - cap
+          - away-notify
+          - multi-prefix
+          - sasl
     - name: Communi
       link: https://communi.github.io
       support:
-        - v3.1
+        v3.1:
+          - cap
+          - multi-prefix
+          - sasl
+        v3.2:
+          - message-tags
+          - server-time
     - name: Net::Async::IRC
       link: https://metacpan.org/pod/Net::Async::IRC
       support:
-        - v3.1
+        v3.1:
+          - cap
     - name: pydle
       link: https://pypi.python.org/pypi/pydle
       support:
-        - v3.1
+        v3.1:
+          - cap
+          - account-notify
+          - away-notify
+          - extended-join
+          - multi-prefix
+          - sasl
+          - tls
