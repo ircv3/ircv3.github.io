@@ -93,6 +93,7 @@ a.irc-extension {
 }
 .sw-table .support-head {
   text-align: center;
+  font-size: 95%;
 }
 .sw-table .support {
   min-width: 2em;

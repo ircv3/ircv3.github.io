@@ -49,10 +49,22 @@ v3.2:
       name: Monitor
       description: Monitor
       link: http://ircv3.net/specs/core/monitor-3.2.html
+    account-tag:
+      name: account-tag
+      description: account-tag Extension
+      link: http://ircv3.net/specs/extensions/account-tag-3.2.html
+    batch:
+      name: batch
+      description: batch Extension
+      link: http://ircv3.net/specs/extensions/batch-3.2.html
     cap-notify:
       name: cap-notify
       description: cap-notify Extension
       link: http://ircv3.net/specs/extensions/cap-notify-3.2.html
+    chghost:
+      name: chghost
+      description: chghost Extension
+      link: http://ircv3.net/specs/extensions/chghost-3.2.html
     echo-message:
       name: echo-message
       description: echo-message Extension

@@ -4,6 +4,6 @@ title: Servers
 ---
 This software is compliant natively; other software may be compliant with extensions.
 
-{% for type in site.data.servers %}
+{% for type in site.data.sw_servers %}
 {% include best_software_list.html %}
 {% endfor %}

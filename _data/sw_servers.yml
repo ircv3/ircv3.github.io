@@ -77,6 +77,16 @@
           tls: 2013-05-26
         v3.2:
           userhost-in-names: 2011-12-19
+    - name: Plexus
+      link: https://bitbucket.org/rizon/plexus
+      support:
+        v3.1:
+          cap: -297 +
+          away-notify:
+          multi-prefix: -297 +
+          sasl:
+        v3.2:
+          userhost-in-names: -534 +
     - name: UnrealIRCd
       link: http://www.unrealircd.org
       support:
