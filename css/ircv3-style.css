@@ -67,11 +67,17 @@ warn + p {
   width: 100%;
   margin: 0 auto;
 }
+.sw-table > table {
+  min-width: 100%;
+}
+.sw-table tr:not(:first-child) {
+  border-top: 1px #C0C0C0 solid;
+}
 a.irc-extension {
   margin: 0 0.5rem;
 }
 .sw-table .name {
-  /*width: 25%;*/
+  width: 12em;
 }
 .sw-table .support-head {
   text-align: center;
@@ -79,6 +85,7 @@ a.irc-extension {
 .sw-table .support {
   min-width: 2em;
   text-align: center;
+  padding: 0.3em 0.5em;
 }
 .sw-table .supported {
   background-color: #a7eeaa;

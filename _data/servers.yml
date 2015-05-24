@@ -4,63 +4,89 @@
       link: http://www.stack.nl/~jilles/irc/#charybdis
       version: 3.0 or later
       support:
-        - cap
-        - multi-prefix
-        - sasl
-        - monitor
+        v3.1:
+          cap:
+          multi-prefix: Yes, since 1.0
+          sasl: Yes, since 1.1.0
+          account-notify: Yes, since 3.4.0
+          extended-join: Yes, since 3.4.0
+          away-notify: Yes, since 3.4.0
+        v3.2:
+          cap:
+          monitor: Yes, since 1.0
     - name: Elemental IRCd
       link: https://github.com/lyska/elemental-ircd
       support:
-        - cap
-        - multi-prefix
-        - sasl
-        - account-notify
-        - extended-join
+        v3.1:
+          cap:
+          multi-prefix: Yes, since 6.0.0
+          sasl: Yes, since 6.0.0
+          account-notify: Yes, since 6.5
+          extended-join: Yes, since 6.5
+          away-notify: Yes, since 6.5
     - name: IRCCloud
       link: https://www.irccloud.com
       support:
-        - cap
+        v3.1:
+          - cap
+          - multi-prefix
+          - away-notify
+          - extended-join
+          - userhost-in-names
     - name: InspIRCd
       link: http://www.inspircd.org
       version: 1.2 or later
       support:
-        - cap
-        - multi-prefix
-        - sasl
-        - extended-join
-        - away-notify
-        - account-notify
-        - userhost-in-names
+        v3.1:
+          cap: Yes, since 1.2.0
+          multi-prefix: Yes, since 1.2.0
+          sasl: Yes, since 1.2.0
+          account-notify: Yes, since 2.0.7
+          away-notify: Yes, since 2.0.7
+          extended-join: Yes, since 2.0.7
+          tls: Yes, since 1.2.0
+        v3.2:
+          userhost-in-names: Yes, since 1.2.0
       partial:
-        echo-message:
-          ver: In Progress
+        v3.2:
+          cap: In Extras
+          invite-notify: In Extras
+          echo-message: In Extras
     - name: mammon-ircd
       link: http://mammon.io
       support:
-        - cap
-        - metadata
-        - monitor
-        - echo-message
-        - server-time
-        - message-tags
+        v3.1:
+          - cap
+          - multi-prefix
+        v3.2:
+          - cap
+          - metadata
+          - monitor
+          - echo-message
+          - server-time
+          - message-tags
     - name: Nefarious IRCu
       link: https://github.com/evilnet/nefarious2
       version: 2.0 or later
       support:
-        - cap
-        - multi-prefix
-        - extended-join
-        - away-notify
-        - account-notify
-        - sasl
-        - tls
-        - userhost-in-names
+        v3.1:
+          cap:
+          multi-prefix: Yes, since 2011-12-18
+          sasl: Yes, since 2013-06-07
+          account-notify: Yes, since 2013-06-02
+          extended-join: Yes, since 2013-06-02
+          tls: Yes, since 2013-05-26
+        v3.2:
+          away-notify: Yes, since 2013-06-02
+          userhost-in-names: Yes, since 2011-12-18
     - name: UnrealIRCd
       link: http://www.unrealircd.org
       version: 3.2.10 or later
       support:
-        - cap
-        - multi-prefix
-        - account-notify
-        - away-notify
-        - userhost-in-names
+        v3.1:
+          cap: Yes, since 3.2.9
+          multi-prefix: Yes, since 3.2.9
+          account-notify: Yes, since 3.2.9
+        v3.2:
+          away-notify: Yes, since 3.2.9
+          userhost-in-names: Yes, since 3.2.9
