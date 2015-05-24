@@ -22,7 +22,7 @@ v3.1:
       description: multi-prefix Extension
       link: http://ircv3.net/specs/extensions/multi-prefix-3.1.html
     sasl:
-      name: SASL
+      name: sasl
       description: SASL
       link: http://ircv3.net/specs/extensions/sasl-3.1.html
     tls:
@@ -42,12 +42,12 @@ v3.2:
       description: Message Tags
       link: http://ircv3.net/specs/core/message-tags-3.2.html
     metadata:
-      name: metadata
+      name: Metadata
       description: Metadata
       link: http://ircv3.net/specs/core/metadata-3.2.html
     monitor:
-      name: MONITOR
-      description: MONITOR Command
+      name: Monitor
+      description: Monitor
       link: http://ircv3.net/specs/core/monitor-3.2.html
     echo-message:
       name: echo-message
@@ -58,7 +58,7 @@ v3.2:
       description: invite-notify Extension
       link: http://ircv3.net/specs/extensions/invite-notify-3.2.html
     sasl:
-      name: SASL
+      name: sasl
       description: SASL
       link: http://ircv3.net/specs/extensions/sasl-3.2.html
     server-time:
