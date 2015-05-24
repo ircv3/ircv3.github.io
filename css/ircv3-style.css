@@ -84,22 +84,13 @@ a.irc-extension {
   background-color: #a7eeaa;
   color: #0E3010;
 }
-.sw-table tr:nth-child(odd) .supported {
-  background-color: #a9eaac;
-}
 .sw-table .partial {
   background-color: #eeeeaa;
   color: #303010;
 }
-.sw-table tr:nth-child(odd) .partial {
-  background-color: #e9e9ac;
-}
 .sw-table .unsupported {
   background-color: #eeaaa7;
   color: #30100E;
-}
-.sw-table tr:nth-child(odd) .unsupported {
-  background-color: #e7a6a3;
 }
 
 .navbar, .navbar-inverse .dropdown-menu {
