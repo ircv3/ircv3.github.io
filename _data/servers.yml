@@ -5,24 +5,24 @@
       support:
         v3.1:
           cap:
-          multi-prefix: Yes, since 1.0
-          sasl: Yes, since 1.1.0
-          account-notify: Yes, since 3.4.0
-          extended-join: Yes, since 3.4.0
-          away-notify: Yes, since 3.4.0
+          multi-prefix: 1.0 +
+          sasl: 1.1.0 +
+          account-notify: 3.4.0 +
+          extended-join: 3.4.0 +
+          away-notify: 3.4.0 +
         v3.2:
           cap:
-          monitor: Yes, since 1.0
+          monitor: 1.0 +
     - name: Elemental IRCd
       link: https://github.com/lyska/elemental-ircd
       support:
         v3.1:
           cap:
-          multi-prefix: Yes, since 6.0.0
-          sasl: Yes, since 6.0.0
-          account-notify: Yes, since 6.5
-          extended-join: Yes, since 6.5
-          away-notify: Yes, since 6.5
+          multi-prefix: 6.0.0 +
+          sasl: 6.0.0 +
+          account-notify: 6.5 +
+          extended-join: 6.5 +
+          away-notify: 6.5 +
     - name: IRCCloud
       link: https://www.irccloud.com
       support:
@@ -36,15 +36,15 @@
       link: http://www.inspircd.org
       support:
         v3.1:
-          cap: Yes, since 1.2.0
-          multi-prefix: Yes, since 1.2.0
-          sasl: Yes, since 1.2.0
-          account-notify: Yes, since 2.0.7
-          away-notify: Yes, since 2.0.7
-          extended-join: Yes, since 2.0.7
-          tls: Yes, since 1.2.0
+          cap: 1.2.0 +
+          multi-prefix: 1.2.0 +
+          sasl: 1.2.0 +
+          account-notify: 2.0.7 +
+          away-notify: 2.0.7 +
+          extended-join: 2.0.7 +
+          tls: 1.2.0 +
         v3.2:
-          userhost-in-names: Yes, since 1.2.0
+          userhost-in-names: 1.2.0 +
       partial:
         v3.2:
           cap: In Extras
@@ -68,21 +68,21 @@
       support:
         v3.1:
           cap:
-          multi-prefix: Yes, since 2011-12-18
-          sasl: Yes, since 2013-06-07
-          account-notify: Yes, since 2013-06-02
-          extended-join: Yes, since 2013-06-02
-          tls: Yes, since 2013-05-26
+          multi-prefix: 2011-12-18
+          sasl: 2013-06-07
+          account-notify: 2013-06-02
+          extended-join: 2013-06-02
+          tls: 2013-05-26
         v3.2:
-          away-notify: Yes, since 2013-06-02
-          userhost-in-names: Yes, since 2011-12-18
+          away-notify: 2013-06-02
+          userhost-in-names: 2011-12-18
     - name: UnrealIRCd
       link: http://www.unrealircd.org
       support:
         v3.1:
-          cap: Yes, since 3.2.9
-          multi-prefix: Yes, since 3.2.9
-          account-notify: Yes, since 3.2.9
+          cap: 3.2.9 +
+          multi-prefix: 3.2.9 +
+          account-notify: 3.2.9 +
         v3.2:
-          away-notify: Yes, since 3.2.9
-          userhost-in-names: Yes, since 3.2.9
+          away-notify: 3.2.9 +
+          userhost-in-names: 3.2.9 +

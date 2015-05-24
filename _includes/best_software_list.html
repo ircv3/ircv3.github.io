@@ -26,7 +26,7 @@
         <!-- <th colgroup="3">Extensions</th> -->
     </thead>
     <tbody>
-        {% for sw in type.software %}{% if sw.support contains irc_verkey %}
+        {% for sw in type.software %}
         <tr>
             <td>
                 {% if sw.link %}<a href="{{ sw.link }}">{{ sw.name }}</a>{% else %}{{ sw.name }}{% endif %}
@@ -58,7 +58,7 @@
                 {% endfor %}
             </td> -->
         </tr>
-        {% endif %}{% endfor %}
+        {% endfor %}
     </tbody>
 </table></div>
 {% endif %}
