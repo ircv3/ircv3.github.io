@@ -37,10 +37,10 @@ v3.2:
       name: CAP
       description: Capability Negotiation
       link: http://ircv3.net/specs/core/capability-negotiation-3.2.html
-    message-tags:
-      name: Message Tags
-      description: Message Tags
-      link: http://ircv3.net/specs/core/message-tags-3.2.html
+    # message-tags:
+    #   name: Message Tags
+    #   description: Message Tags
+    #   link: http://ircv3.net/specs/core/message-tags-3.2.html
     metadata:
       name: Metadata
       description: Metadata
