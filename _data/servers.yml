@@ -2,7 +2,6 @@
   software:
     - name: Charybdis
       link: http://www.stack.nl/~jilles/irc/#charybdis
-      version: 3.0 or later
       support:
         v3.1:
           cap:
@@ -35,7 +34,6 @@
           - userhost-in-names
     - name: InspIRCd
       link: http://www.inspircd.org
-      version: 1.2 or later
       support:
         v3.1:
           cap: Yes, since 1.2.0
@@ -67,7 +65,6 @@
           - message-tags
     - name: Nefarious IRCu
       link: https://github.com/evilnet/nefarious2
-      version: 2.0 or later
       support:
         v3.1:
           cap:
@@ -81,7 +78,6 @@
           userhost-in-names: Yes, since 2011-12-18
     - name: UnrealIRCd
       link: http://www.unrealircd.org
-      version: 3.2.10 or later
       support:
         v3.1:
           cap: Yes, since 3.2.9
