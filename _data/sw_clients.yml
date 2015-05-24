@@ -4,11 +4,24 @@
       link: http://znc.in/
       version: 0.207 or later
       support:
-        - v3.1
+        v3.1:
+          cap: 0.094 +
+          multi-prefix: 0.090 +
+          sasl: 0.052 +
+        v3.2:
+          userhost-in-names: 0.090 +
+          echo-message:
+          server-time:
+          batch:
     - name: IRCCloud
       link: https://www.irccloud.com
       support:
-        - v3.1
+        v3.1:
+          - cap
+          - multi-prefix
+          - away-notify
+          - extended-join
+          - userhost-in-names
 
 - name: Bots
   software:
@@ -16,94 +29,155 @@
       link: https://github.com/ProgVal/Limnoria
       version: 2015.02.08 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
+          - multi-prefix
+          - away-notify
+          - account-notify
+          - extended-join
+          - sasl
+        v3.2:
+          - metadata
+          - account-tag
     - name: Willie
       link: http://willie.dftba.net
       version: 4.1.0 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
+          - multi-prefix
+          - sasl
 
 - name: Desktop Clients
   software:
     - name: BitchX
-      link: http://www.bitchx.ca
+      link: http://www.bitchx.com
       version: 1.2 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
     - name: Colloquy
       link: http://www.colloquy.info
       version: 2.4 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
     - name: Conspire
       link: http://tortois.es/conspire
       version: 0.20 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
     - name: HexChat
       link: http://hexchat.github.io
       version: 2.9.4 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
+          - multi-prefix
+          - away-notify
+          - account-notify
+          - extended-join
+          - userhost-in-names
+          - sasl
+        v3.2:
+          - server-time
     - name: Instantbird
       link: http://instantbird.com
       version: 1.4 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
     - name: Konversation
       link: http://konversation.kde.org
       version: 1.5 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
     - name: KVIrc
       link: http://www.kvirc.net
       version: 4.0 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
+          - multi-prefix
+          - sasl
+        v3.2:
+          - server-time
     - name: Limechat
       link: http://limechat.net/mac/
       version: 2.23 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
+          - sasl
     - name: Mozilla Thunderbird
       link: https://www.mozilla.org/thunderbird
       version: 21 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
     - name: Quassel
       link: http://www.quassel-irc.org
       version: 0.6.1 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
+          - multi-prefix
+          - sasl
     - name: Textual
       link: http://www.codeux.com/textual
       version: 2.1 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
     - name: Weechat
       link: http://www.weechat.org
       version: 0.3.2 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
+          - account-notify
+          - away-notify
+          - extended-join
+          - multi-prefix
+          - sasl
+        v3.2:
+          - server-time
+          - userhost-in-names
 
 - name: Web Clients
   software:
     - name: IRCCloud
       link: https://www.irccloud.com
       support:
-        - v3.1
+        v3.1:
+          - cap
+          - multi-prefix
+          - away-notify
+          - extended-join
+          - userhost-in-names
     - name: Iris
       link: http://www.atheme.net/iris.html
       support:
-        - v3.1
+        v3.1:
+          - cap
+          - multi-prefix
+          - sasl
     - name: Kiwi IRC
       link: https://kiwiirc.com
       support:
-        - v3.1
+        v3.1:
+          - cap
+          - multi-prefix
+          - away-notify
+        v3.2:
+          - server-time
     - name: Mibbit
       link: http://www.mibbit.com
       support:
-        - v3.1
+        v3.1:
+          - cap
 
 - name: Mobile Clients
   software:
@@ -111,41 +185,54 @@
       link: http://www.andchat.net
       version: 1.3.8 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
     - name: Android IRC
       link: http://www.countercultured.net/android/
       version: 1.8.21 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
     - name: AndroIRC
       link: http://www.androirc.com
       version: 2.0 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
     - name: Colloquy
       link: http://www.colloquy.info
       support:
-        - v3.1
+        v3.1:
+          - cap
     - name: IRC7
       link: http://www.windowsphone.com/en-us/store/app/irc/345e96da-fa2a-457f-95ce-f09e6f3b28a3
       version: 1.6 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
     - name: IRCCloud
       link: https://www.irccloud.com
       support:
-        - v3.1
+        v3.1:
+          - cap
+          - multi-prefix
+          - away-notify
+          - extended-join
+          - userhost-in-names
     - name: Limechat
       link: http://limechat.net/iphone/
       version: 2.10 or later
       support:
-        - v3.1
+        v3.1:
+          - cap
     - name: Palaver
       link: http://palaverapp.com/
       support:
-        - v3.1
+        v3.1:
+          - cap
     - name: YAAIC
       link: http://www.yaaic.org
       version: 0.9 or later
       support:
-        - v3.1
+        v3.1:
+          - cap

@@ -70,6 +70,9 @@ warn + p {
 .sw-table > table {
   min-width: 100%;
 }
+.sw-table + h3 {
+  margin-top: 2.35em;
+}
 .sw-table tr:not(:first-child) {
   border-top: 1px #C0C0C0 solid;
 }
