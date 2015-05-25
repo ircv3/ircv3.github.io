@@ -2,7 +2,6 @@
   software:
     - name: ZNC
       link: http://znc.in/
-      version: 0.207 or later
       support:
         v3.1:
           cap: 0.094 +
@@ -29,7 +28,6 @@
   software:
     - name: Limnoria
       link: https://github.com/ProgVal/Limnoria
-      version: 2015.02.08 or later
       support:
         v3.1:
           - cap
@@ -43,7 +41,6 @@
           - account-tag
     - name: Willie
       link: http://willie.dftba.net
-      version: 4.1.0 or later
       support:
         v3.1:
           - cap
@@ -54,13 +51,11 @@
   software:
     - name: BitchX
       link: http://www.bitchx.com
-      version: 1.2 or later
       support:
         v3.1:
           - cap
     - name: Colloquy
       link: http://www.colloquy.info
-      version: 2.4 or later
       support:
         v3.1:
           - cap
@@ -71,10 +66,11 @@
           - tls
           - extended-join
         v3.2:
-          - account-tag
+          - cap
           - self-message
           - cap-notify
           - chghost
+          - echo-message
           - invite-notify
           - metadata
           - monitor
@@ -83,15 +79,16 @@
           - userhost-in-names
         v3.3:
           - intents
+      partial:
+        v3.2:
+          account-tag: Needs updating
     - name: Conspire
       link: http://tortois.es/conspire
-      version: 0.20 or later
       support:
         v3.1:
           - cap
     - name: HexChat
       link: http://hexchat.github.io
-      version: 2.9.4 or later
       support:
         v3.1:
           - cap
@@ -105,19 +102,16 @@
           - server-time
     - name: Instantbird
       link: http://instantbird.com
-      version: 1.4 or later
       support:
         v3.1:
           - cap
     - name: Konversation
       link: http://konversation.kde.org
-      version: 1.5 or later
       support:
         v3.1:
           - cap
     - name: KVIrc
       link: http://www.kvirc.net
-      version: 4.0 or later
       support:
         v3.1:
           - cap
@@ -127,20 +121,17 @@
           - server-time
     - name: Limechat
       link: http://limechat.net/mac/
-      version: 2.23 or later
       support:
         v3.1:
           - cap
           - sasl
     - name: Mozilla Thunderbird
       link: https://www.mozilla.org/thunderbird
-      version: 21 or later
       support:
         v3.1:
           - cap
     - name: Quassel
       link: http://www.quassel-irc.org
-      version: 0.6.1 or later
       support:
         v3.1:
           - cap
@@ -148,13 +139,11 @@
           - sasl
     - name: Textual
       link: http://www.codeux.com/textual
-      version: 2.1 or later
       support:
         v3.1:
           - cap
     - name: Weechat
       link: http://www.weechat.org
-      version: 0.3.2 or later
       support:
         v3.1:
           - cap
@@ -206,13 +195,11 @@
   software:
     - name: AndChat
       link: http://www.andchat.net
-      version: 1.3.8 or later
       support:
         v3.1:
           - cap
     - name: IRC for Android
       link: http://www.countercultured.net/android/
-      version: 1.8.21 or later
       support:
         v3.1:
           - cap
@@ -220,7 +207,6 @@
           - multi-prefix
     - name: AndroIRC
       link: http://www.androirc.com
-      version: 2.0 or later
       support:
         v3.1:
           - cap
@@ -237,10 +223,11 @@
           - tls
           - extended-join
         v3.2:
-          - account-tag
+          - cap
           - self-message
           - cap-notify
           - chghost
+          - echo-message
           - invite-notify
           - metadata
           - monitor
@@ -249,9 +236,11 @@
           - userhost-in-names
         v3.3:
           - intents
+      partial:
+        v3.2:
+          account-tag: Needs updating
     - name: IRC7
       link: http://www.windowsphone.com/en-us/store/app/irc/345e96da-fa2a-457f-95ce-f09e6f3b28a3
-      version: 1.6 or later
       support:
         v3.1:
           - cap
@@ -268,7 +257,6 @@
           - sasl
     - name: Limechat
       link: http://limechat.net/iphone/
-      version: 2.10 or later
       support:
         v3.1:
           - cap
@@ -284,7 +272,6 @@
           - server-time
     - name: YAAIC
       link: http://www.yaaic.org
-      version: 0.9 or later
       support:
         v3.1:
           - cap
