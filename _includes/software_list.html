@@ -23,7 +23,6 @@
         {% for ext in irc_ver[1].specs %}
         <th colgroup="2" class="support-head"><a title="{{ ext[1].description }}" href="{{ ext[1].link }}">{{ ext[1].name }}</a></th>
         {% endfor %}
-        <!-- <th colgroup="3">Extensions</th> -->
     </thead>
     <tbody>
         {% for sw in type.software %}
@@ -33,46 +32,21 @@
                 {% if sw.dead %}<span class="dead-software">dead</span>{% endif %}
             </td>
             {% for ext in irc_ver[1].specs %}
-            <td colgroup="2" class="support {% if sw.support[irc_verkey] contains ext[0] %}supported{% elsif sw.partial[irc_verkey] contains ext[0] %}partial{% else %}unsupported{% endif %}">
-                {% capture ext_name %}{{ ext[0] }}{% endcapture %}
-                {% if sw.support[irc_verkey] contains ext[0] %}
-                    {% if sw.support[irc_verkey][ext_name] %}
-                        {{ sw.support[irc_verkey][ext_name] }}
-                    {% else %}
-                        Yes
-                    {% endif %}
-                {% elsif sw.partial[irc_verkey] contains ext[0] %}
-                    {% if sw.partial[irc_verkey][ext_name] %}
-                        {% if sw.partial[irc_verkey][ext_name].status %}
-                            {{ sw.partial[irc_verkey][ext_name].status }}
-                        {% elsif sw.partial[irc_verkey][ext_name] contains "note" %}
-                            Partial
-                        {% else %}
-                            {{ sw.partial[irc_verkey][ext_name] }}
-                        {% endif %}
-                        {% if sw.partial[irc_verkey][ext_name].note %}
-                            <note>
-                                <desc>
-                                    [note]
-                                </desc>
-                                <box><box>
-                                    {{ sw.partial[irc_verkey][ext_name].note }}
-                                </box></box>
-                            </note>
-                        {% endif %}
-                    {% else %}
-                        Partial
-                    {% endif %}
+            {% capture ext_name %}{{ ext[0] }}{% endcapture %}
+            <td colgroup="2" class="support {% if sw.support[irc_verkey] contains ext_name %}supported{% elsif sw.partial[irc_verkey] contains ext_name %}partial{% else %}unsupported{% endif %}">
+                {% if sw.support[irc_verkey] contains ext_name %}
+                    {% assign capab = sw.support[irc_verkey][ext_name] %}
+                    {% assign default = 'Yes' %}
+                    {% include show_capability.html %}
+                {% elsif sw.partial[irc_verkey] contains ext_name %}
+                    {% assign capab = sw.partial[irc_verkey][ext_name] %}
+                    {% assign default = 'Partial' %}
+                    {% include show_capability.html %}
                 {% else %}
                     No
                 {% endif %}
             </td>
             {% endfor %}
-            <!-- <td colgroup="3">
-                {% for extension in sw.extensions %}
-                    {% include extension.html %}
-                {% endfor %}
-            </td> -->
         </tr>
         {% endfor %}
     </tbody>

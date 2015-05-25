@@ -6,15 +6,14 @@
         v3.1:
           cap: 0.094 +
           multi-prefix: 0.090 +
-          sasl: 0.207 +
+          sasl: 1.0 +
         v3.2:
           userhost-in-names: 0.090 +
           echo-message:
           batch:
       partial:
         v3.2:
-          server-time:
-            note: Only client-ZNC side, not ZNC-server side
+          server-time: ZNC to client only
     - name: IRCCloud
       link: https://www.irccloud.com
       support:

@@ -1,0 +1,21 @@
+{% if capab %}
+    {% if capab.status %}
+        {{ capab.status }}
+    {% elsif capab.note %}
+        {{ default }}
+    {% else %}
+        {{ capab }}
+    {% endif %}
+    {% if capab.note %}
+        <note>
+            <desc>
+                [note]
+            </desc>
+            <box><box>
+                {{ capab.note }}
+            </box></box>
+        </note>
+    {% endif %}
+{% else %}
+    {{ default }}
+{% endif %}
