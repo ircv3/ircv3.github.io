@@ -198,6 +198,7 @@
       support:
         v3.1:
           - cap
+          - sasl
     - name: IRC for Android
       link: http://www.countercultured.net/android/
       support:
@@ -241,6 +242,7 @@
       support:
         v3.1:
           - cap
+          - sasl
     - name: IRCCloud
       link: https://www.irccloud.com
       support:
@@ -265,8 +267,10 @@
           - cap
           - multi-prefix
           - sasl
+          - tls
         v3.2:
           - server-time
+          - userhost-in-names
     - name: YAAIC
       link: http://www.yaaic.org
       support:
