@@ -19,9 +19,11 @@
         v3.1:
           - cap
           - multi-prefix
+          - account-notify
           - away-notify
           - extended-join
           - userhost-in-names
+          - sasl
 
 - name: Bots
   software:
@@ -62,6 +64,25 @@
       support:
         v3.1:
           - cap
+          - multi-prefix
+          - account-notify
+          - sasl
+          - away-notify
+          - tls
+          - extended-join
+        v3.2:
+          - account-tag
+          - self-message
+          - cap-notify
+          - chghost
+          - invite-notify
+          - metadata
+          - monitor
+          - batch
+          - server-time
+          - userhost-in-names
+        v3.3:
+          - intents
     - name: Conspire
       link: http://tortois.es/conspire
       version: 0.20 or later
@@ -154,9 +175,11 @@
         v3.1:
           - cap
           - multi-prefix
+          - account-notify
           - away-notify
           - extended-join
           - userhost-in-names
+          - sasl
     - name: Iris
       link: http://www.atheme.net/iris.html
       support:
@@ -187,23 +210,45 @@
       support:
         v3.1:
           - cap
-    - name: Android IRC
+    - name: IRC for Android
       link: http://www.countercultured.net/android/
       version: 1.8.21 or later
       support:
         v3.1:
           - cap
+          - sasl
+          - multi-prefix
     - name: AndroIRC
       link: http://www.androirc.com
       version: 2.0 or later
       support:
         v3.1:
           - cap
+          - sasl
     - name: Colloquy
       link: http://www.colloquy.info
       support:
         v3.1:
           - cap
+          - multi-prefix
+          - account-notify
+          - sasl
+          - away-notify
+          - tls
+          - extended-join
+        v3.2:
+          - account-tag
+          - self-message
+          - cap-notify
+          - chghost
+          - invite-notify
+          - metadata
+          - monitor
+          - batch
+          - server-time
+          - userhost-in-names
+        v3.3:
+          - intents
     - name: IRC7
       link: http://www.windowsphone.com/en-us/store/app/irc/345e96da-fa2a-457f-95ce-f09e6f3b28a3
       version: 1.6 or later
@@ -216,23 +261,32 @@
         v3.1:
           - cap
           - multi-prefix
+          - account-notify
           - away-notify
           - extended-join
           - userhost-in-names
+          - sasl
     - name: Limechat
       link: http://limechat.net/iphone/
       version: 2.10 or later
       support:
         v3.1:
           - cap
+          - sasl
     - name: Palaver
       link: http://palaverapp.com/
       support:
         v3.1:
           - cap
+          - multi-prefix
+          - sasl
+        v3.2:
+          - server-time
     - name: YAAIC
       link: http://www.yaaic.org
       version: 0.9 or later
       support:
         v3.1:
           - cap
+          - multi-prefix
+          - sasl
