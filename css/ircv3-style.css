@@ -76,6 +76,24 @@ warn + p {
 .sw-table tr:not(:first-child) {
   border-top: 1px #C0C0C0 solid;
 }
+.sw-table tbody tr, .sw-table tbody tr .support {
+  transition: background 200ms;
+}
+.sw-table tbody tr:hover {
+  background-color: #eee;
+}
+.sw-table tbody tr:hover:nth-child(odd) {
+  background-color: #ddd;
+}
+.sw-table tbody tr:hover .supported {
+  background-color: #8fea94;
+}
+.sw-table tbody tr:hover .unsupported {
+  background-color: #f39692;
+}
+.sw-table tbody tr:hover .partial {
+  background-color: #ecec90;
+}
 .sw-table tbody tr:first-child, .sw-table tbody tr:first-child td:first-child {
   border-top-left-radius: 0.25em;
 }
@@ -114,6 +132,29 @@ a.irc-extension {
 .sw-table .unsupported {
   background-color: #eeaaa7;
   color: #30100E;
+}
+.sw-table td note desc {
+  vertical-align: super;
+  font-size: 80%;
+  color: #338;
+  font-style: italic;
+}
+.sw-table td note > box {
+  position: absolute;
+}
+.sw-table td note > box > box {
+  position: relative;
+  top: -5em;
+  max-width: 14em;
+  padding: 0.7em;
+  background: #eee;
+  border-radius: 0.5em;
+  border: #99b 1px dashed;
+  box-shadow: 2px 3px 3px rgba(20, 20, 20, 0.2);
+  display: none;
+}
+.sw-table td note:hover box {
+  display: block;
 }
 
 .navbar, .navbar-inverse .dropdown-menu {

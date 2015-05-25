@@ -43,7 +43,23 @@
                     {% endif %}
                 {% elsif sw.partial[irc_verkey] contains ext[0] %}
                     {% if sw.partial[irc_verkey][ext_name] %}
-                        {{ sw.partial[irc_verkey][ext_name] }}
+                        {% if sw.partial[irc_verkey][ext_name].status %}
+                            {{ sw.partial[irc_verkey][ext_name].status }}
+                        {% elsif sw.partial[irc_verkey][ext_name] contains "note" %}
+                            Partial
+                        {% else %}
+                            {{ sw.partial[irc_verkey][ext_name] }}
+                        {% endif %}
+                        {% if sw.partial[irc_verkey][ext_name].note %}
+                            <note>
+                                <desc>
+                                    [note]
+                                </desc>
+                                <box><box>
+                                    {{ sw.partial[irc_verkey][ext_name].note }}
+                                </box></box>
+                            </note>
+                        {% endif %}
                     {% else %}
                         Partial
                     {% endif %}

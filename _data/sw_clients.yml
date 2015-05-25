@@ -6,12 +6,15 @@
         v3.1:
           cap: 0.094 +
           multi-prefix: 0.090 +
-          sasl: 0.052 +
+          sasl: 0.207 +
         v3.2:
           userhost-in-names: 0.090 +
           echo-message:
-          server-time:
           batch:
+      partial:
+        v3.2:
+          server-time:
+            note: Only client-ZNC side, not ZNC-server side
     - name: IRCCloud
       link: https://www.irccloud.com
       support:
@@ -79,9 +82,6 @@
           - userhost-in-names
         v3.3:
           - intents
-      partial:
-        v3.2:
-          account-tag: Needs updating
     - name: Conspire
       link: http://tortois.es/conspire
       support:
@@ -117,6 +117,7 @@
           - cap
           - multi-prefix
           - sasl
+          - tls
         v3.2:
           - server-time
     - name: Limechat
@@ -236,9 +237,6 @@
           - userhost-in-names
         v3.3:
           - intents
-      partial:
-        v3.2:
-          account-tag: Needs updating
     - name: IRC7
       link: http://www.windowsphone.com/en-us/store/app/irc/345e96da-fa2a-457f-95ce-f09e6f3b28a3
       support:
