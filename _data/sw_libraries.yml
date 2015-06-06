@@ -34,3 +34,22 @@
           - multi-prefix
           - sasl
           - tls
+    - name: Rust irc
+      link: https://github.com/aatxe/irc
+      support:
+        v3.1:
+          - cap
+          - account-notify
+          - away-notify
+          - extended-join
+          - multi-prefix
+        v3.2:
+          - cap
+          - account-tag
+          - cap-notify
+          - chghost
+          - monitor
+          - echo-message
+          - invite-notify
+          - server-time
+          - userhost-in-names
