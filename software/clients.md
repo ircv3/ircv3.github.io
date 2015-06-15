@@ -20,11 +20,11 @@ This software is compliant natively; other software may be compliant with extens
 * [Instantbird](http://instantbird.com) 1.4 or later
 * [Konversation](http://konversation.kde.org/) 1.5 or later
 * [KVIrc](http://www.kvirc.net) 4.0 or later
-* [Limechat](http://limechat.net/mac/) 2.23 or later
+* [LimeChat](http://limechat.net/mac/) 2.23 or later
 * [Mozilla Thunderbird](https://www.mozilla.org/thunderbird) 21 or later
 * [Quassel](http://www.quassel-irc.org) 0.6.1 or later
 * [Textual](http://www.codeux.com/textual) 2.1 or later
-* [Weechat](http://www.weechat.org) 0.3.2 or later
+* [WeeChat](http://www.weechat.org) 0.3.2 or later
 
 ### Web Clients
 * [IRCCloud](https://www.irccloud.com)
@@ -41,4 +41,4 @@ This software is compliant natively; other software may be compliant with extens
 * [IRCCloud](https://www.irccloud.com)
 * [Limechat](http://limechat.net/iphone/) 2.10 or later
 * [Palaver](http://palaverapp.com/)
-* [YAAIC](http://www.yaaic.org/) 0.9 or later
+* [Yaaic](http://www.yaaic.org/) 0.9 or later
