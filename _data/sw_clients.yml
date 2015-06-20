@@ -56,6 +56,7 @@
       support:
         v3.1:
           - cap
+          - sasl
     - name: Colloquy
       link: http://www.colloquy.info
       support:
@@ -99,11 +100,16 @@
           - sasl
         v3.2:
           - server-time
+          - monitor
     - name: Instantbird
       link: http://instantbird.com
       support:
         v3.1:
-          - cap
+          cap:
+          multi-prefix: 1.4+
+          sasl: 1.3+
+        v3.2:
+          monitor: 1.2+
     - name: Konversation
       link: http://konversation.kde.org
       support:
@@ -125,23 +131,35 @@
         v3.1:
           - cap
           - sasl
+        v3.2:
+          - server-time
     - name: Mozilla Thunderbird
       link: https://www.mozilla.org/thunderbird
       support:
         v3.1:
-          - cap
+          cap:
+          multi-prefix: 21+
+          sasl: 19+
+        v3.2:
+          monitor: 15+
     - name: Quassel
       link: http://www.quassel-irc.org
       support:
         v3.1:
           - cap
-          - multi-prefix
           - sasl
     - name: Textual
       link: http://www.codeux.com/textual
       support:
         v3.1:
           - cap
+          - away-notify
+          - multi-prefix
+          - server-time
+          - userhost-in-names
+          - sasl
+        v3.2:
+          - sasl
     - name: Weechat
       link: http://www.weechat.org
       support:

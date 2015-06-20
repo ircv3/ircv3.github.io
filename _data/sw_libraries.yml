@@ -12,12 +12,20 @@
       link: https://communi.github.io
       support:
         v3.1:
-          - cap
-          - multi-prefix
-          - sasl
+          cap: 3.0+
+          multi-prefix: 3.3+
+          sasl: 3.0+
+          account-notify: 3.3+
+          away-notify: 3.3+
+          extended-join: 3.3+
         v3.2:
-          - message-tags
-          - server-time
+          cap: 3.4+
+          message-tags: 3.1+
+          monitor: 3.4+
+          cap-notify: 3.4+
+          invite-notify: 3.0+
+          server-time: 3.4+
+          userhost-in-names: 3.0+
     - name: Net::Async::IRC
       link: https://metacpan.org/pod/Net::Async::IRC
       support:
