@@ -125,7 +125,7 @@
           - tls
         v3.2:
           - server-time
-    - name: Limechat
+    - name: LimeChat
       link: http://limechat.net/mac/
       support:
         v3.1:
@@ -160,7 +160,7 @@
           - sasl
         v3.2:
           - sasl
-    - name: Weechat
+    - name: WeeChat
       link: http://www.weechat.org
       support:
         v3.1:
