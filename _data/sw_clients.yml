@@ -206,6 +206,7 @@
           - cap
           - multi-prefix
           - away-notify
+          - sasl
         v3.2:
           - server-time
     - name: Mibbit
