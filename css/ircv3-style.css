@@ -37,6 +37,9 @@ warn {
 warn p:last-child {
     margin-bottom: 0;
 }
+warn + p {
+  margin-top: 1.3rem;
+}
 
 .navbar, .navbar-inverse .dropdown-menu {
 	background-color: #145960;
