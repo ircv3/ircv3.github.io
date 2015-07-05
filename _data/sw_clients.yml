@@ -23,8 +23,9 @@
           - account-notify
           - away-notify
           - extended-join
-          - userhost-in-names
           - sasl
+        v3.2:
+          - userhost-in-names
 
 - name: Bots
   software:
@@ -96,11 +97,11 @@
           - away-notify
           - account-notify
           - extended-join
-          - userhost-in-names
           - sasl
         v3.2:
           - server-time
           - monitor
+          - userhost-in-names
     - name: Instantbird
       link: http://instantbird.com
       support:
@@ -156,10 +157,10 @@
           - away-notify
           - multi-prefix
           - server-time
-          - userhost-in-names
           - sasl
         v3.2:
           - sasl
+          - userhost-in-names
     - name: WeeChat
       link: http://www.weechat.org
       support:
@@ -185,8 +186,9 @@
           - account-notify
           - away-notify
           - extended-join
-          - userhost-in-names
           - sasl
+        v3.2:
+          - userhost-in-names
     - name: Iris
       link: http://www.atheme.net/iris.html
       support:
@@ -270,8 +272,9 @@
           - account-notify
           - away-notify
           - extended-join
-          - userhost-in-names
           - sasl
+        v3.2:
+          - userhost-in-names
     - name: Limechat
       link: http://limechat.net/iphone/
       support:
