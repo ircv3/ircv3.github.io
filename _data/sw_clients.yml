@@ -88,6 +88,8 @@
       support:
         v3.1:
           - cap
+          - multi-prefix
+          - sasl
     - name: HexChat
       link: http://hexchat.github.io
       support:
