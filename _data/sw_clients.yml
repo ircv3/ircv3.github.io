@@ -4,16 +4,17 @@
       link: http://znc.in/
       support:
         v3.1:
-          cap: 0.094 +
-          multi-prefix: 0.090 +
-          sasl: 1.0 +
+          cap: "0.094+ client→ZNC,<br/>0.090+ ZNC→server"
+          multi-prefix: "0.094+ client→ZNC,<br/>0.090+ ZNC→server"
         v3.2:
-          userhost-in-names: 0.090 +
-          echo-message:
-          batch:
+          userhost-in-names: "0.094+ client→ZNC,<br/>0.090+ ZNC→server"
       partial:
+        v3.1:
+          sasl: "1.0+, ZNC→server only"
         v3.2:
-          server-time: ZNC to client only
+          echo-message: "Git, client→ZNC only"
+          batch: "1.6.x as <code>znc.in/batch</code>, Git as <code>batch</code>, client→ZNC only"
+          server-time: "1.2–1.6.x as <code>znc.in/server-time-iso</code>, Git as <code>server-time</code>, client→ZNC only"
     - name: IRCCloud
       link: https://www.irccloud.com
       support:
