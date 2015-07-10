@@ -8,3 +8,6 @@ gems:
   - jekyll-sitemap
 sitemap:
   file: "/sitemap.xml"
+collections:
+  irc:
+    output: true
