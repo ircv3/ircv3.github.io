@@ -18,13 +18,7 @@
         <li{% if current[1] == 'index.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/index.html"><span class="fa fa-fw fa-home"></span> Home</a></li>
         <li class="dropdown">
           <li{% if current[1] == 'charter.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/charter.html"><span class="fa fa-fw fa-book"></span> Charter</a></li>
-          <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-fw fa-folder-open"></span> Specs <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="{{ site.baseurl }}/irc/3.1.html"><span class="fa fa-fw fa-check-circle spec-light-go"></span> v3.1</a></li>
-              <li><a href="{{ site.baseurl }}/irc/3.2.html"><span class="fa fa-fw fa-check-circle spec-light-go"></span> v3.2</a></li>
-              <li><a href="{{ site.baseurl }}/irc/3.3.html"><span class="fa fa-fw fa-minus-circle spec-light-stop"></span> v3.3</a></li>
-            </ul>
-          </li>
+          <li{% if current[1] == 'irc' %} class="active"{% endif %}><a href="{{ site.baseurl }}/irc/"><span class="fa fa-fw fa-file-text"></span> Specs</a></li>
           <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-fw fa-folder-open"></span> Docs <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="{{ site.baseurl }}/docs/sasl-mechs.html"><span class="fa fa-fw fa-key"></span> SASL Mechanisms</a></li>
