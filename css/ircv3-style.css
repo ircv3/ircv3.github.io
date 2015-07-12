@@ -26,21 +26,6 @@ td + td, th + th {
     border-left: 1px #C0C0C0 solid;
 }
 
-warn {
-    display: block;
-    padding: 1rem;
-    background: #B43648;
-    color: #f7f7f7;
-    border-radius: 0.6rem;
-    text-align: center
-}
-warn p:last-child {
-    margin-bottom: 0;
-}
-warn + p {
-  margin-top: 1.3rem;
-}
-
 .irc-version {
     font-size: 74%;
     vertical-align: 2px;
@@ -166,6 +151,13 @@ a.irc-extension {
 	text-align: center;
 }
 
+.alert {
+	font-size: inherit;
+	font-weight: inherit;
+	text-align: center;
+	border-radius: 0.6rem;
+}
+
 .alert-info, .btn-primary {
 	background-color: #145960;
 	border-color: #0C4248;
@@ -177,8 +169,11 @@ a.irc-extension {
 }
 
 .alert-warning, .btn-warning {
-	background-color: #435;
-	border-color: #435;
+	color: black;
+}
+
+.alert-danger, .btn-danger {
+	color: black;
 }
 
 .github, .github:hover {
