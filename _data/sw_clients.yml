@@ -145,6 +145,8 @@
           - tls
         v3.2:
           - server-time
+          - monitor
+          - userhost-in-names
     - name: Mozilla Thunderbird
       link: https://www.mozilla.org/thunderbird
       support:
