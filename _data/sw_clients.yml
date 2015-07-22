@@ -137,6 +137,16 @@
           - sasl
         v3.2:
           - server-time
+    - name: mIRC
+      link: http://www.mirc.com
+      support:
+        v3.1:
+          - cap
+          - tls
+        v3.2:
+          - server-time
+          - monitor
+          - userhost-in-names
     - name: Mozilla Thunderbird
       link: https://www.mozilla.org/thunderbird
       support:
