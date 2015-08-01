@@ -53,6 +53,18 @@
 
 - name: Desktop Clients
   software:
+    - name: AdiIRC
+      link: http://www.adiirc.com
+      support:
+        v3.1:
+          - cap
+          - multi-prefix
+          - account-notify
+          - away-notify
+          - extended-join
+        v3.2:
+          - server-time
+          - userhost-in-names
     - name: BitchX
       link: http://www.bitchx.com
       support:
