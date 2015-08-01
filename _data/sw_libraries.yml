@@ -26,6 +26,8 @@
           invite-notify: 3.0+
           server-time: 3.4+
           userhost-in-names: 3.0+
+          account-tag: 3.4+
+          chghost: 3.4+
     - name: Net::Async::IRC
       link: https://metacpan.org/pod/Net::Async::IRC
       support:
