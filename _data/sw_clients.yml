@@ -185,6 +185,7 @@
           - multi-prefix
           - sasl
         v3.2:
+          - monitor
           - server-time
           - userhost-in-names
 
