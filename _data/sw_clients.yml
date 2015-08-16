@@ -18,8 +18,8 @@
           cap: "Git, client→ZNC only"
           cap-notify: "Git, client→ZNC only"
           echo-message: "Git, client→ZNC only"
-          batch: "1.6.x as <code>znc.in/batch</code>, Git as <code>batch</code>, client→ZNC only"
-          server-time: "1.2–1.6.x as <code>znc.in/server-time-iso</code>, Git as <code>server-time</code>, client→ZNC only"
+          batch: "1.6.0+ as <code>znc.in/batch</code>, Git as <code>batch</code>, client→ZNC only"
+          server-time: "1.2+ as <code>znc.in/server-time-iso</code>, Git as <code>server-time</code>, client→ZNC only"
     - name: IRCCloud
       link: https://www.irccloud.com
       support:
