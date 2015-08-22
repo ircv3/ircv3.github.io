@@ -309,7 +309,9 @@
           - extended-join
           - sasl
         v3.2:
+          - cap
           - metadata
+          - monitor
           - account-tag
     - name: Willie
       link: http://willie.dftba.net
