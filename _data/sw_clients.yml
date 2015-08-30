@@ -313,11 +313,13 @@
           - metadata
           - monitor
           - account-tag
-          - cap-notify: "CAP ADD is ignored"
           - chghost
           - invite-notify
           - server-time
           - userhost-in-names
+      partial:
+        v3.2:
+          cap-notify: "CAP NEW is ignored"
     - name: Willie
       link: http://willie.dftba.net
       support:
