@@ -243,7 +243,7 @@
           - cap
           - sasl
     - name: Palaver
-      link: http://palaverapp.com/
+      link: https://palaverapp.com/
       support:
         v3.1:
           - cap
@@ -251,6 +251,7 @@
           - sasl
           - tls
         v3.2:
+          - batch
           - server-time
           - userhost-in-names
     - name: YAAIC
