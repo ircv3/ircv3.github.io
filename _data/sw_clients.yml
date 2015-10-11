@@ -52,6 +52,18 @@
           - server-time
           - monitor
           - userhost-in-names
+    - name: IceChat
+      link: http://icechat.net
+      support:
+        v3.1:
+          - cap
+          - multi-prefix
+          - away-notify
+          - account-notify
+          - extended-join
+          - sasl
+        v3.2:
+          - monitor
     - name: Instantbird
       link: http://instantbird.com
       support:
