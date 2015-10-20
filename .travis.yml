@@ -1,0 +1,16 @@
+language: ruby
+sudo: false
+script:
+  - gem install github-pages
+  - jekyll build --drafts
+  - python2 --version && python2 -m pip --version
+  - python2 -m pip install html5validator --user --upgrade
+  - ~/.local/bin/html5validator --root _site/
+rvm: 2.1
+notifications:
+    email: false
+matrix:
+    fast_finish: true
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
