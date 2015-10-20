@@ -135,19 +135,19 @@
           - sasl
           - userhost-in-names
     - name: WeeChat
-      link: http://www.weechat.org
+      link: https://weechat.org
       support:
         v3.1:
-          - cap
-          - account-notify
-          - away-notify
-          - extended-join
-          - multi-prefix
-          - sasl
+          cap: 0.3.2+
+          account-notify: 1.2+
+          away-notify: 1.0+
+          extended-join: 1.1+
+          multi-prefix: 0.0.1+
+          sasl: 0.3.2+
         v3.2:
-          - monitor
-          - server-time
-          - userhost-in-names
+          monitor: 0.4.3+
+          server-time: 0.4.0+
+          userhost-in-names: 0.4.1+
 
 - name: Web Clients
   software:
