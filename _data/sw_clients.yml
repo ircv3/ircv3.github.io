@@ -40,7 +40,7 @@
           - multi-prefix
           - sasl
     - name: HexChat
-      link: http://hexchat.github.io
+      link: https://hexchat.github.io
       support:
         v3.1:
           - cap
