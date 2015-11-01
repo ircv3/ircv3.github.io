@@ -1,5 +1,5 @@
 - name: freenode
-  url: http://www.freenode.net/
+  url: https://www.freenode.net/
 
 - name: InspIRCd
   url: http://inspircd.org/
@@ -20,7 +20,7 @@
   url: https://kiwiirc.com/
 
 - name: UnrealIRCd
-  url: http://www.unrealircd.org/
+  url: https://www.unrealircd.org/
 
 - name: mammon-ircd
   url: http://www.mammon.io/

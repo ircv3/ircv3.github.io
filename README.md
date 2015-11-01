@@ -6,7 +6,7 @@ This is the IRCv3 website.
 
 If you want to test your changes to this website locally before submitting a pull request (always a good idea), here are the steps:
 
-1. Install [Jekyll](http://jekyllrb.com/)
+1. Install [Jekyll](https://jekyllrb.com/)
 2. Install `jekyll-sitemap` with `gem install jekyll-sitemap`
 3. `git clone` this repository
 4. `cd ircv3.github.io/`
