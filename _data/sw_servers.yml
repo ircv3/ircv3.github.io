@@ -28,10 +28,16 @@
       support:
         v3.1:
           - cap
-          - multi-prefix
           - away-notify
           - extended-join
+          - multi-prefix
+        v3.2:
           - userhost-in-names
+      na:
+        v3.1:
+          account-notify: PASS login, no logout
+          sasl: PASS auth only
+          tls: secure only
     - name: InspIRCd
       link: http://www.inspircd.org
       support:
