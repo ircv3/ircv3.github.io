@@ -74,6 +74,9 @@ td + td, th + th {
   background-color: #8fea94;
 }
 .sw-table tbody tr:hover .unsupported {
+  background-color: rgba(243, 150, 146, 0.5);
+}
+.sw-table tbody tr:hover .unsupported.required {
   background-color: #f39692;
 }
 .sw-table tbody tr:hover .partial {
@@ -119,8 +122,15 @@ a.irc-extension {
   color: #101010;
 }
 .sw-table .unsupported {
+  background-color: rgb(247, 213, 211);
+  color: #303010;
+}
+.sw-table .unsupported.required {
   background-color: #eeaaa7;
   color: #30100E;
+}
+.sw-table td.required + td.optional {
+  border-left: 5px solid white;
 }
 .sw-table td note desc {
   vertical-align: super;
