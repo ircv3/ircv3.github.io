@@ -33,7 +33,7 @@
             </td>
             {% for ext in irc_ver[1].specs %}
             {% capture ext_name %}{{ ext[0] }}{% endcapture %}
-            <td colgroup="2" class="support {% if sw.support[irc_verkey] contains ext_name %}supported{% elsif sw.partial[irc_verkey] contains ext_name %}partial{% else %}unsupported{% endif %}">
+            <td colgroup="2" class="support {% if sw.support[irc_verkey] contains ext_name %}supported{% elsif sw.partial[irc_verkey] contains ext_name %}partial{% elsif sw.na[irc_verkey] contains ext_name %}na{% else %}unsupported{% endif %}">
                 {% if sw.support[irc_verkey] contains ext_name %}
                     {% assign capab = sw.support[irc_verkey][ext_name] %}
                     {% assign default = 'Yes' %}
@@ -41,6 +41,10 @@
                 {% elsif sw.partial[irc_verkey] contains ext_name %}
                     {% assign capab = sw.partial[irc_verkey][ext_name] %}
                     {% assign default = 'Partial' %}
+                    {% include show_capability.html %}
+                {% elsif sw.na[irc_verkey] contains ext_name %}
+                    {% assign capab = sw.na[irc_verkey][ext_name] %}
+                    {% assign default = 'Not applicable' %}
                     {% include show_capability.html %}
                 {% else %}
                     No

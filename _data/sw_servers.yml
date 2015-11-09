@@ -23,15 +23,21 @@
           account-notify: 6.5 +
           extended-join: 6.5 +
           away-notify: 6.5 +
-    - name: IRCCloud
-      link: https://www.irccloud.com
+    - name: IRCCloud Teams
+      link: https://blog.irccloud.com/private-teams-servers/
       support:
         v3.1:
           - cap
-          - multi-prefix
           - away-notify
           - extended-join
+          - multi-prefix
+        v3.2:
           - userhost-in-names
+      na:
+        v3.1:
+          account-notify: PASS login, no logout
+          sasl: PASS auth only
+          tls: secure only
     - name: InspIRCd
       link: http://www.inspircd.org
       support:

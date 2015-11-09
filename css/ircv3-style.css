@@ -114,6 +114,10 @@ a.irc-extension {
   background-color: #eeeeaa;
   color: #303010;
 }
+.sw-table .na {
+  background-color: #ddd;
+  color: #101010;
+}
 .sw-table .unsupported {
   background-color: #eeaaa7;
   color: #30100E;
