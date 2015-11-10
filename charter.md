@@ -1,6 +1,7 @@
 ---
 title: IRCv3 Working Group Charter
 layout: default
+meta-description: The IRCv3 working group is chartered to prototype, develop and test further incremental changes to the IRC client protocol.
 ---
 
 # Charter
