@@ -5,6 +5,17 @@ v3.1:
       name: CAP
       description: Capability Negotiation
       link: http://ircv3.net/specs/core/capability-negotiation-3.1.html
+      required: true
+    sasl:
+      name: sasl
+      description: SASL
+      link: http://ircv3.net/specs/extensions/sasl-3.1.html
+      required: true
+    multi-prefix:
+      name: multi-prefix
+      description: multi-prefix Extension
+      link: http://ircv3.net/specs/extensions/multi-prefix-3.1.html
+      required: true
     account-notify:
       name: account-notify
       description: account-notify Extension
@@ -17,14 +28,6 @@ v3.1:
       name: extended-join
       description: extended-join Extension
       link: http://ircv3.net/specs/extensions/extended-join-3.1.html
-    multi-prefix:
-      name: multi-prefix
-      description: multi-prefix Extension
-      link: http://ircv3.net/specs/extensions/multi-prefix-3.1.html
-    sasl:
-      name: sasl
-      description: SASL
-      link: http://ircv3.net/specs/extensions/sasl-3.1.html
     tls:
       name: tls
       description: tls Extension
@@ -37,6 +40,7 @@ v3.2:
       name: CAP
       description: Capability Negotiation
       link: http://ircv3.net/specs/core/capability-negotiation-3.2.html
+      required: true
     # message-tags:
     #   name: Message Tags
     #   description: Message Tags
@@ -45,10 +49,12 @@ v3.2:
       name: Metadata
       description: Metadata
       link: http://ircv3.net/specs/core/metadata-3.2.html
+      required: true
     monitor:
       name: Monitor
       description: Monitor
       link: http://ircv3.net/specs/core/monitor-3.2.html
+      required: true
     account-tag:
       name: account-tag
       description: account-tag Extension
