@@ -117,6 +117,7 @@
       support:
         v3.1:
           - cap
+          - multi-prefix
           - tls
         v3.2:
           - server-time
