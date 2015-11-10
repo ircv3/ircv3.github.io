@@ -1,16 +1,16 @@
 ---
 layout: default
 ---
-<h1>{{ page.title|markdownify }}</h1>
+<h1>{{ page.title | markdownify | replace:'<p>','' | replace:'</p>','' }}</h1>
 
-<em>
 {% if page.copyrights %}
+<div class="copyrights">
 {% for copyright in page.copyrights %}
 <p>Copyright &copy; {{ copyright.period }} {{ copyright.name }} &lt;{{ copyright.email }}&gt;</p>
 {% endfor %}
 <p>Unlimited redistribution and modification of this document is allowed provided that the above copyright notice and this permission notice remains intact.</p>
+</div>
 {% endif %}
-</em>
 
 <hr />
 

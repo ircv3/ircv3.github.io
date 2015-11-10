@@ -233,6 +233,9 @@ a, .page-header > h1 {
 .lead {
 	color: #000;
 }
+.copyrights {
+  font-style: italic;
+}
 
 a:hover, a:focus {
 	color: #337F87;
