@@ -44,6 +44,12 @@
           - multi-prefix
           - sasl
           - tls
+        v3.2:
+          cap: git
+          metadata: git
+          monitor: 0.8
+          chghost:
+          userhost-in-names:
     - name: Rust irc
       link: https://github.com/aatxe/irc
       support:

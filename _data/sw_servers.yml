@@ -10,11 +10,14 @@
           account-notify: 3.4.0 +
           extended-join: 3.4.0 +
           away-notify: 3.4.0 +
+          tls: git
         v3.2:
           cap:
           monitor: 1.0 +
+          userhost-in-names: git
+          cap-notify: git
     - name: Elemental IRCd
-      link: https://github.com/lyska/elemental-ircd
+      link: https://github.com/Elemental-IRCd/elemental-ircd
       support:
         v3.1:
           cap:
@@ -23,6 +26,9 @@
           account-notify: 6.5 +
           extended-join: 6.5 +
           away-notify: 6.5 +
+        v3.2:
+          chghost: git
+          monitor:
     - name: IRCCloud Teams
       link: https://blog.irccloud.com/private-teams-servers/
       support:
@@ -57,7 +63,7 @@
           invite-notify: In Extras
           echo-message: In Extras
     - name: mammon-ircd
-      link: http://mammon.io
+      link: https://github.com/mammon-ircd/mammon
       support:
         v3.1:
           - cap
@@ -84,15 +90,15 @@
         v3.2:
           userhost-in-names: 2011-12-19
     - name: Plexus
-      link: https://bitbucket.org/rizon/plexus
+      link: https://gitlab.com/rizon/plexus4
       support:
         v3.1:
-          cap: -297 +
-          away-notify:
-          multi-prefix: -297 +
-          sasl:
+          cap: plexus3 297 +
+          away-notify: plexus4
+          multi-prefix: plexus3 297 +
+          sasl: plexus4
         v3.2:
-          userhost-in-names: -534 +
+          userhost-in-names: plexus3 534 +
     - name: UnrealIRCd
       link: http://www.unrealircd.org
       support:

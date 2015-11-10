@@ -9,6 +9,7 @@
           - account-notify
           - away-notify
           - extended-join
+          - tls
         v3.2:
           - server-time
           - userhost-in-names
@@ -31,7 +32,6 @@
           - extended-join
         v3.2:
           - cap
-          - self-message
           - account-tag
           - cap-notify
           - chghost
@@ -45,7 +45,7 @@
         v3.3:
           - intents
     - name: Conspire
-      link: http://tortois.es/conspire
+      link: https://github.com/kaniini/conspire
       support:
         v3.1:
           - cap
@@ -77,6 +77,7 @@
           - sasl
         v3.2:
           - monitor
+          - server-time
     - name: Instantbird
       link: http://instantbird.com
       support:
@@ -91,24 +92,25 @@
       support:
         v3.1:
           - cap
+          - sasl
     - name: KVIrc
       link: http://www.kvirc.net
       support:
         v3.1:
-          - cap
-          - multi-prefix
-          - sasl
-          - tls
+          cap: 4.2.0
+          multi-prefix: git
+          sasl: 4.2.0
+          tls: 4.2.0
         v3.2:
-          - server-time
+          server-time: git
     - name: LimeChat
       link: http://limechat.net/mac/
       support:
         v3.1:
           - cap
           - sasl
-        v3.2:
-          - server-time
+        #v3.2:
+        # - server-time  # only supports znc's vendor prefixed version
     - name: mIRC
       link: http://www.mirc.com
       support:
@@ -141,11 +143,12 @@
           - cap
           - away-notify
           - multi-prefix
-          - server-time
           - sasl
         v3.2:
-          - sasl
-          - userhost-in-names
+          sasl:
+          userhost-in-names:
+          server-time:
+          batch: 5.2.2
     - name: WeeChat
       link: https://weechat.org
       support:
@@ -160,6 +163,7 @@
           monitor: 0.4.3+
           server-time: 0.4.0+
           userhost-in-names: 0.4.1+
+          cap-notify: git
 
 - name: Web Clients
   software:
@@ -197,11 +201,12 @@
       support:
         v3.1:
           - cap
+          - sasl
 
 - name: Mobile Clients
   software:
     - name: AndChat
-      link: http://www.andchat.net
+      link: http://www.duckspike.net/andchat/
       support:
         v3.1:
           - cap
@@ -232,7 +237,6 @@
           - extended-join
         v3.2:
           - cap
-          - self-message
           - account-tag
           - cap-notify
           - chghost
@@ -263,7 +267,7 @@
           - sasl
         v3.2:
           - userhost-in-names
-    - name: Limechat
+    - name: LimeChat
       link: http://limechat.net/iphone/
       support:
         v3.1:
@@ -320,7 +324,6 @@
         v3.1:
           - cap
           - multi-prefix
-          - away-notify
           - account-notify
           - extended-join
           - sasl
@@ -336,8 +339,8 @@
       partial:
         v3.2:
           cap-notify: "CAP NEW is ignored"
-    - name: Willie
-      link: http://willie.dftba.net
+    - name: Sopel (ex Willie)
+      link: http://sopel.chat
       support:
         v3.1:
           - cap
