@@ -89,16 +89,6 @@
           tls: 2013-05-26
         v3.2:
           userhost-in-names: 2011-12-19
-    - name: Plexus
-      link: https://gitlab.com/rizon/plexus4
-      support:
-        v3.1:
-          cap: plexus3 297 +
-          away-notify: plexus4
-          multi-prefix: plexus3 297 +
-          sasl: plexus4
-        v3.2:
-          userhost-in-names: plexus3 534 +
     - name: UnrealIRCd
       link: http://www.unrealircd.org
       support:
