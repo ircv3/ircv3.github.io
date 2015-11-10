@@ -33,6 +33,15 @@
             <td>
                 {% if sw.link %}<a href="{{ sw.link }}">{{ sw.name }}</a>{% else %}{{ sw.name }}{% endif %}
                 {% if sw.dead %}<span class="dead-software">dead</span>{% endif %}
+                {% if sw.os %}
+                    <div class="os-support">
+                    {% for name in sw.os %}
+                        {% if site.data.os[name] %}
+                            <i title="{{ site.data.os[name]["name"] }}" class="fa fa-{{ site.data.os[name]["icon"] }} os-support-{{ name | slugify }}"></i>
+                        {% endif %}
+                    {% endfor %}
+                    </div>
+                {% endif %}
             </td>
             {% for ext in irc_ver[1].specs %}
             {% capture ext_name %}{{ ext[0] }}{% endcapture %}

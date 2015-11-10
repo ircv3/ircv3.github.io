@@ -209,12 +209,16 @@
   software:
     - name: AndChat
       link: http://www.duckspike.net/andchat/
+      os:
+        - android
       support:
         v3.1:
           - cap
           - sasl
     - name: IRC for Android
       link: http://www.countercultured.net/android/
+      os:
+        - android
       support:
         v3.1:
           - cap
@@ -222,12 +226,16 @@
           - multi-prefix
     - name: AndroIRC
       link: http://www.androirc.com
+      os:
+        - android
       support:
         v3.1:
           - cap
           - sasl
     - name: Colloquy
       link: http://www.colloquy.info
+      os:
+        - ios
       support:
         v3.1:
           - cap
@@ -253,12 +261,17 @@
           - intents
     - name: IRC7
       link: http://www.windowsphone.com/en-us/store/app/irc/345e96da-fa2a-457f-95ce-f09e6f3b28a3
+      os:
+        - windows-phone
       support:
         v3.1:
           - cap
           - sasl
     - name: IRCCloud
       link: https://www.irccloud.com
+      os:
+        - android
+        - ios
       support:
         v3.1:
           - cap
@@ -271,12 +284,16 @@
           - userhost-in-names
     - name: LimeChat
       link: http://limechat.net/iphone/
+      os:
+        - ios
       support:
         v3.1:
           - cap
           - sasl
     - name: Palaver
       link: https://palaverapp.com/
+      os:
+        - ios
       support:
         v3.1:
           - cap
@@ -289,6 +306,8 @@
           - userhost-in-names
     - name: YAAIC
       link: http://www.yaaic.org
+      os:
+        - android
       support:
         v3.1:
           - cap
