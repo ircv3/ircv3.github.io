@@ -1,0 +1,12 @@
+# mobile
+android:
+  name: Android
+  icon: android
+
+ios:
+  name: iOS
+  icon: apple
+
+windows-phone:
+  name: Windows Phone
+  icon: windows

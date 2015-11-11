@@ -305,6 +305,24 @@ a:hover, a:focus {
 .spec-stop {
     color: #d44;
 }
+.os-support {
+    color: #666;
+    margin-top: -0.1rem;
+    margin-left: 1rem;
+    float: right;
+}
+.os-support i + i {
+    margin-left: 0.5rem;
+}
+.os-support-windows-phone {
+    color: #229eda;
+}
+.os-support-ios {
+    color: #444;
+}
+.os-support-android {
+    color: #9fc234;
+}
 
 /* sticky footer */
 html {
