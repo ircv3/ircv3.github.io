@@ -2,8 +2,9 @@
 layout: page
 title: Clients
 meta-description: IRCv3 Client Support. This page lists the IRC clients compatible with and supporting IRCv3 features.
+data-source-filename: sw_clients.yml
 ---
-This software is compliant natively; other software may be compliant with extensions.
+{% include software_intro.html %}
 
 <div class="irc-sw-list flexy-list">
 {% for type in site.data.sw_clients %}
