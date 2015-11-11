@@ -1,6 +1,7 @@
 - name: Servers
   software:
     - name: Charybdis
+      # ref: https://github.com/atheme/charybdis/blob/charybdis-3.5.0-test1/modules/m_cap.c#L73
       link: http://www.stack.nl/~jilles/irc/#charybdis
       support:
         v3.1:
@@ -17,6 +18,8 @@
           userhost-in-names: git
           cap-notify: git
     - name: Elemental IRCd
+      # ref: https://github.com/Elemental-IRCd/elemental-ircd/issues/80
+      #      https://github.com/Elemental-IRCd/elemental-ircd/blob/elemental-ircd-7.0-experimental/modules/m_cap.c#L70
       link: https://github.com/Elemental-IRCd/elemental-ircd
       support:
         v3.1:
@@ -30,6 +33,7 @@
           chghost: git
           monitor:
     - name: IRCCloud Teams
+      # maintainer: jwheare
       link: https://blog.irccloud.com/private-teams-servers/
       support:
         v3.1:
@@ -45,6 +49,10 @@
           sasl: PASS auth only
           tls: secure only
     - name: InspIRCd
+      # maintainer: saberuk, attila
+      # ref: https://github.com/inspircd/inspircd/issues/1038
+      #      https://github.com/inspircd/inspircd/search?q=GenericCap
+      #      https://github.com/inspircd/inspircd-extras/search?q=GenericCap
       link: http://www.inspircd.org
       support:
         v3.1:
@@ -63,6 +71,7 @@
           invite-notify: In Extras
           echo-message: In Extras
     - name: mammon-ircd
+      # ref: Capability() calls in https://github.com/mammon-ircd/mammon/search?q=Capability
       link: https://github.com/mammon-ircd/mammon
       support:
         v3.1:
@@ -77,6 +86,7 @@
           - server-time
           - message-tags
     - name: Nefarious IRCu
+      # ref: https://github.com/evilnet/nefarious2/blob/2.0/ircd/m_cap.c#L59
       link: https://github.com/evilnet/nefarious2
       support:
         v3.1:
@@ -90,6 +100,8 @@
         v3.2:
           userhost-in-names: 2011-12-19
     - name: UnrealIRCd
+      # ref: ClientCapabilityAdd() calls in https://github.com/unrealircd/unrealircd/search?q=ClientCapabilityAdd
+      #      (src/modules/m_cap.c has four matches, two not shown)
       link: http://www.unrealircd.org
       support:
         v3.1:

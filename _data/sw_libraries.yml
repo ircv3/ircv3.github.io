@@ -1,6 +1,7 @@
 - name: Libraries
   software:
     - name: cinch
+      # ref: https://github.com/cinchrb/cinch/blob/v2.3.1/lib/cinch/irc.rb#L115
       link: https://github.com/cinchrb/cinch
       support:
         v3.1:
@@ -9,6 +10,7 @@
           - multi-prefix
           - sasl
     - name: Communi
+      # ref: http://communi.github.io/doc/3.4/ircv3.html
       link: https://communi.github.io
       support:
         v3.1:
@@ -29,11 +31,15 @@
           account-tag: 3.4+
           chghost: 3.4+
     - name: Net::Async::IRC
+      # ref: https://metacpan.org/source/PEVANS/Net-Async-IRC-0.10/lib/Net/Async/IRC.pm#L339
       link: https://metacpan.org/pod/Net::Async::IRC
       support:
         v3.1:
           - cap
     - name: pydle
+      # ref: https://github.com/Shizmob/pydle/tree/v0.8.0/pydle/features/ircv3_1
+      #      https://github.com/Shizmob/pydle/tree/v0.8.0/pydle/features/ircv3_2
+      #      https://github.com/Shizmob/pydle/tree/master/pydle/features/ircv3
       link: https://pypi.python.org/pypi/pydle
       support:
         v3.1:
@@ -51,6 +57,7 @@
           chghost:
           userhost-in-names:
     - name: Rust irc
+      # ref: https://github.com/aatxe/irc/blob/master/src/client/data/caps.rs
       link: https://github.com/aatxe/irc
       support:
         v3.1:
