@@ -13,9 +13,9 @@ as well as custom ones:
 * [DH-AES]({{site.baseurl}}/specs/documentation/sasl-dh-aes.html)
 * [DH-BLOWFISH]({{site.baseurl}}/specs/documentation/sasl-dh-blowfish.html)
 
-<warn>
+<div class="warning">
     The DH-AES and DH-BLOWFISH SASL mechanisms have been deprecated and are listed here for informational purposes only.
-</warn>
+</div>
 
 <!-- * [ECDSA-NIST256P-CHALLENGE](/baz)
 * [CHALLENGE-ED25519](/qux) -->

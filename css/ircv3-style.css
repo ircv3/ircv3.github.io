@@ -236,6 +236,9 @@ a, .page-header > h1 {
 .copyrights {
   font-style: italic;
 }
+.warning {
+  color: #c24;
+}
 
 a:hover, a:focus {
 	color: #337F87;
