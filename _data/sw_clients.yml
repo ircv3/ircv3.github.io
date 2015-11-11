@@ -4,15 +4,16 @@
       link: http://www.adiirc.com
       support:
         v3.1:
-          - cap
-          - multi-prefix
-          - account-notify
-          - away-notify
-          - extended-join
-          - tls
+          cap:
+          sasl: 1.9.9
+          multi-prefix:
+          account-notify:
+          away-notify:
+          extended-join:
+          tls: 1.9.9
         v3.2:
-          - server-time
-          - userhost-in-names
+          server-time: 1.9.7
+          userhost-in-names:
     - name: BitchX
       link: http://www.bitchx.com
       support:
@@ -116,6 +117,7 @@
       support:
         v3.1:
           - cap
+          - multi-prefix
           - tls
         v3.2:
           - server-time
