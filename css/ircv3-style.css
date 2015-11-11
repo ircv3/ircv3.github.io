@@ -276,9 +276,9 @@ a:hover, a:focus {
     text-align: center;
     margin: 0 auto 0.6rem;
 }
-.participant {
+.flexy-list > a {
     display: inline-block;
-    padding: 0.5rem;
+    padding: 0.75rem 2rem;
 }
 
 .spec-link {
