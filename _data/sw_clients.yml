@@ -1,6 +1,7 @@
 - name: Desktop Clients
   software:
     - name: AdiIRC
+      # ref: http://dev.adiirc.com/projects/adiirc/wiki/IRCv3
       link: http://www.adiirc.com
       support:
         v3.1:
@@ -15,12 +16,14 @@
           server-time: 1.9.7
           userhost-in-names:
     - name: BitchX
+      # ref: https://github.com/BitchX/BitchX/search?q=%22CAP+REQ%22&
       link: http://www.bitchx.com
       support:
         v3.1:
           - cap
           - sasl
     - name: Colloquy
+      # ref: handleCapWithParameters() in https://github.com/colloquy/colloquy/blob/master/Chat%20Core/MVIRCChatConnection.m
       link: http://www.colloquy.info
       support:
         v3.1:
@@ -46,6 +49,7 @@
         v3.3:
           - intents
     - name: Conspire
+      # ref: https://github.com/kaniini/conspire/search?q=cap_add_cap
       link: https://github.com/kaniini/conspire
       support:
         v3.1:
@@ -53,6 +57,7 @@
           - multi-prefix
           - sasl
     - name: HexChat
+      # ref: https://github.com/hexchat/hexchat/blob/v2.10.2/src/common/inbound.c#L1728
       link: https://hexchat.github.io
       support:
         v3.1:
@@ -67,6 +72,7 @@
           - monitor
           - userhost-in-names
     - name: IceChat
+      # ref: CapREQ() in http://icechat.codeplex.com/SourceControl/latest#IRCConnection/ParseIRCData.cs
       link: http://icechat.net
       support:
         v3.1:
@@ -80,6 +86,8 @@
           - monitor
           - server-time
     - name: Instantbird
+      # ref: irc{CAP,SASL,MultiPrefix,WatchMonitor}.jsm files in
+      #      https://hg.instantbird.org/instantbird/file/tip/chat/protocols/irc
       link: http://instantbird.com
       support:
         v3.1:
@@ -89,12 +97,15 @@
         v3.2:
           monitor: 1.2+
     - name: Konversation
+      # ref: https://github.com/KDE/konversation/blob/1.6/src/irc/server.cpp#L697
       link: http://konversation.kde.org
       support:
         v3.1:
           - cap
           - sasl
     - name: KVIrc
+      # ref: https://github.com/kvirc/KVIrc/blob/4.2.0/src/kvirc/kernel/KviIrcConnection.cpp#L438
+      #      or handleInitialCapLs() in https://github.com/kvirc/KVIrc/blob/master/src/kvirc/kernel/KviIrcConnection.cpp
       link: http://www.kvirc.net
       support:
         v3.1:
@@ -105,6 +116,7 @@
         v3.2:
           server-time: git
     - name: LimeChat
+      # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
       link: http://limechat.net/mac/
       support:
         v3.1:
@@ -113,6 +125,9 @@
         #v3.2:
         # - server-time  # only supports znc's vendor prefixed version
     - name: mIRC
+      # ref: http://www.mirc.com/news.html
+      #      http://www.mirc.com/versions.txt
+      #      http://forums.mirc.com/ubbthreads.php/topics/244662/IRCv3 ("please don't quote me")
       link: http://www.mirc.com
       support:
         v3.1:
@@ -124,6 +139,8 @@
           - monitor
           - userhost-in-names
     - name: Mozilla Thunderbird
+      # ref: irc{CAP,SASL,MultiPrefix,WatchMonitor}.jsm files in
+      #      http://mxr.mozilla.org/comm-central/source/chat/protocols/irc/
       link: https://www.mozilla.org/thunderbird
       support:
         v3.1:
@@ -133,12 +150,14 @@
         v3.2:
           monitor: 15+
     - name: Quassel
+      # ref: https://github.com/quassel/quassel/blob/0.12.2/src/core/corenetwork.cpp#L479
       link: http://www.quassel-irc.org
       support:
         v3.1:
           - cap
           - sasl
     - name: Textual
+      # ref: https://github.com/Codeux-Software/Textual/blob/v5.2.5/Classes/IRC/IRCClient.m#L5895
       link: http://www.codeux.com/textual
       support:
         v3.1:
@@ -152,6 +171,11 @@
           server-time:
           batch: 5.2.2
     - name: WeeChat
+      # ref: https://weechat.org/files/changelog/ChangeLog-devel.html
+      #      for 1.4 (current git master), see IRC_COMMAND_CAP_SUPPORTED_COMPLETION in
+      #      https://github.com/weechat/weechat/blob/master/src/plugins/irc/irc-command.h
+      #      for 1.3:
+      #      https://github.com/weechat/weechat/blob/v1.3/src/plugins/irc/irc-config.c#L1735
       link: https://weechat.org
       support:
         v3.1:
@@ -170,6 +194,7 @@
 - name: Web Clients
   software:
     - name: IRCCloud
+      # maintainer: jwheare
       link: https://www.irccloud.com
       support:
         v3.1:
@@ -182,6 +207,7 @@
         v3.2:
           - userhost-in-names
     - name: Iris
+      # ref: https://github.com/atheme/iris/blob/831483f/qwebirc/ircclient.py#L48
       link: http://www.atheme.net/iris.html
       support:
         v3.1:
@@ -189,6 +215,7 @@
           - multi-prefix
           - sasl
     - name: Kiwi IRC
+      # ref: https://github.com/prawnsalad/KiwiIRC/blob/v0.9.1/server/irc/commands/registration.js#L63
       link: https://kiwiirc.com
       support:
         v3.1:
@@ -199,6 +226,8 @@
         v3.2:
           - server-time
     - name: Mibbit
+      # ref: http://wiki.mibbit.com/index.php/SASL
+      #      does not send CAP LS when connecting to a server
       link: http://www.mibbit.com
       support:
         v3.1:
@@ -208,6 +237,7 @@
 - name: Mobile Clients
   software:
     - name: AndChat
+      # ref: link mentions sasl
       link: http://www.duckspike.net/andchat/
       os:
         - android
@@ -216,6 +246,7 @@
           - cap
           - sasl
     - name: IRC for Android
+      # ref: link mentions sasl
       link: http://www.countercultured.net/android/
       os:
         - android
@@ -225,6 +256,7 @@
           - sasl
           - multi-prefix
     - name: AndroIRC
+      # ref: http://wiki.androirc.com/nickserv_sasl
       link: http://www.androirc.com
       os:
         - android
@@ -233,6 +265,7 @@
           - cap
           - sasl
     - name: Colloquy
+      # ref: https://github.com/colloquy/colloquy/blob/7737a2b/Chat%20Core/MVIRCChatConnection.m#L2393
       link: http://www.colloquy.info
       os:
         - ios
@@ -260,6 +293,7 @@
         v3.3:
           - intents
     - name: IRC7
+      # ref: link mentions sasl
       link: http://www.windowsphone.com/en-us/store/app/irc/345e96da-fa2a-457f-95ce-f09e6f3b28a3
       os:
         - windows-phone
@@ -268,6 +302,7 @@
           - cap
           - sasl
     - name: IRCCloud
+      # maintainer: jwheare
       link: https://www.irccloud.com
       os:
         - android
@@ -283,6 +318,7 @@
         v3.2:
           - userhost-in-names
     - name: LimeChat
+      # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
       link: http://limechat.net/iphone/
       os:
         - ios
@@ -291,6 +327,7 @@
           - cap
           - sasl
     - name: Palaver
+      # maintainer: kylef
       link: https://palaverapp.com/
       os:
         - ios
@@ -305,6 +342,7 @@
           - server-time
           - userhost-in-names
     - name: YAAIC
+      # ref: https://github.com/pocmo/Yaaic/blob/v1.1/app/src/main/java/org/jibble/pircbot/PircBot.java#L208
       link: http://www.yaaic.org
       os:
         - android
@@ -317,6 +355,8 @@
 - name: Bouncers
   software:
     - name: ZNC
+      # ref: https://github.com/znc/znc/blob/znc-1.6.1/src/IRCSock.cpp#L809
+      #      https://github.com/znc/znc/blob/znc-1.6.1/src/Client.cpp#L886
       link: http://znc.in/
       support:
         v3.1:
@@ -340,6 +380,9 @@
 - name: Bots
   software:
     - name: Limnoria
+      # ref: https://github.com/ProgVal/Limnoria/blob/master-2015-10-10/src/irclib.py#L962
+      #      https://github.com/ProgVal/Limnoria/blob/master-2015-10-10/src/ircmsgs.py#L869
+      #      https://github.com/ProgVal/Limnoria/issues/1015
       link: https://github.com/ProgVal/Limnoria
       support:
         v3.1:
@@ -361,6 +404,8 @@
         v3.2:
           cap-notify: "CAP NEW is ignored"
     - name: Sopel (ex Willie)
+      #ref: https://github.com/sopel-irc/sopel/blob/v5.3.0/willie/coretasks.py#L357
+      #     https://github.com/sopel-irc/sopel/blob/e5df2fa/sopel/coretasks.py#L345
       link: http://sopel.chat
       support:
         v3.1:
