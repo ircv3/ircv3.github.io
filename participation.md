@@ -1,6 +1,7 @@
 ---
 title: Participation
 layout: page
+meta-description: The IRCv3 working group contains participants from many organizations involved with IRC software development.
 ---
 The IRCv3 working group contains participants from the following organizations (and more):
 

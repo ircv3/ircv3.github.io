@@ -1,6 +1,7 @@
 ---
 layout: page
 title: SASL Mechanisms
+meta-description: SASL Mechanisms for the IRCv3 'sasl' capability.
 ---
 IAL primarily uses the same mechanisms as SASL in other protocols. Most commonly:
 
