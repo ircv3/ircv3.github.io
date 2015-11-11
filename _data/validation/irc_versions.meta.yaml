@@ -1,0 +1,17 @@
+root:
+  type: mapofdicts
+  kids:
+    name:
+      type: string
+    specs:
+      type: mapofdicts
+      kids:
+        name:
+          type: string
+        description:
+          type: string
+        link:
+          type: string
+        required:
+          type: boolean
+          required: false

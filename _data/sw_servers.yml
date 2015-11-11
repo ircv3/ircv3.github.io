@@ -107,7 +107,6 @@
         v3.1:
           cap: 3.2.9 +
           multi-prefix: 3.2.9 +
-          account-notify: 3.2.10 +
           away-notify: 3.2.9 +
           account-notify: 3.2.9 +
           sasl: 3.2.10 +

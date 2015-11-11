@@ -1,0 +1,40 @@
+software:
+  type: listofdicts
+  kids:
+    name:
+      type: string
+    software:
+      type: listofdicts
+      kids:
+        name:
+          type: string
+        link:
+          type: string
+        os:
+          type: listofstrings
+          required: false
+          values:
+            - android
+            - ios
+            - windows-phone
+        support:
+          type: mapofmultis
+          types:
+            -
+              type: listofanythings
+            -
+              type: mapofanythings
+        partial:
+          type: mapofmultis
+          types:
+            -
+              type: listofanythings
+            -
+              type: mapofanythings
+        na:
+          type: mapofmultis
+          types:
+            -
+              type: listofanythings
+            -
+              type: mapofanythings

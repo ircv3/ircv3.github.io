@@ -1,0 +1,7 @@
+root:
+  type: listofdicts
+  kids:
+    name:
+      type: string
+    url:
+      type: string

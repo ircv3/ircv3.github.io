@@ -6,6 +6,8 @@ script:
   - python2 --version && python2 -m pip --version
   - python2 -m pip install html5validator --user --upgrade
   - ~/.local/bin/html5validator --root _site/
+  - python2 -m pip install git+https://github.com/DanielOaks/yamltypes.git@ircv3-fixes#egg=yamltypes --user --upgrade
+  - ~/.local/bin/yamlvalidate $(find _data | grep \.yml | xargs) --path _data/validation
 rvm: 2.1
 notifications:
     email: false

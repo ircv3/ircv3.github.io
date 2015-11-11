@@ -1,0 +1,7 @@
+root:
+  type: mapofdicts
+  kids:
+    name:
+      type: string
+    icon:
+      type: string
