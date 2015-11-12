@@ -183,11 +183,13 @@ a.irc-extension {
 }
 
 .alert-warning, .btn-warning {
-	color: black;
+	color: #300;
+	font-weight: bold;
 }
 
 .alert-danger, .btn-danger {
-	color: black;
+	color: #300;
+	font-weight: bold;
 }
 
 .github, .github:hover {
