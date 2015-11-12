@@ -3,6 +3,14 @@ layout: default
 ---
 <h1>{{ page.title | markdownify | replace:'<p>','' | replace:'</p>','' }}</h1>
 
+{% if page.path contains "-3.3.md" %}
+<div class="alert alert-warning">
+    <p>This specification is a work-in-progress and may have major incompatible changes without warning.</p>
+
+    <p>This specification may change at any time and we do not recommend implementing it in a production environment.</p>
+</div>
+{% endif %}
+
 {% if page.copyrights %}
 <div class="copyrights">
 {% for copyright in page.copyrights %}
