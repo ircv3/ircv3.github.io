@@ -76,7 +76,10 @@
       support:
         v3.1:
           - cap
+          - account-notify
           - away-notify
+          - extended-join
+          - sasl
         v3.2:
           - cap
           - cap-notify
@@ -85,6 +88,8 @@
           - echo-message
           - server-time
           - message-tags
+          - userhost-in-names
+          - sasl
     - name: Nefarious IRCu
       # ref: https://github.com/evilnet/nefarious2/blob/2.0/ircd/m_cap.c#L59
       link: https://github.com/evilnet/nefarious2
