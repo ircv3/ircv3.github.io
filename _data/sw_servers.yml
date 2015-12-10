@@ -81,6 +81,7 @@
           - extended-join
           - sasl
         v3.2:
+          - account-tag
           - cap
           - cap-notify
           - metadata
