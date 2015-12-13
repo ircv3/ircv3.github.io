@@ -389,20 +389,22 @@
           - cap
           - multi-prefix
           - account-notify
+          - away-notify
           - extended-join
           - sasl
+          - tls
         v3.2:
           - cap
           - metadata
           - monitor
           - account-tag
+          - batch
+          - cap-notify
           - chghost
           - invite-notify
+          - sasl
           - server-time
           - userhost-in-names
-      partial:
-        v3.2:
-          cap-notify: "CAP NEW is ignored"
     - name: Sopel (ex Willie)
       #ref: https://github.com/sopel-irc/sopel/blob/v5.3.0/willie/coretasks.py#L357
       #     https://github.com/sopel-irc/sopel/blob/e5df2fa/sopel/coretasks.py#L345
