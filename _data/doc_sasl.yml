@@ -16,10 +16,6 @@ SASL:
       description: SASL SCRAM-SHA-256 mechanism
       required: true
       link: https://tools.ietf.org/html/draft-hansen-scram-sha256-02
-    authcookie:
-      name: AUTHCOOKIE
-      description: Atheme AUTHCOOKIE SASL mechanism
-      link: https://github.com/atheme/atheme/blob/master/modules/saslserv/authcookie.c
     dh-aes:
       name: DH-AES
       description: DH-AES SASL mechanism (deprecated)
@@ -30,8 +26,3 @@ SASL:
       description: DH-BLOWFISH SASL mechanism (deprecated)
       link: http://ircv3.net/specs/documentation/sasl-dh-blowfish.html
       deprecated: true
-    ecdsa-nist256p-challenge:
-      name: ECDSA-NIST256P-CHALLENGE
-      description: Atheme ECDSA-NIST256P-CHALLENGE SASL mechanism
-      link: https://github.com/kaniini/ecdsatool
-      hidden: true
