@@ -91,39 +91,3 @@ v3.2:
       name: userhost-in-names
       description: userhost-in-names Extension
       link: http://ircv3.net/specs/extensions/userhost-in-names-3.2.html
-
-SASL:
-  name: SASL Mechanism
-  specs:
-    external:
-      name: EXTERNAL
-      description: EXTERNAL SASL mechanism
-      required: true
-      link: "https://tools.ietf.org/html/rfc4422#appendix-A"
-    plain:
-      name: PLAIN
-      description: PLAIN SASL mechanism
-      required: true
-      link: https://tools.ietf.org/search/rfc4616
-    scram-sha-256:
-      name: SCRAM-SHA-256
-      description: SASL SCRAM-SHA-256 mechanism
-      required: true
-      link: https://tools.ietf.org/html/draft-hansen-scram-sha256-02
-    authcookie:
-      name: AUTHCOOKIE
-      description: Atheme AUTHCOOKIE SASL mechanism
-      link: https://github.com/atheme/atheme/blob/master/modules/saslserv/authcookie.c
-    dh-aes:
-      name: DH-AES
-      description: DH-AES SASL mechanism (deprecated)
-      link: http://ircv3.net/specs/documentation/sasl-dh-aes.html
-    dh-blowfish:
-      name: DH-BLOWFISH
-      description: DH-BLOWFISH SASL mechanism (deprecated)
-      link: http://ircv3.net/specs/documentation/sasl-dh-blowfish.html
-    ecdsa-nist256p-challenge:
-      name: ECDSA-NIST256P-CHALLENGE
-      description: Atheme ECDSA-NIST256P-CHALLENGE SASL mechanism
-      link: https://github.com/kaniini/ecdsatool
-
