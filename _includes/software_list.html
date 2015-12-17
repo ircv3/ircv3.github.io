@@ -5,7 +5,7 @@
 
 {% capture anysupport %}
     {% for sw in type.software %}
-        {% if sw.support contains irc_verkey %}
+        {% if sw.support contains irc_verkey or sw.partial contains irc_verkey %}
             Y
         {% endif %}
     {% endfor %}
