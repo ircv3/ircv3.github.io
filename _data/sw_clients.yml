@@ -15,6 +15,9 @@
         v3.2:
           server-time: 1.9.7
           userhost-in-names:
+        SASL:
+          # AdiIRC is closed source so this is a guess.
+          - plain
     - name: BitchX
       # ref: https://github.com/BitchX/BitchX/search?q=%22CAP+REQ%22&
       link: http://www.bitchx.com
@@ -22,6 +25,8 @@
         v3.1:
           - cap
           - sasl
+        SASL:
+          - plain
     - name: Colloquy
       # ref: handleCapWithParameters() in https://github.com/colloquy/colloquy/blob/master/Chat%20Core/MVIRCChatConnection.m
       link: http://www.colloquy.info
@@ -48,6 +53,8 @@
           - userhost-in-names
         v3.3:
           - intents
+        SASL:
+          - plain
     - name: Conspire
       # ref: https://github.com/kaniini/conspire/search?q=cap_add_cap
       link: https://github.com/kaniini/conspire
@@ -56,6 +63,8 @@
           - cap
           - multi-prefix
           - sasl
+        SASL:
+          - plain
     - name: HexChat
       # ref: https://github.com/hexchat/hexchat/blob/v2.10.2/src/common/inbound.c#L1728
       link: https://hexchat.github.io
@@ -71,6 +80,11 @@
           - server-time
           - monitor
           - userhost-in-names
+        SASL:
+          - dh-aes
+          - dh-blowfish
+          - external
+          - plain
     - name: IceChat
       # ref: CapREQ() in http://icechat.codeplex.com/SourceControl/latest#IRCConnection/ParseIRCData.cs
       link: http://icechat.net
@@ -85,6 +99,8 @@
         v3.2:
           - monitor
           - server-time
+        SASL:
+          - plain
     - name: Instantbird
       # ref: irc{CAP,SASL,MultiPrefix,WatchMonitor}.jsm files in
       #      https://hg.instantbird.org/instantbird/file/tip/chat/protocols/irc
@@ -96,6 +112,8 @@
           sasl: 1.3+
         v3.2:
           monitor: 1.2+
+        SASL:
+          - plain
     - name: Konversation
       # ref: https://github.com/KDE/konversation/blob/1.6/src/irc/server.cpp#L697
       link: http://konversation.kde.org
@@ -103,6 +121,8 @@
         v3.1:
           - cap
           - sasl
+        SASL:
+          - plain
     - name: KVIrc
       # ref: https://github.com/kvirc/KVIrc/blob/4.2.0/src/kvirc/kernel/KviIrcConnection.cpp#L438
       #      or handleInitialCapLs() in https://github.com/kvirc/KVIrc/blob/master/src/kvirc/kernel/KviIrcConnection.cpp
@@ -115,6 +135,9 @@
           tls: 4.2.0
         v3.2:
           server-time: git
+        SASL:
+          - dh-blowfish
+          - plain
     - name: LimeChat
       # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
       link: http://limechat.net/mac/
@@ -124,6 +147,8 @@
           - sasl
         #v3.2:
         # - server-time  # only supports znc's vendor prefixed version
+        SASL:
+          - plain
     - name: mIRC
       # ref: http://www.mirc.com/news.html
       #      http://www.mirc.com/versions.txt
@@ -149,6 +174,8 @@
           sasl: 19+
         v3.2:
           monitor: 15+
+        SASL:
+          - plain
     - name: Quassel
       # ref: https://github.com/quassel/quassel/blob/0.12.2/src/core/corenetwork.cpp#L479
       link: http://www.quassel-irc.org
@@ -156,6 +183,9 @@
         v3.1:
           - cap
           - sasl
+        SASL:
+          - external
+          - plain
     - name: Textual
       # ref: https://github.com/Codeux-Software/Textual/blob/v5.2.5/Classes/IRC/IRCClient.m#L5895
       link: http://www.codeux.com/textual
@@ -170,6 +200,9 @@
           userhost-in-names:
           server-time:
           batch: 5.2.2
+        SASL:
+          - external
+          - plain
     - name: WeeChat
       # ref: https://weechat.org/files/changelog/ChangeLog-devel.html
       #      for 1.4 (current git master), see IRC_COMMAND_CAP_SUPPORTED_COMPLETION in
@@ -190,6 +223,12 @@
           server-time: 0.4.0+
           userhost-in-names: 0.4.1+
           cap-notify: git
+        SASL:
+          - dh-aes
+          - dh-blowfish
+          - ecdsa-nist256p-challenge
+          - external
+          - plain
 
 - name: Web Clients
   software:
@@ -206,6 +245,8 @@
           - sasl
         v3.2:
           - userhost-in-names
+        SASL:
+          - plain
     - name: Iris
       # ref: https://github.com/atheme/iris/blob/831483f/qwebirc/ircclient.py#L48
       link: http://www.atheme.net/iris.html
@@ -214,6 +255,9 @@
           - cap
           - multi-prefix
           - sasl
+        SASL:
+          - authcookie
+          - plain
     - name: Kiwi IRC
       # ref: https://github.com/prawnsalad/KiwiIRC/blob/v0.9.1/server/irc/commands/registration.js#L63
       link: https://kiwiirc.com
@@ -225,6 +269,8 @@
           - sasl
         v3.2:
           - server-time
+        SASL:
+          - plain
     - name: Mibbit
       # ref: http://wiki.mibbit.com/index.php/SASL
       #      does not send CAP LS when connecting to a server
@@ -233,6 +279,9 @@
         v3.1:
           - cap
           - sasl
+        SASL:
+          - plain
+          - dh-blowfish
 
 - name: Mobile Clients
   software:
@@ -245,6 +294,8 @@
         v3.1:
           - cap
           - sasl
+        SASL:
+          - plain
     - name: IRC for Android
       # ref: link mentions sasl
       link: http://www.countercultured.net/android/
@@ -255,6 +306,7 @@
           - cap
           - sasl
           - multi-prefix
+        # SASL mechanisms unknown
     - name: AndroIRC
       # ref: http://wiki.androirc.com/nickserv_sasl
       link: http://www.androirc.com
@@ -264,6 +316,9 @@
         v3.1:
           - cap
           - sasl
+        SASL:
+          - dh-blowfish
+          - plain
     - name: Colloquy
       # ref: https://github.com/colloquy/colloquy/blob/7737a2b/Chat%20Core/MVIRCChatConnection.m#L2393
       link: http://www.colloquy.info
@@ -292,6 +347,8 @@
           - userhost-in-names
         v3.3:
           - intents
+        SASL:
+          - plain
     - name: IRC7
       # ref: link mentions sasl
       link: http://www.windowsphone.com/en-us/store/app/irc/345e96da-fa2a-457f-95ce-f09e6f3b28a3
@@ -301,6 +358,8 @@
         v3.1:
           - cap
           - sasl
+        SASL:
+          - plain
     - name: IRCCloud
       # maintainer: jwheare
       link: https://www.irccloud.com
@@ -317,6 +376,8 @@
           - sasl
         v3.2:
           - userhost-in-names
+        SASL:
+          - plain
     - name: LimeChat
       # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
       link: http://limechat.net/iphone/
@@ -326,6 +387,8 @@
         v3.1:
           - cap
           - sasl
+        SASL:
+          - plain
     - name: Palaver
       # maintainer: kylef
       link: https://palaverapp.com/
@@ -341,6 +404,8 @@
           - batch
           - server-time
           - userhost-in-names
+        SASL:
+          - plain
     - name: YAAIC
       # ref: https://github.com/pocmo/Yaaic/blob/v1.1/app/src/main/java/org/jibble/pircbot/PircBot.java#L208
       link: http://www.yaaic.org
@@ -351,6 +416,8 @@
           - cap
           - multi-prefix
           - sasl
+        SASL:
+          - plain
 
 - name: Bouncers
   software:
@@ -376,6 +443,9 @@
           echo-message: "Git, client→ZNC only"
           batch: "1.6.0+ as <code>znc.in/batch</code>, Git as <code>batch</code>, client→ZNC only"
           server-time: "1.2+ as <code>znc.in/server-time-iso</code>, Git as <code>server-time</code>, client→ZNC only"
+        SASL:
+          external: "ZNC→server only"
+          plain: "ZNC→server only"
 
 - name: Bots
   software:
@@ -405,6 +475,10 @@
           - sasl
           - server-time
           - userhost-in-names
+        SASL:
+            - ecdsa-nist256p-challenge
+            - external
+            - plain
     - name: Sopel (ex Willie)
       #ref: https://github.com/sopel-irc/sopel/blob/v5.3.0/willie/coretasks.py#L357
       #     https://github.com/sopel-irc/sopel/blob/e5df2fa/sopel/coretasks.py#L345
@@ -414,3 +488,5 @@
           - cap
           - multi-prefix
           - sasl
+        SASL:
+          - plain

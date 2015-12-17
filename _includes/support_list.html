@@ -1,0 +1,67 @@
+{% capture support_key %}{{ support[0] }}{% endcapture %}
+
+{% capture anysupport %}
+    {% for sw in type.software %}
+        {% if sw.support contains support_key or sw.partial contains support_key %}
+            Y
+        {% endif %}
+    {% endfor %}
+{% endcapture %}
+
+{% if anysupport contains "Y" %}
+#### {% if support_name %}{{ support_name }}{% else %}{{ support[1].name }} Support{% endif %}
+
+<div class="sw-table"><table>
+    <colgroup>
+        <col class="name"></col>
+        <col class="support" span="{{ support[1].specs | size }}"></col>
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Name</th>
+            {% for ext in support[1].specs %}
+            <th class="support-head"><a title="{{ ext[1].description }}" href="{{ ext[1].link }}">{{ ext[1].name }}</a></th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for sw in type.software %}
+        <tr>
+            <td>
+                {% if sw.link %}<a href="{{ sw.link }}">{{ sw.name }}</a>{% else %}{{ sw.name }}{% endif %}
+                {% if sw.dead %}<span class="dead-software">dead</span>{% endif %}
+                {% if sw.os %}
+                    <div class="os-support">
+                    {% for name in sw.os %}
+                        {% if site.data.os[name] %}
+                            <i title="{{ site.data.os[name]["name"] }}" class="fa fa-{{ site.data.os[name]["icon"] }} os-support-{{ name | slugify }}"></i>
+                        {% endif %}
+                    {% endfor %}
+                    </div>
+                {% endif %}
+            </td>
+            {% for ext in support[1].specs %}
+            {% capture ext_name %}{{ ext[0] }}{% endcapture %}
+            <td class="support {% if sw.support[support_key] contains ext_name %}supported{% elsif sw.partial[support_key] contains ext_name %}partial{% elsif sw.na[support_key] contains ext_name %}na{% else %}unsupported{% endif %} {% if ext[1].required %}required{% else %}optional{% endif %}">
+                {% if sw.support[support_key] contains ext_name %}
+                    {% assign capab = sw.support[support_key][ext_name] %}
+                    {% assign default = 'Yes' %}
+                    {% include show_capability.html %}
+                {% elsif sw.partial[support_key] contains ext_name %}
+                    {% assign capab = sw.partial[support_key][ext_name] %}
+                    {% assign default = 'Partial' %}
+                    {% include show_capability.html %}
+                {% elsif sw.na[support_key] contains ext_name %}
+                    {% assign capab = sw.na[support_key][ext_name] %}
+                    {% assign default = 'Not applicable' %}
+                    {% include show_capability.html %}
+                {% else %}
+                    No
+                {% endif %}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table></div>
+{% endif %}
