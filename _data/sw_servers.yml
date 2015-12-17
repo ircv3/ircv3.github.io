@@ -51,7 +51,7 @@
     - name: InspIRCd
       # maintainer: saberuk, attila
       # ref: https://github.com/inspircd/inspircd/issues/1038
-      #      https://github.com/inspircd/inspircd/search?q=GenericCap
+      #      https://github.com/inspircd/inspircd/search?q="Cap%3A%3ACapability"
       #      https://github.com/inspircd/inspircd-extras/search?q=GenericCap
       link: http://www.inspircd.org
       support:
@@ -64,12 +64,13 @@
           extended-join: 2.0.7 +
           tls: 1.2.0 +
         v3.2:
+          cap: git
+          cap-notify: git
+          chghost: git
+          echo-message: git
+          invite-notify: git
+          sasl: git
           userhost-in-names: 1.2.0 +
-      partial:
-        v3.2:
-          cap-notify: In Extras
-          invite-notify: In Extras
-          echo-message: In Extras
     - name: mammon-ircd
       # ref: Capability() calls in https://github.com/mammon-ircd/mammon/search?q=Capability
       link: https://github.com/mammon-ircd/mammon
