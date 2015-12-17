@@ -16,7 +16,7 @@
           server-time: 1.9.7
           userhost-in-names:
         SASL:
-          # AdiIRC is closed source so this is a guess.
+          - external
           - plain
     - name: BitchX
       # ref: https://github.com/BitchX/BitchX/search?q=%22CAP+REQ%22&
