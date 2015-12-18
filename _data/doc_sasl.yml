@@ -15,7 +15,7 @@ SASL:
       name: SCRAM-SHA-256
       description: SASL SCRAM-SHA-256 mechanism
       required: true
-      link: https://tools.ietf.org/html/draft-hansen-scram-sha256-02
+      link: https://tools.ietf.org/html/rfc7677
     # dh-aes:
     #   name: DH-AES
     #   description: DH-AES SASL mechanism (deprecated)
