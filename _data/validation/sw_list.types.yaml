@@ -38,3 +38,10 @@ software:
               type: listofanythings
             -
               type: mapofanythings
+        sublinks:
+          type: listofdicts
+          kids:
+            name:
+              type: string
+            link:
+              type: string

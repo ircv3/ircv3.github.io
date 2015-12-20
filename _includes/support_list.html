@@ -9,7 +9,9 @@
 {% endcapture %}
 
 {% if anysupport contains "Y" %}
+{% if hide_support_name %}{% else %}
 #### {% if support_name %}{{ support_name }}{% else %}{{ support[1].name }} Support{% endif %}
+{% endif %}
 
 <div class="sw-table"><table>
     <colgroup>
@@ -37,6 +39,13 @@
                             <i title="{{ site.data.os[name]["name"] }}" class="fa fa-{{ site.data.os[name]["icon"] }} os-support-{{ name | slugify }}"></i>
                         {% endif %}
                     {% endfor %}
+                    </div>
+                {% endif %}
+                {% if sw.sublinks %}
+                    <div class="sw-sublinks">
+                        {% for sublink in sw.sublinks %}
+                            <a href="{{ sublink.link }}">{{ sublink.name }}</a>
+                        {% endfor %}
                     </div>
                 {% endif %}
             </td>

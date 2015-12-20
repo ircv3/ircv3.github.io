@@ -1,0 +1,25 @@
+- name: Services Packages
+  software:
+    - name: Anope
+      link: http://anope.org
+      support:
+        SASL:
+          - external
+          - plain
+    - name: Atheme Forks
+      link: http://atheme.net
+      support:
+        SASL:
+          - external
+          - plain
+      sublinks:
+        - name: ChatServices
+          link: https://bitbucket.org/chatlounge/chatservices
+        - name: EZtheme
+          link: https://github.com/ElectroCode/eztheme
+        - name: Shaltúre
+          link: https://github.com/shalture/shalture
+        - name: Xtheme
+          link: https://github.com/XthemeOrg/Xtheme
+        - name: Zohlai
+          link: https://github.com/zohlai/zohlai

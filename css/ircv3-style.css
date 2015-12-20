@@ -155,6 +155,14 @@ a.irc-extension {
 .sw-table td note:hover box {
   display: block;
 }
+.sw-sublinks a:before {
+  content: "- ";
+  opacity: 0.75;
+}
+.sw-sublinks a {
+  display: block;
+  margin-left: 1.5rem;
+}
 
 .navbar, .navbar-inverse .dropdown-menu {
 	background-color: #145960;
