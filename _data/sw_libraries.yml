@@ -66,13 +66,17 @@
           - away-notify
           - extended-join
           - multi-prefix
+          - sasl
         v3.2:
           - cap
           - account-tag
           - cap-notify
           - chghost
           - monitor
+          - metadata
           - echo-message
           - invite-notify
           - server-time
           - userhost-in-names
+          - batch
+          - sasl
