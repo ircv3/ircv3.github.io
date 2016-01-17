@@ -482,11 +482,20 @@
     - name: Sopel (ex Willie)
       #ref: https://github.com/sopel-irc/sopel/blob/v5.3.0/willie/coretasks.py#L357
       #     https://github.com/sopel-irc/sopel/blob/e5df2fa/sopel/coretasks.py#L345
+      #     https://github.com/sopel-irc/sopel/issues/971
       link: http://sopel.chat
       support:
         v3.1:
           - cap
           - multi-prefix
           - sasl
+          - account-notify
+          - away-notify
+          - extended-join
+        v3.2:
+          - cap
+          - account-tag
+          - cap-notify
+          - server-time
         SASL:
           - plain
