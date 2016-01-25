@@ -515,3 +515,25 @@
           - server-time
         SASL:
           - plain
+    - name: Moon Moon
+      # ref: https://github.com/ChickenNuggers/Moon-Moon/blob/master/plugins/data.moon
+      #      https://github.com/ChickenNuggers/Moon-Moon/blob/master/plugins/output.moon
+      #      https://github.com/ChickenNuggers/Moon-Moon/blob/master/plugins/base.moon
+      #      https://github.com/ChickenNuggers/Moon-Moon/blob/master/irc.moon
+      link: https://github.com/ChickenNuggers/Moon-Moon
+      support:
+        v3.1:
+          - cap
+          - multi-prefix
+          - account-notify
+          - away-notify
+          - extended-join
+        v3.2:
+          - cap
+          - account-tag
+          - cap-notify
+          - chghost
+          - echo-message
+          - invite-notify
+          - server-time
+          - userhost-in-names
