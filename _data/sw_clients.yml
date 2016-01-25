@@ -383,6 +383,14 @@
           - extended-join
           - sasl
         v3.2:
+          - cap
+          - account-tag
+          - batch
+          - cap-notify
+          - chghost
+          - invite-notify
+          - sasl
+          - server-time
           - userhost-in-names
         SASL:
           - plain
