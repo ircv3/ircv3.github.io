@@ -11,7 +11,7 @@
           account-notify: 3.4.0 +
           extended-join: 3.4.0 +
           away-notify: 3.4.0 +
-          tls: git
+          tls: 3.5.0 +
         v3.2:
           cap:
           monitor: 1.0 +
@@ -32,6 +32,9 @@
         v3.2:
           chghost: git
           monitor:
+      na:
+        v3.1:
+          tls: direct TLS only
     - name: IRCCloud Teams
       # maintainer: jwheare
       link: https://blog.irccloud.com/private-teams-servers/
@@ -45,7 +48,7 @@
           - userhost-in-names
       na:
         v3.1:
-          tls: secure only
+          tls: direct TLS only
     - name: InspIRCd
       # maintainer: saberuk, attila
       # ref: https://github.com/inspircd/inspircd/issues/1038
