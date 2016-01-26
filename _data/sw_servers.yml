@@ -45,9 +45,10 @@
           - userhost-in-names
       na:
         v3.1:
-          account-notify: PASS login, no logout
           sasl: PASS auth only
           tls: secure only
+        v3.2:
+          sasl: PASS auth only
     - name: InspIRCd
       # maintainer: saberuk, attila
       # ref: https://github.com/inspircd/inspircd/issues/1038
