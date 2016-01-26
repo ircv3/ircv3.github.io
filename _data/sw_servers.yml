@@ -32,9 +32,6 @@
         v3.2:
           chghost: git
           monitor:
-      na:
-        v3.1:
-          tls: direct TLS only
     - name: IRCCloud Teams
       # maintainer: jwheare
       link: https://blog.irccloud.com/private-teams-servers/
