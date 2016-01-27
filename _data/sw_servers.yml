@@ -46,6 +46,19 @@
       na:
         v3.1:
           tls: direct TLS only
+    - name: ircd-hybrid
+      link: https://github.com/ircd-hybrid/ircd-hybrid
+      support:
+        v3.1:
+          cap: 7.2.1 +
+          multi-prefix: 7.2.1 +
+          account-notify: 8.2.9 +
+          away-notify: 8.1.0beta1 +
+          extended-join: 8.2.2 +
+        v3.2:
+          chghost: 8.2.11 +
+          invite-notify: 8.2.11 +
+          userhost-in-names: 8.1.14 +
     - name: InspIRCd
       # maintainer: saberuk, attila
       # ref: https://github.com/inspircd/inspircd/issues/1038
