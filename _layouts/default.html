@@ -10,7 +10,9 @@
     <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/ircv3-style.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/font-awesome.min.css" rel="stylesheet">
-    
+
+    <script src="{{ site.baseurl }}/js/anchor.min.js"></script>
+
     <!--[if lt IE 9]>
       <script src="{{ site.baseurl }}/js/html5shiv.js"></script>
       <script src="{{ site.baseurl }}/js/respond.min.js"></script>
@@ -19,7 +21,7 @@
   <body>
     <div class="whole">
       {% include menu.html %} 
-      <div class="container">
+      <div id="content" class="container">
         {{ content }}
       </div>
     </div>
