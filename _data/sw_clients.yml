@@ -77,7 +77,10 @@
           - extended-join
           - sasl
         v3.2:
+          - cap
           - cap-notify
+          - chghost
+          - sasl
           - server-time
           - monitor
           - userhost-in-names
