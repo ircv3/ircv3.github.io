@@ -16,6 +16,7 @@
       </ul> -->
       <ul class="nav navbar-nav">
         <li{% if current[1] == 'index.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/index.html"><span class="fa fa-fw fa-home"></span> Home</a></li>
+        <li{% if current[1] == 'wg.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/wg.html"><span class="fa fa-fw fa-briefcase"></span> IRCv3 WG</a></li>
           <li{% if current[1] == 'charter.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/charter.html"><span class="fa fa-fw fa-book"></span> Charter</a></li>
           <li{% if current[1] == 'irc' %} class="active"{% endif %}><a href="{{ site.baseurl }}/irc/"><span class="fa fa-fw fa-file-text"></span> Specs</a></li>
           <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><span class="fa fa-fw fa-folder-open"></span> Docs <b class="caret"></b></a>
