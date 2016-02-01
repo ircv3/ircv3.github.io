@@ -25,8 +25,5 @@
 - name: mammon-ircd
   url: http://www.mammon.io/
 
-- name: IRCAnywhere
-  url: http://ircanywhere.com/
-
 - name: ZNC
   url: http://znc.in/
