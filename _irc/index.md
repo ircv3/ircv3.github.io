@@ -1,6 +1,7 @@
 ---
 layout: page
 title: IRCv3 Specifications
+excerpt: IRCv3 Specifications
 index: true
 ---
 
