@@ -535,6 +535,7 @@
         v3.2:
           - cap
           - account-tag
+          - batch
           - cap-notify
           - chghost
           - echo-message
