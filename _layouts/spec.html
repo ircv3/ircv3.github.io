@@ -3,7 +3,15 @@ layout: default
 ---
 <h1>{{ page.title | markdownify | replace:'<p>','' | replace:'</p>','' }}</h1>
 
-{% if page.path contains "-3.3.md" %}
+{% if page.deprecated %}
+<div class="alert alert-warning">
+    {{ page.deprecated | markdownify }}
+
+    <p>We do not recommend implementing the feature described here.</p>
+</div>
+{% endif %}
+
+{% if page.work-in-progress %}
 <div class="alert alert-warning">
     <p>This specification is a work-in-progress and may have major incompatible changes without warning.</p>
 
