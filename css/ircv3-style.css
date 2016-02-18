@@ -316,6 +316,11 @@ a:hover, a:focus {
 }
 .homepage-features {
     font-size: 1.7rem;
+    display: table;
+    margin: 0 auto;
+    padding-right: 2rem;
+    width: 97rem;
+    max-width: 100%;
 }
 #home-slider-wrapper a {
     color: #9eb;
