@@ -80,6 +80,7 @@
           chghost: git
           echo-message: git
           invite-notify: git
+          monitor: git
           sasl: git
           userhost-in-names: 1.2.0 +
     - name: mammon-ircd
