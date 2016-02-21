@@ -118,6 +118,28 @@
           tls: 2013-05-26
         v3.2:
           userhost-in-names: 2011-12-19
+    - name: txircd
+      link: https://github.com/ElementalAlchemist/txircd
+      support:
+        v3.1:
+          cap: 0.4.0 +
+          multi-prefix: 0.4.0 +
+          account-notify: 0.4.0 +
+          away-notify: 0.4.0 +
+          extended-join: 0.4.0 +
+          tls: 0.4.0 +
+        v3.2:
+          cap: 0.4.0 +
+          metadata: 0.4.0 +
+          monitor: 0.4.0 +
+          account-tag: 0.4.0 +
+          batch: 0.4.0 +
+          cap-notify: 0.4.0 +
+          chghost: 0.4.0 +
+          echo-message: 0.4.0 +
+          invite-notify: 0.4.0 +
+          server-time: 0.4.0 +
+          userhost-in-names: 0.4.0 +
     - name: UnrealIRCd
       # ref: ClientCapabilityAdd() calls in https://github.com/unrealircd/unrealircd/search?q=ClientCapabilityAdd
       #      (src/modules/m_cap.c has four matches, two not shown)
