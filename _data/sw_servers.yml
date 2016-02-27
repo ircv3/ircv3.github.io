@@ -2,7 +2,7 @@
   software:
     - name: Charybdis
       # ref: https://github.com/atheme/charybdis/blob/charybdis-3.5.0-test1/modules/m_cap.c#L73
-      link: http://www.stack.nl/~jilles/irc/#charybdis
+      link: http://www.charybdis.io/
       support:
         v3.1:
           cap:
