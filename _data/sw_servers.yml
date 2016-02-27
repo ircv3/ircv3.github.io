@@ -2,7 +2,7 @@
   software:
     - name: Charybdis
       # ref: https://github.com/atheme/charybdis/blob/charybdis-3.5.0-test1/modules/m_cap.c#L73
-      link: http://www.stack.nl/~jilles/irc/#charybdis
+      link: http://www.charybdis.io/
       support:
         v3.1:
           cap:
@@ -20,6 +20,7 @@
           cap-notify: git
           account-tag: git
           server-time: git
+          echo-message: git
     - name: Elemental IRCd
       # ref: https://github.com/Elemental-IRCd/elemental-ircd/issues/80
       #      https://github.com/Elemental-IRCd/elemental-ircd/blob/elemental-ircd-7.0-experimental/modules/m_cap.c#L70
