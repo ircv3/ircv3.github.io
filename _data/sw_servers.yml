@@ -15,9 +15,9 @@
         v3.2:
           cap: git
           monitor:
-          userhost-in-names: git
-          chghost: git
-          cap-notify: git
+          userhost-in-names: 3.5.0 +
+          chghost: 3.5.0 +
+          cap-notify: 3.5.0 +
           account-tag: git
           server-time: git
           echo-message: git
