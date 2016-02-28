@@ -185,8 +185,15 @@
       link: http://www.quassel-irc.org
       support:
         v3.1:
-          - cap
-          - sasl
+          cap:
+          sasl:
+          account-notify: git
+          away-notify: git
+          extended-join: git
+          multi-prefix: git
+        v3.2:
+          cap: git
+          userhost-in-names: git
         SASL:
           - external
           - plain
