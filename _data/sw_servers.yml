@@ -13,14 +13,15 @@
           away-notify: 3.4.0 +
           tls: 3.5.0 +
         v3.2:
-          cap:
-          monitor: 1.0 +
+          cap: git
+          monitor:
           userhost-in-names: git
           chghost: git
           cap-notify: git
           account-tag: git
           server-time: git
           echo-message: git
+          sasl: git
     - name: Elemental IRCd
       # ref: https://github.com/Elemental-IRCd/elemental-ircd/issues/80
       #      https://github.com/Elemental-IRCd/elemental-ircd/blob/elemental-ircd-7.0-experimental/modules/m_cap.c#L70
