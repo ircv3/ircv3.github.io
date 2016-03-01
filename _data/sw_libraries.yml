@@ -37,9 +37,7 @@
         v3.1:
           - cap
     - name: pydle
-      # ref: https://github.com/Shizmob/pydle/tree/v0.8.0/pydle/features/ircv3_1
-      #      https://github.com/Shizmob/pydle/tree/v0.8.0/pydle/features/ircv3_2
-      #      https://github.com/Shizmob/pydle/tree/master/pydle/features/ircv3
+      # ref: https://github.com/Shizmob/pydle/tree/v0.8.2/pydle/features/ircv3
       link: https://pypi.python.org/pypi/pydle
       support:
         v3.1:
@@ -51,11 +49,13 @@
           - sasl
           - tls
         v3.2:
-          cap: git
-          metadata: git
+          metadata: 0.8.2
           monitor: 0.8
           chghost:
           userhost-in-names:
+      partial:
+        v3.2:
+          cap: 0.8.2, except NEW/DEL
     - name: Rust irc
       # ref: https://github.com/aatxe/irc/blob/master/src/client/data/caps.rs
       link: https://github.com/aatxe/irc
