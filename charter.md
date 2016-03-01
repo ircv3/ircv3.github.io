@@ -26,10 +26,10 @@ Nominations for new members of the board will be considered once the following p
  * Approval from the existing board
  * Adherence to the [code of conduct](/conduct.html)
 
-Candidates must meet one of the following criteria:
+In general, candidates who meet any of the following criteria will be given more consideration
 
  * Developers of widely used IRC software
- * Administrators of IRC networks with at least 1,000 active peak users
+ * Administrators of widely used IRC networks
  * People who have otherwise contributed materially to the specifications
 
 We're seeking representation from as many members of the IRC community as possible. If you or your project would be a good candidate for representation, please contact the board. The current members of the board are:
