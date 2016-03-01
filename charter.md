@@ -20,14 +20,17 @@ These extensions are published on this website through backwards-compatible [spe
 
 The direction of these specifications is led by the technical board. The board consists of a broad range of IRC software and specification authors that reflect the community at large. The board will seek to make all decisions by consensus.
 
-Nominations for new members of the board will be considered according to the following criteria
+Nominations for new members of the board will be considered once the following pre-requisites are met:
 
- * Demonstrated support and adoption of the IRCv3 specifications
+ * Demonstrated support of the IRCv3 specifications
+ * Approval from the existing board
+ * Adherence to the [code of conduct](/conduct.html)
+
+Candidates must meet one of the following criteria:
+
  * Developers of widely used IRC software
  * Administrators of IRC networks with at least 1,000 active peak users
  * People who have otherwise contributed materially to the specifications
- * Approval from the existing board
- * Adherence to the [code of conduct](/conduct.html)
 
 We're seeking representation from as many members of the IRC community as possible. If you or your project would be a good candidate for representation, please contact the board. The current members of the board are:
 
