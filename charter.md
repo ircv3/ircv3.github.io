@@ -1,56 +1,116 @@
 ---
-title: IRCv3 Working Group Charter
+title: Working group charter
 layout: default
-meta-description: The IRCv3 working group is chartered to prototype, develop and test further incremental changes to the IRC client protocol.
+meta-description: The IRCv3 working group is chartered to prototype, develop and specify further extensions to the IRC client protocol.
 ---
 
-# Charter
+# Working group charter
 
 ---
 
-The IRCv3 working group is chartered to prototype, develop and test further incremental changes to
-the IRC client protocol.  It does not define any other aspect of an IRC network, such as IRC services,
+The IRCv3 working group is chartered to prototype, develop, test and specify further extensions to
+the IRC client protocol. It does not define any other aspect of an IRC network, such as IRC services,
 or the server-to-server protocol, although the changes it develops may require cooperation from vendors
 in both areas.
 
-## Participation
+These extensions are published on this website through backwards-compatible [specifications](/irc/).
 
-Interested stakeholders are encouraged to participate in the group.  We consider stakeholders to be:
 
- * Developers of IRC daemons which are actively used;
- * Developers of IRC clients with widespread usage;
- * Developers of other software relating to the IRC ecosystem with widespread usage
-   (such as IRC services, bots, bouncers, libraries);
- * Developers from IRC networks greater than 1,000 active at-peak users which have adopted
-   the IRCv3 specifications.
+## Technical board
 
-Other users may participate in the group in a semi-moderated fashion.  We encourage developers of new
-software relating to IRC to participate in the public resources.
+The direction of these specifications is led by the technical board. The board consists of a broad range of IRC software and specification authors that reflect the community at large. The board will seek to make all decisions by consensus.
 
-## Resources
+Nominations for new members of the board will be considered once the following pre-requisites are met:
 
- * The [ircv3/ircv3-specifications](https://github.com/ircv3/ircv3-specifications) Github repository and issue tracker.  The Github repository is the
-   official repository containing the latest version of the official specifications.  Changes are to
-   be submitted using a pull request.  We request that pull requests not be submitted to social
-   media aggregators, as we have no mechanism to moderate the bug tracker efficiently.
+ * Demonstrated support of the IRCv3 specifications
+ * Approval from the existing board
+ * Adherence to the [code of conduct](/conduct.html)
 
- * The [#ircv3](irc://irc.freenode.net/ircv3) channel at [irc.freenode.net](irc://irc.freenode.net/ircv3).  This is the main public space for the working group.
-   You are required to follow specific rules to participate in this IRC channel, else you may be
-   removed at any time.
+In general, candidates who meet any of the following criteria will be given more consideration
 
-## Ground Rules
+ * Developers of widely used IRC software
+ * Administrators of widely used IRC networks
+ * People who have otherwise contributed materially to the specifications
 
-To ensure smooth operations of the working group, we request that:
+We're seeking representation from as many members of the IRC community as possible. If you or your project would be a good candidate for representation, please contact the board. The current members of the board are:
 
- * Participants assume good faith from other participants.  The stakeholders have full moderation
-   privilege over the working group resources and may make moderation decisions if one or more
-   participants is unable to assume good faith.
+<table>
+    <thead>
+        <tr>
+            <th>IRC nick</th>
+            <th>Github</th>
+            <th>Project</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Attila</td>
+            <td><a href="https://github.com/attilamolnar">attilamolnar</a></td>
+            <td><a href="http://www.inspircd.org/">InspIRCd</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>dan-</td>
+            <td><a href="https://github.com/DanielOaks">DanielOaks</a></td>
+            <td><a href="https://github.com/mammon-ircd/mammon">mammon</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>DarthGandalf</td>
+            <td><a href="https://github.com/DarthGandalf">DarthGandalf</a></td>
+            <td><a href="http://wiki.znc.in/ZNC">ZNC</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>dx</td>
+            <td><a href="https://github.com/dequis">dequis</a></td>
+            <td><a href="https://www.bitlbee.org/">bitlbee</a>/<a href="https://irssi.org/">irssi</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>grawity</td>
+            <td><a href="https://github.com/grawity">grawity</a></td>
+            <td>unaffiliated</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>jwheare</td>
+            <td><a href="https://github.com/jwheare">jwheare</a></td>
+            <td><a href="https://www.irccloud.com/">IRCCloud</a></td>
+            <td>Chair</td>
+        </tr>
+        <tr>
+            <td>M2Ys4U</td>
+            <td><a href="https://github.com/M2Ys4U">M2Ys4U</a></td>
+            <td><a href="https://kiwiirc.com/">Kiwi IRC</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TingPing</td>
+            <td><a href="https://github.com/TingPing">TingPing</a></td>
+            <td><a href="https://hexchat.github.io/">HexChat</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>NoOneButMe</td>
+            <td><a href="https://github.com/zadr">zadr</a></td>
+            <td><a href="http://colloquy.info/">Colloquy</a></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
 
- * Participants do not use social media aggregators to "bomb" working group resources because they
-   do not personally agree with a change being made.
+The chair has ultimate responsibility for moving discussions forward and will make decisions in cases where consensus isn't possible, including returning proposals to the drawing board where necessary.
 
- * Participants maintain a respectful and professional atmosphere.  This means no use of coercive
-   threats to force cooperation.
+## Project resources & Contribution
 
- * Participants refrain from soapboxing on the IRC channels.  If there is an issue that needs that
-   level of discussion, a bug or pull request should be filed and discussed on the tracker.
+The main project resources are:
+
+ * The [ircv3/ircv3-specifications](https://github.com/ircv3/ircv3-specifications) Github repository and issue tracker.  This is the
+   official repository containing the latest version of the specifications.  Changes may be submitted by pull request. Suggestions may be made by opening an issue.
+
+ * The [#ircv3](ircs://irc.freenode.net:6697/#ircv3) channel at [irc.freenode.net](ircs://irc.freenode.net:6697/#ircv3).  This is the main discussion space for the working group.
+
+Contributions are welcome from anyone in the IRC community; including users, developers, operators, administrators. Feel free to start a discussion on IRC or on the issue tracker if you'd like to contribute.
+ 
+ Failure to follow our [code of conduct](/conduct.html) when participating may result in immediate removal from the project resources.
