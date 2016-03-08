@@ -118,6 +118,17 @@
           monitor: 1.2+
         SASL:
           - plain
+    - name: Irssi
+      # ref: https://github.com/irssi/irssi/blob/0.8.18/src/irc/core/irc-servers.c#L229
+      link: https://irssi.org
+      support:
+        v3.1:
+          cap: 0.8.18
+          multi-prefix: 0.8.18
+          sasl: 0.8.18
+        SASL:
+          - external
+          - plain
     - name: Konversation
       # ref: https://github.com/KDE/konversation/blob/1.6/src/irc/server.cpp#L697
       link: http://konversation.kde.org
