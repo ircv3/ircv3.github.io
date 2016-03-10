@@ -26,6 +26,10 @@ td + td, th + th {
     border-left: 1px #C0C0C0 solid;
 }
 
+.page-header {
+    margin-top: 0;
+}
+
 .irc-version {
     font-size: 74%;
     vertical-align: 2px;
@@ -172,6 +176,15 @@ a.irc-extension {
 .marketing-text {
 	text-align: center;
 }
+/* bootstrap's mobile/etc width */
+@media screen and (max-width: 991px) {
+    .marketing-text + .marketing-text {
+	margin-top: 3rem;
+    }
+}
+.marketing-text h1 {
+    margin-top: 1rem;
+}
 
 .alert {
 	font-size: inherit;
@@ -291,6 +304,41 @@ a:hover, a:focus {
     padding: 0.75rem 2rem;
 }
 
+.center-text {
+    text-align: center;
+}
+
+#home-slider-wrapper {
+    background: #145960;
+    width: 100%;
+    margin-top: 1.25rem;
+    color: white;
+}
+.homepage-features {
+    font-size: 1.7rem;
+    display: table;
+    margin: 0 auto;
+    padding-right: 2rem;
+    width: 97rem;
+    max-width: 100%;
+}
+#home-slider-wrapper a {
+    color: #9eb;
+}
+.mono {
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    font-weight: bold;
+}
+#home-slider-wrapper > div > div {
+    margin: 2.5rem 0;
+}
+#home-graph > canvas {
+    box-shadow: 0px 0px 1rem 1.5rem #F2F2F2 inset;
+}
+.row.frontpage {
+    margin: 2rem auto;
+}
+
 .spec-link {
     font-size: 3rem;
     display: block;
@@ -341,7 +389,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 3.9rem;
 }
 footer {
   position: absolute;
