@@ -40,63 +40,25 @@ We're seeking representation from as many members of the IRC community as possib
             <th>IRC nick</th>
             <th>Github</th>
             <th>Project</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
+        {% for member in site.data.tc %}
         <tr>
-            <td>Attila</td>
-            <td><a href="https://github.com/attilamolnar">attilamolnar</a></td>
-            <td><a href="http://www.inspircd.org/">InspIRCd</a></td>
-            <td></td>
+            <td>{{ member.nick }}</td>
+            <td><a href="https://github.com/{{ member.github }}">{{ member.github }}</a></td>
+            <td>
+               {% for project in member.projects %}
+                  {{ project | markdownify | replace: "<p>", "" | replace: "</p>", "" }}
+                  {% if forloop.last %}{% else %}/{% endif %}
+               {% endfor %}
+            </td>
+            <td>
+               {% if member.chair %}Chair{% endif %}
+            </td>
         </tr>
-        <tr>
-            <td>dan-</td>
-            <td><a href="https://github.com/DanielOaks">DanielOaks</a></td>
-            <td><a href="https://github.com/mammon-ircd/mammon">mammon</a></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>DarthGandalf</td>
-            <td><a href="https://github.com/DarthGandalf">DarthGandalf</a></td>
-            <td><a href="http://wiki.znc.in/ZNC">ZNC</a></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>dx</td>
-            <td><a href="https://github.com/dequis">dequis</a></td>
-            <td><a href="https://www.bitlbee.org/">bitlbee</a>/<a href="https://irssi.org/">irssi</a></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>grawity</td>
-            <td><a href="https://github.com/grawity">grawity</a></td>
-            <td>unaffiliated</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>jwheare</td>
-            <td><a href="https://github.com/jwheare">jwheare</a></td>
-            <td><a href="https://www.irccloud.com/">IRCCloud</a></td>
-            <td>Chair</td>
-        </tr>
-        <tr>
-            <td>M2Ys4U</td>
-            <td><a href="https://github.com/M2Ys4U">M2Ys4U</a></td>
-            <td><a href="https://kiwiirc.com/">Kiwi IRC</a></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>TingPing</td>
-            <td><a href="https://github.com/TingPing">TingPing</a></td>
-            <td><a href="https://hexchat.github.io/">HexChat</a></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>NoOneButMe</td>
-            <td><a href="https://github.com/zadr">zadr</a></td>
-            <td><a href="http://colloquy.info/">Colloquy</a></td>
-            <td></td>
-        </tr>
+        {% endfor %}
     </tbody>
 </table>
 

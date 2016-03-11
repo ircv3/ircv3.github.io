@@ -1,0 +1,46 @@
+- nick: Attilla
+  github: attilamolnar
+  projects:
+    - "[InspIRCd](http://www.inspircd.org/)"
+
+- nick: dan-
+  github: DanielOaks
+  projects:
+    - "[mammon](https://github.com/mammon-ircd/mammon)"
+
+- nick: DarthGandalf
+  github: DarthGandalf
+  projects:
+    - "[ZNC](http://wiki.znc.in/ZNC)"
+
+- nick: dx
+  github: dequis
+  projects:
+    - "[bitlbee](https://www.bitlbee.org/)"
+    - "[irssi](https://irssi.org/)"
+
+- nick: grawity
+  github: grawity
+  projects:
+    - "Unaffiliated"
+
+- nick: jwheare
+  github: jwheare
+  projects:
+    - "[IRCCloud](https://www.irccloud.com/)"
+  chair: true
+
+- nick: M2Ys4U
+  github: M2Ys4U
+  projects:
+    - "[Kiwi IRC](https://kiwiirc.com/)"
+
+- nick: TingPing
+  github: TingPing
+  projects:
+    - "[HexChat](https://hexchat.github.io/)"
+
+- nick: NoOneButMe
+  github: zadr
+  projects:
+    - "[Colloquy](http://colloquy.info/)"

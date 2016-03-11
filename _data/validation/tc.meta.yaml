@@ -1,0 +1,12 @@
+root:
+  type: listofdicts
+  kids:
+    nick:
+      type: string
+    github:
+      type: string
+    projects:
+      type: listofstrings
+    chair:
+      type: boolean
+      required: false
