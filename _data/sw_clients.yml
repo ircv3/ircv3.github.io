@@ -145,11 +145,11 @@
       support:
         v3.1:
           cap: 4.2.0
-          multi-prefix: git
+          multi-prefix: Git
           sasl: 4.2.0
           tls: 4.2.0
         v3.2:
-          server-time: git
+          server-time: Git
         SASL:
           - dh-blowfish
           - plain
@@ -198,13 +198,13 @@
         v3.1:
           cap:
           sasl:
-          account-notify: git
-          away-notify: git
-          extended-join: git
-          multi-prefix: git
+          account-notify: Git
+          away-notify: Git
+          extended-join: Git
+          multi-prefix: Git
         v3.2:
-          cap: git
-          userhost-in-names: git
+          cap: Git
+          userhost-in-names: Git
         SASL:
           - external
           - plain

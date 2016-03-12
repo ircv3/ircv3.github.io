@@ -13,16 +13,16 @@
           away-notify: 3.4.0 +
           tls: 3.5.0 +
         v3.2:
-          cap: git
+          cap: Git
           monitor:
           userhost-in-names: 3.5.0 +
           chghost: 3.5.0 +
           cap-notify: 3.5.0 +
-          account-tag: git
-          server-time: git
-          echo-message: git
-          sasl: git
-          invite-notify: git
+          account-tag: Git
+          server-time: Git
+          echo-message: Git
+          sasl: Git
+          invite-notify: Git
     - name: Elemental IRCd
       # ref: https://github.com/Elemental-IRCd/elemental-ircd/issues/80
       #      https://github.com/Elemental-IRCd/elemental-ircd/blob/elemental-ircd-7.0-experimental/modules/m_cap.c#L70
@@ -36,7 +36,7 @@
           extended-join: 6.5 +
           away-notify: 6.5 +
         v3.2:
-          chghost: git
+          chghost: Git
           monitor:
     - name: IRCCloud Teams
       # maintainer: jwheare
@@ -81,13 +81,13 @@
           extended-join: 2.0.7 +
           tls: 1.2.0 +
         v3.2:
-          cap: git
-          cap-notify: git
-          chghost: git
-          echo-message: git
-          invite-notify: git
-          monitor: git
-          sasl: git
+          cap: Git
+          cap-notify: Git
+          chghost: Git
+          echo-message: Git
+          invite-notify: Git
+          monitor: Git
+          sasl: Git
           userhost-in-names: 1.2.0 +
     - name: mammon-ircd
       # ref: Capability() calls in https://github.com/mammon-ircd/mammon/search?q=Capability
