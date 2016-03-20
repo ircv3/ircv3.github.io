@@ -160,3 +160,17 @@
           tls: 3.2.10 +
         v3.2:
           userhost-in-names: 3.2.9 +
+    - name: BitlBee
+      # ref: https://github.com/bitlbee/bitlbee/blob/3.4.2/irc_cap.c#L39
+      link: https://bitlbee.org/
+      support:
+        v3.1:
+          cap: 3.4.2
+          multi-prefix: 3.4.2
+          sasl: 3.4.2
+          extended-join: 3.4.2
+          away-notify: 3.4.2
+        v3.2:
+          cap: 3.4.2
+          sasl: 3.4.2
+          userhost-in-names: 3.4.2
