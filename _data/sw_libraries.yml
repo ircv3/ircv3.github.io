@@ -80,3 +80,11 @@
           - userhost-in-names
           - batch
           - sasl
+    - name: BlueIRC
+      # ref: https://github.com/MicroDroid/blueirc/blob/development/src/tk/microdroid/blueirc/Handler.java#L59
+      link: https://github.com/MicroDroid/blueirc
+      support:
+        v3.1:
+          - cap
+          - multi-prefix
+          - sasl
