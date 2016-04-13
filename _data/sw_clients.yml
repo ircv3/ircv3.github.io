@@ -148,8 +148,13 @@
           multi-prefix: Git
           sasl: 4.2.0
           tls: 4.2.0
+          account-notify: Git
+          extended-join: Git
+          away-notify: Git
         v3.2:
           server-time: Git
+          userhost-in-names: Git
+          chghost: Git
         SASL:
           - dh-blowfish
           - plain
