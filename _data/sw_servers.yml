@@ -23,6 +23,30 @@
           echo-message: Git
           sasl: Git
           invite-notify: Git
+    - name: ChatIRCd
+      # dev: Ben / MrC
+      # ref: https://bitbucket.org/chatlounge/chatircd/commits/all
+      link: http://www.chatlounge.net/software/
+      support:
+        v3.1:
+          cap:
+          multi-prefix: 1.0.x +
+          sasl: 1.0.x +
+          account-notify: 1.0.x +
+          extended-join: 1.0.x +
+          away-notify: 1.0.x +
+          tls: 1.0.x +
+        v3.2:
+          cap: No
+          monitor:
+          userhost-in-names: 1.1.x +
+          chghost: 1.1.x +
+          cap-notify: 1.1.x +
+          account-tag: No
+          server-time: No
+          echo-message: No
+          sasl: 1.1.x +
+          invite-notify: 1.1.x +
     - name: Elemental IRCd
       # ref: https://github.com/Elemental-IRCd/elemental-ircd/issues/80
       #      https://github.com/Elemental-IRCd/elemental-ircd/blob/elemental-ircd-7.0-experimental/modules/m_cap.c#L70
