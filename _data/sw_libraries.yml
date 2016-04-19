@@ -88,3 +88,25 @@
           - cap
           - multi-prefix
           - sasl
+    - name: Kitteh IRC Client Library
+      # ref: http://kicl.kitteh.org/en/stable/ircv3/
+      link: https://github.com/KittehOrg/KittehIRCClientLib
+      support:
+        v3.1:
+          - cap
+          - sasl
+          - multi-prefix
+          - account-notify
+          - away-notify
+          - extended-join
+        v3.2:
+          - cap
+          - monitor
+          - account-tag
+          - cap-notify
+          - chghost
+          - echo-message
+          - invite-notify
+          - sasl
+          - server-time
+          - userhost-in-names
