@@ -1,5 +1,13 @@
 - name: Libraries
   software:
+    - name: BlueIRC
+      # ref: https://github.com/MicroDroid/blueirc/blob/development/src/tk/microdroid/blueirc/Handler.java#L59
+      link: https://github.com/MicroDroid/blueirc
+      support:
+        v3.1:
+          - cap
+          - multi-prefix
+          - sasl
     - name: cinch
       # ref: https://github.com/cinchrb/cinch/blob/v2.3.1/lib/cinch/irc.rb#L115
       link: https://github.com/cinchrb/cinch
@@ -30,6 +38,28 @@
           userhost-in-names: 3.0+
           account-tag: 3.4+
           chghost: 3.4+
+    - name: Kitteh IRC Client Library
+      # ref: http://kicl.kitteh.org/en/stable/ircv3/
+      link: https://github.com/KittehOrg/KittehIRCClientLib
+      support:
+        v3.1:
+          - cap
+          - sasl
+          - multi-prefix
+          - account-notify
+          - away-notify
+          - extended-join
+        v3.2:
+          - cap
+          - monitor
+          - account-tag
+          - cap-notify
+          - chghost
+          - echo-message
+          - invite-notify
+          - sasl
+          - server-time
+          - userhost-in-names
     - name: Net::Async::IRC
       # ref: https://metacpan.org/source/PEVANS/Net-Async-IRC-0.10/lib/Net/Async/IRC.pm#L339
       link: https://metacpan.org/pod/Net::Async::IRC
@@ -79,12 +109,4 @@
           - server-time
           - userhost-in-names
           - batch
-          - sasl
-    - name: BlueIRC
-      # ref: https://github.com/MicroDroid/blueirc/blob/development/src/tk/microdroid/blueirc/Handler.java#L59
-      link: https://github.com/MicroDroid/blueirc
-      support:
-        v3.1:
-          - cap
-          - multi-prefix
           - sasl
