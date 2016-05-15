@@ -110,3 +110,13 @@
           - userhost-in-names
           - batch
           - sasl
+    - name: Warren
+      # ref: https://github.com/CarrotCodes/Warren/blob/develop/src/main/kotlin/engineer/carrot/warren/warren/WarrenRunner.kt#L13
+      link: https://github.com/CarrotCodes/Warren
+      support:
+        v3.1:
+          - cap
+          - multi-prefix
+          - sasl
+        v3.2:
+          - cap
