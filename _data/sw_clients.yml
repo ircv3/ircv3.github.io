@@ -306,7 +306,7 @@
           - server-time
         SASL:
           - plain
-      - name: Lounge
+    - name: Lounge
       # ref: https://github.com/thelounge/lounge/issues/312
       link: https://github.com/thelounge/lounge/
       support:
@@ -316,7 +316,6 @@
         v3.2:
           - echo-message
           - server-time
-
     - name: Mibbit
       # ref: http://wiki.mibbit.com/index.php/SASL
       #      does not send CAP LS when connecting to a server
