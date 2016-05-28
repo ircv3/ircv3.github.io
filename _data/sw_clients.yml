@@ -306,7 +306,7 @@
           - server-time
         SASL:
           - plain
-    - name: Lounge
+    - name: The Lounge
       # ref: https://github.com/thelounge/lounge/issues/312
       link: https://github.com/thelounge/lounge/
       support:
