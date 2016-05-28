@@ -308,7 +308,7 @@
           - plain
     - name: The Lounge
       # ref: https://github.com/thelounge/lounge/issues/312
-      link: https://github.com/thelounge/lounge/
+      link: https://thelounge.github.io/
       support:
         v3.1:
           - cap
