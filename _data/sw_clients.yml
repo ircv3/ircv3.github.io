@@ -209,6 +209,9 @@
           multi-prefix: Git
         v3.2:
           cap: Git
+          cap-notify: Git
+          chghost: Git
+          sasl: Git
           userhost-in-names: Git
         SASL:
           - external
