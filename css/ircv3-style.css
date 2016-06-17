@@ -319,8 +319,7 @@ a:hover, a:focus {
     display: table;
     margin: 0 auto;
     padding-right: 2rem;
-    width: 97rem;
-    max-width: 100%;
+    max-width: 97rem;
 }
 #home-slider-wrapper a {
     color: #9eb;
