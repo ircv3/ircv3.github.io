@@ -8,6 +8,8 @@
           - cap
           - multi-prefix
           - sasl
+        SASL:
+          - plain
     - name: cinch
       # ref: https://github.com/cinchrb/cinch/blob/v2.3.1/lib/cinch/irc.rb#L115
       link: https://github.com/cinchrb/cinch
@@ -17,6 +19,8 @@
           - away-notify
           - multi-prefix
           - sasl
+        SASL:
+          - plain
     - name: Communi
       # ref: http://communi.github.io/doc/3.4/ircv3.html
       link: https://communi.github.io
@@ -38,6 +42,8 @@
           userhost-in-names: 3.0+
           account-tag: 3.4+
           chghost: 3.4+
+        SASL:
+          - plain
     - name: Kitteh IRC Client Library
       # ref: http://kicl.kitteh.org/en/stable/ircv3/
       link: https://github.com/KittehOrg/KittehIRCClientLib
@@ -60,6 +66,9 @@
           - sasl
           - server-time
           - userhost-in-names
+        SASL:
+          - external
+          - plain
     - name: Net::Async::IRC
       # ref: https://metacpan.org/source/PEVANS/Net-Async-IRC-0.10/lib/Net/Async/IRC.pm#L339
       link: https://metacpan.org/pod/Net::Async::IRC
@@ -83,6 +92,8 @@
           monitor: 0.8
           chghost:
           userhost-in-names:
+        SASL:
+          - plain
       partial:
         v3.2:
           cap: 0.8.2, except NEW/DEL
@@ -110,6 +121,8 @@
           - userhost-in-names
           - batch
           - sasl
+        SASL:
+          - plain
     - name: Warren
       # ref: https://github.com/CarrotCodes/Warren/blob/develop/src/main/kotlin/engineer/carrot/warren/warren/WarrenRunner.kt#L13
       link: https://github.com/CarrotCodes/Warren
@@ -120,3 +133,5 @@
           - sasl
         v3.2:
           - cap
+        SASL:
+          - plain

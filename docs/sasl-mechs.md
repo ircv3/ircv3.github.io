@@ -18,6 +18,13 @@ IAL primarily uses the same mechanisms as SASL in other protocols. Most commonly
 {% endfor %}
 {% endfor %}
 
+{% for type in site.data.sw_libraries %}
+{% assign support_name = type.name %}
+{% for support in site.data.doc_sasl %}
+{% include support_list.html %}
+{% endfor %}
+{% endfor %}
+
 ### Services Support
 
 {% for type in site.data.sw_services %}
