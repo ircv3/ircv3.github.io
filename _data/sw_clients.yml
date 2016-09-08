@@ -51,8 +51,6 @@
           - batch
           - server-time
           - userhost-in-names
-        v3.3:
-          - intents
         SASL:
           - plain
     - name: Conspire
@@ -393,8 +391,6 @@
           - batch
           - server-time
           - userhost-in-names
-        v3.3:
-          - intents
         SASL:
           - plain
     - name: IRC7
