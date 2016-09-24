@@ -215,7 +215,8 @@
           - external
           - plain
     - name: Textual
-      # ref: https://github.com/Codeux-Software/Textual/blob/v5.2.5/Classes/IRC/IRCClient.m#L5895
+      # ref: https://github.com/Codeux-Software/Textual/blob/v6.0.1/Classes/IRC/IRCClient.m#L7102-L7127
+      # ref: https://github.com/Codeux-Software/Textual/blob/v6.0.1/Classes/IRC/IRCClient.m#L4590
       link: http://www.codeux.com/textual
       support:
         v3.1:
@@ -224,10 +225,13 @@
           - multi-prefix
           - sasl
         v3.2:
+          cap:
+          monitor: 6.0.0
+          echo-message: 6.0.0
           sasl:
           userhost-in-names:
           server-time:
-          batch: 5.2.2
+          batch:
         SASL:
           - external
           - plain
