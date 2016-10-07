@@ -72,6 +72,10 @@
           - extended-join
           - multi-prefix
         v3.2:
+          - account-tag
+          - cap
+          - cap-notify
+          - message-tags
           - userhost-in-names
       na:
         v3.1:

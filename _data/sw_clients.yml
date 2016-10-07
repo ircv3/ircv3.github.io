@@ -269,19 +269,20 @@
       link: https://www.irccloud.com
       support:
         v3.1:
-          - cap
-          - multi-prefix
           - account-notify
           - away-notify
+          - cap
           - extended-join
+          - multi-prefix
           - sasl
         v3.2:
-          - cap
           - account-tag
           - batch
+          - cap
           - cap-notify
           - chghost
           - invite-notify
+          - message-tags
           - sasl
           - server-time
           - userhost-in-names
@@ -416,19 +417,20 @@
         - ios
       support:
         v3.1:
-          - cap
-          - multi-prefix
           - account-notify
           - away-notify
+          - cap
           - extended-join
+          - multi-prefix
           - sasl
         v3.2:
-          - cap
           - account-tag
           - batch
+          - cap
           - cap-notify
           - chghost
           - invite-notify
+          - message-tags
           - sasl
           - server-time
           - userhost-in-names
