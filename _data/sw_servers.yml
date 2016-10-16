@@ -152,6 +152,25 @@
           tls: 2013-05-26
         v3.2:
           userhost-in-names: 2011-12-19
+    - name: Oragono
+      # ref: http://oragono.io/specs.html
+      link: http://oragono.io/
+      support:
+        v3.1:
+          cap: 0.1.0 +
+          account-notify: 0.2.0 +
+          away-notify: 0.1.0 +
+          multi-prefix: 0.1.0 +
+          sasl: 0.1.0 +
+          extended-join: 0.1.0 +
+        v3.2:
+          cap: 0.2.0 +
+          account-tag: 0.1.0 +
+          invite-notify: 0.2.0 +
+          monitor: 0.2.0 +
+          sasl: 0.2.0 +
+          server-time: 0.2.0 +
+          userhost-in-names: 0.1.0 +
     - name: txircd
       link: https://github.com/ElementalAlchemist/txircd
       support:
