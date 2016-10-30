@@ -11,7 +11,7 @@
           account-notify:
           away-notify:
           extended-join:
-          tls: 1.9.9
+          starttls: 1.9.9
         v3.2:
           server-time: 1.9.7
           userhost-in-names:
@@ -37,7 +37,7 @@
           - account-notify
           - sasl
           - away-notify
-          - tls
+          - starttls
           - extended-join
         v3.2:
           - cap
@@ -145,7 +145,7 @@
           cap: 4.2.0
           multi-prefix: Git
           sasl: 4.2.0
-          tls: 4.2.0
+          starttls: 4.2.0
           account-notify: Git
           extended-join: Git
           away-notify: Git
@@ -176,7 +176,7 @@
         v3.1:
           - cap
           - multi-prefix
-          - tls
+          - starttls
         v3.2:
           - server-time
           - monitor
@@ -382,7 +382,7 @@
           - account-notify
           - sasl
           - away-notify
-          - tls
+          - starttls
           - extended-join
         v3.2:
           - cap
@@ -457,7 +457,7 @@
           - cap
           - multi-prefix
           - sasl
-          - tls
+          - starttls
         v3.2:
           - batch
           - server-time
@@ -520,7 +520,7 @@
           - away-notify
           - extended-join
           - sasl
-          - tls
+          - starttls
         v3.2:
           - cap
           - metadata

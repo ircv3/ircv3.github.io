@@ -86,7 +86,7 @@
           - extended-join
           - multi-prefix
           - sasl
-          - tls
+          - starttls
         v3.2:
           metadata: 0.8.2
           monitor: 0.8
