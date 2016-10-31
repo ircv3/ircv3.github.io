@@ -28,9 +28,9 @@ v3.1:
       name: extended-join
       description: extended-join Extension
       link: http://ircv3.net/specs/extensions/extended-join-3.1.html
-    tls:
-      name: tls
-      description: tls Extension
+    starttls:
+      name: starttls
+      description: tls Extension (STARTTLS)
       link: http://ircv3.net/specs/extensions/tls-3.1.html
 
 v3.2:
