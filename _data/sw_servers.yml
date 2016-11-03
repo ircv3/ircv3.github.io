@@ -167,6 +167,7 @@
           cap: 0.2.0 +
           account-tag: 0.1.0 +
           cap-notify: 0.3.0 +
+          chghost: 0.4.0 +
           echo-message: 0.3.0 +
           invite-notify: 0.2.0 +
           monitor: 0.2.0 +
