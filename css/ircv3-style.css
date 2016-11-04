@@ -167,6 +167,18 @@ a.irc-extension {
   display: block;
   margin-left: 1.5rem;
 }
+.sw-table .ircd-ver {
+  display: block;
+  color: #6b6b6b;
+  font-size: 1.2rem;
+}
+.sw-table .net-address {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.bold {
+  font-weight: bold;
+}
 
 .navbar, .navbar-inverse .dropdown-menu {
 	background-color: #145960;

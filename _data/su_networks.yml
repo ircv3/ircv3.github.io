@@ -1,0 +1,101 @@
+- name: Testnets
+  note: >
+    These networks are intended to test new IRCds and can also be used to test new client implementations of IRCv3 specifications.
+  software:
+    # - name: Charybdis Testnet
+    #   ircd-ver: charybdis-4-rc3
+    #   net-address:
+    #     link: ircs://irc.charybdis.io:6697/
+    #     display: irc.charybdis.io
+    #   link: http://www.charybdis.io/
+    #   support:
+    #     v3.1:
+    #       account-notify:
+    #       away-notify:
+    #       cap:
+    #       extended-join:
+    #       multi-prefix:
+    #       sasl:
+    #       starttls:
+    #     v3.2:
+    #       account-tag:
+    #       cap-notify:
+    #       cap:
+    #       chghost:
+    #       echo-message:
+    #       invite-notify:
+    #       monitor:
+    #       sasl:
+    #       server-time:
+    #       userhost-in-names:
+    - name: InspIRCd Testnet
+      ircd-ver: InspIRCd-3.0
+      net-address:
+        link:  ircs://testnet.inspircd.org:6697/
+        display: testnet.inspircd.org
+      link: http://www.inspircd.org/
+      support:
+        v3.1:
+          account-notify:
+          away-notify:
+          cap:
+          extended-join:
+          multi-prefix:
+          sasl:
+          starttls:
+        v3.2:
+          account-tag:
+          cap-notify:
+          cap:
+          chghost:
+          echo-message:
+          invite-notify:
+          monitor:
+          sasl:
+          server-time:
+          userhost-in-names:
+
+- name: Networks
+  software:
+    - name: Chatspike
+      ircd-ver: InspIRCd-2.0
+      net-address:
+        link:  ircs://irc.chatspike.net:6697/
+        display: irc.chatspike.net
+      link: https://www.chatspike.net/
+      support:
+        v3.1:
+          cap:
+          multi-prefix:
+          sasl:
+          starttls:
+          userhost-in-names:
+    - name: Freenode
+      ircd-ver: ircd-seven-1.1.4
+      net-address:
+        link: ircs://irc.freenode.net:6697/
+        display: irc.freenode.net
+      link: https://freenode.net/
+      support:
+        v3.1:
+          account-notify:
+          cap:
+          extended-join:
+          multi-prefix:
+          sasl:
+    - name: Rizon
+      ircd-ver: plexus-4
+      net-address:
+        link:  ircs://irc.rizon.net:6697/
+        display: irc.rizon.net
+      link: https://rizon.net/
+      support:
+        v3.1:
+          away-notify:
+          cap:
+          multi-prefix:
+          userhost-in-names:
+        v3.2:
+          chghost:
+          invite-notify:
+          userhost-in-names:

@@ -30,7 +30,9 @@
         {% for sw in type.software %}
         <tr>
             <td>
-                {% if sw.link %}<a href="{{ sw.link }}">{{ sw.name }}</a>{% else %}{{ sw.name }}{% endif %}
+                {% if sw.link %}<a{% if sw.ircd-ver || sw.net-address %} class="bold"{% endif %} href="{{ sw.link }}">{{ sw.name }}</a>{% else %}{{ sw.name }}{% endif %}
+                {% if sw.ircd-ver %}<span class="ircd-ver">{{ sw.ircd-ver }}</span>{% endif %}
+                {% if sw.net-address %}<a class="net-address" href="{{ sw.net-address.link }}">{{ sw.net-address.display }}</a>{% endif %}
                 {% if sw.dead %}<span class="dead-software">dead</span>{% endif %}
                 {% if sw.os %}
                     <div class="os-support">

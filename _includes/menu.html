@@ -25,8 +25,9 @@
               <li><a href="{{ site.baseurl }}/docs/batch-types.html"><span class="fa fa-fw fa-group"></span> Batch Types</a></li>
             </ul>
           </li>
-          <li{% if current[0] == 'software' %} class="active"{% endif %}><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><span class="fa fa-fw fa-folder-open"></span> Software <b class="caret"></b></a>
+          <li{% if current[0] == 'software' %} class="active"{% elsif current[0] == 'support' %} class="active"{% endif %}><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><span class="fa fa-fw fa-folder-open"></span> Support <b class="caret"></b></a>
             <ul class="dropdown-menu">
+              <li><a href="{{ site.baseurl }}/support/networks.html"><span class="fa fa-fw fa-sitemap"></span> Networks</a></li>
               <li><a href="{{ site.baseurl }}/software/clients.html"><span class="fa fa-fw fa-desktop"></span> Clients</a></li>
               <li><a href="{{ site.baseurl }}/software/servers.html"><span class="fa fa-fw fa-server"></span> Servers</a></li>
               <li><a href="{{ site.baseurl }}/software/libraries.html"><span class="fa fa-fw fa-code"></span> Libraries</a></li>

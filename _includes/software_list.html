@@ -1,5 +1,7 @@
 ### {{ type.name }} <a name="{{ type.name | slugify }}" ></a>
 
+{% if type.note %}{{ type.note | markdownify }}{% endif %}
+
 {% for support in site.data.irc_versions %}
 {% include support_list.html %}
 {% endfor %}
