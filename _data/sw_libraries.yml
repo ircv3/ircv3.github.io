@@ -138,3 +138,14 @@
           - cap
         SASL:
           - plain
+    - name: zIRC
+      # ref: https://github.com/itslukej/zirc/blob/master/zirc/caps.py
+      #      https://github.com/itslukej/zirc/blob/master/zirc/ext/sasl.py
+      #      https://github.com/itslukej/zirc/issues/9
+      link: https://github.com/itslukej/zirc
+      support:
+        v3.1:
+          - cap
+          - sasl
+        SASL:
+          - plain
