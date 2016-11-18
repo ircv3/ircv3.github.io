@@ -50,6 +50,7 @@ v3.2:
       description: Metadata
       link: http://ircv3.net/specs/core/metadata-3.2.html
       required: true
+      deprecated: true
     monitor:
       name: Monitor
       description: Monitor
