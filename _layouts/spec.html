@@ -5,9 +5,9 @@ layout: default
 
 {% if page.deprecated %}
 <div class="alert alert-warning">
-    {{ page.deprecated | markdownify }}
+    {% if page.deprecated == true %}{% else %}{{ page.deprecated | markdownify }}{% endif %}
 
-    <p>We do not recommend implementing the feature described here.</p>
+    <p>This specification has been deprecated. We do not recommend implementing this specification or the features described here.</p>
 </div>
 {% endif %}
 
