@@ -92,3 +92,21 @@ v3.2:
       name: userhost-in-names
       description: userhost-in-names Extension
       link: http://ircv3.net/specs/extensions/userhost-in-names-3.2.html
+
+v3.3:
+  name: IRCv3.3 Draft
+  note: >
+    **These specifications are drafts and are NOT completed IRCv3 specs.**
+    
+    These caps are generally implemented with the `draft/` prefix until they are made into released IRCv3 specifications.
+  specs:
+    message-tags:
+      name: Message Tags
+      description: Message Tags DRAFT.
+      link: http://ircv3.net/specs/core/message-tags-3.3.html
+      required: true
+    sts:
+      name: STS
+      description: Strict Transport Security DRAFT.
+      link: http://ircv3.net/specs/core/sts-3.3.html
+      required: true

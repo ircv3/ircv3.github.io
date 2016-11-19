@@ -13,6 +13,8 @@
 #### {% if support_name %}{{ support_name }}{% else %}{{ support[1].name }} Support{% endif %}
 {% endif %}
 
+{% if support[1].note %}{{ support[1].note | markdownify }}{% endif %}
+
 <div class="sw-table"><table>
     <colgroup>
         <col class="name" />
