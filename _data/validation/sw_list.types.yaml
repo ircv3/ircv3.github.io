@@ -3,6 +3,9 @@ software:
   kids:
     name:
       type: string
+    note:
+      type: string
+      required: false
     software:
       type: listofdicts
       kids:
@@ -10,6 +13,17 @@ software:
           type: string
         link:
           type: string
+        ircd-ver:
+          type: string
+          required: false
+        net-address:
+          type: mapofstrings
+          required: false
+          kids:
+            link:
+              type: string
+            display:
+              type: string
         os:
           type: listofstrings
           required: false

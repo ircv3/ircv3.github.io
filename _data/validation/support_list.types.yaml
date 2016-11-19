@@ -3,6 +3,9 @@ support:
   kids:
     name:
       type: string
+    note:
+      type: string
+      required: false
     specs:
       type: mapofdicts
       kids:
@@ -12,6 +15,9 @@ support:
           type: string
         link:
           type: string
+        deprecated:
+          type: boolean
+          required: false
         required:
           type: boolean
           required: false
