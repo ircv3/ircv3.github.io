@@ -197,6 +197,12 @@ a.irc-extension {
 .marketing-text h1 {
     margin-top: 1rem;
 }
+h1:not(:first-of-type) {
+    margin-top: 3rem;
+}
+h2 {
+    margin-top: 3rem;
+}
 
 .alert {
 	font-size: inherit;
