@@ -44,7 +44,9 @@ values, improving the implementation of features like SASL.
 The [`cap-notify` spec](http://ircv3.net/specs/extensions/cap-notify-3.2.html)
 allows clients to be sent notifications when caps are added to or removed from
 the server. This is useful in cases like SASL when the authentication layer
-disconnects (and thus, SASL authentication is no longer possible).
+disconnects (and thus, SASL authentication is no longer possible). As a note,
+this extension is **automatically enabled** if clients request v3.2 capability
+negotiation.
 
 
 ## [Message Tags](http://ircv3.net/specs/core/message-tags-3.2.html)
