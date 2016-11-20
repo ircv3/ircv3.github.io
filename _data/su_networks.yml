@@ -78,8 +78,8 @@
     - name: freenode
       ircd-ver: ircd-seven-1.1.4
       net-address:
-        link: ircs://irc.freenode.net:6697/
-        display: irc.freenode.net
+        link: ircs://chat.freenode.net:6697/
+        display: chat.freenode.net
       link: https://freenode.net/
       support:
         v3.1:
