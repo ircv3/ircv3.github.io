@@ -32,3 +32,5 @@ In terms of a timeline, work happens whenever someone writes something up or pos
 The RFCs are old and don't properly represent how the IRC client or server protocols have grown over time. The best place to look for how real-world IRC software works is that software itself.
 
 Various people are working on updated IRC core protocol specifications, but there aren't any we can recommend at this time. If you have trouble understanding / implementing a specific piece of the IRC client protocol, feel free to [have a chat to us](/contact.html). We can try to work it out and/or point you in the right direction.
+
+{% include anchors.html %}
