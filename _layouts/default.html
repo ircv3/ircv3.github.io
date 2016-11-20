@@ -28,7 +28,11 @@
     </div>
     <footer>
       <div class="container">
-        <p>&copy; <a href="{{ site.baseurl }}/" style="color:black;">IRCv3 Working Group</a> {{ site.time | date: "%Y" }}</p>
+        <p>
+          <span>&copy; <a href="{{ site.baseurl }}/" style="color:black;">IRCv3 Working Group</a> {{ site.time | date: "%Y" }}</span>
+          <span style="margin: 0 1rem;">&middot;</span>
+          <a style="padding: 0.2rem 0.6rem; border-radius: 0.4rem; background: #F2F2F2; color: #cc6f0f" href="/feed.xml"><i class="fa fa-rss-square"></i> IRCv3 WG Updates</a>
+        </p>
       </div>
     </footer>
     <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
