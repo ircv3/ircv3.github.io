@@ -275,3 +275,6 @@ and excessive notifications, which made it impossible for servers in widespread
 use to implement. A new Metadata specification is being written to address
 these issues and overhaul the notification system, so we do not recommend
 implementing this spec.
+
+
+{% include anchors.html %}
