@@ -75,6 +75,24 @@
     #       sasl:
     #       starttls:
     #       userhost-in-names:
+    #
+    - name: EsperNet
+      ircd-ver: charybdis-3.5.0-dev
+      net-address: 
+        link: ircs://irc.esper.net:6697/
+        display: irc.esper.net
+      link: https://esper.net
+      support:
+        v3.1:
+          account-notify:
+          away-notify:
+          cap:
+          extended-join:
+          multi-prefix:
+          sasl:
+          starttls:
+        v3.2:
+          monitor:
     - name: freenode
       ircd-ver: ircd-seven-1.1.4
       net-address:
