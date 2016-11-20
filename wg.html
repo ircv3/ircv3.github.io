@@ -33,3 +33,32 @@ meta-description: Welcome to the IRCv3 Working Group. We're a group of IRC clien
           <a class="btn btn-lg btn-primary" href="https://github.com/ircv3">View</a>
         </div>
       </div>
+
+</div>
+
+<div id="home-slider-wrapper"><div class="container">
+
+      <h2>IRCv3 WG Updates <a style="padding: 0.2rem 0.6rem; border-radius: 0.4rem; background: #F2F2F2; margin-left: 1rem; font-size: 1.85rem; color: #cc6f0f" href="/feed.xml"><i class="fa fa-rss-square"></i> RSS</a></h2>
+
+      <p style="margin-bottom: 2rem">Below is a rough log of what the IRCv3 working group's been up to including recent changes to specifications and new proposals:</p>
+
+</div></div>
+
+<div class="container">
+
+      <div class="post">
+          <h3><a href="https://github.com/ircv3/ircv3-specifications/milestone/4">Roadmap</a></h3>
+          <div class="post-content">
+              <p>Our roadmap <a href="https://github.com/ircv3/ircv3-specifications/milestone/4"><sup>[link]</sup></a> always contains info on our direction moving forward, the sort of features we have planned and our priorities.</p>
+          </div>
+      </div>
+
+      {% for post in site.posts limit:10 %}
+      <div class="post">
+          <h3><a href="{{ post.url }}">{{ post.title | xml_escape }}</a> <span class="meta">{{ post.date | date_to_string }}</span></h3>
+          <div class="post-content">
+              {{ post.content }}
+          </div>
+      </div>
+      {% endfor %}
+
