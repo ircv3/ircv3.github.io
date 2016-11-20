@@ -88,6 +88,23 @@
           extended-join:
           multi-prefix:
           sasl:
+    - name: IRCHighWay
+      ircd-ver: InspIRCd-2.0
+      net-address:
+        link: ircs://irc.irchighway.net:6697/
+        display: irc.irchighway.net
+      link: https://irchighway.net/
+      support:
+        v3.1:
+          away-notify:
+          account-notify:
+          cap:
+          extended-join:
+          multi-prefix:
+          sasl:
+          starttls:
+        v3.2:
+          userhost-in-names:
     - name: Rizon
       ircd-ver: plexus-4
       net-address:
