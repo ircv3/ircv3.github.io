@@ -45,6 +45,7 @@
           - starttls
         v3.2:
           - account-tag
+          - batch
           - cap-notify
           - cap
           - chghost
