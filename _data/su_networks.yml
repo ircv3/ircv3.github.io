@@ -60,7 +60,7 @@
 
 - name: Networks
   note: >
-    These are real-world networks that have agreed to be listed on this page and support some level of IRCv3 functionality. This is by no means an exaustive list, just a number of networks that support IRCv3 specs.
+    These are real-world networks that have agreed to be listed on this page and support some level of IRCv3 functionality. This is by no means an exhaustive list, just a number of networks that support IRCv3 specs.
   software:
     # - name: Chatspike
     #   ircd-ver: InspIRCd-2.0
