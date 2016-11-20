@@ -44,8 +44,8 @@ values, improving the implementation of features like SASL.
 The [`cap-notify` spec](http://ircv3.net/specs/extensions/cap-notify-3.2.html)
 allows clients to be sent notifications when caps are added to or removed from
 the server. This is useful in cases like SASL when the authentication layer
-disconnects (and thus, SASL authentication is no longer possible). As a note,
-this extension is **automatically enabled** if clients request v3.2 capability
+disconnects (and thus, SASL authentication is no longer possible). This
+extension is **automatically enabled** if clients request v3.2 capability
 negotiation.
 
 
@@ -70,46 +70,6 @@ new features to be developed and implemented independently from the IRCd itself
 
 **Note:** Message tags themselves are used as a foundation for other extensions
 and do not themselves offer any user-facing features.
-
-
-## [Monitor](http://ircv3.net/specs/core/monitor-3.2.html)
-
-The `MONITOR` command acts as a standardized way for clients to be alerted when
-other clients enter or exit the network. This is in opposition to `ISON`, which
-does this through polling, and `WATCH`, which differs between vendor
-implementations.
-
-The [Monitor spec](http://ircv3.net/specs/core/monitor-3.2.html) details this
-command, the relevant `RPL_ISUPPORT` token and the commands used with it.
-
-
-## [Multiple Prefixes](http://ircv3.net/specs/extensions/multi-prefix-3.1.html)
-
-The `multi-prefix` extension allows clients to see all the statuses
-(i.e. voice, chanop) that other clients have in a channel rather than just the
-highest. This improves data tracking for clients and bots, and allows clients
-to display the privelege level of other clients more correctly.
-
-The [`multi-prefix` spec](http://ircv3.net/specs/extensions/multi-prefix-3.1.html)
-details the exact messages these changes apply to and how exactly it's used.
-
-
-## SASL Authentication
-
-SASL allows users to authenticate in a standardised way across different IRC
-networks. This is in opposition to logging in with 'services' such as NickServ,
-and provides a pre-registration way to authenticate. Because SASL allows
-authentication before registration, it allows clients to join certain types of
-restricted channels much more effectively.
-
-The [v3.1 SASL spec](http://ircv3.net/specs/extensions/sasl-3.1.html) defines
-the `AUTHENTICATE` command and `sasl` cap, which work together to allow clients
-to authenticate to the network.
-
-The [v3.2 SASL spec](http://ircv3.net/specs/extensions/sasl-3.2.html) defines
-a way to advertise the authentication methods available to clients, allows for
-clients to re-authenticate after services is lost and reconnects, and defines
-what to do if the authentication layer is disconnected or reconnected.
 
 
 ---
@@ -193,13 +153,53 @@ describes which messages are echo'd, and how they are interpreted by clients.
 
 ## [Invite Notify](http://ircv3.net/specs/extensions/invite-notify-3.2.html)
 
-The `invite-notify` extensions allows priveleged channel users to see when
+The `invite-notify` extensions allows privileged channel users to see when
 someone is invited to their channel. This can help chanops better run their
 channels and see better information about what's going on.
 
 The [`invite-notify` spec](http://ircv3.net/specs/extensions/invite-notify-3.2.html)
 describes the new `INVITE` reply which this extension uses, and how clients
 interpret these notifications.
+
+
+## [Monitor](http://ircv3.net/specs/core/monitor-3.2.html)
+
+The `MONITOR` command acts as a standardized way for clients to be alerted when
+other clients enter or exit the network. This is in opposition to `ISON`, which
+does this through polling, and `WATCH`, which differs between vendor
+implementations.
+
+The [Monitor spec](http://ircv3.net/specs/core/monitor-3.2.html) details this
+command, the relevant `RPL_ISUPPORT` token and the commands used with it.
+
+
+## [Multiple Prefixes](http://ircv3.net/specs/extensions/multi-prefix-3.1.html)
+
+The `multi-prefix` extension allows clients to see all the statuses
+(i.e. voice, chanop) that other clients have in a channel rather than just the
+highest. This improves data tracking for clients and bots, and allows clients
+to display the privilege level of other clients more correctly.
+
+The [`multi-prefix` spec](http://ircv3.net/specs/extensions/multi-prefix-3.1.html)
+details the exact messages these changes apply to and how exactly it's used.
+
+
+## SASL Authentication
+
+SASL allows users to authenticate in a standardised way across different IRC
+networks. This is in opposition to logging in with 'services' such as NickServ,
+and provides a pre-registration way to authenticate. Because SASL allows
+authentication before registration, it allows clients to join certain types of
+restricted channels much more effectively.
+
+The [v3.1 SASL spec](http://ircv3.net/specs/extensions/sasl-3.1.html) defines
+the `AUTHENTICATE` command and `sasl` cap, which work together to allow clients
+to authenticate to the network.
+
+The [v3.2 SASL spec](http://ircv3.net/specs/extensions/sasl-3.2.html) defines
+a way to advertise the authentication methods available to clients, allows for
+clients to re-authenticate after services is lost and reconnects, and defines
+what to do if the authentication layer is disconnected or reconnected.
 
 
 ## [Server Time](http://ircv3.net/specs/extensions/server-time-3.2.html)
@@ -213,6 +213,17 @@ describes the `time` tag, how to specify timestamps and how clients should
 parse incoming timestamps.
 
 
+## [Server Name Indication (SNI)](http://ircv3.net/specs/core/sni-3.3.html)
+
+SNI is a **DRAFT EXTENSION** that is **NOT YET RELEASED OR STABLE**. It makes
+it easier for servers to send the correct TLS certificate to connecting
+clients.
+
+The [SNI spec](http://ircv3.net/specs/core/sni-3.3.html) (which is a **DRAFT**)
+provides guidelines for clients and servers, allowing them to better detect the
+TLS certificate to send based on the server's hostname.
+
+
 ## [STARTTLS](http://ircv3.net/specs/extensions/tls-3.1.html)
 
 STARTTLS allows clients to upgrade their plaintext connections to use TLS
@@ -222,17 +233,6 @@ that is ratified as a stable IRCv3 standard.
 The [`tls` spec](http://ircv3.net/specs/extensions/tls-3.1.html) describes how
 the `STARTTLS` command works, as well as how connection registration is changed
 by the introduction of this capability.
-
-
-## [Userhosts in NAMES](http://ircv3.net/specs/extensions/userhost-in-names-3.2.html)
-
-The `userhost-in-names` extension allows clients to more easily see the
-user/hostnames of other clients when joining channels. This allows clients to
-better track info and automate client features more easily.
-
-The [`userhost-in-names` spec](http://ircv3.net/specs/extensions/userhost-in-names-3.2.html)
-describes how the `NAMES` message changes with this capability active, and how
-clients should interpret the changes.
 
 
 ## [Strict Transport Security (STS)](http://ircv3.net/specs/core/sts-3.3.html)
@@ -247,15 +247,15 @@ The [`sts` spec](http://ircv3.net/specs/core/sts-3.3.html) (which is a
 implementation details for both clients and servers.
 
 
-## [Server Name Indication (SNI)](http://ircv3.net/specs/core/sni-3.3.html)
+## [Userhosts in NAMES](http://ircv3.net/specs/extensions/userhost-in-names-3.2.html)
 
-SNI is a **DRAFT EXTENSION** that is **NOT YET RELEASED OR STABLE**. It makes
-it easier for servers to send the correct TLS certificate to connecting
-clients.
+The `userhost-in-names` extension allows clients to more easily see the
+user/hostnames of other clients when joining channels. This allows clients to
+better track info and automate client features more easily.
 
-The [SNI spec](http://ircv3.net/specs/core/sni-3.3.html) (which is a **DRAFT**)
-provides guidelines for clients and servers, allowing them to better detect the
-TLS certificate to send based on the server's hostname.
+The [`userhost-in-names` spec](http://ircv3.net/specs/extensions/userhost-in-names-3.2.html)
+describes how the `NAMES` message changes with this capability active, and how
+clients should interpret the changes.
 
 
 ---
