@@ -21,3 +21,9 @@ support:
         required:
           type: boolean
           required: false
+        caps:
+          type: listofstrings
+          required: false
+        features:
+          type: listofstrings
+          required: false
