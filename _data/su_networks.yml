@@ -10,24 +10,24 @@
     #   link: http://www.charybdis.io/
     #   support:
     #     v3.1:
-    #       account-notify:
-    #       away-notify:
-    #       cap:
-    #       extended-join:
-    #       multi-prefix:
-    #       sasl:
-    #       starttls:
+    #       - account-notify
+    #       - away-notify
+    #       - cap
+    #       - extended-join
+    #       - multi-prefix
+    #       - sasl
+    #       - starttls
     #     v3.2:
-    #       account-tag:
-    #       cap-notify:
-    #       cap:
-    #       chghost:
-    #       echo-message:
-    #       invite-notify:
-    #       monitor:
-    #       sasl:
-    #       server-time:
-    #       userhost-in-names:
+    #       - account-tag
+    #       - cap-notify
+    #       - cap
+    #       - chghost
+    #       - echo-message
+    #       - invite-notify
+    #       - monitor
+    #       - sasl
+    #       - server-time
+    #       - userhost-in-names
     - name: InspIRCd Testnet
       ircd-ver: InspIRCd-3.0
       net-address:
@@ -36,27 +36,27 @@
       link: http://www.inspircd.org/
       support:
         v3.1:
-          account-notify:
-          away-notify:
-          cap:
-          extended-join:
-          multi-prefix:
-          sasl:
-          starttls:
+          - account-notify
+          - away-notify
+          - cap
+          - extended-join
+          - multi-prefix
+          - sasl
+          - starttls
         v3.2:
-          account-tag:
-          cap-notify:
-          cap:
-          chghost:
-          echo-message:
-          invite-notify:
-          monitor:
-          sasl:
-          server-time:
-          userhost-in-names:
+          - account-tag
+          - cap-notify
+          - cap
+          - chghost
+          - echo-message
+          - invite-notify
+          - monitor
+          - sasl
+          - server-time
+          - userhost-in-names
         v3.3:
-          message-tags:
-          sts:
+          - message-tags
+          - sts
 
 - name: Networks
   note: >
@@ -70,11 +70,11 @@
     #   link: https://www.chatspike.net/
     #   support:
     #     v3.1:
-    #       cap:
-    #       multi-prefix:
-    #       sasl:
-    #       starttls:
-    #       userhost-in-names:
+    #       - cap
+    #       - multi-prefix
+    #       - sasl
+    #       - starttls
+    #       - userhost-in-names
     #
     - name: EsperNet
       ircd-ver: charybdis-3.5.0-dev
@@ -84,15 +84,15 @@
       link: https://esper.net
       support:
         v3.1:
-          account-notify:
-          away-notify:
-          cap:
-          extended-join:
-          multi-prefix:
-          sasl:
-          starttls:
+          - account-notify
+          - away-notify
+          - cap
+          - extended-join
+          - multi-prefix
+          - sasl
+          - starttls
         v3.2:
-          monitor:
+          - monitor
     - name: freenode
       ircd-ver: ircd-seven-1.1.4
       net-address:
@@ -101,11 +101,11 @@
       link: https://freenode.net/
       support:
         v3.1:
-          account-notify:
-          cap:
-          extended-join:
-          multi-prefix:
-          sasl:
+          - account-notify
+          - cap
+          - extended-join
+          - multi-prefix
+          - sasl
     - name: IRCHighWay
       ircd-ver: InspIRCd-2.0
       net-address:
@@ -114,13 +114,13 @@
       link: https://irchighway.net/
       support:
         v3.1:
-          away-notify:
-          account-notify:
-          cap:
-          extended-join:
-          multi-prefix:
-          sasl:
-          starttls:
+          - away-notify
+          - account-notify
+          - cap
+          - extended-join
+          - multi-prefix
+          - sasl
+          - starttls
         v3.2:
           userhost-in-names:
     - name: Rizon
@@ -131,11 +131,11 @@
       link: https://rizon.net/
       support:
         v3.1:
-          away-notify:
-          cap:
-          multi-prefix:
-          userhost-in-names:
+          - away-notify
+          - cap
+          - multi-prefix
+          - userhost-in-names
         v3.2:
-          chghost:
-          invite-notify:
-          userhost-in-names:
+          - chghost
+          - invite-notify
+          - userhost-in-names
