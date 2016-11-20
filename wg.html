@@ -46,6 +46,13 @@ meta-description: Welcome to the IRCv3 Working Group. We're a group of IRC clien
 
 <div class="container">
 
+      <div class="post">
+          <h3><a href="https://github.com/ircv3/ircv3-specifications/milestone/4">Roadmap</a></h3>
+          <div class="post-content">
+              <p>Our roadmap <a href="https://github.com/ircv3/ircv3-specifications/milestone/4"><sup>[link]</sup></a> always contains info on our direction moving forward, the sort of features we have planned and our priorities.</p>
+          </div>
+      </div>
+
       {% for post in site.posts limit:10 %}
       <div class="post">
           <h3><a href="{{ post.url }}">{{ post.title | xml_escape }}</a> <span class="meta">{{ post.date | date_to_string }}</span></h3>
