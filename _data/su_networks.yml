@@ -75,7 +75,7 @@
     #       sasl:
     #       starttls:
     #       userhost-in-names:
-    - name: Freenode
+    - name: freenode
       ircd-ver: ircd-seven-1.1.4
       net-address:
         link: ircs://irc.freenode.net:6697/
