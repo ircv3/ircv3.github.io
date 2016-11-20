@@ -1,3 +1,6 @@
+- name: freenode
+  url: https://www.freenode.net/
+
 - name: mIRC
   url: http://www.mirc.com/
 
