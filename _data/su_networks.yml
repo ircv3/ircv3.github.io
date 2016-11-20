@@ -122,7 +122,7 @@
           - sasl
           - starttls
         v3.2:
-          userhost-in-names:
+          - userhost-in-names
     - name: Rizon
       ircd-ver: plexus-4
       net-address:
@@ -134,7 +134,6 @@
           - away-notify
           - cap
           - multi-prefix
-          - userhost-in-names
         v3.2:
           - chghost
           - invite-notify

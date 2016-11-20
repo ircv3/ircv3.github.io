@@ -11,27 +11,39 @@ v3.1:
       description: SASL
       link: http://ircv3.net/specs/extensions/sasl-3.1.html
       required: true
+      caps:
+        - sasl
     multi-prefix:
       name: multi-prefix
       description: multi-prefix Extension
       link: http://ircv3.net/specs/extensions/multi-prefix-3.1.html
       required: true
+      caps:
+        - multi-prefix
     account-notify:
       name: account-notify
       description: account-notify Extension
       link: http://ircv3.net/specs/extensions/account-notify-3.1.html
+      caps:
+        - account-notify
     away-notify:
       name: away-notify
       description: away-notify Extension
       link: http://ircv3.net/specs/extensions/away-notify-3.1.html
+      caps:
+        - away-notify
     extended-join:
       name: extended-join
       description: extended-join Extension
       link: http://ircv3.net/specs/extensions/extended-join-3.1.html
+      caps:
+        - extended-join
     starttls:
       name: starttls
       description: tls Extension (STARTTLS)
       link: http://ircv3.net/specs/extensions/tls-3.1.html
+      caps:
+        - tls
 
 v3.2:
   name: IRCv3.2
@@ -60,26 +72,38 @@ v3.2:
       name: account-tag
       description: account-tag Extension
       link: http://ircv3.net/specs/extensions/account-tag-3.2.html
+      caps:
+        - account-tag
     batch:
       name: batch
       description: batch Extension
       link: http://ircv3.net/specs/extensions/batch-3.2.html
+      caps:
+        - batch
     cap-notify:
       name: cap-notify
       description: cap-notify Extension
       link: http://ircv3.net/specs/extensions/cap-notify-3.2.html
+      caps:
+        - cap-notify
     chghost:
       name: chghost
       description: chghost Extension
       link: http://ircv3.net/specs/extensions/chghost-3.2.html
+      caps:
+        - chghost
     echo-message:
       name: echo-message
       description: echo-message Extension
       link: http://ircv3.net/specs/extensions/echo-message-3.2.html
+      caps:
+        - echo-message
     invite-notify:
       name: invite-notify
       description: invite-notify Extension
       link: http://ircv3.net/specs/extensions/invite-notify-3.2.html
+      caps:
+        - invite-notify
     sasl:
       name: sasl
       description: sasl Extension
@@ -88,10 +112,14 @@ v3.2:
       name: server-time
       description: server-time Extension
       link: http://ircv3.net/specs/extensions/server-time-3.2.html
+      caps:
+        - server-time
     userhost-in-names:
       name: userhost-in-names
       description: userhost-in-names Extension
       link: http://ircv3.net/specs/extensions/userhost-in-names-3.2.html
+      caps:
+        - userhost-in-names
 
 v3.3:
   name: IRCv3.3 Draft
@@ -105,8 +133,12 @@ v3.3:
       description: Message Tags DRAFT.
       link: http://ircv3.net/specs/core/message-tags-3.3.html
       required: true
+      caps:
+        - draft/message-tags
     sts:
       name: STS
       description: Strict Transport Security DRAFT.
       link: http://ircv3.net/specs/core/sts-3.3.html
       required: true
+      caps:
+        - draft/sts
