@@ -2,6 +2,7 @@
 layout: default
 ---
 <h2>{{ page.title }}</h2>
+{% if page.author %}<p class="meta">{{ page.author }}</p>{% endif %}
 <p class="meta">{{ page.date | date_to_string }}</p>
 
 <div class="post">

@@ -393,6 +393,15 @@ a:hover, a:focus {
     color: #9fc234;
 }
 
+.post-content {
+    border-left: 1px solid #d7d7d7;
+    padding-left: 2rem
+}
+.meta {
+    color: #444;
+    font-size: 1.25rem;
+}
+
 /* sticky footer */
 html {
   position: relative;
