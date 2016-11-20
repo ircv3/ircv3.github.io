@@ -3,6 +3,9 @@ markdown: kramdown
 highlighter: rouge
 # baseurl: http://ircv3.net
 liveurl: http://ircv3.net  # used in XML feeds
+kramdown:
+  input: GFM
+  auto_ids: false
 exclude:
   - README.md
 gems:
