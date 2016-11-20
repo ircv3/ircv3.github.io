@@ -4,6 +4,9 @@
 - name: InspIRCd
   url: http://inspircd.org/
 
+- name: Irssi
+  url: https://irssi.org/
+
 - name: IRCCloud
   url: https://www.irccloud.com/
 
@@ -15,6 +18,9 @@
 
 - name: HexChat
   url: https://hexchat.github.io/
+
+- name: BitlBee
+  url: https://www.bitlbee.org/
 
 - name: Kiwi IRC
   url: https://kiwiirc.com/
