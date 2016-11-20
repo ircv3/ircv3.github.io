@@ -8,6 +8,8 @@
     {% endfor %}
 {% endcapture %}
 
+{% capture supportedspecs %}{% for spec in support[1].specs %}{% if spec[1].deprecated %}{% else %}Y{% endif %}{% endfor %}{% endcapture %}
+
 {% if anysupport contains "Y" %}
 {% if hide_support_name %}{% else %}
 #### {% if support_name %}{{ support_name }}{% else %}{{ support[1].name }} Support{% endif %}
@@ -18,7 +20,7 @@
 <div class="sw-table"><table>
     <colgroup>
         <col class="name" />
-        <col class="support" span="{{ support[1].specs | size }}" />
+        <col class="support" span="{{ supportedspecs | size }}" />
     </colgroup>
     <thead>
         <tr>
