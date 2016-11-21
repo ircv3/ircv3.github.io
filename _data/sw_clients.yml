@@ -10,9 +10,9 @@
           cap-3.1:
           extended-join:
           multi-prefix:
-          sasl-3.1: 1.9.9
-          server-time: 1.9.7
-          starttls: 1.9.9
+          sasl-3.1: 1.9.9+
+          server-time: 1.9.7+
+          starttls: 1.9.9+
           userhost-in-names:
         SASL:
           - external
@@ -116,9 +116,9 @@
       link: https://irssi.org
       support:
         stable:
-          cap-3.1: 0.8.18
-          multi-prefix: 0.8.18
-          sasl-3.1: 0.8.18
+          cap-3.1: 0.8.18+
+          multi-prefix: 0.8.18+
+          sasl-3.1: 0.8.18+
         SASL:
           - external
           - plain
@@ -139,13 +139,13 @@
         stable:
           account-notify: Git
           away-notify: Git
-          cap-3.1: 4.2.0
+          cap-3.1: 4.2.0+
           chghost: Git
           extended-join: Git
           multi-prefix: Git
-          sasl-3.1: 4.2.0
+          sasl-3.1: 4.2.0+
           server-time: Git
-          starttls: 4.2.0
+          starttls: 4.2.0+
           userhost-in-names: Git
         SASL:
           - dh-blowfish
@@ -214,8 +214,8 @@
           batch:
           cap-3.1:
           cap-3.2:
-          echo-message: 6.0.0
-          monitor: 6.0.0
+          echo-message: 6.0.0+
+          monitor: 6.0.0+
           multi-prefix:
           sasl-3.1:
           sasl-3.2:

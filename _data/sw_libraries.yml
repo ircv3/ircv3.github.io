@@ -83,8 +83,8 @@
           cap-3.1:
           chghost:
           extended-join:
-          metadata: 0.8.2
-          monitor: 0.8
+          metadata: 0.8.2+
+          monitor: 0.8+
           multi-prefix:
           sasl-3.1:
           starttls:
