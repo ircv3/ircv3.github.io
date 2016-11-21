@@ -1,97 +1,101 @@
 - name: Servers
   software:
+    - name: BitlBee
+      # ref: https://github.com/bitlbee/bitlbee/blob/3.4.2/irc_cap.c#L39
+      link: https://bitlbee.org/
+      support:
+        stable:
+          cap3.1: 3.4.2
+          cap3.2: 3.4.2
+          sasl3.1: 3.4.2
+          sasl3.2: 3.4.2
+          away-notify: 3.4.2
+          extended-join: 3.4.2
+          multi-prefix: 3.4.2
+          userhost-in-names: 3.4.2
     - name: Charybdis
       # ref: https://github.com/atheme/charybdis/blob/charybdis-3.5.0-test1/modules/m_cap.c#L73
       link: http://www.charybdis.io/
       support:
-        v3.1:
-          cap:
-          multi-prefix: 1.0 +
-          sasl: 1.1.0 +
-          account-notify: 3.4.0 +
-          extended-join: 3.4.0 +
-          away-notify: 3.4.0 +
-          starttls: 3.5.0 +
-        v3.2:
-          cap: Git
-          monitor:
-          userhost-in-names: 3.5.0 +
-          chghost: 3.5.0 +
+        stable:
+          cap3.1:
+          cap3.2: Git
           cap-notify: 3.5.0 +
+          sasl3.1: 1.1.0 +
+          sasl3.2: Git
+          account-notify: 3.4.0 +
           account-tag: Git
-          server-time: Git
+          away-notify: 3.4.0 +
+          chghost: 3.5.0 +
           echo-message: Git
-          sasl: Git
+          extended-join: 3.4.0 +
           invite-notify: Git
+          monitor:
+          multi-prefix: 1.0 +
+          server-time: Git
+          starttls: 3.5.0 +
+          userhost-in-names: 3.5.0 +
     - name: ChatIRCd
       # dev: Ben / MrC
       # ref: https://bitbucket.org/chatlounge/chatircd/commits/all
       link: http://www.chatlounge.net/software/
       support:
-        v3.1:
-          cap:
-          multi-prefix: 1.0.x +
-          sasl: 1.0.x +
-          account-notify: 1.0.x +
-          extended-join: 1.0.x +
-          away-notify: 1.0.x +
-          starttls: 1.0.x +
-        v3.2:
-          cap: No
-          monitor:
-          userhost-in-names: 1.1.x +
-          chghost: 1.1.x +
+        stable:
+          cap3.1:
           cap-notify: 1.1.x +
-          account-tag: No
-          server-time: No
-          echo-message: No
-          sasl: 1.1.x +
+          sasl3.1: 1.0.x +
+          account-notify: 1.0.x +
+          away-notify: 1.0.x +
+          chghost: 1.1.x +
+          extended-join: 1.0.x +
           invite-notify: 1.1.x +
+          monitor:
+          multi-prefix: 1.0.x +
+          sasl: 1.1.x +
+          starttls: 1.0.x +
+          userhost-in-names: 1.1.x +
     - name: Elemental IRCd
       # ref: https://github.com/Elemental-IRCd/elemental-ircd/issues/80
       #      https://github.com/Elemental-IRCd/elemental-ircd/blob/elemental-ircd-7.0-experimental/modules/m_cap.c#L70
       link: https://github.com/Elemental-IRCd/elemental-ircd
       support:
-        v3.1:
-          cap:
-          multi-prefix: 6.0.0 +
-          sasl: 6.0.0 +
+        stable:
+          cap3.1:
+          sasl3.1: 6.0.0 +
           account-notify: 6.5 +
-          extended-join: 6.5 +
           away-notify: 6.5 +
-        v3.2:
           chghost: Git
+          extended-join: 6.5 +
           monitor:
+          multi-prefix: 6.0.0 +
     - name: IRCCloud Teams
       # maintainer: jwheare
       link: https://blog.irccloud.com/private-teams-servers/
       support:
-        v3.1:
-          - cap
-          - away-notify
-          - extended-join
-          - multi-prefix
-        v3.2:
-          - account-tag
-          - cap
-          - cap-notify
-          - message-tags
-          - userhost-in-names
+        stable:
+          cap3.1:
+          cap3.2:
+          cap-notify:
+          account-tag:
+          away-notify:
+          extended-join:
+          message-tags:
+          multi-prefix:
+          userhost-in-names:
       na:
-        v3.1:
+        stable:
           starttls: direct TLS only
     - name: ircd-hybrid
       link: https://github.com/ircd-hybrid/ircd-hybrid
       support:
-        v3.1:
-          cap: 7.2.1 +
-          multi-prefix: 7.2.1 +
+        stable:
+          cap3.1: 7.2.1 +
           account-notify: 8.2.9 +
           away-notify: 8.1.0beta1 +
-          extended-join: 8.2.2 +
-        v3.2:
           chghost: 8.2.11 +
+          extended-join: 8.2.2 +
           invite-notify: 8.2.11 +
+          multi-prefix: 7.2.1 +
           userhost-in-names: 8.1.14 +
     - name: InspIRCd
       # maintainer: saberuk, attila
@@ -100,127 +104,107 @@
       #      https://github.com/inspircd/inspircd-extras/search?q=GenericCap
       link: http://www.inspircd.org
       support:
-        v3.1:
-          cap: 1.2.0 +
-          multi-prefix: 1.2.0 +
-          sasl: 1.2.0 +
+        stable:
+          cap3.1: 1.2.0 +
+          cap3.2: Git
+          cap-notify: Git
+          sasl3.1: 1.2.0 +
+          sasl3.2: Git
           account-notify: 2.0.7 +
           away-notify: 2.0.7 +
-          extended-join: 2.0.7 +
-          starttls: 1.2.0 +
-        v3.2:
-          cap: Git
-          cap-notify: Git
           chghost: Git
           echo-message: Git
+          extended-join: 2.0.7 +
           invite-notify: Git
           monitor: Git
-          sasl: Git
+          multi-prefix: 1.2.0 +
+          starttls: 1.2.0 +
           userhost-in-names: 1.2.0 +
     - name: mammon-ircd
       # ref: Capability() calls in https://github.com/mammon-ircd/mammon/search?q=Capability
       link: https://github.com/mammon-ircd/mammon
       support:
-        v3.1:
-          - cap
-          - account-notify
-          - away-notify
-          - extended-join
-          - sasl
-        v3.2:
-          - account-tag
-          - cap
-          - cap-notify
-          - metadata
-          - monitor
-          - echo-message
-          - server-time
-          - message-tags
-          - userhost-in-names
-          - sasl
+        stable:
+          cap3.1:
+          cap3.2:
+          cap-notify:
+          sasl3.1:
+          sasl3.2:
+          account-notify:
+          account-tag:
+          away-notify:
+          echo-message:
+          extended-join:
+          message-tags:
+          metadata:
+          monitor:
+          server-time:
+          userhost-in-names:
     - name: Nefarious IRCu
       # ref: https://github.com/evilnet/nefarious2/blob/2.0/ircd/m_cap.c#L59
       link: https://github.com/evilnet/nefarious2
       support:
-        v3.1:
-          cap:
-          away-notify: 2013-06-02
-          multi-prefix: 2011-12-19
-          sasl: 2013-06-07
+        stable:
+          cap3.1:
+          sasl3.1: 2013-06-07
           account-notify: 2013-06-02
+          away-notify: 2013-06-02
           extended-join: 2013-06-02
+          multi-prefix: 2011-12-19
           starttls: 2013-05-26
-        v3.2:
           userhost-in-names: 2011-12-19
     - name: Oragono
       # ref: http://oragono.io/specs.html
       link: http://oragono.io/
       support:
-        v3.1:
-          cap: 0.1.0 +
-          account-notify: 0.2.0 +
-          away-notify: 0.1.0 +
-          multi-prefix: 0.1.0 +
-          sasl: 0.1.0 +
-          extended-join: 0.1.0 +
-        v3.2:
-          cap: 0.2.0 +
-          account-tag: 0.1.0 +
+        stable:
+          cap3.1: 0.1.0 +
+          cap3.2: 0.2.0 +
           cap-notify: 0.3.0 +
+          sasl3.1: 0.1.0 +
+          sasl3.2: 0.2.0 +
+          account-notify: 0.2.0 +
+          account-tag: 0.1.0 +
+          away-notify: 0.1.0 +
           chghost: 0.4.0 +
           echo-message: 0.3.0 +
+          extended-join: 0.1.0 +
           invite-notify: 0.2.0 +
           monitor: 0.2.0 +
-          sasl: 0.2.0 +
+          multi-prefix: 0.1.0 +
           server-time: 0.2.0 +
           userhost-in-names: 0.1.0 +
     - name: txircd
       link: https://github.com/ElementalAlchemist/txircd
       support:
-        v3.1:
-          cap: 0.4.0 +
-          multi-prefix: 0.4.0 +
-          account-notify: 0.4.0 +
-          away-notify: 0.4.0 +
-          extended-join: 0.4.0 +
-          starttls: 0.4.0 +
-        v3.2:
-          cap: 0.4.0 +
-          metadata: 0.4.0 +
-          monitor: 0.4.0 +
-          account-tag: 0.4.0 +
-          batch: 0.4.0 +
+        stable:
+          cap3.1: 0.4.0 +
+          cap3.2: 0.4.0 +
           cap-notify: 0.4.0 +
+          account-notify: 0.4.0 +
+          account-tag: 0.4.0 +
+          away-notify: 0.4.0 +
+          batch: 0.4.0 +
           chghost: 0.4.0 +
           echo-message: 0.4.0 +
+          extended-join: 0.4.0 +
           invite-notify: 0.4.0 +
+          metadata: 0.4.0 +
+          monitor: 0.4.0 +
+          multi-prefix: 0.4.0 +
           server-time: 0.4.0 +
+          starttls: 0.4.0 +
           userhost-in-names: 0.4.0 +
     - name: UnrealIRCd
       # ref: ClientCapabilityAdd() calls in https://github.com/unrealircd/unrealircd/search?q=ClientCapabilityAdd
       #      (src/modules/m_cap.c has four matches, two not shown)
       link: http://www.unrealircd.org
       support:
-        v3.1:
-          cap: 3.2.9 +
-          multi-prefix: 3.2.9 +
-          away-notify: 3.2.9 +
+        stable:
+          cap3.1: 3.2.9 +
+          sasl3.1: 3.2.10 +
           account-notify: 3.2.9 +
-          sasl: 3.2.10 +
+          away-notify: 3.2.9 +
+          multi-prefix: 3.2.9 +
           starttls: 3.2.10 +
-        v3.2:
           userhost-in-names: 3.2.9 +
-    - name: BitlBee
-      # ref: https://github.com/bitlbee/bitlbee/blob/3.4.2/irc_cap.c#L39
-      link: https://bitlbee.org/
-      support:
-        v3.1:
-          cap: 3.4.2
-          multi-prefix: 3.4.2
-          sasl: 3.4.2
-          extended-join: 3.4.2
-          away-notify: 3.4.2
-        v3.2:
-          cap: 3.4.2
-          sasl: 3.4.2
-          userhost-in-names: 3.4.2

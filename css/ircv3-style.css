@@ -109,7 +109,7 @@ a.irc-extension {
   font-size: 95%;
 }
 .sw-table .support {
-  min-width: 2em;
+  max-width: 1rem;
   text-align: center;
   padding: 0.3em 0.5em;
 }
@@ -176,6 +176,39 @@ a.irc-extension {
   display: block;
   margin-bottom: 0.3rem;
 }
+
+/* rotate table headers */
+thead tr > th.support-head {
+    text-align: justify;
+}
+thead tr > th.support-head {
+    width: 0;
+    line-height: 0;
+}
+thead tr > th.support-head > span > a {
+    display: inline-block;
+    white-space: nowrap;
+
+    transform: translate(0, 100%) rotate(-90deg);
+    transform-origin: 0 0;
+
+    vertical-align: bottom;
+}
+thead tr > th.support-head > span {
+    display: block;
+    width: 1.5rem;
+    padding-left: 0.75rem;
+    margin: 0.5rem auto;
+    text-align: justify;
+    overflow-x: hidden;
+    overflow-y: hidden; /* hides unnecessary scrollbars on chrome */
+}
+thead tr > th.support-head > span > a:before {
+    content: "";
+    float: left;
+    margin-top: 100%;
+}
+
 .bold {
   font-weight: bold;
 }

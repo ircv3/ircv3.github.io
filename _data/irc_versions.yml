@@ -1,91 +1,59 @@
-v3.1:
-  name: IRCv3.1
+stable:
+  name: Stable
   specs:
-    cap:
-      name: CAP
-      description: Capability Negotiation
+    cap-3.1:
+      name: CAP v3.1
+      description: Capability Negotiation v3.1
       link: http://ircv3.net/specs/core/capability-negotiation-3.1.html
       required: true
-    sasl:
-      name: sasl
-      description: SASL
+    cap-3.2:
+      name: CAP v3.2
+      description: Capability Negotiation v3.2
+      link: http://ircv3.net/specs/core/capability-negotiation-3.2.html
+      required: true
+    cap-notify:
+      name: cap-notify
+      description: cap-notify Extension
+      link: http://ircv3.net/specs/extensions/cap-notify-3.2.html
+      required: true
+      caps:
+        - cap-notify
+    sasl-3.1:
+      name: SASL v3.1
+      description: SASL v3.1
       link: http://ircv3.net/specs/extensions/sasl-3.1.html
       required: true
       caps:
         - sasl
-    multi-prefix:
-      name: multi-prefix
-      description: multi-prefix Extension
-      link: http://ircv3.net/specs/extensions/multi-prefix-3.1.html
+    sasl-3.2:
+      name: SASL v3.2
+      description: SASL v3.2
+      link: http://ircv3.net/specs/extensions/sasl-3.2.html
       required: true
-      caps:
-        - multi-prefix
     account-notify:
       name: account-notify
       description: account-notify Extension
       link: http://ircv3.net/specs/extensions/account-notify-3.1.html
       caps:
         - account-notify
-    away-notify:
-      name: away-notify
-      description: away-notify Extension
-      link: http://ircv3.net/specs/extensions/away-notify-3.1.html
-      caps:
-        - away-notify
-    extended-join:
-      name: extended-join
-      description: extended-join Extension
-      link: http://ircv3.net/specs/extensions/extended-join-3.1.html
-      caps:
-        - extended-join
-    starttls:
-      name: starttls
-      description: tls Extension (STARTTLS)
-      link: http://ircv3.net/specs/extensions/tls-3.1.html
-      caps:
-        - tls
-
-v3.2:
-  name: IRCv3.2
-  specs:
-    cap:
-      name: CAP
-      description: Capability Negotiation
-      link: http://ircv3.net/specs/core/capability-negotiation-3.2.html
-      required: true
-    # message-tags:
-    #   name: Message Tags
-    #   description: Message Tags
-    #   link: http://ircv3.net/specs/core/message-tags-3.2.html
-    metadata:
-      name: Metadata
-      description: Metadata
-      link: http://ircv3.net/specs/core/metadata-3.2.html
-      required: true
-      deprecated: true
-    monitor:
-      name: Monitor
-      description: Monitor
-      link: http://ircv3.net/specs/core/monitor-3.2.html
-      required: true
     account-tag:
       name: account-tag
       description: account-tag Extension
       link: http://ircv3.net/specs/extensions/account-tag-3.2.html
       caps:
         - account-tag
+    away-notify:
+      name: away-notify
+      description: away-notify Extension
+      link: http://ircv3.net/specs/extensions/away-notify-3.1.html
+      caps:
+        - away-notify
     batch:
       name: batch
       description: batch Extension
       link: http://ircv3.net/specs/extensions/batch-3.2.html
       caps:
         - batch
-    cap-notify:
-      name: cap-notify
-      description: cap-notify Extension
-      link: http://ircv3.net/specs/extensions/cap-notify-3.2.html
-      caps:
-        - cap-notify
     chghost:
       name: chghost
       description: chghost Extension
@@ -98,22 +66,45 @@ v3.2:
       link: http://ircv3.net/specs/extensions/echo-message-3.2.html
       caps:
         - echo-message
+    extended-join:
+      name: extended-join
+      description: extended-join Extension
+      link: http://ircv3.net/specs/extensions/extended-join-3.1.html
+      caps:
+        - extended-join
     invite-notify:
       name: invite-notify
       description: invite-notify Extension
       link: http://ircv3.net/specs/extensions/invite-notify-3.2.html
       caps:
         - invite-notify
-    sasl:
-      name: sasl
-      description: sasl Extension
-      link: http://ircv3.net/specs/extensions/sasl-3.2.html
+    metadata3.2:
+      name: Metadata v3.2
+      description: Metadata v3.2 [DEPRECATED]
+      link: http://ircv3.net/specs/core/metadata-3.2.html
+      deprecated: true
+    monitor:
+      name: Monitor
+      description: Monitor
+      link: http://ircv3.net/specs/core/monitor-3.2.html
+    multi-prefix:
+      name: multi-prefix
+      description: multi-prefix Extension
+      link: http://ircv3.net/specs/extensions/multi-prefix-3.1.html
+      caps:
+        - multi-prefix
     server-time:
       name: server-time
       description: server-time Extension
       link: http://ircv3.net/specs/extensions/server-time-3.2.html
       caps:
         - server-time
+    starttls:
+      name: starttls
+      description: tls Extension (STARTTLS)
+      link: http://ircv3.net/specs/extensions/tls-3.1.html
+      caps:
+        - tls
     userhost-in-names:
       name: userhost-in-names
       description: userhost-in-names Extension
@@ -121,8 +112,8 @@ v3.2:
       caps:
         - userhost-in-names
 
-v3.3:
-  name: IRCv3.3 Draft
+unstable:
+  name: Unstable (Draft)
   note: >
     **These specifications are drafts and are NOT completed IRCv3 specs.**
     

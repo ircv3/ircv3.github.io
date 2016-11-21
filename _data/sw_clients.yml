@@ -4,16 +4,15 @@
       # ref: http://dev.adiirc.com/projects/adiirc/wiki/IRCv3
       link: http://www.adiirc.com
       support:
-        v3.1:
-          cap:
-          sasl: 1.9.9
-          multi-prefix:
+        stable:
           account-notify:
           away-notify:
+          cap-3.1:
           extended-join:
-          starttls: 1.9.9
-        v3.2:
+          multi-prefix:
+          sasl-3.1: 1.9.9
           server-time: 1.9.7
+          starttls: 1.9.9
           userhost-in-names:
         SASL:
           - external
@@ -22,66 +21,64 @@
       # ref: https://github.com/BitchX/BitchX/search?q=%22CAP+REQ%22&
       link: http://www.bitchx.com
       support:
-        v3.1:
-          - cap
-          - sasl
+        stable:
+          cap-3.1:
+          sasl-3.1:
         SASL:
           - plain
     - name: Colloquy
       # ref: handleCapWithParameters() in https://github.com/colloquy/colloquy/blob/master/Chat%20Core/MVIRCChatConnection.m
       link: http://www.colloquy.info
       support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - account-notify
-          - sasl
-          - away-notify
-          - starttls
-          - extended-join
-        v3.2:
-          - cap
-          - account-tag
-          - cap-notify
-          - chghost
-          - echo-message
-          - invite-notify
-          - metadata
-          - monitor
-          - batch
-          - server-time
-          - userhost-in-names
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-notify:
+          cap-3.1:
+          cap-3.2:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          metadata:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          server-time:
+          starttls:
+          userhost-in-names:
         SASL:
           - plain
     - name: Conspire
       # ref: https://github.com/kaniini/conspire/search?q=cap_add_cap
       link: https://github.com/kaniini/conspire
       support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - sasl
+        stable:
+          cap-3.1:
+          multi-prefix:
+          sasl-3.1:
         SASL:
           - plain
     - name: HexChat
       # ref: https://github.com/hexchat/hexchat/blob/v2.10.2/src/common/inbound.c#L1728
       link: https://hexchat.github.io
       support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - away-notify
-          - account-notify
-          - extended-join
-          - sasl
-        v3.2:
-          - cap
-          - cap-notify
-          - chghost
-          - sasl
-          - server-time
-          - monitor
-          - userhost-in-names
+        stable:
+          account-notify:
+          away-notify:
+          cap-notify:
+          cap-3.1:
+          cap-3.2:
+          chghost:
+          extended-join:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
         SASL:
           - dh-aes
           - dh-blowfish
@@ -91,16 +88,15 @@
       # ref: CapREQ() in http://icechat.codeplex.com/SourceControl/latest#IRCConnection/ParseIRCData.cs
       link: http://icechat.net
       support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - away-notify
-          - account-notify
-          - extended-join
-          - sasl
-        v3.2:
-          - monitor
-          - server-time
+        stable:
+          account-notify:
+          away-notify:
+          cap-3.1:
+          extended-join:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          server-time:
         SASL:
           - plain
     - name: Instantbird
@@ -108,22 +104,21 @@
       #      https://hg.instantbird.org/instantbird/file/tip/chat/protocols/irc
       link: http://instantbird.com
       support:
-        v3.1:
-          cap:
-          multi-prefix: 1.4+
-          sasl: 1.3+
-        v3.2:
+        stable:
+          cap-3.1:
           monitor: 1.2+
+          multi-prefix: 1.4+
+          sasl-3.1: 1.3+
         SASL:
           - plain
     - name: Irssi
       # ref: https://github.com/irssi/irssi/blob/0.8.18/src/irc/core/irc-servers.c#L229
       link: https://irssi.org
       support:
-        v3.1:
-          cap: 0.8.18
+        stable:
+          cap-3.1: 0.8.18
           multi-prefix: 0.8.18
-          sasl: 0.8.18
+          sasl-3.1: 0.8.18
         SASL:
           - external
           - plain
@@ -131,9 +126,9 @@
       # ref: https://github.com/KDE/konversation/blob/1.6/src/irc/server.cpp#L697
       link: http://konversation.kde.org
       support:
-        v3.1:
-          - cap
-          - sasl
+        stable:
+          cap-3.1:
+          sasl-3.2:
         SASL:
           - plain
     - name: KVIrc
@@ -141,18 +136,17 @@
       #      or handleInitialCapLs() in https://github.com/kvirc/KVIrc/blob/master/src/kvirc/kernel/KviIrcConnection.cpp
       link: http://www.kvirc.net
       support:
-        v3.1:
-          cap: 4.2.0
-          multi-prefix: Git
-          sasl: 4.2.0
-          starttls: 4.2.0
+        stable:
           account-notify: Git
-          extended-join: Git
           away-notify: Git
-        v3.2:
-          server-time: Git
-          userhost-in-names: Git
+          cap-3.1: 4.2.0
           chghost: Git
+          extended-join: Git
+          multi-prefix: Git
+          sasl-3.1: 4.2.0
+          server-time: Git
+          starttls: 4.2.0
+          userhost-in-names: Git
         SASL:
           - dh-blowfish
           - plain
@@ -160,11 +154,10 @@
       # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
       link: http://limechat.net/mac/
       support:
-        v3.1:
-          - cap
-          - sasl
-        #v3.2:
-        # - server-time  # only supports znc's vendor prefixed version
+        stable:
+          cap-3.1:
+          sasl-3.2:
+        # server-time:  # only supports znc's vendor prefixed version
         SASL:
           - plain
     - name: mIRC
@@ -173,43 +166,40 @@
       #      http://forums.mirc.com/ubbthreads.php/topics/244662/IRCv3 ("please don't quote me")
       link: http://www.mirc.com
       support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - starttls
-        v3.2:
-          - server-time
-          - monitor
-          - userhost-in-names
+        stable:
+          cap-3.1:
+          monitor:
+          multi-prefix:
+          server-time:
+          starttls:
+          userhost-in-names:
     - name: Mozilla Thunderbird
       # ref: irc{CAP,SASL,MultiPrefix,WatchMonitor}.jsm files in
       #      http://mxr.mozilla.org/comm-central/source/chat/protocols/irc/
       link: https://www.mozilla.org/thunderbird
       support:
-        v3.1:
-          cap:
-          multi-prefix: 21+
-          sasl: 19+
-        v3.2:
+        stable:
+          cap-3.1:
           monitor: 15+
+          multi-prefix: 21+
+          sasl-3.1: 19+
         SASL:
           - plain
     - name: Quassel
       # ref: https://github.com/quassel/quassel/blob/0.12.2/src/core/corenetwork.cpp#L479
       link: http://www.quassel-irc.org
       support:
-        v3.1:
-          cap:
-          sasl:
+        stable:
           account-notify: Git
           away-notify: Git
+          cap-notify: Git
+          cap-3.1:
+          cap-3.2: Git
+          chghost: Git
           extended-join: Git
           multi-prefix: Git
-        v3.2:
-          cap: Git
-          cap-notify: Git
-          chghost: Git
-          sasl: Git
+          sasl-3.1:
+          sasl-3.2: Git
           userhost-in-names: Git
         SASL:
           - external
@@ -219,19 +209,18 @@
       # ref: https://github.com/Codeux-Software/Textual/blob/v6.0.1/Classes/IRC/IRCClient.m#L4590
       link: http://www.codeux.com/textual
       support:
-        v3.1:
-          - cap
-          - away-notify
-          - multi-prefix
-          - sasl
-        v3.2:
-          cap:
-          monitor: 6.0.0
-          echo-message: 6.0.0
-          sasl:
-          userhost-in-names:
-          server-time:
+        stable:
+          away-notify:
           batch:
+          cap-3.1:
+          cap-3.2:
+          echo-message: 6.0.0
+          monitor: 6.0.0
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
         SASL:
           - external
           - plain
@@ -243,18 +232,17 @@
       #      https://github.com/weechat/weechat/blob/v1.3/src/plugins/irc/irc-config.c#L1735
       link: https://weechat.org
       support:
-        v3.1:
-          cap: 0.3.2+
+        stable:
           account-notify: 1.2+
           away-notify: 1.0+
+          cap-notify: 1.4+
+          cap-3.1: 0.3.2+
           extended-join: 1.1+
-          multi-prefix: 0.0.1+
-          sasl: 0.3.2+
-        v3.2:
           monitor: 0.4.3+
+          multi-prefix: 0.0.1+
+          sasl-3.1: 0.3.2+
           server-time: 0.4.0+
           userhost-in-names: 0.4.1+
-          cap-notify: 1.4+
         SASL:
           - dh-aes
           - dh-blowfish
@@ -268,34 +256,33 @@
       # maintainer: jwheare
       link: https://www.irccloud.com
       support:
-        v3.1:
-          - account-notify
-          - away-notify
-          - cap
-          - extended-join
-          - multi-prefix
-          - sasl
-        v3.2:
-          - account-tag
-          - batch
-          - cap
-          - cap-notify
-          - chghost
-          - invite-notify
-          - message-tags
-          - sasl
-          - server-time
-          - userhost-in-names
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-notify:
+          cap-3.1:
+          cap-3.2:
+          chghost:
+          extended-join:
+          invite-notify:
+          message-tags:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
         SASL:
           - plain
     - name: Iris
       # ref: https://github.com/atheme/iris/blob/831483f/qwebirc/ircclient.py#L48
       link: http://www.atheme.net/iris.html
       support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - sasl
+        stable:
+          cap-3.1:
+          multi-prefix:
+          sasl-3.1:
         SASL:
           - authcookie
           - plain
@@ -303,33 +290,31 @@
       # ref: https://github.com/prawnsalad/KiwiIRC/blob/v0.9.1/server/irc/commands/registration.js#L63
       link: https://kiwiirc.com
       support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - away-notify
-          - sasl
-        v3.2:
-          - server-time
+        stable:
+          away-notify:
+          cap-3.1:
+          multi-prefix:
+          sasl-3.1:
+          server-time:
         SASL:
           - plain
     - name: The Lounge
       # ref: https://github.com/thelounge/lounge/issues/312
       link: https://thelounge.github.io/
       support:
-        v3.1:
-          - cap
-          - multi-prefix
-        v3.2:
-          - echo-message
-          - server-time
+        stable:
+          cap-3.1:
+          echo-message:
+          multi-prefix:
+          server-time:
     - name: Mibbit
       # ref: http://wiki.mibbit.com/index.php/SASL
       #      does not send CAP LS when connecting to a server
       link: http://www.mibbit.com
       support:
-        v3.1:
-          - cap
-          - sasl
+        stable:
+          cap-3.1:
+          sasl-3.1:
         SASL:
           - plain
           - dh-blowfish
@@ -342,9 +327,9 @@
       os:
         - android
       support:
-        v3.1:
-          - cap
-          - sasl
+        stable:
+          cap-3.1:
+          sasl-3.1:
         SASL:
           - plain
     - name: IRC for Android
@@ -353,10 +338,10 @@
       os:
         - android
       support:
-        v3.1:
-          - cap
-          - sasl
-          - multi-prefix
+        stable:
+          cap-3.1:
+          sasl-3.1:
+          multi-prefix:
         # SASL mechanisms unknown
     - name: AndroIRC
       # ref: http://wiki.androirc.com/nickserv_sasl
@@ -364,9 +349,9 @@
       os:
         - android
       support:
-        v3.1:
-          - cap
-          - sasl
+        stable:
+          cap-3.1:
+          sasl-3.1:
         SASL:
           - dh-blowfish
           - plain
@@ -376,26 +361,25 @@
       os:
         - ios
       support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - account-notify
-          - sasl
-          - away-notify
-          - starttls
-          - extended-join
-        v3.2:
-          - cap
-          - account-tag
-          - cap-notify
-          - chghost
-          - echo-message
-          - invite-notify
-          - metadata
-          - monitor
-          - batch
-          - server-time
-          - userhost-in-names
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          metadata:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          server-time:
+          starttls:
+          userhost-in-names:
         SASL:
           - plain
     - name: IRC7
@@ -404,9 +388,9 @@
       os:
         - windows-phone
       support:
-        v3.1:
-          - cap
-          - sasl
+        stable:
+          cap-3.1:
+          sasl-3.1:
         SASL:
           - plain
     - name: IRCCloud
@@ -416,24 +400,23 @@
         - android
         - ios
       support:
-        v3.1:
-          - account-notify
-          - away-notify
-          - cap
-          - extended-join
-          - multi-prefix
-          - sasl
-        v3.2:
-          - account-tag
-          - batch
-          - cap
-          - cap-notify
-          - chghost
-          - invite-notify
-          - message-tags
-          - sasl
-          - server-time
-          - userhost-in-names
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          extended-join:
+          invite-notify:
+          message-tags:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
         SASL:
           - plain
     - name: LimeChat
@@ -442,9 +425,9 @@
       os:
         - ios
       support:
-        v3.1:
-          - cap
-          - sasl
+        stable:
+          cap-3.1:
+          sasl-3.1:
         SASL:
           - plain
     - name: Palaver
@@ -453,15 +436,14 @@
       os:
         - ios
       support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - sasl
-          - starttls
-        v3.2:
-          - batch
-          - server-time
-          - userhost-in-names
+        stable:
+          cap-3.1:
+          multi-prefix:
+          sasl-3.1:
+          starttls:
+          batch:
+          server-time:
+          userhost-in-names:
         SASL:
           - plain
     - name: YAAIC
@@ -470,10 +452,10 @@
       os:
         - android
       support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - sasl
+        stable:
+          cap-3.1:
+          multi-prefix:
+          sasl-3.1:
         SASL:
           - plain
 
@@ -484,22 +466,20 @@
       #      https://github.com/znc/znc/blob/znc-1.6.1/src/Client.cpp#L886
       link: http://znc.in/
       support:
-        v3.1:
-          cap: "0.094+ client→ZNC,<br/>0.090+ ZNC→server"
-          multi-prefix: "0.094+ client→ZNC,<br/>0.090+ ZNC→server"
+        stable:
           account-notify: "Git"
           away-notify: "Git"
+          cap-3.1: "0.094+ client→ZNC,<br/>0.090+ ZNC→server"
           extended-join: "Git"
-        v3.2:
+          multi-prefix: "0.094+ client→ZNC,<br/>0.090+ ZNC→server"
           userhost-in-names: "0.094+ client→ZNC,<br/>0.090+ ZNC→server"
       partial:
-        v3.1:
-          sasl: "1.0+, ZNC→server only"
-        v3.2:
-          cap: "Git, client→ZNC only"
+        stable:
+          batch: "1.6.0+ as <code>znc.in/batch</code>, Git as <code>batch</code>, client→ZNC only"
+          cap-3.1: "Git, client→ZNC only"
           cap-notify: "Git, client→ZNC only"
           echo-message: "Git, client→ZNC only"
-          batch: "1.6.0+ as <code>znc.in/batch</code>, Git as <code>batch</code>, client→ZNC only"
+          sasl-3.1: "1.0+, ZNC→server only"
           server-time: "1.2+ as <code>znc.in/server-time-iso</code>, Git as <code>server-time</code>, client→ZNC only"
         SASL:
           external: "ZNC→server only"
@@ -513,26 +493,25 @@
       #      https://github.com/ProgVal/Limnoria/issues/1015
       link: https://github.com/ProgVal/Limnoria
       support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - account-notify
-          - away-notify
-          - extended-join
-          - sasl
-          - starttls
-        v3.2:
-          - cap
-          - metadata
-          - monitor
-          - account-tag
-          - batch
-          - cap-notify
-          - chghost
-          - invite-notify
-          - sasl
-          - server-time
-          - userhost-in-names
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          extended-join:
+          invite-notify:
+          metadata:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          starttls:
+          userhost-in-names:
         SASL:
             - ecdsa-nist256p-challenge
             - external
@@ -543,18 +522,17 @@
       #     https://github.com/sopel-irc/sopel/issues/971
       link: http://sopel.chat
       support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - sasl
-          - account-notify
-          - away-notify
-          - extended-join
-        v3.2:
-          - cap
-          - account-tag
-          - cap-notify
-          - server-time
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          extended-join:
+          multi-prefix:
+          sasl-3.1:
+          server-time:
         SASL:
           - plain
     - name: Moon Moon
@@ -564,19 +542,18 @@
       #      https://github.com/ChickenNuggers/Moon-Moon/blob/master/irc.moon
       link: https://github.com/ChickenNuggers/Moon-Moon
       support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - account-notify
-          - away-notify
-          - extended-join
-        v3.2:
-          - cap
-          - account-tag
-          - batch
-          - cap-notify
-          - chghost
-          - echo-message
-          - invite-notify
-          - server-time
-          - userhost-in-names
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          multi-prefix:
+          server-time:
+          userhost-in-names:

@@ -26,7 +26,7 @@
         <tr>
             <th>Name</th>
             {% for ext in support[1].specs %}{% if ext[1].deprecated %}{% else %}
-            <th class="support-head"><a title="{{ ext[1].description }}" href="{{ ext[1].link }}">{{ ext[1].name }}</a></th>
+            <th class="support-head"><span><a class="spec-name" title="{{ ext[1].description }}" href="{{ ext[1].link }}">{{ ext[1].name }}</a></span></th>
             {% endif %}{% endfor %}
         </tr>
     </thead>
@@ -59,19 +59,19 @@
             {% capture ext_name %}{{ ext[0] }}{% endcapture %}{% if ext[1].deprecated %}{% else %}
             <td class="support {% if sw.support[support_key] contains ext_name %}supported{% elsif sw.partial[support_key] contains ext_name %}partial{% elsif sw.na[support_key] contains ext_name %}na{% else %}unsupported{% endif %} {% if ext[1].required %}required{% else %}optional{% endif %}">
                 {% if sw.support[support_key] contains ext_name %}
-                    {% assign capab = sw.support[support_key][ext_name] %}
-                    {% assign default = 'Yes' %}
+                    {% assign info = sw.support[support_key][ext_name] %}
+                    {% assign capab = '✔' %}
                     {% include show_capability.html %}
                 {% elsif sw.partial[support_key] contains ext_name %}
-                    {% assign capab = sw.partial[support_key][ext_name] %}
-                    {% assign default = 'Partial' %}
+                    {% assign info = sw.partial[support_key][ext_name] %}
+                    {% assign capab = '~' %}
                     {% include show_capability.html %}
                 {% elsif sw.na[support_key] contains ext_name %}
-                    {% assign capab = sw.na[support_key][ext_name] %}
-                    {% assign default = 'Not applicable' %}
+                    {% assign info = sw.na[support_key][ext_name] %}
+                    {% assign capab = '✘' %}
                     {% include show_capability.html %}
                 {% else %}
-                    No
+                    ✘
                 {% endif %}
             </td>
             {% endif %}{% endfor %}

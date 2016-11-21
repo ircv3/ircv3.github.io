@@ -9,24 +9,23 @@
     #     display: irc.charybdis.io
     #   link: http://www.charybdis.io/
     #   support:
-    #     v3.1:
-    #       - account-notify
-    #       - away-notify
-    #       - cap
-    #       - extended-join
-    #       - multi-prefix
-    #       - sasl
-    #       - starttls
-    #     v3.2:
-    #       - account-tag
+    #     stable:
+    #       - cap-3.1
+    #       - cap-3.2
     #       - cap-notify
-    #       - cap
+    #       - sasl-3.1
+    #       - sasl-3.2
+    #       - account-notify
+    #       - account-tag
+    #       - away-notify
     #       - chghost
     #       - echo-message
+    #       - extended-join
     #       - invite-notify
     #       - monitor
-    #       - sasl
+    #       - multi-prefix
     #       - server-time
+    #       - starttls
     #       - userhost-in-names
     - name: InspIRCd Testnet
       ircd-ver: InspIRCd-3.0
@@ -35,27 +34,26 @@
         display: testnet.inspircd.org
       link: http://www.inspircd.org/
       support:
-        v3.1:
-          - account-notify
-          - away-notify
-          - cap
-          - extended-join
-          - multi-prefix
-          - sasl
-          - starttls
-        v3.2:
-          - account-tag
-          - batch
+        stable:
+          - cap-3.1
+          - cap-3.2
           - cap-notify
-          - cap
+          - sasl-3.1
+          - sasl-3.2
+          - account-notify
+          - account-tag
+          - away-notify
+          - batch
           - chghost
           - echo-message
+          - extended-join
           - invite-notify
           - monitor
-          - sasl
+          - multi-prefix
           - server-time
+          - starttls
           - userhost-in-names
-        v3.3:
+        unstable:
           - message-tags
           - sts
 
@@ -70,13 +68,12 @@
     #     display: irc.chatspike.net
     #   link: https://www.chatspike.net/
     #   support:
-    #     v3.1:
-    #       - cap
+    #     stable:
+    #       - cap-3.1
+    #       - sasl-3.1
     #       - multi-prefix
-    #       - sasl
     #       - starttls
     #       - userhost-in-names
-    #
     - name: EsperNet
       ircd-ver: charybdis-3.5.0-dev
       net-address: 
@@ -84,16 +81,15 @@
         display: irc.esper.net
       link: https://esper.net
       support:
-        v3.1:
+        stable:
+          - cap-3.1
+          - sasl-3.1
           - account-notify
           - away-notify
-          - cap
           - extended-join
-          - multi-prefix
-          - sasl
-          - starttls
-        v3.2:
           - monitor
+          - multi-prefix
+          - starttls
     - name: freenode
       ircd-ver: ircd-seven-1.1.4
       net-address:
@@ -101,12 +97,12 @@
         display: chat.freenode.net
       link: https://freenode.net/
       support:
-        v3.1:
+        stable:
+          - cap-3.1
+          - sasl-3.1
           - account-notify
-          - cap
           - extended-join
           - multi-prefix
-          - sasl
     - name: IRCHighWay
       ircd-ver: InspIRCd-2.0
       net-address:
@@ -114,15 +110,14 @@
         display: irc.irchighway.net
       link: https://irchighway.net/
       support:
-        v3.1:
-          - away-notify
+        stable:
+          - cap-3.1
+          - sasl-3.1
           - account-notify
-          - cap
+          - away-notify
           - extended-join
           - multi-prefix
-          - sasl
           - starttls
-        v3.2:
           - userhost-in-names
     - name: Rizon
       ircd-ver: plexus-4
@@ -131,11 +126,10 @@
         display: irc.rizon.net
       link: https://rizon.net/
       support:
-        v3.1:
+        stable:
+          - cap-3.1
           - away-notify
-          - cap
-          - multi-prefix
-        v3.2:
           - chghost
           - invite-notify
+          - multi-prefix
           - userhost-in-names
