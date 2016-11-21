@@ -223,7 +223,7 @@ thead tr > th.support-head > span > a:before {
 .support:hover .hover-popup {
     display: block;
 }
-.support:hover .hover-popup > div {
+.support .hover-popup > div {
     position: relative;
     background: #333;
     border: 1px #111 solid;
@@ -235,7 +235,7 @@ thead tr > th.support-head > span > a:before {
     border-radius: 0.5rem;
     z-index: 999;
 }
-.support:hover .hover-popup > div:after {
+.support .hover-popup > div:after {
 	bottom: 100%;
 	left: 50%;
 	border: solid transparent;
@@ -246,21 +246,21 @@ thead tr > th.support-head > span > a:before {
 	pointer-events: none;
 	border-color: rgba(0, 0, 0, 0);
     border-bottom-color: #333;
-	border-width: 5px;
-	margin-left: -5px;
+	border-width: 0.9rem;
+	margin-left: -0.9rem;
 }
-.support:hover .hover-popup > div p {
+.support .hover-popup > div p {
     margin-bottom: 0;
 }
-.support:hover .hover-popup > div p + p {
+.support .hover-popup > div p + p {
     margin-top: 0.25;
 }
-.support:hover .hover-popup > div p.note {
+.support .hover-popup > div p.note {
     margin-top: 0.3rem;
     border-top: 1px rgba(20, 20, 20, 0.3) solid;
     padding-top: 0.1rem;
 }
-.support:hover .hover-popup > div p code {
+.support .hover-popup > div p code {
     color: #e7e7a7;
 }
 
