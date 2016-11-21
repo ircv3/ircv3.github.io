@@ -212,6 +212,87 @@ thead tr > th.support-head > span > a:before {
     margin-top: 100%;
 }
 
+/* hover popups */
+.hover-popup {
+    display: none;
+    position: absolute;
+}
+.support:hover {
+    border: 1px rgba(20, 20, 20, 0.65) solid;
+}
+.support:hover .hover-popup {
+    display: block;
+}
+.support:hover .hover-popup > div {
+    position: relative;
+    background: #333;
+    border: 1px #111 solid;
+    padding: 0.75rem 1.25rem;
+    color: #f7f7f7;
+    text-align: left;
+    top: 2rem;
+    left: calc(-50% + 1.75rem);
+    border-radius: 0.5rem;
+    z-index: 999;
+}
+.support:hover .hover-popup > div:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: #333;
+	border-width: 5px;
+	margin-left: -5px;
+}
+.support:hover .hover-popup > div p {
+    margin-bottom: 0;
+}
+.support:hover .hover-popup > div p + p {
+    margin-top: 0.25;
+}
+.support:hover .hover-popup > div p.note {
+    margin-top: 0.3rem;
+    border-top: 1px rgba(20, 20, 20, 0.3) solid;
+    padding-top: 0.1rem;
+}
+.support:hover .hover-popup > div p code {
+    color: #e7e7a7;
+}
+
+.sw-table .support.supported .hover-popup > div {
+  background: #382;
+  border-color: #271;
+}
+.sw-table .support.supported .hover-popup > div:after {
+  border-bottom-color: #271;
+}
+.sw-table .support.unsupported .hover-popup > div {
+  background: #833;
+  border-color: #722;
+}
+.sw-table .support.unsupported .hover-popup > div:after {
+  border-bottom-color: #722;
+}
+.sw-table .support.partial .hover-popup > div {
+  background: #707232;
+  border-color: #606222;
+}
+.sw-table .support.partial .hover-popup > div:after {
+  border-bottom-color: #606222;
+}
+.sw-table .support.na .hover-popup > div {
+  background: #666;
+  border-color: #555;
+}
+.sw-table .support.na .hover-popup > div:after {
+  border-bottom-color: #555;
+}
+
 .bold {
   font-weight: bold;
 }

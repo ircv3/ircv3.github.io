@@ -73,6 +73,14 @@
                 {% else %}
                     ✘
                 {% endif %}
+
+                <div class="hover-popup"><div>
+                    <p class="bold">{{ sw.name }}</p>
+                    <p>{{ ext[1].name }}</p>
+                    {% if info %}
+                        <p class="note">{{ info }}</p>
+                    {% endif %}
+                </div></div>
             </td>
             {% endif %}{% endfor %}
         </tr>
