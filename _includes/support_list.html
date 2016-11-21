@@ -8,8 +8,6 @@
     {% endfor %}
 {% endcapture %}
 
-{% capture supportedspecs %}{% for spec in support[1].specs %}{% if spec[1].deprecated %}{% else %}Y{% endif %}{% endfor %}{% endcapture %}
-
 {% if anysupport contains "Y" %}
 {% if hide_support_name %}{% else %}
 #### {% if support_name %}{{ support_name }}{% else %}{{ support[1].name }} Support{% endif %}
@@ -20,20 +18,13 @@
 <div class="sw-table t-{{ support[1].name | slugify }}"><table>
     <colgroup>
         <col class="name" />
-        <col class="support" span="{{ supportedspecs | size }}" />
+        <col class="software" span="{{ type.software | size }}" />
     </colgroup>
     <thead>
         <tr>
-            <th>Name</th>
-            {% for ext in support[1].specs %}{% if ext[1].deprecated %}{% else %}
-            <th class="support-head"><span><a class="spec-name" title="{{ ext[1].description }}" href="{{ ext[1].link }}">{{ ext[1].name }}</a></span></th>
-            {% endif %}{% endfor %}
-        </tr>
-    </thead>
-    <tbody>
-        {% for sw in type.software %}
-        <tr>
-            <td>
+            <th>Feature</th>
+            {% for sw in type.software %}
+            <th class="support-head">
                 {% if sw.link %}<a{% if sw.ircd-ver || sw.net-address %} class="bold"{% endif %} href="{{ sw.link }}">{{ sw.name }}</a>{% else %}{{ sw.name }}{% endif %}
                 {% if sw.ircd-ver %}<span class="ircd-ver">{{ sw.ircd-ver }}</span>{% endif %}
                 {% if sw.net-address %}<a class="net-address" href="{{ sw.net-address.link }}">{{ sw.net-address.display }}</a>{% endif %}
@@ -54,39 +45,48 @@
                         {% endfor %}
                     </div>
                 {% endif %}
-            </td>
-            {% for ext in support[1].specs %}
-            {% capture ext_name %}{{ ext[0] }}{% endcapture %}{% if ext[1].deprecated %}{% else %}
-            <td class="support {% if sw.support[support_key] contains ext_name %}supported{% elsif sw.partial[support_key] contains ext_name %}partial{% elsif sw.na[support_key] contains ext_name %}na{% else %}unsupported{% endif %} {% if ext[1].required %}required{% else %}optional{% endif %}">
-                {% if sw.support[support_key] contains ext_name %}
-                    {% assign info = sw.support[support_key][ext_name] %}
-                    {% assign capab = '✔' %}
-                    {% include show_capability.html %}
-                {% elsif sw.partial[support_key] contains ext_name %}
-                    {% assign info = sw.partial[support_key][ext_name] %}
-                    {% assign capab = '~' %}
-                    {% include show_capability.html %}
-                {% elsif sw.na[support_key] contains ext_name %}
-                    {% assign info = sw.na[support_key][ext_name] %}
-                    {% assign capab = '✘' %}
-                    {% include show_capability.html %}
-                {% else %}
-                    ✘
-                {% endif %}
-
-                <div class="hover-popup"><div>
-                    <p class="bold">{{ sw.name }}</p>
-                    <p>{{ ext[1].name }}</p>
-                    {% if info %}
-                        <p class="note">{{ info }}</p>
-                    {% endif %}
-                </div></div>
-
-                {% assign info = nil %}
-            </td>
-            {% endif %}{% endfor %}
+            </th>
+            {% endfor %}
         </tr>
-        {% endfor %}
+    </thead>
+    <tbody>
+        {% for ext in support[1].specs %}{% if ext[1].deprecated %}{% else %}
+        <tr class="{% if ext[1].required %}required{% else %}optional{% endif %}">
+            <td><span><a class="spec-name" title="{{ ext[1].description }}" href="{{ ext[1].link }}">{{ ext[1].name }}</a></span></td>
+
+            {% for sw in type.software %}
+                {% capture ext_name %}{{ ext[0] }}{% endcapture %}{% if ext[1].deprecated %}{% else %}
+                <td class="support {% if sw.support[support_key] contains ext_name %}supported{% elsif sw.partial[support_key] contains ext_name %}partial{% elsif sw.na[support_key] contains ext_name %}na{% else %}unsupported{% endif %}">
+                    {% if sw.support[support_key] contains ext_name %}
+                        {% assign capab = sw.support[support_key][ext_name] %}
+                        {% assign default = 'Yes' %}
+                        {% include show_capability.html %}
+                    {% elsif sw.partial[support_key] contains ext_name %}
+                        {% assign capab = sw.partial[support_key][ext_name] %}
+                        {% assign default = 'Partial' %}
+                        {% include show_capability.html %}
+                    {% elsif sw.na[support_key] contains ext_name %}
+                        {% assign capab = sw.na[support_key][ext_name] %}
+                        {% assign default = 'N/A' %}
+                        {% include show_capability.html %}
+                    {% else %}
+                        No
+                    {% endif %}
+
+                    <div class="hover-popup"><div>
+                        <p class="bold">{{ sw.name }}</p>
+                        <p>{{ ext[1].name }}</p>
+                        {% if info %}
+                            <p class="note">{{ info }}</p>
+                        {% endif %}
+                    </div></div>
+
+                    {% assign info = nil %}
+                </td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        {% endif %}{% endfor %}
     </tbody>
 </table></div>
 {% endif %}

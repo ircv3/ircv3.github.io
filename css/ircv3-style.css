@@ -23,7 +23,7 @@ tbody tr code {
     background: none;
 }
 td + td, th + th {
-    border-left: 1px #C0C0C0 solid;
+    border-left: 1px #aaa solid;
 }
 
 .page-header {
@@ -58,9 +58,6 @@ td + td, th + th {
 .sw-table > table {
   width: auto;
   min-width: 30.65%; /* pulled out of the air because it looks nice */
-}
-.sw-table.t-stable > table {
-  width: 100%;
 }
 .sw-table + h3 {
   margin-top: 2.35em;
@@ -112,7 +109,7 @@ a.irc-extension {
   font-size: 95%;
 }
 .sw-table .support {
-  max-width: 1rem;
+  max-width: 27rem;
   text-align: center;
   padding: 0.3em 0.5em;
 }
@@ -136,8 +133,8 @@ a.irc-extension {
   background-color: #eeaaa7;
   color: #30100E;
 }
-.sw-table td.required + td.optional {
-  border-left: 5px solid white;
+.sw-table tr.required + tr.optional {
+  border-top: 0.5rem solid #aaa;
 }
 .sw-table td note desc {
   vertical-align: super;
@@ -178,38 +175,6 @@ a.irc-extension {
 .sw-table .net-address {
   display: block;
   margin-bottom: 0.3rem;
-}
-
-/* rotate table headers */
-thead tr > th.support-head {
-    text-align: justify;
-}
-thead tr > th.support-head {
-    width: 0;
-    line-height: 0;
-}
-thead tr > th.support-head > span > a {
-    display: inline-block;
-    white-space: nowrap;
-
-    transform: translate(0, 100%) rotate(-90deg);
-    transform-origin: 0 0;
-
-    vertical-align: bottom;
-}
-thead tr > th.support-head > span {
-    display: block;
-    width: 1.5rem;
-    padding-left: 0.75rem;
-    margin: 0.5rem auto;
-    text-align: justify;
-    overflow-x: hidden;
-    overflow-y: hidden; /* hides unnecessary scrollbars on chrome */
-}
-thead tr > th.support-head > span > a:before {
-    content: "";
-    float: left;
-    margin-top: 100%;
 }
 
 /* hover popups */
