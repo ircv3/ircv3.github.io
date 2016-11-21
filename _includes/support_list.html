@@ -17,7 +17,7 @@
 
 {% if support[1].note %}{{ support[1].note | markdownify }}{% endif %}
 
-<div class="sw-table"><table>
+<div class="sw-table t-{{ support[1].name | slugify }}"><table>
     <colgroup>
         <col class="name" />
         <col class="support" span="{{ supportedspecs | size }}" />

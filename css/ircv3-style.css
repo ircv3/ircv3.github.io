@@ -53,11 +53,14 @@ td + td, th + th {
 
 .sw-table {
   overflow-x: auto;
-  width: 100%;
   margin: 0 auto;
 }
 .sw-table > table {
-  min-width: 100%;
+  width: auto;
+  min-width: 30.65%; /* pulled out of the air because it looks nice */
+}
+.sw-table.t-stable > table {
+  width: 100%;
 }
 .sw-table + h3 {
   margin-top: 2.35em;
