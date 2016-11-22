@@ -153,7 +153,7 @@ describes which messages are echo'd, and how they are interpreted by clients.
 
 ## [Invite Notify](http://ircv3.net/specs/extensions/invite-notify-3.2.html)
 
-The `invite-notify` extensions allows priveleged channel users to see when
+The `invite-notify` extensions allows privileged channel users to see when
 someone is invited to their channel. This can help chanops better run their
 channels and see better information about what's going on.
 
@@ -178,7 +178,7 @@ command, the relevant `RPL_ISUPPORT` token and the commands used with it.
 The `multi-prefix` extension allows clients to see all the statuses
 (i.e. voice, chanop) that other clients have in a channel rather than just the
 highest. This improves data tracking for clients and bots, and allows clients
-to display the privelege level of other clients more correctly.
+to display the privilege level of other clients more correctly.
 
 The [`multi-prefix` spec](http://ircv3.net/specs/extensions/multi-prefix-3.1.html)
 details the exact messages these changes apply to and how exactly it's used.
