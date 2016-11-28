@@ -313,7 +313,7 @@
         SASL:
           - plain
     - name: The Lounge
-      # ref: https://github.com/thelounge/lounge/issues/312
+      # ref: https://github.com/thelounge/lounge/projects/1
       link: https://thelounge.github.io/
       support:
         v3.1:
@@ -321,6 +321,7 @@
           - multi-prefix
         v3.2:
           - echo-message
+          - message-tags
           - server-time
     - name: Mibbit
       # ref: http://wiki.mibbit.com/index.php/SASL
