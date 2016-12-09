@@ -147,5 +147,10 @@
         v3.1:
           - cap
           - sasl
+        v3.2:
+          cap: 1.2.4+
+          cap-notify: 1.2.4+
+          sasl: 1.2.4+
         SASL:
+          - external
           - plain
