@@ -13,6 +13,7 @@
           extended-join:
           starttls: 1.9.9
         v3.2:
+          chghost: 2.5
           server-time: 1.9.7
           userhost-in-names:
         SASL:
