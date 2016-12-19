@@ -53,11 +53,11 @@ negotiation.
 ## [Message Tags]({{site.baseurl}}/specs/core/message-tags-3.2.html)
 
 Message tags extend the core framing used with IRC messages, and allow extended
-data to be send with messages. Tags are used by a number of extensions, and we
-consider them a core part of IRCv3 and of supporting new extensions.
+data to be send with messages.
 
-This feature is considered essential and all software implementing IRCv3
-**must** implement at least the core Message Tags specification.
+Message tags are widely used in the IRCv3 specifications. As such, most
+software implementing IRCv3 extensions will want to to implement the core
+Message Tags specification.
 
 The [core Message Tags spec]({{site.baseurl}}/specs/core/message-tags-3.2.html)
 covers the required message changes, how tag data is formatted and escaped, and
