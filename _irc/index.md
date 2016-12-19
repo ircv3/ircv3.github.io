@@ -29,8 +29,9 @@ Capability negotiation is a vital part of IRCv3. Capabilities let us implement
 protocol changes in backwards-compatible ways, as well as convey various
 information on joining a server.
 
-This feature is considered essential and all software implementing IRCv3
-**must** implement at least the v3.1 and v3.2 specifications.
+CAPs are the primary way that IRCv3 features are enabled. As such, most
+software implementing IRCv3 extensions will want to implement capability
+negotiation.
 
 The [v3.1 Capability Negotiation spec]({{site.baseurl}}/specs/core/capability-negotiation-3.1.html)
 conveys the basic listing and requesting of capabilities, and lays the
@@ -68,7 +69,8 @@ allowing for new features to be developed and implemented independently from
 the IRCd itself (similar to extensions based on CTCP).
 
 **Note:** Message tags themselves are used as a foundation for other extensions
-and do not themselves offer any user-facing features.
+and do not themselves offer any user-facing features. Specific message tags are
+defined in the various IRCv3 specifications.
 
 
 ---
@@ -121,7 +123,8 @@ the naming of new batch types, the semantics of batches and how clients should
 process them.
 
 **Note:** Batches themselves are used as a foundation for other extensions and
-do not themselves offer any user-facing features.
+do not themselves offer any user-facing features. For specific batch types, see
+the [batch types]({{site.baseurl}}/docs/batch-types.html) page.
 
 
 ## [Changing Usernames and Hostnames]({{site.baseurl}}/specs/extensions/chghost-3.2.html)
