@@ -32,16 +32,16 @@ information on joining a server.
 This feature is considered essential and all software implementing IRCv3
 **must** implement at least the v3.1 and v3.2 specifications.
 
-The [v3.1 Capability Negotiation spec](http://ircv3.net/specs/core/capability-negotiation-3.1.html)
+The [v3.1 Capability Negotiation spec]({{site.baseurl}}/specs/core/capability-negotiation-3.1.html)
 conveys the basic listing and requesting of capabilities, and lays the
 framework which most IRCv3 specs use.
 
-The [v3.2 Capability Negotiation spec](http://ircv3.net/specs/core/capability-negotiation-3.2.html)
+The [v3.2 Capability Negotiation spec]({{site.baseurl}}/specs/core/capability-negotiation-3.2.html)
 clarifies how to list large numbers of capabilities (which is needed as we add
 more useful features to IRCv3!). It also allows capabilities to be listed with
 values, improving the implementation of features like SASL.
 
-The [`cap-notify` spec](http://ircv3.net/specs/extensions/cap-notify-3.2.html)
+The [`cap-notify` spec]({{site.baseurl}}/specs/extensions/cap-notify-3.2.html)
 allows clients to be sent notifications when caps are added to or removed from
 the server. This is useful in cases like SASL when the authentication layer
 disconnects (and thus, SASL authentication is no longer possible). This
@@ -49,7 +49,7 @@ extension is **automatically enabled** if clients request v3.2 capability
 negotiation.
 
 
-## [Message Tags](http://ircv3.net/specs/core/message-tags-3.2.html)
+## [Message Tags]({{site.baseurl}}/specs/core/message-tags-3.2.html)
 
 Message tags extend the core framing used with IRC messages, and allow extended
 data to be send with messages. Tags are used by a number of extensions, and we
@@ -58,15 +58,14 @@ consider them a core part of IRCv3 and of supporting new extensions.
 This feature is considered essential and all software implementing IRCv3
 **must** implement at least the core Message Tags specification.
 
-The [core Message Tags spec](http://ircv3.net/specs/core/message-tags-3.2.html)
+The [core Message Tags spec]({{site.baseurl}}/specs/core/message-tags-3.2.html)
 covers the required message changes, how tag data is formatted and escaped, and
 how they are named.
 
-The [`message-tags` spec](http://ircv3.net/specs/core/message-tags-3.3.html)
-is a **DRAFT EXTENSION** that is **NOT YET RELEASED OR STABLE**. It covers
-allowing clients to send capabilities directly between each other, allowing for
-new features to be developed and implemented independently from the IRCd itself
-(similar to extensions based on CTCP).
+The **work-in-progress** [`message-tags` spec]({{site.baseurl}}/specs/core/message-tags-3.3.html)
+covers allowing clients to send capabilities directly between each other,
+allowing for new features to be developed and implemented independently from
+the IRCd itself (similar to extensions based on CTCP).
 
 **Note:** Message tags themselves are used as a foundation for other extensions
 and do not themselves offer any user-facing features.
@@ -82,42 +81,42 @@ logged into accounts. This allows for much greater integration between client
 bots and the network's authentication system, as well as better general display
 and authentication of client identifies.
 
-The [`account-notify` spec](http://ircv3.net/specs/extensions/account-notify-3.1.html)
+The [`account-notify` spec]({{site.baseurl}}/specs/extensions/account-notify-3.1.html)
 defines a way for clients to be notified when other clients login to accounts.
 This spec defines the `ACCOUNT` message to enable this, use of the `a` WHOX
 token, as well as outlining the general restriction of account names not being
 `*` (as this is used to indicate logging out of accounts).
 
-The [`account-tag` spec](http://ircv3.net/specs/extensions/account-tag-3.2.html)
+The [`account-tag` spec]({{site.baseurl}}/specs/extensions/account-tag-3.2.html)
 defines a way for clients to receive a message tag on messages specifying the
 current account that other client is logged into (or that they aren't logged
 into one at all). This is especially useful for letting bots make use of the
 network's authentication and account mechanisms.
 
-The [`extended-join` spec](http://ircv3.net/specs/extensions/extended-join-3.1.html)
+The [`extended-join` spec]({{site.baseurl}}/specs/extensions/extended-join-3.1.html)
 defines a way to request that extra client information (including that client's
 account) is sent when clients join a given channel. This allows better tracking
 of accounts, particularly when used with `account-notify`.
 
 
-## [Away Notifications](http://ircv3.net/specs/extensions/away-notify-3.1.html)
+## [Away Notifications]({{site.baseurl}}/specs/extensions/away-notify-3.1.html)
 
 The `away-notify` extension provides a way for clients to instantly know when
 other clients go away or come back. This improves responsiveness and the
 display of channels for IRC clients that display this information.
 
-The [`away-notify` spec](http://ircv3.net/specs/extensions/away-notify-3.1.html)
+The [`away-notify` spec]({{site.baseurl}}/specs/extensions/away-notify-3.1.html)
 describes how to sign up for these notifications and the `AWAY` message to
 enable this. 
 
 
-## [Batches](http://ircv3.net/specs/extensions/batch-3.2.html)
+## [Batches]({{site.baseurl}}/specs/extensions/batch-3.2.html)
 
 The `batch` extension provides a way for servers to mark certain messages as
 related. This can simplify the display of this information in clients as well
 as allow better post-processing on them.
 
-The [`batch` spec](http://ircv3.net/specs/extensions/batch-3.2.html) describes
+The [`batch` spec]({{site.baseurl}}/specs/extensions/batch-3.2.html) describes
 the naming of new batch types, the semantics of batches and how clients should
 process them.
 
@@ -125,18 +124,18 @@ process them.
 do not themselves offer any user-facing features.
 
 
-## [Changing Usernames and Hostnames](http://ircv3.net/specs/extensions/chghost-3.2.html)
+## [Changing Usernames and Hostnames]({{site.baseurl}}/specs/extensions/chghost-3.2.html)
 
 The `chghost` extension lets clients more easily see when other clients'
 usernames and/or hostnames are changed. This replaces the clunky method of
 sending a fake `QUIT`, and then one or more fake `JOIN` messages instead.
 
-The [`chghost` spec](http://ircv3.net/specs/extensions/chghost-3.2.html)
+The [`chghost` spec]({{site.baseurl}}/specs/extensions/chghost-3.2.html)
 describes the new `CHGHOST` message which this extension uses, and how clients
 see these changes.
 
 
-## [Echo Message](http://ircv3.net/specs/extensions/echo-message-3.2.html)
+## [Echo Message]({{site.baseurl}}/specs/extensions/echo-message-3.2.html)
 
 The `echo-message` extension lets clients confirm when messages are sent, and
 see messages that other clients on their connection (say, via an IRC bouncer)
@@ -147,40 +146,40 @@ A specification describing message IDs will be proposed soon. This should allow
 clients to make full use of this spec and automatically hide duplicate messages
 as appropriate, which come as a result of this extension.
 
-The [`echo-message` spec](http://ircv3.net/specs/extensions/echo-message-3.2.html)
+The [`echo-message` spec]({{site.baseurl}}/specs/extensions/echo-message-3.2.html)
 describes which messages are echo'd, and how they are interpreted by clients.
 
 
-## [Invite Notify](http://ircv3.net/specs/extensions/invite-notify-3.2.html)
+## [Invite Notify]({{site.baseurl}}/specs/extensions/invite-notify-3.2.html)
 
 The `invite-notify` extensions allows privileged channel users to see when
 someone is invited to their channel. This can help chanops better run their
 channels and see better information about what's going on.
 
-The [`invite-notify` spec](http://ircv3.net/specs/extensions/invite-notify-3.2.html)
+The [`invite-notify` spec]({{site.baseurl}}/specs/extensions/invite-notify-3.2.html)
 describes the new `INVITE` reply which this extension uses, and how clients
 interpret these notifications.
 
 
-## [Monitor](http://ircv3.net/specs/core/monitor-3.2.html)
+## [Monitor]({{site.baseurl}}/specs/core/monitor-3.2.html)
 
 The `MONITOR` command acts as a standardized way for clients to be alerted when
 other clients enter or exit the network. This is in opposition to `ISON`, which
 does this through polling, and `WATCH`, which differs between vendor
 implementations.
 
-The [Monitor spec](http://ircv3.net/specs/core/monitor-3.2.html) details this
+The [Monitor spec]({{site.baseurl}}/specs/core/monitor-3.2.html) details this
 command, the relevant `RPL_ISUPPORT` token and the commands used with it.
 
 
-## [Multiple Prefixes](http://ircv3.net/specs/extensions/multi-prefix-3.1.html)
+## [Multiple Prefixes]({{site.baseurl}}/specs/extensions/multi-prefix-3.1.html)
 
 The `multi-prefix` extension allows clients to see all the statuses
 (i.e. voice, chanop) that other clients have in a channel rather than just the
 highest. This improves data tracking for clients and bots, and allows clients
 to display the privilege level of other clients more correctly.
 
-The [`multi-prefix` spec](http://ircv3.net/specs/extensions/multi-prefix-3.1.html)
+The [`multi-prefix` spec]({{site.baseurl}}/specs/extensions/multi-prefix-3.1.html)
 details the exact messages these changes apply to and how exactly it's used.
 
 
@@ -192,68 +191,66 @@ and provides a pre-registration way to authenticate. Because SASL allows
 authentication before registration, it allows clients to join certain types of
 restricted channels much more effectively.
 
-The [v3.1 SASL spec](http://ircv3.net/specs/extensions/sasl-3.1.html) defines
+The [v3.1 SASL spec]({{site.baseurl}}/specs/extensions/sasl-3.1.html) defines
 the `AUTHENTICATE` command and `sasl` cap, which work together to allow clients
 to authenticate to the network.
 
-The [v3.2 SASL spec](http://ircv3.net/specs/extensions/sasl-3.2.html) defines
+The [v3.2 SASL spec]({{site.baseurl}}/specs/extensions/sasl-3.2.html) defines
 a way to advertise the authentication methods available to clients, allows for
 clients to re-authenticate after services is lost and reconnects, and defines
 what to do if the authentication layer is disconnected or reconnected.
 
 
-## [Server Time](http://ircv3.net/specs/extensions/server-time-3.2.html)
+## [Server Time]({{site.baseurl}}/specs/extensions/server-time-3.2.html)
 
 The `server-time` extension allows clients to see the exact time that messages
 were sent and received. This allows bouncers to replay information with more
 accurate time tracking.
 
-The [`server-time` spec](http://ircv3.net/specs/extensions/server-time-3.2.html)
+The [`server-time` spec]({{site.baseurl}}/specs/extensions/server-time-3.2.html)
 describes the `time` tag, how to specify timestamps and how clients should
 parse incoming timestamps.
 
 
-## [Server Name Indication (SNI)](http://ircv3.net/specs/core/sni-3.3.html)
+## [Server Name Indication (SNI)]({{site.baseurl}}/specs/core/sni-3.3.html)
 
-SNI is a **DRAFT EXTENSION** that is **NOT YET RELEASED OR STABLE**. It makes
-it easier for servers to send the correct TLS certificate to connecting
-clients.
+SNI makes it easier for servers to send the correct TLS certificate to
+connecting clients.
 
-The [SNI spec](http://ircv3.net/specs/core/sni-3.3.html) (which is a **DRAFT**)
-provides guidelines for clients and servers, allowing them to better detect the
-TLS certificate to send based on the server's hostname.
+The **work-in-progress** [SNI spec]({{site.baseurl}}/specs/core/sni-3.3.html) provides
+guidelines for clients and servers, allowing them to better detect the TLS
+certificate to send based on the server's hostname.
 
 
-## [STARTTLS](http://ircv3.net/specs/extensions/tls-3.1.html)
+## [STARTTLS]({{site.baseurl}}/specs/extensions/tls-3.1.html)
 
 STARTTLS allows clients to upgrade their plaintext connections to use TLS
 encryption. It is recommended that clients instead implement STS support when
 that is ratified as a stable IRCv3 standard.
 
-The [`tls` spec](http://ircv3.net/specs/extensions/tls-3.1.html) describes how
+The [`tls` spec]({{site.baseurl}}/specs/extensions/tls-3.1.html) describes how
 the `STARTTLS` command works, as well as how connection registration is changed
 by the introduction of this capability.
 
 
-## [Strict Transport Security (STS)](http://ircv3.net/specs/core/sts-3.3.html)
+## [Strict Transport Security (STS)]({{site.baseurl}}/specs/core/sts-3.3.html)
 
-STS is a **DRAFT EXTENSION** that is **NOT YET RELEASED OR STABLE**. It allows
-clients to be automatically upgraded to use TLS encryption, as well as to
-prevent downgrade attacks. STS is intended as a replacement for the STARTTLS
+STS allows clients to be automatically upgraded to use TLS encryption and
+prevents downgrade attacks. STS is intended as a replacement for the `STARTTLS`
 command with better security qualities.
 
-The [`sts` spec](http://ircv3.net/specs/core/sts-3.3.html) (which is a
-**DRAFT**) describes the `sts` capability, how it operates, and various
-implementation details for both clients and servers.
+The **work-in-progress** [`sts` spec]({{site.baseurl}}/specs/core/sts-3.3.html)
+describes the `sts` capability, how it operates, and various implementation
+details for both clients and servers.
 
 
-## [Userhosts in NAMES](http://ircv3.net/specs/extensions/userhost-in-names-3.2.html)
+## [Userhosts in NAMES]({{site.baseurl}}/specs/extensions/userhost-in-names-3.2.html)
 
 The `userhost-in-names` extension allows clients to more easily see the
 user/hostnames of other clients when joining channels. This allows clients to
 better track info and automate client features more easily.
 
-The [`userhost-in-names` spec](http://ircv3.net/specs/extensions/userhost-in-names-3.2.html)
+The [`userhost-in-names` spec]({{site.baseurl}}/specs/extensions/userhost-in-names-3.2.html)
 describes how the `NAMES` message changes with this capability active, and how
 clients should interpret the changes.
 
@@ -268,7 +265,7 @@ implementing them. Generally, these extensions have either been superseded,
 or other major implementation issue have been discovered with them.
 
 
-## [v3.2 Metadata](http://ircv3.net/specs/core/metadata-3.2.html)
+## [v3.2 Metadata]({{site.baseurl}}/specs/core/metadata-3.2.html)
 
 The v3.2 `METADATA` command was found to have issues related to rate-limiting
 and excessive notifications, which made it impossible for servers in widespread
