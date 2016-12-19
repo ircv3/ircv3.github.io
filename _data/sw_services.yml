@@ -6,7 +6,7 @@
         SASL:
           - external
           - plain
-    - name: Atheme Forks
+    - name: Atheme (and forks)
       link: http://atheme.net
       support:
         SASL:
