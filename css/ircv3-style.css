@@ -261,8 +261,18 @@ a.irc-extension {
 	border-color: #337F87;
 }
 
-a, .page-header > h1 {
-	color: #145960;
+.page-header > h1 {
+  color: #14565D;
+}
+.lead a {
+	color: #00646F;
+}
+
+a {
+	color: #0B7884;
+}
+a:hover, a:focus {
+	color: #2795A1;
 }
 
 .lead {
@@ -273,10 +283,6 @@ a, .page-header > h1 {
 }
 .warning {
   color: #c24;
-}
-
-a:hover, a:focus {
-	color: #337F87;
 }
 
 .navbar-nav a {
