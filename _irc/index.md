@@ -280,7 +280,7 @@ clients should interpret the changes.
 
 These extensions have been explicitly **deprecated**. We no longer recommend
 implementing them. Generally, these extensions have either been superseded,
-or other major implementation issue have been discovered with them.
+or other major implementation issues have been discovered with them.
 
 
 ## [v3.2 Metadata]({{site.baseurl}}/specs/core/metadata-3.2.html)
