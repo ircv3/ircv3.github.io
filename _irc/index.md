@@ -7,10 +7,11 @@ index: true
 ---
 
 IRCv3 specifications build on top of the core IRC protocol. The primary core
-IRC protocol specifications are [RFC1459](http://tools.ietf.org/html/rfc1459)
-and [RFC7192](https://tools.ietf.org/html/rfc7194), although one of our members
-has been working on updated core protocol specifications
-[here](http://modern.ircdocs.horse/) which you may find useful to consult.
+IRC protocol specifications are [RFC1459](http://tools.ietf.org/html/rfc1459),
+[RFC2812](http://tools.ietf.org/html/rfc2812) and [RFC7194](https://tools.ietf.org/html/rfc7194),
+although one of our members has been working on updated core protocol
+specifications [here](http://modern.ircdocs.horse/) which you may find useful
+to consult.
 If you have any questions on the core IRC protocol, please feel free to ask us
 [directly]({{site.baseurl}}/contact.html) or with an issue in our
 [feedback](https://github.com/ircv3/ircv3-feedback) Github repository.
@@ -18,9 +19,9 @@ If you have any questions on the core IRC protocol, please feel free to ask us
 To fully understand IRCv3, please read the core IRC protocol specifications
 followed by the IRCv3 specifications.
 
-Initially these specifications were released as a versioned distribution, but
-these days each specification is released when it is stable and has been widely
-tested.
+These specifications are released when they are stable and have been widely
+tested. In the past, the WG released specifications as versioned bundles
+(IRCv3.1, IRCv3.2), but we no longer do this.
 
 Errata updates may be submitted for our specifications. To do so, simply see
 our [contribution](https://github.com/ircv3/ircv3-specifications/blob/master/CONTRIBUTING.md)
