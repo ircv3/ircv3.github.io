@@ -2,6 +2,7 @@
 layout: page
 title: IRCv3 Specifications
 excerpt: IRCv3 Specifications
+meta-description: Specifications that the IRCv3 Working Group maintains and distributes.
 index: true
 ---
 
@@ -123,8 +124,12 @@ the naming of new batch types, the semantics of batches and how clients should
 process them.
 
 **Note:** Batches themselves are used as a foundation for other extensions and
-do not themselves offer any user-facing features. For specific batch types, see
-the [batch types]({{site.baseurl}}/docs/batch-types.html) page.
+do not themselves offer any user-facing features.
+
+Here are the standalone batch types IRCv3 defines:
+
+* [`netsplit` and `netjoin` batch type]({{site.baseurl}}/specs/extensions/batch/netsplit-3.2.html), to allow clients to collapse netsplits and netjoins more effectively.
+* [`chathistory` batch type]({{site.baseurl}}/specs/extensions/batch/chathistory-3.3.html) **[draft]**, for replaying message history.
 
 
 ## [Changing Usernames and Hostnames]({{site.baseurl}}/specs/extensions/chghost-3.2.html)
@@ -202,6 +207,16 @@ The [v3.2 SASL spec]({{site.baseurl}}/specs/extensions/sasl-3.2.html) defines
 a way to advertise the authentication methods available to clients, allows for
 clients to re-authenticate after services is lost and reconnects, and defines
 what to do if the authentication layer is disconnected or reconnected.
+
+IRC SASL authentication primarily uses the same mechanisms as SASL in other
+protocols. Most commonly:
+
+* [PLAIN](https://tools.ietf.org/search/rfc4616) as defined by RFC 4616
+* [EXTERNAL](https://tools.ietf.org/html/rfc4422#appendix-A) as defined by RFC 4422
+* [SCRAM-SHA-256](https://tools.ietf.org/html/rfc7677) as defined by RFC 7677
+
+For further information on SASL mechanism support, see the
+[SASL Mechanisms page]({{site.baseurl}}/docs/sasl-mechs.html).
 
 
 ## [Server Time]({{site.baseurl}}/specs/extensions/server-time-3.2.html)

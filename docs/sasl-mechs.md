@@ -3,7 +3,7 @@ layout: page
 title: SASL Mechanisms
 meta-description: SASL Mechanisms for the IRCv3 'sasl' capability.
 ---
-IAL primarily uses the same mechanisms as SASL in other protocols. Most commonly:
+IRC SASL authentication primarily uses the same mechanisms as SASL in other protocols. Most commonly:
 
 * [PLAIN](https://tools.ietf.org/search/rfc4616) as defined by RFC 4616
 * [EXTERNAL](https://tools.ietf.org/html/rfc4422#appendix-A) as defined by RFC 4422
