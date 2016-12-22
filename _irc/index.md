@@ -22,8 +22,8 @@ If you have any questions on the core IRC protocol, please feel free to ask us
 [directly]({{site.baseurl}}/contact.html) or with an issue in our
 [feedback](https://github.com/ircv3/ircv3-feedback) Github repository.
 
-These specifications are released when they are stable and have been widely
-tested. In the past, the WG released specifications as versioned bundles
+The IRCv3 specifications are released when they are stable and have been widely
+tested. In the past the WG released specifications as versioned bundles
 (IRCv3.1, IRCv3.2), but we no longer do this.
 
 Errata updates may be submitted for our specifications. To do so, simply see
