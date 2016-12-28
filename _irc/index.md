@@ -6,15 +6,25 @@ meta-description: Specifications that the IRCv3 Working Group maintains and dist
 index: true
 ---
 
-Right now the IRCv3 specification is distributed as a series of extension
-specifications to IRC protocol version 2.7, also known as
-[RFC1459](http://tools.ietf.org/html/rfc1459). To understand the basis of the
-IRC version 3 protocol, please read RFC1459 followed by the extension
-specifications.
+IRCv3 specifications build on top of the core IRC protocol. The primary core
+IRC protocol specifications are [RFC1459](http://tools.ietf.org/html/rfc1459),
+[RFC2812](http://tools.ietf.org/html/rfc2812) and [RFC7194](https://tools.ietf.org/html/rfc7194).
+To fully understand IRCv3, please read the core IRC protocol specifications
+followed by the IRCv3 specifications.
 
-IRCv3 is based on a set of specifications. Initially these specifications were
-released as a versioned distribution – these days, however, each specification
-is released when it is stable and has been widely tested.
+**Note:** The core IRC protocol specifications have been widely acknowledged to
+be old, out-of-date, and to not fully or accurately describe how the IRC client
+protocol works today. One of our members has been working on updated core
+protocol specifications [here](http://modern.ircdocs.horse/) which you may find
+useful to consult. Look at core protocol specifications and the IRC ecosystem
+itself for a complete picture of how the IRC protocol works today.
+If you have any questions on the core IRC protocol, please feel free to ask us
+[directly]({{site.baseurl}}/contact.html) or with an issue in our
+[feedback](https://github.com/ircv3/ircv3-feedback) Github repository.
+
+The IRCv3 specifications are released when they are stable and have been widely
+tested. In the past the WG released specifications as versioned bundles
+(IRCv3.1, IRCv3.2), but we no longer do this.
 
 Errata updates may be submitted for our specifications. To do so, simply see
 our [contribution](https://github.com/ircv3/ircv3-specifications/blob/master/CONTRIBUTING.md)
