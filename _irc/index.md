@@ -92,7 +92,7 @@ defined in the various IRCv3 specifications.
 IRCv3 extensions allow clients to much more easily know when other users are
 logged into accounts. This allows for much greater integration between client
 bots and the network's authentication system, as well as better general display
-and authentication of client identifies.
+and authentication of client identities.
 
 The [`account-notify` spec]({{site.baseurl}}/specs/extensions/account-notify-3.1.html)
 defines a way for clients to be notified when other clients login to accounts.
