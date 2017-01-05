@@ -146,6 +146,4 @@ v3.3:
       name: SNI
       description: Server Name Indication DRAFT.
       link: http://ircv3.net/specs/core/sni-3.3.html
-      required: false
-      caps:
-        - draft/sni
+      required: true
