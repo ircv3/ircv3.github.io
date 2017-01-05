@@ -66,6 +66,9 @@
           - sasl
           - server-time
           - userhost-in-names
+        v3.3:
+          - sts
+          - sni
         SASL:
           - external
           - plain
