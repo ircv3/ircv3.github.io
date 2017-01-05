@@ -44,6 +44,27 @@
           chghost: 3.4+
         SASL:
           - plain
+    - name: irc-framework
+      # ref: https://github.com/kiwiirc/irc-framework/blob/master/src/commands/handlers/registration.js
+      link: https://github.com/kiwiirc/irc-framework
+      support:
+        v3.1:
+          - cap
+          - multi-prefix
+          - sasl
+          - account-notify
+          - away-notify
+          - extended-join
+        v3.2:
+          - cap
+          - account-tag
+          - chghost
+          - invite-notify
+          - sasl
+          - server-time
+          - userhost-in-names
+        SASL:
+          - plain
     - name: Kitteh IRC Client Library
       # ref: http://kicl.kitteh.org/en/stable/ircv3/
       link: https://github.com/KittehOrg/KittehIRCClientLib
@@ -153,25 +174,4 @@
           sasl: 1.2.4+
         SASL:
           - external
-          - plain
-    - name: irc-framework
-      # ref: https://github.com/kiwiirc/irc-framework/blob/master/src/commands/handlers/registration.js
-      link: https://github.com/kiwiirc/irc-framework
-      support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - sasl
-          - account-notify
-          - away-notify
-          - extended-join
-        v3.2:
-          - cap
-          - account-tag
-          - chghost
-          - invite-notify
-          - sasl
-          - server-time
-          - userhost-in-names
-        SASL:
           - plain
