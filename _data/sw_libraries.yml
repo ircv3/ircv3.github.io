@@ -1,15 +1,5 @@
 - name: Libraries
   software:
-    - name: BlueIRC
-      # ref: https://github.com/MicroDroid/blueirc/blob/development/src/tk/microdroid/blueirc/Handler.java#L59
-      link: https://github.com/MicroDroid/blueirc
-      support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - sasl
-        SASL:
-          - plain
     - name: cinch
       # ref: https://github.com/cinchrb/cinch/blob/v2.3.1/lib/cinch/irc.rb#L115
       link: https://github.com/cinchrb/cinch
