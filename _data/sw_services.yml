@@ -15,8 +15,6 @@
       sublinks:
         - name: ChatServices
           link: https://bitbucket.org/chatlounge/chatservices
-        - name: EZtheme
-          link: https://github.com/ElectroCode/eztheme
         - name: Shaltúre
           link: https://github.com/shalture/shalture
         - name: Xtheme
