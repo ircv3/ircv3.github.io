@@ -297,6 +297,9 @@ a:hover, a:focus {
 .navbar-nav hr {
 	margin: 0;
 }
+li.sep {
+    border-top: solid 1px #f8f8f8;
+}
 
 .navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:active{
 	background-color: #337F87;
