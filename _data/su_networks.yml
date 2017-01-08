@@ -135,6 +135,7 @@
           - away-notify
           - cap
           - multi-prefix
+          - sasl
         v3.2:
           - chghost
           - invite-notify
