@@ -93,7 +93,11 @@
           - sasl
           - starttls
         v3.2:
+          - cap
+          - cap-notify
+          - chghost
           - monitor
+          - userhost-in-names
     - name: freenode
       ircd-ver: ircd-seven-1.1.4
       net-address:
@@ -138,5 +142,22 @@
           - sasl
         v3.2:
           - chghost
+          - invite-notify
+          - userhost-in-names
+    - name: Snoonet
+      ircd-ver: InspIRCd-2.0
+      net-address:
+        link: ircs://irc.snoonet.org:6697/
+        display: irc.snoonet.org
+      link: https://www.snoonet.org/
+      support:
+        v3.1:
+          - away-notify
+          - account-notify
+          - cap
+          - extended-join
+          - multi-prefix
+          - sasl
+        v3.2:
           - invite-notify
           - userhost-in-names
