@@ -78,7 +78,7 @@
     #       - userhost-in-names
     #
     - name: EsperNet
-      ircd-ver: charybdis-3.5.3-dev
+      ircd-ver: charybdis-3.5.3
       net-address: 
         link: ircs://irc.esper.net:6697/
         display: irc.esper.net
