@@ -170,13 +170,27 @@ describes which messages are echo'd, and how they are interpreted by clients.
 
 ## [Invite Notify]({{site.baseurl}}/specs/extensions/invite-notify-3.2.html)
 
-The `invite-notify` extensions allows privileged channel users to see when
+The `invite-notify` extension allows privileged channel users to see when
 someone is invited to their channel. This can help chanops better run their
 channels and see better information about what's going on.
 
 The [`invite-notify` spec]({{site.baseurl}}/specs/extensions/invite-notify-3.2.html)
 describes the new `INVITE` reply which this extension uses, and how clients
 interpret these notifications.
+
+
+## [Labeled Responses]({{site.baseurl}}/specs/extensions/labeled-response.html)
+
+The `labeled-response` extension allows clients to link returned numerics with
+sent commands. This allows for much richer/accurate implementations of
+`echo-message`, and lets clients generally corrolate sent and received messages.
+
+Additionally, this should also assist bouncers with correctly directing
+responses to the right connected client.
+
+The **work-in-progress** [`labeled-response` spec]({{site.baseurl}}/specs/extensions/labeled-response.html)
+covers the `draft/label` tag, and how clients should send and will receive
+labels.
 
 
 ## [Monitor]({{site.baseurl}}/specs/core/monitor-3.2.html)
