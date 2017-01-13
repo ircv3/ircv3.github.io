@@ -205,8 +205,8 @@ covers the `draft/msgid` tag, how servers should generate message IDs and how
 clients should treat them.
 
 **Note:** Message IDs themselves are used as a foundation for other extensions
-and do not themselves offer any user-facing features. These IRCv3
-specifications will note their use of (and dependency on) message IDs.
+and do not themselves offer any user-facing features. Specific IRCv3
+extensions will note their use of (and dependency on) message IDs.
 
 
 ## [Monitor]({{site.baseurl}}/specs/core/monitor-3.2.html)
