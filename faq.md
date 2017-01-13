@@ -21,7 +21,7 @@ Almost every IRC server out there has its own, or its own variant of an, S2S pro
 
 Originally, we were setup by the Atheme group to develop extensions to the IRC client protocol. These days, the direction of the IRCv3 WG is led by the [technical board]({{site.baseurl}}/charter.html).
 
-We're just a collection of server, client, and bot/library developers that work together to produce new specifications and try to push IRC forward. Anyone's free to join, and as long as you agree with [our charter](/charter.html) we're happy to get your opinions, suggestions and feedback.
+We're just a collection of server, client, and bot/library developers that work together to produce new specifications and try to push IRC forward. Anyone's free to join, and as long as you agree with [our charter](/charter.html) we're happy to get your suggestions, ideas and feedback.
 
 ### Is there a roadmap or timeline?
 
