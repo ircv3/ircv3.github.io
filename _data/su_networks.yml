@@ -10,20 +10,20 @@
     #   link: http://www.charybdis.io/
     #   support:
     #     stable:
-    #       - cap-3.1
-    #       - cap-3.2
-    #       - cap-notify
-    #       - sasl-3.1
-    #       - sasl-3.2
     #       - account-notify
     #       - account-tag
     #       - away-notify
+    #       - cap-3.1
+    #       - cap-3.2
+    #       - cap-notify
     #       - chghost
     #       - echo-message
     #       - extended-join
     #       - invite-notify
     #       - monitor
     #       - multi-prefix
+    #       - sasl-3.1
+    #       - sasl-3.2
     #       - server-time
     #       - starttls
     #       - userhost-in-names
@@ -35,21 +35,21 @@
       link: http://www.inspircd.org/
       support:
         stable:
-          - cap-3.1
-          - cap-3.2
-          - cap-notify
-          - sasl-3.1
-          - sasl-3.2
           - account-notify
           - account-tag
           - away-notify
           - batch
+          - cap-3.1
+          - cap-3.2
+          - cap-notify
           - chghost
           - echo-message
           - extended-join
           - invite-notify
           - monitor
           - multi-prefix
+          - sasl-3.1
+          - sasl-3.2
           - server-time
           - starttls
           - userhost-in-names
@@ -70,8 +70,8 @@
     #   support:
     #     stable:
     #       - cap-3.1
-    #       - sasl-3.1
     #       - multi-prefix
+    #       - sasl-3.1
     #       - starttls
     #       - userhost-in-names
     - name: EsperNet
@@ -82,17 +82,17 @@
       link: https://esper.net
       support:
         stable:
+          - account-notify
+          - away-notify
           - cap-3.1
           - cap-3.2
           - cap-notify
-          - sasl-3.1
-          - account-notify
-          - away-notify
           - chghost
           - extended-join
           - monitor
           - monitor
           - multi-prefix
+          - sasl-3.1
           - starttls
           - userhost-in-names
     - name: freenode
@@ -103,11 +103,11 @@
       link: https://freenode.net/
       support:
         stable:
-          - cap-3.1
-          - sasl-3.1
           - account-notify
+          - cap-3.1
           - extended-join
           - multi-prefix
+          - sasl-3.1
     - name: IRCHighWay
       ircd-ver: InspIRCd-2.0
       net-address:
@@ -116,12 +116,12 @@
       link: https://irchighway.net/
       support:
         stable:
-          - cap-3.1
-          - sasl-3.1
           - account-notify
           - away-notify
+          - cap-3.1
           - extended-join
           - multi-prefix
+          - sasl-3.1
           - starttls
           - userhost-in-names
     - name: Rizon
@@ -132,12 +132,12 @@
       link: https://rizon.net/
       support:
         stable:
-          - cap-3.1
-          - sasl
           - away-notify
+          - cap-3.1
           - chghost
           - invite-notify
           - multi-prefix
+          - sasl-3.1
           - userhost-in-names
     - name: Snoonet
       ircd-ver: InspIRCd-2.0
@@ -146,13 +146,12 @@
         display: irc.snoonet.org
       link: https://www.snoonet.org/
       support:
-        v3.1:
-          - away-notify
+        stable:
           - account-notify
-          - cap
+          - away-notify
+          - cap-3.1
           - extended-join
-          - multi-prefix
-          - sasl
-        v3.2:
           - invite-notify
+          - multi-prefix
+          - sasl-3.1
           - userhost-in-names
