@@ -32,8 +32,8 @@
       # ref: https://bugzilla.mozilla.org/showdependencytree.cgi?id=687798&hide_resolved=0
       link: http://chatzilla.hacksrus.com/
       support:
-        v3.1:
-          - cap: 0.9.91
+        stable:
+          - cap-3.1: 0.9.91
           - multi-prefix: 0.9.91
     - name: Colloquy
       # ref: handleCapWithParameters() in https://github.com/colloquy/colloquy/blob/master/Chat%20Core/MVIRCChatConnection.m
