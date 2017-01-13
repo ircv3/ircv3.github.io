@@ -75,7 +75,7 @@
     #       - starttls
     #       - userhost-in-names
     - name: EsperNet
-      ircd-ver: charybdis-3.5.0-dev
+      ircd-ver: charybdis-3.5.3
       net-address: 
         link: ircs://irc.esper.net:6697/
         display: irc.esper.net
@@ -83,13 +83,18 @@
       support:
         stable:
           - cap-3.1
+          - cap-3.2
+          - cap-notify
           - sasl-3.1
           - account-notify
           - away-notify
+          - chghost
           - extended-join
+          - monitor
           - monitor
           - multi-prefix
           - starttls
+          - userhost-in-names
     - name: freenode
       ircd-ver: ircd-seven-1.1.4
       net-address:
@@ -128,8 +133,26 @@
       support:
         stable:
           - cap-3.1
+          - sasl
           - away-notify
           - chghost
           - invite-notify
           - multi-prefix
+          - userhost-in-names
+    - name: Snoonet
+      ircd-ver: InspIRCd-2.0
+      net-address:
+        link: ircs://irc.snoonet.org:6697/
+        display: irc.snoonet.org
+      link: https://www.snoonet.org/
+      support:
+        v3.1:
+          - away-notify
+          - account-notify
+          - cap
+          - extended-join
+          - multi-prefix
+          - sasl
+        v3.2:
+          - invite-notify
           - userhost-in-names

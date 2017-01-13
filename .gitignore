@@ -25,7 +25,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -59,4 +60,4 @@ Temporary Items
 ### Jekyll ###
 _site/
 .sass-cache/
-
+/debug.log

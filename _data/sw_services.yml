@@ -6,7 +6,7 @@
         SASL:
           - external
           - plain
-    - name: Atheme Forks
+    - name: Atheme (and forks)
       link: http://atheme.net
       support:
         SASL:
@@ -15,11 +15,5 @@
       sublinks:
         - name: ChatServices
           link: https://bitbucket.org/chatlounge/chatservices
-        - name: EZtheme
-          link: https://github.com/ElectroCode/eztheme
-        - name: Shaltúre
-          link: https://github.com/shalture/shalture
         - name: Xtheme
           link: https://github.com/XthemeOrg/Xtheme
-        - name: Zohlai
-          link: https://github.com/zohlai/zohlai

@@ -279,6 +279,12 @@ a.irc-extension {
 .marketing-text h1 {
     margin-top: 1rem;
 }
+h1:not(:first-of-type) {
+    margin-top: 3rem;
+}
+h2 {
+    margin-top: 3rem;
+}
 
 .alert {
 	font-size: inherit;
@@ -343,8 +349,18 @@ a.irc-extension {
 	border-color: #337F87;
 }
 
-a, .page-header > h1 {
-	color: #145960;
+.page-header > h1 {
+  color: #14565D;
+}
+.lead a {
+	color: #00646F;
+}
+
+a {
+	color: #0B7884;
+}
+a:hover, a:focus {
+	color: #2795A1;
 }
 
 .lead {
@@ -357,12 +373,14 @@ a, .page-header > h1 {
   color: #c24;
 }
 
-a:hover, a:focus {
-	color: #337F87;
-}
-
 .navbar-nav a {
 	transition: background 0.05s ease-in;
+}
+.navbar-nav hr {
+	margin: 0;
+}
+li.sep {
+    border-top: solid 1px #f8f8f8;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:active{
@@ -430,6 +448,14 @@ a:hover, a:focus {
 }
 .row.frontpage {
     margin: 2rem auto;
+}
+
+body.post .navbar {
+    margin-bottom: 0;
+}
+#home-slider-wrapper.post {
+    background: #62888C;
+    margin-top: 0;
 }
 
 .spec-link {
