@@ -91,6 +91,8 @@
                             <p class="note">{{ info }}</p>
                         {% endif %}
                     </div></div>
+
+                    {% assign info = nil %}
                 </td>
                 {% endif %}
                 {% if sw_count == max_sw_per_table %}{% break %}{% elsif forloop.last %}{% break %}{% endif %}
