@@ -59,9 +59,41 @@
         </tr>
     </thead>
     <tbody>
+        {% capture length_of_specs %}{% for ext in support[1].specs %}{% if ext[1].deprecated %}{% else %}{% capture ext_name %}{{ ext[0] }}{% endcapture %}{% capture any_draft_support %}{% for sw in type.software %}{% if sw.support[support_key] contains ext_name or sw.partial[support_key] contains ext_name or sw.na[support_key] contains ext_name %}Y{% endif %}{% endfor %}{% endcapture %}{% if any_draft_support contains "Y" %}Y{% endif %}{% endif %}{% endfor %}{% endcapture %}
+
         {% for ext in support[1].specs %}{% if ext[1].deprecated %}{% else %}
 
         {% capture ext_name %}{{ ext[0] }}{% endcapture %}
+
+
+        {% assign comment = "decide whether to put the popup above or beneath the name. yes, really." %}
+
+            {% assign real_index = 0 %}
+            {% for ext2 in support[1].specs %}{% if ext2[1].deprecated %}{% else %}
+                {% capture ext2_name %}{{ ext2[0] }}{% endcapture %}
+                {% capture any_ext_support %}
+                    {% for sw in type.software %}
+                        {% if sw.support[support_key] contains ext2_name or sw.partial[support_key] contains ext2_name or sw.na[support_key] contains ext2_name %}
+                            Y
+                        {% endif %}
+                    {% endfor %}
+                {% endcapture %}
+                {% if any_ext_support contains "Y" %}
+                    {% assign real_index = real_index | plus: 1 %}
+                    {% if ext2_name == ext_name %}
+                        {% break %}
+                    {% endif %}
+                {% endif %}
+            {% endif %}{% endfor %}
+
+            {% assign forlooplen = length_of_specs.size | minus: 2 %}
+
+            {% if real_index < forlooplen %}
+                {% assign popup_above = false %}
+            {% else %}
+                {% assign popup_above = true %}
+            {% endif %}
+
 
         {% capture any_draft_support %}
             {% for sw in type.software %}
@@ -73,7 +105,7 @@
 
         {% if any_draft_support contains "Y" %}
 
-        <tr class="{% if ext[1].required %}required{% elsif ext[1].draft %}draft{% else %}optional{% endif %}">
+        <tr class="{% if ext[1].required %}required{% elsif ext[1].draft %}draft{% else %}optional{% endif %} popup-{% if popup_above %}above{% else %}below{% endif %}">
             <td><span><a class="spec-name" title="{{ ext[1].description }}" href="{{ ext[1].link }}">{{ ext[1].name }}</a></span></td>
 
             {% assign sw_count = 0 %}
@@ -81,20 +113,26 @@
                 {% assign sw_count = sw_count | plus: 1 %}
                 {% if ext[1].deprecated %}{% else %}
                 <td class="support {% if sw.support[support_key] contains ext_name %}supported{% elsif sw.partial[support_key] contains ext_name %}partial{% elsif sw.na[support_key] contains ext_name %}na{% else %}unsupported{% endif %}">
+                    {% assign show_cap = true %}
                     {% if sw.support[support_key] contains ext_name %}
                         {% assign capab = sw.support[support_key][ext_name] %}
                         {% assign default = 'Yes' %}
-                        {% include show_capability.html %}
                     {% elsif sw.partial[support_key] contains ext_name %}
                         {% assign capab = sw.partial[support_key][ext_name] %}
                         {% assign default = 'Partial' %}
-                        {% include show_capability.html %}
                     {% elsif sw.na[support_key] contains ext_name %}
                         {% assign capab = sw.na[support_key][ext_name] %}
                         {% assign default = 'N/A' %}
-                        {% include show_capability.html %}
                     {% else %}
-                        No
+                        {% assign show_cap = false %}
+                    {% endif %}
+
+                    {% if popup_above %}{% else %}
+                        {% if show_cap %}
+                            {% include show_capability.html %}
+                        {% else %}
+                            No
+                        {% endif %}
                     {% endif %}
 
                     <div class="hover-popup"><div>
@@ -104,6 +142,14 @@
                             <p class="note">{{ info }}</p>
                         {% endif %}
                     </div></div>
+
+                    {% if popup_above %}
+                        {% if show_cap %}
+                            {% include show_capability.html %}
+                        {% else %}
+                            No
+                        {% endif %}
+                    {% endif %}
 
                     {% assign info = nil %}
                 </td>
