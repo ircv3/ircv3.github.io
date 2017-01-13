@@ -53,6 +53,7 @@ td + td, th + th {
 
 .sw-table {
   overflow-x: auto;
+  overflow-y: visible;
   margin: 0 auto;
 }
 .sw-table > table {
@@ -183,7 +184,8 @@ a.irc-extension {
 /* hover popups */
 .hover-popup {
     display: none;
-    position: absolute;
+    position: relative;
+    left: 50%;
 }
 .support:hover {
     border: 1px rgba(20, 20, 20, 0.65) solid;
@@ -192,16 +194,18 @@ a.irc-extension {
     display: block;
 }
 .support .hover-popup > div {
-    position: relative;
+    position: absolute;
+    float: right;
     background: #333;
     border: 1px #111 solid;
     padding: 0.75rem 1.25rem;
     color: #f7f7f7;
     text-align: left;
     top: 2rem;
-    left: calc(-50% + 1.75rem);
+    left: 0;
     border-radius: 0.5rem;
     z-index: 999;
+    transform: translateX(-50%);
 }
 .support .hover-popup > div:after {
 	bottom: 100%;
