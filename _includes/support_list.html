@@ -73,7 +73,11 @@
                 {% capture ext2_name %}{{ ext2[0] }}{% endcapture %}
                 {% capture any_ext_support %}
                     {% for sw in type.software %}
-                        {% if sw.support[support_key] contains ext2_name or sw.partial[support_key] contains ext2_name or sw.na[support_key] contains ext2_name %}
+                        {% if ext[1].draft %}
+                            {% if sw.support[support_key] contains ext2_name or sw.partial[support_key] contains ext2_name or sw.na[support_key] contains ext2_name %}
+                                Y
+                            {% endif %}
+                        {% else %}
                             Y
                         {% endif %}
                     {% endfor %}
@@ -95,15 +99,19 @@
             {% endif %}
 
 
-        {% capture any_draft_support %}
+        {% capture should_show_spec %}
             {% for sw in type.software %}
-                {% if sw.support[support_key] contains ext_name or sw.partial[support_key] contains ext_name or sw.na[support_key] contains ext_name %}
+                {% if ext[1].draft %}
+                    {% if sw.support[support_key] contains ext_name or sw.partial[support_key] contains ext_name or sw.na[support_key] contains ext_name %}
+                        Y
+                    {% endif %}
+                {% else %}
                     Y
                 {% endif %}
             {% endfor %}
         {% endcapture %}
 
-        {% if any_draft_support contains "Y" %}
+        {% if should_show_spec contains "Y" %}
 
         <tr class="{% if ext[1].required %}required{% elsif ext[1].draft %}draft{% else %}optional{% endif %} popup-{% if popup_above %}above{% else %}below{% endif %}">
             <td><span><a class="spec-name" title="{{ ext[1].description }}" href="{{ ext[1].link }}">{{ ext[1].name }}</a></span></td>
