@@ -186,6 +186,7 @@ a.irc-extension {
     display: none;
     position: relative;
     left: 50%;
+    white-space: nowrap;
 }
 .support:hover {
     border: 1px rgba(20, 20, 20, 0.65) solid;
