@@ -193,6 +193,22 @@ covers the `draft/label` tag, and how clients should send and will receive
 labels.
 
 
+## [Message IDs]({{site.baseurl}}/specs/extensions/message-ids.html)
+
+The `message-ids` extension allows servers to provide a network-unique
+identifier on messages (including `PRIVMSG`/`NOTICE`). This allows clients to
+build new features that refer to specific messages, with the knowledge that
+these identifiers will be unique.
+
+The **work-in-progress** [`message-ids` spec]({{site.baseurl}}/specs/extensions/message-ids.html)
+covers the `draft/msgid` tag, how servers should generate message IDs and how
+clients should treat them.
+
+**Note:** Message IDs themselves are used as a foundation for other extensions
+and do not themselves offer any user-facing features. These IRCv3
+specifications will note their use of (and dependency on) message IDs.
+
+
 ## [Monitor]({{site.baseurl}}/specs/core/monitor-3.2.html)
 
 The `MONITOR` command acts as a standardized way for clients to be alerted when
