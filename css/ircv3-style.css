@@ -59,6 +59,9 @@ td + td, th + th {
   width: auto;
   min-width: 30.65%; /* pulled out of the air because it looks nice */
 }
+.sw-table + .sw-table {
+    margin-top: 1rem;
+}
 .sw-table + h3 {
   margin-top: 2.35em;
 }

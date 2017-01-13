@@ -9,12 +9,15 @@
 {% endcapture %}
 
 {% if anysupport contains "Y" %}
-{% if hide_support_name %}{% else %}
-#### {% if support_name %}{{ support_name }}{% else %}{{ support[1].name }} Support{% endif %}
-{% endif %}
 
 {% if support[1].note %}{{ support[1].note | markdownify }}{% endif %}
+{% assign sw_max = -1 %}
+{% assign sw_index = 0 %}
+{% assign sw_index_body = 0 %}
+{% assign sw_count = 0 %}
+{% assign max_sw_per_table = 12 %}
 
+{% for abcxyz in (1..9999) %}<!-- we expect to break out of this loop in all cases, so this is fine -->
 <div class="sw-table t-{{ support[1].name | slugify }}"><table>
     <colgroup>
         <col class="name" />
@@ -23,7 +26,12 @@
     <thead>
         <tr>
             <th>Feature</th>
-            {% for sw in type.software %}
+            {% assign sw_count = 0 %}
+            {% assign sw_index_body = sw_index %}
+            {% for sw in type.software offset:sw_index %}
+                {% if sw_max == -1 %}{% assign sw_max = forloop.length %}{% endif %}
+                {% assign sw_index = sw_index | plus: 1 %}
+                {% assign sw_count = sw_count | plus: 1 %}
             <th class="support-head">
                 {% if sw.link %}<a{% if sw.ircd-ver || sw.net-address %} class="bold"{% endif %} href="{{ sw.link }}">{{ sw.name }}</a>{% else %}{{ sw.name }}{% endif %}
                 {% if sw.ircd-ver %}<span class="ircd-ver">{{ sw.ircd-ver }}</span>{% endif %}
@@ -46,6 +54,7 @@
                     </div>
                 {% endif %}
             </th>
+                {% if sw_count == max_sw_per_table %}{% break %}{% elsif forloop.last %}{% break %}{% endif %}
             {% endfor %}
         </tr>
     </thead>
@@ -54,7 +63,9 @@
         <tr class="{% if ext[1].required %}required{% else %}optional{% endif %}">
             <td><span><a class="spec-name" title="{{ ext[1].description }}" href="{{ ext[1].link }}">{{ ext[1].name }}</a></span></td>
 
-            {% for sw in type.software %}
+            {% assign sw_count = 0 %}
+            {% for sw in type.software offset:sw_index_body %}
+                {% assign sw_count = sw_count | plus: 1 %}
                 {% capture ext_name %}{{ ext[0] }}{% endcapture %}{% if ext[1].deprecated %}{% else %}
                 <td class="support {% if sw.support[support_key] contains ext_name %}supported{% elsif sw.partial[support_key] contains ext_name %}partial{% elsif sw.na[support_key] contains ext_name %}na{% else %}unsupported{% endif %}">
                     {% if sw.support[support_key] contains ext_name %}
@@ -80,13 +91,15 @@
                             <p class="note">{{ info }}</p>
                         {% endif %}
                     </div></div>
-
-                    {% assign info = nil %}
                 </td>
                 {% endif %}
+                {% if sw_count == max_sw_per_table %}{% break %}{% elsif forloop.last %}{% break %}{% endif %}
             {% endfor %}
         </tr>
         {% endif %}{% endfor %}
     </tbody>
 </table></div>
+{% if sw_index == sw_max %}{% break %}{% endif %}
+{% endfor %}
+
 {% endif %}
