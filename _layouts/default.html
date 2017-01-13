@@ -19,7 +19,7 @@
       <script src="{{ site.baseurl }}/js/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body{% if layout.css_classes %} class="{{ layout.css_classes }}"{% endif %}>
     <div class="whole">
       {% include menu.html %} 
       <div id="content" class="container">

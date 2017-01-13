@@ -368,6 +368,14 @@ li.sep {
     margin: 2rem auto;
 }
 
+body.post .navbar {
+    margin-bottom: 0;
+}
+#home-slider-wrapper.post {
+    background: #62888C;
+    margin-top: 0;
+}
+
 .spec-link {
     font-size: 3rem;
     display: block;
