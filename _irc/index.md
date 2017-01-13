@@ -20,7 +20,7 @@ useful to consult. Look at core protocol specifications and the IRC ecosystem
 itself for a complete picture of how the IRC protocol works today.
 If you have any questions on the core IRC protocol, please feel free to ask us
 [directly]({{site.baseurl}}/contact.html) or with an issue in our
-[feedback](https://github.com/ircv3/ircv3-feedback) Github repository.
+[feedback](https://github.com/ircv3/ircv3-ideas) Github repository.
 
 The IRCv3 specifications are released when they are stable and have been widely
 tested. In the past the WG released specifications as versioned bundles
