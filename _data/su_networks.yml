@@ -43,6 +43,8 @@
           - cap-3.2
           - cap-notify
           - chghost
+          - draft/message-tags
+          - draft/sts
           - echo-message
           - extended-join
           - invite-notify
@@ -53,9 +55,6 @@
           - server-time
           - starttls
           - userhost-in-names
-        unstable:
-          - message-tags
-          - sts
 
 - name: Networks
   note: >

@@ -137,7 +137,7 @@ a.irc-extension {
   background-color: #eeaaa7;
   color: #30100E;
 }
-.sw-table tr.required + tr.optional {
+.sw-table tr.required + tr.optional, .sw-table tr.optional + tr.draft {
   border-top: 0.5rem solid #aaa;
 }
 .sw-table td note desc {

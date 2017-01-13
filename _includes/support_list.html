@@ -60,13 +60,26 @@
     </thead>
     <tbody>
         {% for ext in support[1].specs %}{% if ext[1].deprecated %}{% else %}
-        <tr class="{% if ext[1].required %}required{% else %}optional{% endif %}">
+
+        {% capture ext_name %}{{ ext[0] }}{% endcapture %}
+
+        {% capture any_draft_support %}
+            {% for sw in type.software %}
+                {% if sw.support[support_key] contains ext_name or sw.partial[support_key] contains ext_name or sw.na[support_key] contains ext_name %}
+                    Y
+                {% endif %}
+            {% endfor %}
+        {% endcapture %}
+
+        {% if any_draft_support contains "Y" %}
+
+        <tr class="{% if ext[1].required %}required{% elsif ext[1].draft %}draft{% else %}optional{% endif %}">
             <td><span><a class="spec-name" title="{{ ext[1].description }}" href="{{ ext[1].link }}">{{ ext[1].name }}</a></span></td>
 
             {% assign sw_count = 0 %}
             {% for sw in type.software offset:sw_index_body %}
                 {% assign sw_count = sw_count | plus: 1 %}
-                {% capture ext_name %}{{ ext[0] }}{% endcapture %}{% if ext[1].deprecated %}{% else %}
+                {% if ext[1].deprecated %}{% else %}
                 <td class="support {% if sw.support[support_key] contains ext_name %}supported{% elsif sw.partial[support_key] contains ext_name %}partial{% elsif sw.na[support_key] contains ext_name %}na{% else %}unsupported{% endif %}">
                     {% if sw.support[support_key] contains ext_name %}
                         {% assign capab = sw.support[support_key][ext_name] %}
@@ -98,7 +111,7 @@
                 {% if sw_count == max_sw_per_table %}{% break %}{% elsif forloop.last %}{% break %}{% endif %}
             {% endfor %}
         </tr>
-        {% endif %}{% endfor %}
+        {% endif %}{% endif %}{% endfor %}
     </tbody>
 </table></div>
 {% if sw_index == sw_max %}{% break %}{% endif %}

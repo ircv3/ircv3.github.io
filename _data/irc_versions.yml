@@ -18,6 +18,7 @@ stable:
       required: true
       caps:
         - cap-notify
+
     account-notify:
       name: account-notify
       description: account-notify Extension
@@ -110,24 +111,31 @@ stable:
       caps:
         - userhost-in-names
 
-unstable:
-  name: Unstable (Draft)
-  note: >
-    **These specifications are drafts and are NOT completed IRCv3 specs.**
-    
-    These caps are generally implemented with the `draft/` prefix until they are made into released IRCv3 specifications.
-  specs:
-    message-tags:
-      name: Message Tags
+    draft/labeled-responses:
+      name: draft/labeled-responses
+      description: labeled-responses DRAFT.
+      link: http://ircv3.net/specs/extensions/labeled-response.html
+      draft: true
+      caps:
+        - draft/labeled-responses
+    draft/message-ids:
+      name: draft/message-ids
+      description: Message IDs DRAFT.
+      link: http://ircv3.net/specs/extensions/message-ids.html
+      draft: true
+      caps:
+        - draft/msgid
+    draft/message-tags:
+      name: draft/message-tags
       description: Message Tags DRAFT.
       link: http://ircv3.net/specs/core/message-tags-3.3.html
-      required: true
+      draft: true
       caps:
         - draft/message-tags
-    sts:
-      name: STS
+    draft/sts:
+      name: draft/sts
       description: Strict Transport Security DRAFT.
       link: http://ircv3.net/specs/core/sts-3.3.html
-      required: true
+      draft: true
       caps:
         - draft/sts
