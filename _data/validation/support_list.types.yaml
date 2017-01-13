@@ -18,6 +18,9 @@ support:
         deprecated:
           type: boolean
           required: false
+        draft:
+          type: boolean
+          required: false
         required:
           type: boolean
           required: false
