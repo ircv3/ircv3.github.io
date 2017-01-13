@@ -21,7 +21,9 @@
 <div class="sw-table t-{{ support[1].name | slugify }}"><table>
     <colgroup>
         <col class="name" />
-        <col class="software" span="{{ type.software | size }}" />
+        {% assign sw_count = 0 %}
+        {% capture sw_len_cols %}{% for sw in type.software offset:sw_index %}{% assign sw_count = sw_count | plus: 1 %}^{% if sw_count == max_sw_per_table %}{% break %}{% elsif forloop.last %}{% break %}{% endif %}{% endfor %}{% endcapture %}
+        <col class="software" span="{{ sw_len_cols | size }}" />
     </colgroup>
     <thead>
         <tr>
