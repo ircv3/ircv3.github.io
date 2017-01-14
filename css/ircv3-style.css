@@ -60,6 +60,9 @@ td + td, th + th {
   width: auto;
   min-width: 30.65%; /* pulled out of the air because it looks nice */
 }
+.sw-table.fullwidth > table {
+  width: 100%;
+}
 .sw-table + .sw-table {
     margin-top: 1rem;
 }
@@ -113,6 +116,7 @@ a.irc-extension {
   font-size: 95%;
 }
 .sw-table .support {
+  min-width: 10rem;
   max-width: 27rem;
   text-align: center;
   padding: 0.3em 0.5em;

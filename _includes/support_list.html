@@ -18,14 +18,15 @@
 {% assign sw_index = 0 %}
 {% assign sw_index_body = 0 %}
 {% assign sw_count = 0 %}
-{% assign max_sw_per_table = 12 %}
+{% assign max_sw_per_table = 10 %}
+{% assign min_fullwidth_display = 8 %}
 
 {% for abcxyz in (1..9999) %}<!-- we expect to break out of this loop in all cases, so this is fine -->
-<div class="sw-table t-{{ support[1].name | slugify }}"><table>
+{% assign sw_count = 0 %}
+{% capture sw_len_cols %}{% for sw in type.software offset:sw_index %}{% assign sw_count = sw_count | plus: 1 %}^{% if sw_count == max_sw_per_table %}{% break %}{% elsif forloop.last %}{% break %}{% endif %}{% endfor %}{% endcapture %}
+<div class="sw-table t-{{ support[1].name | slugify }}{% if min_fullwidth_display <= sw_len_cols.size %} fullwidth{% endif %}"><table>
     <colgroup>
         <col class="name" />
-        {% assign sw_count = 0 %}
-        {% capture sw_len_cols %}{% for sw in type.software offset:sw_index %}{% assign sw_count = sw_count | plus: 1 %}^{% if sw_count == max_sw_per_table %}{% break %}{% elsif forloop.last %}{% break %}{% endif %}{% endfor %}{% endcapture %}
         <col class="software" span="{{ sw_len_cols | size }}" />
     </colgroup>
     <thead>
