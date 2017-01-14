@@ -145,6 +145,7 @@
                         {% endif %}
                     {% endif %}
 
+                    {% if length_of_specs.size >= 5 %}
                     <div class="hover-popup"><div>
                         <p class="bold">{{ sw.name }}</p>
                         <p>{{ ext[1].name }}</p>
@@ -152,6 +153,7 @@
                             <p class="note">{{ info }}</p>
                         {% endif %}
                     </div></div>
+                    {% endif %}
 
                     {% if popup_above %}
                         {% if show_cap %}
