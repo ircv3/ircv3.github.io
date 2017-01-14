@@ -6,6 +6,7 @@ data-source-filename: sw_libraries.yml
 ---
 {% include software_intro.html %}
 
+{% assign hide_support_name = true %}
 {% for type in site.data.sw_libraries %}
 {% include software_list.html %}
 {% endfor %}

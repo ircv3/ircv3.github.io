@@ -9,6 +9,9 @@
 {% endcapture %}
 
 {% if anysupport contains "Y" %}
+{% if hide_support_name %}{% else %}
+#### {% if support_name %}{{ support_name }}{% else %}{{ support[1].name }} Support{% endif %}
+{% endif %}
 
 {% if support[1].note %}{{ support[1].note | markdownify }}{% endif %}
 {% assign sw_max = -1 %}
