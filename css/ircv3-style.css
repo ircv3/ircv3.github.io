@@ -109,7 +109,8 @@ a.irc-extension {
   margin: 0 0.5rem;
 }
 .sw-table .name {
-  width: 12em;
+  min-width: 12rem;
+  white-space: nowrap;
 }
 .sw-table .support-head {
   text-align: center;
