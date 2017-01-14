@@ -163,13 +163,11 @@ a.irc-extension {
 .sw-table td note:hover box {
   display: block;
 }
-.sw-sublinks a:before {
-  content: "- ";
-  opacity: 0.75;
-}
 .sw-sublinks a {
   display: block;
-  margin-left: 1.5rem;
+}
+.sw-sublinks:first-of-type a {
+  margin-top: 0.25rem
 }
 .sw-table .ircd-ver {
   display: block;
