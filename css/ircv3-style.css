@@ -69,7 +69,13 @@ td + td, th + th {
 .sw-table + h3 {
   margin-top: 2.35em;
 }
-.sw-table tr:not(:first-child) {
+.sw-table tbody tr:first-child{
+  border-top: 1px rgba(0,0,0,0.01) solid;
+}
+.sw-table tbody tr:last-child{
+  border-bottom: 1px rgba(0,0,0,0.01) solid;
+}
+.sw-table tbody tr:not(:first-child) {
   border-top: 1px #C0C0C0 solid;
 }
 .sw-table tbody tr, .sw-table tbody tr .support {
