@@ -15,7 +15,7 @@
       # ref: http://communi.github.io/doc/3.4/ircv3.html
       link: https://communi.github.io
       support:
-        v3.1:
+        stable:
           account-notify: 3.3+
           account-tag: 3.4+
           away-notify: 3.3+
@@ -36,21 +36,20 @@
       # ref: https://github.com/kiwiirc/irc-framework/blob/master/src/commands/handlers/registration.js
       link: https://github.com/kiwiirc/irc-framework
       support:
-        v3.1:
-          - cap
-          - multi-prefix
-          - sasl
-          - account-notify
-          - away-notify
-          - extended-join
-        v3.2:
-          - cap
-          - account-tag
-          - chghost
-          - invite-notify
-          - sasl
-          - server-time
-          - userhost-in-names
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          cap-3.1:
+          cap-3.2:
+          chghost:
+          extended-join:
+          invite-notify:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
         SASL:
           - plain
     - name: Kitteh IRC Client Library
