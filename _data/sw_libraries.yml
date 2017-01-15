@@ -70,6 +70,7 @@
           invite-notify:
           monitor:
           multi-prefix:
+          sasl-3.1:
           sasl-3.2:
           server-time:
           userhost-in-names:
