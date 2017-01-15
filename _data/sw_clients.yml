@@ -136,7 +136,7 @@
       support:
         stable:
           cap-3.1:
-          sasl-3.2:
+          sasl-3.1:
         SASL:
           - plain
     - name: KVIrc
