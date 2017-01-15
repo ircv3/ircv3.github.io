@@ -61,7 +61,7 @@ td + td, th + th {
   min-width: 30.65%; /* pulled out of the air because it looks nice */
 }
 .sw-table.fullwidth > table {
-  width: 100%;
+  width: calc(100% - 1px);
 }
 .sw-table + .sw-table {
     margin-top: 1rem;
@@ -196,6 +196,7 @@ a.irc-extension {
     position: relative;
     left: 50%;
     white-space: nowrap;
+    width: 0;
 }
 .support:hover {
     border: 1px rgba(20, 20, 20, 0.65) solid;
@@ -215,6 +216,10 @@ a.irc-extension {
     border-radius: 0.5rem;
     z-index: 999;
     transform: translateX(-50%);
+}
+.sw-table.fullwidth .support:last-child .hover-popup {
+    left: initial;
+    right: -20%;
 }
 .support .hover-popup > div p {
     margin-bottom: 0;
@@ -265,6 +270,9 @@ tr.popup-above .support .hover-popup > div:after {
     border-top-color: #333;
 	border-width: 0.9rem;
 	margin-left: -0.9rem;
+}
+.sw-table.fullwidth tr .support:not(:first-child):last-child .hover-popup > div:after {
+    left: 72.5%;
 }
 
 .sw-table .support.supported .hover-popup > div {
