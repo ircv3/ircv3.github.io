@@ -9,6 +9,7 @@ kramdown:
 exclude:
   - README.md
   - vendor
+  - Gemfile*
 gems:
   - jekyll-sitemap
 sitemap:
