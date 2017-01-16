@@ -4,9 +4,9 @@ This is the IRCv3 website.
 
 ## Testing
 
-If you want to test your changes to this website locally before submitting a pull request (always a good idea), there are two options.
+If you want to test your changes to this website locally before submitting a pull request (always a good idea), there are two options: using Bundler, and manual.
 
-After you finish those steps, you will be able to go to [http://127.0.0.1:4000/](http://127.0.0.1:4000/) and view a local copy of the website. As you make changes to your files, they will be reflected on that local copy.
+After you finish these steps, you will be able to go to [http://127.0.0.1:4000/](http://127.0.0.1:4000/) and view a local copy of the website. As you make changes to your files, they will be reflected on that local copy.
 
 ### Using [Bundler](https://bundler.io/):
 
@@ -18,7 +18,7 @@ After you finish those steps, you will be able to go to [http://127.0.0.1:4000/]
 
 ### Manually
 
-You should make sure your manually installed local versions should match that of [GitHub Pages](https://pages.github.com/versions/):
+You should make sure your manually installed local versions match that of [GitHub Pages](https://pages.github.com/versions/):
 
 1. Install [Jekyll](https://jekyllrb.com/)
 2. Install `jekyll-sitemap` with `gem install jekyll-sitemap`
