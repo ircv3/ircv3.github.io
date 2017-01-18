@@ -16,6 +16,19 @@ After you finish these steps, you will be able to go to [http://127.0.0.1:4000/]
 4. `bundle install`
 5. `bundle exec jekyll serve`
 
+#### Troubleshooting
+
+If you encounter errors installing nokogiri on macOS Sierra, make sure your XCode tools are up to date:
+
+`xcode-select --install`
+
+Then configure bundler to use the XCode version of libxml2:
+
+`bundle config build.nokogiri --use-system-libraries=true --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libxml2`
+
+This creates/updates a config file in ~/.bundler/config
+
+
 ### Manually
 
 You should make sure your manually installed local versions match that of [GitHub Pages](https://pages.github.com/versions/):
