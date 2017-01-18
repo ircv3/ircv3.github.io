@@ -4,7 +4,34 @@ This is the IRCv3 website.
 
 ## Testing
 
-If you want to test your changes to this website locally before submitting a pull request (always a good idea), here are the steps:
+If you want to test your changes to this website locally before submitting a pull request (always a good idea), there are two options: using Bundler, and manual.
+
+After you finish these steps, you will be able to go to [http://127.0.0.1:4000/](http://127.0.0.1:4000/) and view a local copy of the website. As you make changes to your files, they will be reflected on that local copy.
+
+### Using [Bundler](https://bundler.io/):
+
+1. `git clone` this repository
+2. `cd ircv3.github.io/`
+3. `git submodule update --init --recursive`
+4. `bundle install`
+5. `bundle exec jekyll serve`
+
+#### Troubleshooting
+
+If you encounter errors installing nokogiri on macOS Sierra, make sure your XCode tools are up to date:
+
+`xcode-select --install`
+
+Then configure bundler to use the XCode version of libxml2:
+
+`bundle config build.nokogiri --use-system-libraries=true --with-xml2-include=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/libxml2`
+
+This creates/updates a config file in ~/.bundler/config
+
+
+### Manually
+
+You should make sure your manually installed local versions match that of [GitHub Pages](https://pages.github.com/versions/):
 
 1. Install [Jekyll](https://jekyllrb.com/)
 2. Install `jekyll-sitemap` with `gem install jekyll-sitemap`
@@ -12,8 +39,6 @@ If you want to test your changes to this website locally before submitting a pul
 4. `cd ircv3.github.io/`
 5. `git submodule update --init --recursive`
 6. `jekyll serve`
-
-After you finish those steps, you will be able to go to [http://127.0.0.1:4000/](http://127.0.0.1:4000/) and view a local copy of the website. As you make changes to your files, they will be reflected on that local copy.
 
 ## Licenses
 

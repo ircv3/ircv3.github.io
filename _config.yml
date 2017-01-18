@@ -8,6 +8,8 @@ kramdown:
   auto_ids: false
 exclude:
   - README.md
+  - vendor
+  - Gemfile*
 gems:
   - jekyll-sitemap
 sitemap:
