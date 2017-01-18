@@ -61,3 +61,8 @@ Temporary Items
 _site/
 .sass-cache/
 /debug.log
+
+
+### Bundler ###
+vendor/
+.bundle/
