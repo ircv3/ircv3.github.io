@@ -176,6 +176,17 @@ a.irc-extension {
   display: block;
   margin-bottom: 0.3rem;
 }
+
+.sw-language > i { font-weight: 700; }
+.sw-language-c { color: #383838; }
+.sw-language-c\+\+ { color: #0061ff; }
+.sw-language-go { color: #6300c6; }
+.sw-language-python { color: #2255a5; }
+.sw-language-ruby { color: #af0031; }
+.sw-language-java { color: #db5f00; }
+.sw-language-nodejs { color: #00af37; }
+.sw-language-rust { color: #877200; }
+
 .bold {
   font-weight: bold;
 }

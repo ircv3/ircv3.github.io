@@ -1,6 +1,7 @@
 - name: Libraries
   software:
     - name: cinch
+      language: Ruby
       # ref: https://github.com/cinchrb/cinch/blob/v2.3.1/lib/cinch/irc.rb#L115
       link: https://github.com/cinchrb/cinch
       support:
@@ -12,6 +13,7 @@
         SASL:
           - plain
     - name: Communi
+      language: C++
       # ref: http://communi.github.io/doc/3.4/ircv3.html
       link: https://communi.github.io
       support:
@@ -35,6 +37,7 @@
         SASL:
           - plain
     - name: irc-framework
+      language: NodeJS
       # ref: https://github.com/kiwiirc/irc-framework/blob/master/src/commands/handlers/registration.js
       link: https://github.com/kiwiirc/irc-framework
       support:
@@ -55,7 +58,8 @@
           - userhost-in-names
         SASL:
           - plain
-    - name: Kitteh IRC Client Library
+    - name: kicl
+      language: Java
       # ref: http://kicl.kitteh.org/en/stable/ircv3/
       link: https://github.com/KittehOrg/KittehIRCClientLib
       support:
@@ -81,12 +85,14 @@
           - external
           - plain
     - name: Net::Async::IRC
+      language: Perl
       # ref: https://metacpan.org/source/PEVANS/Net-Async-IRC-0.10/lib/Net/Async/IRC.pm#L339
       link: https://metacpan.org/pod/Net::Async::IRC
       support:
         v3.1:
           - cap
     - name: pydle
+      language: Python
       # ref: https://github.com/Shizmob/pydle/tree/v0.8.2/pydle/features/ircv3
       link: https://pypi.python.org/pypi/pydle
       support:
@@ -109,6 +115,7 @@
         v3.2:
           cap: 0.8.2, except NEW/DEL
     - name: Rust irc
+      language: Rust
       # ref: https://github.com/aatxe/irc/blob/master/src/client/data/caps.rs
       link: https://github.com/aatxe/irc
       support:
@@ -135,6 +142,7 @@
         SASL:
           - plain
     - name: Warren
+      language: Kotlin
       # ref: https://github.com/CarrotCodes/Warren/blob/25f4fed/src/main/kotlin/engineer/carrot/warren/warren/WarrenRunner.kt#L32
       link: https://github.com/CarrotCodes/Warren
       support:
@@ -150,6 +158,7 @@
         SASL:
           - plain
     - name: zIRC
+      language: Python
       # ref: https://github.com/itslukej/zirc/blob/master/zirc/caps.py
       #      https://github.com/itslukej/zirc/blob/master/zirc/ext/sasl.py
       #      https://github.com/itslukej/zirc/issues/9
