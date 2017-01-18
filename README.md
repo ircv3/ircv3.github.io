@@ -34,7 +34,7 @@ This creates/updates a config file in ~/.bundler/config
 You should make sure your manually installed local versions match that of [GitHub Pages](https://pages.github.com/versions/):
 
 1. Install [Jekyll](https://jekyllrb.com/)
-2. Install `jekyll-sitemap` with `gem install jekyll-sitemap`
+2. Install dependencies: `gem install jekyll-sitemap jekyll-redirect-from`
 3. `git clone` this repository
 4. `cd ircv3.github.io/`
 5. `git submodule update --init --recursive`
