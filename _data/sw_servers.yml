@@ -1,64 +1,67 @@
 - name: Servers
   software:
     - name: Charybdis
+      language: C
       # ref: https://github.com/atheme/charybdis/blob/charybdis-3.5.0-test1/modules/m_cap.c#L73
       link: http://www.charybdis.io/
       support:
         v3.1:
           cap:
-          multi-prefix: 1.0 +
-          sasl: 1.1.0 +
-          account-notify: 3.4.0 +
-          extended-join: 3.4.0 +
-          away-notify: 3.4.0 +
-          starttls: 3.5.0 +
+          multi-prefix: 1.0+
+          sasl: 1.1.0+
+          account-notify: 3.4.0+
+          extended-join: 3.4.0+
+          away-notify: 3.4.0+
+          starttls: 3.5.0+
         v3.2:
           cap: Git
           monitor:
-          userhost-in-names: 3.5.0 +
-          chghost: 3.5.0 +
-          cap-notify: 3.5.0 +
+          userhost-in-names: 3.5.0+
+          chghost: 3.5.0+
+          cap-notify: 3.5.0+
           account-tag: Git
           server-time: Git
           echo-message: Git
           sasl: Git
           invite-notify: Git
     - name: ChatIRCd
+      language: C
       # dev: Ben / MrC
       # ref: https://bitbucket.org/chatlounge/chatircd/commits/all
       link: http://www.chatlounge.net/software/
       support:
         v3.1:
           cap:
-          multi-prefix: 1.0.x +
-          sasl: 1.0.x +
-          account-notify: 1.0.x +
-          extended-join: 1.0.x +
-          away-notify: 1.0.x +
-          starttls: 1.0.x +
+          multi-prefix: 1.0.x+
+          sasl: 1.0.x+
+          account-notify: 1.0.x+
+          extended-join: 1.0.x+
+          away-notify: 1.0.x+
+          starttls: 1.0.x+
         v3.2:
           cap: No
           monitor:
-          userhost-in-names: 1.1.x +
-          chghost: 1.1.x +
-          cap-notify: 1.1.x +
+          userhost-in-names: 1.1.x+
+          chghost: 1.1.x+
+          cap-notify: 1.1.x+
           account-tag: No
           server-time: No
           echo-message: No
-          sasl: 1.1.x +
-          invite-notify: 1.1.x +
+          sasl: 1.1.x+
+          invite-notify: 1.1.x+
     - name: Elemental IRCd
+      language: C
       # ref: https://github.com/Elemental-IRCd/elemental-ircd/issues/80
       #      https://github.com/Elemental-IRCd/elemental-ircd/blob/elemental-ircd-7.0-experimental/modules/m_cap.c#L70
       link: https://github.com/Elemental-IRCd/elemental-ircd
       support:
         v3.1:
           cap:
-          multi-prefix: 6.0.0 +
-          sasl: 6.0.0 +
-          account-notify: 6.5 +
-          extended-join: 6.5 +
-          away-notify: 6.5 +
+          multi-prefix: 6.0.0+
+          sasl: 6.0.0+
+          account-notify: 6.5+
+          extended-join: 6.5+
+          away-notify: 6.5+
         v3.2:
           chghost: Git
           monitor:
@@ -81,19 +84,21 @@
         v3.1:
           starttls: direct TLS only
     - name: ircd-hybrid
+      language: C
       link: https://github.com/ircd-hybrid/ircd-hybrid
       support:
         v3.1:
-          cap: 7.2.1 +
-          multi-prefix: 7.2.1 +
-          account-notify: 8.2.9 +
-          away-notify: 8.1.0beta1 +
-          extended-join: 8.2.2 +
+          cap: 7.2.1+
+          multi-prefix: 7.2.1+
+          account-notify: 8.2.9+
+          away-notify: 8.1.0beta1+
+          extended-join: 8.2.2+
         v3.2:
-          chghost: 8.2.11 +
-          invite-notify: 8.2.11 +
-          userhost-in-names: 8.1.14 +
+          chghost: 8.2.11+
+          invite-notify: 8.2.11+
+          userhost-in-names: 8.1.14+
     - name: InspIRCd
+      language: C++
       # maintainer: saberuk, attila
       # ref: https://github.com/inspircd/inspircd/issues/1038
       #      https://github.com/inspircd/inspircd/search?q="Cap%3A%3ACapability"
@@ -101,13 +106,13 @@
       link: http://www.inspircd.org
       support:
         v3.1:
-          cap: 1.2.0 +
-          multi-prefix: 1.2.0 +
-          sasl: 1.2.0 +
-          account-notify: 2.0.7 +
-          away-notify: 2.0.7 +
-          extended-join: 2.0.7 +
-          starttls: 1.2.0 +
+          cap: 1.2.0+
+          multi-prefix: 1.2.0+
+          sasl: 1.2.0+
+          account-notify: 2.0.7+
+          away-notify: 2.0.7+
+          extended-join: 2.0.7+
+          starttls: 1.2.0+
         v3.2:
           cap: Git
           cap-notify: Git
@@ -116,8 +121,9 @@
           invite-notify: Git
           monitor: Git
           sasl: Git
-          userhost-in-names: 1.2.0 +
+          userhost-in-names: 1.2.0+
     - name: mammon-ircd
+      language: Python
       # ref: Capability() calls in https://github.com/mammon-ircd/mammon/search?q=Capability
       link: https://github.com/mammon-ircd/mammon
       support:
@@ -139,6 +145,7 @@
           - userhost-in-names
           - sasl
     - name: Nefarious IRCu
+      language: C
       # ref: https://github.com/evilnet/nefarious2/blob/2.0/ircd/m_cap.c#L59
       link: https://github.com/evilnet/nefarious2
       support:
@@ -153,64 +160,68 @@
         v3.2:
           userhost-in-names: 2011-12-19
     - name: Oragono
+      language: Go
       # ref: http://oragono.io/specs.html
       link: http://oragono.io/
       support:
         v3.1:
-          cap: 0.1.0 +
-          account-notify: 0.2.0 +
-          away-notify: 0.1.0 +
-          multi-prefix: 0.1.0 +
-          sasl: 0.1.0 +
-          extended-join: 0.1.0 +
+          cap: 0.1.0+
+          account-notify: 0.2.0+
+          away-notify: 0.1.0+
+          multi-prefix: 0.1.0+
+          sasl: 0.1.0+
+          extended-join: 0.1.0+
         v3.2:
-          cap: 0.2.0 +
-          account-tag: 0.1.0 +
-          cap-notify: 0.3.0 +
-          chghost: 0.4.0 +
-          echo-message: 0.3.0 +
-          invite-notify: 0.2.0 +
-          monitor: 0.2.0 +
-          sasl: 0.2.0 +
-          server-time: 0.2.0 +
-          userhost-in-names: 0.1.0 +
+          cap: 0.2.0+
+          account-tag: 0.1.0+
+          cap-notify: 0.3.0+
+          chghost: 0.4.0+
+          echo-message: 0.3.0+
+          invite-notify: 0.2.0+
+          monitor: 0.2.0+
+          sasl: 0.2.0+
+          server-time: 0.2.0+
+          userhost-in-names: 0.1.0+
     - name: txircd
+      language: Python
       link: https://github.com/ElementalAlchemist/txircd
       support:
         v3.1:
-          cap: 0.4.0 +
-          multi-prefix: 0.4.0 +
-          account-notify: 0.4.0 +
-          away-notify: 0.4.0 +
-          extended-join: 0.4.0 +
-          starttls: 0.4.0 +
+          cap: 0.4.0+
+          multi-prefix: 0.4.0+
+          account-notify: 0.4.0+
+          away-notify: 0.4.0+
+          extended-join: 0.4.0+
+          starttls: 0.4.0+
         v3.2:
-          cap: 0.4.0 +
-          metadata: 0.4.0 +
-          monitor: 0.4.0 +
-          account-tag: 0.4.0 +
-          batch: 0.4.0 +
-          cap-notify: 0.4.0 +
-          chghost: 0.4.0 +
-          echo-message: 0.4.0 +
-          invite-notify: 0.4.0 +
-          server-time: 0.4.0 +
-          userhost-in-names: 0.4.0 +
+          cap: 0.4.0+
+          metadata: 0.4.0+
+          monitor: 0.4.0+
+          account-tag: 0.4.0+
+          batch: 0.4.0+
+          cap-notify: 0.4.0+
+          chghost: 0.4.0+
+          echo-message: 0.4.0+
+          invite-notify: 0.4.0+
+          server-time: 0.4.0+
+          userhost-in-names: 0.4.0+
     - name: UnrealIRCd
+      language: C
       # ref: ClientCapabilityAdd() calls in https://github.com/unrealircd/unrealircd/search?q=ClientCapabilityAdd
       #      (src/modules/m_cap.c has four matches, two not shown)
       link: http://www.unrealircd.org
       support:
         v3.1:
-          cap: 3.2.9 +
-          multi-prefix: 3.2.9 +
-          away-notify: 3.2.9 +
-          account-notify: 3.2.9 +
-          sasl: 3.2.10 +
-          starttls: 3.2.10 +
+          cap: 3.2.9+
+          multi-prefix: 3.2.9+
+          away-notify: 3.2.9+
+          account-notify: 3.2.9+
+          sasl: 3.2.10+
+          starttls: 3.2.10+
         v3.2:
-          userhost-in-names: 3.2.9 +
+          userhost-in-names: 3.2.9+
     - name: BitlBee
+      language: C
       # ref: https://github.com/bitlbee/bitlbee/blob/3.4.2/irc_cap.c#L39
       link: https://bitlbee.org/
       support:

@@ -38,6 +38,9 @@
                 {% if sw.ircd-ver %}<span class="ircd-ver">{{ sw.ircd-ver }}</span>{% endif %}
                 {% if sw.net-address %}<a class="net-address" href="{{ sw.net-address.link }}">{{ sw.net-address.display }}</a>{% endif %}
                 {% if sw.dead %}<span class="dead-software">dead</span>{% endif %}
+                {% if sw.language %}
+                    <span class="sw-language"><i title="Language: {{ sw.language }}" class="fa fa-code pull-right sw-language-{{ sw.language | downcase }}"></i></span>
+                {% endif %}
                 {% if sw.os %}
                     <div class="os-support">
                     {% for name in sw.os %}
