@@ -35,7 +35,7 @@
         SASL:
           - plain
     - name: irc-framework
-      # ref: https://github.com/kiwiirc/irc-framework/blob/master/src/commands/handlers/registration.js
+      # ref: https://github.com/kiwiirc/irc-framework/blob/master/docs/ircv3.md
       link: https://github.com/kiwiirc/irc-framework
       support:
         v3.1:
@@ -53,6 +53,8 @@
           - sasl
           - server-time
           - userhost-in-names
+          - batch
+          - echo-message
         SASL:
           - plain
     - name: Kitteh IRC Client Library
