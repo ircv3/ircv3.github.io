@@ -135,8 +135,8 @@
         SASL:
           - plain
     - name: Warren
-      # ref: https://github.com/CarrotCodes/Warren/blob/25f4fed/src/main/kotlin/engineer/carrot/warren/warren/WarrenRunner.kt#L32
-      link: https://github.com/CarrotCodes/Warren
+      # ref: https://github.com/WillowChat/Warren/blob/6b28051/src/main/kotlin/chat/willow/warren/WarrenRunner.kt#L37
+      link: https://github.com/WillowChat/Warren
       support:
         v3.1:
           - cap
@@ -147,6 +147,9 @@
           - extended-join
         v3.2:
           - cap
+          - cap-notify
+          - invite-notify
+          - userhost-in-names
         SASL:
           - plain
     - name: zIRC
