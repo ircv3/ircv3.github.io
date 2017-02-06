@@ -30,3 +30,6 @@
 
 - name: ZNC
   url: http://znc.in/
+
+- name: Willow Chat
+  url: https://willow.chat
