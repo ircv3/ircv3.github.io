@@ -135,6 +135,11 @@ v3.3:
       required: true
       caps:
         - draft/message-tags
+    sni:
+      name: SNI
+      description: Server Name Indication DRAFT.
+      link: http://ircv3.net/specs/core/sni-3.3.html
+      required: true
     sts:
       name: STS
       description: Strict Transport Security DRAFT.
