@@ -35,26 +35,52 @@
       link: http://www.inspircd.org/
       support:
         stable:
-          - account-notify
-          - account-tag
-          - away-notify
-          - batch
-          - cap-3.1
-          - cap-3.2
-          - cap-notify
-          - chghost
-          - draft/message-tags
-          - draft/sts
-          - echo-message
-          - extended-join
-          - invite-notify
-          - monitor
-          - multi-prefix
-          - sasl-3.1
-          - sasl-3.2
-          - server-time
-          - starttls
-          - userhost-in-names
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          draft/labeled-response:
+          draft/message-tags: "draft/message-tags"
+          draft/sts:
+          echo-message:
+          extended-join:
+          invite-notify:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          starttls:
+          userhost-in-names:
+    - name: IRCCloud Teams
+      ircd-ver: irccloud-prattle
+      net-address:
+        link:  ircs://team-irc.irccloud.com:6697/
+        display: team-irc.irccloud.com
+      link: https://blog.irccloud.com/private-teams-servers/
+      note: >
+        Invite required. PM jwheare for access.
+      support:
+        stable:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          draft/labeled-response:
+          draft/message-tags: "draft/message-tags-0.2"
+          echo-message:
+          extended-join:
+          multi-prefix:
+          userhost-in-names:
+      na:
+        stable:
+          starttls: direct TLS only
 
 - name: Networks
   note: >

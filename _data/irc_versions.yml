@@ -131,7 +131,7 @@ stable:
       link: http://ircv3.net/specs/core/message-tags-3.3.html
       draft: true
       caps:
-        - draft/message-tags
+        - draft/message-tags-0.2
     draft/sts:
       name: draft/sts
       description: Strict Transport Security DRAFT.
