@@ -4,6 +4,10 @@ title: IRCv3 Specifications
 excerpt: IRCv3 Specifications
 meta-description: Specifications that the IRCv3 Working Group maintains and distributes.
 index: true
+redirect_from:
+    - /irc/3.1.html
+    - /irc/3.2.html
+    - /irc/3.3.html
 ---
 
 IRCv3 specifications build on top of the core IRC protocol. The primary core

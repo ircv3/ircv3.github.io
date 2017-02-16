@@ -33,16 +33,18 @@
         SASL:
           - plain
     - name: irc-framework
-      # ref: https://github.com/kiwiirc/irc-framework/blob/master/src/commands/handlers/registration.js
+      # ref: https://github.com/kiwiirc/irc-framework/blob/master/docs/ircv3.md
       link: https://github.com/kiwiirc/irc-framework
       support:
         stable:
           account-notify:
           account-tag:
           away-notify:
+          batch:
           cap-3.1:
           cap-3.2:
           chghost:
+          echo-message:
           extended-join:
           invite-notify:
           multi-prefix:
@@ -129,17 +131,21 @@
         SASL:
           - plain
     - name: Warren
-      # ref: https://github.com/CarrotCodes/Warren/blob/25f4fed/src/main/kotlin/engineer/carrot/warren/warren/WarrenRunner.kt#L32
-      link: https://github.com/CarrotCodes/Warren
+      # ref: https://github.com/WillowChat/Warren/blob/8a94e01/src/main/kotlin/chat/willow/warren/WarrenRunner.kt#L42
+      link: https://github.com/WillowChat/Warren
       support:
         stable:
           account-notify:
           away-notify:
           cap-3.1:
           cap-3.2:
+          cap-notify:
           extended-join:
+          invite-notify:
+          monitor:
           multi-prefix:
           sasl-3.1:
+          userhost-in-names:
         SASL:
           - plain
     - name: zIRC

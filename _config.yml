@@ -8,8 +8,11 @@ kramdown:
   auto_ids: false
 exclude:
   - README.md
+  - vendor
+  - Gemfile*
 gems:
   - jekyll-sitemap
+  - jekyll-redirect-from
 sitemap:
   file: "/sitemap.xml"
 collections:
