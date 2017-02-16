@@ -111,13 +111,13 @@ stable:
       caps:
         - userhost-in-names
 
-    draft/labeled-responses:
-      name: draft/labeled-responses
-      description: labeled-responses DRAFT.
+    draft/labeled-response:
+      name: draft/labeled-response
+      description: Labeled responses DRAFT.
       link: http://ircv3.net/specs/extensions/labeled-response.html
       draft: true
       caps:
-        - draft/labeled-responses
+        - draft/labeled-response
     draft/message-ids:
       name: draft/message-ids
       description: Message IDs DRAFT.
