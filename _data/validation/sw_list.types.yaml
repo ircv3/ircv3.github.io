@@ -16,6 +16,9 @@ software:
         ircd-ver:
           type: string
           required: false
+        note:
+          type: string
+          required: false
         net-address:
           type: mapofstrings
           required: false

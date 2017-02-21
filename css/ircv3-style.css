@@ -23,7 +23,7 @@ tbody tr code {
     background: none;
 }
 td + td, th + th {
-    border-left: 1px #C0C0C0 solid;
+    border-left: 1px #aaa solid;
 }
 
 .page-header {
@@ -53,16 +53,29 @@ td + td, th + th {
 
 .sw-table {
   overflow-x: auto;
-  width: 100%;
+  overflow-y: visible;
   margin: 0 auto;
 }
 .sw-table > table {
-  min-width: 100%;
+  width: auto;
+  min-width: 30.65%; /* pulled out of the air because it looks nice */
+}
+.sw-table.fullwidth > table {
+  width: calc(100% - 1px);
+}
+.sw-table + .sw-table {
+    margin-top: 1rem;
 }
 .sw-table + h3 {
   margin-top: 2.35em;
 }
-.sw-table tr:not(:first-child) {
+.sw-table tbody tr:first-child{
+  border-top: 1px rgba(0,0,0,0.01) solid;
+}
+.sw-table tbody tr:last-child{
+  border-bottom: 1px rgba(0,0,0,0.01) solid;
+}
+.sw-table tbody tr:not(:first-child) {
   border-top: 1px #C0C0C0 solid;
 }
 .sw-table tbody tr, .sw-table tbody tr .support {
@@ -102,14 +115,17 @@ a.irc-extension {
   margin: 0 0.5rem;
 }
 .sw-table .name {
-  width: 12em;
+  min-width: 12rem;
+  white-space: nowrap;
 }
 .sw-table .support-head {
+  vertical-align: top;
   text-align: center;
   font-size: 95%;
 }
 .sw-table .support {
-  min-width: 2em;
+  min-width: 10rem;
+  max-width: 27rem;
   text-align: center;
   padding: 0.3em 0.5em;
 }
@@ -133,8 +149,8 @@ a.irc-extension {
   background-color: #eeaaa7;
   color: #30100E;
 }
-.sw-table td.required + td.optional {
-  border-left: 5px solid white;
+.sw-table tr.required + tr.optional, .sw-table tr.optional + tr.draft {
+  border-top: 0.5rem solid #aaa;
 }
 .sw-table td note desc {
   vertical-align: super;
@@ -159,13 +175,16 @@ a.irc-extension {
 .sw-table td note:hover box {
   display: block;
 }
-.sw-sublinks a:before {
-  content: "- ";
-  opacity: 0.75;
+.sw-note {
+  text-align: center;
+  color: #6b6b6b;
+  font-size: 1.2rem;
 }
 .sw-sublinks a {
   display: block;
-  margin-left: 1.5rem;
+}
+.sw-sublinks:first-of-type a {
+  margin-top: 0.25rem
 }
 .sw-table .ircd-ver {
   display: block;
@@ -176,6 +195,133 @@ a.irc-extension {
   display: block;
   margin-bottom: 0.3rem;
 }
+
+/* hover popups */
+.hover-popup {
+    display: none;
+    position: relative;
+    left: 50%;
+    white-space: nowrap;
+    width: 0;
+}
+.support:hover {
+    border: 1px rgba(20, 20, 20, 0.65) solid;
+}
+.support:hover .hover-popup {
+    display: block;
+}
+.support .hover-popup > div {
+    position: absolute;
+    float: right;
+    background: #333;
+    border: 1px #111 solid;
+    padding: 0.75rem 1.25rem;
+    color: #f7f7f7;
+    text-align: left;
+    left: 0;
+    border-radius: 0.5rem;
+    z-index: 999;
+    transform: translateX(-50%);
+}
+.sw-table.fullwidth .support:last-child .hover-popup {
+    left: initial;
+    right: -20%;
+}
+.support .hover-popup > div p {
+    margin-bottom: 0;
+}
+.support .hover-popup > div p + p {
+    margin-top: 0.25;
+}
+.support .hover-popup > div p.note {
+    margin-top: 0.3rem;
+    border-top: 1px rgba(20, 20, 20, 0.3) solid;
+    padding-top: 0.1rem;
+}
+.support .hover-popup > div p code {
+    color: #e7e7a7;
+}
+
+tr.popup-below .hover-popup > div {
+    top: 2rem;
+}
+tr.popup-below .support .hover-popup > div:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: #333;
+	border-width: 0.9rem;
+	margin-left: -0.9rem;
+}
+
+tr.popup-above .hover-popup > div {
+    transform: translate(-50%, calc(-100% - 2rem));
+}
+tr.popup-above .support .hover-popup > div:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(0, 0, 0, 0);
+    border-top-color: #333;
+	border-width: 0.9rem;
+	margin-left: -0.9rem;
+}
+.sw-table.fullwidth tr .support:not(:first-child):last-child .hover-popup > div:after {
+    left: 72.5%;
+}
+
+.sw-table .support.supported .hover-popup > div {
+  background: #382;
+  border-color: #271;
+}
+.sw-table tr.popup-below .support.supported .hover-popup > div:after {
+  border-bottom-color: #271;
+}
+.sw-table tr.popup-above .support.supported .hover-popup > div:after {
+  border-top-color: #271;
+}
+.sw-table .support.unsupported .hover-popup > div {
+  background: #833;
+  border-color: #722;
+}
+.sw-table tr.popup-below .support.unsupported .hover-popup > div:after {
+  border-bottom-color: #722;
+}
+.sw-table tr.popup-above .support.unsupported .hover-popup > div:after {
+  border-top-color: #722;
+}
+.sw-table .support.partial .hover-popup > div {
+  background: #707232;
+  border-color: #606222;
+}
+.sw-table tr.popup-below .support.partial .hover-popup > div:after {
+  border-bottom-color: #606222;
+}
+.sw-table tr.popup-above .support.partial .hover-popup > div:after {
+  border-top-color: #606222;
+}
+.sw-table .support.na .hover-popup > div {
+  background: #666;
+  border-color: #555;
+}
+.sw-table tr.popup-below .support.na .hover-popup > div:after {
+  border-bottom-color: #555;
+}
+.sw-table tr.popup-above .support.na .hover-popup > div:after {
+  border-top-color: #555;
+}
+
 .bold {
   font-weight: bold;
 }

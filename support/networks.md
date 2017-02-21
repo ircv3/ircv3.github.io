@@ -8,6 +8,7 @@ We make a best effort to keep this list up to date.
 
 Please help us keep this updated by <a href="https://github.com/ircv3/ircv3.github.io/blob/master/_data/{{page.data-source-filename}}">contributing a pull request</a>.
 
+{% assign hide_support_name = true %}
 {% for type in site.data.su_networks %}
 {% include software_list.html %}
 {% endfor %}

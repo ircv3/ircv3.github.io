@@ -9,24 +9,23 @@
     #     display: irc.charybdis.io
     #   link: http://www.charybdis.io/
     #   support:
-    #     v3.1:
+    #     stable:
     #       - account-notify
-    #       - away-notify
-    #       - cap
-    #       - extended-join
-    #       - multi-prefix
-    #       - sasl
-    #       - starttls
-    #     v3.2:
     #       - account-tag
+    #       - away-notify
+    #       - cap-3.1
+    #       - cap-3.2
     #       - cap-notify
-    #       - cap
     #       - chghost
     #       - echo-message
+    #       - extended-join
     #       - invite-notify
     #       - monitor
-    #       - sasl
+    #       - multi-prefix
+    #       - sasl-3.1
+    #       - sasl-3.2
     #       - server-time
+    #       - starttls
     #       - userhost-in-names
     - name: InspIRCd Testnet
       ircd-ver: InspIRCd-3.0
@@ -35,29 +34,53 @@
         display: testnet.inspircd.org
       link: http://www.inspircd.org/
       support:
-        v3.1:
-          - account-notify
-          - away-notify
-          - cap
-          - extended-join
-          - multi-prefix
-          - sasl
-          - starttls
-        v3.2:
-          - account-tag
-          - batch
-          - cap-notify
-          - cap
-          - chghost
-          - echo-message
-          - invite-notify
-          - monitor
-          - sasl
-          - server-time
-          - userhost-in-names
-        v3.3:
-          - message-tags
-          - sts
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          draft/labeled-response:
+          draft/message-tags: "draft/message-tags"
+          draft/sts:
+          echo-message:
+          extended-join:
+          invite-notify:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          starttls:
+          userhost-in-names:
+    - name: IRCCloud Teams
+      ircd-ver: irccloud-prattle
+      net-address:
+        link:  ircs://team-irc.irccloud.com:6697/
+        display: team-irc.irccloud.com
+      link: https://blog.irccloud.com/private-teams-servers/
+      note: >
+        Invite required. PM jwheare for access.
+      support:
+        stable:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          draft/labeled-response:
+          draft/message-tags: "draft/message-tags-0.2"
+          echo-message:
+          extended-join:
+          multi-prefix:
+          userhost-in-names:
+      na:
+        stable:
+          starttls: direct TLS only
 
 - name: Networks
   note: >
@@ -70,13 +93,12 @@
     #     display: irc.chatspike.net
     #   link: https://www.chatspike.net/
     #   support:
-    #     v3.1:
-    #       - cap
+    #     stable:
+    #       - cap-3.1
     #       - multi-prefix
-    #       - sasl
+    #       - sasl-3.1
     #       - starttls
     #       - userhost-in-names
-    #
     - name: EsperNet
       ircd-ver: charybdis-3.5.3
       net-address: 
@@ -84,19 +106,19 @@
         display: irc.esper.net
       link: https://esper.net
       support:
-        v3.1:
+        stable:
           - account-notify
           - away-notify
-          - cap
-          - extended-join
-          - multi-prefix
-          - sasl
-          - starttls
-        v3.2:
-          - cap
+          - cap-3.1
+          - cap-3.2
           - cap-notify
           - chghost
+          - extended-join
           - monitor
+          - monitor
+          - multi-prefix
+          - sasl-3.1
+          - starttls
           - userhost-in-names
     - name: freenode
       ircd-ver: ircd-seven-1.1.4
@@ -105,12 +127,12 @@
         display: chat.freenode.net
       link: https://freenode.net/
       support:
-        v3.1:
+        stable:
           - account-notify
-          - cap
+          - cap-3.1
           - extended-join
           - multi-prefix
-          - sasl
+          - sasl-3.1
     - name: IRCHighWay
       ircd-ver: InspIRCd-2.0
       net-address:
@@ -118,15 +140,14 @@
         display: irc.irchighway.net
       link: https://irchighway.net/
       support:
-        v3.1:
-          - away-notify
+        stable:
           - account-notify
-          - cap
+          - away-notify
+          - cap-3.1
           - extended-join
           - multi-prefix
-          - sasl
+          - sasl-3.1
           - starttls
-        v3.2:
           - userhost-in-names
     - name: Rizon
       ircd-ver: plexus-4
@@ -135,14 +156,13 @@
         display: irc.rizon.net
       link: https://rizon.net/
       support:
-        v3.1:
+        stable:
           - away-notify
-          - cap
-          - multi-prefix
-          - sasl
-        v3.2:
+          - cap-3.1
           - chghost
           - invite-notify
+          - multi-prefix
+          - sasl-3.1
           - userhost-in-names
     - name: Snoonet
       ircd-ver: InspIRCd-2.0
@@ -151,13 +171,12 @@
         display: irc.snoonet.org
       link: https://www.snoonet.org/
       support:
-        v3.1:
-          - away-notify
+        stable:
           - account-notify
-          - cap
+          - away-notify
+          - cap-3.1
           - extended-join
-          - multi-prefix
-          - sasl
-        v3.2:
           - invite-notify
+          - multi-prefix
+          - sasl-3.1
           - userhost-in-names

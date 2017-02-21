@@ -18,3 +18,7 @@ sitemap:
 collections:
   irc:
     output: true
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  blanklines: true
