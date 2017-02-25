@@ -131,11 +131,12 @@
         SASL:
           - plain
     - name: Warren
-      # ref: https://github.com/WillowChat/Warren/blob/c01eabe/src/main/kotlin/chat/willow/warren/WarrenRunner.kt#L43
+      # ref: https://github.com/WillowChat/Warren/blob/9c979a7/src/main/kotlin/chat/willow/warren/extension/cap/CapManager.kt#L41
       link: https://github.com/WillowChat/Warren
       support:
         stable:
           account-notify:
+          account-tag:
           away-notify:
           cap-3.1:
           cap-3.2:
@@ -147,6 +148,7 @@
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
+          server-time:
           userhost-in-names:
         SASL:
           - plain
