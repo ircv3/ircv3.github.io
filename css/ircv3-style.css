@@ -1,3 +1,185 @@
+---
+---
+/* fonts */
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-bold-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-bold-italic-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-bold-italic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-extrabold-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-extrabold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-extrabold-italic-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-extrabold-italic-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-extralight-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-extralight-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-extralight-italic-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-extralight-italic-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-heavy-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-heavy-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-heavy-italic-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-heavy-italic-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-italic-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-light-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-light-italic-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-light-italic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-regular-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-semibold-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-semibold-italic-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-semibold-italic-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-thin-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('{{ site.baseurl }}/fonts/overpass-thin-italic-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-thin-italic-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Overpass Mono';
+    src: url('{{ site.baseurl }}/fonts/overpass-mono-bold-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-mono-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass Mono';
+    src: url('{{ site.baseurl }}/fonts/overpass-mono-light-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-mono-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass Mono';
+    src: url('{{ site.baseurl }}/fonts/overpass-mono-regular-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-mono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass Mono';
+    src: url('{{ site.baseurl }}/fonts/overpass-mono-semibold-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-mono-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Overpass", "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+code, kbd, pre, samp {
+    font-family: "Overpass Mono", Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+.navbar .container > div, .navbar-brand {
+    display: inline-block !important;
+    float: left !important;
+}
+.navbar-brand img {
+    height: 18px;
+    padding-bottom: 2px;
+}
+
+/* rest */
 html {
 	overflow: -moz-scrollbars-vertical;
 	overflow-y: scroll;
@@ -5,6 +187,8 @@ html {
 
 body {
 	background-color: #F2F2F2;
+    font-family: "Overpass", sans;
+    font-size: 1.7rem;
 }
 
 table {
@@ -333,6 +517,7 @@ tr.popup-above .support .hover-popup > div:after {
 
 .marketing-text {
 	text-align: center;
+    font-size: 1.6rem;
 }
 /* bootstrap's mobile/etc width */
 @media screen and (max-width: 991px) {
@@ -439,6 +624,9 @@ a:hover, a:focus {
 
 .navbar-nav a {
 	transition: background 0.05s ease-in;
+    font-size: 1.4rem !important;
+    padding-top: 15px !important;
+    padding-bottom: 10px !important;
 }
 .navbar-nav hr {
 	margin: 0;
@@ -501,7 +689,7 @@ li.sep {
     color: #9eb;
 }
 .mono {
-    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    font-family: "Overpass Mono", Menlo,Monaco,Consolas,"Courier New",monospace;
     font-weight: bold;
 }
 #home-slider-wrapper > div > div {
@@ -598,4 +786,10 @@ footer .container {
 footer p {
 	margin: 1rem 0 0;
 	padding: 0;
+}
+footer .ircv3-logo {
+    display: inline-block;
+    max-height: 1.1rem;
+    width: 3.5rem;
+    margin: 0 0.2rem 0.6rem 0.2rem;
 }
