@@ -174,14 +174,28 @@ code, kbd, pre, samp {
     font-family: "Overpass Mono", Menlo,Monaco,Consolas,"Courier New",monospace;
 }
 
-.navbar .container > div, .navbar-brand {
+.navbar-brand {
     display: inline-block !important;
-    float: left !important;
 }
 .navbar-brand img {
     height: 18px;
     padding-bottom: 2px;
 }
+
+.navbar-collapse {
+    overflow-y: visible;
+    max-height: none;
+}
+
+/* bootstrap's mobile/etc width */
+@media screen and (max-width: 991px) {
+    .navbar-collapse .dropdown-menu {
+        /*display: block;*/
+        float: none;
+        position: inherit;
+    }
+}
+
 
 /* rest */
 html {
