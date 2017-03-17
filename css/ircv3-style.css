@@ -517,12 +517,12 @@ tr.popup-above .support .hover-popup > div:after {
 
 .marketing-text {
 	text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 /* bootstrap's mobile/etc width */
 @media screen and (max-width: 991px) {
     .marketing-text + .marketing-text {
-	margin-top: 3rem;
+	    margin-top: 3rem;
     }
 }
 .marketing-text h1 {
