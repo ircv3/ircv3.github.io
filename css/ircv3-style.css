@@ -6,6 +6,8 @@
     font-family: 'Overpass';
     src: url('{{ site.baseurl }}/fonts/overpass-bold-webfont.woff2') format('woff2'),
          url('{{ site.baseurl }}/fonts/overpass-bold-webfont.woff') format('woff');
+    /*src: url('{{ site.baseurl }}/fonts/overpass-semibold-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-semibold-webfont.woff') format('woff');*/
     font-weight: bold;
     font-style: normal;
 }
@@ -14,6 +16,8 @@
     font-family: 'Overpass';
     src: url('{{ site.baseurl }}/fonts/overpass-bold-italic-webfont.woff2') format('woff2'),
          url('{{ site.baseurl }}/fonts/overpass-bold-italic-webfont.woff') format('woff');
+    /*src: url('{{ site.baseurl }}/fonts/overpass-semibold-italic-webfont.woff2') format('woff2'),
+         url('{{ site.baseurl }}/fonts/overpass-semibold-italic-webfont.woff') format('woff');*/
     font-weight: bold;
     font-style: italic;
 }
@@ -196,6 +200,9 @@ table {
     margin-bottom: 10.5px;
     max-width: 100%;
     overflow-x: auto;
+}
+th {
+    font-weight: 600;
 }
 th, td {
     padding: 0 0.8rem;
@@ -506,8 +513,8 @@ tr.popup-above .support .hover-popup > div:after {
   border-top-color: #555;
 }
 
-.bold {
-  font-weight: bold;
+.bold, strong, b {
+  font-weight: 700;
 }
 
 .navbar, .navbar-inverse .dropdown-menu {
@@ -789,7 +796,7 @@ footer p {
 }
 footer .ircv3-logo {
     display: inline-block;
-    max-height: 1.1rem;
-    width: 3.5rem;
+    max-height: 1.04rem;
+    width: auto;
     margin: 0 0.2rem 0.6rem 0.2rem;
 }
