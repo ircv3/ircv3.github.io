@@ -3,7 +3,6 @@ markdown: kramdown
 highlighter: rouge
 # baseurl: http://ircv3.net
 liveurl: http://ircv3.net  # used in XML feeds
-repository: ircv3/ircv3.github.io
 kramdown:
   input: GFM
   auto_ids: false
