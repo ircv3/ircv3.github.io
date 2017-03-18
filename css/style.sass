@@ -54,6 +54,7 @@ body
             &.active
                 margin-right: -0.95rem
                 a:after
+                    float: right
                     border: solid transparent
                     content: " "
                     height: 0
@@ -65,7 +66,7 @@ body
                     border-width: 0.43rem
                     margin-left: 0.215rem
                     left: -50%
-                    bottom: calc(-0.5em + 0.15rem)
+                    bottom: -1.1em
 
 .links .iconsep a .fa
     margin-top: -0.8em
@@ -81,7 +82,7 @@ body
 .page-header, footer, .widebg
     @include gradient-vertical(#1F5E66, #1B5860)
     background: url("../img/headerbg.svg") center center, linear-gradient(to bottom, #1F5E66 0%, #1B5860 100%)
-    background-size: 30%
+    background-size: 30%, 100%
     color: #fff
 
 .page-header
@@ -118,8 +119,12 @@ footer
     margin-top: 2rem
     font-size: 1.3rem
     padding: 1rem 0 0.9rem
+    .wglink
+        display: inline-block
+        white-space: nowrap
     .ircv3-logo
         max-height: 0.96rem
+        width: 2.91rem
         position: relative
     a
         color: #fff
@@ -152,19 +157,21 @@ footer
         margin-bottom: 0.8em
 
     ul
-        list-style: disc inside
+        list-style: disc outside
+        margin-left: 3.3rem
     ol
-        list-style: decimal inside
+        list-style: decimal outside
+        margin-left: 3.3rem
     ul ul, ol ul
-        list-style: circle inside
-        margin-left: 1.3rem
+        list-style: circle outside
+        margin-left: 3.3rem
     ol ol, ul ol
-        list-style: lower-latin inside
-        margin-left: 1.3rem
+        list-style: lower-latin outside
+        margin-left: 3.3rem
     li + li
         margin-top: 0.6rem
     li > p
-        display: inline-block
+        display: inline
 
     .row
         margin: 2.65rem 0
@@ -255,7 +262,10 @@ sub, sup
     font-size: 0.8em
 
 .caret
-    margin-left: 0.3em
+    display: inline-block
+    box-sizing: border-box
+    width: 0.6em
+    height: 1em
     &::after
         content: ' '
         height: 0
@@ -263,7 +273,7 @@ sub, sup
         width: 0
         border: 0.4rem solid transparent
         border-top-color: #333
-        bottom: -0.6em
+        bottom: -0.95em
 
 .post-content
     border-left: 1px solid #d7d7d7
