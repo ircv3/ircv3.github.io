@@ -3,6 +3,8 @@ layout: page
 title: Networks
 meta-description: IRCv3 Network Support. This page lists the IRC networks compatible with and supporting IRCv3 features.
 data-source-filename: su_networks.yml
+page-header: >
+  IRCv3 Network Support
 ---
 We make a best effort to keep this list up to date.
 

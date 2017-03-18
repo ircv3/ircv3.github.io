@@ -5,19 +5,17 @@ css_classes: post
 
 </div>
 
-<div id="home-slider-wrapper" class="post"><div class="container">
+<div class="widebg"><div class="container content" style="padding: 1.5rem 0">
 
-      <h3 style="margin-top: 2rem;">IRCv3 WG Updates <a style="padding: 0.6rem 0.6rem 0.2rem 0.6rem; border-radius: 0.4rem; background: #F2F2F2; margin-left: 1rem; font-size: 1.85rem; color: #cc6f0f" href="/feed.xml"><i class="fa fa-rss-square"></i> RSS</a></h3>
+      <h2 style="margin-top: 0">Working Group Updates <a style="margin-left: 0.6rem; display: inline-block; padding: 0.3rem 0.6rem 0.1rem; border-radius: 0.4rem; background: #c87b2d; color: #fff; font-size: 0.8em" href="/feed.xml"><i class="fa fa-rss-square"></i> RSS</a></h2>
 
-      <p style="margin-bottom: 2rem">To see other WG updates, see the <a href="{{ site.baseurl }}/wg.html">IRCv3 WG page.</a></p>
+      <p>To see other WG updates, see the <a style="color: #fff" href="{{ site.baseurl }}/wg.html">Working Group page.</a></p>
 
 </div></div>
 
-<div class="container">
+<div class="container content">
 
-<h2>{{ page.title }}</h2>
-{% if page.author %}<p class="meta">{{ page.author }}</p>{% endif %}
-<p class="meta">{{ page.date | date_to_string }}</p>
+<h2>{{ page.title }} <span class="meta">{{ page.date | date_to_string }}</span>{% if page.author %}<span class="meta"> by {{ page.author }}</span>{% endif %}</h2>
 
 <div class="post">
 {{ content }}

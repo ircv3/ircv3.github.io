@@ -3,6 +3,7 @@ markdown: kramdown
 highlighter: rouge
 # baseurl: http://ircv3.net
 liveurl: http://ircv3.net  # used in XML feeds
+repository: ircv3/ircv3.github.io
 kramdown:
   input: GFM
   auto_ids: false
@@ -13,6 +14,8 @@ exclude:
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
+sass:
+    sass_dir: css
 sitemap:
   file: "/sitemap.xml"
 collections:

@@ -1,0 +1,29 @@
+// responsive mixins
+$tablet-width: 46rem
+$desktop-width: 63rem
+
+@mixin mobile
+  @media (max-width: #{$tablet-width})
+    @content
+
+@mixin tablet
+  @media (min-width: #{$tablet-width + 0.001rem}) and (max-width: $desktop-width)
+    @content
+
+@mixin desktop
+  @media (min-width: #{$desktop-width + 0.001rem})
+    @content
+
+// default css classes for mobile, tablet, desktop, and no*
+@include mobile
+  .nomobile, .tablet, .desktop
+    display: none !important
+@include tablet
+  .mobile, .notablet, .desktop
+    display: none !important
+@include desktop
+  .mobile, .tablet, .nodesktop
+    display: none !important
+
+// width of various elements at various sizes
+$wide-content-width: 80rem

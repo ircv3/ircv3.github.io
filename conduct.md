@@ -1,10 +1,8 @@
 ---
-title: Code of conduct
+title: Code of Conduct
 layout: default
----
-
-# Code of conduct
-
+page-header: >
+  Code of Conduct
 ---
 
 In the interest of fostering an open and welcoming environment, we as

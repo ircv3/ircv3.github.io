@@ -1,34 +1,36 @@
 ---
 layout: default
 ---
-<h1>{{ page.title | markdownify | replace:'<p>','' | replace:'</p>','' }}</h1>
+<div class="spec-header">
+    <h1>{{ page.title | markdownify | replace:'<p>','' | replace:'</p>','' }}</h1>
 
-{% if page.deprecated %}
-<div class="alert alert-warning">
-    {% if page.deprecated == true %}{% else %}{{ page.deprecated | markdownify }}{% endif %}
+    {% if page.deprecated %}
+    <div class="alert alert-warning">
+        {% if page.deprecated == true %}{% else %}{{ page.deprecated | markdownify }}{% endif %}
 
-    <p>This specification has been deprecated. We do not recommend implementing this specification or the features described here.</p>
+        <p>This specification has been deprecated. We do not recommend implementing this specification or the features described here.</p>
+    </div>
+    {% endif %}
+
+    {% if page.work-in-progress %}
+    <div class="alert alert-warning">
+        <p>This specification is a work-in-progress and may have major incompatible changes without warning.</p>
+
+        <p>This specification may change at any time and we do not recommend implementing it in a production environment.</p>
+    </div>
+    {% endif %}
+
+    {% if page.copyrights %}
+    <div class="copyrights">
+    {% for copyright in page.copyrights %}
+    <p>Copyright {% include copy.html %} {{ copyright.period }} {{ copyright.name }} &lt;{{ copyright.email }}&gt;</p>
+    {% endfor %}
+    <p>Unlimited redistribution and modification of this document is allowed provided that the above copyright notice and this permission notice remains intact.</p>
+    </div>
+    {% endif %}
 </div>
-{% endif %}
 
-{% if page.work-in-progress %}
-<div class="alert alert-warning">
-    <p>This specification is a work-in-progress and may have major incompatible changes without warning.</p>
-
-    <p>This specification may change at any time and we do not recommend implementing it in a production environment.</p>
-</div>
-{% endif %}
-
-{% if page.copyrights %}
-<div class="copyrights">
-{% for copyright in page.copyrights %}
-<p>Copyright &copy; {{ copyright.period }} {{ copyright.name }} &lt;{{ copyright.email }}&gt;</p>
-{% endfor %}
-<p>Unlimited redistribution and modification of this document is allowed provided that the above copyright notice and this permission notice remains intact.</p>
-</div>
-{% endif %}
-
-<hr />
+<hr>
 
 {{ content }}
 

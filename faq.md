@@ -2,10 +2,9 @@
 title: Frequently Asked Questions
 layout: default
 meta-description: Frequently Asked Questions of the IRCv3 Working Group.
+page-header: >
+  Frequently Asked Questions
 ---
-# Frequently Asked Questions
-
-These are questions and issues which are raised to us reasonably often. If you have a question not in this list, feel free to [talk to us]({{site.baseurl}}/contact.html).
 
 ### What about older clients?
 

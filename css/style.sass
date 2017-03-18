@@ -1,0 +1,299 @@
+---
+---
+
+@import mixins/reset
+@import mixins/gradients
+@import partials/width
+@import partials/swtable
+
+// for now, because we don't have the code written yet
+.dropdown-menu
+    display: none
+
+html > body
+    background: #fff
+    font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif
+
+body
+    color: #131313
+
+.container
+    width: $wide-content-width
+    max-width: calc(100% - 3rem)
+    margin: 0 auto
+    font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif
+
+.navbar
+    border-bottom: solid 0.15rem #0E3E45
+
+    .navbar-brand
+        text-decoration: none
+    .ircv3-logo
+        float: left
+        height: 1.5rem
+        padding: 0.8rem 0.8rem 0.8rem 0
+
+    .navbar-collapse
+        width: 100%
+
+    .links
+        margin: 0
+        padding: 0
+        width: 100%
+        text-align: right
+        > li
+            display: inline-block
+            &:last-child a
+                padding-right: 0
+            a
+                display: inline-block
+                padding: 1.1rem 0.5rem 0.85rem
+                font-size: 1.35rem
+                color: #1c1c1c
+                text-decoration: none
+            &.active
+                margin-right: -0.95rem
+                a:after
+                    border: solid transparent
+                    content: " "
+                    height: 0
+                    width: 0
+                    position: relative
+                    pointer-events: none
+                    border-color: rgba(136, 183, 213, 0)
+                    border-bottom-color: #0e3e45
+                    border-width: 0.43rem
+                    margin-left: 0.215rem
+                    left: -50%
+                    bottom: calc(-0.5em + 0.15rem)
+
+.links .iconsep a .fa
+    margin-top: -0.8em
+    margin-bottom: -0.8em
+    font-size: 2em
+    position: relative
+    top: 0.18em
+    &.fa-envelope
+        font-size: 1.7em
+        top: 0.165em
+        position: relative
+
+.page-header, footer, .widebg
+    @include gradient-vertical(#1F5E66, #1B5860)
+    background: url("../img/headerbg.svg") center center, linear-gradient(to bottom, #1F5E66 0%, #1B5860 100%)
+    background-size: 30%
+    color: #fff
+
+.page-header
+    text-align: center
+    padding: 5.3rem 0
+    line-height: 1
+    h1
+        font-size: 2.7rem
+        font-weight: 400
+    p
+        margin-bottom: 0
+
+.spec-header
+    margin-top: 2rem
+    line-height: 1.1
+    text-align: left
+    h1
+        font-size: 2.4rem
+        font-weight: 600
+        margin-bottom: 0.55rem
+    p + p
+        margin-top: 0.3em
+
+pre
+    border-radius: 0.5rem
+    background: #ffffd7
+    padding: 1rem
+    page-break-inside: avoid
+    margin: 1em 0
+pre > code
+    color: #1b1b1b
+
+footer
+    margin-top: 2rem
+    font-size: 1.3rem
+    padding: 1rem 0 0.9rem
+    .ircv3-logo
+        max-height: 0.96rem
+        position: relative
+    a
+        color: #fff
+    .copylink
+        width: 100%
+    .links
+        display: inline-block
+        float: right
+        li, a
+            display: inline-block
+        li + li
+            margin-left: 0.9rem
+        li.iconsep + li.iconsep
+            margin-left: 0.7rem
+
+.content
+    font-size: 1.3rem
+    font-weight: 300
+    > p:first-child
+        margin-top: 1.86rem
+    p:last-child
+        margin-bottom: 0
+
+    hr
+        border: none
+        border-top: 0.4rem solid #1B5860
+        margin: 1.6rem 0
+
+    p, ol, ul
+        margin-bottom: 0.8em
+
+    ul
+        list-style: disc inside
+    ol
+        list-style: decimal inside
+    ul ul, ol ul
+        list-style: circle inside
+        margin-left: 1.3rem
+    ol ol, ul ol
+        list-style: lower-latin inside
+        margin-left: 1.3rem
+    li + li
+        margin-top: 0.6rem
+    li > p
+        display: inline-block
+
+    .row
+        margin: 2.65rem 0
+        > div
+            box-sizing: border-box
+            &:not(:last-child)
+                padding-right: 1.5rem
+            // make them stack when width is really small
+            @include mobile
+                display: block
+                width: 100%
+                padding-right: 0
+                & + div
+                    margin-top: 2.3rem
+        h2
+            margin: 0
+        hr
+            border: none
+            border-top: 0.2rem solid #1B5860
+            margin: 0.5rem 0 0.9rem
+
+        a.button
+            display: block
+            margin-top: 1.15rem
+            background: #1B5860
+            color: #fff
+            text-decoration: none
+            padding: 1rem 1rem 0.8rem
+            border-radius: 0.65rem
+            text-align: center
+
+        > div:nth-child(2n)
+            hr
+                border-top-color: #2A6B72
+            a.button
+                background: #2A6B72
+
+table
+    font-size: 90%
+    margin: 1.4em 0
+    max-width: 100%
+    overflow-x: auto
+    &:first-child
+        margin-top: 0
+    + table
+        margin-top: 0
+    &:last-child
+        margin-top: 0
+th
+    font-weight: 500
+    text-align: left
+th, td
+    padding: 0.3rem 0.6rem 0.2rem
+tbody tr:nth-child(odd)
+    background: #e4e4e4
+tbody tr code
+    background: none
+td + td, th + th
+    border-left: 1px #aaa solid
+
+h2
+    font-size: 1.6rem
+    font-weight: 500
+    margin-top: 1.32em
+    margin-bottom: 0.7rem
+h3
+    font-size: 1.45rem
+    font-weight: 500
+    margin-top: 1.32em
+    margin-bottom: 0.7rem
+h1, h2, h3
+    .meta
+        font-size: 0.7em
+        color: #444
+        margin-left: 0.35em
+        font-weight: 400
+p
+    line-height: 1.17
+tt, code, pre
+    font-family: "Overpass Mono", Menlo, Monaco, Consolas, "Courier New", monospace
+    font-weight: 500
+    color: #DB1438
+    font-size: 0.9em
+a
+    text-decoration: none
+    color: #0B7884
+sub, sup
+    font-size: 0.8em
+
+.caret
+    margin-left: 0.3em
+    &::after
+        content: ' '
+        height: 0
+        position: relative
+        width: 0
+        border: 0.4rem solid transparent
+        border-top-color: #333
+        bottom: -0.6em
+
+.post-content
+    border-left: 1px solid #d7d7d7
+    padding: 0.4rem 0 0.2rem 1.35rem
+
+.flexy-list
+    max-width: 90rem
+    font-size: 1.71rem
+    text-align: center
+    margin: 0.35rem auto
+    > a
+        display: inline-block
+        padding: 0.75rem 2rem
+
+// sticky footer
+html
+    position: relative
+    min-height: 100%
+
+body
+    /* Margin bottom by footer height */
+    margin-bottom: 1.7rem
+
+.whole
+    margin-bottom: 7.5rem
+
+footer
+    position: absolute
+    bottom: 0
+    width: 100%
+    /* Set the fixed height of the footer here */
+    height: 1.7rem
+    font-size: 1.3rem

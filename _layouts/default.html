@@ -10,12 +10,11 @@ layout: compress
     <meta name="author" content="Andrew Northall">
     <meta name="description" content="{% if page.meta-description %}{{ page.meta-description }}{% else %}IRCv3 Development Community{% endif %}">
 
-    <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ site.baseurl }}/css/ircv3-style.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/font-awesome.min.css" rel="stylesheet">
-
+    <link href="{{ site.baseurl }}/css/fonts.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/pure.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet">
     <script src="{{ site.baseurl }}/js/anchor.min.js"></script>
-    <script src="{{ site.baseurl }}/js/jquery-1.12.0.min.js"></script>
 
     <!--[if lt IE 9]>
       <script src="{{ site.baseurl }}/js/html5shiv.min.js"></script>
@@ -24,21 +23,36 @@ layout: compress
   </head>
   <body{% if layout.css_classes %} class="{{ layout.css_classes }}"{% endif %}>
     <div class="whole">
-      {% include menu.html %} 
-      <div id="content" class="container">
+      {% include menu.html %}
+      <div class="content container">
+        {% if page.page-header %}
+          {% capture mdph %}{{ page.page-header | markdownify }}{% endcapture %}
+          {% include pageheader.html content=mdph %}
+        {% endif %}
         {{ content }}
       </div>
     </div>
     <footer>
       <div class="container">
-        <p>
-          <span>&copy; <a href="{{ site.baseurl }}/" style="color:black;">{% include logo-forwhite.html %} Working Group</a> {{ site.time | date: "%Y" }}</span>
-          <span style="margin: 0 1rem;">&middot;</span>
-          <a style="padding: 0.2rem 0.6rem; border-radius: 0.4rem; background: #F2F2F2; color: #cc6f0f" href="/feed.xml"><i class="fa fa-rss-square"></i> IRCv3 WG Updates</a>
-        </p>
+        <div class="copylink">
+          <span><a href="{{ site.baseurl }}/" class="wglink">{% include logo-fordark.html %} Working Group</a> {% include copy.html %} {{ site.time | date: "%Y" }}</span>
+          <span style="margin: 0 0.7rem;">&middot;</span>
+          <a style="display: inline-block; padding: 0.3rem 0.6rem 0.1rem; border-radius: 0.4rem; background: #c87b2d; color: #fff; font-size: 0.9em" href="/feed.xml"><i class="fa fa-rss-square"></i> RSS</a>
+          <ul class="links nomobile" style="margin-top: 0.3rem">
+            <li><a href="{{ site.baseurl }}/index.html">Home</a></li>
+            <li><a href="{{ site.baseurl }}/wg.html">
+              <span class="notablet">Working Group</span>
+              <span class="tablet">WG</span>
+            </a></li>
+            <li><a href="{{ site.baseurl }}/faq.html">FAQs</a></li>
+            <li><a href="{{ site.baseurl }}/irc/">
+              <span class="notablet">Specifications</span>
+              <span class="tablet">Specs</span>
+            </a></li>
+            <li class="iconsep"><a href="https://github.com/ircv3/"><span class="fa fw-fw fa-github"></span></a></li>
+          </ul>
+        </div>
       </div>
     </footer>
-    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
-    <script src="{{ site.baseurl }}/js/bootstrap-hover-dropdown.min.js"></script>
   </body>
 </html>
