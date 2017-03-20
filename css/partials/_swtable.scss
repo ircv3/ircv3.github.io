@@ -96,6 +96,7 @@ a.irc-extension {
   max-width: 27rem;
   text-align: center;
   padding: 0.3em 0.5em;
+  position: relative;
 }
 .sw-table .supported {
   background-color: #a7eeaa;
@@ -167,10 +168,13 @@ a.irc-extension {
 /* hover popups */
 .hover-popup {
     display: none;
-    position: relative;
+    position: absolute;
     left: 50%;
     white-space: nowrap;
     width: 0;
+}
+.hover-popup p:first-child {
+    margin-top: 0;
 }
 .support:hover {
     border: 1px rgba(20, 20, 20, 0.65) solid;
