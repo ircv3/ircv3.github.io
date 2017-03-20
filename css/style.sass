@@ -3,7 +3,7 @@
 
 @import mixins/reset
 @import mixins/gradients
-@import partials/width
+@import partials/media
 @import partials/swtable
 
 // for now, because we don't have the code written yet
@@ -82,8 +82,11 @@ body
 .page-header, footer, .widebg
     @include gradient-vertical(#1F5E66, #1B5860)
     background: url("../img/headerbg.svg") center center, linear-gradient(to bottom, #1F5E66 0%, #1B5860 100%)
-    background-size: 30%, 100%
+    background-size: 40rem, 100%
     color: #fff
+    @include print
+        background: #fff
+        color: #1c1c1c
 
 .page-header
     text-align: center
@@ -94,6 +97,8 @@ body
         font-weight: 400
     p
         margin-bottom: 0
+    @include print
+        padding: 3rem 0
 
 .spec-header
     margin-top: 2rem
@@ -112,6 +117,8 @@ pre
     padding: 1rem
     page-break-inside: avoid
     margin: 1em 0
+    @include print
+        border: 0.2rem solid rgba(20, 20, 20, 0.05)
 pre > code
     color: #1b1b1b
 
@@ -154,7 +161,11 @@ footer
         margin: 1.6rem 0
 
     p, ol, ul
+        margin-top: 0.8em
         margin-bottom: 0.8em
+    h1, h2, h3
+        + p
+            margin-top: 0.5em
 
     ul
         list-style: disc outside
@@ -232,6 +243,10 @@ tbody tr code
 td + td, th + th
     border-left: 1px #aaa solid
 
+@include print
+    .navbar, footer
+        display: none
+
 h2
     font-size: 1.6rem
     font-weight: 500
@@ -287,6 +302,22 @@ sub, sup
     > a
         display: inline-block
         padding: 0.75rem 2rem
+
+.alert
+    padding: 0.7em 1em
+    border-radius: 0.6rem
+    > p:first-child
+        margin-top: 0
+.alert-warning
+    background-color: #d54
+    color: #fff
+    font-weight: 500
+    @include print
+        background-color: #fff
+        border: 0.3rem dashed #d54
+        color: inherit
+        font-weight: 600
+
 
 // sticky footer
 html

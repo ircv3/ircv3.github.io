@@ -14,6 +14,10 @@ $desktop-width: 63rem
   @media (min-width: #{$desktop-width + 0.001rem})
     @content
 
+@mixin print
+  @media print
+    @content
+
 // default css classes for mobile, tablet, desktop, and no*
 @include mobile
   .nomobile, .tablet, .desktop
