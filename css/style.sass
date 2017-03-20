@@ -6,10 +6,6 @@
 @import partials/media
 @import partials/swtable
 
-// for now, because we don't have the code written yet
-.dropdown-menu
-    display: none
-
 html > body
     background: #fff
     font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif
@@ -51,9 +47,9 @@ body
                 font-size: 1.35rem
                 color: #1c1c1c
                 text-decoration: none
-            &.active
+            &:not(:hover).active
                 margin-right: -0.95rem
-                a:after
+                > a:after
                     float: right
                     border: solid transparent
                     content: " "
@@ -78,6 +74,21 @@ body
         font-size: 1.7em
         top: 0.165em
         position: relative
+
+
+.dropdown-menu
+    display: none
+    position: absolute
+    float: right
+    text-align: left
+    background: #fff
+    border-radius: 0 0 0.2em 0.2em
+    border: solid 0.15rem #0E3E45
+    border-top: none
+    > .sep
+        border-top: solid 0.15rem #0E3E45
+li:hover > .dropdown-menu
+    display: block
 
 .page-header, footer, .widebg
     @include gradient-vertical(#1F5E66, #1B5860)
@@ -288,11 +299,13 @@ sub, sup
         width: 0
         border: 0.4rem solid transparent
         border-top-color: #333
-        bottom: -0.95em
+        top: 0.7em
 
 .post-content
     border-left: 1px solid #d7d7d7
     padding: 0.4rem 0 0.2rem 1.35rem
+    > p:first-child
+        margin-top: 0
 
 .flexy-list
     max-width: 90rem

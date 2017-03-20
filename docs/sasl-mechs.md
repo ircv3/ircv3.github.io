@@ -2,6 +2,8 @@
 layout: page
 title: SASL Mechanisms
 meta-description: SASL Mechanisms for the IRCv3 'sasl' capability.
+page-header: >
+  IRCv3 SASL Mechanisms
 ---
 IRC SASL authentication primarily uses the same mechanisms as SASL in other protocols. Most commonly:
 
