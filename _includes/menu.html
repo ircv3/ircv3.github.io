@@ -8,7 +8,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ site.baseurl }}/">IRCv3</a>
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
+        {% include logo-fordark.html %}
+      </a>
     </div>
     <div class="navbar-collapse collapse">
       <!-- <ul class="nav navbar-nav navbar-right">
@@ -20,7 +22,7 @@
           <li{% if current[0] == 'charter.md' %} class="active"{% endif %}><a href="{{ site.baseurl }}/charter.html"><span class="fa fa-fw fa-book"></span> Charter</a></li>
           <li{% if current[0] == 'faq.md' %} class="active"{% endif %}><a href="{{ site.baseurl }}/faq.html"><span class="fa fa-fw fa-info-circle"></span> FAQs</a></li>
           <li{% if current[0] == '_irc' %} class="active"{% endif %}><a href="{{ site.baseurl }}/irc/"><span class="fa fa-fw fa-file-text"></span> Specs</a></li>
-          <li{% if current[0] == 'software' %} class="active"{% elsif current[0] == 'support' %} class="active"{% endif %}><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><span class="fa fa-fw fa-folder-open"></span> Support <b class="caret"></b></a>
+          <li{% if current[0] == 'software' %} class="active"{% elsif current[0] == 'support' %} class="active"{% endif %}><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-fw fa-folder-open"></span> Support <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="{{ site.baseurl }}/support/networks.html"><span class="fa fa-fw fa-sitemap"></span> Networks</a></li>
               <li><a href="{{ site.baseurl }}/software/clients.html"><span class="fa fa-fw fa-desktop"></span> Clients</a></li>
