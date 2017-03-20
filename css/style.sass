@@ -28,6 +28,12 @@ body
         float: left
         height: 1.5rem
         padding: 0.8rem 0.8rem 0.8rem 0
+        @include mobile
+            display: block
+            height: 1.75rem
+            float: none
+            margin-left: auto
+            margin-right: auto
 
     .navbar-collapse
         width: 100%
@@ -37,8 +43,16 @@ body
         padding: 0
         width: 100%
         text-align: right
+        @include mobile
+            display: none
+            text-align: left
+            &.dropped
+                display: block
         > li
             display: inline-block
+            @include mobile
+                display: block
+                margin: 0 auto
             &:last-child a
                 padding-right: 0
             a
@@ -49,7 +63,11 @@ body
                 text-decoration: none
             &:not(:hover).active
                 margin-right: -0.95rem
+                @include mobile
+                    margin-right: 0
                 > a:after
+                    @include mobile
+                        display: none
                     float: right
                     border: solid transparent
                     content: " "
@@ -75,6 +93,14 @@ body
         top: 0.165em
         position: relative
 
+.navbar-dropper
+    float: right
+    padding: 0.8rem
+    position: absolute
+    right: 0
+    top: 0
+    color: #222
+    font-size: 1.75rem
 
 .dropdown-menu
     display: none
@@ -85,10 +111,18 @@ body
     border-radius: 0 0 0.2em 0.2em
     border: solid 0.15rem #0E3E45
     border-top: none
+    @include mobile
+        position: inherit
+        float: none
+        text-align: left
     > .sep
         border-top: solid 0.15rem #0E3E45
-li:hover > .dropdown-menu
+
+.dropdown-menu.dropped
     display: block
+@include nomobile
+    li:hover > .dropdown-menu
+        display: block
 
 .page-header, footer, .widebg
     @include gradient-vertical(#1F5E66, #1B5860)

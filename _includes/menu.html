@@ -5,7 +5,7 @@
       {% include logo-forwhite.html %}
     </a>
     <div class="navbar-collapse collapse">
-      <ul class="links">
+      <ul id="navbar-links" class="links">
         <li{% if current[0] == 'index.md' %} class="active"{% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
         <li{% if current[0] == 'wg.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/wg.html">
           <span class="notablet">Working Group</span>
@@ -16,8 +16,8 @@
           <span class="notablet">Specifications</span>
           <span class="tablet">Specs</span>
         </a></li>
-        <li{% if current[0] == 'software' %} class="active"{% elsif current[0] == 'support' %} class="active"{% endif %}><a href="#" class="dropdown-toggle" data-toggle="dropdown">Support<span class="notablet"> Tables</span> <b class="caret"></b></a>
-          <ul class="dropdown-menu">
+        <li{% if current[0] == 'software' %} class="active"{% elsif current[0] == 'support' %} class="active"{% endif %}><a href="#" onclick="document.getElementById('support-dropdown-menu').className == 'dropdown-menu' ? document.getElementById('support-dropdown-menu').className += ' dropped' : document.getElementById('support-dropdown-menu').className = 'dropdown-menu'" class="dropdown-toggle">Support<span class="notablet"> Tables</span> <b class="caret"></b></a>
+          <ul id="support-dropdown-menu" class="dropdown-menu">
             <li><a href="{{ site.baseurl }}/support/networks.html"><span class="fa fa-fw fa-sitemap"></span> Networks</a></li>
             <li><a href="{{ site.baseurl }}/software/clients.html"><span class="fa fa-fw fa-desktop"></span> Clients</a></li>
             <li><a href="{{ site.baseurl }}/software/servers.html"><span class="fa fa-fw fa-server"></span> Servers</a></li>
@@ -28,6 +28,7 @@
         <li class="iconsep"><a href="https://github.com/ircv3/"><span class="fa fw-fw fa-github"></span></a></li>
         <li class="iconsep {% if current[0] == 'contact.html' %}active{% endif %}"><a href="{{ site.baseurl }}/contact.html"><span class="fa fw-fw fa-envelope"></span></a></li>
       </ul>
+      <a class="navbar-dropper mobile" href="#" onclick="document.getElementById('navbar-links').className == 'links' ? document.getElementById('navbar-links').className += ' dropped' : document.getElementById('navbar-links').className = 'links'" ><b class="fa fa-bars"></b></a>
     </div>
   </div>
 </div>
