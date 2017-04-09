@@ -146,7 +146,7 @@ a.irc-extension {
 .sw-note {
   text-align: center;
   color: #6b6b6b;
-  font-size: 1.2rem;
+  font-size: 0.94em;
 }
 .sw-sublinks a {
   display: block;
@@ -157,7 +157,7 @@ a.irc-extension {
 .sw-table .ircd-ver {
   display: block;
   color: #6b6b6b;
-  font-size: 1.2rem;
+  font-size: 0.94em;
 }
 .sw-table .net-address {
   display: block;
@@ -172,7 +172,10 @@ a.irc-extension {
     white-space: nowrap;
     width: 0;
 }
-.hover-popup p:first-child {
+.content .hover-popup p {
+    margin-top: 0.26em;
+}
+.content .hover-popup p:first-child {
     margin-top: 0;
 }
 .support:hover {
