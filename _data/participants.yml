@@ -25,8 +25,8 @@
 - name: UnrealIRCd
   url: https://www.unrealircd.org/
 
-- name: mammon-ircd
-  url: http://www.mammon.io/
+- name: ircdocs
+  url: http://ircdocs.horse/
 
 - name: ZNC
   url: http://znc.in/
