@@ -142,10 +142,10 @@ process them.
 **Note:** Batches themselves are used as a foundation for other extensions and
 do not themselves offer any user-facing features.
 
-Here are the standalone batch types IRCv3 defines:
+Here are the standalone batch types the IRCv3 WG defines:
 
-* [`netsplit` and `netjoin` batch type]({{site.baseurl}}/specs/extensions/batch/netsplit-3.2.html), to allow clients to collapse netsplits and netjoins more effectively.
-* [`chathistory` batch type]({{site.baseurl}}/specs/extensions/batch/chathistory-3.3.html) **[draft]**, for replaying message history.
+* [The `netsplit` and `netjoin` batch types]({{site.baseurl}}/specs/extensions/batch/netsplit-3.2.html) allow clients to collapse netsplits and netjoins more effectively.
+* [The `chathistory` batch type]({{site.baseurl}}/specs/extensions/batch/chathistory-3.3.html) **[draft]** allows replaying message history.
 
 
 ## [Changing Usernames and Hostnames]({{site.baseurl}}/specs/extensions/chghost-3.2.html)
@@ -157,6 +157,18 @@ sending a fake `QUIT`, and then one or more fake `JOIN` messages instead.
 The [`chghost` spec]({{site.baseurl}}/specs/extensions/chghost-3.2.html)
 describes the new `CHGHOST` message which this extension uses, and how clients
 see these changes.
+
+
+## Client-Only Tags
+
+Client-only tags are message tags that are sent directly between clients with
+no server involvement. They're special in IRCv3 as they only apply to clients,
+and as such we detail them in their own section here.
+
+Here are the client-only tags the IRCv3 WG defines:
+
+* [The `reply` client-only tag]({{site.baseurl}}/specs/client-tags/reply.html) **[draft]** marks that a given message is intended as a reply to a specific sent message.
+* [The `react` client-only tag]({{site.baseurl}}/specs/client-tags/react.html) **[draft]** sends a reaction to a specific sent message, allowing such functionality from other chat systems.
 
 
 ## [Echo Message]({{site.baseurl}}/specs/extensions/echo-message-3.2.html)
@@ -317,6 +329,17 @@ better track info and automate client features more easily.
 The [`userhost-in-names` spec]({{site.baseurl}}/specs/extensions/userhost-in-names-3.2.html)
 describes how the `NAMES` message changes with this capability active, and how
 clients should interpret the changes.
+
+
+## [WebIRC]({{site.baseurl}}/specs/extensions/webirc.html)
+
+The `WEBIRC` command is widely used to provide the real IP address of users
+to the server when connecting through a gateway. This is common for current
+web-based IRC clients.
+
+The **work-in-progress** [`WEBIRC` spec]({{site.baseurl}}/specs/extensions/webirc.html)
+describes how this command works, how to use it, and some best practices to
+keep in mind while implementing this feature.
 
 
 ---
