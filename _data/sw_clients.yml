@@ -135,10 +135,17 @@
       link: http://konversation.kde.org
       support:
         stable:
+          account-notify: 1.7+
+          away-notify: 1.7+
           cap-3.1:
+          extended-join: 1.7+
+          multi-prefix: 1.7+
           sasl-3.1:
+          server-time: 1.7+
+          userhost-in-names: 1.7+
         SASL:
           - plain
+          - external
     - name: KVIrc
       # ref: https://github.com/kvirc/KVIrc/blob/4.2.0/src/kvirc/kernel/KviIrcConnection.cpp#L438
       #      or handleInitialCapLs() in https://github.com/kvirc/KVIrc/blob/master/src/kvirc/kernel/KviIrcConnection.cpp
