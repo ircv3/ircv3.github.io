@@ -455,8 +455,8 @@
           sasl-3.1:
           server-time:
           userhost-in-names:
-      SASL:
-        - plain
+        SASL:
+          - plain
     - name: Palaver
       # maintainer: kylef
       link: https://palaverapp.com/
