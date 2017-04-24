@@ -89,6 +89,21 @@
         - reply-client-tag
       description: Sends a reaction to a specific sent message.
 
+- name: Batches
+  values:
+    - name: chathistory
+      specs:
+        - chathistory-batch
+      description: Indicates that the given messages represent history playback from this channel.
+    - name: netjoin
+      specs:
+        - netsplitjoin-batch
+      description: Indicates that the given clients are joining as the result of a netjoin (two split servers reconnecting).
+    - name: netsplit
+      specs:
+        - netsplitjoin-batch
+      description: Indicates that the given clients are quitting as the result of a netsplit (two servers disconnecting).
+
 - name: Messages
   values:
     - name: AUTHENTICATE
