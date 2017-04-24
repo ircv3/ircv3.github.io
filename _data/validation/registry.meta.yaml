@@ -1,0 +1,20 @@
+root:
+  type: listofdicts
+  kids:
+    name:
+      type: string
+    values:
+      type: listofdicts
+      kids:
+        name:
+          type: string
+        specs:
+          type: listofstrings
+        description:
+          type: string
+        deprecated:
+          type: boolean
+          required: false
+        draft:
+          type: boolean
+          required: false
