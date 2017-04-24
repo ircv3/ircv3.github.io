@@ -311,16 +311,23 @@ h1, h2, h3
         color: #444
         margin-left: 0.35em
         font-weight: 400
-tt, code, pre
+tt, code, pre, .mono
     font-family: "Overpass Mono", Menlo, Monaco, Consolas, "Courier New", monospace
     font-weight: 500
-    color: #DB1438
     font-size: 0.9em
+tt, code, pre
+    color: #DB1438
 a
     text-decoration: none
     color: #0B7884
 sub, sup
     font-size: 0.8em
+
+td > a
+    &.deprecated
+        color: #3b3b3b
+    &.draft
+        color: #b07f38
 
 .caret
     display: inline-block

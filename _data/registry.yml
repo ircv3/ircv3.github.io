@@ -1,0 +1,143 @@
+- name: Capabilities
+  values:
+    - name: account-notify
+      specs:
+        - account-notify
+      description: Notifies clients when other clients in common channels authenticate with or deauthenticate from their account (e.g. NickServ, SASL).
+    - name: account-tag
+      specs:
+        - account-tag
+      description: Attaches a tag containing the user’s account to every message they send.
+    - name: away-notify
+      specs:
+        - away-notify
+      description: Notifies clients when other clients in common channels go away or come back.
+    - name: batch
+      specs:
+        - batch
+      description: Lets the server bundle common messages together, which lets clients be more intelligent about displaying them.
+    - name: cap-notify
+      specs:
+        - cap-notify
+      description: Notifies clients when client capabilities become availiable or are no longer available.
+    - name: chghost
+      specs:
+        - chghost
+      description: Enables the CHGHOST message, which lets servers notify clients when another client’s username and/or hostname changes.
+    - name: echo-message
+      specs:
+        - echo-message
+      description: Notifies clients when their PRIVMSG and NOTICEs are correctly received by the server.
+    - name: extended-join
+      specs:
+        - extended-join
+      description: Extends the JOIN message to include the account name of the joining client.
+    - name: invite-notify
+      specs:
+        - invite-notify
+      description: Notifies clients when other clients are invited to common channels.
+    - name: metadata
+      specs:
+        - metadata-3.2
+      description: Lets clients store metadata about themselves with the server, for other clients to request and retrieve later.
+    - name: monitor
+      specs:
+        - monitor
+      description: Lets users request notifications for when clients become online / offline.
+    - name: multi-prefix
+      specs:
+        - multi-prefix
+      description: Makes the server send all prefixes in NAMES and WHO output, in order of rank from highest to lowest.
+    - name: sasl
+      specs:
+        - sasl-3.1
+        - sasl-3.2
+      description: Indicates support for SASL auth, a standardised way for clients to identify for an account.
+    - name: server-time
+      specs:
+        - server-time
+      description: Lets clients show the actual time messages were received by the server.
+    - name: tls
+      specs:
+        - starttls
+      description: Indicates support for the STARTTLS command, which lets clients upgrade their connection to use TLS encryption.
+    - name: userhost-in-names
+      specs:
+        - userhost-in-names
+      description: Extends the RPL_NAMREPLY message to contain the full nickmask `(nick!user@host)` of every user, rather than just the nickname.
+
+- name: Tags
+  values:
+    - name: account
+      specs:
+        - account-tag
+      description: Contains the account name of the user that sent the attached message to the client.
+    - name: batch
+      specs:
+        - batch
+      description: Contains the ID of the batch the attached message is a part of.
+    - name: time
+      specs:
+        - server-time
+      description: Contains the time that the given message should be treated as happening at.
+    - name: +react
+      specs:
+        - react-client-tag
+      description: Marks that a given message is intended as a reply to a specific sent message.
+    - name: +reply
+      specs:
+        - reply-client-tag
+      description: Sends a reaction to a specific sent message.
+
+- name: Messages
+  values:
+    - name: AUTHENTICATE
+      specs: 
+        - sasl-3.1
+        - sasl-3.2
+      description: Used to login to a client account when SASL authentication is negotiated.
+    - name: ACCOUNT
+      specs: 
+        - account-notify
+      description: Notifies clients of new logins by friends.
+    - name: CAP
+      specs: 
+        - cap-3.1
+        - cap-3.2
+      description: Lets clients negotiate client capabilities with servers.
+    - name: CHGHOST
+      specs: 
+        - chghost
+      description: Notifies clients of changed usernames and hostnames of friends
+    - name: INVITE
+      specs: 
+        - invite-notify
+      description: Not defined by IRCv3 but extended to alert other clients that someone's been invited to one of their channels.
+    - name: JOIN
+      specs: 
+        - extended-join
+      description: Not defined by IRCv3 but extended to include usernames and hostnames.
+    - name: METADATA
+      specs: 
+        - metadata-3.2
+      description: Lets clients store metadata about themselves with the server, for other clients to request and retrieve later.
+    - name: MONITOR
+      specs: 
+        - monitor
+      description: Existing command which allows clients to see when specific nicknames enter or leave the network.
+    - name: NAMES
+      specs: 
+        - userhost-in-names
+      description: Not defined by IRCv3 but extended to include account names.
+    - name: STARTTLS
+      specs: 
+        - starttls
+      description: Allows clients to upgrade their plaintext connections to use TLS encryption.
+    - name: TAGMSG
+      specs: 
+        - message-tags-3.3
+      description: Lets clients send messages with tags but no text content.
+    - name: WEBIRC
+      specs: 
+        - webirc
+      description: Existing command which provides the real IP address of clients to the server when connecting through a gateway.
