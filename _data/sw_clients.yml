@@ -472,12 +472,23 @@
       support:
         stable:
           cap-3.1:
+          cap-3.2:
+          cap-notify:
+          account-tag:
+          batch:
+          chghost:
+          echo-message:
+          invite-notify:
+          monitor:
           multi-prefix:
           sasl-3.1:
-          starttls:
-          batch:
+          sasl-3.2:
           server-time:
+          starttls:
           userhost-in-names:
+          draft/labeled-response:
+          draft/message-tags:
+          draft/sts:
         SASL:
           - plain
     - name: YAAIC
