@@ -178,16 +178,28 @@
     - name: mIRC
       # ref: http://www.mirc.com/news.html
       #      http://www.mirc.com/versions.txt
-      #      http://forums.mirc.com/ubbthreads.php/topics/244662/IRCv3 ("please don't quote me")
       link: http://www.mirc.com
       support:
         stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          cap-notify:
           cap-3.1:
+          cap-3.2:
+          chghost:
+          extended-join:
+          invite-notify:
           monitor:
           multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
           server-time:
           starttls:
           userhost-in-names:
+        SASL:
+          - external
+          - plain
     - name: Mozilla Thunderbird
       # ref: irc{CAP,SASL,MultiPrefix,WatchMonitor}.jsm files in
       #      http://mxr.mozilla.org/comm-central/source/chat/protocols/irc/
