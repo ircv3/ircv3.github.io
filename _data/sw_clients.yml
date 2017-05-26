@@ -315,15 +315,25 @@
           - authcookie
           - plain
     - name: Kiwi IRC
-      # ref: https://github.com/prawnsalad/KiwiIRC/blob/v0.9.1/server/irc/commands/registration.js#L63
+      # ref: https://github.com/kiwiirc/kiwiirc
       link: https://kiwiirc.com
       support:
         stable:
+          account-notify:
+          account-tag:
           away-notify:
+          batch:
           cap-3.1:
+          cap-3.2:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
           multi-prefix:
           sasl-3.1:
+          sasl-3.2:
           server-time:
+          userhost-in-names:
         SASL:
           - plain
     - name: The Lounge
