@@ -479,9 +479,15 @@
         - ios
       support:
         stable:
+          account-notify:
           cap-3.1:
           away-notify:
           batch:
+          cap-notify:
+          chghost:
+          extended-join:
+          invite-notify:
+          monitor:
           multi-prefix:
           sasl-3.1:
           server-time:
