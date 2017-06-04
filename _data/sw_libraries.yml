@@ -32,6 +32,29 @@
           userhost-in-names: 3.0+
         SASL:
           - plain
+    - name: girc
+      # ref: https://github.com/lrstanley/girc/blob/master/cap.go
+      #      https://github.com/lrstanley/girc/blob/master/builtin.go
+      # -- all are supported, but these have builtin extra functionality.
+      link: https://github.com/lrstanley/girc
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          extended-join:
+          invite-notify:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          userhost-in-names:
+        SASL:
+          - plain
     - name: irc-framework
       # ref: https://github.com/kiwiirc/irc-framework/blob/master/docs/ircv3.md
       link: https://github.com/kiwiirc/irc-framework
