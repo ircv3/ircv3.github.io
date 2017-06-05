@@ -16,6 +16,10 @@ SASL:
       description: SASL SCRAM-SHA-256 mechanism
       required: true
       link: https://tools.ietf.org/html/rfc7677
+    ecdsa-nist256p-challenge:
+      name: ECDSA-NIST256P-CHALLENGE
+      description: Token signing with an ECDSA key
+      required: false
     # dh-aes:
     #   name: DH-AES
     #   description: DH-AES SASL mechanism (deprecated)
