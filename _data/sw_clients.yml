@@ -481,6 +481,7 @@
         stable:
           account-notify:
           cap-3.1:
+          cap-3.2:
           away-notify:
           batch:
           cap-notify:
@@ -490,6 +491,7 @@
           monitor:
           multi-prefix:
           sasl-3.1:
+          sasl-3.2:
           server-time:
           userhost-in-names:
         SASL:
