@@ -1,5 +1,5 @@
 - name: InspIRCd
-  url: http://inspircd.org/
+  url: https://inspircd.org/
 
 - name: Irssi
   url: https://irssi.org/
@@ -26,10 +26,10 @@
   url: https://www.unrealircd.org/
 
 - name: ircdocs
-  url: http://ircdocs.horse/
+  url: https://ircdocs.horse/
 
 - name: ZNC
-  url: http://znc.in/
+  url: https://znc.in/
 
 - name: Willow Chat
   url: https://willow.chat
