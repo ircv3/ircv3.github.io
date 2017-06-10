@@ -20,7 +20,7 @@
           <span class="notablet">Registry</span>
           <span class="tablet">Reg</span>
         </a></li>
-        <li{% if current[0] == 'software' %} class="active"{% elsif current[0] == 'support' %} class="active"{% endif %}><a href="#" onclick="document.getElementById('support-dropdown-menu').className == 'dropdown-menu' ? document.getElementById('support-dropdown-menu').className += ' dropped' : document.getElementById('support-dropdown-menu').className = 'dropdown-menu'" class="dropdown-toggle">Support<span class="notablet"> Tables</span> <b class="caret"></b></a>
+        <li><a href="#" onclick="document.getElementById('support-dropdown-menu').className == 'dropdown-menu' ? document.getElementById('support-dropdown-menu').className += ' dropped' : document.getElementById('support-dropdown-menu').className = 'dropdown-menu'" class="dropdown-toggle">Support<span class="notablet"> Tables</span> <b class="caret"></b></a>
           <ul id="support-dropdown-menu" class="dropdown-menu">
             <li><a href="{{ site.baseurl }}/support/networks.html"><span class="fa fa-fw fa-sitemap"></span> Networks</a></li>
             <li><a href="{{ site.baseurl }}/software/clients.html"><span class="fa fa-fw fa-desktop"></span> Clients</a></li>
