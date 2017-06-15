@@ -54,6 +54,7 @@
           sasl-3.2:
           userhost-in-names:
         SASL:
+          - external
           - plain
     - name: irc-framework
       # ref: https://github.com/kiwiirc/irc-framework/blob/master/docs/ircv3.md
