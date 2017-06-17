@@ -21,7 +21,7 @@ followed by the IRCv3 specifications.
 **Note:** The core IRC protocol specifications have been widely acknowledged to
 be old, out-of-date, and to not fully or accurately describe how the IRC client
 protocol works today. One of our members has been working on updated core
-protocol specifications [here](http://modern.ircdocs.horse/) which you may find
+protocol specifications [here](https://modern.ircdocs.horse/) which you may find
 useful to consult. Look at core protocol specifications and the IRC ecosystem
 itself for a complete picture of how the IRC protocol works today.
 If you have any questions on the core IRC protocol, please feel free to ask us

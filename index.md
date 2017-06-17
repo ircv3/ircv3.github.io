@@ -44,7 +44,7 @@ page-header: >
 
 ## Introduction
 
-If you’re just getting started with IRC development, the first thing to look at would be the IRC core specifications [`RFC1459`](https://tools.ietf.org/html/rfc1459) and [`RFC2812`](https://tools.ietf.org/html/rfc2812). One of our members has also been writing a new core protocol document [here](http://modern.ircdocs.horse), which you may find useful to consult. After that, our [specifications page]({{ site.baseurl }}/irc/) contains the extensions the IRCv3 Working Group has developed.
+If you’re just getting started with IRC development, the first thing to look at would be the IRC core specifications [`RFC1459`](https://tools.ietf.org/html/rfc1459) and [`RFC2812`](https://tools.ietf.org/html/rfc2812). One of our members has also been writing a new core protocol document [here](https://modern.ircdocs.horse), which you may find useful to consult. After that, our [specifications page]({{ site.baseurl }}/irc/) contains the extensions the IRCv3 Working Group has developed.
 
 All of the IRCv3 extensions are backwards-compatible with older IRC clients, and older IRC servers. Our [roadmap](https://github.com/ircv3/ircv3-specifications/milestone/4) details the specifications we have in the pipeline, and our [GitHub repository](https://github.com/ircv3/ircv3-specifications) is where most of our specification work is done.
 
