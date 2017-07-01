@@ -19,6 +19,7 @@
           cap-notify:
           chghost:
           draft/labeled-response:
+          draft/sts:
           echo-message:
           extended-join:
           invite-notify:
@@ -30,7 +31,6 @@
       partial:
         stable:
           draft/message-tags: "only draft/message-tags"
-          draft/sts: Only advertised on TLS port
       na:
         stable:
           sasl-3.1: No Services enabled
