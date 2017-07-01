@@ -18,8 +18,6 @@
           cap-3.2:
           cap-notify:
           chghost:
-          draft/labeled-response:
-          draft/sts:
           echo-message:
           extended-join:
           invite-notify:
@@ -28,6 +26,8 @@
           server-time:
           starttls:
           userhost-in-names:
+          draft/labeled-response:
+          draft/sts:
       partial:
         stable:
           draft/message-tags: "only draft/message-tags"
@@ -51,12 +51,12 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
-          draft/labeled-response:
-          draft/message-tags: "draft/message-tags-0.2"
           echo-message:
           extended-join:
           multi-prefix:
           userhost-in-names:
+          draft/labeled-response:
+          draft/message-tags:
       na:
         stable:
           starttls: direct TLS only

@@ -303,6 +303,9 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+          draft/labeled-response:
+          draft/message-tags:
+          draft/sts:
         SASL:
           - plain
     - name: Iris
@@ -459,6 +462,9 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+          draft/labeled-response:
+          draft/message-tags:
+          draft/sts:
         SASL:
           - plain
     - name: LimeChat

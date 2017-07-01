@@ -84,6 +84,8 @@
           message-tags:
           multi-prefix:
           userhost-in-names:
+          draft/labeled-response:
+          draft/message-tags:
       na:
         stable:
           starttls: direct TLS only
