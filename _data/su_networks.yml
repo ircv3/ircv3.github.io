@@ -32,6 +32,7 @@
           draft/message-tags: "only draft/message-tags"
           draft/sts: Only advertised on TLS port
       na:
+        stable:
           sasl-3.1: No Services enabled
           sasl-3.2: No Services enabled
     - name: IRCCloud Teams
