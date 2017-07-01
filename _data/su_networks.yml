@@ -2,31 +2,6 @@
   note: >
     These networks are intended to test new IRCds and can also be used to test new client implementations of IRCv3 specifications.
   software:
-    # - name: Charybdis Testnet
-    #   ircd-ver: charybdis-4-rc3
-    #   net-address:
-    #     link: ircs://irc.charybdis.io:6697/
-    #     display: irc.charybdis.io
-    #   link: http://www.charybdis.io/
-    #   support:
-    #     stable:
-    #       - account-notify
-    #       - account-tag
-    #       - away-notify
-    #       - cap-3.1
-    #       - cap-3.2
-    #       - cap-notify
-    #       - chghost
-    #       - echo-message
-    #       - extended-join
-    #       - invite-notify
-    #       - monitor
-    #       - multi-prefix
-    #       - sasl-3.1
-    #       - sasl-3.2
-    #       - server-time
-    #       - starttls
-    #       - userhost-in-names
     - name: InspIRCd Testnet
       ircd-ver: InspIRCd-3.0
       net-address:
