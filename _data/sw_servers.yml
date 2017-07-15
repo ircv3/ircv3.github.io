@@ -181,6 +181,9 @@
           draft/message-ids: 0.6.0+
           draft/message-tags: 0.6.0+
           draft/sts: 0.7.0+
+      na:
+        stable:
+          starttls: supports sts
     - name: txircd
       link: https://github.com/ElementalAlchemist/txircd
       support:
