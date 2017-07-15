@@ -42,6 +42,7 @@
                 {% if sw.link %}<a{% if sw.ircd-ver || sw.net-address %} class="bold"{% endif %} href="{{ sw.link }}">{{ sw.name }}</a>{% else %}{{ sw.name }}{% endif %}
                 {% if sw.ircd-ver %}<span class="ircd-ver">{{ sw.ircd-ver }}</span>{% endif %}
                 {% if sw.net-address %}<a class="net-address" href="{{ sw.net-address.link }}">{{ sw.net-address.display }}</a>{% endif %}
+                {% if sw.language %}<span class="language">{{ sw.language }}</span>{% endif %}
                 {% if sw.dead %}<span class="dead-software">dead</span>{% endif %}
                 {% if sw.note %}
                     <div class="sw-note">{{ sw.note | markdownify }}</div>
