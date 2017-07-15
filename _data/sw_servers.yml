@@ -178,6 +178,9 @@
           multi-prefix: 0.1.0+
           server-time: 0.2.0+
           userhost-in-names: 0.1.0+
+          draft/message-ids: 0.6.0+
+          draft/message-tags: 0.6.0+
+          draft/sts: 0.7.0+
     - name: txircd
       link: https://github.com/ElementalAlchemist/txircd
       support:
