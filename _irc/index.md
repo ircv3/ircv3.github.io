@@ -178,10 +178,6 @@ see messages that other clients on their connection (say, via an IRC bouncer)
 have sent. It does this by echoing messages back to clients after they are
 sent, allowing for these extra features.
 
-A specification describing message IDs will be proposed soon. This should allow
-clients to make full use of this spec and automatically hide duplicate messages
-as appropriate, which come as a result of this extension.
-
 The [`echo-message` spec]({{site.baseurl}}/specs/extensions/echo-message-3.2.html)
 describes which messages are echo'd, and how they are interpreted by clients.
 

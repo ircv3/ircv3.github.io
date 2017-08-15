@@ -27,10 +27,11 @@
           starttls:
           userhost-in-names:
           draft/labeled-response:
+          draft/msgid:
           draft/sts:
       partial:
         stable:
-          draft/message-tags: "only draft/message-tags"
+          draft/message-tags: "not latest version"
       na:
         stable:
           sasl-3.1: No Services enabled
@@ -53,10 +54,13 @@
           cap-notify:
           echo-message:
           extended-join:
+          monitor:
           multi-prefix:
           userhost-in-names:
           draft/labeled-response:
           draft/message-tags:
+          draft/msgid:
+          draft/sts:
       na:
         stable:
           starttls: direct TLS only

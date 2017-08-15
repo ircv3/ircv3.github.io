@@ -118,13 +118,6 @@ stable:
       draft: true
       caps:
         - draft/labeled-response
-    draft/message-ids:
-      name: draft/message-ids
-      description: Message IDs DRAFT.
-      link: http://ircv3.net/specs/extensions/message-ids.html
-      draft: true
-      caps:
-        - draft/msgid
     draft/message-tags:
       name: draft/message-tags
       description: Message Tags DRAFT.
@@ -132,6 +125,13 @@ stable:
       draft: true
       caps:
         - draft/message-tags-0.2
+    draft/msgid:
+      name: draft/msgid
+      description: Message IDs DRAFT.
+      link: http://ircv3.net/specs/extensions/message-ids.html
+      draft: true
+      tags:
+        - draft/msgid
     draft/sts:
       name: draft/sts
       description: Strict Transport Security DRAFT.
@@ -139,3 +139,18 @@ stable:
       draft: true
       caps:
         - draft/sts
+
+    +draft/react:
+      name: +draft/react
+      description: React client tag DRAFT.
+      link: http://ircv3.net/client-tags/react.html
+      draft: true
+      tags:
+        - +draft/react
+    +draft/reply:
+      name: +draft/reply
+      description: Reply client tag DRAFT.
+      link: http://ircv3.net/client-tags/reply.html
+      draft: true
+      tags:
+        - +draft/reply

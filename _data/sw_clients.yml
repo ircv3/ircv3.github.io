@@ -297,7 +297,7 @@
           echo-message:
           extended-join:
           invite-notify:
-          message-tags:
+          monitor:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
@@ -305,7 +305,10 @@
           userhost-in-names:
           draft/labeled-response:
           draft/message-tags:
+          draft/msgid:
           draft/sts:
+          +draft/react:
+          +draft/reply:
         SASL:
           - plain
     - name: Iris
@@ -347,7 +350,6 @@
       support:
         stable:
           cap-3.1:
-          message-tags:
           echo-message:
           multi-prefix:
           server-time:
@@ -456,7 +458,6 @@
           echo-message:
           extended-join:
           invite-notify:
-          message-tags:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
@@ -464,6 +465,7 @@
           userhost-in-names:
           draft/labeled-response:
           draft/message-tags:
+          draft/msgid:
           draft/sts:
         SASL:
           - plain
