@@ -219,3 +219,4 @@
           multi-prefix: 3.2.9+
           starttls: 3.2.10+
           userhost-in-names: 3.2.9+
+          draft/sts: 4.0.13+
