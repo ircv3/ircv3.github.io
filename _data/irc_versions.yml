@@ -31,6 +31,8 @@ stable:
       link: http://ircv3.net/specs/extensions/account-tag-3.2.html
       caps:
         - account-tag
+      tags:
+        - account
     away-notify:
       name: away-notify
       description: away-notify Extension
@@ -42,6 +44,8 @@ stable:
       description: batch Extension
       link: http://ircv3.net/specs/extensions/batch-3.2.html
       caps:
+        - batch
+      tags:
         - batch
     chghost:
       name: chghost
@@ -98,6 +102,8 @@ stable:
       link: http://ircv3.net/specs/extensions/server-time-3.2.html
       caps:
         - server-time
+      tags:
+        - time
     starttls:
       name: starttls
       description: tls Extension (STARTTLS)
@@ -118,6 +124,8 @@ stable:
       draft: true
       caps:
         - draft/labeled-response
+      tags:
+        - draft/label
     draft/message-tags:
       name: draft/message-tags
       description: Message Tags DRAFT.
