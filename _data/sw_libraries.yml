@@ -201,3 +201,17 @@
         SASL:
           - external
           - plain
+    - name: ChatSharp
+      # ref:  https://github.com/SirCmpwn/ChatSharp/blob/master/ChatSharp/Handlers/CapabilityHandlers.cs#L15
+      #       https://github.com/SirCmpwn/ChatSharp/blob/master/ChatSharp/IrcClient.cs#L161
+      link: https://github.com/SirCmpwn/ChatSharp
+      language: C#
+      support:
+        stable:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          multi-prefix:
+      partial:
+        stable:
+          server-time:
