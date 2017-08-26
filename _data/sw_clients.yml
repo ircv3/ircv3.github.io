@@ -10,8 +10,10 @@
           away-notify:
           cap-3.1:
           chghost: 2.5+
+          echo-message: 2.9+
           extended-join:
           invite-notify: 2.8+
+          monitor: 2.9+
           multi-prefix:
           sasl-3.1: 1.9.9+
           server-time: 1.9.7+
