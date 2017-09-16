@@ -166,5 +166,5 @@ chathistory-batch:
   fullname: IRCv3 chathistory Batch Type
   name: chathistory Batch Type
   shortname: chathistory Batch Type
-  url: /extensions/batch/netsplit-3.2.html
+  url: /extensions/batch/chathistory-3.3.html
   draft: true
