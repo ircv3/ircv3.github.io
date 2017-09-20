@@ -351,10 +351,19 @@
       link: https://thelounge.github.io/
       support:
         stable:
+          account-notify:
+          account-tag:
+          away-notify:
           cap-3.1:
+          cap-3.2:
           echo-message:
+          extended-join:
+          invite-notify:
           multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
           server-time:
+          userhost-in-names:
     - name: Mibbit
       # ref: http://wiki.mibbit.com/index.php/SASL
       #      does not send CAP LS when connecting to a server
