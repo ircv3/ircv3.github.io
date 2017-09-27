@@ -143,7 +143,7 @@ stable:
     draft/sts:
       name: draft/sts
       description: Strict Transport Security DRAFT.
-      link: http://ircv3.net/specs/core/sts-3.3.html
+      link: http://ircv3.net/specs/extensions/sts.html
       draft: true
       caps:
         - draft/sts

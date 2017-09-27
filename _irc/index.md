@@ -305,13 +305,13 @@ the `STARTTLS` command works, as well as how connection registration is changed
 by the introduction of this capability.
 
 
-## [Strict Transport Security (STS)]({{site.baseurl}}/specs/core/sts-3.3.html)
+## [Strict Transport Security (STS)]({{site.baseurl}}/specs/extensions/sts.html)
 
 STS allows clients to be automatically upgraded to use TLS encryption and
 prevents downgrade attacks. STS is intended as a replacement for the `STARTTLS`
 command with better security qualities.
 
-The **work-in-progress** [`sts` spec]({{site.baseurl}}/specs/core/sts-3.3.html)
+The **work-in-progress** [`sts` spec]({{site.baseurl}}/specs/extensions/sts.html)
 describes the `sts` capability, how it operates, and various implementation
 details for both clients and servers.
 

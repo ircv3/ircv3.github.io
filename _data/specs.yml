@@ -120,7 +120,7 @@ sts:
   fullname: IRCv3.3 Strict Transport Security
   name: Strict Transport Security
   shortname: STS
-  url: /core/sts-3.3.html
+  url: /extensions/sts.html
   draft: true
 userhost-in-names:
   fullname: IRCv3.2 userhost-in-names Extension
