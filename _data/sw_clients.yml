@@ -8,7 +8,10 @@
           account-notify:
           account-tag: 2.8+
           away-notify:
+          batch: 3.0+
           cap-3.1:
+          cap-3.2: 3.0+
+          cap-notify: 3.0+
           chghost: 2.5+
           echo-message: 2.9+
           extended-join:
@@ -16,6 +19,7 @@
           monitor: 2.9+
           multi-prefix:
           sasl-3.1: 1.9.9+
+          sasl-3.2: 3.0+
           server-time: 1.9.7+
           starttls: 1.9.9+
           userhost-in-names:
