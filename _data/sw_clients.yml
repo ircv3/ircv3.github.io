@@ -58,7 +58,6 @@
           echo-message:
           extended-join:
           invite-notify:
-          metadata:
           monitor:
           multi-prefix:
           sasl-3.1:
@@ -434,7 +433,6 @@
           echo-message:
           extended-join:
           invite-notify:
-          metadata:
           monitor:
           multi-prefix:
           sasl-3.1:
