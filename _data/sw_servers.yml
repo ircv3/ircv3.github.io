@@ -159,8 +159,8 @@
           starttls: 2013-05-26
           userhost-in-names: 2011-12-19
     - name: Oragono
-      # ref: http://oragono.io/specs.html
-      link: http://oragono.io/
+      # ref: https://oragono.io/specs.html
+      link: https://oragono.io/
       support:
         stable:
           cap-3.1: 0.1.0+
