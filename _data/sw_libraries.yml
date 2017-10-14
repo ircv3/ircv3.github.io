@@ -107,6 +107,9 @@
         SASL:
           - external
           - plain
+      partial:
+        stable:
+          sts: "draft/sts"
     - name: Net::Async::IRC
       # ref: https://metacpan.org/source/PEVANS/Net-Async-IRC-0.10/lib/Net/Async/IRC.pm#L339
       link: https://metacpan.org/pod/Net::Async::IRC

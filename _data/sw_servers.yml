@@ -87,7 +87,9 @@
           draft/labeled-response:
           draft/message-tags:
           draft/msgid:
-          draft/sts:
+      partial:
+        stable:
+          sts: "draft/sts"
       na:
         stable:
           starttls: direct TLS only
@@ -181,7 +183,9 @@
           userhost-in-names: 0.1.0+
           draft/message-tags: 0.6.0+
           draft/msgid: 0.6.0+
-          draft/sts: 0.7.0+
+      partial:
+        stable:
+          sts: "draft/sts 0.7.0+"
       na:
         stable:
           starttls: supports sts
@@ -219,4 +223,6 @@
           multi-prefix: 3.2.9+
           starttls: 3.2.10+
           userhost-in-names: 3.2.9+
-          draft/sts: 4.0.13+
+      partial:
+        stable:
+          sts: "draft/sts 4.0.13+"

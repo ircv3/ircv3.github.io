@@ -110,6 +110,13 @@ stable:
       link: http://ircv3.net/specs/extensions/tls-3.1.html
       caps:
         - tls
+    sts:
+      name: sts
+      description: Strict Transport Security.
+      link: http://ircv3.net/specs/extensions/sts.html
+      caps:
+        - sts
+        - draft/sts
     userhost-in-names:
       name: userhost-in-names
       description: userhost-in-names Extension
@@ -140,13 +147,6 @@ stable:
       draft: true
       tags:
         - draft/msgid
-    draft/sts:
-      name: draft/sts
-      description: Strict Transport Security DRAFT.
-      link: http://ircv3.net/specs/extensions/sts.html
-      draft: true
-      caps:
-        - draft/sts
 
     +draft/react:
       name: +draft/react

@@ -311,11 +311,13 @@
           draft/labeled-response:
           draft/message-tags:
           draft/msgid:
-          draft/sts:
           +draft/react:
           +draft/reply:
         SASL:
           - plain
+      partial:
+        stable:
+          sts: "draft/sts"
     - name: Iris
       # ref: https://github.com/atheme/iris/blob/831483f/qwebirc/ircclient.py#L48
       link: http://www.atheme.net/iris.html
@@ -479,9 +481,11 @@
           draft/labeled-response:
           draft/message-tags:
           draft/msgid:
-          draft/sts:
         SASL:
           - plain
+      partial:
+        stable:
+          sts: "draft/sts"
     - name: LimeChat
       # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
       link: http://limechat.net/iphone/
@@ -541,9 +545,11 @@
           userhost-in-names:
           draft/labeled-response:
           draft/message-tags:
-          draft/sts:
         SASL:
           - plain
+      partial:
+        stable:
+          sts: "draft/sts"
     - name: YAAIC
       # ref: https://github.com/pocmo/Yaaic/blob/v1.1/app/src/main/java/org/jibble/pircbot/PircBot.java#L208
       link: http://www.yaaic.org
