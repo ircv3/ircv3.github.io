@@ -115,19 +115,19 @@
         stable:
           cap-3.1:
           cap-3.2: Git
-          cap-notify:
+          cap-notify: Extras
           sasl-3.1:
           sasl-3.2: Git
           account-notify:
           away-notify:
-          chghost:
-          echo-message:
+          chghost: Extras
+          echo-message: Extras
           extended-join:
-          invite-notify:
+          invite-notify: Extras
           monitor: Git
           multi-prefix:
           starttls:
-          sts:
+          sts: Extras
           userhost-in-names:
     - name: mammon-ircd
       # ref: Capability() calls in https://github.com/mammon-ircd/mammon/search?q=Capability
