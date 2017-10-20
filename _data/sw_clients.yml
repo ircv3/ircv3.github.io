@@ -307,6 +307,7 @@
           sasl-3.1:
           sasl-3.2:
           server-time:
+          sts:
           userhost-in-names:
           draft/labeled-response:
           draft/message-tags:
@@ -315,9 +316,6 @@
           +draft/reply:
         SASL:
           - plain
-      partial:
-        stable:
-          sts: "draft/sts"
     - name: Iris
       # ref: https://github.com/atheme/iris/blob/831483f/qwebirc/ircclient.py#L48
       link: http://www.atheme.net/iris.html
@@ -477,15 +475,13 @@
           sasl-3.1:
           sasl-3.2:
           server-time:
+          sts:
           userhost-in-names:
           draft/labeled-response:
           draft/message-tags:
           draft/msgid:
         SASL:
           - plain
-      partial:
-        stable:
-          sts: "draft/sts"
     - name: LimeChat
       # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
       link: http://limechat.net/iphone/

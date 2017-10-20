@@ -83,13 +83,13 @@
           extended-join:
           monitor:
           multi-prefix:
+          sts:
           userhost-in-names:
           draft/labeled-response:
           draft/message-tags:
           draft/msgid:
       partial:
         stable:
-          sts: "draft/sts"
       na:
         stable:
           starttls: direct TLS only
