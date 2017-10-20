@@ -18,20 +18,20 @@
       language: C++
       support:
         stable:
-          account-notify: 3.3+
-          account-tag: 3.4+
-          away-notify: 3.3+
-          cap-3.1: 3.0+
-          cap-notify: 3.4+
-          chghost: 3.4+
-          extended-join: 3.3+
-          invite-notify: 3.0+
-          message-tags: 3.1+
-          monitor: 3.4+
-          multi-prefix: 3.3+
-          sasl-3.2: 3.0+
-          server-time: 3.4+
-          userhost-in-names: 3.0+
+          account-notify:
+          account-tag:
+          away-notify:
+          cap-3.1:
+          cap-notify:
+          chghost:
+          extended-join:
+          invite-notify:
+          message-tags:
+          monitor:
+          multi-prefix:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
         SASL:
           - plain
     - name: girc

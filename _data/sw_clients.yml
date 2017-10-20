@@ -18,10 +18,10 @@
           invite-notify: 2.8+
           monitor: 2.9+
           multi-prefix:
-          sasl-3.1: 1.9.9+
+          sasl-3.1:
           sasl-3.2: 3.0+
-          server-time: 1.9.7+
-          starttls: 1.9.9+
+          server-time:
+          starttls:
           userhost-in-names:
         SASL:
           - external
@@ -40,8 +40,8 @@
       link: http://chatzilla.hacksrus.com/
       support:
         stable:
-          cap-3.1: 0.9.91
-          multi-prefix: 0.9.91
+          cap-3.1:
+          multi-prefix:
     - name: Colloquy
       # ref: handleCapWithParameters() in https://github.com/colloquy/colloquy/blob/main/Chat%20Core/MVIRCChatConnection.m
       link: http://www.colloquy.info
@@ -121,9 +121,9 @@
       support:
         stable:
           cap-3.1:
-          monitor: 1.2+
-          multi-prefix: 1.4+
-          sasl-3.1: 1.3+
+          monitor:
+          multi-prefix:
+          sasl-3.1:
         SASL:
           - plain
     - name: Irssi
@@ -161,13 +161,13 @@
         stable:
           account-notify: Git
           away-notify: Git
-          cap-3.1: 4.2.0+
+          cap-3.1:
           chghost: Git
           extended-join: Git
           multi-prefix: Git
-          sasl-3.1: 4.2.0+
+          sasl-3.1:
           server-time: Git
-          starttls: 4.2.0+
+          starttls:
           userhost-in-names: Git
         SASL:
           - dh-blowfish
@@ -214,9 +214,9 @@
       support:
         stable:
           cap-3.1:
-          monitor: 15+
-          multi-prefix: 21+
-          sasl-3.1: 19+
+          monitor:
+          multi-prefix:
+          sasl-3.1:
         SASL:
           - plain
     - name: Quassel
@@ -267,16 +267,16 @@
       link: https://weechat.org
       support:
         stable:
-          account-notify: 1.2+
-          away-notify: 1.0+
+          account-notify:
+          away-notify:
           cap-notify: 1.4+
-          cap-3.1: 0.3.2+
-          extended-join: 1.1+
-          monitor: 0.4.3+
-          multi-prefix: 0.0.1+
-          sasl-3.1: 0.3.2+
-          server-time: 0.4.0+
-          userhost-in-names: 0.4.1+
+          cap-3.1:
+          extended-join:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          server-time:
+          userhost-in-names:
         SASL:
           - dh-aes
           - dh-blowfish
@@ -567,20 +567,20 @@
       link: http://znc.in/
       support:
         stable:
-          account-notify: "Git"
-          away-notify: "Git"
-          cap-3.1: "0.094+ client→ZNC,<br/>0.090+ ZNC→server"
-          extended-join: "Git"
-          multi-prefix: "0.094+ client→ZNC,<br/>0.090+ ZNC→server"
-          userhost-in-names: "0.094+ client→ZNC,<br/>0.090+ ZNC→server"
+          account-notify:
+          away-notify:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          extended-join:
+          multi-prefix:
+          userhost-in-names:
       partial:
         stable:
-          batch: "1.6.0+ as <code>znc.in/batch</code>, Git as <code>batch</code>, client→ZNC only"
-          cap-3.1: "Git, client→ZNC only"
-          cap-notify: "Git, client→ZNC only"
-          echo-message: "Git, client→ZNC only"
-          sasl-3.1: "1.0+, ZNC→server only"
-          server-time: "1.2+ as <code>znc.in/server-time-iso</code>, Git as <code>server-time</code>, client→ZNC only"
+          batch: "client→ZNC only"
+          echo-message: "client→ZNC only"
+          sasl-3.1: "ZNC→server only"
+          server-time: "client→ZNC only"
         SASL:
           external: "ZNC→server only"
           plain: "ZNC→server only"
