@@ -561,7 +561,7 @@
 
 - name: Bouncers
   software:
-    - name: ZNC as Server
+    - name: ZNC (as Server)
       # ref: https://github.com/znc/znc/blob/znc-1.6.1/src/IRCSock.cpp#L809
       #      https://github.com/znc/znc/blob/znc-1.6.1/src/Client.cpp#L886
       link: http://znc.in/
@@ -571,14 +571,13 @@
           away-notify: "Git"
           batch: "Git (1.6.0+ as <code>znc.in/batch</code>)"
           cap-3.1:
-          cap-3.2: "Git"
           cap-notify: "Git"
           echo-message: "Git"
           extended-join: "Git"
           multi-prefix:
           server-time: "Git (1.2+ as <code>znc.in/server-time-iso</code>)"
           userhost-in-names:
-    - name: ZNC as Client
+    - name: ZNC (as Client)
       # ref: https://github.com/znc/znc/blob/znc-1.6.1/src/IRCSock.cpp#L809
       #      https://github.com/znc/znc/blob/znc-1.6.1/src/Client.cpp#L886
       link: http://znc.in/
