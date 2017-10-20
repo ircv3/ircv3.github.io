@@ -113,21 +113,22 @@
       link: http://www.inspircd.org
       support:
         stable:
-          cap-3.1: 1.2.0+
+          cap-3.1:
           cap-3.2: Git
-          cap-notify: Git
-          sasl-3.1: 1.2.0+
+          cap-notify:
+          sasl-3.1:
           sasl-3.2: Git
-          account-notify: 2.0.7+
-          away-notify: 2.0.7+
-          chghost: Git
-          echo-message: Git
-          extended-join: 2.0.7+
-          invite-notify: Git
+          account-notify:
+          away-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
           monitor: Git
-          multi-prefix: 1.2.0+
-          starttls: 1.2.0+
-          userhost-in-names: 1.2.0+
+          multi-prefix:
+          starttls:
+          sts:
+          userhost-in-names:
     - name: mammon-ircd
       # ref: Capability() calls in https://github.com/mammon-ircd/mammon/search?q=Capability
       link: https://github.com/mammon-ircd/mammon
