@@ -5,14 +5,14 @@
       link: https://bitlbee.org/
       support:
         stable:
-          cap-3.1: 3.4.2
-          cap-3.2: 3.4.2
-          sasl-3.1: 3.4.2
-          sasl-3.2: 3.4.2
-          away-notify: 3.4.2
-          extended-join: 3.4.2
-          multi-prefix: 3.4.2
-          userhost-in-names: 3.4.2
+          cap-3.1:
+          cap-3.2:
+          sasl-3.1:
+          sasl-3.2:
+          away-notify:
+          extended-join:
+          multi-prefix:
+          userhost-in-names:
     - name: Charybdis
       # ref: https://github.com/atheme/charybdis/blob/charybdis-3.5.0-test1/modules/m_cap.c#L73
       link: http://www.charybdis.io/
@@ -166,27 +166,27 @@
       link: https://oragono.io/
       support:
         stable:
-          cap-3.1: 0.1.0+
-          cap-3.2: 0.2.0+
-          cap-notify: 0.3.0+
-          sasl-3.1: 0.1.0+
-          sasl-3.2: 0.2.0+
-          account-notify: 0.2.0+
-          account-tag: 0.1.0+
-          away-notify: 0.1.0+
-          chghost: 0.4.0+
-          echo-message: 0.3.0+
-          extended-join: 0.1.0+
-          invite-notify: 0.2.0+
-          monitor: 0.2.0+
-          multi-prefix: 0.1.0+
-          server-time: 0.2.0+
-          userhost-in-names: 0.1.0+
-          draft/message-tags: 0.6.0+
-          draft/msgid: 0.6.0+
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          sasl-3.1:
+          sasl-3.2:
+          account-notify:
+          account-tag:
+          away-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          monitor:
+          multi-prefix:
+          server-time:
+          userhost-in-names:
+          draft/message-tags:
+          draft/msgid:
       partial:
         stable:
-          sts: "draft/sts 0.7.0+"
+          sts: "draft/sts"
       na:
         stable:
           starttls: supports sts
@@ -226,4 +226,4 @@
           userhost-in-names:
       partial:
         stable:
-          sts: "draft/sts 4.0.13+"
+          sts: "draft/sts"

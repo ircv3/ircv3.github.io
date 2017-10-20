@@ -12,7 +12,7 @@
           cap-3.1:
           cap-3.2: 3.0+
           cap-notify: 3.0+
-          chghost: 2.5+
+          chghost:
           echo-message: 2.9+
           extended-join:
           invite-notify: 2.8+
@@ -131,9 +131,9 @@
       link: https://irssi.org
       support:
         stable:
-          cap-3.1: 0.8.18+
-          multi-prefix: 0.8.18+
-          sasl-3.1: 0.8.18+
+          cap-3.1:
+          multi-prefix:
+          sasl-3.1:
         SASL:
           - external
           - plain
@@ -248,8 +248,8 @@
           batch:
           cap-3.1:
           cap-3.2:
-          echo-message: 6.0.0+
-          monitor: 6.0.0+
+          echo-message:
+          monitor:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
@@ -269,7 +269,7 @@
         stable:
           account-notify:
           away-notify:
-          cap-notify: 1.4+
+          cap-notify:
           cap-3.1:
           extended-join:
           monitor:
