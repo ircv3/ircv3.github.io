@@ -92,7 +92,7 @@
         stable:
       na:
         stable:
-          starttls: direct TLS only
+          starttls: supports sts
     - name: ircd-hybrid
       link: https://github.com/ircd-hybrid/ircd-hybrid
       support:
@@ -182,11 +182,9 @@
           multi-prefix:
           server-time:
           userhost-in-names:
+          sts:
           draft/message-tags:
           draft/msgid:
-      partial:
-        stable:
-          sts: "draft/sts"
       na:
         stable:
           starttls: supports sts
