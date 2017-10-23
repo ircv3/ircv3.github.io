@@ -72,3 +72,5 @@ The main project resources are:
 Contributions are welcome from anyone in the IRC community; including users, developers, operators, administrators. Feel free to start a discussion on IRC or on the issue tracker if you'd like to contribute.
  
 Failure to follow our [code of conduct]({{site.baseurl}}/conduct.html) when participating may result in immediate removal from the project resources.
+
+{% include anchors.html %}
