@@ -98,7 +98,6 @@
           chghost:
           extended-join:
           monitor:
-          monitor:
           multi-prefix:
           sasl-3.1:
           starttls:

@@ -88,8 +88,6 @@
           draft/labeled-response:
           draft/message-tags:
           draft/msgid:
-      partial:
-        stable:
       na:
         stable:
           starttls: supports sts
