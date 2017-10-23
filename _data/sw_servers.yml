@@ -111,19 +111,19 @@
       link: http://www.inspircd.org
       support:
         stable:
-          cap-3.1:
-          cap-3.2: Git
-          cap-notify: Extras
-          sasl-3.1:
-          sasl-3.2: Git
           account-notify:
           away-notify:
-          chghost: Extras
-          echo-message: Extras
+          cap-3.1:
+          cap-3.2: Git
+          cap-notify: Extras / Git
+          chghost: Extras / Git
+          echo-message: Extras / Git
           extended-join:
-          invite-notify: Extras
+          invite-notify: Extras / Git
           monitor: Git
           multi-prefix:
+          sasl-3.1:
+          sasl-3.2: Git
           starttls:
           sts: Extras
           userhost-in-names:
