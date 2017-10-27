@@ -211,10 +211,9 @@
       language: C#
       support:
         stable:
+          account-notify:
           cap-3.1:
           cap-3.2:
           cap-notify:
           multi-prefix:
-      partial:
-        stable:
           server-time:
