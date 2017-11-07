@@ -528,14 +528,12 @@
           sasl-3.2:
           server-time:
           starttls:
+          sts:
           userhost-in-names:
           draft/labeled-response:
           draft/message-tags:
         SASL:
           - plain
-      partial:
-        stable:
-          sts: "draft/sts"
     - name: YAAIC
       # ref: https://github.com/pocmo/Yaaic/blob/v1.1/app/src/main/java/org/jibble/pircbot/PircBot.java#L208
       link: http://www.yaaic.org
