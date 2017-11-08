@@ -3,6 +3,10 @@ root:
   kids:
     name:
       type: string
+    include_numeric:
+      type: boolean
+    include_specs:
+      type: boolean
     values:
       type: listofdicts
       kids:
@@ -17,4 +21,7 @@ root:
           required: false
         draft:
           type: boolean
+          required: false
+        links:
+          type: listofstrings
           required: false
