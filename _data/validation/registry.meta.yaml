@@ -12,6 +12,9 @@ root:
       kids:
         name:
           type: string
+        numeric:
+          type: string
+          required: false
         specs:
           type: listofstrings
         description:
