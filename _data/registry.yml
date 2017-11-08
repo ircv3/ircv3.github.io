@@ -1,4 +1,108 @@
+- name: Numerics
+  include_numeric: true
+  include_specs: true
+  values:
+    - numeric: "005"
+      name: RPL_ISUPPORT
+      description: Lists features supported by the server, sent as connection registration is completed.
+      links:
+        - https://modern.ircdocs.horse/#feature-advertisement
+        - https://modern.ircdocs.horse/#rplisupport-005
+        - https://modern.ircdocs.horse/#rplisupport-parameters
+    - numeric: "670"
+      name: RPL_STARTTLS
+      description: Indicates that the client may begin their TLS handshake
+      specs:
+        - starttls
+    - numeric: "691"
+      name: ERR_STARTTLS
+      description: Indicates that `STARTTLS` failed because of an unspecified error
+      specs:
+        - starttls
+    - numeric: "730"
+      name: RPL_MONONLINE
+      description: This numeric indicates to a client that either a target has just become online, or that a target they have added to their monitor list is online
+      specs:
+        - monitor
+    - numeric: "731"
+      name: RPL_MONOFFLINE
+      description: This numeric indicates to a client that either a target has just left the irc network, or that a target they have added to their monitor list is offline
+      specs:
+        - monitor
+    - numeric: "732"
+      name: RPL_MONLIST
+      description: This numeric is returns the list of targets that the client has in their monitor list
+      specs:
+        - monitor
+    - numeric: "733"
+      name: RPL_ENDOFMONLIST
+      description: This numeric indicates the end of a monitor list
+      specs:
+        - monitor
+    - numeric: "734"
+      name: ERR_MONLISTFULL
+      description: This numeric is indicates to a client that their monitor list is full
+      specs:
+        - monitor
+    - numeric: "900"
+      name: RPL_LOGGEDIN
+      description: Indicates that the client is logged in
+      specs:
+        - sasl-3.1
+        - sasl-3.2
+    - numeric: "901"
+      name: RPL_LOGGEDOUT
+      description: Indicates that the client has been logged out
+      specs:
+        - sasl-3.1
+        - sasl-3.2
+    - numeric: "902"
+      name: ERR_NICKLOCKED
+      description: Indicates that SASL auth failed because the account is currently locked out, held, or otherwise administratively made unavailable
+      specs:
+        - sasl-3.1
+        - sasl-3.2
+    - numeric: "903"
+      name: RPL_SASLSUCCESS
+      description: Indicates that SASL auth finished successfully
+      specs:
+        - sasl-3.1
+        - sasl-3.2
+    - numeric: "904"
+      name: ERR_SASLFAIL
+      description: Indicates that SASL auth failed because of invalid credentials or other errors not explicitly mentioned by other numerics
+      specs:
+        - sasl-3.1
+        - sasl-3.2
+    - numeric: "905"
+      name: ERR_SASLTOOLONG
+      description: Indicates that SASL auth failed because the client-sent `AUTHENTICATE` command was too long (i.e. the parameter longer than 400 bytes)
+      specs:
+        - sasl-3.1
+        - sasl-3.2
+    - numeric: "906"
+      name: ERR_SASLABORTED
+      description: Indicates that SASL auth has been aborted because the client sent an `AUTHENTICATE` command with `*` as the parameter
+      specs:
+        - sasl-3.1
+        - sasl-3.2
+    - numeric: "907"
+      name: ERR_SASLALREADY
+      description: Indicates that SASL auth failed because the client has already authenticated and the server doesn't support re-authenticating
+      specs:
+        - sasl-3.1
+        - sasl-3.2
+    - numeric: "908"
+      name: RPL_SASLMECHS
+      description: Sends the SASL mechanisms supported by the server, in response to an incorrectly-sent `AUTHENTICATE` message
+      specs:
+        - sasl-3.1
+        - sasl-3.2
+
+
 - name: Capabilities
+  include_numeric: false
+  include_specs: true
   values:
     - name: account-notify
       specs:
@@ -67,6 +171,8 @@
       description: Extends the RPL_NAMREPLY message to contain the full nickmask `(nick!user@host)` of every user, rather than just the nickname.
 
 - name: Tags
+  include_numeric: false
+  include_specs: true
   values:
     - name: account
       specs:
@@ -90,6 +196,8 @@
       description: Sends a reaction to a specific sent message.
 
 - name: Batches
+  include_numeric: false
+  include_specs: true
   values:
     - name: chathistory
       specs:
@@ -105,6 +213,8 @@
       description: Indicates that the given clients are quitting as the result of a netsplit (two servers disconnecting).
 
 - name: Messages
+  include_numeric: false
+  include_specs: true
   values:
     - name: AUTHENTICATE
       specs: 
