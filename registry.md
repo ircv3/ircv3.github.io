@@ -31,7 +31,7 @@ This page lists the tags, capabilities, commands, batches and metadata keys that
     {% for val in type.values %}
     <tr>
       {% if type.include_numeric %}<td style="min-width: 5rem; text-align: center">
-        <tt>{{ val.numeric }}</tt>
+        <code>{{ val.numeric }}</code>
       </td>{% endif %}
       <td style="min-width: 10rem"{% if type.nomono %}{% else %} class="mono"{% endif %}>{{ val.name }}</td>
       {% if type.include_specs %}<td style="min-width: 13rem">
