@@ -358,6 +358,8 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+        SASL:
+          - plain
     - name: Mibbit
       # ref: http://wiki.mibbit.com/index.php/SASL
       #      does not send CAP LS when connecting to a server
