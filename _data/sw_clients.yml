@@ -347,6 +347,7 @@
           account-notify:
           account-tag:
           away-notify:
+          batch:
           cap-3.1:
           cap-3.2:
           echo-message:
@@ -357,6 +358,8 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+        SASL:
+          - plain
     - name: Mibbit
       # ref: http://wiki.mibbit.com/index.php/SASL
       #      does not send CAP LS when connecting to a server
