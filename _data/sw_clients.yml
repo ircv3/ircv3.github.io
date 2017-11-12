@@ -658,3 +658,23 @@
           multi-prefix:
           server-time:
           userhost-in-names:
+    - name: PyLink (clientbot)
+      #ref: IRCV3_CAPABILITIES in https://github.com/GLolol/PyLink/blob/devel/protocols/clientbot.py
+      link: https://code.overdrivenetworks.com/pylink
+      support:
+        stable:
+          account-notify: 2.0+
+          account-tag: 2.0+
+          away-notify: 2.0+
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost: 2.0+
+          extended-join: 2.0+
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          userhost-in-names: 2.0+
+        SASL:
+          - plain
+          - external
