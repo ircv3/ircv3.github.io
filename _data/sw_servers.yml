@@ -125,7 +125,7 @@
           sasl-3.1:
           sasl-3.2: Git
           starttls:
-          sts: Extras
+          sts: Extras / Git
           userhost-in-names:
     - name: mammon-ircd
       # ref: Capability() calls in https://github.com/mammon-ircd/mammon/search?q=Capability
