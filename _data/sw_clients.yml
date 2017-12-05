@@ -350,6 +350,7 @@
           batch:
           cap-3.1:
           cap-3.2:
+          chghost:
           echo-message:
           extended-join:
           invite-notify:
