@@ -166,4 +166,3 @@ chathistory-batch:
   name: chathistory Batch Type
   shortname: chathistory Batch Type
   url: /extensions/batch/chathistory-3.3.html
-  draft: true

@@ -145,7 +145,7 @@ do not themselves offer any user-facing features.
 Here are the standalone batch types the IRCv3 WG defines:
 
 * [The `netsplit` and `netjoin` batch types]({{site.baseurl}}/specs/extensions/batch/netsplit-3.2.html) allow clients to collapse netsplits and netjoins more effectively.
-* [The `chathistory` batch type]({{site.baseurl}}/specs/extensions/batch/chathistory-3.3.html) **[draft]** allows replaying message history.
+* [The `chathistory` batch type]({{site.baseurl}}/specs/extensions/batch/chathistory-3.3.html) allows replaying message history.
 
 
 ## [Changing Usernames and Hostnames]({{site.baseurl}}/specs/extensions/chghost-3.2.html)
