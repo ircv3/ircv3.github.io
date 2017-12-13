@@ -359,6 +359,7 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+          draft/message-tags:
         SASL:
           - plain
     - name: Mibbit
