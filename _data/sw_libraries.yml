@@ -26,7 +26,6 @@
           chghost:
           extended-join:
           invite-notify:
-          message-tags:
           monitor:
           multi-prefix:
           sasl-3.2:
@@ -80,6 +79,8 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+          draft/message-tags:
+          draft/msgid:
         SASL:
           - plain
     - name: Kitteh IRC Client Library

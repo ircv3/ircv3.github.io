@@ -360,6 +360,7 @@
           server-time:
           userhost-in-names:
           draft/message-tags:
+          draft/msgid:
         SASL:
           - plain
     - name: Mibbit
@@ -537,6 +538,7 @@
           userhost-in-names:
           draft/labeled-response:
           draft/message-tags:
+          draft/msgid:
         SASL:
           - plain
     - name: YAAIC
