@@ -140,6 +140,14 @@
       specs:
         - invite-notify
       description: Notifies clients when other clients are invited to common channels.
+    - name: labeled-response
+      specs: 
+        - label
+      description: Allows clients to correlate requests with server responses
+    - name: message-tags
+      specs: 
+        - message-tags-3.3
+      description: Allows clients and servers to use tags more broadly
     - name: metadata
       specs:
         - metadata-3.2
@@ -182,6 +190,14 @@
       specs:
         - batch
       description: Contains the ID of the batch the attached message is a part of.
+    - name: label
+      specs: 
+        - label
+      description: Allows clients to correlate requests with server responses
+    - name: msgid
+      specs: 
+        - msgid
+      description: Provides a server supplied unique message ID
     - name: time
       specs:
         - server-time
@@ -203,6 +219,10 @@
       specs:
         - chathistory-batch
       description: Indicates that the given messages represent history playback from this channel.
+    - name: labeled-response
+      specs: 
+        - label
+      description: Allows clients to correlate requests with server responses
     - name: netjoin
       specs:
         - netsplitjoin-batch
