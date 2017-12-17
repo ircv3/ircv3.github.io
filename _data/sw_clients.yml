@@ -557,7 +557,7 @@
     - name: ZNC (as Server)
       # ref: https://github.com/znc/znc/blob/znc-1.6.1/src/IRCSock.cpp#L809
       #      https://github.com/znc/znc/blob/znc-1.6.1/src/Client.cpp#L886
-      link: http://znc.in/
+      link: https://znc.in/
       support:
         stable:
           account-notify: "Git"
@@ -573,7 +573,7 @@
     - name: ZNC (as Client)
       # ref: https://github.com/znc/znc/blob/znc-1.6.1/src/IRCSock.cpp#L809
       #      https://github.com/znc/znc/blob/znc-1.6.1/src/Client.cpp#L886
-      link: http://znc.in/
+      link: https://znc.in/
       support:
         stable:
           account-notify: "Git"
