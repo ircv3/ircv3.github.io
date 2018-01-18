@@ -151,14 +151,14 @@ stable:
     +draft/react:
       name: +draft/react
       description: React client tag DRAFT.
-      link: http://ircv3.net/client-tags/react.html
+      link: http://ircv3.net/specs/client-tags/react.html
       draft: true
       tags:
         - +draft/react
     +draft/reply:
       name: +draft/reply
       description: Reply client tag DRAFT.
-      link: http://ircv3.net/client-tags/reply.html
+      link: http://ircv3.net/specs/client-tags/reply.html
       draft: true
       tags:
         - +draft/reply
