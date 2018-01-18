@@ -1,5 +1,5 @@
-- nick: Attila
-  github: attilamolnar
+- nick: Sadie
+  github: SaberUK
   projects:
     - "[InspIRCd](https://www.inspircd.org/)"
 
@@ -31,8 +31,8 @@
     - "[IRCCloud](https://www.irccloud.com/)"
   chair: true
 
-- nick: M2Ys4U
-  github: M2Ys4U
+- nick: prawnsalad
+  github: prawnsalad
   projects:
     - "[Kiwi IRC](https://kiwiirc.com/)"
 
