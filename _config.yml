@@ -11,7 +11,7 @@ exclude:
   - README.md
   - vendor
   - Gemfile*
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 sass:
