@@ -124,7 +124,7 @@
         {% if should_show_spec contains "Y" %}
 
         <tr class="{% if ext[1].required %}required{% elsif ext[1].draft %}draft{% else %}optional{% endif %} popup-{% if popup_above %}above{% else %}below{% endif %}">
-            <td><span><a class="spec-name" title="{{ ext[1].description }}" href="{{ ext[1].link }}">{{ ext[1].name }}</a></span></td>
+            <td><span><a class="spec-name" title="{{ ext[1].description }}" href="{% if ext[1].ext_link %}{{ ext[1].ext_link }}{% else %}{{ site.baseurl }}{{ ext[1].link }}{% endif %}">{{ ext[1].name }}</a></span></td>
 
             {% assign sw_count = 0 %}
             {% for sw in type.software offset:sw_index_body %}

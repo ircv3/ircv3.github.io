@@ -4,17 +4,17 @@ stable:
     cap-3.1:
       name: CAP v3.1
       description: Capability Negotiation v3.1
-      link: http://ircv3.net/specs/core/capability-negotiation-3.1.html
+      link: /specs/core/capability-negotiation-3.1.html
       required: true
     cap-3.2:
       name: CAP v3.2
       description: Capability Negotiation v3.2
-      link: http://ircv3.net/specs/core/capability-negotiation-3.2.html
+      link: /specs/core/capability-negotiation-3.2.html
       required: true
     cap-notify:
       name: cap-notify
       description: cap-notify Extension
-      link: http://ircv3.net/specs/extensions/cap-notify-3.2.html
+      link: /specs/extensions/cap-notify-3.2.html
       required: true
       caps:
         - cap-notify
@@ -22,13 +22,13 @@ stable:
     account-notify:
       name: account-notify
       description: account-notify Extension
-      link: http://ircv3.net/specs/extensions/account-notify-3.1.html
+      link: /specs/extensions/account-notify-3.1.html
       caps:
         - account-notify
     account-tag:
       name: account-tag
       description: account-tag Extension
-      link: http://ircv3.net/specs/extensions/account-tag-3.2.html
+      link: /specs/extensions/account-tag-3.2.html
       caps:
         - account-tag
       tags:
@@ -36,13 +36,13 @@ stable:
     away-notify:
       name: away-notify
       description: away-notify Extension
-      link: http://ircv3.net/specs/extensions/away-notify-3.1.html
+      link: /specs/extensions/away-notify-3.1.html
       caps:
         - away-notify
     batch:
       name: batch
       description: batch Extension
-      link: http://ircv3.net/specs/extensions/batch-3.2.html
+      link: /specs/extensions/batch-3.2.html
       caps:
         - batch
       tags:
@@ -50,56 +50,56 @@ stable:
     chghost:
       name: chghost
       description: chghost Extension
-      link: http://ircv3.net/specs/extensions/chghost-3.2.html
+      link: /specs/extensions/chghost-3.2.html
       caps:
         - chghost
     echo-message:
       name: echo-message
       description: echo-message Extension
-      link: http://ircv3.net/specs/extensions/echo-message-3.2.html
+      link: /specs/extensions/echo-message-3.2.html
       caps:
         - echo-message
     extended-join:
       name: extended-join
       description: extended-join Extension
-      link: http://ircv3.net/specs/extensions/extended-join-3.1.html
+      link: /specs/extensions/extended-join-3.1.html
       caps:
         - extended-join
     invite-notify:
       name: invite-notify
       description: invite-notify Extension
-      link: http://ircv3.net/specs/extensions/invite-notify-3.2.html
+      link: /specs/extensions/invite-notify-3.2.html
       caps:
         - invite-notify
     metadata3.2:
       name: Metadata v3.2
       description: Metadata v3.2 [DEPRECATED]
-      link: http://ircv3.net/specs/core/metadata-3.2.html
+      link: /specs/core/metadata-3.2.html
       deprecated: true
     monitor:
       name: Monitor
       description: Monitor
-      link: http://ircv3.net/specs/core/monitor-3.2.html
+      link: /specs/core/monitor-3.2.html
     multi-prefix:
       name: multi-prefix
       description: multi-prefix Extension
-      link: http://ircv3.net/specs/extensions/multi-prefix-3.1.html
+      link: /specs/extensions/multi-prefix-3.1.html
       caps:
         - multi-prefix
     sasl-3.1:
       name: SASL v3.1
       description: SASL v3.1
-      link: http://ircv3.net/specs/extensions/sasl-3.1.html
+      link: /specs/extensions/sasl-3.1.html
       caps:
         - sasl
     sasl-3.2:
       name: SASL v3.2
       description: SASL v3.2
-      link: http://ircv3.net/specs/extensions/sasl-3.2.html
+      link: /specs/extensions/sasl-3.2.html
     server-time:
       name: server-time
       description: server-time Extension
-      link: http://ircv3.net/specs/extensions/server-time-3.2.html
+      link: /specs/extensions/server-time-3.2.html
       caps:
         - server-time
       tags:
@@ -107,27 +107,27 @@ stable:
     starttls:
       name: starttls
       description: tls Extension (STARTTLS)
-      link: http://ircv3.net/specs/extensions/tls-3.1.html
+      link: /specs/extensions/tls-3.1.html
       caps:
         - tls
     sts:
       name: sts
       description: Strict Transport Security.
-      link: http://ircv3.net/specs/extensions/sts.html
+      link: /specs/extensions/sts.html
       caps:
         - sts
         - draft/sts
     userhost-in-names:
       name: userhost-in-names
       description: userhost-in-names Extension
-      link: http://ircv3.net/specs/extensions/userhost-in-names-3.2.html
+      link: /specs/extensions/userhost-in-names-3.2.html
       caps:
         - userhost-in-names
 
     draft/labeled-response:
       name: draft/labeled-response
       description: Labeled responses DRAFT.
-      link: http://ircv3.net/specs/extensions/labeled-response.html
+      link: /specs/extensions/labeled-response.html
       draft: true
       caps:
         - draft/labeled-response
@@ -136,14 +136,14 @@ stable:
     draft/message-tags:
       name: draft/message-tags
       description: Message Tags DRAFT.
-      link: http://ircv3.net/specs/core/message-tags-3.3.html
+      link: /specs/core/message-tags-3.3.html
       draft: true
       caps:
         - draft/message-tags-0.2
     draft/msgid:
       name: draft/msgid
       description: Message IDs DRAFT.
-      link: http://ircv3.net/specs/extensions/message-ids.html
+      link: /specs/extensions/message-ids.html
       draft: true
       tags:
         - draft/msgid
@@ -151,14 +151,14 @@ stable:
     +draft/react:
       name: +draft/react
       description: React client tag DRAFT.
-      link: http://ircv3.net/specs/client-tags/react.html
+      link: /specs/client-tags/react.html
       draft: true
       tags:
         - +draft/react
     +draft/reply:
       name: +draft/reply
       description: Reply client tag DRAFT.
-      link: http://ircv3.net/specs/client-tags/reply.html
+      link: /specs/client-tags/reply.html
       draft: true
       tags:
         - +draft/reply

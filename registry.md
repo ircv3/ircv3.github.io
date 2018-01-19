@@ -43,7 +43,7 @@ This page lists the tags, capabilities, commands, batches and metadata keys that
         {{ val.description | markdownify | replace:"<p>","" | replace:"</p>","" }}
         {% assign i = 1 %}
         {% for link in val.links %}
-          <sup><a href="{{ link }}">({{i}})</a></sup>
+          <sup><a href="{{ site.baseurl }}{{ link }}">({{i}})</a></sup>
           {% assign i = i | plus: 1 %}
         {% endfor %}
       </td>

@@ -1,8 +1,7 @@
 name: IRCv3 Working Group
 markdown: kramdown
 highlighter: rouge
-# baseurl: http://ircv3.net
-liveurl: http://ircv3.net  # used in XML feeds
+url: https://ircv3.net
 repository: ircv3/ircv3.github.io
 kramdown:
   input: GFM
