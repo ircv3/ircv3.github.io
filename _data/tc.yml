@@ -1,8 +1,3 @@
-- nick: Sadie
-  github: SaberUK
-  projects:
-    - "[InspIRCd](https://www.inspircd.org/)"
-
 - nick: dan-
   github: DanielOaks
   projects:
@@ -31,17 +26,22 @@
     - "[IRCCloud](https://www.irccloud.com/)"
   chair: true
 
+- nick: NoOneButMe
+  github: zadr
+  projects:
+    - "[Colloquy](http://colloquy.info/)"
+
 - nick: prawnsalad
   github: prawnsalad
   projects:
     - "[Kiwi IRC](https://kiwiirc.com/)"
 
+- nick: Sadie
+  github: SaberUK
+  projects:
+    - "[InspIRCd](https://www.inspircd.org/)"
+
 - nick: TingPing
   github: TingPing
   projects:
     - "[HexChat](https://hexchat.github.io/)"
-
-- nick: NoOneButMe
-  github: zadr
-  projects:
-    - "[Colloquy](http://colloquy.info/)"
