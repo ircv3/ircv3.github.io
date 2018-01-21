@@ -10,7 +10,7 @@ First off, in WG news, we've introduced a new site design and a new logo for IRC
 
 On the spec side, we've added the new `message-tags` draft [<sup>[link]</sup>](https://ircv3.net/specs/core/message-tags-3.3.html) which introduces the `TAGMSG` message, allowing clients to pass metadata to each other freely. This spec also increases the size limit on tags from `512` to `4607` bytes, letting clients have more room to pass each other data.
 
-The `reply` client tag draft [<sup>[link]</sup>](https://ircv3.net/specs/client-tags/reply.html) has been added, which allows clients to specify that a message is in reply to another specific message. This allows for things like the new client tag below!
+The `reply` client tag draft [<sup>[link]</sup>](https://ircv3.net/specs/client-tags/reply.html) has been added, which allows clients to specify that a message is in reply to another specific message. There's also an extended post about it [here](https://blog.irccloud.com/reply-threads/) on the IRCCloud blog. This allows for things like the new client tag below!
 
 The `react` client tag draft [<sup>[link]</sup>](https://ircv3.net/specs/client-tags/react.html) allows clients to send a 'reaction' to another message. This is similar to how users in other chat systems can reply to specific messages with emoji and other characters.
 
