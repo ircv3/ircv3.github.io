@@ -16,4 +16,14 @@ The `react` client tag draft [<sup>[link]</sup>](https://ircv3.net/specs/client-
 
 The `preload` key was added to STS [<sup>[link]</sup>](https://ircv3.net/specs/extensions/sts.html#the-preload-key), which allows servers to advertise that clients can include it in bundled STS preload lists. We've also ratified STS, so it's fine to implement and use in production!
 
-Finally, we've also added a draft specifying the widespread `WEBIRC` command [<sup>[link]</sup>](https://ircv3.net/specs/extensions/webirc.html). This command is used by web-based IRC clients to pass through the real IP address of a connecting user, and having a concrete specification should help this command stay standard in the future – as well as allowing us to extend it in a backwards-compatible way.
+We've also added a draft specifying the widespread `WEBIRC` command [<sup>[link]</sup>](https://ircv3.net/specs/extensions/webirc.html). This command is used by web-based IRC clients to pass through the real IP address of a connecting user, and having a concrete specification should help this command stay standard in the future – as well as allowing us to extend it in a backwards-compatible way.
+
+We've also gotten some brand new proposals in! First off there's the [`editmsg` PR](https://github.com/ircv3/ircv3-specifications/pull/304), which allows clients to edit their messages after sending them!
+
+The [`migrate` PR](https://github.com/ircv3/ircv3-specifications/pull/330) allows servers to cleanly migrate clients from one server to another, ensuring no message history is lost. This makes server maintenance much less impactful, allowing network operators to migrate clients away from a troubled server or portion of the network.
+
+The [`message-status` PR](https://github.com/ircv3/ircv3-specifications/pull/319) lets clients indicate that they're typing, and whether a message has been delivered/read.
+
+The [`rename` PR](https://github.com/ircv3/ircv3-specifications/pull/308) lets users rename channels. This is especially useful on networks with stricter naming guidelines like Freenode.
+
+The [`resume` PR](https://github.com/ircv3/ircv3-specifications/pull/306) allows clients to better handle when they accidentally disconnect from the network and need to reconnect. It lets them avoid having to `NS GHOST` their old nickname, and instead simply take over from where they left off (with some missing chat history).
