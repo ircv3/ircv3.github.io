@@ -8,7 +8,7 @@ First off, in WG news, we've introduced a new site design and a new logo for IRC
 
 <img style="max-width: 100%; width: 55rem; margin: 0 auto; display: block" alt="IRCv3 Logos" src="http://ircv3.net/img/logo-versions.svg">
 
-On the spec side, we've added the new `message-tags` draft [<link>[link]</sup>](https://ircv3.net/specs/core/message-tags-3.3.html) which introduces the `TAGMSG` message, allowing clients to pass metadata to each other freely. This spec also increases the size limit on tags from `512` to `4607` bytes, letting clients have more room to pass each other data.
+On the spec side, we've added the new `message-tags` draft [<sup>[link]</sup>](https://ircv3.net/specs/core/message-tags-3.3.html) which introduces the `TAGMSG` message, allowing clients to pass metadata to each other freely. This spec also increases the size limit on tags from `512` to `4607` bytes, letting clients have more room to pass each other data.
 
 The `reply` client tag draft [<sup>[link]</sup>](https://ircv3.net/specs/client-tags/reply.html) has been added, which allows clients to specify that a message is in reply to another specific message. This allows for things like the new client tag below!
 
