@@ -64,6 +64,33 @@
       na:
         stable:
           starttls: direct TLS only
+    - name: Oragono Testnet
+      ircd-ver: 0.11.0b
+      net-address:
+        link: ircs://testnet.oragono.io:6697/
+        display: testnet.oragono.io
+      link: https://oragono.io/
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          sts:
+          userhost-in-names:
+          draft/message-tags:
+          draft/msgid:
 
 - name: Networks
   note: >
