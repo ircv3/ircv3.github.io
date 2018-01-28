@@ -36,7 +36,6 @@
     - name: girc
       # ref: https://github.com/lrstanley/girc/blob/master/cap.go
       #      https://github.com/lrstanley/girc/blob/master/builtin.go
-      # -- all are supported, but these have builtin extra functionality.
       link: https://github.com/lrstanley/girc
       language: Go
       support:
@@ -49,12 +48,16 @@
           cap-3.2:
           cap-notify:
           chghost:
+          echo-message:
           extended-join:
           invite-notify:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
+          server-time:
           userhost-in-names:
+          draft/message-tags:
+          draft/msgid:
         SASL:
           - external
           - plain
