@@ -273,6 +273,18 @@
           - ecdsa-nist256p-challenge
           - external
           - plain
+    - name: Srain
+      # ref: http://doc.srain.im/en/latest/support.html
+      link: https://srain.im
+      support:
+        stable:
+          cap-notify:
+          cap-3.1:
+          cap-3.2:
+          sasl-3.1:
+          sasl-3.2:
+        SASL:
+          - plain
 
 - name: Web Clients
   software:
