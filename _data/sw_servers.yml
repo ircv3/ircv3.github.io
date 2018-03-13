@@ -186,6 +186,14 @@
       na:
         stable:
           starttls: supports sts
+    - name: Planio Team Chat
+      link: https://plan.io/business-chat/
+      support:
+        stable:
+          cap-3.1:
+          sasl-3.1:
+          away-notify:
+          server-time:
     - name: txircd
       link: https://github.com/ElementalAlchemist/txircd
       support:
