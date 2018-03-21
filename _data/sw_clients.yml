@@ -451,6 +451,18 @@
           userhost-in-names:
         SASL:
           - plain
+    - name: Igloo
+      # maintainer: eskimo
+      link: https://iglooirc.com/
+      os:
+        - ios
+      support:
+        stable:
+          cap-3.1:
+          sasl-3.1:
+          server-time:
+        SASL:
+          - plain
     - name: IRC7
       # ref: link mentions sasl
       link: http://www.windowsphone.com/en-us/store/app/irc/345e96da-fa2a-457f-95ce-f09e6f3b28a3
