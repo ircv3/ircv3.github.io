@@ -567,7 +567,7 @@
           sasl-3.1:
         SASL:
           - plain
-     - name: Igloo
+    - name: Igloo
       # maintainer: eskimo
       link: https://iglooirc.com/
       os:
