@@ -567,6 +567,18 @@
           sasl-3.1:
         SASL:
           - plain
+     - name: Igloo
+      # maintainer: eskimo
+      link: https://iglooirc.com/
+      os:
+        - ios
+      support:
+        stable:
+          cap-3.1:
+          sasl-3.1:
+          server-time:
+        SASL:
+          - plain
 
 - name: Bouncers
   software:
