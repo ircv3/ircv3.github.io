@@ -66,6 +66,18 @@
           userhost-in-names:
         SASL:
           - plain
+    - name: Igloo
+      # maintainer: eskimo
+      link: https://iglooirc.com/
+      os:
+        - ios
+      support:
+        stable:
+          cap-3.1:
+          sasl-3.1:
+          server-time:
+        SASL:
+          - plain
     - name: HexChat
       # ref: https://github.com/hexchat/hexchat/blob/v2.10.2/src/common/inbound.c#L1728
       link: https://hexchat.github.io
@@ -565,18 +577,6 @@
           cap-3.1:
           multi-prefix:
           sasl-3.1:
-        SASL:
-          - plain
-    - name: Igloo
-      # maintainer: eskimo
-      link: https://iglooirc.com/
-      os:
-        - ios
-      support:
-        stable:
-          cap-3.1:
-          sasl-3.1:
-          server-time:
         SASL:
           - plain
 
