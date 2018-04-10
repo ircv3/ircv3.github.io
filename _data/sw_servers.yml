@@ -164,6 +164,7 @@
       link: https://oragono.io/
       support:
         stable:
+          batch:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -181,6 +182,7 @@
           server-time:
           userhost-in-names:
           sts:
+          draft/labeled-response:
           draft/message-tags:
           draft/msgid:
       na:
