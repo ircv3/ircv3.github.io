@@ -588,15 +588,15 @@
       link: https://znc.in/
       support:
         stable:
-          account-notify: "Git"
-          away-notify: "Git"
-          batch: "Git (1.6.0+ as <code>znc.in/batch</code>)"
+          account-notify: "1.7.0+"
+          away-notify: "1.7.0+"
+          batch: "1.7.0+ (1.6.0+ as <code>znc.in/batch</code>)"
           cap-3.1:
-          cap-notify: "Git"
-          echo-message: "Git"
-          extended-join: "Git"
+          cap-notify: "1.7.0+"
+          echo-message: "1.7.0+"
+          extended-join: "1.7.0+"
           multi-prefix:
-          server-time: "Git (1.2+ as <code>znc.in/server-time-iso</code>)"
+          server-time: "1.7.0+ (1.2+ as <code>znc.in/server-time-iso</code>)"
           userhost-in-names:
     - name: ZNC (as Client)
       # ref: https://github.com/znc/znc/blob/znc-1.6.1/src/IRCSock.cpp#L809
@@ -604,13 +604,13 @@
       link: https://znc.in/
       support:
         stable:
-          account-notify: "Git"
-          away-notify: "Git"
+          account-notify: "1.7.0+"
+          away-notify: "1.7.0+"
           cap-3.1:
-          extended-join: "Git"
+          extended-join: "1.7.0+"
           multi-prefix:
           sasl-3.1:
-          server-time: "Git"
+          server-time: "1.7.0+"
           userhost-in-names:
         SASL:
           external:
