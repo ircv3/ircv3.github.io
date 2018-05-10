@@ -224,9 +224,14 @@
       support:
         stable:
           cap-3.1:
+          cap-3.2:
           sasl-3.1:
+          sasl-3.2:
+          cap-notify:
           account-notify:
           away-notify:
+          chghost:
+          extended-join:
           multi-prefix:
           starttls:
           userhost-in-names:
