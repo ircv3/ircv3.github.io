@@ -263,7 +263,10 @@
           away-notify:
           cap-notify:
           cap-3.1:
+          cap-3.2: 2.2+
+          chghost: 2.2+
           extended-join:
+          invite-notify: 2.2+
           monitor:
           multi-prefix:
           sasl-3.1:
