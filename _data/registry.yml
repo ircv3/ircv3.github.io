@@ -205,11 +205,11 @@
     - name: +react
       specs:
         - react-client-tag
-      description: Marks that a given message is intended as a reply to a specific sent message.
+      description: Sends a reaction to a specific sent message.
     - name: +reply
       specs:
         - reply-client-tag
-      description: Sends a reaction to a specific sent message.
+      description: Marks that a given message is intended as a reply to a specific sent message.
 
 - name: Batches
   include_numeric: false
