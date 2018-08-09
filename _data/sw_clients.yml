@@ -104,18 +104,6 @@
           server-time:
         SASL:
           - plain
-    - name: Instantbird
-      # ref: irc{CAP,SASL,MultiPrefix,WatchMonitor}.jsm files in
-      #      https://hg.instantbird.org/instantbird/file/tip/chat/protocols/irc
-      link: http://instantbird.com
-      support:
-        stable:
-          cap-3.1:
-          monitor:
-          multi-prefix:
-          sasl-3.1:
-        SASL:
-          - plain
     - name: Irssi
       # ref: https://github.com/irssi/irssi/blob/0.8.18/src/irc/core/irc-servers.c#L229
       link: https://irssi.org
@@ -201,7 +189,7 @@
           - plain
     - name: Mozilla Thunderbird
       # ref: irc{CAP,SASL,MultiPrefix,WatchMonitor}.jsm files in
-      #      http://mxr.mozilla.org/comm-central/source/chat/protocols/irc/
+      #      http://dxr.mozilla.org/comm-central/source/chat/protocols/irc/
       link: https://www.mozilla.org/thunderbird
       support:
         stable:
@@ -209,6 +197,7 @@
           monitor:
           multi-prefix:
           sasl-3.1:
+          server-time: 60.0
         SASL:
           - plain
     - name: Quassel
