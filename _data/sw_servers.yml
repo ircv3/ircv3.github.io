@@ -104,15 +104,16 @@
           multi-prefix:
           userhost-in-names:
     - name: InspIRCd
-      # maintainer: saberuk, attila
-      # ref: https://github.com/inspircd/inspircd/issues/1038
-      #      https://github.com/inspircd/inspircd/search?q="Cap%3A%3ACapability"
+      # maintainer: saberuk
+      # ref: https://github.com/inspircd/inspircd/search?q="Cap%3A%3ACapability"
       #      https://github.com/inspircd/inspircd-extras/search?q=GenericCap
       link: http://www.inspircd.org
       support:
         stable:
           account-notify:
+          account-tag: Git
           away-notify:
+          batch: Git
           cap-3.1:
           cap-3.2: Git
           cap-notify: Extras / Git
@@ -124,6 +125,7 @@
           multi-prefix:
           sasl-3.1:
           sasl-3.2: Git
+          server-time: Git
           starttls:
           sts: Extras / Git
           userhost-in-names:
