@@ -13,6 +13,7 @@
           extended-join:
           multi-prefix:
           userhost-in-names:
+          server-time: Git
     - name: Charybdis
       # ref: https://github.com/atheme/charybdis/blob/charybdis-3.5.0-test1/modules/m_cap.c#L73
       link: http://www.charybdis.io/
