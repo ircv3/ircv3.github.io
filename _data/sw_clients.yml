@@ -316,7 +316,7 @@
           - plain
     - name: Iris
       # ref: https://github.com/atheme/iris/blob/831483f/qwebirc/ircclient.py#L48
-      link: http://www.atheme.net/iris.html
+      link: https://github.com/atheme-legacy/iris/
       support:
         stable:
           cap-3.1:
