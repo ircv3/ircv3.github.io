@@ -716,7 +716,7 @@
           chghost:
           extended-join:
           invite-notify:
-          multi-prefix
+          multi-prefix:
           sasl-3.1:
           server-time:
           userhost-in-names:
