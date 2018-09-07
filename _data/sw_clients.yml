@@ -720,5 +720,6 @@
           sasl-3.1:
           server-time:
           userhost-in-names:
+          draft/message-tags:
         SASL:
           - plain
