@@ -726,5 +726,7 @@
           userhost-in-names:
           draft/labeled-response:
           draft/message-tags:
+          draft/msgid
+          +draft/reply
         SASL:
           - plain
