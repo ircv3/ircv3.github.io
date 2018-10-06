@@ -21,7 +21,7 @@ followed by the IRCv3 specifications.
 **Note:** The core IRC protocol specifications have been widely acknowledged to
 be old, out-of-date, and to not fully or accurately describe how the IRC client
 protocol works today. One of our members has been working on updated core
-protocol specifications [here](http://modern.ircdocs.horse/) which you may find
+protocol specifications [here](https://modern.ircdocs.horse/) which you may find
 useful to consult. Look at core protocol specifications and the IRC ecosystem
 itself for a complete picture of how the IRC protocol works today.
 If you have any questions on the core IRC protocol, please feel free to ask us
@@ -145,7 +145,7 @@ do not themselves offer any user-facing features.
 Here are the standalone batch types the IRCv3 WG defines:
 
 * [The `netsplit` and `netjoin` batch types]({{site.baseurl}}/specs/extensions/batch/netsplit-3.2.html) allow clients to collapse netsplits and netjoins more effectively.
-* [The `chathistory` batch type]({{site.baseurl}}/specs/extensions/batch/chathistory-3.3.html) **[draft]** allows replaying message history.
+* [The `chathistory` batch type]({{site.baseurl}}/specs/extensions/batch/chathistory-3.3.html) allows replaying message history.
 
 
 ## [Changing Usernames and Hostnames]({{site.baseurl}}/specs/extensions/chghost-3.2.html)
@@ -177,10 +177,6 @@ The `echo-message` extension lets clients confirm when messages are sent, and
 see messages that other clients on their connection (say, via an IRC bouncer)
 have sent. It does this by echoing messages back to clients after they are
 sent, allowing for these extra features.
-
-A specification describing message IDs will be proposed soon. This should allow
-clients to make full use of this spec and automatically hide duplicate messages
-as appropriate, which come as a result of this extension.
 
 The [`echo-message` spec]({{site.baseurl}}/specs/extensions/echo-message-3.2.html)
 describes which messages are echo'd, and how they are interpreted by clients.
@@ -309,15 +305,15 @@ the `STARTTLS` command works, as well as how connection registration is changed
 by the introduction of this capability.
 
 
-## [Strict Transport Security (STS)]({{site.baseurl}}/specs/core/sts-3.3.html)
+## [Strict Transport Security (STS)]({{site.baseurl}}/specs/extensions/sts.html)
 
 STS allows clients to be automatically upgraded to use TLS encryption and
 prevents downgrade attacks. STS is intended as a replacement for the `STARTTLS`
 command with better security qualities.
 
-The **work-in-progress** [`sts` spec]({{site.baseurl}}/specs/core/sts-3.3.html)
-describes the `sts` capability, how it operates, and various implementation
-details for both clients and servers.
+The [`sts` spec]({{site.baseurl}}/specs/extensions/sts.html) describes the `sts`
+capability, how it operates, and various implementation details for both clients
+and servers.
 
 
 ## [Userhosts in NAMES]({{site.baseurl}}/specs/extensions/userhost-in-names-3.2.html)

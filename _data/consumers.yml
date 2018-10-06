@@ -5,13 +5,13 @@
   url: http://www.mirc.com/
 
 - name: Mibbit
-  url: http://www.mibbit.com/
+  url: https://www.mibbit.com/
 
 - name: ngIRCd
-  url: http://ngircd.barton.de/
+  url: https://ngircd.barton.de/
 
 - name: BitchX
-  url: http://www.bitchx.ca/
+  url: http://www.bitchx.com/
 
-- name: TheLounge
+- name: The Lounge
   url: https://thelounge.github.io/

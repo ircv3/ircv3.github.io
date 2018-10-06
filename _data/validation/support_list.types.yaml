@@ -15,6 +15,10 @@ support:
           type: string
         link:
           type: string
+          required: false
+        ext_link:
+          type: string
+          required: false
         deprecated:
           type: boolean
           required: false
@@ -25,6 +29,9 @@ support:
           type: boolean
           required: false
         caps:
+          type: listofstrings
+          required: false
+        tags:
           type: listofstrings
           required: false
         features:

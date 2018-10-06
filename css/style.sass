@@ -9,6 +9,7 @@
 html > body
     background: #fff
     font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif
+    line-height: 1
 
 body
     color: #131313
@@ -61,7 +62,7 @@ body
                 font-size: 1.35rem
                 color: #1c1c1c
                 text-decoration: none
-            &:not(:hover).active
+            &.active
                 margin-right: -0.95rem
                 @include mobile
                     margin-right: 0
@@ -137,8 +138,8 @@ body
 
 .page-header
     text-align: center
-    padding: 5.3rem 0
-    line-height: 1
+    padding: 5rem 0
+    line-height: 1.2
     h1
         font-size: 2.7rem
         font-weight: 400
@@ -196,7 +197,7 @@ footer
 
 .content
     font-size: 1.175rem
-    line-height: 1.32
+    line-height: 1.4
     font-weight: 300
     > p:first-child
         margin-top: 1.86rem
@@ -311,16 +312,25 @@ h1, h2, h3
         color: #444
         margin-left: 0.35em
         font-weight: 400
-tt, code, pre
+tt, code, pre, .mono
     font-family: "Overpass Mono", Menlo, Monaco, Consolas, "Courier New", monospace
     font-weight: 500
-    color: #DB1438
     font-size: 0.9em
+tt, code, pre
+    color: #5A383E
+a code, code a, pre a, a pre, a tt, tt a
+    color: #DB1438
 a
     text-decoration: none
     color: #0B7884
 sub, sup
     font-size: 0.8em
+
+td > a
+    &.deprecated
+        color: #3b3b3b
+    &.draft
+        color: #b07f38
 
 .caret
     display: inline-block

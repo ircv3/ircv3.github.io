@@ -7,14 +7,25 @@ layout: compress
     <meta charset="utf-8">
     <title>{{ page.title }} - IRCv3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Andrew Northall">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{ site.baseurl }}/favicon/manifest.json">
+    <link rel="mask-icon" href="{{ site.baseurl }}/favicon/safari-pinned-tab.svg" color="#005960">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
+    <meta name="msapplication-config" content="{{ site.baseurl }}/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="author" content="IRCv3 Working Group">
     <meta name="description" content="{% if page.meta-description %}{{ page.meta-description }}{% else %}IRCv3 Development Community{% endif %}">
 
+    <link rel="alternate" type="application/rss+xml" href="{{ site.baseurl }}/feed.xml" />
+    
     <link href="{{ site.baseurl }}/css/font-awesome.min.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/fonts.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/pure.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet">
-    <script src="{{ site.baseurl }}/js/anchor.min.js"></script>
 
     <!--[if lt IE 9]>
       <script src="{{ site.baseurl }}/js/html5shiv.min.js"></script>
@@ -35,9 +46,9 @@ layout: compress
     <footer>
       <div class="container">
         <div class="copylink">
-          <span><a href="{{ site.baseurl }}/" class="wglink">{% include logo-fordark.html %} Working Group</a> {% include copy.html %} {{ site.time | date: "%Y" }}</span>
+          <span><a href="{{ site.baseurl }}" class="wglink">{% include logo-fordark.html %} Working Group</a> {% include copy.html %} {{ site.time | date: "%Y" }}</span>
           <span class="nomobile" style="margin: 0 0.7rem;">&middot;</span>
-          <a class="nomobile" style="display: inline-block; padding: 0.3rem 0.6rem 0.1rem; border-radius: 0.4rem; background: #c87b2d; color: #fff; font-size: 0.9em" href="/feed.xml"><i class="fa fa-rss-square"></i> RSS</a>
+          <a class="nomobile" style="display: inline-block; padding: 0.3rem 0.6rem 0.2rem; border-radius: 0.4rem; background: #c87b2d; color: #fff; font-size: 0.9em" href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss-square"></i> RSS</a>
           <ul class="links nomobile" style="margin-top: 0.3rem">
             <li><a href="{{ site.baseurl }}/index.html">Home</a></li>
             <li><a href="{{ site.baseurl }}/wg.html">
@@ -49,7 +60,7 @@ layout: compress
               <span class="notablet">Specifications</span>
               <span class="tablet">Specs</span>
             </a></li>
-            <li class="iconsep"><a href="https://github.com/ircv3/"><span class="fa fw-fw fa-github"></span></a></li>
+            <li class="iconsep"><a href="{{ site.github.owner_url }}"><span class="fa fw-fw fa-github"></span></a></li>
           </ul>
         </div>
       </div>

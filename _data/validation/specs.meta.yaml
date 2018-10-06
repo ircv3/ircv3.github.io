@@ -1,0 +1,17 @@
+root:
+  type: mapofdicts
+  kids:
+    fullname:
+      type: string
+    name:
+      type: string
+    shortname:
+      type: string
+    url:
+      type: string
+    deprecated:
+      type: boolean
+      required: false
+    draft:
+      type: boolean
+      required: false

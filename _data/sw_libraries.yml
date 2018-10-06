@@ -3,6 +3,7 @@
     - name: cinch
       # ref: https://github.com/cinchrb/cinch/blob/v2.3.1/lib/cinch/irc.rb#L115
       link: https://github.com/cinchrb/cinch
+      language: Ruby
       support:
         stable:
           cap-3.1:
@@ -14,27 +15,56 @@
     - name: Communi
       # ref: http://communi.github.io/doc/3.4/ircv3.html
       link: https://communi.github.io
+      language: C++
       support:
         stable:
-          account-notify: 3.3+
-          account-tag: 3.4+
-          away-notify: 3.3+
-          cap-3.1: 3.0+
-          cap-notify: 3.4+
-          chghost: 3.4+
-          extended-join: 3.3+
-          invite-notify: 3.0+
-          message-tags: 3.1+
-          monitor: 3.4+
-          multi-prefix: 3.3+
-          sasl-3.2: 3.0+
-          server-time: 3.4+
-          userhost-in-names: 3.0+
+          account-notify:
+          account-tag:
+          away-notify:
+          cap-3.1:
+          cap-notify:
+          chghost:
+          extended-join:
+          invite-notify:
+          monitor:
+          multi-prefix:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
         SASL:
+          - plain
+    - name: girc
+      # ref: https://github.com/lrstanley/girc/blob/master/cap.go
+      #      https://github.com/lrstanley/girc/blob/master/builtin.go
+      link: https://github.com/lrstanley/girc
+      language: Go
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
+          draft/message-tags:
+          draft/msgid:
+        SASL:
+          - external
           - plain
     - name: irc-framework
       # ref: https://github.com/kiwiirc/irc-framework/blob/master/docs/ircv3.md
       link: https://github.com/kiwiirc/irc-framework
+      language: JS
       support:
         stable:
           account-notify:
@@ -52,11 +82,14 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+          draft/message-tags:
+          draft/msgid:
         SASL:
           - plain
     - name: Kitteh IRC Client Library
       # ref: http://kicl.kitteh.org/en/stable/ircv3/
       link: https://github.com/KittehOrg/KittehIRCClientLib
+      language: Java
       support:
         stable:
           account-notify:
@@ -78,15 +111,20 @@
         SASL:
           - external
           - plain
+      partial:
+        stable:
+          sts: "draft/sts"
     - name: Net::Async::IRC
       # ref: https://metacpan.org/source/PEVANS/Net-Async-IRC-0.10/lib/Net/Async/IRC.pm#L339
       link: https://metacpan.org/pod/Net::Async::IRC
+      language: Perl
       support:
         stable:
           cap-3.1:
     - name: pydle
       # ref: https://github.com/Shizmob/pydle/tree/v0.8.2/pydle/features/ircv3
       link: https://pypi.python.org/pypi/pydle
+      language: Python
       support:
         stable:
           account-notify:
@@ -108,6 +146,7 @@
     - name: Rust irc
       # ref: https://github.com/aatxe/irc/blob/master/src/client/data/caps.rs
       link: https://github.com/aatxe/irc
+      language: Rust
       support:
         stable:
           account-notify:
@@ -133,6 +172,7 @@
     - name: Warren
       # ref: https://github.com/WillowChat/Warren/blob/9c979a7/src/main/kotlin/chat/willow/warren/extension/cap/CapManager.kt#L41
       link: https://github.com/WillowChat/Warren
+      language: Kotlin
       support:
         stable:
           account-notify:
@@ -157,6 +197,7 @@
       #      https://github.com/itslukej/zirc/blob/master/zirc/ext/sasl.py
       #      https://github.com/itslukej/zirc/issues/9
       link: https://github.com/itslukej/zirc
+      language: Python
       support:
         stable:
           cap-3.1:
@@ -167,3 +208,16 @@
         SASL:
           - external
           - plain
+    - name: ChatSharp
+      # ref:  https://github.com/SirCmpwn/ChatSharp/blob/master/ChatSharp/Handlers/CapabilityHandlers.cs#L15
+      #       https://github.com/SirCmpwn/ChatSharp/blob/master/ChatSharp/IrcClient.cs#L161
+      link: https://github.com/SirCmpwn/ChatSharp
+      language: C#
+      support:
+        stable:
+          account-notify:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          multi-prefix:
+          server-time:

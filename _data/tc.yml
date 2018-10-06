@@ -1,18 +1,13 @@
-- nick: Attila
-  github: attilamolnar
-  projects:
-    - "[InspIRCd](http://www.inspircd.org/)"
-
 - nick: dan-
   github: DanielOaks
   projects:
-    - "[ircdocs](http://ircdocs.horse/)"
+    - "[ircdocs](https://ircdocs.horse/)"
     - "[Oragono](https://oragono.io/)"
 
 - nick: DarthGandalf
   github: DarthGandalf
   projects:
-    - "[ZNC](http://wiki.znc.in/ZNC)"
+    - "[ZNC](https://wiki.znc.in/ZNC)"
 
 - nick: dx
   github: dequis
@@ -31,17 +26,22 @@
     - "[IRCCloud](https://www.irccloud.com/)"
   chair: true
 
-- nick: M2Ys4U
-  github: M2Ys4U
+- nick: NoOneButMe
+  github: zadr
+  projects:
+    - "[Colloquy](http://colloquy.info/)"
+
+- nick: prawnsalad
+  github: prawnsalad
   projects:
     - "[Kiwi IRC](https://kiwiirc.com/)"
+
+- nick: Sadie
+  github: SaberUK
+  projects:
+    - "[InspIRCd](https://www.inspircd.org/)"
 
 - nick: TingPing
   github: TingPing
   projects:
     - "[HexChat](https://hexchat.github.io/)"
-
-- nick: NoOneButMe
-  github: zadr
-  projects:
-    - "[Colloquy](http://colloquy.info/)"

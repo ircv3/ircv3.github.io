@@ -1,0 +1,30 @@
+root:
+  type: listofdicts
+  kids:
+    name:
+      type: string
+    include_numeric:
+      type: boolean
+    include_specs:
+      type: boolean
+    values:
+      type: listofdicts
+      kids:
+        name:
+          type: string
+        numeric:
+          type: string
+          required: false
+        specs:
+          type: listofstrings
+        description:
+          type: string
+        deprecated:
+          type: boolean
+          required: false
+        draft:
+          type: boolean
+          required: false
+        links:
+          type: listofstrings
+          required: false
