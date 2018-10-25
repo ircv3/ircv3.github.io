@@ -281,6 +281,17 @@
           sasl-3.2:
         SASL:
           - plain
+    - name: Swirc
+      # ref: https://raw.githubusercontent.com/uhlin/swirc/master/CHANGELOG.md
+      link: https://www.nifty-networks.net/swirc/
+      support:
+        stable:
+          account-notify:
+          sasl-3.1:
+          server-time:
+        SASL:
+          - ecdsa-nist256p-challenge
+          - plain
 
 - name: Web Clients
   software:
