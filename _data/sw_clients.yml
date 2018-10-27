@@ -325,6 +325,7 @@
           +draft/reply:
         SASL:
           - plain
+          - scram-sha-256
     - name: Iris
       # ref: https://github.com/atheme/iris/blob/831483f/qwebirc/ircclient.py#L48
       link: https://github.com/atheme-legacy/iris/
@@ -509,6 +510,7 @@
           draft/msgid:
         SASL:
           - plain
+          - scram-sha-256
     - name: LimeChat
       # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
       link: http://limechat.net/iphone/
