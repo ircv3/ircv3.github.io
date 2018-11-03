@@ -333,7 +333,7 @@ The `WEBIRC` command is widely used to provide the real IP address of users
 to the server when connecting through a gateway. This is common for current
 web-based IRC clients.
 
-The[`WEBIRC` spec]({{site.baseurl}}/specs/extensions/webirc.html)
+The [`WEBIRC` spec]({{site.baseurl}}/specs/extensions/webirc.html)
 describes how this command works, how to use it, and some best practices to
 keep in mind while implementing this feature.
 
