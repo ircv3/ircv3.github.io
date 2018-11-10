@@ -123,6 +123,10 @@ stable:
       link: /specs/extensions/userhost-in-names-3.2.html
       caps:
         - userhost-in-names
+    webirc:
+      name: WebIRC
+      description: WebIRC Extension
+      link: /specs/extensions/webirc.html
 
     draft/labeled-response:
       name: draft/labeled-response
