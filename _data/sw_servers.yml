@@ -14,6 +14,9 @@
           multi-prefix:
           userhost-in-names:
           server-time: Git
+      na:
+        stable:
+          webirc:
     - name: Charybdis
       # ref: https://github.com/atheme/charybdis/blob/charybdis-3.5.0-test1/modules/m_cap.c#L73
       link: http://www.charybdis.io/
@@ -36,6 +39,7 @@
           server-time: Git
           starttls:
           userhost-in-names:
+          webirc:
     - name: ChatIRCd
       # dev: Ben / MrC
       # ref: https://bitbucket.org/chatlounge/chatircd/commits/all
@@ -55,6 +59,7 @@
           sasl:
           starttls:
           userhost-in-names:
+          webirc:
     - name: Elemental IRCd
       # ref: https://github.com/Elemental-IRCd/elemental-ircd/issues/80
       #      https://github.com/Elemental-IRCd/elemental-ircd/blob/elemental-ircd-7.0-experimental/modules/m_cap.c#L70
@@ -69,6 +74,7 @@
           extended-join:
           monitor:
           multi-prefix:
+          webirc:
     - name: IRCCloud Teams
       # maintainer: jwheare
       link: https://blog.irccloud.com/private-teams-servers/
@@ -92,6 +98,7 @@
       na:
         stable:
           starttls: supports sts
+          webirc:
     - name: ircd-hybrid
       link: https://github.com/ircd-hybrid/ircd-hybrid
       support:
@@ -104,6 +111,7 @@
           invite-notify:
           multi-prefix:
           userhost-in-names:
+          webirc:
     - name: InspIRCd
       # maintainer: saberuk
       # ref: https://github.com/inspircd/inspircd/search?q="Cap%3A%3ACapability"
@@ -130,6 +138,7 @@
           starttls:
           sts: Extras / Git
           userhost-in-names:
+          webirc:
     - name: mammon-ircd
       # ref: Capability() calls in https://github.com/mammon-ircd/mammon/search?q=Capability
       link: https://github.com/mammon-ircd/mammon
@@ -162,6 +171,7 @@
           multi-prefix:
           starttls:
           userhost-in-names:
+          webirc:
     - name: Oragono
       # ref: https://oragono.io/specs.html
       link: https://oragono.io/
@@ -188,6 +198,7 @@
           draft/labeled-response:
           draft/message-tags:
           draft/msgid:
+          webirc:
       na:
         stable:
           starttls: supports sts
@@ -199,6 +210,9 @@
           sasl-3.1:
           away-notify:
           server-time:
+      na:
+        stable:
+          webirc:
     - name: txircd
       link: https://github.com/ElementalAlchemist/txircd
       support:
@@ -238,6 +252,7 @@
           multi-prefix:
           starttls:
           userhost-in-names:
+          webirc:
       partial:
         stable:
           sts: "draft/sts"

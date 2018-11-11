@@ -131,7 +131,6 @@ webirc:
   name: WebIRC extension
   shortname: WebIRC
   url: /extensions/webirc.html
-  draft: true
 
 # deprecated specs
 metadata-3.2:
