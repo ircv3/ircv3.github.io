@@ -467,7 +467,10 @@
         - ios
       support:
         stable:
+          away-notify:
           cap-3.1:
+          cap-3.2:
+          cap-notify:
           sasl-3.1:
           server-time:
         SASL:
