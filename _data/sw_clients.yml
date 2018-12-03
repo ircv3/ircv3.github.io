@@ -203,21 +203,21 @@
         SASL:
           - plain
     - name: Quassel
-      # ref: https://github.com/quassel/quassel/blob/0.12.2/src/core/corenetwork.cpp#L479
-      link: http://www.quassel-irc.org
+      # ref: https://github.com/quassel/quassel/blob/0.13.0/src/common/irccap.h#L134-L166
+      link: https://www.quassel-irc.org
       support:
         stable:
-          account-notify: Git
-          away-notify: Git
-          cap-notify: Git
+          account-notify: 0.13+
+          away-notify: 0.13+
+          cap-notify: 0.13+
           cap-3.1:
-          cap-3.2: Git
-          chghost: Git
-          extended-join: Git
-          multi-prefix: Git
+          cap-3.2: 0.13+
+          chghost: 0.13+
+          extended-join: 0.13+
+          multi-prefix: 0.13+
           sasl-3.1:
-          sasl-3.2: Git
-          userhost-in-names: Git
+          sasl-3.2: 0.13+
+          userhost-in-names: 0.13+
         SASL:
           - external
           - plain
