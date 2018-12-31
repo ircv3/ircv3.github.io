@@ -251,8 +251,6 @@
           extended-join:
           multi-prefix:
           starttls:
+          sts:
           userhost-in-names:
           webirc:
-      partial:
-        stable:
-          sts: "draft/sts"
