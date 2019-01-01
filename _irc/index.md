@@ -294,17 +294,6 @@ guidelines for clients and servers, allowing them to better detect the TLS
 certificate to send based on the server's hostname.
 
 
-## [STARTTLS]({{site.baseurl}}/specs/extensions/tls-3.1.html)
-
-STARTTLS allows clients to upgrade their plaintext connections to use TLS
-encryption. It is recommended that clients instead implement STS support when
-that is ratified as a stable IRCv3 standard.
-
-The [`tls` spec]({{site.baseurl}}/specs/extensions/tls-3.1.html) describes how
-the `STARTTLS` command works, as well as how connection registration is changed
-by the introduction of this capability.
-
-
 ## [Strict Transport Security (STS)]({{site.baseurl}}/specs/extensions/sts.html)
 
 STS allows clients to be automatically upgraded to use TLS encryption and
@@ -355,6 +344,16 @@ and excessive notifications, which made it impossible for servers in widespread
 use to implement. A new Metadata specification is being written to address
 these issues and overhaul the notification system, so we do not recommend
 implementing this spec.
+
+
+## [STARTTLS]({{site.baseurl}}/specs/extensions/tls-3.1.html)
+
+STARTTLS allows clients to upgrade their plaintext connections to use TLS
+encryption. It is recommended that clients instead implement STS support.
+
+The [`tls` spec]({{site.baseurl}}/specs/extensions/tls-3.1.html) describes how
+the `STARTTLS` command works, as well as how connection registration is changed
+by the introduction of this capability.
 
 
 {% include anchors.html %}

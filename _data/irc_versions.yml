@@ -107,6 +107,7 @@ stable:
     starttls:
       name: starttls
       description: tls Extension (STARTTLS)
+      deprecated: true
       link: /specs/extensions/tls-3.1.html
       caps:
         - tls
