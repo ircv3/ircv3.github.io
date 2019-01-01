@@ -6,7 +6,7 @@ Happy New Year! It's been a while since we've updated, so there's a heap of chan
 
 First off, in WG news, we've introduced a new site design and a new logo for IRCv3, thanks primarily to [dan-](https://github.com/danieloaks/) and [jwheare](https://github.com/jwheare)! Here's our new logo, in a variety of formats:
 
-<img style="max-width: 100%; width: 55rem; margin: 0 auto; display: block" alt="IRCv3 Logos" src="http://ircv3.net/img/logo-versions.svg">
+<img style="max-width: 100%; width: 55rem; margin: 0 auto; display: block" alt="IRCv3 Logos" src="/img/logo-versions.svg">
 
 On the spec side, we've added the new `message-tags` draft [<sup>[link]</sup>](https://ircv3.net/specs/core/message-tags-3.3.html) which introduces the `TAGMSG` message, allowing clients to pass metadata to each other freely. This spec also increases the size limit on tags from `512` to `4607` bytes, letting clients have more room to pass each other data.
 
