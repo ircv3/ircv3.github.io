@@ -57,6 +57,7 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+          webirc:
           draft/message-tags:
           draft/msgid:
         SASL:
