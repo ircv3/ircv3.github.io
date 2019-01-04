@@ -1,21 +1,11 @@
 # this page lists specs' long names, URLs and shortnames for ease
 
 # core specs
-cap-3.1:
-  fullname: IRCv3.1 Client Capability Negotiation
-  name: Capability Negotiation 3.1
-  shortname: CAP 3.1
-  url: /core/capability-negotiation-3.1.html
-cap-3.2:
-  fullname: IRCv3.2 Client Capability Negotiation
-  name: Capability Negotiation 3.2
-  shortname: CAP 3.2
-  url: /core/capability-negotiation-3.2.html
-cap-notify:
-  fullname: IRCv3.2 cap-notify Extension
-  name: cap-notify Extension
-  shortname: cap-notify
-  url: /extensions/cap-notify-3.2.html
+cap:
+  fullname: Client Capability Negotiation
+  name: Capability Negotiation
+  shortname: CAP
+  url: /core/capability-negotiation.html
 message-tags-3.2:
   fullname: IRCv3.2 Message Tags
   name: Message Tags 3.2

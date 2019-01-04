@@ -2,19 +2,19 @@ stable:
   name: Stable
   specs:
     cap-3.1:
-      name: CAP v3.1
-      description: Capability Negotiation v3.1
-      link: /specs/core/capability-negotiation-3.1.html
+      name: CAP
+      description: Capability Negotiation
+      link: /specs/core/capability-negotiation.html
       required: true
     cap-3.2:
-      name: CAP v3.2
-      description: Capability Negotiation v3.2
-      link: /specs/core/capability-negotiation-3.2.html
+      name: CAP 302
+      description: Capability Negotiation 302 Extensions
+      link: /specs/core/capability-negotiation.html#cap-ls-version
       required: true
     cap-notify:
       name: cap-notify
       description: cap-notify Extension
-      link: /specs/extensions/cap-notify-3.2.html
+      link: /specs/core/capability-negotiation.html#cap-notify
       required: true
       caps:
         - cap-notify

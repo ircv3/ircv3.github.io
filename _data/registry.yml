@@ -122,7 +122,7 @@
       description: Lets the server bundle common messages together, which lets clients be more intelligent about displaying them.
     - name: cap-notify
       specs:
-        - cap-notify
+        - cap
       description: Notifies clients when client capabilities become availiable or are no longer available.
     - name: chghost
       specs:
@@ -247,8 +247,7 @@
       description: Notifies clients of new logins by friends.
     - name: CAP
       specs: 
-        - cap-3.1
-        - cap-3.2
+        - cap
       description: Lets clients negotiate client capabilities with servers.
     - name: CHGHOST
       specs: 

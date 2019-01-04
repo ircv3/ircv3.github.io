@@ -50,21 +50,13 @@ CAPs are the primary way that IRCv3 features are enabled. As such, most
 software implementing IRCv3 extensions will want to implement capability
 negotiation.
 
-The [v3.1 Capability Negotiation spec]({{site.baseurl}}/specs/core/capability-negotiation-3.1.html)
+The [Capability Negotiation spec]({{site.baseurl}}/specs/core/capability-negotiation.html)
 conveys the basic listing and requesting of capabilities, and lays the
-framework which most IRCv3 specs use.
-
-The [v3.2 Capability Negotiation spec]({{site.baseurl}}/specs/core/capability-negotiation-3.2.html)
-clarifies how to list large numbers of capabilities (which is needed as we add
-more useful features to IRCv3!). It also allows capabilities to be listed with
-values, improving the implementation of features like SASL.
-
-The [`cap-notify` spec]({{site.baseurl}}/specs/extensions/cap-notify-3.2.html)
-allows clients to be sent notifications when caps are added to or removed from
-the server. This is useful in cases like SASL when the authentication layer
-disconnects (and thus, SASL authentication is no longer possible). This
-extension is **automatically enabled** if clients request v3.2 capability
-negotiation.
+framework which most IRCv3 specs use. It also goes over the `302` extensions,
+and [`cap-notify`]({{site.baseurl}}/specs/core/capability-negotiation.html#cap-notify)
+– a feature to make clients aware when capabilities are removed from and added
+to the server (for example, if the SASL authentication layer disconnects, the
+associated capability may be disabled for a time).
 
 
 ## [Message Tags]({{site.baseurl}}/specs/core/message-tags-3.2.html)
