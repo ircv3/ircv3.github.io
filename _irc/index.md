@@ -349,11 +349,14 @@ implementing this spec.
 ## [STARTTLS]({{site.baseurl}}/specs/extensions/tls-3.1.html)
 
 STARTTLS allows clients to upgrade their plaintext connections to use TLS
-encryption. It is recommended that clients instead implement STS support.
+encryption. In alignment with [RFC8314](https://tools.ietf.org/html/rfc8314),
+it is recommended that IRC networks use listeners designed for implicit TLS (such
+as those that operate on port 6697) and clients instead implement STS support.
 
-The [`tls` spec]({{site.baseurl}}/specs/extensions/tls-3.1.html) describes how
-the `STARTTLS` command works, as well as how connection registration is changed
-by the introduction of this capability.
+The [`tls` spec]({{site.baseurl}}/specs/extensions/tls-3.1.html) is still
+available for reference. It describes how the `STARTTLS` command works,
+as well as how connection registration is changed by the introduction of
+this capability.
 
 
 {% include anchors.html %}
