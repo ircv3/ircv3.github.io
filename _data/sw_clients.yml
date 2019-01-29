@@ -295,6 +295,24 @@
         SASL:
           - ecdsa-nist256p-challenge
           - plain
+    - name: Glirc
+      # ref: https://github.com/glguy/irc-core/blob/v2/src/Client/State/Network.hs#L686-L687
+      link: https://hackage.haskell.org/package/glirc
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          batch:
+          cap-notify:
+          cap-3.1:
+          chghost:
+          extended-join:
+          multi-prefix:
+          sasl-3.1:
+          server-time:
+        SASL:
+          - plain
+          - ecdsa-nist256p-challenge
 
 - name: Web Clients
   software:
