@@ -769,3 +769,4 @@
           +draft/reply:
         SASL:
           - plain
+          - external
