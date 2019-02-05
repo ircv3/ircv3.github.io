@@ -742,8 +742,9 @@
           - plain
           - external
     - name: BitBot
-      #ref: https://github.com/jesopo/bitbot/blob/master/IRCLineHandler.py
-      #     https://github.com/jesopo/bitbot/blob/master/modules/sasl.py
+      #ref: https://github.com/jesopo/bitbot/blob/master/modules/line_handler.py
+      #     https://github.com/jesopo/bitbot/blob/master/modules/sasl/__init__.py
+      #     https://github.com/jesopo/bitbot/blob/master/modules/sasl/scram.py
       link: https://github.com/jesopo/bitbot
       support:
         stable:
