@@ -770,3 +770,4 @@
         SASL:
           - plain
           - external
+          - scram-sha-256
