@@ -120,23 +120,23 @@
       support:
         stable:
           account-notify:
-          account-tag: Git
+          account-tag: 3.0+
           away-notify:
-          batch: Git
+          batch: 3.0+
           cap-3.1:
-          cap-3.2: Git
-          cap-notify: Extras / Git
-          chghost: Extras / Git
-          echo-message: Extras / Git
+          cap-3.2: 3.0+
+          cap-notify: 3.0+
+          chghost: 3.0+
+          echo-message: 3.0+
           extended-join:
-          invite-notify: Extras / Git
-          monitor: Git
+          invite-notify: 3.0+
+          monitor: 3.0+
           multi-prefix:
           sasl-3.1:
-          sasl-3.2: Git
-          server-time: Git
+          sasl-3.2: 3.0+
+          server-time: 3.0+
           starttls:
-          sts: Extras / Git
+          sts: 3.0+
           userhost-in-names:
           webirc:
     - name: mammon-ircd
