@@ -326,17 +326,6 @@
         SASL:
           - plain
           - scram-sha-256
-    - name: Iris
-      # ref: https://github.com/atheme/iris/blob/831483f/qwebirc/ircclient.py#L48
-      link: https://github.com/atheme-legacy/iris/
-      support:
-        stable:
-          cap-3.1:
-          multi-prefix:
-          sasl-3.1:
-        SASL:
-          - authcookie
-          - plain
     - name: Kiwi IRC
       # ref: https://github.com/kiwiirc/kiwiirc
       link: https://kiwiirc.com
@@ -397,17 +386,6 @@
 
 - name: Mobile Clients
   software:
-    - name: AndChat
-      # ref: link mentions sasl
-      link: http://www.duckspike.net/andchat/
-      os:
-        - android
-      support:
-        stable:
-          cap-3.1:
-          sasl-3.1:
-        SASL:
-          - plain
     - name: IRC for Android
       # ref: link mentions sasl
       link: http://www.countercultured.net/android/
@@ -467,17 +445,6 @@
           cap-3.1:
           sasl-3.1:
           server-time:
-        SASL:
-          - plain
-    - name: IRC7
-      # ref: link mentions sasl
-      link: http://www.windowsphone.com/en-us/store/app/irc/345e96da-fa2a-457f-95ce-f09e6f3b28a3
-      os:
-        - windows-phone
-      support:
-        stable:
-          cap-3.1:
-          sasl-3.1:
         SASL:
           - plain
     - name: IRCCloud
