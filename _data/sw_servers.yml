@@ -40,6 +40,26 @@
           starttls:
           userhost-in-names:
           webirc:
+    - name: ChatIRCd
+      # dev: Ben / MrC
+      # ref: https://bitbucket.org/chatlounge/chatircd/commits/all
+      link: http://www.chatlounge.net/software/
+      support:
+        stable:
+          cap-3.1:
+          cap-notify:
+          sasl-3.1:
+          account-notify:
+          away-notify:
+          chghost:
+          extended-join:
+          invite-notify:
+          monitor:
+          multi-prefix:
+          sasl:
+          starttls:
+          userhost-in-names:
+          webirc:
     - name: IRCCloud Teams
       # maintainer: jwheare
       link: https://blog.irccloud.com/private-teams-servers/
