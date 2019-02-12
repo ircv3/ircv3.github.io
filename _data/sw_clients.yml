@@ -756,6 +756,7 @@
           cap-3.2:
           cap-notify:
           chghost:
+          echo-message:
           extended-join:
           invite-notify:
           multi-prefix:
