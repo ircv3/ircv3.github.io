@@ -305,11 +305,15 @@
           batch:
           cap-notify:
           cap-3.1:
+          cap-3.2:
           chghost:
           extended-join:
           multi-prefix:
           sasl-3.1:
           server-time:
+          sts:
+          userhost-in-names:
+          
         SASL:
           - plain
           - ecdsa-nist256p-challenge
