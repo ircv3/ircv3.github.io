@@ -73,7 +73,7 @@ stable:
         - invite-notify
     message-tags:
       name: message-tags cap
-      description: Message Tags.
+      description: Message Tags
       link: /specs/extensions/message-tags.html
       caps:
         - message-tags
