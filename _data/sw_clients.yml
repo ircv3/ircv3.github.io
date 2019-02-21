@@ -738,6 +738,7 @@
           echo-message:
           extended-join:
           invite-notify:
+          message-tags:
           monitor:
           multi-prefix:
           sasl-3.1:
@@ -752,6 +753,3 @@
           - plain
           - external
           - scram-sha-256
-      partial:
-        stable:
-          message-tags: "draft cap"
