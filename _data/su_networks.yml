@@ -54,15 +54,13 @@
           cap-notify:
           echo-message:
           extended-join:
+          message-tags:
           monitor:
           multi-prefix:
           sts:
           userhost-in-names:
           draft/labeled-response:
           draft/msgid:
-      partial:
-        stable:
-          message-tags: "draft cap"
       na:
         stable:
           starttls: direct TLS only

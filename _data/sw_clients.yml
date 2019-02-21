@@ -336,6 +336,7 @@
           echo-message:
           extended-join:
           invite-notify:
+          message-tags:
           monitor:
           multi-prefix:
           sasl-3.1:
@@ -350,9 +351,6 @@
         SASL:
           - plain
           - scram-sha-256
-      partial:
-        stable:
-          message-tags: "draft cap"
     - name: Kiwi IRC
       # ref: https://github.com/kiwiirc/kiwiirc
       link: https://kiwiirc.com
@@ -498,6 +496,7 @@
           echo-message:
           extended-join:
           invite-notify:
+          message-tags:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
@@ -509,9 +508,6 @@
         SASL:
           - plain
           - scram-sha-256
-      partial:
-        stable:
-          message-tags: "draft cap"
     - name: LimeChat
       # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
       link: http://limechat.net/iphone/
