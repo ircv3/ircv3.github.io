@@ -30,8 +30,8 @@
           draft/msgid:
       partial:
         stable:
+          message-tags: "draft cap"
           sts: "draft/sts"
-          draft/message-tags: "not latest version"
       na:
         stable:
           sasl-3.1: No Services enabled
@@ -59,8 +59,10 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
-          draft/message-tags:
           draft/msgid:
+      partial:
+        stable:
+          message-tags: "draft cap"
       na:
         stable:
           starttls: direct TLS only
@@ -91,8 +93,10 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
-          draft/message-tags:
           draft/msgid:
+      partial:
+        stable:
+          message-tags: "draft cap"
 
 - name: Networks
   note: >

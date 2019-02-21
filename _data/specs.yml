@@ -6,17 +6,11 @@ cap:
   name: Capability Negotiation
   shortname: CAP
   url: /core/capability-negotiation.html
-message-tags-3.2:
-  fullname: IRCv3.2 Message Tags
-  name: Message Tags 3.2
+message-tags:
+  fullname: Message Tags
+  name: Message Tags
   shortname: Message Tags
-  url: /core/message-tags-3.2.html
-message-tags-3.3:
-  fullname: IRCv3.3 Message Tags
-  name: Message Tags 3.3
-  shortname: Message Tags 3.3
-  url: /core/message-tags-3.3.html
-  draft: true
+  url: /extensions/message-tags.html
 
 account-notify:
   fullname: IRCv3.1 account-notify Extension

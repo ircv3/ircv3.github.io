@@ -58,11 +58,13 @@
           server-time:
           userhost-in-names:
           webirc:
-          draft/message-tags:
           draft/msgid:
         SASL:
           - external
           - plain
+      partial:
+        stable:
+          message-tags: "draft cap"
     - name: irc-framework
       # ref: https://github.com/kiwiirc/irc-framework/blob/master/docs/ircv3.md
       link: https://github.com/kiwiirc/irc-framework
@@ -84,10 +86,12 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
-          draft/message-tags:
           draft/msgid:
         SASL:
           - plain
+      partial:
+        stable:
+          message-tags: "draft cap"
     - name: Kitteh IRC Client Library
       # ref: http://kicl.kitteh.org/en/stable/ircv3/
       link: https://github.com/KittehOrg/KittehIRCClientLib

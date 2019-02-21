@@ -344,13 +344,15 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
-          draft/message-tags:
           draft/msgid:
           +draft/react:
           +draft/reply:
         SASL:
           - plain
           - scram-sha-256
+      partial:
+        stable:
+          message-tags: "draft cap"
     - name: Kiwi IRC
       # ref: https://github.com/kiwiirc/kiwiirc
       link: https://kiwiirc.com
@@ -393,10 +395,12 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
-          draft/message-tags:
           draft/msgid:
         SASL:
           - plain
+      partial:
+        stable:
+          message-tags: "draft cap"
     - name: Mibbit
       # ref: http://wiki.mibbit.com/index.php/SASL
       #      does not send CAP LS when connecting to a server
@@ -501,11 +505,13 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
-          draft/message-tags:
           draft/msgid:
         SASL:
           - plain
           - scram-sha-256
+      partial:
+        stable:
+          message-tags: "draft cap"
     - name: LimeChat
       # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
       link: http://limechat.net/iphone/
@@ -566,10 +572,12 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
-          draft/message-tags:
           draft/msgid:
         SASL:
           - plain
+      partial:
+        stable:
+          message-tags: "draft cap"
     - name: YAAIC
       # ref: https://github.com/pocmo/Yaaic/blob/v1.1/app/src/main/java/org/jibble/pircbot/PircBot.java#L208
       link: http://www.yaaic.org
@@ -738,10 +746,12 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
-          draft/message-tags:
           draft/msgid:
           +draft/reply:
         SASL:
           - plain
           - external
           - scram-sha-256
+      partial:
+        stable:
+          message-tags: "draft cap"

@@ -146,7 +146,7 @@
       description: Allows clients to correlate requests with server responses
     - name: message-tags
       specs: 
-        - message-tags-3.3
+        - message-tags
       description: Allows clients and servers to use tags more broadly
     - name: metadata
       specs:
