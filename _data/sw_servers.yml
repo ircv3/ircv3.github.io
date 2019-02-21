@@ -115,6 +115,7 @@
           echo-message: 3.0+
           extended-join:
           invite-notify: 3.0+
+          message-tags: 3.0+
           monitor: 3.0+
           multi-prefix:
           sasl-3.1:
