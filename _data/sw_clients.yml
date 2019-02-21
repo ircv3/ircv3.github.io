@@ -374,8 +374,8 @@
         SASL:
           - plain
     - name: The Lounge
-      # ref: https://github.com/thelounge/lounge/projects/1
-      link: https://thelounge.github.io/
+      # ref: https://github.com/thelounge/thelounge/projects/1
+      link: https://thelounge.chat/
       support:
         stable:
           account-notify:
