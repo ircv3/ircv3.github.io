@@ -59,7 +59,7 @@ to the server (for example, if the SASL authentication layer disconnects, the
 associated capability may be disabled for a time).
 
 
-## [Message Tags]({{site.baseurl}}/specs/core/message-tags.html)
+## [Message Tags]({{site.baseurl}}/specs/extensions/message-tags.html)
 
 Message tags extend the core framing used with IRC messages, and allow extended
 data to be sent with messages.
@@ -68,7 +68,7 @@ Message tags are widely used in the IRCv3 specifications. As such, most
 software implementing IRCv3 extensions will want to to implement the core
 Message Tags specification.
 
-The [Message Tags spec]({{site.baseurl}}/specs/core/message-tags.html)
+The [Message Tags spec]({{site.baseurl}}/specs/extensions/message-tags.html)
 covers the new message format, how tag data is formatted and escaped, and
 how they are named. In addition, it extends the message length and lets
 clients send tags directly between each other, allowing new features to be
