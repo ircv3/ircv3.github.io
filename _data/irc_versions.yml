@@ -1,3 +1,8 @@
+# the usage of 'stable' here is a bit legacy - we used to have
+# IRCv3.1, 3.2, 3.3 tagged release versions of IRC specs. now
+# we have a rolling-release, so instead of keeping the v3.1,
+# 3.2, etc different sections here I just changed it to one
+# called 'Stable'
 stable:
   name: Stable
   specs:
