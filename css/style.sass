@@ -63,25 +63,21 @@ body
                 color: #1c1c1c
                 text-decoration: none
             &.active
-                margin-right: -0.95rem
-                @include mobile
-                    margin-right: 0
+                position: relative
                 > a:after
                     @include mobile
                         display: none
-                    float: right
                     border: solid transparent
                     content: " "
                     height: 0
                     width: 0
-                    position: relative
+                    position: absolute
                     pointer-events: none
                     border-color: rgba(136, 183, 213, 0)
                     border-bottom-color: #0e3e45
-                    border-width: 0.43rem
-                    margin-left: 0.215rem
-                    left: -50%
-                    bottom: -1.1em
+                    border-width: 0.45rem
+                    left: calc(50% - 0.45rem)
+                    bottom: -0.15rem
 
 .links .iconsep a .fa
     margin-top: -0.8em
