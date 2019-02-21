@@ -393,6 +393,7 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+          webirc:
           draft/msgid:
         SASL:
           - plain
