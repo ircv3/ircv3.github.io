@@ -718,7 +718,8 @@
           - plain
           - external
     - name: BitBot
-      #ref: https://github.com/jesopo/bitbot/blob/master/modules/line_handler.py
+      #ref: https://github.com/jesopo/bitbot/blob/master/modules/line_handler/__init__.py
+      #     https://github.com/jesopo/bitbot/blob/master/modules/line_handler/ircv3.py
       #     https://github.com/jesopo/bitbot/blob/master/modules/sasl/__init__.py
       #     https://github.com/jesopo/bitbot/blob/master/modules/sasl/scram.py
       link: https://github.com/jesopo/bitbot
