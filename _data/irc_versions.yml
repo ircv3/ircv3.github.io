@@ -139,6 +139,7 @@ stable:
       name: WebIRC
       description: WebIRC Extension
       link: /specs/extensions/webirc.html
+      hide-if-no-support: true
 
     draft/labeled-response:
       name: draft/labeled-response

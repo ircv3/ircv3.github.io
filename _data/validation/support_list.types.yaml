@@ -16,6 +16,9 @@ support:
         link:
           type: string
           required: false
+        hide-if-no-support:
+          type: boolean
+          required: false
         ext_link:
           type: string
           required: false
