@@ -20,16 +20,17 @@
   projects:
     - "Unaffiliated"
 
+- nick: justJanne
+  github: justjanne
+  projects:
+    - "[Quassel](https://quassel-irc.org/)"
+    - "[Quasseldroid](https://quasseldroid.info/)"
+
 - nick: jwheare
   github: jwheare
   projects:
     - "[IRCCloud](https://www.irccloud.com/)"
   chair: true
-
-- nick: NoOneButMe
-  github: zadr
-  projects:
-    - "[Colloquy](http://colloquy.info/)"
 
 - nick: prawnsalad
   github: prawnsalad
