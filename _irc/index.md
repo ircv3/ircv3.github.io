@@ -159,6 +159,7 @@ Here are the client-only tags the IRCv3 WG defines:
 
 * [The `reply` client-only tag]({{site.baseurl}}/specs/client-tags/reply.html) **[draft]** marks that a given message is intended as a reply to a specific sent message.
 * [The `react` client-only tag]({{site.baseurl}}/specs/client-tags/react.html) **[draft]** sends a reaction to a specific sent message, allowing such functionality from other chat systems.
+* [The `typing` client-only tag]({{site.baseurl}}/specs/client-tags/typing.html) **[draft]** lets users know when another user is typing a message in their channel or private message.
 
 
 ## [Echo Message]({{site.baseurl}}/specs/extensions/echo-message-3.2.html)
@@ -282,6 +283,17 @@ connecting clients.
 The **work-in-progress** [SNI spec]({{site.baseurl}}/specs/core/sni-3.3.html) provides
 guidelines for clients and servers, allowing them to better detect the TLS
 certificate to send based on the server's hostname.
+
+
+## [Setname]({{site.baseurl}}/specs/extensions/setname.html)
+
+Setname allows clients to update their realname (gecos) after connecting to
+the server. This is especially useful as some clients use the realname information
+for avatars and an additional name field.
+
+The **work-in-progress** [setname spec]({{site.baseurl}}/specs/extensions/setname.html)
+describes how this is implemented, and how clients can update their names and see
+updates from other users.
 
 
 ## [Strict Transport Security (STS)]({{site.baseurl}}/specs/extensions/sts.html)

@@ -89,6 +89,12 @@ server-time:
   name: server-time Extension
   shortname: server-time
   url: /extensions/server-time-3.2.html
+setname:
+  fullname: IRCv3 setname Extension
+  name: setname Extension
+  shortname: setname
+  url: /extensions/setname.html
+  draft: true
 sni:
   fullname: Server Name Indication
   name: Server Name Indication
@@ -136,6 +142,12 @@ react-client-tag:
   name: React client tag
   shortname: React client tag
   url: /client-tags/react.html
+  draft: true
+typing-client-tag:
+  fullname: Typing client tag
+  name: Typing client tag
+  shortname: Typing client tag
+  url: /client-tags/typing.html
   draft: true
 
 # batches

@@ -346,8 +346,10 @@
           userhost-in-names:
           draft/labeled-response:
           draft/msgid:
+          draft/setname:
           +draft/react:
           +draft/reply:
+          +draft/typing:
         SASL:
           - plain
           - scram-sha-256
@@ -506,6 +508,7 @@
           userhost-in-names:
           draft/labeled-response:
           draft/msgid:
+          draft/setname:
         SASL:
           - plain
           - scram-sha-256
@@ -746,6 +749,7 @@
           userhost-in-names:
           draft/labeled-response:
           draft/msgid:
+          draft/setname:
           +draft/reply:
         SASL:
           - plain

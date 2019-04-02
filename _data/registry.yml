@@ -169,6 +169,10 @@
       specs:
         - server-time
       description: Lets clients show the actual time messages were received by the server.
+    - name: setname
+      specs:
+        - setname
+      description: Lets clients change their realname after connecting to the server.
     - name: tls
       specs:
         - starttls
@@ -210,6 +214,10 @@
       specs:
         - reply-client-tag
       description: Marks that a given message is intended as a reply to a specific sent message.
+    - name: +typing
+      specs:
+        - typing-client-tag
+      description: Allows users to see when other users are typing.
 
 - name: Batches
   include_numeric: false
@@ -279,7 +287,7 @@
       description: Allows clients to upgrade their plaintext connections to use TLS encryption.
     - name: TAGMSG
       specs: 
-        - message-tags-3.3
+        - message-tags
       description: Lets clients send messages with tags but no text content.
     - name: WEBIRC
       specs: 
