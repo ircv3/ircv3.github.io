@@ -80,6 +80,8 @@
           userhost-in-names:
           draft/labeled-response:
           draft/msgid:
+        batches:
+          draft/labeled-response:
       na:
         stable:
           starttls: supports sts
@@ -125,6 +127,8 @@
           sts: 3.0+
           userhost-in-names:
           webirc:
+        batches:
+          chathistory:
     - name: Nefarious IRCu
       # ref: https://github.com/evilnet/nefarious2/blob/2.0/ircd/m_cap.c#L59
       link: https://github.com/evilnet/nefarious2
@@ -165,6 +169,9 @@
           draft/labeled-response:
           draft/msgid:
           webirc:
+        batches:
+          chathistory:
+          draft/labeled-response:
       partial:
         stable:
           message-tags: "draft cap"

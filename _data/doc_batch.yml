@@ -1,0 +1,20 @@
+batches:
+  name: Batch Types
+  specs:
+    chathistory:
+      name: chathistory
+      description: chathistory batch type
+      link: /extensions/batch/chathistory-3.3.html
+    netjoin:
+      name: netjoin
+      description: netjoin batch type
+      url: /extensions/batch/netsplit-3.2.html
+    netsplit:
+      name: netsplit
+      description: netsplit batch type
+      url: /extensions/batch/netsplit-3.2.html
+
+    draft/labeled-response:
+      name: draft/labeled-response
+      description: draft/labeled-response batch type
+      link: /extensions/labeled-response.html
