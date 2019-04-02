@@ -143,7 +143,7 @@ stable:
 
     draft/labeled-response:
       name: draft/labeled-response
-      description: Labeled responses DRAFT.
+      description: Labeled responses DRAFT
       link: /specs/extensions/labeled-response.html
       draft: true
       caps:
@@ -152,23 +152,37 @@ stable:
         - draft/label
     draft/msgid:
       name: draft/msgid
-      description: Message IDs DRAFT.
+      description: Message IDs DRAFT
       link: /specs/extensions/message-ids.html
       draft: true
       tags:
         - draft/msgid
+    draft/setname:
+      name: draft/setname
+      description: setname DRAFT
+      link: /specs/extensions/setname.html
+      draft: true
+      caps:
+        - draft/setname
 
     +draft/react:
       name: +draft/react
-      description: React client tag DRAFT.
+      description: React client tag DRAFT
       link: /specs/client-tags/react.html
       draft: true
       tags:
         - +draft/react
     +draft/reply:
       name: +draft/reply
-      description: Reply client tag DRAFT.
+      description: Reply client tag DRAFT
       link: /specs/client-tags/reply.html
       draft: true
       tags:
         - +draft/reply
+    +draft/typing:
+      name: +draft/typing
+      description: Typing client tag DRAFT
+      link: /specs/client-tags/typing.html
+      draft: true
+      tags:
+        - +draft/typing
