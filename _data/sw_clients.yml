@@ -663,19 +663,21 @@
       #ref: https://github.com/sopel-irc/sopel/blob/v5.3.0/willie/coretasks.py#L357
       #     https://github.com/sopel-irc/sopel/blob/e5df2fa/sopel/coretasks.py#L345
       #     https://github.com/sopel-irc/sopel/issues/971
-      link: http://sopel.chat
+      #     https://github.com/sopel-irc/sopel/pull/1470
+      link: https://sopel.chat
       support:
         stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          extended-join:
-          multi-prefix:
-          sasl-3.1:
-          server-time:
+          account-notify: "6.2.0+"
+          account-tag: "6.2.0+"
+          away-notify: "6.2.0+"
+          cap-3.1: "4.1.0+"
+          cap-3.2: "6.0.0+"
+          cap-notify: "6.2.0+"
+          echo-message: "Git (7.0.0+)"
+          extended-join: "6.2.0+"
+          multi-prefix: "4.1.0+"
+          sasl-3.1: "4.1.0+"
+          server-time: "6.2.0+"
         SASL:
           - plain
     - name: Moon Moon
