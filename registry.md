@@ -58,7 +58,7 @@ This page lists the tags, capabilities, commands, batches and metadata keys that
 
 {% for type in site.data.standard_replies_registry %}
 <h2 id="{{ type.name | slugify }}">{{ type.name }}</h2>
-<table>
+<table class="fullwidth">
   <thead>
     <tr>
       <th style="text-align: center">Command</th>

@@ -100,3 +100,12 @@
       description: Indicates that the new realname was invalid
       specs:
         - setname
+
+# WARN
+- name: WARN codes
+  values:
+    - command:
+      code: ACCOUNT_REQUIRED
+      description: Indicates that the client should login into an account
+      specs:
+        - pr-acc
