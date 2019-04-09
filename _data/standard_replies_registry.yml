@@ -1,0 +1,102 @@
+# FAIL, WARN, and NOTE codes are listed here as they are just different enough from the
+# standard numeric/command/etc lists to be irritating to fit in there.
+
+# the entries are manually sorted here. in order, here's the ordering:
+# - empty commands
+# - * commands
+# - other commands, alphabetically
+#   - sorted by the code name, alphabetically
+
+# FAIL
+- name: FAIL codes
+  values:
+    - command:
+      code: ACCOUNT_REQUIRED
+      description: Indicates that the client must be logged into an account to execute the given command, connect to the server, or otherwise access some functionality
+      specs:
+        - pr-acc
+    - command: ACC
+      code: ACCOUNT_ALREADY_EXISTS
+      description: Indicates that the client cannot register because the given account name already exists
+      specs:
+        - pr-acc
+    - command: ACC
+      code: ACCOUNT_ALREADY_VERIFIED
+      description: Indicates that the client has already completed verification for their account registration
+      specs:
+        - pr-acc
+    - command: ACC
+      code: ACCOUNT_INVALID_VERIFY_CODE
+      description: Indicates that the given account registration verification code is incorrect
+      specs:
+        - pr-acc
+    - command: ACC
+      code: REG_INVALID_CALLBACK
+      description: Indicates that the given callback cannot be used (e.g. invalid email address, etc)
+      specs:
+        - pr-acc
+    - command: ACC
+      code: REG_INVALID_CRED_TYPE
+      description: Indicates that the given credential type is incorrect
+      specs:
+        - pr-acc
+    - command: ACC
+      code: REG_INVALID_CREDENTIAL
+      description: Indicates that the given credential (e.g. the passphrase) cannot be used
+      specs:
+        - pr-acc
+    - command: ACC
+      code: REG_MUST_USE_REGNICK
+      description: Indicates that the client must send `*` as the account name
+      specs:
+        - pr-acc
+    - command: ACC
+      code: REG_UNAVAILABLE
+      description: Indicates that account registration is currently unavailable
+      specs:
+        - pr-acc
+    - command: ACC
+      code: REG_UNSPECIFIED_ERROR
+      description: Indicates that account registration has otherwise failed
+      specs:
+        - pr-acc
+    - command: ACC
+      code: VERIFY_UNSPECIFIED_ERROR
+      description: Indicates that account registration verification has otherwise failed
+      specs:
+        - pr-acc
+    - command: BRB
+      code: CANNOT_BRB
+      description: Indicates that the BRB attempt was unsuccessful
+      specs:
+        - pr-resume
+    - command: RESUME
+      code: CANNOT_RESUME
+      description: Indicates that the resume attempt was otherwise unsuccessful
+      specs:
+        - pr-resume
+    - command: RESUME
+      code: INSECURE_SESSION
+      description: Indicates that either the old or new session was not connected securely
+      specs:
+        - pr-resume
+    - command: RESUME
+      code: INVALID_TOKEN
+      description: Indicates that the provided resume token was not correct
+      specs:
+        - pr-resume
+    - command: RESUME
+      code: REGISTRATION_IS_COMPLETED
+      description: Indicates that resume failed because connection registration has already completed
+      specs:
+        - pr-resume
+    - command: SETNAME
+      code: CANNOT_CHANGE_REALNAME
+      description: Indicates that the realname could not be otherwise changed
+      specs:
+        - setname
+    - command: SETNAME
+      code: INVALID_REALNAME
+      description: Indicates that the new realname was invalid
+      specs:
+        - setname
