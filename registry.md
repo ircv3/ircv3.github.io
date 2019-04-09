@@ -71,7 +71,7 @@ This page lists the tags, capabilities, commands, batches and metadata keys that
     {% assign last_cmd = nil %}
     {% for val in type.values %}
     <tr {% if last_cmd == val.command %}{% else %}{% assign last_cmd = val.command %}class="newblock"{% endif %}>
-      <td style="min-width: 5rem; text-align: center" {% if val.command == "*" %}title="Returned generally, not for a specific command"{% elsif val.command %}title="Returned from the {{ val.command }} command"{% else %}title="May be returned generally or for a specific command"{% endif %}>
+      <td style="min-width: 5rem; text-align: center" {% if val.command == "*" %}title="Returned generally, not from a specific command"{% elsif val.command %}title="Returned from the {{ val.command }} command"{% else %}title="May be returned generally or from a specific command"{% endif %}>
         <code>{{ val.command }}</code>
       </td>
       <td style="min-width: 10rem">
