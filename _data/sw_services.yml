@@ -9,7 +9,7 @@
     - name: Atheme (and forks)
       # ref: https://github.com/atheme/atheme/blob/09194357a0fc10afa78ed4138e5e5b241a06e826/doc/SASL
       # ref: https://github.com/atheme/atheme/blob/09194357a0fc10afa78ed4138e5e5b241a06e826/doc/SASL-SCRAM-SHA
-      link: http://atheme.net
+      link: http://atheme.github.io/
       support:
         SASL:
           external:
