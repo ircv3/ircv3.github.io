@@ -12,6 +12,9 @@ This page lists the tags, capabilities, commands, batches and metadata keys that
 {% for type in site.data.registry %}
 <a href="#{{ type.name | slugify }}">{{ type.name }}</a>
 {% endfor %}
+{% for type in site.data.standard_replies_registry %}
+<a href="#{{ type.name | slugify }}">{{ type.name }}</a>
+{% endfor %}
 </div>
 
 <hr>
@@ -36,9 +39,48 @@ This page lists the tags, capabilities, commands, batches and metadata keys that
       <td style="min-width: 10rem"{% if type.nomono %}{% else %} class="mono"{% endif %}>{{ val.name }}</td>
       {% if type.include_specs %}<td style="min-width: 13rem">
         {% for specname in val.specs %}
-          <a class="{% if site.data.specs[specname].deprecated %}deprecated{% endif %} {% if site.data.specs[specname].draft %}draft{% endif %}" title="{{ site.data.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}">{{ site.data.specs[specname].shortname }}</a>{% if site.data.specs[specname].deprecated %}<sup> [deprecated]</sup>{% endif %}{% if site.data.specs[specname].draft %}<sup> [draft]</sup>{% endif %}{% if forloop.last %}{% else %},{% endif %}
+          <a class="{% if site.data.specs[specname].deprecated %}deprecated{% endif %} {% if site.data.specs[specname].draft %}draft{% endif %}" title="{{ site.data.specs[specname].name }}" href="{% if site.data.specs[specname].full-url %}{{ site.data.specs[specname].full-url }}{% else %}{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}{% endif %}">{{ site.data.specs[specname].shortname }}</a>{% if site.data.specs[specname].deprecated %}<sup> [deprecated]</sup>{% endif %}{% if site.data.specs[specname].draft %}<sup> [draft]</sup>{% endif %}{% if forloop.last %}{% else %},{% endif %}
         {% endfor %}
       </td>{% endif %}
+      <td>
+        {{ val.description | markdownify | replace:"<p>","" | replace:"</p>","" }}
+        {% assign i = 1 %}
+        {% for link in val.links %}
+          <sup><a href="{{ site.baseurl }}{{ link }}">({{i}})</a></sup>
+          {% assign i = i | plus: 1 %}
+        {% endfor %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endfor %}
+
+{% for type in site.data.standard_replies_registry %}
+<h2 id="{{ type.name | slugify }}">{{ type.name }}</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Command</th>
+      <th>Code</th>
+      <th>Specs</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for val in type.values %}
+    <tr>
+      <td style="min-width: 5rem; text-align: center" {% if val.command == "*" %}title="Returned generally, not for a specific command"{% elsif val.command %}title="Returned from the {{ val.command }} command"{% else %}title="May be returned generally or for a specific command"{% endif %}>
+        <code>{{ val.command }}</code>
+      </td>
+      <td style="min-width: 10rem">
+        <code>{{ val.code }}</code>
+      </td>
+      <td>
+        {% for specname in val.specs %}
+          <a class="{% if site.data.specs[specname].deprecated %}deprecated{% endif %} {% if site.data.specs[specname].draft %}draft{% endif %} {% if site.data.specs[specname].proposed %}proposed{% endif %}" title="{{ site.data.specs[specname].name }}" href="{% if site.data.specs[specname].full-url %}{{ site.data.specs[specname].full-url }}{% else %}{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}{% endif %}">{{ site.data.specs[specname].shortname }}</a>{% if site.data.specs[specname].deprecated %}<sup> [deprecated]</sup>{% endif %}{% if site.data.specs[specname].draft %}<sup> [draft]</sup>{% endif %}{% if site.data.specs[specname].proposed %}<sup> [PR]</sup>{% endif %}{% if forloop.last %}{% else %},{% endif %}
+        {% endfor %}
+      </td>
       <td>
         {{ val.description | markdownify | replace:"<p>","" | replace:"</p>","" }}
         {% assign i = 1 %}

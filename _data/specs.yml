@@ -161,3 +161,18 @@ chathistory-batch:
   name: chathistory Batch Type
   shortname: chathistory Batch Type
   url: /extensions/batch/chathistory-3.3.html
+
+# pull requests
+pr-acc:
+  fullname: PR#276 - Account Management Framework
+  name: PR#276
+  shortname: PR#276
+  full-url: https://github.com/ircv3/ircv3-specifications/pull/276
+  proposed: true
+
+pr-resume:
+  fullname: PR#306 - resume Extension
+  name: PR#306
+  shortname: PR#306
+  full-url: https://github.com/ircv3/ircv3-specifications/pull/306
+  proposed: true
