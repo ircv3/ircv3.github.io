@@ -1,0 +1,16 @@
+root:
+  type: listofdicts
+  kids:
+    name:
+      type: string
+    values:
+      type: listofdicts
+      kids:
+        command:
+          type: string
+        code:
+          type: string
+        description:
+          type: string
+        specs:
+          type: listofstrings
