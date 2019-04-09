@@ -7,8 +7,12 @@ root:
       type: string
     shortname:
       type: string
+    full-url:
+      type: string
+      required: false
     url:
       type: string
+      required: false
     deprecated:
       type: boolean
       required: false
