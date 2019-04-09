@@ -16,6 +16,12 @@ Where there is only one client-to-server (C2S) protocol, there are a multitude o
 
 Almost every IRC server out there has its own, or its own variant of an, S2S protocol. As such, we're not working on the server-to-server protocol at this time. The only thing that users see is the client-to-server (C2S) protocol, which is why we're chartered to prototype, develop and specify extensions to it.
 
+### Why are you only chartered to work on the client protocol?
+
+The client protocol is how clients and servers talk to each other. The server-to-server side, as mentioned above, is very fragmented and features are handled in many different ways by server software.
+
+Plain and simple, a server's S2S protocol only needs to be understood by that same server software or services software. Even if we wanted to mandate server-to-server implementation details or architecture, servers could disregard these without clients being able to tell in any way (as the server would still expose the same protocol to the client). We don't work on the S2S protocols because they're an implementation detail. So long as those servers expose the client protocol, it's IRC.
+
 ### Who runs IRCv3?
 
 Originally, we were setup by the Atheme group to develop extensions to the IRC client protocol. These days, the direction of the IRCv3 WG is led by the [technical board]({{site.baseurl}}/charter.html).
