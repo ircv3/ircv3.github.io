@@ -161,6 +161,7 @@
           echo-message:
           extended-join:
           invite-notify:
+          message-tags: Git
           monitor:
           multi-prefix:
           server-time:
@@ -170,9 +171,6 @@
           draft/msgid:
           draft/setname:
           webirc:
-      partial:
-        stable:
-          message-tags: "draft cap"
       na:
         stable:
           starttls: supports sts
