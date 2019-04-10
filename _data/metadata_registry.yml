@@ -3,7 +3,7 @@
   values:
     - key: avatar
       description: Avatar that graphical clients can show alongside the user's name
-      format: URL with an optional `{size}` substitution denoting the size to load. `{size}` can be one of 128, 256, 512, 1024, or 2048
+      format: URL with an optional `{size}` substitution denoting the size to load in pixels
       examples: https://example.com/avatar/{size}/asdf.jpg
     - key: bot-url
       description: >-
