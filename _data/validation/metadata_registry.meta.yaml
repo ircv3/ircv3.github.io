@@ -1,0 +1,19 @@
+root:
+  type: listofdicts
+  kids:
+    name:
+      type: string
+    values:
+      type: listofdicts
+      kids:
+        key:
+          type: string
+        format:
+          type: string
+        description:
+          type: string
+        examples:
+          type: string
+        specs:
+          type: listofstrings
+          required: false

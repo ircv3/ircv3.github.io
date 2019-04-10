@@ -1,0 +1,28 @@
+# Metadata keys
+- name: Metadata Keys
+  values:
+    - key: avatar
+      description: Avatar that graphical clients can show alongside the user's name
+      format: URL with an optional `{size}` substitution denoting the size to load. `{size}` can be one of 128, 256, 512, 1024, or 2048
+      examples: https://example.com/avatar/{size}/asdf.jpg
+    - key: bot-url
+      description: >-
+        Lets bot runners provide a URL for more info on a bot user so they can be
+        identified as such in UI
+      format: Valid URL
+      examples: |-
+        https://example.com/bot-info.html
+    - key: display-name
+      description: >-
+        Alternative name to use instead of a nick for display purposes. Useful for gateways
+        to chat services that allow spaces and other characters in nicks. A nick is
+        required for standard protocol level stuff but can be less prominent in the UI
+      format: Any string
+      examples: |-
+        James Wheare
+        Posiden🦑
+    - key: status
+      description: Status text that can be shown for users without making them 'away'
+      format: Any string
+      examples: |-
+        Working from home
