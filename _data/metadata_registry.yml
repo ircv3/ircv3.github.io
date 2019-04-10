@@ -1,5 +1,5 @@
-# Metadata keys
-- name: Metadata Keys
+# User Metadata
+- name: User Metadata
   values:
     - key: avatar
       description: Avatar that graphical clients can show alongside the user's name
