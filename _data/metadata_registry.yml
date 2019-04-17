@@ -21,6 +21,8 @@
       examples: |-
         James Wheare
         Posiden🦑
+        ダニエル
+        Борис
     - key: status
       description: Status text that can be shown for users without making them 'away'
       format: Any string
