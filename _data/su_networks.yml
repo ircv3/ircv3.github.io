@@ -58,6 +58,7 @@
           userhost-in-names:
           draft/labeled-response:
           draft/msgid:
+          draft/setname:
       na:
         stable:
           starttls: direct TLS only
