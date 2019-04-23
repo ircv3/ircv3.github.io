@@ -65,12 +65,12 @@
       link: https://blog.irccloud.com/private-teams-servers/
       support:
         stable:
+          account-tag:
+          away-notify:
           batch:
           cap-3.1:
           cap-3.2:
           cap-notify:
-          account-tag:
-          away-notify:
           echo-message:
           extended-join:
           message-tags:

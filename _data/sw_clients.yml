@@ -593,6 +593,28 @@
 
 - name: Bouncers
   software:
+    - name: IRCCloud (as Server)
+      # maintainer: jwheare
+      link: https://blog.irccloud.com/bouncer/
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          echo-message:
+          extended-join:
+          message-tags:
+          monitor:
+          multi-prefix:
+          server-time:
+          sts:
+          userhost-in-names:
+          draft/labeled-response:
+          draft/msgid:
     - name: ZNC (as Server)
       # ref: https://github.com/znc/znc/blob/znc-1.6.1/src/IRCSock.cpp#L809
       #      https://github.com/znc/znc/blob/znc-1.6.1/src/Client.cpp#L886
