@@ -585,17 +585,17 @@
         - android
       support:
         stable:
-          account-notify: core 0.13+
-          away-notify: core 0.13+
-          cap-notify: core 0.13+
+          account-notify: 0.13+ core
+          away-notify: 0.13+ core
+          cap-notify: 0.13+ core
           cap-3.1:
-          cap-3.2: core 0.13+
-          chghost: core 0.13+
-          extended-join: core 0.13+
-          multi-prefix: core 0.13+
+          cap-3.2: 0.13+ core
+          chghost: 0.13+ core
+          extended-join: 0.13+ core
+          multi-prefix: 0.13+ core
           sasl-3.1:
-          sasl-3.2: core 0.13+
-          userhost-in-names: core 0.13+
+          sasl-3.2: 0.13+ core
+          userhost-in-names: 0.13+ core
         SASL:
           - external
           - plain
