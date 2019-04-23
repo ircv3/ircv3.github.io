@@ -3,7 +3,7 @@
     These networks are intended to test new IRCds and can also be used to test new client implementations of IRCv3 specifications.
   software:
     - name: InspIRCd Testnet
-      ircd-ver: InspIRCd-3.0
+      ircd-ver: InspIRCd-3
       net-address:
         link:  ircs://testnet.inspircd.org:6697/
         display: testnet.inspircd.org
@@ -21,21 +21,18 @@
           echo-message:
           extended-join:
           invite-notify:
+          message-tags:
           monitor:
           multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
           server-time:
           starttls:
+          sts:
           userhost-in-names:
           draft/labeled-response:
           draft/msgid:
-      partial:
-        stable:
-          message-tags: "draft cap"
-          sts: "draft/sts"
-      na:
-        stable:
-          sasl-3.1: No Services enabled
-          sasl-3.2: No Services enabled
+          draft/setname:
     - name: IRCCloud Teams
       ircd-ver: irccloud-prattle
       net-address:
