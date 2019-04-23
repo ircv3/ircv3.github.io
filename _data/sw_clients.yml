@@ -578,6 +578,26 @@
       partial:
         stable:
           message-tags: "draft cap"
+    - name: Quasseldroid
+      # ref: https://github.com/quassel/quassel/blob/0.13.0/src/common/irccap.h#L134-L166
+      link: https://quasseldroid.info/
+      os:
+        - android
+      support:
+        stable:
+          account-notify: 0.13+ core
+          away-notify: 0.13+ core
+          cap-notify: 0.13+ core
+          cap-3.1:
+          cap-3.2: 0.13+ core
+          chghost: 0.13+ core
+          extended-join: 0.13+ core
+          multi-prefix: 0.13+ core
+          sasl-3.1:
+          sasl-3.2: 0.13+ core
+          userhost-in-names: 0.13+ core
+        SASL:
+          - plain
     - name: YAAIC
       # ref: https://github.com/pocmo/Yaaic/blob/v1.1/app/src/main/java/org/jibble/pircbot/PircBot.java#L208
       link: http://www.yaaic.org
