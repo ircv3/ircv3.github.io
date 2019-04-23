@@ -597,7 +597,6 @@
           sasl-3.2: 0.13+ core
           userhost-in-names: 0.13+ core
         SASL:
-          - external
           - plain
     - name: YAAIC
       # ref: https://github.com/pocmo/Yaaic/blob/v1.1/app/src/main/java/org/jibble/pircbot/PircBot.java#L208
