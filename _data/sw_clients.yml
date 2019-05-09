@@ -16,16 +16,19 @@
           echo-message: 2.9+
           extended-join:
           invite-notify: 2.8+
+          message-tags: 3.4+
           monitor: 2.9+
           multi-prefix:
           sasl-3.1:
           sasl-3.2: 3.0+
           server-time:
           starttls:
+          sts: 3.4+
           userhost-in-names:
         SASL:
-          - external
-          - plain
+          external:
+          plain:
+          scram-sha-256: 3.4+
     - name: BitchX
       # ref: https://github.com/BitchX/BitchX/search?q=%22CAP+REQ%22&
       link: http://www.bitchx.com
