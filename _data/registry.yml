@@ -21,27 +21,27 @@
         - starttls
     - numeric: "730"
       name: RPL_MONONLINE
-      description: This numeric indicates to a client that either a target has just become online, or that a target they have added to their monitor list is online
+      description: Indicates to a client that either a target has just become online, or that a target they have added to their monitor list is online
       specs:
         - monitor
     - numeric: "731"
       name: RPL_MONOFFLINE
-      description: This numeric indicates to a client that either a target has just left the irc network, or that a target they have added to their monitor list is offline
+      description: Indicates to a client that either a target has just left the irc network, or that a target they have added to their monitor list is offline
       specs:
         - monitor
     - numeric: "732"
       name: RPL_MONLIST
-      description: This numeric returns the list of targets that the client has in their monitor list
+      description: Returns the list of targets that the client has in their monitor list
       specs:
         - monitor
     - numeric: "733"
       name: RPL_ENDOFMONLIST
-      description: This numeric indicates the end of a monitor list
+      description: Indicates the end of a monitor list
       specs:
         - monitor
     - numeric: "734"
       name: ERR_MONLISTFULL
-      description: This numeric indicates to a client that their monitor list is full
+      description: Indicates to a client that their monitor list is full
       specs:
         - monitor
     - numeric: "900"
