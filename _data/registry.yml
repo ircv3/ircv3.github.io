@@ -4,7 +4,7 @@
   values:
     - numeric: "005"
       name: RPL_ISUPPORT
-      description: Lists features supported by the server, sent as connection registration is completed.
+      description: Lists features supported by the server; sent as connection registration is completed.
       links:
         - https://modern.ircdocs.horse/#feature-advertisement
         - https://modern.ircdocs.horse/#rplisupport-005
@@ -31,7 +31,7 @@
         - monitor
     - numeric: "732"
       name: RPL_MONLIST
-      description: This numeric is returns the list of targets that the client has in their monitor list
+      description: This numeric returns the list of targets that the client has in their monitor list
       specs:
         - monitor
     - numeric: "733"
@@ -41,7 +41,7 @@
         - monitor
     - numeric: "734"
       name: ERR_MONLISTFULL
-      description: This numeric is indicates to a client that their monitor list is full
+      description: This numeric indicates to a client that their monitor list is full
       specs:
         - monitor
     - numeric: "900"
@@ -76,7 +76,7 @@
         - sasl-3.2
     - numeric: "905"
       name: ERR_SASLTOOLONG
-      description: Indicates that SASL auth failed because the client-sent `AUTHENTICATE` command was too long (i.e. the parameter longer than 400 bytes)
+      description: Indicates that SASL auth failed because the client-sent `AUTHENTICATE` command was too long (i.e. the parameter was longer than 400 bytes)
       specs:
         - sasl-3.1
         - sasl-3.2
