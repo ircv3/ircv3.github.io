@@ -79,8 +79,10 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
-          draft/msgid:
           draft/setname:
+      partial:
+        stable:
+          msgid: "draft tag"
       na:
         stable:
           starttls: supports sts
@@ -168,9 +170,11 @@
           userhost-in-names:
           sts:
           draft/labeled-response:
-          draft/msgid:
           draft/setname:
           webirc:
+      partial:
+        stable:
+          msgid: "draft tag"
       na:
         stable:
           starttls: supports sts

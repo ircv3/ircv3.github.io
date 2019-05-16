@@ -57,8 +57,10 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
-          draft/msgid:
           draft/setname:
+      partial:
+        stable:
+          msgid: "draft tag"
       na:
         stable:
           starttls: direct TLS only
@@ -89,10 +91,10 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
-          draft/msgid:
       partial:
         stable:
           message-tags: "draft cap"
+          msgid: "draft tag"
 
 - name: Networks
   note: >
