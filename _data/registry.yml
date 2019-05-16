@@ -200,7 +200,7 @@
       description: Allows clients to correlate requests with server responses
     - name: msgid
       specs: 
-        - message-ids
+        - msgid
       description: Provides a server supplied unique message ID
     - name: time
       specs:
