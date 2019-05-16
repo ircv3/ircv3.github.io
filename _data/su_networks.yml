@@ -23,6 +23,7 @@
           invite-notify:
           message-tags:
           monitor:
+          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
@@ -31,7 +32,6 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
-          draft/msgid:
           draft/setname:
     - name: IRCCloud Teams
       ircd-ver: irccloud-prattle
@@ -57,8 +57,10 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
-          draft/msgid:
           draft/setname:
+      partial:
+        stable:
+          msgid: "draft tag"
       na:
         stable:
           starttls: direct TLS only
@@ -89,10 +91,10 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
-          draft/msgid:
       partial:
         stable:
           message-tags: "draft cap"
+          msgid: "draft tag"
 
 - name: Networks
   note: >

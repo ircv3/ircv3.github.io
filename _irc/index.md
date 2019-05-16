@@ -205,8 +205,8 @@ identifier on messages (including `PRIVMSG`/`NOTICE`). This allows clients to
 build new features that refer to specific messages, with the knowledge that
 these identifiers will be unique.
 
-The **work-in-progress** [`message-ids` spec]({{site.baseurl}}/specs/extensions/message-ids.html)
-covers the `draft/msgid` tag, how servers should generate message IDs and how
+The [`message-ids` spec]({{site.baseurl}}/specs/extensions/message-ids.html)
+covers the `msgid` tag, how servers should generate message IDs and how
 clients should treat them.
 
 **Note:** Message IDs themselves are used as a foundation for other extensions

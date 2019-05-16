@@ -63,7 +63,6 @@ msgid:
   name: Message IDs
   shortname: Message IDs
   url: /extensions/message-ids.html
-  draft: true
 monitor:
   fullname: IRCv3.2 Monitor
   name: Monitor
