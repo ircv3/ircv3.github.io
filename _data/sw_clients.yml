@@ -341,6 +341,7 @@
           invite-notify:
           message-tags:
           monitor:
+          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
@@ -348,7 +349,6 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
-          draft/msgid:
           draft/setname:
           +draft/react:
           +draft/reply:
@@ -503,6 +503,7 @@
           extended-join:
           invite-notify:
           message-tags:
+          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
@@ -510,7 +511,6 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
-          draft/msgid:
           draft/setname:
         SASL:
           - plain
@@ -788,6 +788,7 @@
           invite-notify:
           message-tags:
           monitor:
+          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
@@ -795,7 +796,6 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
-          draft/msgid:
           draft/setname:
           +draft/reply:
         SASL:

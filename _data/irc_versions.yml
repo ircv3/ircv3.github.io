@@ -91,6 +91,13 @@ stable:
       name: Monitor
       description: Monitor
       link: /specs/core/monitor-3.2.html
+    msgid:
+      name: msgid
+      description: Message IDs
+      link: /specs/extensions/message-ids.html
+      tags:
+        - msgid
+        - draft/msgid
     multi-prefix:
       name: multi-prefix
       description: multi-prefix Extension
@@ -150,13 +157,6 @@ stable:
         - draft/labeled-response
       tags:
         - draft/label
-    draft/msgid:
-      name: draft/msgid
-      description: Message IDs DRAFT
-      link: /specs/extensions/message-ids.html
-      draft: true
-      tags:
-        - draft/msgid
     draft/setname:
       name: draft/setname
       description: setname DRAFT
