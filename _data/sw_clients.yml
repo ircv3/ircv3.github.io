@@ -220,8 +220,8 @@
           multi-prefix: 0.13+
           sasl-3.1:
           sasl-3.2: 0.13+
-          userhost-in-names: 0.13+
           server-time: Git
+          userhost-in-names: 0.13+
         SASL:
           - external
           - plain
