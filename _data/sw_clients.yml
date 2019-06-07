@@ -634,14 +634,12 @@
           extended-join:
           message-tags:
           monitor:
+          msgid:
           multi-prefix:
           server-time:
           sts:
           userhost-in-names:
           draft/labeled-response:
-      partial:
-        stable:
-          msgid: "draft tag"
     - name: ZNC (as Server)
       # ref: https://github.com/znc/znc/blob/znc-1.6.1/src/IRCSock.cpp#L809
       #      https://github.com/znc/znc/blob/znc-1.6.1/src/Client.cpp#L886

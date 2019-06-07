@@ -53,14 +53,12 @@
           extended-join:
           message-tags:
           monitor:
+          msgid:
           multi-prefix:
           sts:
           userhost-in-names:
           draft/labeled-response:
           draft/setname:
-      partial:
-        stable:
-          msgid: "draft tag"
       na:
         stable:
           starttls: direct TLS only
