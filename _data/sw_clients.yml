@@ -623,7 +623,6 @@
       link: https://blog.irccloud.com/bouncer/
       support:
         stable:
-          account-notify:
           account-tag:
           away-notify:
           batch:
