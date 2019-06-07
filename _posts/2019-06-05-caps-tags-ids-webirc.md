@@ -10,7 +10,7 @@ We've ratified the [Message Tags spec](https://ircv3.net/specs/extensions/messag
 
 We've also ratified the [Message IDs spec](https://ircv3.net/specs/extensions/message-ids.html), which lets servers assign IDs to chat messages and any other events sent to clients. This, for example, lets users react or refer to specific messages.
 
-[The WebIRC command](https://ircv3.net/specs/extensions/message-ids.html) has been documented and extended as a formal standard, letting gateways now flag when an incoming connection is using TLS.
+[The WebIRC command](https://ircv3.net/specs/extensions/webirc.html) has been documented and extended as a formal standard, letting gateways now flag when an incoming connection is using TLS.
 
 The [STARTTLS command](https://ircv3.net/specs/extensions/tls-3.1.html) has been **deprecated** in favour of `sts`. The [Strict Transport Security extension](https://ircv3.net/specs/extensions/sts.html) is recommended as it can also protect connections after the initial one. We're also exploring options around preload lists and other ways of protecting users' connections before plaintext hits the wire.
 
