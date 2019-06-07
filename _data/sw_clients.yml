@@ -799,6 +799,7 @@
           draft/labeled-response:
           draft/setname:
           +draft/reply:
+          +draft/typing:
         SASL:
           - plain
           - external
