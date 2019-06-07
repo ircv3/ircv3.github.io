@@ -727,11 +727,12 @@
         SASL:
           - plain
     - name: Moon Moon
-      # ref: https://github.com/ChickenNuggers/Moon-Moon/blob/master/plugins/data.moon
-      #      https://github.com/ChickenNuggers/Moon-Moon/blob/master/plugins/output.moon
-      #      https://github.com/ChickenNuggers/Moon-Moon/blob/master/plugins/base.moon
-      #      https://github.com/ChickenNuggers/Moon-Moon/blob/master/irc.moon
-      link: https://github.com/ChickenNuggers/Moon-Moon
+      # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/irc.moon
+      # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/batch.moon
+      # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/cap.moon
+      # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/data.moon
+      # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/sasl.moon
+      link: https://github.com/wiseguiz/Moon-Moon
       support:
         stable:
           account-notify:
@@ -745,9 +746,18 @@
           echo-message:
           extended-join:
           invite-notify:
+          message-tags:
+          msgid:
           multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
           server-time:
           userhost-in-names:
+          +draft/reply:
+          +draft/typing:
+        SASL:
+          - plain
+          - external
     - name: PyLink (clientbot)
       #ref: IRCV3_CAPABILITIES in https://github.com/GLolol/PyLink/blob/devel/protocols/clientbot.py
       link: https://code.overdrivenetworks.com/pylink
