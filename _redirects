@@ -1,0 +1,12 @@
+# Redirect domain aliases to primary domain
+https://ircv3.org/*                    https://ircv3.net/:splat 301!
+https://ircv3.org/documentation/*      https://ircv3.net/specs/documentation/:splat 301!
+https://ircv3.org/participants         https://ircv3.net/participation.html 301!
+https://ircv3.org/extensions           https://ircv3.net/irc/ 301!
+https://ircv3.org/extensions/*         https://ircv3.net/specs/extensions/:splat 301!
+https://ircv3.org/specification        https://ircv3.net/irc/ 301!
+https://ircv3.org/specification/*      https://ircv3.net/specs/core/:splat 301!
+
+
+# Redirect default Netlify subdomain to primary domain
+https://ircv3.netlify.com/*            https://ircv3.net/:splat 301!
