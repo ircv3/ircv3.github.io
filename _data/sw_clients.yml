@@ -476,11 +476,15 @@
         - ios
       support:
         stable:
+          account-notify:
           away-notify:
           cap-3.1:
           cap-3.2:
           cap-notify:
+          chghost:
+          message-tags:
           sasl-3.1:
+          sasl-3.2:
           server-time:
         SASL:
           - plain
