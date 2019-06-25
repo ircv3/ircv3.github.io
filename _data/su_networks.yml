@@ -194,3 +194,31 @@
       partial:
         stable:
           sts: "draft/sts"
+    - name: tilde.chat
+      ircd-ver: inspircd-3.1.0
+      net-address:
+        link: ircs://irc.tilde.chat:6697/
+        display: irc.tilde.chat
+      link: https://tilde.chat/
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          starttls:
+          userhost-in-names:
