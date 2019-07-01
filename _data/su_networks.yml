@@ -222,3 +222,4 @@
           server-time:
           starttls:
           userhost-in-names:
+          sts:
