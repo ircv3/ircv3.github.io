@@ -511,31 +511,6 @@
           sasl-3.1:
         SASL:
           - plain
-    - name: Mutter
-      # maintainer: blipz
-      link: https://www.mutterirc.com/
-      os:
-        - ios
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          cap-3.1:
-          cap-3.2:
-          away-notify:
-          batch:
-          cap-notify:
-          chghost:
-          extended-join:
-          invite-notify:
-          monitor:
-          multi-prefix:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          userhost-in-names:
-        SASL:
-          - plain
     - name: Palaver
       # maintainer: kylef
       link: https://palaverapp.com/
