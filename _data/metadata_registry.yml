@@ -4,7 +4,7 @@
     - key: avatar
       description: Avatar that graphical clients can show alongside the user's name
       format: URL with an optional `{size}` substitution denoting the size to load in pixels
-      examples: https://example.com/avatar/{size}/asdf.jpg
+      examples: https://example.com/avatar/16/asdf.jpg
     - key: bot
       description: >-
         Lets bot runners provide the name of their bot software. Setting this key
