@@ -8,7 +8,7 @@ page-header: >
 
 This page lists the tags, capabilities, commands, batches and metadata keys that have been defined by the IRCv3 Working Group, are described by our specifications, or that we otherwise recommend using.
 
-<div class="irc-sw-list flexy-list">
+<div class="irc-sw-list flexy-list" style="max-width: 60rem;">
 {% for type in site.data.registry %}
 <a href="#{{ type.name | slugify }}">{{ type.name }}</a>
 {% endfor %}
