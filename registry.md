@@ -8,8 +8,11 @@ page-header: >
 
 This page lists the tags, capabilities, commands, batches and metadata keys that have been defined by the IRCv3 Working Group, are described by our specifications, or that we otherwise recommend using.
 
-<div class="irc-sw-list flexy-list">
+<div class="irc-sw-list flexy-list" style="max-width: 60rem;">
 {% for type in site.data.registry %}
+<a href="#{{ type.name | slugify }}">{{ type.name }}</a>
+{% endfor %}
+{% for type in site.data.metadata_registry %}
 <a href="#{{ type.name | slugify }}">{{ type.name }}</a>
 {% endfor %}
 {% for type in site.data.standard_replies_registry %}
@@ -42,6 +45,43 @@ This page lists the tags, capabilities, commands, batches and metadata keys that
           <a class="{% if site.data.specs[specname].deprecated %}deprecated{% endif %} {% if site.data.specs[specname].draft %}draft{% endif %}" title="{{ site.data.specs[specname].name }}" href="{% if site.data.specs[specname].full-url %}{{ site.data.specs[specname].full-url }}{% else %}{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}{% endif %}">{{ site.data.specs[specname].shortname }}</a>{% if site.data.specs[specname].deprecated %}<sup> [deprecated]</sup>{% endif %}{% if site.data.specs[specname].draft %}<sup> [draft]</sup>{% endif %}{% if forloop.last %}{% else %},{% endif %}
         {% endfor %}
       </td>{% endif %}
+      <td>
+        {{ val.description | markdownify | replace:"<p>","" | replace:"</p>","" }}
+        {% assign i = 1 %}
+        {% for link in val.links %}
+          <sup><a href="{{ site.baseurl }}{{ link }}">({{i}})</a></sup>
+          {% assign i = i | plus: 1 %}
+        {% endfor %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endfor %}
+
+{% for type in site.data.metadata_registry %}
+<h2 id="{{ type.name | slugify }}">{{ type.name }}</h2>
+<table class="fullwidth">
+  <thead>
+    <tr>
+      <th style="text-align: center">Key</th>
+      <th>Format</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for val in type.values %}
+    <tr>
+      <td style="min-width: 5rem; white-space: nowrap">
+        <code>{{ val.key }}</code>
+      </td>
+      <td style="min-width: 10rem">
+        {% if val.format-mono %}<code>{{ val.format }}</code>{% else %}{{ val.format | markdownify | replace:"<p>","" | replace:"</p>","" }}{% endif %}
+        <br>
+        {% if val.examples %}
+        <code class="examples">{{ val.examples | newline_to_br }}</code>
+        {% endif %}
+      </td>
       <td>
         {{ val.description | markdownify | replace:"<p>","" | replace:"</p>","" }}
         {% assign i = 1 %}

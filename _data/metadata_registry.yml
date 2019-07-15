@@ -1,0 +1,40 @@
+# User Metadata
+- name: User Metadata
+  values:
+    - key: avatar
+      description: Avatar that graphical clients can show alongside the user's name
+      format: URL with an optional `{size}` substitution denoting the size to load in pixels
+      examples: https://example.com/avatar/16/asdf.jpg
+    - key: bot
+      description: >-
+        Lets bot runners provide the name of their bot software. Setting this key
+        identifies the client as a bot.
+      format: Any string
+      examples: |-
+        PacketBot v1.2
+        JitiBot
+        melo3
+    - key: display-name
+      description: >-
+        Alternative name to use instead of a nick for display purposes. Useful for gateways
+        to chat services that allow spaces and other characters in nicks. A nick is
+        required for standard protocol level stuff but can be less prominent in the UI.
+        May contain emoji.
+      format: Any string
+      examples: |-
+        James Wheare
+        Posiden
+        ダニエル
+        Борис
+    - key: homepage
+      description: >-
+        URL of a webpage that contains more information about the user/bot themselves,
+        or bot software in use.
+      format: Valid URL
+      examples: |-
+        https://example.com/bot-info.html
+    - key: status
+      description: Status text that can be shown for users without making them 'away'
+      format: Any string
+      examples: |-
+        Working from home
