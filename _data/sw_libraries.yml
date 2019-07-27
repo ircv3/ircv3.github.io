@@ -35,6 +35,8 @@
           - plain
     - name: girc
       # ref: https://github.com/lrstanley/girc/blob/master/cap.go
+      #      https://github.com/lrstanley/girc/blob/master/cap_sasl.go
+      #      https://github.com/lrstanley/girc/blob/master/cap_tags.go
       #      https://github.com/lrstanley/girc/blob/master/builtin.go
       link: https://github.com/lrstanley/girc
       language: Go
@@ -51,20 +53,19 @@
           echo-message:
           extended-join:
           invite-notify:
+          message-tags:
           monitor:
+          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
           server-time:
+          sts:
           userhost-in-names:
           webirc:
         SASL:
           - external
           - plain
-      partial:
-        stable:
-          message-tags: "draft cap"
-          msgid: "draft tag"
     - name: irc-framework
       # ref: https://github.com/kiwiirc/irc-framework/blob/master/docs/ircv3.md
       link: https://github.com/kiwiirc/irc-framework
