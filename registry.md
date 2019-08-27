@@ -97,7 +97,7 @@ This page lists the tags, capabilities, commands, batches and metadata keys that
 {% endfor %}
 
 {% for type in site.data.standard_replies_registry %}
-<h2 id="{{ type.name | slugify }}">{{ type.name }}</h2>
+<h2 id="{{ type.name | slugify }}">{{ type.name }} <a href="{{ site.baseurl }}/specs/extensions/standard-replies.html">[spec]</a></h2>
 <table class="fullwidth">
   <thead>
     <tr>
