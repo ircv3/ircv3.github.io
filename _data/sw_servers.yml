@@ -98,38 +98,6 @@
           multi-prefix:
           userhost-in-names:
           webirc:
-    - name: InspIRCd
-      # maintainer: saberuk
-      # ref: https://github.com/inspircd/inspircd/search?q="Cap%3A%3ACapability"
-      #      https://github.com/inspircd/inspircd-extras/search?q=GenericCap
-      link: http://www.inspircd.org
-      support:
-        stable:
-          account-notify:
-          account-tag: 3.0+
-          away-notify:
-          batch: 3.0+
-          cap-3.1:
-          cap-3.2: 3.0+
-          cap-notify: 3.0+
-          chghost: 3.0+
-          echo-message: 3.0+
-          extended-join:
-          invite-notify: 3.0+
-          message-tags: 3.0+
-          monitor: 3.0+
-          msgid: 3.1+
-          multi-prefix:
-          sasl-3.1:
-          sasl-3.2: 3.0+
-          server-time: 3.0+
-          starttls:
-          sts: 3.0+
-          userhost-in-names:
-          webirc:
-      partial:
-        stable:
-          draft/setname:
     - name: Nefarious IRCu
       # ref: https://github.com/evilnet/nefarious2/blob/2.0/ircd/m_cap.c#L59
       link: https://github.com/evilnet/nefarious2
