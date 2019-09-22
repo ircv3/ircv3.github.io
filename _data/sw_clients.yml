@@ -542,6 +542,7 @@
           sts:
           userhost-in-names:
           draft/labeled-response:
+          draft/setname:
         SASL:
           - plain
       partial:
