@@ -162,7 +162,7 @@
           echo-message:
           extended-join:
           invite-notify:
-          message-tags: Git
+          message-tags:
           monitor:
           msgid:
           multi-prefix:
