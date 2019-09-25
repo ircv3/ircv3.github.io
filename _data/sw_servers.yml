@@ -164,6 +164,7 @@
           invite-notify:
           message-tags: Git
           monitor:
+          msgid:
           multi-prefix:
           server-time:
           userhost-in-names:
@@ -171,9 +172,6 @@
           draft/labeled-response:
           draft/setname:
           webirc:
-      partial:
-        stable:
-          msgid: "draft tag"
       na:
         stable:
           starttls: supports sts
