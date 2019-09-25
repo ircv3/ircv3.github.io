@@ -162,8 +162,9 @@
           echo-message:
           extended-join:
           invite-notify:
-          message-tags: Git
+          message-tags:
           monitor:
+          msgid:
           multi-prefix:
           server-time:
           userhost-in-names:
@@ -171,9 +172,6 @@
           draft/labeled-response:
           draft/setname:
           webirc:
-      partial:
-        stable:
-          msgid: "draft tag"
       na:
         stable:
           starttls: supports sts
