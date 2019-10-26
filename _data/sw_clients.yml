@@ -200,16 +200,19 @@
           - external
           - plain
     - name: Mozilla Thunderbird
-      # ref: irc{CAP,SASL,MultiPrefix,WatchMonitor}.jsm files in
-      #      http://dxr.mozilla.org/comm-central/source/chat/protocols/irc/
-      link: https://www.mozilla.org/thunderbird
+      # ref: irc{CAP,MultiPrefix,SASL,ServerTime,WatchMonitor}.jsm files in
+      #      https://searchfox.org/comm-central/source/chat/protocols/irc/
+      link: https://www.thunderbird.net/
       support:
         stable:
+          cap-notify: 72.0+
           cap-3.1:
+          cap-3.2: 72.0+
           monitor:
           multi-prefix:
           sasl-3.1:
-          server-time: 60.0
+          sasl-3.2: 72.0+
+          server-time: 60.0+
         SASL:
           - plain
     - name: Quassel
