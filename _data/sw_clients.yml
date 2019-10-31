@@ -378,6 +378,7 @@
           batch:
           cap-3.1:
           cap-3.2:
+          cap-notify:
           chghost:
           echo-message:
           extended-join:
@@ -400,6 +401,7 @@
           batch:
           cap-3.1:
           cap-3.2:
+          cap-notify:
           chghost:
           echo-message:
           extended-join:
