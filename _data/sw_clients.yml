@@ -200,7 +200,7 @@
           - external
           - plain
     - name: Mozilla Thunderbird
-      # ref: irc{CAP,MultiPrefix,SASL,ServerTime,WatchMonitor}.jsm files in
+      # ref: irc{CAP,EchoMessage,MultiPrefix,SASL,ServerTime,WatchMonitor}.jsm files in
       #      https://searchfox.org/comm-central/source/chat/protocols/irc/
       link: https://www.thunderbird.net/
       support:
@@ -208,6 +208,7 @@
           cap-notify: 72.0+
           cap-3.1:
           cap-3.2: 72.0+
+          echo-message: 73.0+
           monitor:
           multi-prefix:
           sasl-3.1:
