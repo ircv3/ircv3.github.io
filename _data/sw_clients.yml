@@ -310,6 +310,7 @@
         SASL:
           - ecdsa-nist256p-challenge
           - plain
+          - scram-sha-256
     - name: Glirc
       # ref: https://github.com/glguy/irc-core/blob/v2/src/Client/State/Network.hs#L686-L687
       link: https://hackage.haskell.org/package/glirc
@@ -328,7 +329,7 @@
           server-time:
           sts:
           userhost-in-names:
-          
+
         SASL:
           - plain
           - ecdsa-nist256p-challenge
