@@ -646,6 +646,48 @@
         SASL:
           external:
           plain:
+    - name: KiwiBNC (as Server)
+      link: https://github.com/kiwiirc/kiwibnc
+      support:
+        stable:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          echo-message:
+          extended-join:
+          invite-notify:
+          message-tags:
+          msgid:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
+    - name: KiwiBNC (as Client)
+      link: https://github.com/kiwiirc/kiwibnc
+      support:
+        stable:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          echo-message:
+          extended-join:
+          invite-notify:
+          message-tags:
+          msgid:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
 
 - name: Bots
   software:
