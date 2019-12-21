@@ -709,7 +709,9 @@
           extended-join:
           invite-notify:
           metadata:
+          message-tags:
           monitor:
+          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
