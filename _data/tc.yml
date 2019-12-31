@@ -38,8 +38,9 @@
     - "[Kiwi IRC](https://kiwiirc.com/)"
 
 - nick: Sadie
-  github: SaberUK
+  github: SadieCat
   projects:
+    - "[Anope](https://www.anope.org/)"
     - "[InspIRCd](https://www.inspircd.org/)"
 
 - nick: TingPing

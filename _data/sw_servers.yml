@@ -99,7 +99,7 @@
           userhost-in-names:
           webirc:
     - name: InspIRCd
-      # maintainer: saberuk
+      # maintainer: Sadie
       # ref: https://github.com/inspircd/inspircd/search?q="Cap%3A%3ACapability"
       #      https://github.com/inspircd/inspircd-extras/search?q=GenericCap
       link: http://www.inspircd.org
