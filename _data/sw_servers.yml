@@ -210,20 +210,27 @@
     - name: UnrealIRCd
       # ref: ClientCapabilityAdd() calls in https://github.com/unrealircd/unrealircd/search?q=ClientCapabilityAdd
       #      (src/modules/m_cap.c has four matches, two not shown)
-      link: http://www.unrealircd.org
+      link: https://www.unrealircd.org
       support:
         stable:
+          account-notify:
+          account-tag: 5.0+
+          away-notify:
+          batch: 5.0+
           cap-3.1:
           cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message: 5.0+
+          extended-join:
+          message-tags: 5.0+
+          msgid: 5.0+
+          multi-prefix:
           sasl-3.1:
           sasl-3.2:
-          cap-notify:
-          account-notify:
-          away-notify:
-          chghost:
-          extended-join:
-          multi-prefix:
+          server-time: 5.0+
           starttls:
           sts:
           userhost-in-names:
           webirc:
+          draft/labeled-response: 5.0+
