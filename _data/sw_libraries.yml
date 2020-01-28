@@ -82,6 +82,8 @@
           echo-message:
           extended-join:
           invite-notify:
+          message-tags:
+          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
@@ -89,10 +91,6 @@
           userhost-in-names:
         SASL:
           - plain
-      partial:
-        stable:
-          message-tags: "draft cap"
-          msgid: "draft tag"
     - name: Kitteh IRC Client Library
       # ref: http://kicl.kitteh.org/en/stable/ircv3/
       link: https://github.com/KittehOrg/KittehIRCClientLib

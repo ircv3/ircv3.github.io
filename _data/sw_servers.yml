@@ -73,13 +73,13 @@
           cap-notify:
           echo-message:
           extended-join:
+          labeled-response:
           message-tags:
           monitor:
           msgid:
           multi-prefix:
           sts:
           userhost-in-names:
-          draft/labeled-response:
           draft/setname:
       na:
         stable:
@@ -116,6 +116,7 @@
           echo-message: 3.0+
           extended-join:
           invite-notify: 3.0+
+          labeled-response: 3.5+
           message-tags: 3.0+
           monitor: 3.0+
           msgid: 3.1+
@@ -162,6 +163,7 @@
           echo-message:
           extended-join:
           invite-notify:
+          labeled-response: Git
           message-tags:
           monitor:
           msgid:
@@ -169,7 +171,6 @@
           server-time:
           userhost-in-names:
           sts:
-          draft/labeled-response:
           draft/setname:
           webirc:
       na:
@@ -233,4 +234,6 @@
           sts:
           userhost-in-names:
           webirc:
-          draft/labeled-response: 5.0+
+      partial:
+        stable:
+          labeled-response: "5.0+ draft cap"
