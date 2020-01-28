@@ -193,8 +193,8 @@ sent commands. This allows for much richer/accurate implementations of
 Additionally, this should also assist bouncers with correctly directing
 responses to the right connected client.
 
-The **work-in-progress** [`labeled-response` spec]({{site.baseurl}}/specs/extensions/labeled-response.html)
-covers the `draft/label` tag, and how clients should send and will receive
+The [`labeled-response` spec]({{site.baseurl}}/specs/extensions/labeled-response.html)
+covers the `label` tag, and how clients should send and will receive
 labels.
 
 
