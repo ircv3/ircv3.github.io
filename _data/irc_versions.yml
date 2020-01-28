@@ -76,6 +76,14 @@ stable:
       link: /specs/extensions/invite-notify-3.2.html
       caps:
         - invite-notify
+    labeled-response:
+      name: labeled-response
+      description: Labeled responses
+      link: /specs/extensions/labeled-response.html
+      caps:
+        - labeled-response
+      tags:
+        - label
     message-tags:
       name: message-tags
       description: Message Tags capability
@@ -148,15 +156,6 @@ stable:
       link: /specs/extensions/webirc.html
       hide-if-no-support: true
 
-    draft/labeled-response:
-      name: draft/labeled-response
-      description: Labeled responses DRAFT
-      link: /specs/extensions/labeled-response.html
-      draft: true
-      caps:
-        - draft/labeled-response
-      tags:
-        - draft/label
     draft/setname:
       name: draft/setname
       description: setname DRAFT

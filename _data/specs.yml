@@ -57,7 +57,6 @@ label:
   name: Labeled responses
   shortname: Labeled responses
   url: /extensions/labeled-response.html
-  draft: true
 msgid:
   fullname: IRCv3 Message IDs
   name: Message IDs
