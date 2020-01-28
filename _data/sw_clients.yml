@@ -355,13 +355,13 @@
           message-tags:
           monitor:
           msgid:
+          labeled-response:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
           server-time:
           sts:
           userhost-in-names:
-          draft/labeled-response:
           draft/setname:
           +draft/react:
           +draft/reply:
@@ -501,6 +501,7 @@
           echo-message:
           extended-join:
           invite-notify:
+          labeled-response:
           message-tags:
           msgid:
           multi-prefix:
@@ -509,7 +510,6 @@
           server-time:
           sts:
           userhost-in-names:
-          draft/labeled-response:
           draft/setname:
         SASL:
           - plain
@@ -540,6 +540,7 @@
           chghost:
           echo-message:
           invite-notify:
+          labeled-response: Git
           monitor:
           multi-prefix:
           sasl-3.1:
@@ -548,7 +549,6 @@
           starttls:
           sts:
           userhost-in-names:
-          draft/labeled-response:
           draft/setname:
         SASL:
           - plain
@@ -605,6 +605,7 @@
           cap-notify:
           echo-message:
           extended-join:
+          labeled-response:
           message-tags:
           monitor:
           msgid:
@@ -612,7 +613,6 @@
           server-time:
           sts:
           userhost-in-names:
-          draft/labeled-response:
     - name: ZNC (as Server)
       # ref: https://github.com/znc/znc/blob/znc-1.6.1/src/IRCSock.cpp#L809
       #      https://github.com/znc/znc/blob/znc-1.6.1/src/Client.cpp#L886
@@ -815,6 +815,7 @@
           echo-message:
           extended-join:
           invite-notify:
+          labeled-response:
           message-tags:
           monitor:
           msgid:
@@ -824,7 +825,6 @@
           server-time:
           sts:
           userhost-in-names:
-          draft/labeled-response:
           draft/setname:
           +draft/reply:
           +draft/typing:

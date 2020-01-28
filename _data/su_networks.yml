@@ -23,6 +23,7 @@
           invite-notify:
           message-tags:
           monitor:
+          labeled-response:
           msgid:
           multi-prefix:
           sasl-3.1:
@@ -31,7 +32,6 @@
           starttls:
           sts:
           userhost-in-names:
-          draft/labeled-response:
           draft/setname:
     - name: IRCCloud Teams
       ircd-ver: irccloud-prattle
@@ -51,13 +51,13 @@
           cap-notify:
           echo-message:
           extended-join:
+          labeled-response:
           message-tags:
           monitor:
           msgid:
           multi-prefix:
           sts:
           userhost-in-names:
-          draft/labeled-response:
           draft/setname:
       na:
         stable:
@@ -81,18 +81,16 @@
           echo-message:
           extended-join:
           invite-notify:
+          labeled-response:
+          message-tags:
           monitor:
+          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
           server-time:
           sts:
           userhost-in-names:
-          draft/labeled-response:
-      partial:
-        stable:
-          message-tags: "draft cap"
-          msgid: "draft tag"
 
 - name: Networks
   note: >
@@ -190,10 +188,8 @@
           invite-notify:
           multi-prefix:
           sasl-3.1:
+          sts:
           userhost-in-names:
-      partial:
-        stable:
-          sts: "draft/sts"
     - name: tilde.chat
       ircd-ver: inspircd-3.1.0
       net-address:
