@@ -130,7 +130,7 @@
           webirc:
       partial:
         stable:
-          draft/setname:
+          draft/setname: Git
     - name: Nefarious IRCu
       # ref: https://github.com/evilnet/nefarious2/blob/2.0/ircd/m_cap.c#L59
       link: https://github.com/evilnet/nefarious2

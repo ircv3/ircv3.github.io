@@ -511,6 +511,7 @@
           sts:
           userhost-in-names:
           draft/setname:
+          +draft/reply:
         SASL:
           - plain
           - scram-sha-256
@@ -540,7 +541,6 @@
           chghost:
           echo-message:
           invite-notify:
-          labeled-response: Git
           monitor:
           multi-prefix:
           sasl-3.1:
@@ -550,10 +550,12 @@
           sts:
           userhost-in-names:
           draft/setname:
+          +draft/react:
         SASL:
           - plain
       partial:
         stable:
+          labeled-response: "draft cap"
           message-tags: "draft cap"
           msgid: "draft tag"
     - name: Quasseldroid
@@ -797,10 +799,8 @@
           - plain
           - external
     - name: BitBot
-      #ref: https://github.com/jesopo/bitbot/blob/master/modules/line_handler/__init__.py
-      #     https://github.com/jesopo/bitbot/blob/master/modules/line_handler/ircv3.py
-      #     https://github.com/jesopo/bitbot/blob/master/modules/sasl/__init__.py
-      #     https://github.com/jesopo/bitbot/blob/master/modules/sasl/scram.py
+      #ref: https://github.com/jesopo/bitbot/blob/b713cf76/src/core_modules/line_handler/ircv3.py
+      #     https://github.com/jesopo/bitbot/tree/638eee0d/src/core_modules/ircv3_sasl
       link: https://github.com/jesopo/bitbot
       support:
         stable:
