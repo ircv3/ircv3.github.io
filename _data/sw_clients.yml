@@ -482,6 +482,29 @@
           userhost-in-names:
         SASL:
           - plain
+    - name: CoreIRC
+      link: http://www.coreirc.com
+      os:
+        - android
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          cap-notify:
+          cap-3.1:
+          cap-3.2:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          userhost-in-names:
+        SASL:
+          - external
+          - plain
+          - scram-sha-256
     - name: IRCCloud
       # maintainer: jwheare
       link: https://www.irccloud.com
