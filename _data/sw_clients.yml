@@ -638,6 +638,42 @@
           server-time:
           sts:
           userhost-in-names:
+    - name: pounce (as Server)
+      # ref: https://git.causal.agency/pounce/tree/bounce.h#n63
+      link: https://git.causal.agency/pounce/about/
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          cap-3.1:
+          chghost:
+          extended-join:
+          invite-notify:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          server-time:
+          userhost-in-names:
+        SASL:
+          external:
+    - name: pounce (as Client)
+      # ref: https://git.causal.agency/pounce/tree/bounce.h#n63
+      link: https://git.causal.agency/pounce/about/
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          cap-3.1:
+          chghost:
+          extended-join:
+          invite-notify:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          userhost-in-names:
+        SASL:
+          external:
+          plain:
     - name: ZNC (as Server)
       # ref: https://github.com/znc/znc/blob/znc-1.6.1/src/IRCSock.cpp#L809
       #      https://github.com/znc/znc/blob/znc-1.6.1/src/Client.cpp#L886
