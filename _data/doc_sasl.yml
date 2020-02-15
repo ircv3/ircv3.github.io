@@ -16,13 +16,3 @@ SASL:
       description: SASL SCRAM-SHA-256 mechanism
       required: true
       ext_link: https://tools.ietf.org/html/rfc7677
-    # dh-aes:
-    #   name: DH-AES
-    #   description: DH-AES SASL mechanism (deprecated)
-    #   link: /specs/documentation/sasl-dh-aes.html
-    #   deprecated: true
-    # dh-blowfish:
-    #   name: DH-BLOWFISH
-    #   description: DH-BLOWFISH SASL mechanism (deprecated)
-    #   link: /specs/documentation/sasl-dh-blowfish.html
-    #   deprecated: true

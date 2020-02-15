@@ -88,8 +88,6 @@
           server-time:
           userhost-in-names:
         SASL:
-          - dh-aes
-          - dh-blowfish
           - external
           - plain
     - name: IceChat
@@ -160,7 +158,6 @@
           starttls:
           userhost-in-names: Git
         SASL:
-          - dh-blowfish
           - plain
     - name: LimeChat
       # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
@@ -279,9 +276,6 @@
           server-time:
           userhost-in-names:
         SASL:
-          - dh-aes
-          - dh-blowfish
-          - ecdsa-nist256p-challenge
           - external
           - plain
     - name: Srain
@@ -308,7 +302,6 @@
           sasl-3.1:
           server-time:
         SASL:
-          - ecdsa-nist256p-challenge
           - plain
           - scram-sha-256
     - name: Glirc
@@ -332,7 +325,6 @@
 
         SASL:
           - plain
-          - ecdsa-nist256p-challenge
 
 - name: Web Clients
   software:
@@ -429,7 +421,6 @@
           sasl-3.1:
         SASL:
           - plain
-          - dh-blowfish
 
 - name: Mobile Clients
   software:
@@ -454,7 +445,6 @@
           cap-3.1:
           sasl-3.1:
         SASL:
-          - dh-blowfish
           - plain
     - name: Colloquy
       # ref: https://github.com/colloquy/colloquy/blob/7737a2b/Chat%20Core/MVIRCChatConnection.m#L2393
@@ -780,7 +770,6 @@
           starttls:
           userhost-in-names:
         SASL:
-            - ecdsa-nist256p-challenge
             - external
             - plain
             - scram-sha-256
