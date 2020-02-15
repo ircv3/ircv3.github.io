@@ -18,8 +18,8 @@
         stable:
           webirc:
     - name: Charybdis
-      # ref: https://github.com/atheme/charybdis/blob/charybdis-3.5.0-test1/modules/m_cap.c#L73
-      link: http://www.charybdis.io/
+      # ref: https://github.com/charybdis-ircd/charybdis-ircd/search?q=MAPI_CAP_CLIENT
+      link: https://github.com/charybdis-ircd/charybdis
       support:
         stable:
           cap-3.1:
@@ -43,7 +43,7 @@
     - name: ChatIRCd
       # dev: Ben / MrC
       # ref: https://bitbucket.org/chatlounge/chatircd/commits/all
-      link: http://www.chatlounge.net/software/
+      link: https://bitbucket.org/chatlounge/chatircd/src/master/README
       support:
         stable:
           cap-3.1:
@@ -101,8 +101,7 @@
     - name: InspIRCd
       # maintainer: Sadie
       # ref: https://github.com/inspircd/inspircd/search?q="Cap%3A%3ACapability"
-      #      https://github.com/inspircd/inspircd-extras/search?q=GenericCap
-      link: http://www.inspircd.org
+      link: https://www.inspircd.org
       support:
         stable:
           account-notify:

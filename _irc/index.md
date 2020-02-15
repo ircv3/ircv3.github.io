@@ -13,8 +13,8 @@ page-header: >
 ---
 
 IRCv3 specifications build on top of the core IRC protocol. The primary core
-IRC protocol specifications are [`RFC1459`](http://tools.ietf.org/html/rfc1459),
-[`RFC2812`](http://tools.ietf.org/html/rfc2812) and [`RFC7194`](https://tools.ietf.org/html/rfc7194).
+IRC protocol specifications are [`RFC1459`](https://tools.ietf.org/html/rfc1459),
+[`RFC2812`](https://tools.ietf.org/html/rfc2812) and [`RFC7194`](https://tools.ietf.org/html/rfc7194).
 To fully understand IRCv3, please read the core IRC protocol specifications
 followed by the IRCv3 specifications.
 

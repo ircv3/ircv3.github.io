@@ -25,8 +25,8 @@ The following organizations observe the working group and/or implement IRCv3 spe
 
 <br/>
 
-To participate, contribute to our specifications and extensions registry on [GitHub](http://github.com/ircv3/ircv3-specifications).
+To participate, contribute to our specifications and extensions registry on [GitHub](https://github.com/ircv3/ircv3-specifications).
 
 <br/>
 
-You may also contact us on [irc.freenode.net in #ircv3](irc://irc.freenode.net/ircv3)
+You may also contact us on [irc.freenode.net in #ircv3](ircs://irc.freenode.net/ircv3)

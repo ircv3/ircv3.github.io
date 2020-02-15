@@ -4,9 +4,9 @@ title: Labels, Message IDs and History
 ---
 There's been a bunch of newly-submitted proposals recently, looking at everything from history retrieval with bouncers to message reactions. Let's go over the holiday changes.
 
-The `labeled-response` draft [<sup>[link]</sup>](http://ircv3.net/specs/extensions/labeled-response.html) was added. This draft links sent commands to returned numerics/messages much more effectively for clients, allowing more complete implementations of `echo-message`.
+The `labeled-response` draft [<sup>[link]</sup>](https://ircv3.net/specs/extensions/labeled-response.html) was added. This draft links sent commands to returned numerics/messages much more effectively for clients, allowing more complete implementations of `echo-message`.
 
-The `message-ids` draft [<sup>[link]</sup>](http://ircv3.net/specs/extensions/message-ids.html) was added. This draft provides a network-unique identifier on messages, which allows many new and exciting features to be built! This includes the `reply`, `reaction`, and `chathistory` proposals below.
+The `message-ids` draft [<sup>[link]</sup>](https://ircv3.net/specs/extensions/message-ids.html) was added. This draft provides a network-unique identifier on messages, which allows many new and exciting features to be built! This includes the `reply`, `reaction`, and `chathistory` proposals below.
 
 The `sts` draft is getting an upgrade with the `preload` key [<sup>[link]</sup>](https://github.com/ircv3/ircv3-specifications/pull/295), which should allow IRC networks to specify whether they want their STS policy added into preload lists shipped with clients. In addition to what STS already provides, this contributes towards helping make clients more secure.
 
