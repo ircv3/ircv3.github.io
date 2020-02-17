@@ -13,7 +13,7 @@
         SASL:
           - plain
     - name: Communi
-      # ref: http://communi.github.io/doc/3.4/ircv3.html
+      # ref: https://communi.github.io/doc/3.4/ircv3.html
       link: https://communi.github.io
       language: C++
       support:

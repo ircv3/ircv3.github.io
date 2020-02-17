@@ -7,7 +7,7 @@
       net-address:
         link:  ircs://testnet.inspircd.org:6697/
         display: testnet.inspircd.org
-      link: http://www.inspircd.org/
+      link: https://www.inspircd.org/
       support:
         stable:
           account-notify:

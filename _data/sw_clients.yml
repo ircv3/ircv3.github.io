@@ -1,8 +1,8 @@
 - name: Desktop Clients
   software:
     - name: AdiIRC
-      # ref: http://dev.adiirc.com/projects/adiirc/wiki/IRCv3
-      link: http://www.adiirc.com
+      # ref: https://dev.adiirc.com/projects/adiirc/wiki/IRCv3
+      link: https://www.adiirc.com
       support:
         stable:
           account-notify:
@@ -91,8 +91,8 @@
           - external
           - plain
     - name: IceChat
-      # ref: CapREQ() in http://icechat.codeplex.com/SourceControl/latest#IRCConnection/ParseIRCData.cs
-      link: http://icechat.net
+      # ref: CapREQ() in https://github.com/icechat/IceChat/blob/master/src/IceChat/IRCConnection/ParseIRCData.cs
+      link: https://icechat.net
       support:
         stable:
           account-notify:
@@ -126,8 +126,8 @@
           - external
           - plain
     - name: Konversation
-      # ref: https://github.com/KDE/konversation/blob/1.6/src/irc/server.cpp#L697
-      link: http://konversation.kde.org
+      # ref: Server::initCapablityNames() in https://github.com/KDE/konversation/blob/master/src/irc/server.cpp
+      link: https://konversation.kde.org
       support:
         stable:
           account-notify: 1.7+
@@ -144,7 +144,7 @@
     - name: KVIrc
       # ref: https://github.com/kvirc/KVIrc/blob/4.2.0/src/kvirc/kernel/KviIrcConnection.cpp#L438
       #      or handleInitialCapLs() in https://github.com/kvirc/KVIrc/blob/master/src/kvirc/kernel/KviIrcConnection.cpp
-      link: http://www.kvirc.net
+      link: https://www.kvirc.net
       support:
         stable:
           account-notify: Git
@@ -170,9 +170,9 @@
         SASL:
           - plain
     - name: mIRC
-      # ref: http://www.mirc.com/news.html
-      #      http://www.mirc.com/versions.txt
-      link: http://www.mirc.com
+      # ref: https://www.mirc.com/news.html
+      #      https://www.mirc.com/versions.txt
+      link: https://www.mirc.com
       support:
         stable:
           account-notify:
@@ -236,7 +236,7 @@
     - name: Textual
       # ref: https://github.com/Codeux-Software/Textual/blob/v6.0.1/Classes/IRC/IRCClient.m#L7102-L7127
       # ref: https://github.com/Codeux-Software/Textual/blob/v6.0.1/Classes/IRC/IRCClient.m#L4590
-      link: http://www.codeux.com/textual
+      link: https://www.codeux.com/textual
       support:
         stable:
           away-notify:
@@ -279,7 +279,7 @@
           - external
           - plain
     - name: Srain
-      # ref: http://doc.srain.im/en/latest/support.html
+      # ref: https://doc.srain.im/en/latest/support.html
       link: https://srain.im
       support:
         stable:
@@ -412,9 +412,9 @@
         SASL:
           - plain
     - name: Mibbit
-      # ref: http://wiki.mibbit.com/index.php/SASL
+      # ref: https://wiki.mibbit.com/index.php/SASL
       #      does not send CAP LS when connecting to a server
-      link: http://www.mibbit.com
+      link: https://www.mibbit.com
       support:
         stable:
           cap-3.1:
@@ -426,7 +426,7 @@
   software:
     - name: IRC for Android
       # ref: link mentions sasl
-      link: http://www.countercultured.net/android/
+      link: https://play.google.com/store/apps/details?id=com.countercultured.irc4android
       os:
         - android
       support:
@@ -473,7 +473,7 @@
         SASL:
           - plain
     - name: CoreIRC
-      link: http://www.coreirc.com
+      link: https://play.google.com/store/apps/details?id=co.aureolin.coreirc
       os:
         - android
       support:
@@ -594,7 +594,7 @@
           - plain
     - name: YAAIC
       # ref: https://github.com/pocmo/Yaaic/blob/v1.1/app/src/main/java/org/jibble/pircbot/PircBot.java#L208
-      link: http://www.yaaic.org
+      link: https://www.yaaic.org
       os:
         - android
       support:
