@@ -220,3 +220,34 @@
           starttls:
           userhost-in-names:
           sts:
+    - name: PIRC.pl
+      ircd-ver: UnrealIRCd-5
+      net-address:
+        link: ircs://irc.pirc.pl:6697/
+        display: irc.pirc.pl
+      link: https://pirc.pl/
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          starttls:
+          userhost-in-names:
+          draft/setname:
+        partial:
+          metadata3.2: wip
