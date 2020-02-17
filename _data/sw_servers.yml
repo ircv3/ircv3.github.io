@@ -18,7 +18,7 @@
         stable:
           webirc:
     - name: Charybdis
-      # ref: https://github.com/charybdis-ircd/charybdis-ircd/search?q=MAPI_CAP_CLIENT
+      # ref: https://github.com/charybdis-ircd/charybdis/search?q=MAPI_CAP_CLIENT
       link: https://github.com/charybdis-ircd/charybdis
       support:
         stable:
@@ -43,7 +43,7 @@
     - name: ChatIRCd
       # dev: Ben / MrC
       # ref: https://bitbucket.org/chatlounge/chatircd/commits/all
-      link: https://bitbucket.org/chatlounge/chatircd/src/master/README
+      link: https://www.chatlounge.net/w/index.php/Software
       support:
         stable:
           cap-3.1:

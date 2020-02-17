@@ -437,7 +437,7 @@
         # SASL mechanisms unknown
     - name: AndroIRC
       # ref: http://wiki.androirc.com/nickserv_sasl
-      link: https://play.google.com/store/apps/details?id=com.androirc
+      link: http://www.androirc.com
       os:
         - android
       support:
