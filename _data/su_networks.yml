@@ -249,5 +249,3 @@
           starttls:
           userhost-in-names:
           draft/setname:
-        partial:
-          metadata3.2: wip
