@@ -29,10 +29,10 @@
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname:
           starttls:
           sts:
           userhost-in-names:
-          draft/setname:
     - name: IRCCloud Teams
       ircd-ver: irccloud-prattle
       net-address:
@@ -56,9 +56,9 @@
           monitor:
           msgid:
           multi-prefix:
+          setname:
           sts:
           userhost-in-names:
-          draft/setname:
       na:
         stable:
           starttls: direct TLS only
@@ -92,6 +92,9 @@
           sts:
           userhost-in-names:
           draft/setname:
+      partial:
+        stable:
+          setname: "draft cap"
 
 - name: Networks
   note: >
@@ -248,4 +251,6 @@
           server-time:
           starttls:
           userhost-in-names:
-          draft/setname:
+      partial:
+        stable:
+          setname: "draft cap"

@@ -78,9 +78,9 @@
           monitor:
           msgid:
           multi-prefix:
+          setname:
           sts:
           userhost-in-names:
-          draft/setname:
       na:
         stable:
           starttls: supports sts
@@ -123,13 +123,11 @@
           sasl-3.1:
           sasl-3.2: 3.0+
           server-time: 3.0+
+          setname: Git
           starttls:
           sts: 3.0+
           userhost-in-names:
           webirc:
-      partial:
-        stable:
-          draft/setname: Git
     - name: Nefarious IRCu
       # ref: https://github.com/evilnet/nefarious2/blob/2.0/ircd/m_cap.c#L59
       link: https://github.com/evilnet/nefarious2
@@ -170,11 +168,13 @@
           server-time:
           userhost-in-names:
           sts:
-          draft/setname:
           webirc:
       na:
         stable:
           starttls: supports sts
+      partial:
+        stable:
+          setname: "draft cap"
     - name: Planio Team Chat
       link: https://plan.io/business-chat/
       support:

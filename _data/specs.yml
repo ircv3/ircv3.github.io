@@ -92,7 +92,6 @@ setname:
   name: setname Extension
   shortname: setname
   url: /extensions/setname.html
-  draft: true
 sni:
   fullname: Server Name Indication
   name: Server Name Indication
