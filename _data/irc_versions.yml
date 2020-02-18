@@ -129,6 +129,12 @@ stable:
         - server-time
       tags:
         - time
+    setname:
+      name: setname
+      description: setname
+      link: /specs/extensions/setname.html
+      caps:
+        - setname
     starttls:
       name: starttls
       description: tls Extension (STARTTLS)
@@ -153,14 +159,6 @@ stable:
       description: WebIRC Extension
       link: /specs/extensions/webirc.html
       hide-if-no-support: true
-
-    draft/setname:
-      name: draft/setname
-      description: setname DRAFT
-      link: /specs/extensions/setname.html
-      draft: true
-      caps:
-        - draft/setname
 
     +draft/react:
       name: +draft/react

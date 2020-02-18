@@ -291,7 +291,7 @@ Setname allows clients to update their realname (gecos) after connecting to
 the server. This is especially useful as some clients use the realname information
 for avatars and an additional name field.
 
-The **work-in-progress** [setname spec]({{site.baseurl}}/specs/extensions/setname.html)
+The [setname spec]({{site.baseurl}}/specs/extensions/setname.html)
 describes how this is implemented, and how clients can update their names and see
 updates from other users.
 

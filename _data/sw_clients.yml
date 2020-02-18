@@ -121,10 +121,12 @@
           message-tags: Git
           multi-prefix:
           sasl-3.1:
-          draft/setname: Git
         SASL:
           - external
           - plain
+      partial:
+        stable:
+          setname: "Git draft cap"
     - name: Konversation
       # ref: Server::initCapablityNames() in https://github.com/KDE/konversation/blob/master/src/irc/server.cpp
       link: https://konversation.kde.org
@@ -354,9 +356,9 @@
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname:
           sts:
           userhost-in-names:
-          draft/setname:
           +draft/react:
           +draft/reply:
           +draft/typing:
@@ -410,9 +412,11 @@
           server-time:
           userhost-in-names:
           webirc:
-          draft/setname:
         SASL:
           - plain
+      partial:
+        stable:
+          setname: "draft cap"
     - name: Mibbit
       # ref: https://wiki.mibbit.com/index.php/SASL
       #      does not send CAP LS when connecting to a server
@@ -523,9 +527,9 @@
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname:
           sts:
           userhost-in-names:
-          draft/setname:
           +draft/reply:
         SASL:
           - plain
@@ -564,7 +568,6 @@
           starttls:
           sts:
           userhost-in-names:
-          draft/setname:
           +draft/react:
         SASL:
           - plain
@@ -573,6 +576,7 @@
           labeled-response: "draft cap"
           message-tags: "draft cap"
           msgid: "draft tag"
+          setname: "draft cap"
     - name: Quasseldroid
       # ref: https://github.com/quassel/quassel/blob/0.13.0/src/common/irccap.h#L134-L166
       link: https://quasseldroid.info/
@@ -873,9 +877,9 @@
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname:
           sts:
           userhost-in-names:
-          draft/setname:
           +draft/reply:
           +draft/typing:
         SASL:
