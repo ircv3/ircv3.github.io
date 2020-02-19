@@ -248,9 +248,8 @@
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
+          setname:
           server-time:
           starttls:
+          sts:
           userhost-in-names:
-      partial:
-        stable:
-          setname: "draft cap"
