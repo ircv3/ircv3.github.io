@@ -223,6 +223,7 @@
           chghost:
           echo-message: 5.0+
           extended-join:
+          labeled-response: 5.0.3+
           message-tags: 5.0+
           msgid: 5.0+
           multi-prefix:
@@ -235,4 +236,5 @@
           webirc:
       partial:
         stable:
-          labeled-response: "5.0+ draft cap"
+          monitor: "5.0+ add-on"
+          setname: "5.0+ add-on"
