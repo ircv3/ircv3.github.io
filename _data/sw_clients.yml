@@ -410,13 +410,12 @@
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname:
+          sts:
           userhost-in-names:
           webirc:
         SASL:
           - plain
-      partial:
-        stable:
-          setname: "draft cap"
     - name: Mibbit
       # ref: https://wiki.mibbit.com/index.php/SASL
       #      does not send CAP LS when connecting to a server
