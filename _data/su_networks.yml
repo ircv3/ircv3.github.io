@@ -195,7 +195,7 @@
           sts:
           userhost-in-names:
     - name: tilde.chat
-      ircd-ver: inspircd-3.1.0
+      ircd-ver: inspircd-3.5.0
       net-address:
         link: ircs://irc.tilde.chat:6697/
         display: irc.tilde.chat
@@ -213,6 +213,7 @@
           echo-message:
           extended-join:
           invite-notify:
+          labeled-response:
           message-tags:
           monitor:
           msgid:
