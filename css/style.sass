@@ -62,6 +62,8 @@ body
                 font-size: 1.35rem
                 color: #1c1c1c
                 text-decoration: none
+            > a:hover, a:hover > .support-dropdown-text
+                text-decoration: underline
             &.active
                 position: relative
                 > a:after
@@ -178,12 +180,19 @@ footer
         width: 2.91rem
         position: relative
     a
+        text-decoration: none
         color: #fff
+    a:hover
+        color: #fff
+    a:hover > .wglink-text
+        text-decoration: underline
     .copylink
         width: 100%
     .links
         display: inline-block
         float: right
+        a:hover
+            text-decoration: underline
         li, a
             display: inline-block
         li + li
@@ -258,6 +267,8 @@ footer
             padding: 1rem 1rem 0.8rem
             border-radius: 0.65rem
             text-align: center
+        a.button:hover
+            text-decoration: underline
 
         > div:nth-child(2n)
             hr
@@ -323,9 +334,13 @@ tt, code, pre
     color: #5A383E
 a code, code a, pre a, a pre, a tt, tt a
     color: #DB1438
+    text-decoration: underline
+a:hover code, a:hover pre, a:hover tt
+    color: inherit
 a
-    text-decoration: none
     color: #0B7884
+a:hover
+    color: #1B1B1B
 sub, sup
     font-size: 0.8em
 
@@ -336,6 +351,8 @@ td > a
         color: #b07f38
     &.proposed
         color: #ca509e
+    a:hover
+        color: #1B1B1B
 
 .caret
     display: inline-block
