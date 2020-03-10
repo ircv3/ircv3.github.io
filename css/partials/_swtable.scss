@@ -79,6 +79,12 @@
 .sw-table tbody tr:last-child td:last-child {
   border-bottom-right-radius: 0.25em;
 }
+.sw-table a {
+  text-decoration: none;
+}
+.sw-table a:hover {
+  text-decoration: underline;
+}
 a.irc-extension {
   margin: 0 0.5rem;
 }
