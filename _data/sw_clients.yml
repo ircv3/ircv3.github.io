@@ -484,7 +484,9 @@
       support:
         stable:
           account-notify:
+          account-tag:
           away-notify:
+          batch:
           cap-notify:
           cap-3.1:
           cap-3.2:
@@ -492,9 +494,15 @@
           echo-message:
           extended-join:
           invite-notify:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
+          server-time:
+          setname:
           userhost-in-names:
         SASL:
           - external
