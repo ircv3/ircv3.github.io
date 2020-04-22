@@ -16,9 +16,7 @@
         melo3
     - key: color
       description: >-
-        Denotes a color the user likes to be associated with. Client designers should decide,
-        which UI elements are using this color (for example avatar placeholders, nicknames
-        or whole otherwise-uncolored messages).
+        A color to associate with a user. Client designers may decide which UI elements use this color (for example avatar placeholders, nicknames or whole messages).
       format: HTML-style 6 hexadecimal digits
       examples: |-
         #800040
