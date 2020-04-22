@@ -123,7 +123,7 @@
           sasl-3.1:
           sasl-3.2: 3.0+
           server-time: 3.0+
-          setname: Git
+          setname: 3.6+
           starttls:
           sts: 3.0+
           userhost-in-names:
