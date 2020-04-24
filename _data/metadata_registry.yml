@@ -14,6 +14,13 @@
         PacketBot v1.2
         JitiBot
         melo3
+    - key: color
+      description: >-
+        A color to associate with a user. Client designers may decide which UI elements use this color (for example avatar placeholders, nicknames or whole messages).
+      format: HTML-style 6 hexadecimal digits
+      examples: |-
+        #800040
+        #0a00ff
     - key: display-name
       description: >-
         Alternative name to use instead of a nick for display purposes. Useful for gateways
