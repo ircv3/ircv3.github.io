@@ -236,6 +236,12 @@ The [`multi-prefix` spec]({{site.baseurl}}/specs/extensions/multi-prefix-3.1.htm
 details the exact messages these changes apply to and how exactly it's used.
 
 
+## [Multiline messages]({{site.baseurl}}/specs/extensions/multiline.html)
+
+The `multiline` extension adds a new batch type and tag sent by clients and servers to send messages that can exceed the usual byte length limit and that can contain line breaks.
+
+The **work-in-progress** [`multiline` spec]({{site.baseurl}}/specs/extensions/multiline.html) describes how to use the `draft/multiline` batch type and `draft/multiline-concat` tag to achieve this.
+
 ## SASL Authentication
 
 SASL allows users to authenticate in a standardised way across different IRC
