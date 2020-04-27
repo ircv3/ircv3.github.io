@@ -166,6 +166,7 @@
           monitor:
           msgid:
           multi-prefix:
+          draft/multiline:
           server-time:
           userhost-in-names:
           sts:
