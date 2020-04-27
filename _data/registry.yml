@@ -240,7 +240,7 @@
         - label
       description: Allows clients to correlate requests with server responses
     - name: multiline
-      spec:
+      specs:
         - multiline
       description: Indicates that the given messages are part of a multiline message.
     - name: netjoin
