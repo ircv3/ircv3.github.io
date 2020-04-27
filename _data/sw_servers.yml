@@ -76,6 +76,7 @@
           labeled-response:
           message-tags:
           monitor:
+          draft/multiline:
           msgid:
           multi-prefix:
           setname:
