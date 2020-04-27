@@ -72,6 +72,12 @@ multi-prefix:
   name: multi-prefix Extension
   shortname: multi-prefix
   url: /extensions/multi-prefix-3.1.html
+multiline:
+  fullname: Multiline messages
+  name: Multiline messages
+  shortname: Multiline messages
+  url: /extensions/multiline.html
+  draft: true
 sasl-3.1:
   fullname: IRCv3.1 SASL Authentication
   name: SASL Authentication 3.1
