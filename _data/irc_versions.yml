@@ -160,6 +160,16 @@ stable:
       link: /specs/extensions/webirc.html
       hide-if-no-support: true
 
+    draft/multiline:
+      name: draft/multiline
+      description: Multiline messages DRAFT
+      link: /specs/extensions/multiline.html
+      draft: true
+      caps:
+        - draft/multiline
+      tags:
+        - draft/multiline-concat
+
     +draft/react:
       name: +draft/react
       description: React client tag DRAFT

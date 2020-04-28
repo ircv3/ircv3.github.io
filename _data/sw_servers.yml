@@ -76,6 +76,7 @@
           labeled-response:
           message-tags:
           monitor:
+          draft/multiline:
           msgid:
           multi-prefix:
           setname:
@@ -165,6 +166,7 @@
           monitor:
           msgid:
           multi-prefix:
+          draft/multiline:
           server-time:
           userhost-in-names:
           sts:

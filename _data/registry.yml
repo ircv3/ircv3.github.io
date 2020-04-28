@@ -160,6 +160,10 @@
       specs:
         - multi-prefix
       description: Makes the server send all prefixes in NAMES and WHO output, in order of rank from highest to lowest.
+    - name: multiline
+      specs:
+        - multiline
+      description: Allows clients and servers to use send messages that can exceed the usual byte length limit and that can contain line breaks.
     - name: sasl
       specs:
         - sasl-3.1
@@ -202,6 +206,10 @@
       specs: 
         - msgid
       description: Provides a server supplied unique message ID
+    - name: multiline-concat
+      specs:
+        - multiline
+      description: Indicates that a message is to be concatenated directly (without a line break) with the previous message in a multiline message batch.
     - name: time
       specs:
         - server-time
@@ -231,6 +239,10 @@
       specs: 
         - label
       description: Allows clients to correlate requests with server responses
+    - name: multiline
+      specs:
+        - multiline
+      description: Indicates that the given messages are part of a multiline message.
     - name: netjoin
       specs:
         - netsplitjoin-batch
