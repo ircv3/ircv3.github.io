@@ -416,6 +416,7 @@
           userhost-in-names:
           webirc:
         SASL:
+          - external
           - plain
     - name: Mibbit
       # ref: https://wiki.mibbit.com/index.php/SASL
