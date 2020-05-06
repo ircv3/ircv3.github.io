@@ -21,6 +21,7 @@
           echo-message:
           extended-join:
           invite-notify:
+          labeled-response:
           message-tags:
           monitor:
           msgid:
@@ -28,11 +29,10 @@
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname:
           starttls:
           sts:
           userhost-in-names:
-          draft/labeled-response:
-          draft/setname:
     - name: IRCCloud Teams
       ircd-ver: irccloud-prattle
       net-address:
@@ -51,19 +51,19 @@
           cap-notify:
           echo-message:
           extended-join:
+          labeled-response:
           message-tags:
           monitor:
           msgid:
           multi-prefix:
+          setname:
           sts:
           userhost-in-names:
-          draft/labeled-response:
-          draft/setname:
       na:
         stable:
           starttls: direct TLS only
     - name: Oragono Testnet
-      ircd-ver: 0.11.0b
+      ircd-ver: 2.1.0-unreleased
       net-address:
         link: ircs://testnet.oragono.io:6697/
         display: testnet.oragono.io
@@ -81,18 +81,17 @@
           echo-message:
           extended-join:
           invite-notify:
+          labeled-response:
+          message-tags:
+          msgid:
           monitor:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname:
           sts:
           userhost-in-names:
-          draft/labeled-response:
-      partial:
-        stable:
-          message-tags: "draft cap"
-          msgid: "draft tag"
 
 - name: Networks
   note: >
