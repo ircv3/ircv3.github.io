@@ -63,7 +63,7 @@
         stable:
           starttls: direct TLS only
     - name: Oragono Testnet
-      ircd-ver: 1.3.0-unreleased
+      ircd-ver: 2.1.0-unreleased
       net-address:
         link: ircs://testnet.oragono.io:6697/
         display: testnet.oragono.io
@@ -89,12 +89,9 @@
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname:
           sts:
           userhost-in-names:
-          draft/setname:
-      partial:
-        stable:
-          setname: "draft cap"
 
 - name: Networks
   note: >
