@@ -131,7 +131,7 @@
           starttls:
           userhost-in-names:
     - name: freenode
-      ircd-ver: ircd-seven-1.1.4
+      ircd-ver: ircd-seven-1.1.9
       net-address:
         link: ircs://chat.freenode.net:6697/
         display: chat.freenode.net
@@ -143,6 +143,10 @@
           extended-join:
           multi-prefix:
           sasl-3.1:
+          chghost:
+          away-notify:
+          monitor:
+          starttls:
     - name: IRCHighWay
       ircd-ver: InspIRCd-2.0
       net-address:
