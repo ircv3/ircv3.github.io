@@ -302,6 +302,17 @@ describes how this is implemented, and how clients can update their names and se
 updates from other users.
 
 
+## [Standard Replies]({{site.baseurl}}/specs/extensions/standard-replies.html)
+
+Standard Replies establishes a clean way to send notes, warnings, and errors to
+users. This helps server/bouncer developers avoid creating new (possibly conflicting)
+numerics, and ensures clients will be able to display these messages to users nicely.
+
+The [standard replies spec]({{site.baseurl}}/specs/extensions/standard-replies.html)
+describes how the format of these messages, how to use them, and guidance on creating
+useful descriptions for users.
+
+
 ## [Strict Transport Security (STS)]({{site.baseurl}}/specs/extensions/sts.html)
 
 STS allows clients to be automatically upgraded to use TLS encryption and
