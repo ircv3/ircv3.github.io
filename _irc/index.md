@@ -309,7 +309,7 @@ users. This helps server/bouncer developers avoid creating new (possibly conflic
 numerics, and ensures clients will be able to display these messages to users nicely.
 
 The [standard replies spec]({{site.baseurl}}/specs/extensions/standard-replies.html)
-describes how the format of these messages, how to use them, and guidance on creating
+describes the format of these messages, how to use them, and guidance on creating
 useful descriptions for users.
 
 
