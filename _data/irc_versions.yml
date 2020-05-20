@@ -164,6 +164,7 @@ stable:
       name: +typing
       description: Typing client tag
       link: /specs/client-tags/typing.html
+      hide-if-no-support: true
       tags:
         - +typing
 
