@@ -362,7 +362,7 @@
           userhost-in-names:
           +draft/react:
           +draft/reply:
-          +draft/typing:
+          +typing:
         SASL:
           - plain
           - scram-sha-256
@@ -862,7 +862,7 @@
           server-time:
           userhost-in-names:
           +draft/reply:
-          +draft/typing:
+          +typing:
         SASL:
           - plain
           - external
@@ -916,7 +916,7 @@
           sts:
           userhost-in-names:
           +draft/reply:
-          +draft/typing:
+          +typing:
         SASL:
           - plain
           - external

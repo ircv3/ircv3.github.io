@@ -184,10 +184,9 @@ stable:
       draft: true
       tags:
         - +draft/reply
-    +draft/typing:
-      name: +draft/typing
-      description: Typing client tag DRAFT
+    +typing:
+      name: +typing
+      description: Typing client tag
       link: /specs/client-tags/typing.html
-      draft: true
       tags:
-        - +draft/typing
+        - +typing
