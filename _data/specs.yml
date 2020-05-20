@@ -151,7 +151,6 @@ typing-client-tag:
   name: Typing client tag
   shortname: Typing client tag
   url: /client-tags/typing.html
-  draft: true
 
 # batches
 netsplitjoin-batch:

@@ -160,6 +160,14 @@ stable:
       link: /specs/extensions/webirc.html
       hide-if-no-support: true
 
+    +typing:
+      name: +typing
+      description: Typing client tag
+      link: /specs/client-tags/typing.html
+      hide-if-no-support: true
+      tags:
+        - +typing
+
     draft/multiline:
       name: draft/multiline
       description: Multiline messages DRAFT
@@ -184,10 +192,3 @@ stable:
       draft: true
       tags:
         - +draft/reply
-    +draft/typing:
-      name: +draft/typing
-      description: Typing client tag DRAFT
-      link: /specs/client-tags/typing.html
-      draft: true
-      tags:
-        - +draft/typing

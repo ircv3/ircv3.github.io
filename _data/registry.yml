@@ -305,3 +305,12 @@
       specs: 
         - webirc
       description: Existing command which provides the real IP address of clients to the server when connecting through a gateway.
+
+- name: RPL_ISUPPORT
+  include_numeric: false
+  include_specs: true
+  values:
+    - name: CLIENTTAGDENY
+      specs:
+        - message-tags
+      description: Indicates client-only tags that are blocked or allowed by a server
