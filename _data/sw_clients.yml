@@ -710,15 +710,15 @@
       link: https://znc.in/
       support:
         stable:
-          account-notify: "1.7.0+"
-          away-notify: "1.7.0+"
-          batch: "1.7.0+ (1.6.0+ as <code>znc.in/batch</code>)"
+          account-notify:
+          away-notify:
+          batch:
           cap-3.1:
-          cap-notify: "1.7.0+"
-          echo-message: "1.7.0+"
-          extended-join: "1.7.0+"
+          cap-notify:
+          echo-message:
+          extended-join:
           multi-prefix:
-          server-time: "1.7.0+ (1.2+ as <code>znc.in/server-time-iso</code>)"
+          server-time:
           userhost-in-names:
     - name: ZNC (as Client)
       # ref: https://github.com/znc/znc/blob/znc-1.6.1/src/IRCSock.cpp#L809
@@ -726,13 +726,13 @@
       link: https://znc.in/
       support:
         stable:
-          account-notify: "1.7.0+"
-          away-notify: "1.7.0+"
+          account-notify:
+          away-notify:
           cap-3.1:
-          extended-join: "1.7.0+"
+          extended-join:
           multi-prefix:
           sasl-3.1:
-          server-time: "1.7.0+"
+          server-time:
           userhost-in-names:
         SASL:
           external:
