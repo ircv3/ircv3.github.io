@@ -178,3 +178,10 @@ pr-resume:
   shortname: PR#306
   full-url: https://github.com/ircv3/ircv3-specifications/pull/306
   proposed: true
+
+pr-channel-rename:
+  fullname: PR#420 - Channel renaming extension
+  name: PR#420
+  shortname: PR#420
+  full-url: https://github.com/ircv3/ircv3-specifications/pull/420
+  proposed: true

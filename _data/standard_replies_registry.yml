@@ -120,6 +120,16 @@
       description: Any other multiline error
       specs:
         - multiline
+    - command: RENAME
+      code: CHANNEL_NAME_IN_USE
+      description: Indicates that a channel name is already taken
+      specs:
+        - pr-channel-rename
+    - command: RENAME
+      code: CANNOT_RENAME
+      description: Indicates any other channel renaming failure
+      specs:
+        - pr-channel-rename
 
 # WARN
 - name: WARN codes
