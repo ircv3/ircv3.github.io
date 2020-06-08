@@ -100,6 +100,26 @@
       description: Indicates that the new realname was invalid
       specs:
         - setname
+    - command: BATCH
+      code: MULTILINE_MAX_BYTES
+      description: Indicates that the `max-bytes` multiline limit is exceeded
+      specs:
+        - multiline
+    - command: BATCH
+      code: MULTILINE_MAX_LINES
+      description: Indicates that the `max-lines` multiline limit is exceeded
+      specs:
+        - multiline
+    - command: BATCH
+      code: MULTILINE_INVALID_TARGET
+      description: Indicates a mismatched PRIVMSG target within a multiline batch
+      specs:
+        - multiline
+    - command: BATCH
+      code: MULTILINE_INVALID
+      description: Any other multiline error
+      specs:
+        - multiline
 
 # WARN
 - name: WARN codes
