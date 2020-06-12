@@ -428,6 +428,32 @@
           sasl-3.1:
         SASL:
           - plain
+    - name: PIRC.pl web client
+      link: https://github.com/pirc-pl/pirc-gateway
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-notify:
+          cap-3.1:
+          cap-3.2:
+          chghost:
+          echo-message:
+          extended-join:
+          message-tags:
+          msgid:
+          labeled-response:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          userhost-in-names:
+          +typing:
+        SASL:
+          - plain
 
 - name: Mobile Clients
   software:
