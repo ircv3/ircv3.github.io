@@ -823,8 +823,10 @@
           cap-3.2:
           cap-notify:
           chghost:
+          echo-message:
           extended-join:
           invite-notify:
+          labeled-response:
           metadata:
           message-tags:
           monitor:
@@ -833,8 +835,11 @@
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname:
+          sts:
           starttls:
           userhost-in-names:
+          +draft/reply:
         SASL:
             - external
             - plain
