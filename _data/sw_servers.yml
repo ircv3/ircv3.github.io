@@ -168,15 +168,13 @@
           multi-prefix:
           draft/multiline:
           server-time:
+          setname:
           userhost-in-names:
           sts:
           webirc:
       na:
         stable:
           starttls: supports sts
-      partial:
-        stable:
-          setname: "draft cap"
     - name: Planio Team Chat
       link: https://plan.io/business-chat/
       support:
