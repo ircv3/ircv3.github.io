@@ -161,7 +161,7 @@
           echo-message:
           extended-join:
           invite-notify:
-          labeled-response: Git
+          labeled-response:
           message-tags:
           monitor:
           msgid:
