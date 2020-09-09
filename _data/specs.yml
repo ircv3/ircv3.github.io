@@ -37,7 +37,7 @@ batch:
   name: batch Extension
   shortname: batch
   url: /extensions/batch-3.2.html
-multiline:
+channel-rename:
   fullname: Channel renaming
   name: Channel renaming
   shortname: Channel renaming
