@@ -124,12 +124,17 @@
       code: CHANNEL_NAME_IN_USE
       description: Indicates that a channel name is already taken
       specs:
-        - pr-channel-rename
+        - channel-rename
     - command: RENAME
       code: CANNOT_RENAME
       description: Indicates any other channel renaming failure
       specs:
-        - pr-channel-rename
+        - channel-rename
+    - command: JOIN
+      code: CHANNEL_RENAMED
+      description: Indicates a joined channel has been renamed
+      specs:
+        - channel-rename
 
 # WARN
 - name: WARN codes

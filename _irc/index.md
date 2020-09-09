@@ -138,6 +138,12 @@ Here are the standalone batch types the IRCv3 WG defines:
 * [The `chathistory` batch type]({{site.baseurl}}/specs/extensions/batch/chathistory-3.3.html) allows replaying message history.
 
 
+## [Channel renaming]({{site.baseurl}}/specs/extensions/channel-rename.html)
+
+The `channel-rename` extension adds a new command sent by clients and servers that enables renaming a channel without closing it down and redirecting to a new one.
+
+The **work-in-progress** [`channel-rename` spec]({{site.baseurl}}/specs/extensions/channel-rename.html) describes how to use the `RENAME` command to achieve this.
+
 ## [Changing Usernames and Hostnames]({{site.baseurl}}/specs/extensions/chghost-3.2.html)
 
 The `chghost` extension lets clients more easily see when other clients'
