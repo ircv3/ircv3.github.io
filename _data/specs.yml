@@ -41,7 +41,7 @@ channel-rename:
   fullname: Channel renaming
   name: Channel renaming
   shortname: Channel renaming
-  url: /extensions/channe-rename.html
+  url: /extensions/channel-rename.html
   draft: true
 chghost:
   fullname: IRCv3.2 chghost Extension
