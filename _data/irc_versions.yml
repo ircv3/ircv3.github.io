@@ -168,6 +168,14 @@ stable:
       tags:
         - +typing
 
+    draft/channel-rename:
+      name: draft/channel-rename
+      description: Channel renaming DRAFT
+      link: /specs/extensions/channel-rename.html
+      draft: true
+      caps:
+        - draft/channel-rename
+
     draft/multiline:
       name: draft/multiline
       description: Multiline messages DRAFT

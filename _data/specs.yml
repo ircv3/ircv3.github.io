@@ -37,6 +37,12 @@ batch:
   name: batch Extension
   shortname: batch
   url: /extensions/batch-3.2.html
+channel-rename:
+  fullname: Channel renaming
+  name: Channel renaming
+  shortname: Channel renaming
+  url: /extensions/channel-rename.html
+  draft: true
 chghost:
   fullname: IRCv3.2 chghost Extension
   name: chghost Extension
@@ -177,11 +183,4 @@ pr-resume:
   name: PR#306
   shortname: PR#306
   full-url: https://github.com/ircv3/ircv3-specifications/pull/306
-  proposed: true
-
-pr-channel-rename:
-  fullname: PR#420 - Channel renaming extension
-  name: PR#420
-  shortname: PR#420
-  full-url: https://github.com/ircv3/ircv3-specifications/pull/420
   proposed: true

@@ -124,6 +124,10 @@
       specs:
         - cap
       description: Notifies clients when client capabilities become availiable or are no longer available.
+    - name: channel-rename
+      specs:
+        - channel-rename
+      description: Enables renaming a channel without closing it down and redirecting to a new one.
     - name: chghost
       specs:
         - chghost
@@ -293,6 +297,10 @@
       specs: 
         - userhost-in-names
       description: Not defined by IRCv3 but extended to include account names.
+    - name: RENAME
+      specs: 
+        - channel-rename
+      description: Enables renaming a channel without closing it down and redirecting to a new one.
     - name: STARTTLS
       specs: 
         - starttls
