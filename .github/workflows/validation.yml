@@ -1,0 +1,35 @@
+name: validation
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Set up Ruby
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: 2.6
+
+    - name: Build
+      run: |
+        bundle install
+        bundle exec jekyll build --drafts
+    
+    - name: Set up python
+      run: |
+        sudo apt install python3-setuptools python3-wheel -y
+        python3 --version && python3 -m pip --version
+
+    - name: html5validator
+      run: |
+        python3 -m pip install html5validator --user --upgrade
+        ~/.local/bin/html5validator --root _site/
+    
+    - name: yamlvalidate
+      run: |
+        python3 -m pip install git+https://github.com/DanielOaks/yamltypes.git@ircv3-fixes#egg=yamltypes --user --upgrade
+        ~/.local/bin/yamlvalidate $(find _data | grep \.yml | xargs) --path _data/validation
