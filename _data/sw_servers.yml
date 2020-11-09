@@ -157,6 +157,7 @@
           account-notify:
           account-tag:
           away-notify:
+          draft/chathistory:
           chghost:
           echo-message:
           extended-join:

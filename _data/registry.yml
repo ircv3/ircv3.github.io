@@ -123,11 +123,15 @@
     - name: cap-notify
       specs:
         - cap
-      description: Notifies clients when client capabilities become availiable or are no longer available.
+      description: Notifies clients when client capabilities become available or are no longer available.
     - name: channel-rename
       specs:
         - channel-rename
       description: Enables renaming a channel without closing it down and redirecting to a new one.
+    - name: chathistory
+      specs:
+        - chathistory
+      description: Lets clients request chat history from servers or bouncers.
     - name: chghost
       specs:
         - chghost
@@ -273,6 +277,10 @@
       specs: 
         - cap
       description: Lets clients negotiate client capabilities with servers.
+    - name: CHATHISTORY
+      specs:
+        - chathistory
+      description: Lets clients request chat history from servers or bouncers.
     - name: CHGHOST
       specs: 
         - chghost
