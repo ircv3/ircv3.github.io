@@ -7,7 +7,7 @@ layout: default
     {% if page.copyrights %}
     <div class="copyrights">
     {% for copyright in page.copyrights %}
-    <p>Copyright {% include copy.html %} {{ copyright.period }} {{ copyright.name }} &lt;{{ copyright.email }}&gt;</p>
+    <p>Copyright {% include copy.html %} {{ copyright.period }} {{ copyright.name }}{% if copyright.email %} &lt;{{ copyright.email }}&gt;{% endif %}</p>
     {% endfor %}
     <p>Unlimited redistribution and modification of this document is allowed provided that the above copyright notice and this permission notice remains intact.</p>
     </div>
