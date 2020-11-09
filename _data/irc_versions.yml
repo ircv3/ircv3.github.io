@@ -186,6 +186,14 @@ stable:
       tags:
         - draft/multiline-concat
 
+    draft/chathistory:
+      name: draft/chathistory
+      description: CHATHISTORY Extension DRAFT
+      link: /specs/extensions/chathistory.html
+      draft: true
+      caps:
+        - draft/chathistory
+
     +draft/react:
       name: +draft/react
       description: React client tag DRAFT

@@ -135,6 +135,31 @@
       description: Indicates a joined channel has been renamed
       specs:
         - channel-rename
+    - command: CHATHISTORY
+      code: INVALID_PARAMS
+      description: Indicates that the client sent invalid parameters with their `CHATHISTORY` command
+      specs:
+        - chathistory
+    - command: CHATHISTORY
+      code: INVALID_TARGET
+      description: Indicates that the client attempted to request `CHATHISTORY` from a channel or conversation that does not exist, or that they are not authorized to view
+      specs:
+        - chathistory
+    - command: CHATHISTORY
+      code: MESSAGE_ERROR
+      description: Indicates that `CHATHISTORY` content could not be retrieved due to a server error
+      specs:
+        - chathistory
+    - command: CHATHISTORY
+      code: NEED_MORE_PARAMS
+      description: Indicates that the client sent insufficient parameters with their `CHATHISTORY` command
+      specs:
+        - chathistory
+    - command: CHATHISTORY
+      code: UNKNOWN_COMMAND
+      description: Indicates that the client sent an invalid subcommand of `CHATHISTORY`
+      specs:
+        - chathistory
 
 # WARN
 - name: WARN codes

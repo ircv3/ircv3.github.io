@@ -43,6 +43,12 @@ channel-rename:
   shortname: Channel renaming
   url: /extensions/channel-rename.html
   draft: true
+chathistory:
+  fullname: Chat history
+  name: Chat history
+  shortname: chathistory
+  url: /extensions/chathistory.html
+  draft: true
 chghost:
   fullname: IRCv3.2 chghost Extension
   name: chghost Extension

@@ -144,6 +144,14 @@ The `channel-rename` extension adds a new command sent by clients and servers th
 
 The **work-in-progress** [`channel-rename` spec]({{site.baseurl}}/specs/extensions/channel-rename.html) describes how to use the `RENAME` command to achieve this.
 
+
+## [Chathistory]({{site.baseurl}}/specs/extensions/chathistory.html)
+
+The `chathistory` extension standardizes a mechanism for clients to request message history from servers or bouncers.
+
+The **work-in-progress** [`chathistory` spec]({{site.baseurl}}/specs/extensions/chathistory.html) describes the syntax and semantics of the new `CHATHISTORY` command.
+
+
 ## [Changing Usernames and Hostnames]({{site.baseurl}}/specs/extensions/chghost-3.2.html)
 
 The `chghost` extension lets clients more easily see when other clients'
