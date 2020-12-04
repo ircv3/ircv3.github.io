@@ -96,6 +96,7 @@
           chghost:
           extended-join:
           invite-notify:
+          monitor:
           multi-prefix:
           userhost-in-names:
           webirc:
