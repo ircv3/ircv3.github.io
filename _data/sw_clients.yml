@@ -818,6 +818,44 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+    - name: soju (as Server)
+      link: https://sr.ht/~emersion/soju
+      support:
+        stable:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          draft/chathistory:
+          away-notify:
+          batch:
+          echo-message:
+          extended-join:
+          message-tags:
+          msgid:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+        SASL:
+          plain:
+    - name: soju (as Client)
+      link: https://sr.ht/~emersion/soju
+      support:
+        stable:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          away-notify:
+          batch:
+          extended-join:
+          message-tags:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+        SASL:
+          external:
+          plain:
 
 - name: Bots
   software:
