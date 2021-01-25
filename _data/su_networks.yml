@@ -210,7 +210,7 @@
         stable:
           message-tags: No client tags
     - name: tilde.chat
-      ircd-ver: inspircd-3.6.0
+      ircd-ver: inspircd-3
       net-address:
         link: ircs://irc.tilde.chat:6697/
         display: irc.tilde.chat
@@ -239,7 +239,6 @@
           setname:
           starttls:
           userhost-in-names:
-          sts:
     - name: PIRC.pl
       ircd-ver: UnrealIRCd-5
       net-address:
