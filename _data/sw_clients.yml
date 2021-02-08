@@ -690,25 +690,26 @@
       support:
         stable:
           account-notify:
-          account-tag: 1.2+
+          account-tag:
           away-notify:
-          batch: 1.2+
+          batch:
           cap-3.1:
-          cap-3.2: 1.2+
-          cap-notify: 1.2+
+          cap-3.2:
+          cap-notify:
           chghost:
+          echo-message:
           extended-join:
           invite-notify:
-          labeled-response: 1.2+
-          message-tags: 1.2+
+          labeled-response:
+          message-tags:
           monitor:
-          msgid: 1.2+
+          msgid:
           multi-prefix:
           sasl-3.1:
-          sasl-3.2: 1.2+
+          sasl-3.2:
           server-time:
-          setname: 1.2+
-          sts: 1.2+
+          setname:
+          sts:
           userhost-in-names:
         SASL:
           external:
@@ -718,24 +719,25 @@
       support:
         stable:
           account-notify:
-          account-tag: 1.2+
+          account-tag:
           away-notify:
-          batch: 1.2+
+          batch:
           cap-3.1:
-          cap-3.2: 1.2+
-          cap-notify: 1.2+
+          cap-3.2:
+          cap-notify:
           chghost:
+          echo-message:
           extended-join:
           invite-notify:
-          labeled-response: 1.2+
-          message-tags: 1.2+
+          labeled-response:
+          message-tags:
           monitor:
-          msgid: 1.2+
+          msgid:
           multi-prefix:
           sasl-3.1:
-          sasl-3.2: 1.2+
-          server-time: 1.2+
-          setname: 1.2+
+          sasl-3.2:
+          server-time:
+          setname:
           userhost-in-names:
         SASL:
           external:
