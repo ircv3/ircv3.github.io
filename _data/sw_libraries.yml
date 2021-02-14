@@ -108,12 +108,15 @@
           echo-message:
           extended-join:
           invite-notify:
+          labeled-response:
           message-tags:
           monitor:
+          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname:
           sts:
           userhost-in-names:
           webirc:
