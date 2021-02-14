@@ -91,6 +91,32 @@
           userhost-in-names:
         SASL:
           - plain
+    - name: ircrobots
+      # ref: https://github.com/jesopo/ircrobots/blob/33bcba800177f676a404e3e4ac5601f109644abc/ircrobots/ircv3.py
+      link: https://github.com/jesopo/ircrobots/
+      language: Python
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          invite-notify:
+          labeled-response:
+          message-tags:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          setname:
+          sts:
+          userhost-in-names:
+        SASL:
+          - plain
+          - scram-sha-256
     - name: Kitteh IRC Client Library
       # ref: http://kicl.kitteh.org/en/stable/ircv3/
       link: https://github.com/KittehOrg/KittehIRCClientLib
