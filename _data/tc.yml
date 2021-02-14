@@ -32,6 +32,11 @@
     - "[IRCCloud](https://www.irccloud.com/)"
   chair: true
 
+- nick: pinkieval
+  github: ProgVal
+  projects:
+    - "[Limnoria](https://github.com/ProgVal/Limnoria)"
+
 - nick: prawnsalad
   github: prawnsalad
   projects:
