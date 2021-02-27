@@ -8,6 +8,12 @@ redirect_from:
     - /irc/3.1.html
     - /irc/3.2.html
     - /irc/3.3.html
+    - /specs/index.html
+    - /specs/batches/index.html
+    - /specs/client-tags/index.html
+    - /specs/core/index.html
+    - /specs/extensions/index.html
+    - /specs/deprecated/index.html
 page-header: >
   IRCv3 Specifications
 ---
