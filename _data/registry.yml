@@ -172,6 +172,10 @@
       specs:
         - multiline
       description: Allows clients and servers to use send messages that can exceed the usual byte length limit and that can contain line breaks.
+    - name: draft/register
+      specs:
+        - pr-register
+      description: Indicates support for the REGISTER/VERIFY commands, a standardised way for clients to register accounts.
     - name: sasl
       specs:
         - sasl-3.1
@@ -305,6 +309,10 @@
       specs: 
         - userhost-in-names
       description: Not defined by IRCv3 but extended to include account names.
+    - name: REGISTER
+      specs:
+        - pr-register
+      description: Lets clients register user accounts.
     - name: RENAME
       specs: 
         - channel-rename
@@ -317,6 +325,10 @@
       specs: 
         - message-tags
       description: Lets clients send messages with tags but no text content.
+    - name: VERIFY
+      specs:
+        - pr-register
+      description: Lets clients verify their newly-registered accounts.
     - name: WEBIRC
       specs: 
         - webirc

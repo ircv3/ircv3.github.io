@@ -20,6 +20,61 @@
       description: Indicates that the BRB attempt was unsuccessful
       specs:
         - pr-resume
+    - command: REGISTER
+      code: ALREADY_REGISTERED
+      description: Indicates that the client is already authenticated.
+      specs:
+        - pr-register
+    - command: REGISTER
+      code: COMPLETE_CONNECTION_REQUIRED
+      description: Indicates that the client can only use REGISTER once they are fully connected.
+      specs:
+        - pr-register
+    - command: REGISTER
+      code: INVALID_EMAIL
+      description: Indicates that the server cannot send emails to the given email address.
+      specs:
+        - pr-register
+    - command: REGISTER
+      code: TEMPORARILY_UNAVAILABLE
+      description: Indicates that the REGISTER command is temporarily unavailable.
+      specs:
+        - pr-register
+    - command: REGISTER
+      code: UNACCEPTABLE_EMAIL
+      description: Indicates that the email address cannot be used for account registration.
+      specs:
+        - pr-register
+    - command: REGISTER
+      code: UNACCEPTABLE_PASSWORD
+      description: Indicates that the desired password is invalid for any reason other than weakness.
+      specs:
+        - pr-register
+    - command: REGISTER
+      code: USERNAME_EXISTS
+      description: Indicates that the desired account name (the user's nick) has already been registered.
+      specs:
+        - pr-register
+    - command: REGISTER
+      code: WEAK_PASSWORD
+      description: Indicates that the desired password is too weak.
+      specs:
+        - pr-register
+    - command: VERIFY
+      code: ALREADY_REGISTERED
+      description: Indicates that the client is already authenticated.
+      specs:
+        - pr-register
+    - command: VERIFY
+      code: COMPLETE_CONNECTION_REQUIRED
+      description: Indicates that the client can only use VERIFY once they are fully connected.
+      specs:
+        - pr-register
+    - command: VERIFY
+      code: TEMPORARILY_UNAVAILABLE
+      description: Indicates that the VERIFY command is temporarily unavailable.
+      specs:
+        - pr-register
     - command: RESUME
       code: CANNOT_RESUME
       description: Indicates that the resume attempt was otherwise unsuccessful
