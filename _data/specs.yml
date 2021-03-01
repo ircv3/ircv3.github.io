@@ -204,3 +204,10 @@ pr-resume:
   shortname: PR#306
   full-url: https://github.com/ircv3/ircv3-specifications/pull/306
   proposed: true
+
+pr-utf8only:
+  fullname: PR#432 - UTF8ONLY ISUPPORT token
+  name: PR#432 - UTF8ONLY ISUPPORT token
+  shortname: PR#432
+  full-url: https://github.com/ircv3/ircv3-specifications/pull/432
+  proposed: true

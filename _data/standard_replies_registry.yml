@@ -15,6 +15,11 @@
       description: Indicates that the client must be logged into an account to execute the given command, connect to the server, or otherwise access some functionality
       specs:
         - pr-acc
+    - command:
+      code: INVALID_UTF8
+      description: Indicates that the client's message was dropped because it contained non-UTF-8 bytes
+      specs:
+        - pr-utf8only
     - command: BATCH
       code: MULTILINE_MAX_BYTES
       description: Indicates that the `max-bytes` multiline limit is exceeded
@@ -174,3 +179,8 @@
       description: Indicates that the client should login into an account
       specs:
         - pr-acc
+    - command:
+      code: INVALID_UTF8
+      description: Indicates that the client's message was modified because it contained non-UTF-8 bytes
+      specs:
+        - pr-utf8only
