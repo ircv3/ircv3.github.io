@@ -140,6 +140,10 @@
       specs:
         - echo-message
       description: Notifies clients when their PRIVMSG and NOTICEs are correctly received by the server.
+    - name: draft/event-playback
+      specs:
+        - chathistory
+      description: Lets clients request JOIN/MODE/etc messages as part of history.
     - name: extended-join
       specs:
         - extended-join
