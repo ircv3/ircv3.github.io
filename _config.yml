@@ -1,7 +1,7 @@
 name: IRCv3 Working Group
 markdown: kramdown
 highlighter: rouge
-url: https://deploy-preview-355--ircv3.netlify.app/
+url: https://deploy-preview-355--ircv3.netlify.app
 repository: ircv3/ircv3.github.io
 kramdown:
   input: GFM
