@@ -9,6 +9,11 @@
         - https://modern.ircdocs.horse/#feature-advertisement
         - https://modern.ircdocs.horse/#rplisupport-005
         - https://modern.ircdocs.horse/#rplisupport-parameters
+    - numeric: "335"
+      name: RPL_WHOISBOT
+      description: Indicates that the client being `WHOIS`'d is a bot
+      specs:
+        - pr-bot
     - numeric: "670"
       name: RPL_STARTTLS
       description: Indicates that the client may begin their TLS handshake
@@ -214,6 +219,10 @@
       specs:
         - batch
       description: Contains the ID of the batch the attached message is a part of.
+    - name: draft/bot
+      specs:
+        - pr-bot
+      description: Indicates this message was sent by a bot.
     - name: label
       specs: 
         - label
@@ -342,6 +351,10 @@
   include_numeric: false
   include_specs: true
   values:
+    - name: BOT
+      specs:
+        - pr-bot
+      description: Indicates that clients can mark themselves as bots by setting a mode on themselves.
     - name: CLIENTTAGDENY
       specs:
         - message-tags

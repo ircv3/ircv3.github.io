@@ -179,21 +179,28 @@ chathistory-batch:
 # pull requests
 pr-acc:
   fullname: PR#276 - Account Management Framework
-  name: PR#276
+  name: PR#276 - Account Management Framework
   shortname: PR#276
   full-url: https://github.com/ircv3/ircv3-specifications/pull/276
   proposed: true
 
+pr-bot:
+  fullname: PR#439 - Bot mode
+  name: PR#439 - Bot mode
+  shortname: PR#439
+  full-url: https://github.com/ircv3/ircv3-specifications/pull/439
+  proposed: true
+
 pr-register:
   fullname: PR#435 - register Extension
-  name: PR#435
+  name: PR#435 - register Extension
   shortname: PR#435
   full-url: https://github.com/ircv3/ircv3-specifications/pull/435
   proposed: true
 
 pr-resume:
   fullname: PR#306 - resume Extension
-  name: PR#306
+  name: PR#306 - resume Extension
   shortname: PR#306
   full-url: https://github.com/ircv3/ircv3-specifications/pull/306
   proposed: true
