@@ -32,6 +32,11 @@
     - "[IRCCloud](https://www.irccloud.com/)"
   chair: true
 
+- nick: kylef
+  github: kylef
+  projects:
+    - "[Palaver](https://palaverapp.com/)"
+
 - nick: pinkieval
   github: ProgVal
   projects:
