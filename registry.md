@@ -6,7 +6,7 @@ page-header: >
   IRCv3 Registry
 ---
 
-This page lists the tags, capabilities, commands, batches and metadata keys that have been defined by the IRCv3 Working Group, are described by our specifications, or that we otherwise recommend using.
+This page lists the tags, capabilities, commands, batches and metadata keys that have been defined by the IRCv3 Working Group, are described by our specifications, or that we otherwise recommend using. Draft-status names are listed without the `draft/`, as this primarily catalogues reserved names.
 
 <div class="irc-sw-list flexy-list" style="max-width: 60rem;">
 {% for type in site.data.registry %}
