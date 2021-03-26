@@ -135,5 +135,3 @@ This page lists the tags, capabilities, commands, batches and metadata keys that
   </tbody>
 </table>
 {% endfor %}
-
-{% include anchors.html %}

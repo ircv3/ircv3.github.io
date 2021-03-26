@@ -5,7 +5,7 @@ url: https://ircv3.net
 repository: ircv3/ircv3.github.io
 kramdown:
   input: GFM
-  auto_ids: false
+  auto_ids: true
 include:
   - _redirects
 exclude:
