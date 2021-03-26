@@ -15,61 +15,116 @@
       description: Indicates that the client must be logged into an account to execute the given command, connect to the server, or otherwise access some functionality
       specs:
         - pr-acc
-    - command: ACC
-      code: ACCOUNT_ALREADY_EXISTS
-      description: Indicates that the client cannot register because the given account name already exists
+    - command:
+      code: INVALID_UTF8
+      description: Indicates that the client's message was dropped because it contained non-UTF-8 bytes
       specs:
-        - pr-acc
-    - command: ACC
-      code: ACCOUNT_ALREADY_VERIFIED
-      description: Indicates that the client has already completed verification for their account registration
+        - pr-utf8only
+    - command: BATCH
+      code: MULTILINE_MAX_BYTES
+      description: Indicates that the `max-bytes` multiline limit is exceeded
       specs:
-        - pr-acc
-    - command: ACC
-      code: ACCOUNT_INVALID_VERIFY_CODE
-      description: Indicates that the given account registration verification code is incorrect
+        - multiline
+    - command: BATCH
+      code: MULTILINE_MAX_LINES
+      description: Indicates that the `max-lines` multiline limit is exceeded
       specs:
-        - pr-acc
-    - command: ACC
-      code: REG_INVALID_CALLBACK
-      description: Indicates that the given callback cannot be used (e.g. invalid email address, etc)
+        - multiline
+    - command: BATCH
+      code: MULTILINE_INVALID_TARGET
+      description: Indicates a mismatched PRIVMSG target within a multiline batch
       specs:
-        - pr-acc
-    - command: ACC
-      code: REG_INVALID_CRED_TYPE
-      description: Indicates that the given credential type is incorrect
+        - multiline
+    - command: BATCH
+      code: MULTILINE_INVALID
+      description: Any other multiline error
       specs:
-        - pr-acc
-    - command: ACC
-      code: REG_INVALID_CREDENTIAL
-      description: Indicates that the given credential (e.g. the passphrase) cannot be used
-      specs:
-        - pr-acc
-    - command: ACC
-      code: REG_MUST_USE_REGNICK
-      description: Indicates that the client must send `*` as the account name
-      specs:
-        - pr-acc
-    - command: ACC
-      code: REG_UNAVAILABLE
-      description: Indicates that account registration is currently unavailable
-      specs:
-        - pr-acc
-    - command: ACC
-      code: REG_UNSPECIFIED_ERROR
-      description: Indicates that account registration has otherwise failed
-      specs:
-        - pr-acc
-    - command: ACC
-      code: VERIFY_UNSPECIFIED_ERROR
-      description: Indicates that account registration verification has otherwise failed
-      specs:
-        - pr-acc
+        - multiline
     - command: BRB
       code: CANNOT_BRB
       description: Indicates that the BRB attempt was unsuccessful
       specs:
         - pr-resume
+    - command: CHATHISTORY
+      code: INVALID_PARAMS
+      description: Indicates that the client sent invalid parameters with their `CHATHISTORY` command
+      specs:
+        - chathistory
+    - command: CHATHISTORY
+      code: INVALID_TARGET
+      description: Indicates that the client attempted to request `CHATHISTORY` from a channel or conversation that does not exist, or that they are not authorized to view
+      specs:
+        - chathistory
+    - command: CHATHISTORY
+      code: MESSAGE_ERROR
+      description: Indicates that `CHATHISTORY` content could not be retrieved due to a server error
+      specs:
+        - chathistory
+    - command: CHATHISTORY
+      code: NEED_MORE_PARAMS
+      description: Indicates that the client sent insufficient parameters with their `CHATHISTORY` command
+      specs:
+        - chathistory
+    - command: CHATHISTORY
+      code: UNKNOWN_COMMAND
+      description: Indicates that the client sent an invalid subcommand of `CHATHISTORY`
+      specs:
+        - chathistory
+    - command: JOIN
+      code: CHANNEL_RENAMED
+      description: Indicates a joined channel has been renamed
+      specs:
+        - channel-rename
+    - command: REGISTER
+      code: ALREADY_REGISTERED
+      description: Indicates that the client is already authenticated.
+      specs:
+        - pr-register
+    - command: REGISTER
+      code: COMPLETE_CONNECTION_REQUIRED
+      description: Indicates that the client can only use REGISTER once they are fully connected.
+      specs:
+        - pr-register
+    - command: REGISTER
+      code: INVALID_EMAIL
+      description: Indicates that the server cannot send emails to the given email address.
+      specs:
+        - pr-register
+    - command: REGISTER
+      code: TEMPORARILY_UNAVAILABLE
+      description: Indicates that the REGISTER command is temporarily unavailable.
+      specs:
+        - pr-register
+    - command: REGISTER
+      code: UNACCEPTABLE_EMAIL
+      description: Indicates that the email address cannot be used for account registration.
+      specs:
+        - pr-register
+    - command: REGISTER
+      code: UNACCEPTABLE_PASSWORD
+      description: Indicates that the desired password is invalid for any reason other than weakness.
+      specs:
+        - pr-register
+    - command: REGISTER
+      code: USERNAME_EXISTS
+      description: Indicates that the desired account name (the user's nick) has already been registered.
+      specs:
+        - pr-register
+    - command: REGISTER
+      code: WEAK_PASSWORD
+      description: Indicates that the desired password is too weak.
+      specs:
+        - pr-register
+    - command: RENAME
+      code: CHANNEL_NAME_IN_USE
+      description: Indicates that a channel name is already taken
+      specs:
+        - channel-rename
+    - command: RENAME
+      code: CANNOT_RENAME
+      description: Indicates any other channel renaming failure
+      specs:
+        - channel-rename
     - command: RESUME
       code: CANNOT_RESUME
       description: Indicates that the resume attempt was otherwise unsuccessful
@@ -100,66 +155,21 @@
       description: Indicates that the new realname was invalid
       specs:
         - setname
-    - command: BATCH
-      code: MULTILINE_MAX_BYTES
-      description: Indicates that the `max-bytes` multiline limit is exceeded
+    - command: VERIFY
+      code: ALREADY_REGISTERED
+      description: Indicates that the client is already authenticated.
       specs:
-        - multiline
-    - command: BATCH
-      code: MULTILINE_MAX_LINES
-      description: Indicates that the `max-lines` multiline limit is exceeded
+        - pr-register
+    - command: VERIFY
+      code: COMPLETE_CONNECTION_REQUIRED
+      description: Indicates that the client can only use VERIFY once they are fully connected.
       specs:
-        - multiline
-    - command: BATCH
-      code: MULTILINE_INVALID_TARGET
-      description: Indicates a mismatched PRIVMSG target within a multiline batch
+        - pr-register
+    - command: VERIFY
+      code: TEMPORARILY_UNAVAILABLE
+      description: Indicates that the VERIFY command is temporarily unavailable.
       specs:
-        - multiline
-    - command: BATCH
-      code: MULTILINE_INVALID
-      description: Any other multiline error
-      specs:
-        - multiline
-    - command: RENAME
-      code: CHANNEL_NAME_IN_USE
-      description: Indicates that a channel name is already taken
-      specs:
-        - channel-rename
-    - command: RENAME
-      code: CANNOT_RENAME
-      description: Indicates any other channel renaming failure
-      specs:
-        - channel-rename
-    - command: JOIN
-      code: CHANNEL_RENAMED
-      description: Indicates a joined channel has been renamed
-      specs:
-        - channel-rename
-    - command: CHATHISTORY
-      code: INVALID_PARAMS
-      description: Indicates that the client sent invalid parameters with their `CHATHISTORY` command
-      specs:
-        - chathistory
-    - command: CHATHISTORY
-      code: INVALID_TARGET
-      description: Indicates that the client attempted to request `CHATHISTORY` from a channel or conversation that does not exist, or that they are not authorized to view
-      specs:
-        - chathistory
-    - command: CHATHISTORY
-      code: MESSAGE_ERROR
-      description: Indicates that `CHATHISTORY` content could not be retrieved due to a server error
-      specs:
-        - chathistory
-    - command: CHATHISTORY
-      code: NEED_MORE_PARAMS
-      description: Indicates that the client sent insufficient parameters with their `CHATHISTORY` command
-      specs:
-        - chathistory
-    - command: CHATHISTORY
-      code: UNKNOWN_COMMAND
-      description: Indicates that the client sent an invalid subcommand of `CHATHISTORY`
-      specs:
-        - chathistory
+        - pr-register
 
 # WARN
 - name: WARN codes
@@ -169,3 +179,8 @@
       description: Indicates that the client should login into an account
       specs:
         - pr-acc
+    - command:
+      code: INVALID_UTF8
+      description: Indicates that the client's message was modified because it contained non-UTF-8 bytes
+      specs:
+        - pr-utf8only

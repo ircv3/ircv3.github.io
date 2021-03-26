@@ -9,6 +9,11 @@
         - https://modern.ircdocs.horse/#feature-advertisement
         - https://modern.ircdocs.horse/#rplisupport-005
         - https://modern.ircdocs.horse/#rplisupport-parameters
+    - numeric: "335"
+      name: RPL_WHOISBOT
+      description: Indicates that the client being `WHOIS`'d is a bot
+      specs:
+        - pr-bot
     - numeric: "670"
       name: RPL_STARTTLS
       description: Indicates that the client may begin their TLS handshake
@@ -140,6 +145,10 @@
       specs:
         - echo-message
       description: Notifies clients when their PRIVMSG and NOTICEs are correctly received by the server.
+    - name: event-playback
+      specs:
+        - chathistory
+      description: Lets clients request JOIN/MODE/etc messages as part of history.
     - name: extended-join
       specs:
         - extended-join
@@ -172,6 +181,10 @@
       specs:
         - multiline
       description: Allows clients and servers to use send messages that can exceed the usual byte length limit and that can contain line breaks.
+    - name: register
+      specs:
+        - pr-register
+      description: Indicates support for the REGISTER/VERIFY commands, a standardised way for clients to register accounts.
     - name: sasl
       specs:
         - sasl-3.1
@@ -206,6 +219,10 @@
       specs:
         - batch
       description: Contains the ID of the batch the attached message is a part of.
+    - name: bot
+      specs:
+        - pr-bot
+      description: Indicates this message was sent by a bot.
     - name: label
       specs: 
         - label
@@ -305,6 +322,10 @@
       specs: 
         - userhost-in-names
       description: Not defined by IRCv3 but extended to include account names.
+    - name: REGISTER
+      specs:
+        - pr-register
+      description: Lets clients register user accounts.
     - name: RENAME
       specs: 
         - channel-rename
@@ -317,6 +338,10 @@
       specs: 
         - message-tags
       description: Lets clients send messages with tags but no text content.
+    - name: VERIFY
+      specs:
+        - pr-register
+      description: Lets clients verify their newly-registered accounts.
     - name: WEBIRC
       specs: 
         - webirc
@@ -326,7 +351,15 @@
   include_numeric: false
   include_specs: true
   values:
+    - name: BOT
+      specs:
+        - pr-bot
+      description: Indicates that clients can mark themselves as bots by setting a mode on themselves.
     - name: CLIENTTAGDENY
       specs:
         - message-tags
       description: Indicates client-only tags that are blocked or allowed by a server
+    - name: UTF8ONLY
+      specs:
+        - pr-utf8only
+      description: Indicates the server only accepts UTF-8 encoded messages
