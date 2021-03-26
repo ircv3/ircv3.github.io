@@ -892,6 +892,7 @@
           sts:
           starttls:
           userhost-in-names:
+          +draft/react:
           +draft/reply:
         SASL:
             - external
