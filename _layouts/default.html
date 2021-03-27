@@ -40,7 +40,7 @@ layout: compress
           {% capture mdph %}{{ page.page-header | markdownify }}{% endcapture %}
           {% include pageheader.html content=mdph %}
         {% endif %}
-        {{ content }}
+        {% include anchor_headings.html html=content anchorBody="🔗" anchorClass="anchor" %}
       </div>
     </div>
     <footer>

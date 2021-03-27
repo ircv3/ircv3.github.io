@@ -396,6 +396,3 @@ The [`tls` spec]({{site.baseurl}}/specs/extensions/tls-3.1.html) is still
 available for reference. It describes how the `STARTTLS` command works,
 as well as how connection registration is changed by the introduction of
 this capability.
-
-
-{% include anchors.html %}

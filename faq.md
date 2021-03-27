@@ -39,5 +39,3 @@ In terms of a timeline, work happens whenever someone writes something up or pos
 Various people are working on updated IRC core protocol specifications, but there aren't any we can recommend at this time. If you have trouble understanding / implementing a specific piece of the IRC client protocol, feel free to [have a chat to us]({{site.baseurl}}/contact.html). We can try to work it out and/or point you in the right direction.
 
 As a note, the RFCs are old, outdated, and don't properly represent how the IRC client or server protocols have grown over time. The best place to see how real-world IRC software works is that software itself.
-
-{% include anchors.html %}
