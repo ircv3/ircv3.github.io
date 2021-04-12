@@ -886,6 +886,7 @@
           monitor:
           msgid:
           multi-prefix:
+          draft/multiline:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -899,9 +900,6 @@
             - external
             - plain
             - scram-sha-256
-      partial:
-        stable:
-          draft/multiline: "S2C only"
     - name: Sopel (ex Willie)
       #ref: https://github.com/sopel-irc/sopel/blob/v5.3.0/willie/coretasks.py#L357
       #     https://github.com/sopel-irc/sopel/blob/e5df2fa/sopel/coretasks.py#L345
