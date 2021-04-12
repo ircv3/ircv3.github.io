@@ -56,10 +56,10 @@ CAPs are the primary way that IRCv3 features are enabled. As such, most
 software implementing IRCv3 extensions will want to implement capability
 negotiation.
 
-The [Capability Negotiation spec]({{site.baseurl}}/specs/core/capability-negotiation.html)
+The [Capability Negotiation spec]({{site.baseurl}}/specs/extensions/capability-negotiation.html)
 conveys the basic listing and requesting of capabilities, and lays the
 framework which most IRCv3 specs use. It also goes over the `302` extensions,
-and [`cap-notify`]({{site.baseurl}}/specs/core/capability-negotiation.html#cap-notify)
+and [`cap-notify`]({{site.baseurl}}/specs/extensions/capability-negotiation.html#cap-notify)
 – a feature to make clients aware when capabilities are removed from and added
 to the server (for example, if the SASL authentication layer disconnects, the
 associated capability may be disabled for a time).
@@ -96,42 +96,42 @@ logged into accounts. This allows for much greater integration between client
 bots and the network's authentication system, as well as better general display
 and authentication of client identities.
 
-The [`account-notify` spec]({{site.baseurl}}/specs/extensions/account-notify-3.1.html)
+The [`account-notify` spec]({{site.baseurl}}/specs/extensions/account-notify.html)
 defines a way for clients to be notified when other clients login to accounts.
 This spec defines the `ACCOUNT` message to enable this, use of the `a` WHOX
 token, as well as outlining the general restriction of account names not being
 `*` (as this is used to indicate logging out of accounts).
 
-The [`account-tag` spec]({{site.baseurl}}/specs/extensions/account-tag-3.2.html)
+The [`account-tag` spec]({{site.baseurl}}/specs/extensions/account-tag.html)
 defines a way for clients to receive a message tag on messages specifying the
 current account that other client is logged into (or that they aren't logged
 into one at all). This is especially useful for letting bots make use of the
 network's authentication and account mechanisms.
 
-The [`extended-join` spec]({{site.baseurl}}/specs/extensions/extended-join-3.1.html)
+The [`extended-join` spec]({{site.baseurl}}/specs/extensions/extended-join.html)
 defines a way to request that extra client information (including that client's
 account) is sent when clients join a given channel. This allows better tracking
 of accounts, particularly when used with `account-notify`.
 
 
-## [Away Notifications]({{site.baseurl}}/specs/extensions/away-notify-3.1.html)
+## [Away Notifications]({{site.baseurl}}/specs/extensions/away-notify.html)
 
 The `away-notify` extension provides a way for clients to instantly know when
 other clients go away or come back. This improves responsiveness and the
 display of channels for IRC clients that display this information.
 
-The [`away-notify` spec]({{site.baseurl}}/specs/extensions/away-notify-3.1.html)
+The [`away-notify` spec]({{site.baseurl}}/specs/extensions/away-notify.html)
 describes how to sign up for these notifications and the `AWAY` message to
 enable this. 
 
 
-## [Batches]({{site.baseurl}}/specs/extensions/batch-3.2.html)
+## [Batches]({{site.baseurl}}/specs/extensions/batch.html)
 
 The `batch` extension provides a way for servers to mark certain messages as
 related. This can simplify the display of this information in clients as well
 as allow better post-processing on them.
 
-The [`batch` spec]({{site.baseurl}}/specs/extensions/batch-3.2.html) describes
+The [`batch` spec]({{site.baseurl}}/specs/extensions/batch.html) describes
 the naming of new batch types, the semantics of batches and how clients should
 process them.
 
@@ -140,8 +140,8 @@ do not themselves offer any user-facing features.
 
 Here are the standalone batch types the IRCv3 WG defines:
 
-* [The `netsplit` and `netjoin` batch types]({{site.baseurl}}/specs/extensions/batch/netsplit-3.2.html) allow clients to collapse netsplits and netjoins more effectively.
-* [The `chathistory` batch type]({{site.baseurl}}/specs/extensions/batch/chathistory-3.3.html) allows replaying message history.
+* [The `netsplit` and `netjoin` batch types]({{site.baseurl}}/specs/batches/netsplit.html) allow clients to collapse netsplits and netjoins more effectively.
+* [The `chathistory` batch type]({{site.baseurl}}/specs/batches/chathistory.html) allows replaying message history.
 
 
 ## [Channel renaming]({{site.baseurl}}/specs/extensions/channel-rename.html)
@@ -158,13 +158,13 @@ The `chathistory` extension standardizes a mechanism for clients to request mess
 The **work-in-progress** [`chathistory` spec]({{site.baseurl}}/specs/extensions/chathistory.html) describes the syntax and semantics of the new `CHATHISTORY` command.
 
 
-## [Changing Usernames and Hostnames]({{site.baseurl}}/specs/extensions/chghost-3.2.html)
+## [Changing Usernames and Hostnames]({{site.baseurl}}/specs/extensions/chghost.html)
 
 The `chghost` extension lets clients more easily see when other clients'
 usernames and/or hostnames are changed. This replaces the clunky method of
 sending a fake `QUIT`, and then one or more fake `JOIN` messages instead.
 
-The [`chghost` spec]({{site.baseurl}}/specs/extensions/chghost-3.2.html)
+The [`chghost` spec]({{site.baseurl}}/specs/extensions/chghost.html)
 describes the new `CHGHOST` message which this extension uses, and how clients
 see these changes.
 
@@ -182,24 +182,24 @@ Here are the client-only tags the IRCv3 WG defines:
 * [The `typing` client-only tag]({{site.baseurl}}/specs/client-tags/typing.html) lets users know when another user is typing a message in their channel or private message.
 
 
-## [Echo Message]({{site.baseurl}}/specs/extensions/echo-message-3.2.html)
+## [Echo Message]({{site.baseurl}}/specs/extensions/echo-message.html)
 
 The `echo-message` extension lets clients confirm when messages are sent, and
 see messages that other clients on their connection (say, via an IRC bouncer)
 have sent. It does this by echoing messages back to clients after they are
 sent, allowing for these extra features.
 
-The [`echo-message` spec]({{site.baseurl}}/specs/extensions/echo-message-3.2.html)
+The [`echo-message` spec]({{site.baseurl}}/specs/extensions/echo-message.html)
 describes which messages are echo'd, and how they are interpreted by clients.
 
 
-## [Invite Notify]({{site.baseurl}}/specs/extensions/invite-notify-3.2.html)
+## [Invite Notify]({{site.baseurl}}/specs/extensions/invite-notify.html)
 
 The `invite-notify` extension allows privileged channel users to see when
 someone is invited to their channel. This can help chanops better run their
 channels and see better information about what's going on.
 
-The [`invite-notify` spec]({{site.baseurl}}/specs/extensions/invite-notify-3.2.html)
+The [`invite-notify` spec]({{site.baseurl}}/specs/extensions/invite-notify.html)
 describes the new `INVITE` reply which this extension uses, and how clients
 interpret these notifications.
 
@@ -234,25 +234,25 @@ and do not themselves offer any user-facing features. Specific IRCv3
 extensions will note their use of (and dependency on) message IDs.
 
 
-## [Monitor]({{site.baseurl}}/specs/core/monitor-3.2.html)
+## [Monitor]({{site.baseurl}}/specs/extensions/monitor.html)
 
 The `MONITOR` command acts as a standardized way for clients to be alerted when
 other clients enter or exit the network. This is in opposition to `ISON`, which
 does this through polling, and `WATCH`, which differs between vendor
 implementations.
 
-The [Monitor spec]({{site.baseurl}}/specs/core/monitor-3.2.html) details this
+The [Monitor spec]({{site.baseurl}}/specs/extensions/monitor.html) details this
 command, the relevant `RPL_ISUPPORT` token and the commands used with it.
 
 
-## [Multiple Prefixes]({{site.baseurl}}/specs/extensions/multi-prefix-3.1.html)
+## [Multiple Prefixes]({{site.baseurl}}/specs/extensions/multi-prefix.html)
 
 The `multi-prefix` extension allows clients to see all the statuses
 (i.e. voice, chanop) that other clients have in a channel rather than just the
 highest. This improves data tracking for clients and bots, and allows clients
 to display the privilege level of other clients more correctly.
 
-The [`multi-prefix` spec]({{site.baseurl}}/specs/extensions/multi-prefix-3.1.html)
+The [`multi-prefix` spec]({{site.baseurl}}/specs/extensions/multi-prefix.html)
 details the exact messages these changes apply to and how exactly it's used.
 
 
@@ -290,23 +290,23 @@ For further information on SASL mechanism support, see the
 [SASL Mechanisms page]({{site.baseurl}}/docs/sasl-mechs.html).
 
 
-## [Server Time]({{site.baseurl}}/specs/extensions/server-time-3.2.html)
+## [Server Time]({{site.baseurl}}/specs/extensions/server-time.html)
 
 The `server-time` extension allows clients to see the exact time that messages
 were sent and received. This allows bouncers to replay information with more
 accurate time tracking.
 
-The [`server-time` spec]({{site.baseurl}}/specs/extensions/server-time-3.2.html)
+The [`server-time` spec]({{site.baseurl}}/specs/extensions/server-time.html)
 describes the `time` tag, how to specify timestamps and how clients should
 parse incoming timestamps.
 
 
-## [Server Name Indication (SNI)]({{site.baseurl}}/specs/core/sni-3.3.html)
+## [Server Name Indication (SNI)]({{site.baseurl}}/docs/sni.html)
 
 SNI makes it easier for servers to send the correct TLS certificate to
 connecting clients.
 
-The **work-in-progress** [SNI spec]({{site.baseurl}}/specs/core/sni-3.3.html) provides
+The **work-in-progress** [SNI spec]({{site.baseurl}}/docs/sni.html) provides
 guidelines for clients and servers, allowing them to better detect the TLS
 certificate to send based on the server's hostname.
 
@@ -344,13 +344,13 @@ capability, how it operates, and various implementation details for both clients
 and servers.
 
 
-## [Userhosts in NAMES]({{site.baseurl}}/specs/extensions/userhost-in-names-3.2.html)
+## [Userhosts in NAMES]({{site.baseurl}}/specs/extensions/userhost-in-names.html)
 
 The `userhost-in-names` extension allows clients to more easily see the
 user/hostnames of other clients when joining channels. This allows clients to
 better track info and automate client features more easily.
 
-The [`userhost-in-names` spec]({{site.baseurl}}/specs/extensions/userhost-in-names-3.2.html)
+The [`userhost-in-names` spec]({{site.baseurl}}/specs/extensions/userhost-in-names.html)
 describes how the `NAMES` message changes with this capability active, and how
 clients should interpret the changes.
 
@@ -385,14 +385,14 @@ these issues and overhaul the notification system, so we do not recommend
 implementing this spec.
 
 
-## [STARTTLS]({{site.baseurl}}/specs/extensions/tls-3.1.html)
+## [STARTTLS]({{site.baseurl}}/specs/deprecated/tls.html)
 
 STARTTLS allows clients to upgrade their plaintext connections to use TLS
 encryption. In alignment with [RFC8314](https://tools.ietf.org/html/rfc8314),
 it is recommended that IRC networks use listeners designed for implicit TLS (such
 as those that operate on port 6697) and clients instead implement STS support.
 
-The [`tls` spec]({{site.baseurl}}/specs/extensions/tls-3.1.html) is still
+The [`tls` spec]({{site.baseurl}}/specs/deprecated/tls.html) is still
 available for reference. It describes how the `STARTTLS` command works,
 as well as how connection registration is changed by the introduction of
 this capability.

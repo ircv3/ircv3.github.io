@@ -9,17 +9,17 @@ stable:
     cap-3.1:
       name: CAP
       description: Capability Negotiation
-      link: /specs/core/capability-negotiation.html
+      link: /specs/extensions/capability-negotiation.html
       required: true
     cap-3.2:
       name: CAP 302
       description: Capability Negotiation 302 Extensions
-      link: /specs/core/capability-negotiation.html#cap-ls-version
+      link: /specs/extensions/capability-negotiation.html#cap-ls-version
       required: true
     cap-notify:
       name: cap-notify
       description: cap-notify Extension
-      link: /specs/core/capability-negotiation.html#cap-notify
+      link: /specs/extensions/capability-negotiation.html#cap-notify
       required: true
       caps:
         - cap-notify
@@ -27,13 +27,13 @@ stable:
     account-notify:
       name: account-notify
       description: account-notify Extension
-      link: /specs/extensions/account-notify-3.1.html
+      link: /specs/extensions/account-notify.html
       caps:
         - account-notify
     account-tag:
       name: account-tag
       description: account-tag Extension
-      link: /specs/extensions/account-tag-3.2.html
+      link: /specs/extensions/account-tag.html
       caps:
         - account-tag
       tags:
@@ -41,13 +41,13 @@ stable:
     away-notify:
       name: away-notify
       description: away-notify Extension
-      link: /specs/extensions/away-notify-3.1.html
+      link: /specs/extensions/away-notify.html
       caps:
         - away-notify
     batch:
       name: batch
       description: batch Extension
-      link: /specs/extensions/batch-3.2.html
+      link: /specs/extensions/batch.html
       caps:
         - batch
       tags:
@@ -55,25 +55,25 @@ stable:
     chghost:
       name: chghost
       description: chghost Extension
-      link: /specs/extensions/chghost-3.2.html
+      link: /specs/extensions/chghost.html
       caps:
         - chghost
     echo-message:
       name: echo-message
       description: echo-message Extension
-      link: /specs/extensions/echo-message-3.2.html
+      link: /specs/extensions/echo-message.html
       caps:
         - echo-message
     extended-join:
       name: extended-join
       description: extended-join Extension
-      link: /specs/extensions/extended-join-3.1.html
+      link: /specs/extensions/extended-join.html
       caps:
         - extended-join
     invite-notify:
       name: invite-notify
       description: invite-notify Extension
-      link: /specs/extensions/invite-notify-3.2.html
+      link: /specs/extensions/invite-notify.html
       caps:
         - invite-notify
     labeled-response:
@@ -98,7 +98,7 @@ stable:
     monitor:
       name: Monitor
       description: Monitor
-      link: /specs/core/monitor-3.2.html
+      link: /specs/extensions/monitor.html
     msgid:
       name: msgid
       description: Message IDs
@@ -108,7 +108,7 @@ stable:
     multi-prefix:
       name: multi-prefix
       description: multi-prefix Extension
-      link: /specs/extensions/multi-prefix-3.1.html
+      link: /specs/extensions/multi-prefix.html
       caps:
         - multi-prefix
     sasl-3.1:
@@ -124,7 +124,7 @@ stable:
     server-time:
       name: server-time
       description: server-time Extension
-      link: /specs/extensions/server-time-3.2.html
+      link: /specs/extensions/server-time.html
       caps:
         - server-time
       tags:
@@ -151,7 +151,7 @@ stable:
     userhost-in-names:
       name: userhost-in-names
       description: userhost-in-names Extension
-      link: /specs/extensions/userhost-in-names-3.2.html
+      link: /specs/extensions/userhost-in-names.html
       caps:
         - userhost-in-names
     webirc:

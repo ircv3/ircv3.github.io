@@ -5,7 +5,7 @@ cap:
   fullname: Client Capability Negotiation
   name: Capability Negotiation
   shortname: CAP
-  url: /core/capability-negotiation.html
+  url: /extensions/capability-negotiation.html
 message-tags:
   fullname: Message Tags
   name: Message Tags
@@ -13,30 +13,30 @@ message-tags:
   url: /extensions/message-tags.html
 
 account-notify:
-  fullname: IRCv3.1 account-notify Extension
+  fullname: account-notify Extension
   name: account-notify Extension
   shortname: account-notify
-  url: /extensions/account-notify-3.1.html
+  url: /extensions/account-notify.html
 account-tag:
-  fullname: IRCv3.2 account-tag Extension
+  fullname: account-tag Extension
   name: account-tag Extension
   shortname: account-tag
-  url: /extensions/account-tag-3.2.html
+  url: /extensions/account-tag.html
 extended-join:
-  fullname: IRCv3.1 extended-join Extension
+  fullname: extended-join Extension
   name: extended-join Extension
   shortname: extended-join
-  url: /extensions/extended-join-3.1.html
+  url: /extensions/extended-join.html
 away-notify:
-  fullname: IRCv3.1 away-notify Extension
+  fullname: away-notify Extension
   name: away-notify Extension
   shortname: away-notify
-  url: /extensions/away-notify-3.1.html
+  url: /extensions/away-notify.html
 batch:
-  fullname: IRCv3.2 batch Extension
+  fullname: batch Extension
   name: batch Extension
   shortname: batch
-  url: /extensions/batch-3.2.html
+  url: /extensions/batch.html
 channel-rename:
   fullname: Channel renaming
   name: Channel renaming
@@ -50,40 +50,40 @@ chathistory:
   url: /extensions/chathistory.html
   draft: true
 chghost:
-  fullname: IRCv3.2 chghost Extension
+  fullname: chghost Extension
   name: chghost Extension
   shortname: chghost
-  url: /extensions/chghost-3.2.html
+  url: /extensions/chghost.html
 echo-message:
-  fullname: IRCv3.2 echo-message Extension
+  fullname: echo-message Extension
   name: echo-message Extension
   shortname: echo-message
-  url: /extensions/echo-message-3.2.html
+  url: /extensions/echo-message.html
 invite-notify:
-  fullname: IRCv3.2 invite-notify Extension
+  fullname: invite-notify Extension
   name: invite-notify Extension
   shortname: invite-notify
-  url: /extensions/invite-notify-3.2.html
+  url: /extensions/invite-notify.html
 label:
   fullname: Labeled responses
   name: Labeled responses
   shortname: Labeled responses
   url: /extensions/labeled-response.html
 msgid:
-  fullname: IRCv3 Message IDs
+  fullname: Message IDs
   name: Message IDs
   shortname: Message IDs
   url: /extensions/message-ids.html
 monitor:
-  fullname: IRCv3.2 Monitor
+  fullname: Monitor
   name: Monitor
   shortname: Monitor
-  url: /core/monitor-3.2.html
+  url: /extensions/monitor.html
 multi-prefix:
-  fullname: IRCv3.1 multi-prefix Extension
+  fullname: multi-prefix Extension
   name: multi-prefix Extension
   shortname: multi-prefix
-  url: /extensions/multi-prefix-3.1.html
+  url: /extensions/multi-prefix.html
 multiline:
   fullname: Multiline messages
   name: Multiline messages
@@ -91,22 +91,22 @@ multiline:
   url: /extensions/multiline.html
   draft: true
 sasl-3.1:
-  fullname: IRCv3.1 SASL Authentication
+  fullname: SASL Authentication
   name: SASL Authentication 3.1
   shortname: SASL 3.1
   url: /extensions/sasl-3.1.html
 sasl-3.2:
-  fullname: IRCv3.2 SASL Authentication
+  fullname: SASL Authentication
   name: SASL Authentication 3.2
   shortname: SASL 3.2
   url: /extensions/sasl-3.2.html
 server-time:
-  fullname: IRCv3.2 server-time Extension
+  fullname: server-time Extension
   name: server-time Extension
   shortname: server-time
-  url: /extensions/server-time-3.2.html
+  url: /extensions/server-time.html
 setname:
-  fullname: IRCv3 setname Extension
+  fullname: setname Extension
   name: setname Extension
   shortname: setname
   url: /extensions/setname.html
@@ -114,23 +114,28 @@ sni:
   fullname: Server Name Indication
   name: Server Name Indication
   shortname: SNI
-  url: /core/sni-3.3.html
+  url: ../docs/sni.html
   draft: true
+standard-replies:
+  fullname: Standard Replies
+  name: Standard Replies
+  shortname: stdreplies
+  url: /extensions/standard-replies.html
 starttls:
-  fullname: IRCv3.1 tls Extension
+  fullname: tls Extension
   name: starttls Extension
   shortname: starttls
   url: /extensions/tls-3.1.html
 sts:
-  fullname: IRCv3.3 Strict Transport Security
+  fullname: Strict Transport Security
   name: Strict Transport Security
   shortname: STS
   url: /extensions/sts.html
 userhost-in-names:
-  fullname: IRCv3.2 userhost-in-names Extension
+  fullname: userhost-in-names Extension
   name: userhost-in-names Extension
   shortname: userhost-in-names
-  url: /extensions/userhost-in-names-3.2.html
+  url: /extensions/userhost-in-names.html
 webirc:
   fullname: WebIRC extension
   name: WebIRC extension
@@ -139,7 +144,7 @@ webirc:
 
 # deprecated specs
 metadata-3.2:
-  fullname: IRCv3.2 Metadata
+  fullname: Metadata
   name: Metadata 3.2
   shortname: Metadata 3.2
   url: /core/metadata-3.2.html
@@ -166,15 +171,15 @@ typing-client-tag:
 
 # batches
 netsplitjoin-batch:
-  fullname: IRCv3 netsplit and netjoin Batch Types
+  fullname: netsplit and netjoin Batch Types
   name: netsplit and netjoin Batch Types
   shortname: netsplit and netjoin Batch Types
-  url: /extensions/batch/netsplit-3.2.html
+  url: /extensions/batches/netsplit.html
 chathistory-batch:
-  fullname: IRCv3 chathistory Batch Type
+  fullname: chathistory Batch Type
   name: chathistory Batch Type
   shortname: chathistory Batch Type
-  url: /extensions/batch/chathistory-3.3.html
+  url: /extensions/batches/chathistory.html
 
 # pull requests
 pr-acc:
