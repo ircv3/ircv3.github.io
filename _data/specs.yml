@@ -37,6 +37,12 @@ batch:
   name: batch Extension
   shortname: batch
   url: /extensions/batch.html
+bot-mode:
+  fullname: Bot Mode
+  name: Bot Mode
+  shortname: Bot Mode
+  url: /extensions/bot-mode.html
+  draft: true
 channel-rename:
   fullname: Channel renaming
   name: Channel renaming
@@ -119,7 +125,7 @@ sni:
 standard-replies:
   fullname: Standard Replies
   name: Standard Replies
-  shortname: stdreplies
+  shortname: Standard Replies
   url: /extensions/standard-replies.html
 starttls:
   fullname: tls Extension
@@ -187,13 +193,6 @@ pr-acc:
   name: PR#276 - Account Management Framework
   shortname: PR#276
   full-url: https://github.com/ircv3/ircv3-specifications/pull/276
-  proposed: true
-
-pr-bot:
-  fullname: PR#439 - Bot mode
-  name: PR#439 - Bot mode
-  shortname: PR#439
-  full-url: https://github.com/ircv3/ircv3-specifications/pull/439
   proposed: true
 
 pr-register:

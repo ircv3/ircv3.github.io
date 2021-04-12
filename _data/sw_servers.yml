@@ -90,6 +90,7 @@
       link: https://github.com/ircd-hybrid/ircd-hybrid
       support:
         stable:
+          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -112,6 +113,7 @@
           account-tag: 3.0+
           away-notify:
           batch: 3.0+
+          bot-mode:
           cap-3.1:
           cap-3.2: 3.0+
           cap-notify: 3.0+
@@ -152,6 +154,7 @@
       support:
         stable:
           batch:
+          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -221,6 +224,7 @@
           account-tag: 5.0+
           away-notify:
           batch: 5.0+
+          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:

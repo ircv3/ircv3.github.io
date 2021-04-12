@@ -13,7 +13,7 @@
       name: RPL_WHOISBOT
       description: Indicates that the client being `WHOIS`'d is a bot
       specs:
-        - pr-bot
+        - bot-mode
     - numeric: "670"
       name: RPL_STARTTLS
       description: Indicates that the client may begin their TLS handshake
@@ -221,7 +221,7 @@
       description: Contains the ID of the batch the attached message is a part of.
     - name: bot
       specs:
-        - pr-bot
+        - bot-mode
       description: Indicates this message was sent by a bot.
     - name: label
       specs: 
@@ -353,7 +353,7 @@
   values:
     - name: BOT
       specs:
-        - pr-bot
+        - bot-mode
       description: Indicates that clients can mark themselves as bots by setting a mode on themselves.
     - name: CLIENTTAGDENY
       specs:

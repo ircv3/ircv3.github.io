@@ -14,6 +14,7 @@
           account-tag:
           away-notify:
           batch:
+          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -74,6 +75,7 @@
           account-tag:
           away-notify:
           batch:
+          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -190,6 +192,7 @@
           account-tag:
           away-notify:
           batch:
+          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -221,6 +224,7 @@
           account-tag:
           away-notify:
           batch:
+          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -251,6 +255,7 @@
           account-tag:
           away-notify:
           batch:
+          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:

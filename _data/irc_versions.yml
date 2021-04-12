@@ -52,6 +52,13 @@ stable:
         - batch
       tags:
         - batch
+    bot-mode:
+      name: Bot Mode
+      description: Bot Mode
+      link: /specs/extensions/bot-mode.html
+      hide-if-no-support: true
+      tags:
+        - draft/bot
     chghost:
       name: chghost
       description: chghost Extension

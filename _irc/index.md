@@ -144,6 +144,13 @@ Here are the standalone batch types the IRCv3 WG defines:
 * [The `chathistory` batch type]({{site.baseurl}}/specs/batches/chathistory.html) allows replaying message history.
 
 
+## [Bot Mode]({{site.baseurl}}/specs/extensions/bot-mode.html)
+
+The Bot mode lets bots mark themselves as such. Other users will see the client as a bot in various ways, and should see a tag on that client's messages if they have requested the `message-tags` capability.
+
+The **work-in-progress** [Bot Mode spec]({{site.baseurl}}/specs/extensions/bot-mode.html) describes the mode and how to see bots that have set the mode on themselves.
+
+
 ## [Channel renaming]({{site.baseurl}}/specs/extensions/channel-rename.html)
 
 The `channel-rename` extension adds a new command sent by clients and servers that enables renaming a channel without closing it down and redirecting to a new one.
