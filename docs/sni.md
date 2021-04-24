@@ -1,7 +1,6 @@
 ---
 title: Server Name Indication
 layout: spec
-work-in-progress: true
 redirect_from:
   - /specs/core/sni-3.3.html
 copyrights:
