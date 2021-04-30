@@ -362,6 +362,16 @@ describes how the `NAMES` message changes with this capability active, and how
 clients should interpret the changes.
 
 
+## [UTF8ONLY]({{site.baseurl}}/specs/extensions/utf8-only.html)
+
+The `UTF8ONLY` ISUPPORT token lets servers indicate that they only support
+UTF-8 traffic, allowing clients to set their incoming/outgoing encodings
+automaticaly.
+
+The [`UTF8ONLY` spec]({{site.baseurl}}/specs/extensions/utf8-only.html)
+details the `RPL_ISUPPORT` token and associated messages and functionality.
+
+
 ## [WebIRC]({{site.baseurl}}/specs/extensions/webirc.html)
 
 The `WEBIRC` command is widely used to provide the real IP address of users

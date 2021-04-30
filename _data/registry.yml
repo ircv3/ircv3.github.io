@@ -361,5 +361,5 @@
       description: Indicates client-only tags that are blocked or allowed by a server
     - name: UTF8ONLY
       specs:
-        - pr-utf8only
+        - utf8only
       description: Indicates the server only accepts UTF-8 encoded messages

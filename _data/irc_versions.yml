@@ -161,6 +161,11 @@ stable:
       link: /specs/extensions/userhost-in-names.html
       caps:
         - userhost-in-names
+    utf8only:
+      name: UTF8ONLY
+      description: UTF8ONLY ISUPPORT token
+      link: /specs/extensions/utf8-only.html
+      hide-if-no-support: true
     webirc:
       name: WebIRC
       description: WebIRC Extension

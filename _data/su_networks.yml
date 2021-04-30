@@ -34,6 +34,9 @@
           starttls:
           sts:
           userhost-in-names:
+      na:
+        stable:
+          utf8only:
     - name: IRCCloud Teams
       ircd-ver: irccloud-prattle
       net-address:
@@ -63,6 +66,7 @@
       na:
         stable:
           starttls: direct TLS only
+          utf8only:
     - name: Oragono Testnet
       ircd-ver: master
       net-address:
@@ -94,6 +98,7 @@
           setname:
           sts:
           userhost-in-names:
+          utf8only:
 
 - name: Networks
   note: >

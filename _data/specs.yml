@@ -142,6 +142,11 @@ userhost-in-names:
   name: userhost-in-names Extension
   shortname: userhost-in-names
   url: /extensions/userhost-in-names.html
+utf8only:
+  fullname: UTF8ONLY ISUPPORT token
+  name: UTF8ONLY ISUPPORT token
+  shortname: UTF8ONLY
+  url: /extensions/utf8-only.html
 webirc:
   fullname: WebIRC extension
   name: WebIRC extension
@@ -180,12 +185,12 @@ netsplitjoin-batch:
   fullname: netsplit and netjoin Batch Types
   name: netsplit and netjoin Batch Types
   shortname: netsplit and netjoin Batch Types
-  url: /extensions/batches/netsplit.html
+  url: /batches/netsplit.html
 chathistory-batch:
   fullname: chathistory Batch Type
   name: chathistory Batch Type
   shortname: chathistory Batch Type
-  url: /extensions/batches/chathistory.html
+  url: /batches/chathistory.html
 
 # pull requests
 pr-acc:
@@ -207,11 +212,4 @@ pr-resume:
   name: PR#306 - resume Extension
   shortname: PR#306
   full-url: https://github.com/ircv3/ircv3-specifications/pull/306
-  proposed: true
-
-pr-utf8only:
-  fullname: PR#432 - UTF8ONLY ISUPPORT token
-  name: PR#432 - UTF8ONLY ISUPPORT token
-  shortname: PR#432
-  full-url: https://github.com/ircv3/ircv3-specifications/pull/432
   proposed: true
