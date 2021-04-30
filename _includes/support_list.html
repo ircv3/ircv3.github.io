@@ -110,7 +110,9 @@
 
         {% capture should_show_spec %}
             {% for sw in type.software %}
-                {% if ext[1].hide-if-no-support %}
+                {% if ext[1].hide-on-servers and type.name contains "Servers" %}
+                    
+                {% elsif ext[1].hide-if-no-support %}
                     {% if sw.support[support_key] contains ext_name or sw.partial[support_key] contains ext_name %}
                         Y
                     {% endif %}

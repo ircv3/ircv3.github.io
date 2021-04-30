@@ -166,6 +166,7 @@ stable:
       description: UTF8ONLY ISUPPORT token
       link: /specs/extensions/utf8-only.html
       hide-if-no-support: true
+      hide-on-servers: true
     webirc:
       name: WebIRC
       description: WebIRC Extension
