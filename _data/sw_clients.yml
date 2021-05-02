@@ -488,17 +488,6 @@
           sasl-3.1:
           multi-prefix:
         # SASL mechanisms unknown
-    - name: AndroIRC
-      # ref: http://wiki.androirc.com/nickserv_sasl
-      link: http://www.androirc.com
-      os:
-        - android
-      support:
-        stable:
-          cap-3.1:
-          sasl-3.1:
-        SASL:
-          - plain
     - name: Colloquy
       # ref: didConnectToHost in https://github.com/colloquy/colloquy/blob/main/Chat Core/MVIRCChatConnection.m#L2393
       link: http://www.colloquy.info
