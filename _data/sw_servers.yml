@@ -17,49 +17,6 @@
       na:
         stable:
           webirc:
-    - name: Charybdis
-      # ref: https://github.com/charybdis-ircd/charybdis/search?q=MAPI_CAP_CLIENT
-      link: https://github.com/charybdis-ircd/charybdis
-      support:
-        stable:
-          cap-3.1:
-          cap-3.2: Git
-          cap-notify:
-          sasl-3.1:
-          sasl-3.2: Git
-          account-notify:
-          account-tag: Git
-          away-notify:
-          chghost:
-          echo-message: Git
-          extended-join:
-          invite-notify: Git
-          monitor:
-          multi-prefix:
-          server-time: Git
-          starttls:
-          userhost-in-names:
-          webirc:
-    - name: ChatIRCd
-      # dev: Ben / MrC
-      # ref: https://bitbucket.org/chatlounge/chatircd/commits/all
-      link: https://www.chatlounge.net/w/index.php/Software
-      support:
-        stable:
-          cap-3.1:
-          cap-notify:
-          sasl-3.1:
-          account-notify:
-          away-notify:
-          chghost:
-          extended-join:
-          invite-notify:
-          monitor:
-          multi-prefix:
-          sasl:
-          starttls:
-          userhost-in-names:
-          webirc:
     - name: IRCCloud Teams
       # maintainer: jwheare
       link: https://blog.irccloud.com/private-teams-servers/
@@ -110,28 +67,28 @@
       support:
         stable:
           account-notify:
-          account-tag: 3.0+
+          account-tag:
           away-notify:
-          batch: 3.0+
+          batch:
           bot-mode:
           cap-3.1:
-          cap-3.2: 3.0+
-          cap-notify: 3.0+
-          chghost: 3.0+
-          echo-message: 3.0+
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
           extended-join:
-          invite-notify: 3.0+
+          invite-notify:
           labeled-response: 3.5+
-          message-tags: 3.0+
-          monitor: 3.0+
-          msgid: 3.1+
+          message-tags:
+          monitor:
+          msgid:
           multi-prefix:
           sasl-3.1:
-          sasl-3.2: 3.0+
-          server-time: 3.0+
+          sasl-3.2:
+          server-time:
           setname: 3.6+
           starttls:
-          sts: 3.0+
+          sts:
           userhost-in-names:
           webirc:
     - name: Nefarious IRCu
@@ -215,6 +172,29 @@
           server-time:
           starttls:
           userhost-in-names:
+    - name: Solanum
+      # ref: https://github.com/solanum-ircd/solanum/search?q=MAPI_CAP_CLIENT
+      link: https://github.com/charybdis-ircd/charybdis
+      support:
+        stable:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          sasl-3.1:
+          sasl-3.2:
+          account-notify:
+          account-tag:
+          away-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          monitor:
+          multi-prefix:
+          server-time:
+          starttls:
+          userhost-in-names:
+          webirc:
     - name: UnrealIRCd
       # ref: ClientCapabilityAdd() calls in https://github.com/unrealircd/unrealircd/search?q=ClientCapabilityAdd
       #      (src/modules/m_cap.c has four matches, two not shown)
