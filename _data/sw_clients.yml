@@ -33,7 +33,7 @@
           plain:
           scram-sha-256: 3.4+
     - name: Ambassador
-      # ref: JSIRCV3_SUPPORTED_CAPS in https://github.com/Ascrod/ambassador/blob/master/ambassador/js/lib/irc.js
+      # ref: JSIRCV3_SUPPORTED_CAPS in https://github.com/Ascrod/ambassador/blob/7d2b260f1a069e2d11718c576d694f9343c096be/ambassador/js/lib/irc.js
       link: https://github.com/Ascrod/ambassador/
       support:
         stable:
@@ -114,7 +114,7 @@
           - external
           - plain
     - name: IceChat
-      # ref: CapREQ() in https://github.com/icechat/IceChat/blob/master/src/IceChat/IRCConnection/ParseIRCData.cs
+      # ref: CapREQ() in https://github.com/icechat/IceChat/blob/9.50P/src/IceChat/IRCConnection/ParseIRCData.cs
       link: https://icechat.net
       support:
         stable:
@@ -134,7 +134,7 @@
         SASL:
           - plain
     - name: Irssi
-      # ref: https://github.com/irssi/irssi/blob/master/src/irc/core/irc-servers.h#L17
+      # ref: https://github.com/irssi/irssi/blob/8a5d5d384ed20cefa3fdc4a65d27fac3e4913a7b/src/irc/core/irc-servers.h#L17
       link: https://irssi.org
       support:
         stable:
@@ -158,7 +158,7 @@
         stable:
           setname: "Git draft cap"
     - name: Konversation
-      # ref: Server::initCapablityNames() in https://github.com/KDE/konversation/blob/master/src/irc/server.cpp
+      # ref: Server::initCapablityNames() in https://github.com/KDE/konversation/blob/v21.04.0/src/irc/server.cpp
       link: https://konversation.kde.org
       support:
         stable:
@@ -174,7 +174,7 @@
           - plain
           - external
     - name: KVIrc
-      # ref: cap_add() in https://github.com/kvirc/KVIrc/blob/master/src/kvirc/kernel/KviIrcConnection.cpp
+      # ref: cap_add() in https://github.com/kvirc/KVIrc/blob/5.0.0/src/kvirc/kernel/KviIrcConnection.cpp
       link: https://www.kvirc.net
       support:
         stable:
@@ -250,7 +250,7 @@
         SASL:
           - plain
     - name: Quassel
-      # ref: knownCaps in https://github.com/quassel/quassel/blob/master/src/common/irccap.h
+      # ref: knownCaps in https://github.com/quassel/quassel/blob/0.14-rc1/src/common/irccap.h
       link: https://www.quassel-irc.org
       support:
         stable:
@@ -275,7 +275,7 @@
           - external
           - plain
     - name: Textual
-      # ref: isCapabilitySupported in https://github.com/Codeux-Software/Textual/blob/master/Sources/App/Classes/IRC/IRCClient.m
+      # ref: isCapabilitySupported in https://github.com/Codeux-Software/Textual/blob/55498fb845baf9efe1df93bc4e463edbe5c2057f/Sources/App/Classes/IRC/IRCClient.m
       # ref: https://github.com/Codeux-Software/Textual/blob/v6.0.1/Classes/IRC/IRCClient.m#L4590
       link: https://www.codeux.com/textual
       support:
@@ -297,7 +297,7 @@
           - plain
     - name: WeeChat
       # ref: https://weechat.org/files/changelog/ChangeLog-devel.html or IRC_COMMAND_CAP_SUPPORTED_COMPLETION
-      # in https://github.com/weechat/weechat/blob/master/src/plugins/irc/irc-command.h
+      # in https://github.com/weechat/weechat/blob/v3.1/src/plugins/irc/irc-command.h
       link: https://weechat.org
       support:
         stable:
@@ -403,7 +403,7 @@
           - scram-sha-256
     - name: Kiwi IRC
       # ref: https://github.com/kiwiirc/kiwiirc
-      #      https://github.com/kiwiirc/irc-framework/blob/master/docs/ircv3.md
+      #      https://github.com/kiwiirc/irc-framework/blob/v4.10.0/docs/ircv3.md
       link: https://kiwiirc.com
       support:
         stable:
@@ -759,8 +759,8 @@
           sts: TLS-only
     - name: ZNC (as Server)
       # ref: https://github.com/znc/znc/search?q=OnServerCapAvailable+extension%3Acpp
-      #      mSupportedCaps in https://github.com/znc/znc/blob/master/src/IRCSock.cpp
-      #      m_mCoreCaps in https://github.com/znc/znc/blob/master/include/znc/Client.h
+      #      mSupportedCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/src/IRCSock.cpp
+      #      m_mCoreCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/include/znc/Client.h
       link: https://znc.in/
       support:
         stable:
@@ -776,8 +776,8 @@
           userhost-in-names:
     - name: ZNC (as Client)
       # ref: https://github.com/znc/znc/search?q=OnClientCapLs+extension%3Acpp
-      #      mSupportedCaps in https://github.com/znc/znc/blob/master/src/IRCSock.cpp
-      #      m_mCoreCaps in https://github.com/znc/znc/blob/master/include/znc/Client.h
+      #      mSupportedCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/src/IRCSock.cpp
+      #      m_mCoreCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/include/znc/Client.h
       link: https://znc.in/
       support:
         stable:
