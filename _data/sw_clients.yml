@@ -131,7 +131,6 @@
           multi-prefix:
           sasl-3.1:
           server-time:
-          server-time:
         SASL:
           - plain
     - name: Irssi
@@ -509,7 +508,7 @@
           multi-prefix:
         # SASL mechanisms unknown
     - name: Colloquy
-      # ref: didConnectToHost in https://github.com/colloquy/colloquy/blob/main/Chat Core/MVIRCChatConnection.m#L2393
+      # ref: didConnectToHost in https://github.com/colloquy/colloquy/blob/main/Chat%20Core/MVIRCChatConnection.m#L2393
       link: http://www.colloquy.info
       os:
         - ios
