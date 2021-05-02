@@ -110,28 +110,28 @@
       support:
         stable:
           account-notify:
-          account-tag: 3.0+
+          account-tag:
           away-notify:
-          batch: 3.0+
+          batch:
           bot-mode:
           cap-3.1:
-          cap-3.2: 3.0+
-          cap-notify: 3.0+
-          chghost: 3.0+
-          echo-message: 3.0+
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
           extended-join:
-          invite-notify: 3.0+
+          invite-notify:
           labeled-response: 3.5+
-          message-tags: 3.0+
-          monitor: 3.0+
-          msgid: 3.1+
+          message-tags:
+          monitor:
+          msgid:
           multi-prefix:
           sasl-3.1:
-          sasl-3.2: 3.0+
-          server-time: 3.0+
+          sasl-3.2:
+          server-time:
           setname: 3.6+
           starttls:
-          sts: 3.0+
+          sts:
           userhost-in-names:
           webirc:
     - name: Nefarious IRCu
