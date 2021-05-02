@@ -32,6 +32,33 @@
           external:
           plain:
           scram-sha-256: 3.4+
+    - name: Ambassador
+      # ref: JSIRCV3_SUPPORTED_CAPS in https://github.com/Ascrod/ambassador/blob/master/ambassador/js/lib/irc.js
+      link: https://github.com/Ascrod/ambassador/
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          message-tags:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          sts:
+          tls:
+          userhost-in-names:
+        SASL:
+          - PLAIN
     - name: BitchX
       # ref: https://github.com/BitchX/BitchX/search?q=%22CAP+REQ%22&
       link: http://www.bitchx.com
@@ -41,13 +68,6 @@
           sasl-3.1:
         SASL:
           - plain
-    - name: ChatZilla
-      # ref: https://bugzilla.mozilla.org/showdependencytree.cgi?id=687798&hide_resolved=0
-      link: http://chatzilla.hacksrus.com/
-      support:
-        stable:
-          cap-3.1:
-          multi-prefix:
     - name: Colloquy
       # ref: handleCapWithParameters() in https://github.com/colloquy/colloquy/blob/main/Chat%20Core/MVIRCChatConnection.m
       link: http://www.colloquy.info
