@@ -652,18 +652,6 @@
         SASL:
           - plain
           # external is supported if configured on the core via the desktop client
-    - name: YAAIC
-      # ref: https://github.com/pocmo/Yaaic/blob/v1.1/app/src/main/java/org/jibble/pircbot/PircBot.java#L208
-      link: https://www.yaaic.org
-      os:
-        - android
-      support:
-        stable:
-          cap-3.1:
-          multi-prefix:
-          sasl-3.1:
-        SASL:
-          - plain
 
 - name: Bouncers
   software:
