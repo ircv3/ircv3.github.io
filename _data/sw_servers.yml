@@ -17,29 +17,6 @@
       na:
         stable:
           webirc:
-    - name: Charybdis
-      # ref: https://github.com/charybdis-ircd/charybdis/search?q=MAPI_CAP_CLIENT
-      link: https://github.com/charybdis-ircd/charybdis
-      support:
-        stable:
-          cap-3.1:
-          cap-3.2: Git
-          cap-notify:
-          sasl-3.1:
-          sasl-3.2: Git
-          account-notify:
-          account-tag: Git
-          away-notify:
-          chghost:
-          echo-message: Git
-          extended-join:
-          invite-notify: Git
-          monitor:
-          multi-prefix:
-          server-time: Git
-          starttls:
-          userhost-in-names:
-          webirc:
     - name: IRCCloud Teams
       # maintainer: jwheare
       link: https://blog.irccloud.com/private-teams-servers/
@@ -195,6 +172,29 @@
           server-time:
           starttls:
           userhost-in-names:
+    - name: Solanum
+      # ref: https://github.com/solanum-ircd/solanum/search?q=MAPI_CAP_CLIENT
+      link: https://github.com/charybdis-ircd/charybdis
+      support:
+        stable:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          sasl-3.1:
+          sasl-3.2:
+          account-notify:
+          account-tag:
+          away-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          monitor:
+          multi-prefix:
+          server-time:
+          starttls:
+          userhost-in-names:
+          webirc:
     - name: UnrealIRCd
       # ref: ClientCapabilityAdd() calls in https://github.com/unrealircd/unrealircd/search?q=ClientCapabilityAdd
       #      (src/modules/m_cap.c has four matches, two not shown)
