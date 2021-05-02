@@ -1,5 +1,21 @@
 - name: Libraries
   software:
+    - name: ChatSharp
+      # ref:  https://git.sr.ht/~sircmpwn/ChatSharp/tree/master/item/ChatSharp/Handlers/CapabilityHandlers.cs#L15
+      #       https://git.sr.ht/~sircmpwn/ChatSharp/tree/master/item/ChatSharp/IrcClient.cs#L174
+      link: https://git.sr.ht/~sircmpwn/ChatSharp
+      language: C#
+      support:
+        stable:
+          account-notify:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          multi-prefix:
+          sasl-3.1:
+          server-time:
+          userhost-in-names:
     - name: cinch
       # ref: https://github.com/cinchrb/cinch/blob/v2.3.1/lib/cinch/irc.rb#L115
       link: https://github.com/cinchrb/cinch
@@ -253,19 +269,3 @@
         SASL:
           - external
           - plain
-    - name: ChatSharp
-      # ref:  https://git.sr.ht/~sircmpwn/ChatSharp/tree/master/item/ChatSharp/Handlers/CapabilityHandlers.cs#L15
-      #       https://git.sr.ht/~sircmpwn/ChatSharp/tree/master/item/ChatSharp/IrcClient.cs#L174
-      link: https://git.sr.ht/~sircmpwn/ChatSharp
-      language: C#
-      support:
-        stable:
-          account-notify:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          chghost:
-          multi-prefix:
-          sasl-3.1:
-          server-time:
-          userhost-in-names:
