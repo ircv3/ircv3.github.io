@@ -13,7 +13,7 @@
         SASL:
           - plain
     - name: Communi
-      # ref: https://communi.github.io/doc/3.4/ircv3.html
+      # ref: https://github.com/communi/libcommuni/blob/a01998018d5ae7b3afad07c7035ca798b4f5780a/src/core/irc.cpp#L105
       link: https://communi.github.io
       language: C++
       support:
@@ -21,13 +21,17 @@
           account-notify:
           account-tag:
           away-notify:
+          batch:
           cap-3.1:
+          cap-3.2:
           cap-notify:
           chghost:
+          echo-message:
           extended-join:
           invite-notify:
           monitor:
           multi-prefix:
+          sasl-3.1:
           sasl-3.2:
           server-time:
           userhost-in-names:
@@ -78,6 +82,7 @@
           batch:
           cap-3.1:
           cap-3.2:
+          cap-notify:
           chghost:
           echo-message:
           extended-join:
@@ -87,6 +92,7 @@
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
+          setname:
           server-time:
           userhost-in-names:
         SASL:
@@ -157,21 +163,25 @@
         stable:
           cap-3.1:
     - name: pydle
-      # ref: https://github.com/Shizmob/pydle/tree/v0.8.2/pydle/features/ircv3
+      # ref: https://github.com/Shizmob/pydle/tree/v0.9.4/pydle/features/ircv3
       link: https://pypi.python.org/pypi/pydle
       language: Python
       support:
         stable:
           account-notify:
+          account-tag:
           away-notify:
           cap-3.1:
+          cap-3.2:
           chghost:
+          echo-message:
           extended-join:
-          metadata: 0.8.2+
-          monitor: 0.8+
+          invite-notify:
+          message-tags:
+          metadata:
+          monitor:
           multi-prefix:
           sasl-3.1:
-          starttls:
           userhost-in-names:
         SASL:
           - plain
@@ -256,5 +266,6 @@
           cap-notify:
           chghost:
           multi-prefix:
+          sasl-3.1:
           server-time:
           userhost-in-names:
