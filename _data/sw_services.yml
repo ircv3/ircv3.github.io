@@ -15,9 +15,3 @@
           external:
           plain:
           scram-sha-256: "7.3+"
-    - name: ChatServices
-      link: https://www.chatlounge.net/w/index.php/Software
-      support:
-        SASL:
-          - external
-          - plain
