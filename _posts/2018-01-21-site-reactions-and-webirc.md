@@ -24,6 +24,6 @@ The [`migrate` PR](https://github.com/ircv3/ircv3-specifications/pull/330) allow
 
 The [`message-status` PR](https://github.com/ircv3/ircv3-specifications/pull/319) lets clients indicate that they're typing, and whether a message has been delivered/read.
 
-The [`rename` PR](https://github.com/ircv3/ircv3-specifications/pull/308) lets users rename channels. This is especially useful on networks with stricter naming guidelines like Libera.Chat.
+The [`rename` PR](https://github.com/ircv3/ircv3-specifications/pull/308) lets users rename channels. This is especially useful on networks with stricter naming guidelines like Freenode.
 
 The [`resume` PR](https://github.com/ircv3/ircv3-specifications/pull/306) allows clients to better handle when they accidentally disconnect from the network and need to reconnect. It lets them avoid having to `NS GHOST` their old nickname, and instead simply take over from where they left off (with some missing chat history).
