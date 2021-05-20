@@ -29,4 +29,4 @@ To participate, contribute to our specifications and extensions registry on [Git
 
 <br/>
 
-You may also contact us on [irc.freenode.net in #ircv3](ircs://irc.freenode.net/ircv3)
+You may also contact us on [irc.libera.chat in #ircv3](ircs://irc.libera.chat/ircv3)

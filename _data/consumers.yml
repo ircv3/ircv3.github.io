@@ -1,5 +1,5 @@
-- name: freenode
-  url: https://www.freenode.net/
+- name: Libera.Chat
+  url: https://libera.chat/
 
 - name: mIRC
   url: https://www.mirc.com/
