@@ -50,7 +50,7 @@ All of the IRCv3 extensions are backwards-compatible with older IRC clients, and
 
 For any other questions, feel free to consult our [FAQ page]({{ site.baseurl }}/faq.html) which contains all sorts of info about us and what we do.
 
-If you’re interested in talking with us, our discussion channel is [#ircv3 on Freenode](ircs://irc.freenode.net:6697/#ircv3) <sup>[[webchat]](https://kiwiirc.com/client/irc.freenode.net:+6697/#ircv3)</sup>.
+If you’re interested in talking with us, our discussion channel is [#ircv3 on Libera.Chat](ircs://irc.libera.chat:6697/#ircv3) <sup>[[webchat]](https://kiwiirc.com/client/irc.libera.chat:+6697/#ircv3)</sup>.
 
 
 ## IRCv3 Features

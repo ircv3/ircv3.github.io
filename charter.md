@@ -67,8 +67,8 @@ The chair has ultimate responsibility for moving discussions forward and will ma
 The main project resources are:
 
 - The [ircv3/ircv3-specifications](https://github.com/ircv3/ircv3-specifications) Github repository and issue tracker.  This is the official repository containing the latest version of the specifications.  Changes may be submitted by pull request and suggestions may be made by opening an issue.
-- The [#ircv3](ircs://irc.freenode.net:6697/#ircv3) channel at [irc.freenode.net](ircs://irc.freenode.net:6697/#ircv3).  This is the main discussion space for the working group.
+- The [#ircv3](ircs://irc.libera.chat:6697/#ircv3) channel at [irc.libera.chat](ircs://irc.libera.chat:6697/#ircv3).  This is the main discussion space for the working group.
 
 Contributions are welcome from anyone in the IRC community; including users, developers, operators, administrators. Feel free to start a discussion on IRC or on the issue tracker if you'd like to contribute.
- 
+
 Failure to follow our [code of conduct]({{site.baseurl}}/conduct.html) when participating may result in immediate removal from the project resources.

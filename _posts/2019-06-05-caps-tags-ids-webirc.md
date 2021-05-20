@@ -31,4 +31,4 @@ Lastly, some changes to our technical board. We aim to maintain an active, broad
 
 There's been a lot of progress this past year, and even more to come. Thanks to our wonderful contributors for the help, and to the IRC community in general.
 
-We're always looking for help with our [roadmap](https://github.com/ircv3/ircv3-specifications/milestone/4), as well as more [general suggestions](https://github.com/ircv3/ircv3-ideas)! If you're interested in chatting, we hang out on [`irc.freenode.net/#ircv3`](https://ircv3.net/contact.html).
+We're always looking for help with our [roadmap](https://github.com/ircv3/ircv3-specifications/milestone/4), as well as more [general suggestions](https://github.com/ircv3/ircv3-ideas)! If you're interested in chatting, we hang out on [`irc.libera.chat/#ircv3`](https://ircv3.net/contact.html).
