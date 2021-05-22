@@ -57,6 +57,7 @@
           monitor:
           msgid:
           multi-prefix:
+          draft/multiline:
           setname:
           sts:
           userhost-in-names:
@@ -79,6 +80,8 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          draft/channel-rename:
+          draft/chathistory:
           chghost:
           echo-message:
           extended-join:
@@ -88,6 +91,7 @@
           monitor:
           msgid:
           multi-prefix:
+          draft/multiline:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -190,6 +194,7 @@
           extended-join:
           invite-notify:
           labeled-response:
+          message-tags:
           msgid:
           multi-prefix:
           sasl-3.1:
