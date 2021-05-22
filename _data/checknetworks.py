@@ -14,7 +14,7 @@
 # to run this script:
 #     pip3 install --upgrade girc pyyaml docopt
 #     cd _data
-#     python3 checknetworks.py
+#     python3 checknetworks.py run su_networks.yml
 
 """checknetworks.py - tests IRCv3 network support file.
 Usage:
@@ -145,7 +145,7 @@ def check_net(versions, info):
 
     supported = {}
 
-    irc = IRCv3Connection(hostname, nick, username, realname, debug=True)
+    irc = IRCv3Connection(hostname, nick, username, realname, debug=False)
     irc.loop()
 
     supported['features'] = irc.isupport.keys()
