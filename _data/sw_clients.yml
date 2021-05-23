@@ -162,14 +162,18 @@
       link: https://konversation.kde.org
       support:
         stable:
-          account-notify: 1.7+
-          away-notify: 1.7+
+          account-notify:
+          away-notify:
           cap-3.1:
-          extended-join: 1.7+
-          multi-prefix: 1.7+
+          cap-3.2: v20.11.80+
+          cap-notify: v21.03.80+
+          chghost:  v21.03.80+
+          extended-join:
+          multi-prefix:
           sasl-3.1:
-          server-time: 1.7+
-          userhost-in-names: 1.7+
+          sasl-3.2: v21.04.0+
+          server-time:
+          userhost-in-names:
         SASL:
           - plain
           - external
