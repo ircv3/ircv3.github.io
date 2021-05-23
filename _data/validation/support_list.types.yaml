@@ -40,6 +40,6 @@ support:
         tags:
           type: listofstrings
           required: false
-        features:
+        isupport:
           type: listofstrings
           required: false

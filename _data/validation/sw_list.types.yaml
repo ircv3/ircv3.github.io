@@ -30,6 +30,9 @@ software:
               type: string
             display:
               type: string
+            exit-early:
+              type: boolean
+              required: false
         os:
           type: listofstrings
           required: false

@@ -59,6 +59,8 @@ stable:
       hide-if-no-support: true
       tags:
         - draft/bot
+      isupport:
+        - BOT
     chghost:
       name: chghost
       description: chghost Extension
@@ -106,6 +108,8 @@ stable:
       name: Monitor
       description: Monitor
       link: /specs/extensions/monitor.html
+      isupport:
+        - MONITOR
     msgid:
       name: msgid
       description: Message IDs
@@ -167,6 +171,8 @@ stable:
       link: /specs/extensions/utf8-only.html
       hide-if-no-support: true
       hide-on-servers: true
+      isupport:
+        - UTF8ONLY
     webirc:
       name: WebIRC
       description: WebIRC Extension

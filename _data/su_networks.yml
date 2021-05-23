@@ -39,6 +39,7 @@
       net-address:
         link:  ircs://team-irc.irccloud.com:6697/
         display: team-irc.irccloud.com
+        exit-early: true
       link: https://blog.irccloud.com/private-teams-servers/
       note: >
         Invite required. PM jwheare for access.

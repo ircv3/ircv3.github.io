@@ -41,8 +41,9 @@ realname = 'IRCv3 cap/isupport Tester'
 
 class IRCv3Connection:
     """Connects to an IRC server at the given address."""
-    def __init__(self, hostname, nick, username, realname, ipv6=False, debug=False):
+    def __init__(self, hostname, nick, username, realname, ipv6=False, debug=False, exit_early=False):
         self.debug = debug
+        self.exit_early = exit_early
         self._data = b''
 
         if ipv6:
@@ -61,6 +62,8 @@ class IRCv3Connection:
         self.send('CAP LS 302')
         self.send('NICK {}'.format(nick))
         self.send('USER {} 0 * :{}'.format(username, realname))
+        if exit_early:
+            self.send('QUIT')
         self.send('CAP END')
 
         # events setup
@@ -74,7 +77,7 @@ class IRCv3Connection:
         # basic data
         self.caps = {}
         self.isupport = {}
-    
+
     def loop(self):
         """Start connection loop."""
         try:
@@ -142,38 +145,60 @@ class IRCv3Connection:
 def check_net(versions, info):
     print("Connecting to:", info['name'])
     hostname = info['net-address']['display']
+    exit_early = info['net-address'].get('exit-early', False)
 
     supported = {}
 
-    irc = IRCv3Connection(hostname, nick, username, realname, debug=False)
+    irc = IRCv3Connection(hostname, nick, username, realname, debug=False, exit_early=exit_early)
     irc.loop()
 
-    supported['features'] = irc.isupport.keys()
+    supported['isupport'] = irc.isupport.keys()
     supported['caps'] = irc.caps.keys()
 
-    # generate cap lists
+    # generate cap and isupport lists
     all_caps = []
+    all_isupport = []
     for ver in versions:
         for spec in versions[ver]['specs']:
             all_caps.extend(versions[ver]['specs'][spec].get('caps', []))
+            all_isupport.extend(versions[ver]['specs'][spec].get('isupport', []))
 
-    claimed_supported = []
-    for ver in info['support']:
-        for spec in info['support'][ver]:
-            claimed_supported.extend(versions[ver]['specs'][spec].get('caps', []))
+    claimed_supported_caps = []
+    claimed_supported_isupport = []
+    for suptype in ['support', 'partial']:
+        if suptype not in info:
+            continue
+        for ver in info[suptype]:
+            for spec in info[suptype][ver]:
+                claimed_supported_caps.extend(versions[ver]['specs'][spec].get('caps', []))
+                claimed_supported_isupport.extend(versions[ver]['specs'][spec].get('isupport', []))
 
-    claimed_unsupported = []
+    claimed_unsupported_caps = []
+    claimed_unsupported_isupport = []
     for cap in all_caps:
-        if cap not in claimed_supported:
-            claimed_unsupported.append(cap)
+        if cap not in claimed_supported_caps:
+            claimed_unsupported_caps.append(cap)
+    for key in all_isupport:
+        if key not in claimed_supported_isupport:
+            claimed_unsupported_isupport.append(key)
 
     # and check them
-    for cap in claimed_supported:
+    for cap in claimed_supported_caps:
         if cap not in supported['caps']:
-            print(' *!* - ', info['name'], 'claims to support', cap, 'but does not')
-    for cap in claimed_unsupported:
+            print(' *!* - ', info['name'], 'claims to advertise cap', cap, 'but does not')
+    for cap in claimed_unsupported_caps:
         if cap in supported['caps']:
-            print(' *!* + ', info['name'], 'now also supports', cap)
+            print(' *!* + ', info['name'], 'now also sadvertise cap', cap)
+    if exit_early:
+        # we didn't get to see isupport tokens, skip checking those
+        return
+
+    for token in claimed_supported_isupport:
+        if token not in supported['isupport']:
+            print(' *!* - ', info['name'], 'claims to advertise isupport token', token, 'but does not')
+    for token in claimed_unsupported_isupport:
+        if token in supported['isupport']:
+            print(' *!* + ', info['name'], 'now also sadvertise isupport token', token)
 
 if __name__ == '__main__':
     arguments = docopt(__doc__, version='0.0.1')
