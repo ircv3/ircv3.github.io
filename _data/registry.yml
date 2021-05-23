@@ -358,8 +358,12 @@
     - name: CLIENTTAGDENY
       specs:
         - message-tags
-      description: Indicates client-only tags that are blocked or allowed by a server
+      description: Indicates client-only tags that are blocked or allowed by a server.
+    - name: MONITOR
+      specs:
+        - monitor
+      description: Indicates the server supports the MONITOR command.
     - name: UTF8ONLY
       specs:
         - utf8only
-      description: Indicates the server only accepts UTF-8 encoded messages
+      description: Indicates the server only accepts UTF-8 encoded messages.
