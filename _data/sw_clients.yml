@@ -98,17 +98,20 @@
       support:
         stable:
           account-notify:
+          account-tag: Git
           away-notify:
           cap-notify:
           cap-3.1:
           cap-3.2:
           chghost:
           extended-join:
+          invite-notify: Git
           monitor:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname: Git
           userhost-in-names:
         SASL:
           - external
