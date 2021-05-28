@@ -92,6 +92,26 @@
           userhost-in-names:
         SASL:
           - plain
+    - name: Glirc
+      # ref: https://github.com/glguy/irc-core/blob/v2/src/Client/State/Network.hs#L686-L687
+      link: https://hackage.haskell.org/package/glirc
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          batch:
+          cap-notify:
+          cap-3.1:
+          cap-3.2:
+          chghost:
+          extended-join:
+          multi-prefix:
+          sasl-3.1:
+          server-time:
+          sts:
+          userhost-in-names:
+        SASL:
+          - plain
     - name: HexChat
       # ref: https://github.com/hexchat/hexchat/blob/v2.10.3/src/common/inbound.c#L1728
       link: https://hexchat.github.io
@@ -281,6 +301,32 @@
         SASL:
           - external
           - plain
+    - name: Srain
+      # ref: https://doc.srain.im/en/latest/support.html
+      link: https://srain.im
+      support:
+        stable:
+          cap-notify:
+          cap-3.1:
+          cap-3.2:
+          sasl-3.1:
+          sasl-3.2:
+        SASL:
+          - plain
+    - name: Swirc
+      # ref: https://raw.githubusercontent.com/uhlin/swirc/master/CHANGELOG.md
+      link: https://www.nifty-networks.net/swirc/
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          cap-3.1:
+          invite-notify:
+          sasl-3.1:
+          server-time:
+        SASL:
+          - plain
+          - scram-sha-256
     - name: Textual
       # ref: isCapabilitySupported in https://github.com/Codeux-Software/Textual/blob/55498fb845baf9efe1df93bc4e463edbe5c2057f/Sources/App/Classes/IRC/IRCClient.m
       # ref: https://github.com/Codeux-Software/Textual/blob/v6.0.1/Classes/IRC/IRCClient.m#L4590
@@ -323,53 +369,6 @@
           userhost-in-names:
         SASL:
           - external
-          - plain
-    - name: Srain
-      # ref: https://doc.srain.im/en/latest/support.html
-      link: https://srain.im
-      support:
-        stable:
-          cap-notify:
-          cap-3.1:
-          cap-3.2:
-          sasl-3.1:
-          sasl-3.2:
-        SASL:
-          - plain
-    - name: Swirc
-      # ref: https://raw.githubusercontent.com/uhlin/swirc/master/CHANGELOG.md
-      link: https://www.nifty-networks.net/swirc/
-      support:
-        stable:
-          account-notify:
-          away-notify:
-          cap-3.1:
-          invite-notify:
-          sasl-3.1:
-          server-time:
-        SASL:
-          - plain
-          - scram-sha-256
-    - name: Glirc
-      # ref: https://github.com/glguy/irc-core/blob/v2/src/Client/State/Network.hs#L686-L687
-      link: https://hackage.haskell.org/package/glirc
-      support:
-        stable:
-          account-notify:
-          away-notify:
-          batch:
-          cap-notify:
-          cap-3.1:
-          cap-3.2:
-          chghost:
-          extended-join:
-          multi-prefix:
-          sasl-3.1:
-          server-time:
-          sts:
-          userhost-in-names:
-
-        SASL:
           - plain
 
 - name: Web Clients
@@ -703,6 +702,48 @@
           server-time:
           sts:
           userhost-in-names:
+    - name: KiwiBNC (as Server)
+      link: https://github.com/kiwiirc/kiwibnc
+      support:
+        stable:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          echo-message:
+          extended-join:
+          invite-notify:
+          message-tags:
+          msgid:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
+    - name: KiwiBNC (as Client)
+      link: https://github.com/kiwiirc/kiwibnc
+      support:
+        stable:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          echo-message:
+          extended-join:
+          invite-notify:
+          message-tags:
+          msgid:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
     - name: pounce (as Server)
       # ref: https://git.causal.agency/pounce/about/pounce.1#Client_Configuration
       link: https://git.causal.agency/pounce/about/
@@ -764,83 +805,6 @@
       na:
         stable:
           sts: TLS-only
-    - name: ZNC (as Server)
-      # ref: https://github.com/znc/znc/search?q=OnServerCapAvailable+extension%3Acpp
-      #      mSupportedCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/src/IRCSock.cpp
-      #      m_mCoreCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/include/znc/Client.h
-      link: https://znc.in/
-      support:
-        stable:
-          account-notify:
-          away-notify:
-          batch:
-          cap-3.1:
-          cap-notify:
-          echo-message:
-          extended-join:
-          multi-prefix:
-          server-time:
-          userhost-in-names:
-    - name: ZNC (as Client)
-      # ref: https://github.com/znc/znc/search?q=OnClientCapLs+extension%3Acpp
-      #      mSupportedCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/src/IRCSock.cpp
-      #      m_mCoreCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/include/znc/Client.h
-      link: https://znc.in/
-      support:
-        stable:
-          account-notify:
-          away-notify:
-          cap-3.1:
-          extended-join:
-          multi-prefix:
-          sasl-3.1:
-          server-time:
-          userhost-in-names:
-        SASL:
-          external:
-          plain:
-    - name: KiwiBNC (as Server)
-      link: https://github.com/kiwiirc/kiwibnc
-      support:
-        stable:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          echo-message:
-          extended-join:
-          invite-notify:
-          message-tags:
-          msgid:
-          multi-prefix:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          userhost-in-names:
-    - name: KiwiBNC (as Client)
-      link: https://github.com/kiwiirc/kiwibnc
-      support:
-        stable:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          echo-message:
-          extended-join:
-          invite-notify:
-          message-tags:
-          msgid:
-          multi-prefix:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          userhost-in-names:
     - name: soju (as Server)
       link: https://sr.ht/~emersion/soju
       support:
@@ -879,9 +843,79 @@
         SASL:
           external:
           plain:
+    - name: ZNC (as Server)
+      # ref: https://github.com/znc/znc/search?q=OnServerCapAvailable+extension%3Acpp
+      #      mSupportedCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/src/IRCSock.cpp
+      #      m_mCoreCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/include/znc/Client.h
+      link: https://znc.in/
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-notify:
+          echo-message:
+          extended-join:
+          multi-prefix:
+          server-time:
+          userhost-in-names:
+    - name: ZNC (as Client)
+      # ref: https://github.com/znc/znc/search?q=OnClientCapLs+extension%3Acpp
+      #      mSupportedCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/src/IRCSock.cpp
+      #      m_mCoreCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/include/znc/Client.h
+      link: https://znc.in/
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          cap-3.1:
+          extended-join:
+          multi-prefix:
+          sasl-3.1:
+          server-time:
+          userhost-in-names:
+        SASL:
+          external:
+          plain:
 
 - name: Bots
   software:
+    - name: BitBot
+      #ref: https://github.com/jesopo/bitbot/blob/b713cf76/src/core_modules/line_handler/ircv3.py
+      #     https://github.com/jesopo/bitbot/tree/638eee0d/src/core_modules/ircv3_sasl
+      link: https://github.com/jesopo/bitbot
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          draft/multiline:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          sts:
+          userhost-in-names:
+          +draft/reply:
+          +typing:
+        SASL:
+          - plain
+          - external
+          - scram-sha-256
     - name: Limnoria
       # ref: https://github.com/ProgVal/Limnoria/blob/master-2015-10-10/src/irclib.py#L962
       #      https://github.com/ProgVal/Limnoria/blob/master-2015-10-10/src/ircmsgs.py#L869
@@ -921,27 +955,6 @@
             - external
             - plain
             - scram-sha-256
-    - name: Sopel (ex Willie)
-      #ref: https://github.com/sopel-irc/sopel/blob/v5.3.0/willie/coretasks.py#L357
-      #     https://github.com/sopel-irc/sopel/blob/e5df2fa/sopel/coretasks.py#L345
-      #     https://github.com/sopel-irc/sopel/issues/971
-      #     https://github.com/sopel-irc/sopel/pull/1470
-      link: https://sopel.chat
-      support:
-        stable:
-          account-notify: "6.2.0+"
-          account-tag: "6.2.0+"
-          away-notify: "6.2.0+"
-          cap-3.1: "4.1.0+"
-          cap-3.2: "6.0.0+"
-          cap-notify: "6.2.0+"
-          echo-message: "Git (7.0.0+)"
-          extended-join: "6.2.0+"
-          multi-prefix: "4.1.0+"
-          sasl-3.1: "4.1.0+"
-          server-time: "6.2.0+"
-        SASL:
-          - plain
     - name: Moon Moon
       # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/irc.moon
       # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/batch.moon
@@ -994,38 +1007,24 @@
         SASL:
           - plain
           - external
-    - name: BitBot
-      #ref: https://github.com/jesopo/bitbot/blob/b713cf76/src/core_modules/line_handler/ircv3.py
-      #     https://github.com/jesopo/bitbot/tree/638eee0d/src/core_modules/ircv3_sasl
-      link: https://github.com/jesopo/bitbot
+    - name: Sopel (ex Willie)
+      #ref: https://github.com/sopel-irc/sopel/blob/v5.3.0/willie/coretasks.py#L357
+      #     https://github.com/sopel-irc/sopel/blob/e5df2fa/sopel/coretasks.py#L345
+      #     https://github.com/sopel-irc/sopel/issues/971
+      #     https://github.com/sopel-irc/sopel/pull/1470
+      link: https://sopel.chat
       support:
         stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          chghost:
-          echo-message:
-          extended-join:
-          invite-notify:
-          labeled-response:
-          message-tags:
-          monitor:
-          msgid:
-          multi-prefix:
-          draft/multiline:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          setname:
-          sts:
-          userhost-in-names:
-          +draft/reply:
-          +typing:
+          account-notify: "6.2.0+"
+          account-tag: "6.2.0+"
+          away-notify: "6.2.0+"
+          cap-3.1: "4.1.0+"
+          cap-3.2: "6.0.0+"
+          cap-notify: "6.2.0+"
+          echo-message: "Git (7.0.0+)"
+          extended-join: "6.2.0+"
+          multi-prefix: "4.1.0+"
+          sasl-3.1: "4.1.0+"
+          server-time: "6.2.0+"
         SASL:
           - plain
-          - external
-          - scram-sha-256
