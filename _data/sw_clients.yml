@@ -806,6 +806,8 @@
         stable:
           sts: TLS-only
     - name: soju (as Server)
+      # ref: https://git.sr.ht/~emersion/soju/tree/master/downstream.go#L117
+      # ref: https://git.sr.ht/~emersion/soju/tree/master/downstream.go#L133
       link: https://sr.ht/~emersion/soju
       support:
         stable:
@@ -826,6 +828,7 @@
         SASL:
           plain:
     - name: soju (as Client)
+      # ref: https://git.sr.ht/~emersion/soju/tree/master/upstream.go#L23
       link: https://sr.ht/~emersion/soju
       support:
         stable:
