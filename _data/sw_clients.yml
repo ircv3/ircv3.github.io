@@ -133,6 +133,7 @@
           server-time:
           setname: Git
           userhost-in-names:
+          utf8only: Git
         SASL:
           - external
           - plain
