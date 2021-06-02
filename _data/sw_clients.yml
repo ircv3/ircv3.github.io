@@ -175,6 +175,11 @@
     - name: Irssi
       # ref: https://github.com/irssi/irssi/blob/8a5d5d384ed20cefa3fdc4a65d27fac3e4913a7b/src/irc/core/irc-servers.h#L17
       link: https://irssi.org
+      os:
+        - bsd
+        - linux
+        - macos
+        - windows
       support:
         stable:
           account-notify: Git
@@ -399,6 +404,10 @@
       # ref: https://weechat.org/files/changelog/ChangeLog-devel.html or IRC_COMMAND_CAP_SUPPORTED_COMPLETION
       # in https://github.com/weechat/weechat/blob/master/src/plugins/irc/irc-command.h
       link: https://weechat.org
+      os:
+        - bsd
+        - linux
+        - macos
       support:
         stable:
           account-notify:
