@@ -924,6 +924,26 @@
           - plain
           - external
           - scram-sha-256
+    - name: Eggdrop
+      link: https://github.com/eggheads/eggdrop
+      support:
+        stable:
+          account-notify: 1.9.0+
+          account-tag: 1.9.0+
+          away-notify: 1.9.1+
+          cap-3.1: 1.9.0+
+          chghost: 1.9.0+
+          echo-message: 1.9.0+
+          extended-join: 1.9.0+
+          invite-notify: 1.9.0+
+          message-tags: 1.9.0+
+          server-time: 1.9.0+
+          setname: 1.9.0+
+          +typing: 1.9.0+
+        SASL:
+          - plain
+          - external
+          - ecdsa-nist256p-challenge
     - name: Limnoria
       # ref: https://github.com/ProgVal/Limnoria/blob/master-2015-10-10/src/irclib.py#L962
       #      https://github.com/ProgVal/Limnoria/blob/master-2015-10-10/src/ircmsgs.py#L869
