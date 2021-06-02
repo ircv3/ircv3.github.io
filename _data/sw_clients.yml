@@ -373,6 +373,27 @@
 
 - name: Web Clients
   software:
+    - name: gamja
+      # ref: https://git.sr.ht/~emersion/gamja/tree/master/item/lib/client.js#L3
+      link: https://sr.ht/~emersion/gamja
+      support:
+        stable:
+          away-notify:
+          batch:
+          cap-notify:
+          cap-3.1:
+          cap-3.2:
+          draft/chathistory:
+          echo-message:
+          message-tags:
+          msgid:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+        SASL:
+          - plain
     - name: IRCCloud
       # maintainer: jwheare
       link: https://www.irccloud.com
