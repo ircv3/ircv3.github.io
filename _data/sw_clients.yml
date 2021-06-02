@@ -59,15 +59,6 @@
           userhost-in-names:
         SASL:
           - PLAIN
-    - name: BitchX
-      # ref: https://github.com/BitchX/BitchX/search?q=%22CAP+REQ%22&
-      link: http://www.bitchx.com
-      support:
-        stable:
-          cap-3.1:
-          sasl-3.1:
-        SASL:
-          - plain
     - name: Colloquy
       # ref: handleCapWithParameters() in https://github.com/colloquy/colloquy/blob/main/Chat%20Core/MVIRCChatConnection.m
       link: http://www.colloquy.info
@@ -89,26 +80,6 @@
           sasl-3.1:
           server-time:
           starttls:
-          userhost-in-names:
-        SASL:
-          - plain
-    - name: Glirc
-      # ref: https://github.com/glguy/irc-core/blob/v2/src/Client/State/Network.hs#L686-L687
-      link: https://hackage.haskell.org/package/glirc
-      support:
-        stable:
-          account-notify:
-          away-notify:
-          batch:
-          cap-notify:
-          cap-3.1:
-          cap-3.2:
-          chghost:
-          extended-join:
-          multi-prefix:
-          sasl-3.1:
-          server-time:
-          sts:
           userhost-in-names:
         SASL:
           - plain
@@ -156,30 +127,6 @@
           server-time:
         SASL:
           - plain
-    - name: Irssi
-      # ref: https://github.com/irssi/irssi/blob/8a5d5d384ed20cefa3fdc4a65d27fac3e4913a7b/src/irc/core/irc-servers.h#L17
-      link: https://irssi.org
-      support:
-        stable:
-          account-notify: Git
-          away-notify: Git
-          cap-3.1:
-          cap-3.2: Git
-          cap-notify: Git
-          chghost: Git
-          extended-join: Git
-          invite-notify: Git
-          message-tags: Git
-          multi-prefix:
-          sasl-3.1:
-          setname: Git
-          starttls: Git
-        SASL:
-          - external
-          - plain
-      partial:
-        stable:
-          setname: "Git draft cap"
     - name: Konversation
       # ref: Server::initCapablityNames() in https://github.com/KDE/konversation/blob/v21.04.0/src/irc/server.cpp
       link: https://konversation.kde.org
@@ -313,20 +260,6 @@
           sasl-3.2:
         SASL:
           - plain
-    - name: Swirc
-      # ref: https://raw.githubusercontent.com/uhlin/swirc/master/CHANGELOG.md
-      link: https://www.nifty-networks.net/swirc/
-      support:
-        stable:
-          account-notify:
-          away-notify:
-          cap-3.1:
-          invite-notify:
-          sasl-3.1:
-          server-time:
-        SASL:
-          - plain
-          - scram-sha-256
     - name: Textual
       # ref: isCapabilitySupported in https://github.com/Codeux-Software/Textual/blob/55498fb845baf9efe1df93bc4e463edbe5c2057f/Sources/App/Classes/IRC/IRCClient.m
       # ref: https://github.com/Codeux-Software/Textual/blob/v6.0.1/Classes/IRC/IRCClient.m#L4590
@@ -348,6 +281,76 @@
         SASL:
           - external
           - plain
+
+- name: Terminal Clients
+  software:
+    - name: BitchX
+      # ref: https://github.com/BitchX/BitchX/search?q=%22CAP+REQ%22&
+      link: http://www.bitchx.com
+      support:
+        stable:
+          cap-3.1:
+          sasl-3.1:
+        SASL:
+          - plain
+    - name: Glirc
+      # ref: https://github.com/glguy/irc-core/blob/v2/src/Client/State/Network.hs#L686-L687
+      link: https://hackage.haskell.org/package/glirc
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          batch:
+          cap-notify:
+          cap-3.1:
+          cap-3.2:
+          chghost:
+          extended-join:
+          multi-prefix:
+          sasl-3.1:
+          server-time:
+          sts:
+          userhost-in-names:
+        SASL:
+          - plain
+    - name: Irssi
+      # ref: https://github.com/irssi/irssi/blob/8a5d5d384ed20cefa3fdc4a65d27fac3e4913a7b/src/irc/core/irc-servers.h#L17
+      link: https://irssi.org
+      support:
+        stable:
+          account-notify: Git
+          away-notify: Git
+          cap-3.1:
+          cap-3.2: Git
+          cap-notify: Git
+          chghost: Git
+          extended-join: Git
+          invite-notify: Git
+          message-tags: Git
+          multi-prefix:
+          sasl-3.1:
+          setname: Git
+          starttls: Git
+        SASL:
+          - external
+          - plain
+      partial:
+        stable:
+          setname: "Git draft cap"
+    - name: Swirc
+      # ref: https://raw.githubusercontent.com/uhlin/swirc/master/CHANGELOG.md
+      link: https://www.nifty-networks.net/swirc/
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          cap-3.1:
+          invite-notify:
+          sasl-3.1:
+          server-time:
+        SASL:
+          - plain
+          - scram-sha-256
     - name: WeeChat
       # ref: https://weechat.org/files/changelog/ChangeLog-devel.html or IRC_COMMAND_CAP_SUPPORTED_COMPLETION
       # in https://github.com/weechat/weechat/blob/v3.1/src/plugins/irc/irc-command.h
