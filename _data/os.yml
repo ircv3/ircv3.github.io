@@ -1,3 +1,21 @@
+# desktop
+
+bsd:
+  name: BSD
+  icon: freebsd
+
+linux:
+  name: GNU/Linux
+  icon: linux
+
+macos:
+  name: macOS
+  icon: apple
+
+windows:
+  name: Windows
+  icon: windows
+
 # mobile
 android:
   name: Android
