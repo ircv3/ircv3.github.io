@@ -926,6 +926,7 @@
           - scram-sha-256
     - name: Eggdrop
       link: https://github.com/eggheads/eggdrop
+      # ref: https://github.com/eggheads/eggdrop/blob/886c2ff6f943952018000c16cb48c08b8ab99127/eggdrop.conf#L1127
       support:
         stable:
           account-notify: 1.9.0+
