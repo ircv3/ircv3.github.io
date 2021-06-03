@@ -105,9 +105,9 @@
           starttls:
           userhost-in-names:
           webirc:
-    - name: Oragono
-      # ref: https://oragono.io/specs.html
-      link: https://oragono.io/
+    - name: Ergo
+      # ref: https://ergo.chat/specs.html
+      link: https://ergo.chat/
       support:
         stable:
           batch:

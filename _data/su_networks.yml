@@ -65,12 +65,12 @@
       na:
         stable:
           starttls: direct TLS only
-    - name: Oragono Testnet
+    - name: Ergo Testnet
       ircd-ver: master
       net-address:
-        link: ircs://testnet.oragono.io:6697/
-        display: testnet.oragono.io
-      link: https://oragono.io/
+        link: ircs://testnet.ergo.chat:6697/
+        display: testnet.ergo.chat
+      link: https://testnet.ergo.chat/
       support:
         stable:
           account-notify:
