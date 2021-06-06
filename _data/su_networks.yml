@@ -159,6 +159,27 @@
           sasl-3.1:
           starttls:
           userhost-in-names:
+    - name: Libera.Chat
+      ircd-ver: solanum-1.0-dev
+      net-address:
+        link: ircs://irc.libera.chat:6697/
+        display: irc.libera.chat
+      link: https://libera.chat
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
     - name: Rizon
       ircd-ver: plexus-4
       net-address:
