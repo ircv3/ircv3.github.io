@@ -2,6 +2,41 @@
   note: >
     These networks are intended to test new IRCds and can also be used to test new client implementations of IRCv3 specifications.
   software:
+    - name: Ergo Testnet
+      ircd-ver: master
+      net-address:
+        link: ircs://testnet.ergo.chat:6697/
+        display: testnet.ergo.chat
+      link: https://testnet.ergo.chat/
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          bot-mode:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          draft/channel-rename:
+          draft/chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          draft/multiline:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          sts:
+          userhost-in-names:
+          utf8only:
     - name: InspIRCd Testnet
       ircd-ver: InspIRCd-3
       net-address:
@@ -65,41 +100,6 @@
       na:
         stable:
           starttls: direct TLS only
-    - name: Oragono Testnet
-      ircd-ver: master
-      net-address:
-        link: ircs://testnet.oragono.io:6697/
-        display: testnet.oragono.io
-      link: https://oragono.io/
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          bot-mode:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          draft/channel-rename:
-          draft/chathistory:
-          chghost:
-          echo-message:
-          extended-join:
-          invite-notify:
-          labeled-response:
-          message-tags:
-          monitor:
-          msgid:
-          multi-prefix:
-          draft/multiline:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          setname:
-          sts:
-          userhost-in-names:
-          utf8only:
 
 - name: Networks
   note: >

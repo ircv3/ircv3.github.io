@@ -17,6 +17,41 @@
       na:
         stable:
           webirc:
+    - name: Ergo
+      # ref: https://ergo.chat/specs.html
+      link: https://ergo.chat/
+      support:
+        stable:
+          batch:
+          bot-mode:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          sasl-3.1:
+          sasl-3.2:
+          account-notify:
+          account-tag:
+          away-notify:
+          draft/chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          draft/multiline:
+          server-time:
+          setname:
+          userhost-in-names:
+          utf8only:
+          sts:
+          webirc:
+      na:
+        stable:
+          starttls: supports sts
     - name: IRCCloud Teams
       # maintainer: jwheare
       link: https://blog.irccloud.com/private-teams-servers/
@@ -105,41 +140,6 @@
           starttls:
           userhost-in-names:
           webirc:
-    - name: Oragono
-      # ref: https://oragono.io/specs.html
-      link: https://oragono.io/
-      support:
-        stable:
-          batch:
-          bot-mode:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          sasl-3.1:
-          sasl-3.2:
-          account-notify:
-          account-tag:
-          away-notify:
-          draft/chathistory:
-          chghost:
-          echo-message:
-          extended-join:
-          invite-notify:
-          labeled-response:
-          message-tags:
-          monitor:
-          msgid:
-          multi-prefix:
-          draft/multiline:
-          server-time:
-          setname:
-          userhost-in-names:
-          utf8only:
-          sts:
-          webirc:
-      na:
-        stable:
-          starttls: supports sts
     - name: Planio Team Chat
       link: https://plan.io/business-chat/
       support:
