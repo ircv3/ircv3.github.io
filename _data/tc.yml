@@ -20,6 +20,12 @@
   projects:
     - "Unaffiliated"
 
+- nick: jess
+  github: jesopo
+  projects:
+    - "[Libera.Chat](https://libera.chat/)"
+    - "[BitBot](https://bitbot.dev/)"
+
 - nick: justJanne
   github: justjanne
   projects:
