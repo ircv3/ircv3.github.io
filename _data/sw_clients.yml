@@ -370,6 +370,7 @@
         SASL:
           - external
           - plain
+          - scram-sha-256: 3.2+
 
 - name: Web Clients
   software:
