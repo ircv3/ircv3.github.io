@@ -368,8 +368,8 @@
           server-time:
           userhost-in-names:
         SASL:
-          - external
-          - plain
+          - external:
+          - plain:
           - scram-sha-256: 3.2+
 
 - name: Web Clients
