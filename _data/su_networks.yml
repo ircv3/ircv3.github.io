@@ -100,6 +100,37 @@
       na:
         stable:
           starttls: direct TLS only
+    - name: UnrealIRCd Support
+      ircd-ver: UnrealIRCd-5
+      net-address:
+        link: ircs://irc.unrealircd.org:6697/
+        display: irc.unrealircd.org
+      link: https://www.unrealircd.org/
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          bot-mode:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          draft/chathistory:
+          echo-message:
+          extended-join:
+          labeled-response:
+          message-tags:
+          msgid:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          starttls:
+          sts:
+          userhost-in-names:
+          webirc:
 
 - name: Networks
   note: >
