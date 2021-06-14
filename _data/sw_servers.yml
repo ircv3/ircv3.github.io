@@ -202,27 +202,28 @@
       support:
         stable:
           account-notify:
-          account-tag: 5.0+
+          account-tag:
           away-notify:
-          batch: 5.0+
+          batch:
           bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
           chghost:
-          echo-message: 5.0+
+          echo-message:
           extended-join:
           labeled-response: 5.0.3+
-          message-tags: 5.0+
-          msgid: 5.0+
+          message-tags:
+          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
-          server-time: 5.0+
+          server-time:
           starttls:
           sts:
           userhost-in-names:
           webirc:
+          draft/chathistory: 5.2+
       partial:
         stable:
           monitor: "5.0+ add-on"
