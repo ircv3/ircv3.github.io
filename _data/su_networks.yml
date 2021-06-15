@@ -156,24 +156,6 @@
           sasl-3.1:
           starttls:
           userhost-in-names:
-    - name: freenode
-      ircd-ver: ircd-seven-1.1.9
-      net-address:
-        link: ircs://chat.freenode.net:6697/
-        display: chat.freenode.net
-      link: https://freenode.net/
-      support:
-        stable:
-          account-notify:
-          cap-3.1:
-          cap-notify:
-          extended-join:
-          multi-prefix:
-          sasl-3.1:
-          chghost:
-          away-notify:
-          monitor:
-          starttls:
     - name: IRCHighWay
       ircd-ver: InspIRCd-2.0
       net-address:
