@@ -350,7 +350,7 @@
           - plain
     - name: WeeChat
       # ref: https://weechat.org/files/changelog/ChangeLog-devel.html or IRC_COMMAND_CAP_SUPPORTED_COMPLETION
-      # in https://github.com/weechat/weechat/blob/v3.1/src/plugins/irc/irc-command.h
+      # in https://github.com/weechat/weechat/blob/master/src/plugins/irc/irc-command.h
       link: https://weechat.org
       support:
         stable:
