@@ -362,9 +362,11 @@
           chghost: 2.2+
           extended-join:
           invite-notify: 2.2+
+          message-tags: Git
           monitor:
           multi-prefix:
           sasl-3.1:
+          sasl-3.2: Git
           server-time:
           setname: Git
           userhost-in-names:
