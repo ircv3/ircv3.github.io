@@ -370,6 +370,7 @@
           server-time:
           setname: Git
           userhost-in-names:
+          +typing: Git
         SASL:
           external:
           plain:
