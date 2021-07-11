@@ -23,7 +23,7 @@ software:
           type: string
           required: false
         net-address:
-          type: mapofstrings
+          type: dict
           required: false
           kids:
             link:
