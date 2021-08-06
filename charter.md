@@ -56,7 +56,15 @@ Here's some of our current contributors:
     </tbody>
 </table>
 
-The chair has ultimate responsibility for moving discussions forward and will make decisions in cases where consensus between contributors isn't possible, including returning proposals to the drawing board where necessary.
+
+## Governance
+
+The WG Chair is someone the IRCv3 contributors have designated as the Leader For Now of IRCv3. They're able to move discussions forward and make decisions in cases where consensus between contributors isn't possible. They can also return proposals to the drawing board where necessary.
+
+In extraordinary circumstances, the IRCv3 contributors may decide to depose the WG Chair and replace them with someone else (as we've done [in the past](https://github.com/ircv3/ircv3-specifications/issues/233)). In addition, the Chair may appoint someone else to replace them as Chair.
+
+Ownership of the resources of the IRCv3 WG (including the GitHub org, domains, channel, and moderators email list) are spread across several contributors, to prevent the situation where someone can unilaterally control the WG without support from the contributors.
+
 
 ## Project resources & Contribution
 
