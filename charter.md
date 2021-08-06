@@ -59,11 +59,11 @@ Here's some of our current contributors:
 
 ## Governance
 
-The WG Chair is someone the IRCv3 contributors have designated as the Leader For Now of IRCv3. They're able to move discussions forward and make decisions in cases where consensus between contributors isn't possible. They can also return proposals to the drawing board where necessary.
+The WG Chair is able to move discussions forward and make decisions in cases where consensus between contributors isn't possible. They can also return proposals to the drawing board where necessary.
 
-In extraordinary circumstances, the IRCv3 contributors may decide to depose the WG Chair and replace them with someone else (as we've done [in the past](https://github.com/ircv3/ircv3-specifications/issues/233)). In addition, the Chair may appoint someone else to replace them as Chair.
+The WG Chair's authority is derived from, and contingent upon, the confidence that the community of contributors places in them.
 
-Ownership of the resources of the IRCv3 WG (including the GitHub org, domains, channel, and moderators email list) are spread across several contributors, to prevent the situation where someone can unilaterally control the WG without support from the contributors.
+Ownership of the resources of the IRCv3 WG are spread across several contributors, to prevent the situation where someone can unilaterally control the WG without support from the contributors. Currently, the IRCv3.net domain is controlled by DarthGandalf, and other project resources are controlled by jwheare.
 
 
 ## Project resources & Contribution
