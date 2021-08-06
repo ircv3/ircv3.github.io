@@ -14,23 +14,19 @@ in both areas.
 These extensions are published on this website through backwards-compatible [specifications]({{site.baseurl}}/irc/).
 
 
-## Technical board
+## IRCv3 Contributors
 
-The direction of these specifications is led by the technical board. The board consists of a broad range of IRC software and specification authors that reflect the community at large. The board will seek to make all decisions by consensus.
+The direction of these specifications is led by our contributors and the WG Chair. Our contributors consist of a broad range of IRC software and specification authors that reflects the IRC development community at large. We seek to make all decisions by consensus.
 
-Nominations for new members of the board will be considered once the following pre-requisites are met:
+To be listed on this page, contributors must:
 
-- Demonstrated support of the IRCv3 specifications
-- Approval from the existing board
-- Adherence to the [code of conduct]({{site.baseurl}}/conduct.html)
+- Demonstrate support of the IRCv3 specifications
+- Have the approval of the current contributors
+- Adhere to our [code of conduct]({{site.baseurl}}/conduct.html)
 
-In general, candidates who meet any of the following criteria will be given more consideration
+We're seeking representation from as many members of the IRC community as possible. If you or your project would be a good candidate for representation, please contact us!
 
-- Developers of widely used IRC software
-- Administrators of widely used IRC networks
-- People who have otherwise contributed materially to the specifications
-
-We're seeking representation from as many members of the IRC community as possible. If you or your project would be a good candidate for representation, please contact the board. The current members of the board are:
+Here's some of our current contributors:
 
 <table>
     <thead>
@@ -60,7 +56,7 @@ We're seeking representation from as many members of the IRC community as possib
     </tbody>
 </table>
 
-The chair has ultimate responsibility for moving discussions forward and will make decisions in cases where consensus isn't possible, including returning proposals to the drawing board where necessary.
+The chair has ultimate responsibility for moving discussions forward and will make decisions in cases where consensus between contributors isn't possible, including returning proposals to the drawing board where necessary.
 
 ## Project resources & Contribution
 

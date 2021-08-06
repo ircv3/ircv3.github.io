@@ -24,7 +24,7 @@ Plain and simple, a server's S2S protocol only needs to be understood by that sa
 
 ### Who runs IRCv3?
 
-Originally, we were setup by the Atheme group to develop extensions to the IRC client protocol. These days, the direction of the IRCv3 WG is led by the [technical board]({{site.baseurl}}/charter.html).
+Originally, we were setup by the Atheme group to develop extensions to the IRC client protocol. These days, the direction of the IRCv3 WG is led by [our contributors]({{site.baseurl}}/charter.html) and the WG Chair.
 
 We're just a collection of server, client, and bot/library developers that work together to produce new specifications and try to push IRC forward. Anyone's free to join, and as long as you agree with [our charter](/charter.html) we're happy to get your suggestions, ideas and feedback.
 
