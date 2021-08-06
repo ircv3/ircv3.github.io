@@ -73,7 +73,7 @@ Ownership of the resources of the IRCv3 WG are spread across several contributor
 | @IRCv3 Twitter account | jwheare |
 | GitHub org | DarthGandalf, jwheare |
 | ircv3-mods List | jwheare |
-| Netlify account | DarthGaldalf |
+| Netlify account | DarthGandalf |
 
 
 ## Project resources & Contribution
