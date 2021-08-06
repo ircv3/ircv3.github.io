@@ -63,7 +63,17 @@ The WG Chair is able to move discussions forward and make decisions in cases whe
 
 The WG Chair's authority is derived from, and contingent upon, the confidence that the community of contributors places in them.
 
-Ownership of the resources of the IRCv3 WG are spread across several contributors, to prevent the situation where someone can unilaterally control the WG without support from the contributors. Currently, the IRCv3.net domain is controlled by DarthGandalf, and other project resources are controlled by jwheare.
+Ownership of the resources of the IRCv3 WG are spread across several contributors, to prevent the situation where someone can unilaterally control the WG without support from the contributors.
+
+| Resource | Owner(s) |
+| -------- | ------ |
+| `ircv3.net` domain | DarthGandalf |
+| `ircv3.org` domain | jwheare |
+| `#ircv3` channel | dan-, jwheare |
+| @IRCv3 Twitter account | jwheare |
+| GitHub org | DarthGandalf, jwheare |
+| ircv3-mods List | jwheare |
+| Netlify account | DarthGaldalf |
 
 
 ## Project resources & Contribution
