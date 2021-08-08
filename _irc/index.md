@@ -35,7 +35,7 @@ If you have any questions on the core IRC protocol, please feel free to ask us
 [feedback](https://github.com/ircv3/ircv3-ideas) GitHub repository.
 
 The IRCv3 specifications are released when they are stable and have been widely
-tested. In the past the WG released specifications as versioned bundles
+tested. [In the past](http://web.archive.org/web/20160402092520/https://ircv3.net/irc/) the WG released specifications as versioned bundles
 (IRCv3.1, IRCv3.2), but we no longer do this.
 
 Errata updates may be submitted for our specifications. To do so, simply see
