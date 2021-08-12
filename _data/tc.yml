@@ -43,18 +43,24 @@
   projects:
     - "[Palaver](https://palaverapp.com/)"
 
-- nick: val
-  github: ProgVal
-  projects:
-    - "[Limnoria](https://github.com/ProgVal/Limnoria)"
-
 - nick: Sadie
   github: SadieCat
   projects:
     - "[Anope](https://www.anope.org/)"
     - "[InspIRCd](https://www.inspircd.org/)"
 
+- nick: slingamn
+  github: slingamn
+  projects:
+    - "[Ergo](https://github.com/ergochat/ergo)"
+    - "[irc-go](https://github.com/ergochat/irc-go/)"
+
 - nick: TingPing
   github: TingPing
   projects:
     - "[HexChat](https://hexchat.github.io/)"
+
+- nick: val
+  github: ProgVal
+  projects:
+    - "[Limnoria](https://github.com/ProgVal/Limnoria)"
