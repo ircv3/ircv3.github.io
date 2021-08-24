@@ -20,8 +20,9 @@
 }
 
 .support-table {
-  overflow-x: auto;
+  overflow: auto;
   margin: 0 auto;
+  max-height: 90vh;
 
   &.network td:first-child {
     min-width: 11em;
@@ -82,11 +83,17 @@
       vertical-align: top;
       text-align: center;
       font-size: 95%;
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      background: #fff;
 
       &:first-child {
         text-align: left;
         font-size: 100%;
         min-width: 7em;
+        left: 0;
+        z-index: 4;
       }
     }
 
@@ -97,7 +104,17 @@
       &:first-child {
         text-align: left;
         white-space: normal;
+        position: sticky;
+        left: 0;
+        z-index: 2;
+        border-right: 1px #aaa solid
       }
+    }
+    tbody td:first-child {
+      background: #fff
+    }
+    tbody tr:nth-child(odd) td:first-child {
+      background: #e4e4e4
     }
 
     tbody {
