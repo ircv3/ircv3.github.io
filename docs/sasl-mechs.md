@@ -30,7 +30,6 @@ IRC SASL authentication primarily uses the same mechanisms as SASL in other prot
 ### Services Support
 
 {% for type in site.data.sw_services %}
-{% assign hide_support_name = true %}
 {% for support in site.data.doc_sasl %}
 {% include support_list.html %}
 {% endfor %}

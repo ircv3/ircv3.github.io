@@ -1,5 +1,4 @@
 {% capture support_key %}{{ support[0] }}{% endcapture %}
-
 {% capture anysupport %}
     {% for sw in type.software %}
         {% if sw.support contains support_key or sw.partial contains support_key %}
@@ -9,36 +8,59 @@
 {% endcapture %}
 
 {% if anysupport contains "Y" %}
-{% if hide_support_name %}{% else %}
-#### {% if support_name %}{{ support_name }}{% else %}{{ support[1].name }} Support{% endif %}
-{% endif %}
 
 {% if support[1].note %}{{ support[1].note | markdownify }}{% endif %}
-{% assign sw_max = -1 %}
-{% assign sw_index = 0 %}
-{% assign sw_index_body = 0 %}
-{% assign sw_count = 0 %}
-{% assign max_sw_per_table = 9 %}
-{% assign min_fullwidth_display = 8 %}
 
-{% for abcxyz in (1..9999) %}<!-- we expect to break out of this loop in all cases, so this is fine -->
-{% assign sw_count = 0 %}
-{% capture sw_len_cols %}{% for sw in type.software offset:sw_index %}{% assign sw_count = sw_count | plus: 1 %}^{% if sw_count == max_sw_per_table %}{% break %}{% elsif forloop.last %}{% break %}{% endif %}{% endfor %}{% endcapture %}
-<div class="sw-table t-{{ support[1].name | slugify }}{% if min_fullwidth_display <= sw_len_cols.size %} fullwidth{% endif %}"><table>
-    <colgroup>
-        <col class="name" />
-        <col class="software" span="{{ sw_len_cols | size }}" />
-    </colgroup>
+{% assign popup_above_after = type.software | size | minus: 3 %}
+{% if popup_above_after < 3 %}
+    {% assign popup_above_after = 3 %}
+{% endif %}
+
+<div class="support-table {{ include.swtype }}"><table>
     <thead>
         <tr>
-            <th>Feature</th>
-            {% assign sw_count = 0 %}
-            {% assign sw_index_body = sw_index %}
-            {% for sw in type.software offset:sw_index %}
-                {% if sw_max == -1 %}{% assign sw_max = forloop.length %}{% endif %}
-                {% assign sw_index = sw_index | plus: 1 %}
-                {% assign sw_count = sw_count | plus: 1 %}
-            <th class="support-head">
+            <th>
+                <!-- Software -->
+            </th>
+            {% for ext in support[1].specs %}{% if ext[1].deprecated %}{% else %}
+                {% capture ext_name %}{{ ext[0] }}{% endcapture %}
+
+                {% capture should_show_spec %}
+                    {% for sw in type.software %}
+                        {% if ext[1].hide-on-servers and type.name contains "Servers" %}
+                            
+                        {% elsif ext[1].hide-if-no-support %}
+                            {% if sw.support[support_key] contains ext_name or sw.partial[support_key] contains ext_name %}
+                                Y
+                            {% endif %}
+                        {% elsif ext[1].draft %}
+                            {% if sw.support[support_key] contains ext_name or sw.partial[support_key] contains ext_name or sw.na[support_key] contains ext_name %}
+                                Y
+                            {% endif %}
+                        {% else %}
+                            Y
+                        {% endif %}
+                    {% endfor %}
+                {% endcapture %}
+
+                {% if should_show_spec contains "Y" %}
+                <th class="{% if ext[1].required %}required{% elsif ext[1].draft %}draft{% else %}optional{% endif %}"><a class="spec-name" title="{{ ext[1].description }}" href="{% if ext[1].ext_link %}{{ ext[1].ext_link }}{% else %}{{ site.baseurl }}{{ ext[1].link }}{% endif %}">{{ ext[1].name }}</a></th>
+                {% endif %}
+            {% endif %}{% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% assign sw_index = 0 %}
+        {% for sw in type.software %}
+        {% assign sw_index = sw_index | plus: 1 %}
+        {% if sw_index < popup_above_after %}
+            {% assign popup_above = false %}
+        {% else %}
+            {% assign popup_above = true %}
+        {% endif %}
+
+        <tr class="popup-{% if popup_above %}above{% else %}below{% endif %}">
+            <td>
                 {% if sw.link %}<a{% if sw.ircd-ver || sw.net-address %} class="bold"{% endif %} href="{{ sw.link }}">{{ sw.name }}</a>{% else %}{{ sw.name }}{% endif %}
                 {% if sw.ircd-ver %}<span class="ircd-ver">{{ sw.ircd-ver }}</span>{% endif %}
                 {% if sw.net-address %}<a class="net-address" href="{{ sw.net-address.link }}">{{ sw.net-address.display }}</a>{% endif %}
@@ -63,28 +85,20 @@
                         {% endfor %}
                     </div>
                 {% endif %}
-            </th>
-                {% if sw_count == max_sw_per_table %}{% break %}{% elsif forloop.last %}{% break %}{% endif %}
-            {% endfor %}
-        </tr>
-    </thead>
-    <tbody>
-        {% capture length_of_specs %}{% for ext in support[1].specs %}{% if ext[1].deprecated %}{% else %}{% capture ext_name %}{{ ext[0] }}{% endcapture %}{% capture any_draft_support %}{% for sw in type.software %}{% if sw.support[support_key] contains ext_name or sw.partial[support_key] contains ext_name or sw.na[support_key] contains ext_name %}Y{% endif %}{% endfor %}{% endcapture %}{% if any_draft_support contains "Y" %}Y{% endif %}{% endif %}{% endfor %}{% endcapture %}
+            </td>
+            {% for ext in support[1].specs %}{% if ext[1].deprecated %}{% else %}
+                {% capture ext_name %}{{ ext[0] }}{% endcapture %}
 
-        {% for ext in support[1].specs %}{% if ext[1].deprecated %}{% else %}
-
-        {% capture ext_name %}{{ ext[0] }}{% endcapture %}
-
-
-        {% assign comment = "decide whether to put the popup above or beneath the name. yes, really." %}
-
-            {% assign real_index = 0 %}
-            {% for ext2 in support[1].specs %}{% if ext2[1].deprecated %}{% else %}
-                {% capture ext2_name %}{{ ext2[0] }}{% endcapture %}
-                {% capture any_ext_support %}
+                {% capture should_show_spec %}
                     {% for sw in type.software %}
-                        {% if ext[1].draft %}
-                            {% if sw.support[support_key] contains ext2_name or sw.partial[support_key] contains ext2_name or sw.na[support_key] contains ext2_name %}
+                        {% if ext[1].hide-on-servers and type.name contains "Servers" %}
+                            
+                        {% elsif ext[1].hide-if-no-support %}
+                            {% if sw.support[support_key] contains ext_name or sw.partial[support_key] contains ext_name %}
+                                Y
+                            {% endif %}
+                        {% elsif ext[1].draft %}
+                            {% if sw.support[support_key] contains ext_name or sw.partial[support_key] contains ext_name or sw.na[support_key] contains ext_name %}
                                 Y
                             {% endif %}
                         {% else %}
@@ -92,100 +106,54 @@
                         {% endif %}
                     {% endfor %}
                 {% endcapture %}
-                {% if any_ext_support contains "Y" %}
-                    {% assign real_index = real_index | plus: 1 %}
-                    {% if ext2_name == ext_name %}
-                        {% break %}
-                    {% endif %}
+
+                {% if should_show_spec contains "Y" %}
+                    <td data-capname="{{ support[1].specs[ext_name].name }}" class="{% if ext[1].required %}required{% elsif ext[1].draft %}draft{% else %}optional{% endif %} support {% if sw.support[support_key] contains ext_name %}supported{% elsif sw.partial[support_key] contains ext_name %}partial{% elsif sw.na[support_key] contains ext_name %}na{% else %}unsupported{% endif %}">
+                        {% assign show_cap = true %}
+                        {% if sw.support[support_key] contains ext_name %}
+                            {% assign capab = sw.support[support_key][ext_name] %}
+                            {% assign default = 'Yes' %}
+                        {% elsif sw.partial[support_key] contains ext_name %}
+                            {% assign capab = sw.partial[support_key][ext_name] %}
+                            {% assign default = 'Partial' %}
+                        {% elsif sw.na[support_key] contains ext_name %}
+                            {% assign capab = sw.na[support_key][ext_name] %}
+                            {% assign default = 'N/A' %}
+                        {% else %}
+                            {% assign show_cap = false %}
+                        {% endif %}
+
+                        {% if popup_above %}{% else %}
+                            {% if show_cap %}
+                                {% include show_capability.html %}
+                            {% else %}
+                                No
+                            {% endif %}
+                        {% endif %}
+
+                        <div class="hover-popup"><div>
+                            <p class="bold">{{ sw.name }}</p>
+                            <p>{{ ext[1].name }}</p>
+                            {% if info %}
+                                <p class="note">{{ info }}</p>
+                            {% endif %}
+                        </div></div>
+
+                        {% if popup_above %}
+                            {% if show_cap %}
+                                {% include show_capability.html %}
+                            {% else %}
+                                No
+                            {% endif %}
+                        {% endif %}
+
+                        {% assign info = nil %}
+                    </td>
                 {% endif %}
             {% endif %}{% endfor %}
-
-            {% assign forlooplen = length_of_specs.size | minus: 2 %}
-
-            {% if real_index < forlooplen %}
-                {% assign popup_above = false %}
-            {% else %}
-                {% assign popup_above = true %}
-            {% endif %}
-
-        {% capture should_show_spec %}
-            {% for sw in type.software %}
-                {% if ext[1].hide-on-servers and type.name contains "Servers" %}
-                    
-                {% elsif ext[1].hide-if-no-support %}
-                    {% if sw.support[support_key] contains ext_name or sw.partial[support_key] contains ext_name %}
-                        Y
-                    {% endif %}
-                {% elsif ext[1].draft %}
-                    {% if sw.support[support_key] contains ext_name or sw.partial[support_key] contains ext_name or sw.na[support_key] contains ext_name %}
-                        Y
-                    {% endif %}
-                {% else %}
-                    Y
-                {% endif %}
-            {% endfor %}
-        {% endcapture %}
-
-        {% if should_show_spec contains "Y" %}
-
-        <tr class="{% if ext[1].required %}required{% elsif ext[1].draft %}draft{% else %}optional{% endif %} popup-{% if popup_above %}above{% else %}below{% endif %}">
-            <td><span><a class="spec-name" title="{{ ext[1].description }}" href="{% if ext[1].ext_link %}{{ ext[1].ext_link }}{% else %}{{ site.baseurl }}{{ ext[1].link }}{% endif %}">{{ ext[1].name }}</a></span></td>
-
-            {% assign sw_count = 0 %}
-            {% for sw in type.software offset:sw_index_body %}
-                {% assign sw_count = sw_count | plus: 1 %}
-                {% if ext[1].deprecated %}{% else %}
-                <td class="support {% if sw.support[support_key] contains ext_name %}supported{% elsif sw.partial[support_key] contains ext_name %}partial{% elsif sw.na[support_key] contains ext_name %}na{% else %}unsupported{% endif %}">
-                    {% assign show_cap = true %}
-                    {% if sw.support[support_key] contains ext_name %}
-                        {% assign capab = sw.support[support_key][ext_name] %}
-                        {% assign default = 'Yes' %}
-                    {% elsif sw.partial[support_key] contains ext_name %}
-                        {% assign capab = sw.partial[support_key][ext_name] %}
-                        {% assign default = 'Partial' %}
-                    {% elsif sw.na[support_key] contains ext_name %}
-                        {% assign capab = sw.na[support_key][ext_name] %}
-                        {% assign default = 'N/A' %}
-                    {% else %}
-                        {% assign show_cap = false %}
-                    {% endif %}
-
-                    {% if popup_above %}{% else %}
-                        {% if show_cap %}
-                            {% include show_capability.html %}
-                        {% else %}
-                            No
-                        {% endif %}
-                    {% endif %}
-
-                    {% if length_of_specs.size >= 5 %}
-                    <div class="hover-popup"><div>
-                        <p class="bold">{{ sw.name }}</p>
-                        <p>{{ ext[1].name }}</p>
-                        {% if info %}
-                            <p class="note">{{ info }}</p>
-                        {% endif %}
-                    </div></div>
-                    {% endif %}
-
-                    {% if popup_above %}
-                        {% if show_cap %}
-                            {% include show_capability.html %}
-                        {% else %}
-                            No
-                        {% endif %}
-                    {% endif %}
-
-                    {% assign info = nil %}
-                </td>
-                {% endif %}
-                {% if sw_count == max_sw_per_table %}{% break %}{% elsif forloop.last %}{% break %}{% endif %}
-            {% endfor %}
         </tr>
-        {% endif %}{% endif %}{% endfor %}
+        {% endfor %}
     </tbody>
 </table></div>
-{% if sw_index == sw_max %}{% break %}{% endif %}
-{% endfor %}
 
 {% endif %}
