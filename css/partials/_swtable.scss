@@ -367,7 +367,10 @@ tr.popup-above .support .hover-popup > div:after {
           margin-top: 2em;
           border-right: none;
           text-align: center;
-          background: none !important; // override the even vs odd backgrounds
+          background: #fff !important; // override the even vs odd backgrounds
+          position: sticky;
+          top: 0;
+          z-index: 5;
         }
       }
     }
