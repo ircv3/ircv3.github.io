@@ -209,6 +209,8 @@
 
   .os-support {
     text-align: right;
+    margin-left: .5em;
+    float: right;
   }
 }
 
@@ -306,7 +308,6 @@ tr.popup-above .support .hover-popup > div:after {
 
 .os-support {
   color: #666;
-  margin-top: 0.2rem;
   display: block;
 }
 .os-support i + i {
