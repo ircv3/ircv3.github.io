@@ -14,7 +14,6 @@ page-header: >
 {% endfor %}
 </div>
 
-{% assign hide_support_name = true %}
 {% for type in site.data.sw_clients %}
 {% include software_list.html %}
 {% endfor %}
