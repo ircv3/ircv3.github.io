@@ -112,7 +112,7 @@
                 {% endcapture %}
 
                 {% if should_show_spec contains "Y" %}
-                    <td class="{% if ext[1].required %}required{% elsif ext[1].draft %}draft{% else %}optional{% endif %} support {% if sw.support[support_key] contains ext_name %}supported{% elsif sw.partial[support_key] contains ext_name %}partial{% elsif sw.na[support_key] contains ext_name %}na{% else %}unsupported{% endif %}">
+                    <td data-capname="{{ ext_name }}" class="{% if ext[1].required %}required{% elsif ext[1].draft %}draft{% else %}optional{% endif %} support {% if sw.support[support_key] contains ext_name %}supported{% elsif sw.partial[support_key] contains ext_name %}partial{% elsif sw.na[support_key] contains ext_name %}na{% else %}unsupported{% endif %}">
                         {% assign show_cap = true %}
                         {% if sw.support[support_key] contains ext_name %}
                             {% assign capab = sw.support[support_key][ext_name] %}

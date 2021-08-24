@@ -321,3 +321,55 @@ tr.popup-above .support .hover-popup > div:after {
 .os-support-android {
   color: #9fc234;
 }
+
+@media only screen and (max-width: 500px)  {
+  .support-table {
+    overflow: initial;
+    max-height: none;
+
+    thead {
+      display: none;
+    }
+
+    tbody, th, td, tr { 
+      display: block; 
+    }
+
+    table {
+      width: 100%;
+    }
+
+    tr {
+      background: none !important; // override the even vs odd backgrounds
+      border-top: none;
+
+      td {
+        border: none;
+        &:not(:first-child) {
+          border-top: 1px #C0C0C0 solid;
+          &:before {
+            content: attr(data-capname);
+            float: left;
+            min-width: 9em;
+            text-align: right;
+            background: rgba(255,255,255,0.8);
+            margin: -0.3em -0.5em;
+            padding: .3em .5em;
+            color: #111;
+          }
+        }
+        &.required + .optional, &.optional + .draft {
+          border-left: none;
+          border-top: 0.35rem solid #aaa;
+        }
+
+        &:first-child {
+          margin-top: 2em;
+          border-right: none;
+          text-align: center;
+          background: none !important; // override the even vs odd backgrounds
+        }
+      }
+    }
+  }
+}
