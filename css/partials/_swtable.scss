@@ -24,6 +24,10 @@
   margin: 0 auto;
   max-height: 90vh;
 
+  + .support-table {
+    margin-top: 2em;
+  }
+
   &.network td:first-child {
     min-width: 11em;
     text-align: center;
