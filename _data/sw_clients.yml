@@ -366,6 +366,10 @@
     - name: Swirc
       # ref: https://raw.githubusercontent.com/uhlin/swirc/master/CHANGELOG.md
       link: https://www.nifty-networks.net/swirc/
+      os:
+        - bsd
+        - linux
+        - windows
       support:
         stable:
           account-notify:
