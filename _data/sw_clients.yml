@@ -389,9 +389,13 @@
           cap-notify:
           cap-3.1:
           cap-3.2:
+          chghost:
           draft/chathistory:
           echo-message:
+          invite-notify:
+          labeled-response:
           message-tags:
+          monitor:
           msgid:
           multi-prefix:
           sasl-3.1:
