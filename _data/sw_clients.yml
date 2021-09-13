@@ -860,7 +860,7 @@
           sasl-3.2:
           server-time:
           setname:
-          utf8-only:
+          utf8only:
         SASL:
           plain:
     - name: soju (as Client)
@@ -883,7 +883,7 @@
           sasl-3.2:
           server-time:
           setname:
-          utf8-only:
+          utf8only:
         SASL:
           external:
           plain:
