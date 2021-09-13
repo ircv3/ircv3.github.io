@@ -847,6 +847,7 @@
           cap-3.2:
           cap-notify:
           draft/chathistory:
+          account-tag:
           away-notify:
           batch:
           echo-message:
@@ -859,6 +860,7 @@
           sasl-3.2:
           server-time:
           setname:
+          utf8-only:
         SASL:
           plain:
     - name: soju (as Client)
@@ -869,6 +871,7 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          account-tag:
           away-notify:
           batch:
           extended-join:
@@ -880,6 +883,7 @@
           sasl-3.2:
           server-time:
           setname:
+          utf8-only:
         SASL:
           external:
           plain:
