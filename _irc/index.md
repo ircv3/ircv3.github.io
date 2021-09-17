@@ -383,6 +383,14 @@ describes how this command works, how to use it, and some best practices to
 keep in mind while implementing this feature.
 
 
+## [WebSocket]({{site.baseurl}}/specs/extensions/websocket.html)
+
+The [WebSocket spec]({{site.baseurl}}/specs/extensions/websocket.html)
+describes conventions for transporting IRC lines over the WebSocket protocol.
+This is necessary for browser-based clients, which cannot make conventional
+TCP connections to IRC servers.
+
+
 ---
 
 
