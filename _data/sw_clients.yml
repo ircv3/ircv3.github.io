@@ -118,22 +118,22 @@
       support:
         stable:
           account-notify:
-          account-tag: Git
+          account-tag: 2.16
           away-notify:
           cap-notify:
           cap-3.1:
           cap-3.2:
           chghost:
           extended-join:
-          invite-notify: Git
+          invite-notify: 2.16
           monitor:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
           server-time:
-          setname: Git
+          setname: 2.16
           userhost-in-names:
-          utf8only: Git
+          utf8only: 2.16
         SASL:
           - external
           - plain
