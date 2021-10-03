@@ -863,6 +863,9 @@
           utf8only:
         SASL:
           plain:
+      partial:
+        stable:
+          websockets: text only
     - name: soju (as Client)
       # ref: https://git.sr.ht/~emersion/soju/tree/master/upstream.go#L23
       link: https://sr.ht/~emersion/soju
@@ -887,9 +890,6 @@
         SASL:
           external:
           plain:
-      partial:
-        stable:
-          websockets: text only
     - name: ZNC (as Server)
       # ref: https://github.com/znc/znc/search?q=OnServerCapAvailable+extension%3Acpp
       #      mSupportedCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/src/IRCSock.cpp
