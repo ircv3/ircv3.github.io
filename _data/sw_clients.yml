@@ -863,6 +863,9 @@
           utf8only:
         SASL:
           plain:
+      partial:
+        stable:
+          websockets: text only
     - name: soju (as Client)
       # ref: https://git.sr.ht/~emersion/soju/tree/master/upstream.go#L23
       link: https://sr.ht/~emersion/soju

@@ -178,6 +178,11 @@ stable:
       description: WebIRC Extension
       link: /specs/extensions/webirc.html
       hide-if-no-support: true
+    websockets:
+      name: WebSockets
+      description: WebSockets
+      link: /specs/extensions/websockets.html
+      hide-if-no-support: true
 
     +typing:
       name: +typing

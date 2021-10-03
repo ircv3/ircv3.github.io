@@ -152,6 +152,11 @@ webirc:
   name: WebIRC extension
   shortname: WebIRC
   url: /extensions/webirc.html
+websockets:
+  fullname: WebSocket protocol
+  name: WebSockets
+  shortname: WebSockets
+  url: /extensions/websockets.html
 
 # deprecated specs
 metadata-3.2:
