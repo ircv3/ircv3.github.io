@@ -181,7 +181,7 @@ stable:
     websockets:
       name: WebSockets
       description: WebSockets
-      link: /specs/extensions/websockets.html
+      link: /specs/extensions/websocket.html
       hide-if-no-support: true
 
     +typing:

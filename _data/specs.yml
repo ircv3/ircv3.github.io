@@ -156,7 +156,7 @@ websockets:
   fullname: WebSocket protocol
   name: WebSockets
   shortname: WebSockets
-  url: /extensions/websockets.html
+  url: /extensions/websocket.html
 
 # deprecated specs
 metadata-3.2:
