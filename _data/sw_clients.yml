@@ -971,12 +971,18 @@
           account-notify: 1.9.0+
           account-tag: 1.9.0+
           away-notify: 1.9.1+
+          bot-mode: Git (1.9.2)
           cap-3.1: 1.9.0+
+          cap-3.2: Git (1.9.2)
+          cap-notify: Git (1.9.2)
           chghost: 1.9.0+
           echo-message: 1.9.0+
           extended-join: 1.9.0+
           invite-notify: 1.9.0+
           message-tags: 1.9.0+
+          monitor: Git (1.9.2)
+          sasl-3.1: Git (1.9.2)
+          sasl-3.2: Git (1.9.2)
           server-time: 1.9.0+
           setname: 1.9.0+
           +typing: 1.9.0+
