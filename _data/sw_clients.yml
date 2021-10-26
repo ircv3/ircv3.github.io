@@ -302,6 +302,28 @@
         SASL:
           - external
           - plain
+    - name: senpai
+      # ref: https://git.sr.ht/~taiite/senpai/tree/master/item/irc/session.go#L47
+      link: https://git.sr.ht/~taiite/senpai
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-notify:
+          draft/chathistory:
+          echo-message:
+          extended-join:
+          invite-notify:
+          labeled-response:
+          message-tags:
+          multi-prefix:
+          server-time:
+          setname:
+          userhost-in-names:
+        SASL:
+          plain:
     - name: Srain
       # ref: https://doc.srain.im/en/latest/support.html
       link: https://srain.im
@@ -376,28 +398,6 @@
           external:
           plain:
           scram-sha-256: 3.2+
-    - name: senpai
-      # ref: https://git.sr.ht/~taiite/senpai/tree/master/item/irc/session.go#L47
-      link: https://git.sr.ht/~taiite/senpai
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          cap-notify:
-          draft/chathistory:
-          echo-message:
-          extended-join:
-          invite-notify:
-          labeled-response:
-          message-tags:
-          multi-prefix:
-          server-time:
-          setname:
-          userhost-in-names:
-        SASL:
-          plain:
 
 - name: Web Clients
   software:
