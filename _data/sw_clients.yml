@@ -307,21 +307,21 @@
       link: https://git.sr.ht/~taiite/senpai
       support:
         stable:
-          account-notify:
-          account-tag:
           away-notify:
           batch:
           cap-notify:
+          cap-3.1:
+          cap-3.2:
           draft/chathistory:
           echo-message:
-          extended-join:
           invite-notify:
-          labeled-response:
           message-tags:
           multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
           server-time:
           setname:
-          userhost-in-names:
+          +typing:
         SASL:
           plain:
     - name: Srain
