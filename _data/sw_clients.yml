@@ -112,6 +112,12 @@
           userhost-in-names:
         SASL:
           - plain
+          - external
+          - scram-sha-1
+          - scram-sha-256
+          - scram-sha-512
+          - ecdsa-nist256p-challenge
+          - ecdh-x25519-challenge
     - name: HexChat
       # ref: https://github.com/hexchat/hexchat/blob/v2.10.3/src/common/inbound.c#L1728
       link: https://hexchat.github.io
