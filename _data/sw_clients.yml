@@ -1019,10 +1019,10 @@
           - external
           - ecdsa-nist256p-challenge
     - name: Limnoria
-      # ref: https://github.com/ProgVal/Limnoria/blob/master-2015-10-10/src/irclib.py#L962
-      #      https://github.com/ProgVal/Limnoria/blob/master-2015-10-10/src/ircmsgs.py#L869
-      #      https://github.com/ProgVal/Limnoria/issues/1015
-      link: https://github.com/ProgVal/Limnoria
+      # ref: https://github.com/progval/Limnoria/blob/master-2021-10-09/src/irclib.py#L1749
+      #      https://github.com/progval/Limnoria/blob/master-2021-10-09/src/ircmsgs.py#L994
+      #      https://github.com/progval/Limnoria/blob/master-2021-10-09/src/drivers/Socket.py#L216
+      link: https://github.com/progval/Limnoria
       support:
         stable:
           account-notify:
@@ -1051,6 +1051,7 @@
           sts:
           starttls:
           userhost-in-names:
+          utf8only:
           +draft/react:
           +draft/reply:
         SASL:
