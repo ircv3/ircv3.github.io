@@ -30,10 +30,6 @@ stable:
       link: /specs/extensions/account-notify.html
       caps:
         - account-notify
-    account-registration:
-      name: account-registration
-      description: Account Registration
-      link: /specs/extensions/account-registration.html
     account-tag:
       name: account-tag
       description: account-tag Extension
@@ -83,12 +79,6 @@ stable:
       link: /specs/extensions/extended-join.html
       caps:
         - extended-join
-    extended-monitor:
-      name: Extended Monitor
-      description: Extended Monitor
-      link: /specs/extensions/extended-monitor.html
-      caps:
-        - extended-monitor
     invite-notify:
       name: invite-notify
       description: invite-notify Extension
@@ -202,6 +192,14 @@ stable:
       tags:
         - +typing
 
+    draft/account-registration:
+      name: draft/account-registration
+      description: Account Registration
+      link: /specs/extensions/account-registration.html
+      draft: true
+      caps:
+        - draft/account-registration
+
     draft/channel-rename:
       name: draft/channel-rename
       description: Channel renaming DRAFT
@@ -209,6 +207,14 @@ stable:
       draft: true
       caps:
         - draft/channel-rename
+
+    draft/extended-monitor:
+      name: draft/extended-monitor
+      description: Extended Monitor
+      link: /specs/extensions/extended-monitor.html
+      draft: true
+      caps:
+        - extended-monitor
 
     draft/multiline:
       name: draft/multiline
