@@ -365,3 +365,40 @@
           sts:
           userhost-in-names:
           utf8only:
+    - name: ergo.chat
+      ircd-ver: Ergo-2.8
+      net-address:
+        link: ircs://irc.ergo.chat:6697/
+        display: ergo.chat
+      link: https://ergo.chat/about-network
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          bot-mode:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          draft/account-registration:
+          draft/channel-rename:
+          draft/chathistory:
+          draft/extended-monitor:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          draft/multiline:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          sts:
+          userhost-in-names:
+          utf8only:
