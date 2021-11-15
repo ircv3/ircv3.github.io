@@ -17,6 +17,12 @@ account-notify:
   name: account-notify Extension
   shortname: account-notify
   url: /extensions/account-notify.html
+account-registration:
+  fullname: account-registration Extension
+  name: account-registration Extension
+  shortname: account-registration
+  url: /extensions/account-registration.html
+  draft: true
 account-tag:
   fullname: account-tag Extension
   name: account-tag Extension
@@ -65,6 +71,12 @@ echo-message:
   name: echo-message Extension
   shortname: echo-message
   url: /extensions/echo-message.html
+extended-monitor:
+  fullname: Extended Monitor
+  name: Extended Monitor
+  shortname: Extended Monitor
+  url: /extensions/monitor.html
+  draft: true
 invite-notify:
   fullname: invite-notify Extension
   name: invite-notify Extension

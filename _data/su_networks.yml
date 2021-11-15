@@ -11,6 +11,7 @@
       support:
         stable:
           account-notify:
+          account-registration:
           account-tag:
           away-notify:
           batch:
@@ -23,6 +24,7 @@
           chghost:
           echo-message:
           extended-join:
+          extended-monitor:
           invite-notify:
           labeled-response:
           message-tags:
