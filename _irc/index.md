@@ -366,7 +366,7 @@ clients should interpret the changes.
 
 The `UTF8ONLY` ISUPPORT token lets servers indicate that they only support
 UTF-8 traffic, allowing clients to set their incoming/outgoing encodings
-automaticaly.
+automatically.
 
 The [`UTF8ONLY` spec]({{site.baseurl}}/specs/extensions/utf8-only.html)
 details the `RPL_ISUPPORT` token and associated messages and functionality.
