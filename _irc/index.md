@@ -251,6 +251,9 @@ implementations.
 The [Monitor spec]({{site.baseurl}}/specs/extensions/monitor.html) details this
 command, the relevant `RPL_ISUPPORT` token and the commands used with it.
 
+The **work-in-progress** [Extended Monitor spec]({{site.baseurl}}/specs/extensions/extended-monitor.html)
+builds upon the Monitor spec, and extends it to various events.
+
 
 ## [Multiple Prefixes]({{site.baseurl}}/specs/extensions/multi-prefix.html)
 
@@ -269,7 +272,7 @@ The `multiline` extension adds a new batch type and tag sent by clients and serv
 
 The **work-in-progress** [`multiline` spec]({{site.baseurl}}/specs/extensions/multiline.html) describes how to use the `draft/multiline` batch type and `draft/multiline-concat` tag to achieve this.
 
-## SASL Authentication
+## Authentication and Registration
 
 SASL allows users to authenticate in a standardised way across different IRC
 networks. This is in opposition to logging in with 'services' such as NickServ,
@@ -296,6 +299,10 @@ protocols. Most commonly:
 For further information on SASL mechanism support, see the
 [SASL Mechanisms page]({{site.baseurl}}/docs/sasl-mechs.html).
 
+
+The **work-in-progress** [Account Registration spec]({{site.baseurl}}/specs/extensions/account-registration.html)
+allows users to register accounts in a standardized way, without sending messages
+to service bots.
 
 ## [Server Time]({{site.baseurl}}/specs/extensions/server-time.html)
 

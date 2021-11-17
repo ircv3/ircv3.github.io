@@ -22,20 +22,20 @@
       link: https://ergo.chat/
       support:
         stable:
+          account-notify:
+          draft/account-registration:
+          account-tag:
+          away-notify:
           batch:
           bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
-          sasl-3.1:
-          sasl-3.2:
-          account-notify:
-          account-tag:
-          away-notify:
           draft/chathistory:
           chghost:
           echo-message:
           extended-join:
+          draft/extended-monitor:
           invite-notify:
           labeled-response:
           message-tags:
@@ -43,6 +43,8 @@
           msgid:
           multi-prefix:
           draft/multiline:
+          sasl-3.1:
+          sasl-3.2:
           server-time:
           setname:
           userhost-in-names:

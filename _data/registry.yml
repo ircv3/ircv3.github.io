@@ -113,6 +113,10 @@
       specs:
         - account-notify
       description: Notifies clients when other clients in common channels authenticate with or deauthenticate from their account (e.g. NickServ, SASL).
+    - name: account-registration
+      specs:
+        - account-registration
+      description: Indicates support for the REGISTER/VERIFY commands, a standardised way for clients to register accounts.
     - name: account-tag
       specs:
         - account-tag
@@ -153,6 +157,10 @@
       specs:
         - extended-join
       description: Extends the JOIN message to include the account name of the joining client.
+    - name: extended-monitor
+      specs:
+        - extended-monitor
+      description: Extends the MONITOR spec to apply to more events.
     - name: invite-notify
       specs:
         - invite-notify
@@ -181,10 +189,6 @@
       specs:
         - multiline
       description: Allows clients and servers to use send messages that can exceed the usual byte length limit and that can contain line breaks.
-    - name: register
-      specs:
-        - pr-register
-      description: Indicates support for the REGISTER/VERIFY commands, a standardised way for clients to register accounts.
     - name: sasl
       specs:
         - sasl-3.1
@@ -324,7 +328,7 @@
       description: Not defined by IRCv3 but extended to include account names.
     - name: REGISTER
       specs:
-        - pr-register
+        - account-registration
       description: Lets clients register user accounts.
     - name: RENAME
       specs: 
@@ -340,7 +344,7 @@
       description: Lets clients send messages with tags but no text content.
     - name: VERIFY
       specs:
-        - pr-register
+        - account-registration
       description: Lets clients verify their newly-registered accounts.
     - name: WEBIRC
       specs: 

@@ -65,7 +65,7 @@ If you’re interested in talking with us, our discussion channel is [#ircv3 on 
 
 ## What We're Working On
 
-- Standardised account registration and verification, allowing clients to provide better interfaces for end users. <sup>[[link]](https://github.com/ircv3/ircv3-specifications/pull/435)</sup>
+- Standardised account registration and verification, allowing clients to provide better interfaces for end users. <sup>[[link]]({{ site.baseurl }}/specs/extensions/account-registration.html)</sup>
 - Giving clients a standardised way to recognise, access and view chat history (provided by bouncers or servers). <sup>[[link]]({{ site.baseurl }}/specs/batches/chathistory.html)</sup>
 - Providing a mechanism to allow clients to automatically detect, move to, and keep using secure connections. <sup>[[link]]({{ site.baseurl }}/specs/extensions/sts.html)</sup>
 - Allowing Unicode nicknames and channel names, improving the chat experience for international users. <sup>[[link]](https://github.com/ircv3/ircv3-specifications/pull/272)</sup>

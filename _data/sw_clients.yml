@@ -1026,6 +1026,7 @@
       support:
         stable:
           account-notify:
+          draft/account-registration:
           account-tag:
           away-notify:
           bot-mode:
