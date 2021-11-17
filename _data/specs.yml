@@ -75,7 +75,7 @@ extended-monitor:
   fullname: Extended Monitor
   name: Extended Monitor
   shortname: Extended Monitor
-  url: /extensions/monitor.html
+  url: /extensions/extended-monitor.html
   draft: true
 invite-notify:
   fullname: invite-notify Extension
