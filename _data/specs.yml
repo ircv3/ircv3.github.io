@@ -18,9 +18,9 @@ account-notify:
   shortname: account-notify
   url: /extensions/account-notify.html
 account-registration:
-  fullname: account-registration Extension
-  name: account-registration Extension
-  shortname: account-registration
+  fullname: Account registration
+  name: Account registration
+  shortname: Account registration
   url: /extensions/account-registration.html
   draft: true
 account-tag:
