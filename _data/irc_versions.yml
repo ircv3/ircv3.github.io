@@ -194,7 +194,7 @@ stable:
 
     draft/account-registration:
       name: draft/account-registration
-      description: Account Registration
+      description: Account Registration DRAFT
       link: /specs/extensions/account-registration.html
       draft: true
       caps:
@@ -210,7 +210,7 @@ stable:
 
     draft/extended-monitor:
       name: draft/extended-monitor
-      description: Extended Monitor
+      description: Extended Monitor DRAFT
       link: /specs/extensions/extended-monitor.html
       draft: true
       caps:

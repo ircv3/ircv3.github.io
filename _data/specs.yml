@@ -210,20 +210,6 @@ chathistory-batch:
   url: /batches/chathistory.html
 
 # pull requests
-pr-acc:
-  fullname: PR#276 - Account Management Framework
-  name: PR#276 - Account Management Framework
-  shortname: PR#276
-  full-url: https://github.com/ircv3/ircv3-specifications/pull/276
-  proposed: true
-
-pr-register:
-  fullname: PR#435 - register Extension
-  name: PR#435 - register Extension
-  shortname: PR#435
-  full-url: https://github.com/ircv3/ircv3-specifications/pull/435
-  proposed: true
-
 pr-resume:
   fullname: PR#306 - resume Extension
   name: PR#306 - resume Extension
