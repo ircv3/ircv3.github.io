@@ -77,8 +77,7 @@
         - account-registration
     - command: REGISTER
       code: ACCOUNT_NAME_MUST_BE_NICK
-      description: Indicates that the desired account name does not match
-the user's current nick, when it must match.
+      description: Indicates that the desired account name does not match the user's current nick, when it must match.
       specs:
         - account-registration
     - command: REGISTER
@@ -173,8 +172,7 @@ the user's current nick, when it must match.
         - account-registration
     - command: VERIFY
       code: INVALID_CODE
-      description: Indicates that the code used by the VERIFY command is invalid
-or expired.
+      description: Indicates that the code used by the VERIFY command is invalid or expired.
       specs:
         - account-registration
     - command: VERIFY
