@@ -8,18 +8,18 @@ Following our tradition of the annual update, here's a summary of everything tha
 
 * Feb 2020 [setname](https://ircv3.net/specs/extensions/setname.html) - Allows users to change their realname without reconnecting
 * May 2020 [Typing notifications](https://ircv3.net/specs/client-tags/typing.html) - Displays to others when you're typing
-* Apr 2021 [UTF8ONLY isupport key](https://ircv3.net/specs/extensions/utf8-only.html) [#432](https://github.com/ircv3/ircv3-specifications/pull/432) - Indicates that server will only accept UTF8 encoded messages
+* Apr 2021 [UTF8ONLY isupport key](https://ircv3.net/specs/extensions/utf8-only.html) - Indicates that server will only accept UTF8 encoded messages [#432](https://github.com/ircv3/ircv3-specifications/pull/432)
 
 ### New drafts
 
-* Apr 2020 [Multiline messages](https://ircv3.net/specs/extensions/multiline.html) [#398](https://github.com/ircv3/ircv3-specifications/pull/398) - Allows multiple lines per message
-* Sep 2020 [Channel renaming](https://ircv3.net/specs/extensions/channel-rename.html) [#420](https://github.com/ircv3/ircv3-specifications/pull/420) - Enables channel renaming
-* Nov 2020 [chathistory](https://ircv3.net/specs/extensions/chathistory.html) [#393](https://github.com/ircv3/ircv3-specifications/pull/393) - Allows fetching historical messages from a channel
-* Apr 2021 [Bot mode](https://ircv3.net/specs/extensions/bot-mode.html) [#439](https://github.com/ircv3/ircv3-specifications/pull/439) - Indicates that a user is a bot via a mode and WHOIS numeric, and adds a tag to their messages
-* Sep 2021 [WebSocket](https://ircv3.net/specs/extensions/websocket.html) [#342](https://github.com/ircv3/ircv3-specifications/pull/342) - Allows web clients to connect to IRC servers directly
-* Nov 2021 [Client batches](https://ircv3.net/specs/extensions/client-batch.html) [#454](https://github.com/ircv3/ircv3-specifications/pull/454) - This was split off from multiline into its own framework for use by other specs
-* Nov 2021 [Account registration](https://ircv3.net/specs/extensions/account-registration.html) [#435](https://github.com/ircv3/ircv3-specifications/pull/435) - Allows account registration without non-standard bot or services messaging
-* Nov 2021 [Extended monitor](https://ircv3.net/specs/extensions/extended-monitor.html) [#466](https://github.com/ircv3/ircv3-specifications/pull/466) - Extends monitor to more commands and notifications
+* Apr 2020 [Multiline messages](https://ircv3.net/specs/extensions/multiline.html) - Allows multiple lines per message [#398](https://github.com/ircv3/ircv3-specifications/pull/398)
+* Sep 2020 [Channel renaming](https://ircv3.net/specs/extensions/channel-rename.html) - Enables channel renaming [#420](https://github.com/ircv3/ircv3-specifications/pull/420)
+* Nov 2020 [chathistory](https://ircv3.net/specs/extensions/chathistory.html) - Allows fetching historical messages from a channel [#393](https://github.com/ircv3/ircv3-specifications/pull/393)
+* Apr 2021 [Bot mode](https://ircv3.net/specs/extensions/bot-mode.html) - Indicates that a user is a bot via a mode and WHOIS numeric, and adds a tag to their messages [#439](https://github.com/ircv3/ircv3-specifications/pull/439)
+* Sep 2021 [WebSocket](https://ircv3.net/specs/extensions/websocket.html) - Allows web clients to connect to IRC servers directly [#342](https://github.com/ircv3/ircv3-specifications/pull/342)
+* Nov 2021 [Client batches](https://ircv3.net/specs/extensions/client-batch.html) - This was split off from multiline into its own framework for use by other specs [#454](https://github.com/ircv3/ircv3-specifications/pull/454)
+* Nov 2021 [Account registration](https://ircv3.net/specs/extensions/account-registration.html) - Allows account registration without non-standard bot or services messaging [#435](https://github.com/ircv3/ircv3-specifications/pull/435)
+* Nov 2021 [Extended monitor](https://ircv3.net/specs/extensions/extended-monitor.html) - Extends monitor to more commands and notifications [#466](https://github.com/ircv3/ircv3-specifications/pull/466)
 
 ### Specs updated
 
