@@ -135,6 +135,8 @@ The [`batch` spec]({{site.baseurl}}/specs/extensions/batch.html) describes
 the naming of new batch types, the semantics of batches and how clients should
 process them.
 
+The [client initiated batch extension]({{site.baseurl}}/specs/extensions/client-batch.html) describes client-to-server batches.
+
 **Note:** Batches themselves are used as a foundation for other extensions and
 do not themselves offer any user-facing features.
 
