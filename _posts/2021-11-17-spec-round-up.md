@@ -35,3 +35,11 @@ Highlights from our ongoing [roadmap](https://github.com/ircv3/ircv3-specificati
 * Add draft account-extban spec [#464](https://github.com/ircv3/ircv3-specifications/pull/464)
 * Message editing and deletion [#425](https://github.com/ircv3/ircv3-specifications/pull/425)
 * Display name client tag spec [#452](https://github.com/ircv3/ircv3-specifications/pull/452)
+
+### Other
+
+We've tidied up the spec structure; making URLs, titles, etc more consistent [#441](https://github.com/ircv3/ircv3-specifications/pull/441). And we've also made a lot of clarifications, improvements and typo fixes to specs that don't materially affect compatibility, too many to list here.
+
+In Aug 2021, The charter page had an update to better reflect our loose governance structure, deprecating the concept of the "technical board" and clarifying what it means to be listed as a "contributor" [#399](https://github.com/ircv3/ircv3.github.io/pull/399)
+
+Finally, do check the support tables to see how adoption of our specs is coming along, there've been a lot of busy implementations over the past year.
