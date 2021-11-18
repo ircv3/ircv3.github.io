@@ -2,7 +2,7 @@
 layout: post
 title: Spec round-up
 ---
-Following our tradition of the annual update, here's a summary of everything that's been happening since Feb 2020. And it's quite a lot!
+Following our tradition of the annual update, here's a summary of everything that's been happening since Feb 2020.
 
 ### Specs ratified
 
