@@ -868,17 +868,22 @@
       link: https://sr.ht/~emersion/soju
       support:
         stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
           draft/chathistory:
-          account-tag:
-          away-notify:
-          batch:
+          draft/event-playback:
+          draft/extended-monitor:
           echo-message:
           extended-join:
           invite-notify:
           message-tags:
+          monitor:
           msgid:
           multi-prefix:
           sasl-3.1:
@@ -896,16 +901,20 @@
       link: https://sr.ht/~emersion/soju
       support:
         stable:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
+          account-notify:
           account-tag:
           away-notify:
           batch:
+          bot-mode:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          draft/extended-monitor:
           extended-join:
           invite-notify:
           labeled-response:
           message-tags:
+          monitor:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
