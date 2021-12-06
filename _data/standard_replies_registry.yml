@@ -11,6 +11,11 @@
 - name: FAIL codes
   values:
     - command:
+      code: ACCOUNT_REQUIRED
+      description: Indicates that the client's connection cannot proceed for lack of SASL authentication
+      specs:
+        - account-registration
+    - command:
       code: INVALID_UTF8
       description: Indicates that the client's message was dropped because it contained non-UTF-8 bytes
       specs:
