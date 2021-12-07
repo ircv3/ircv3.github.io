@@ -58,7 +58,7 @@ conveys the basic listing and requesting of capabilities, and lays the
 framework which most IRCv3 specs use. It also goes over the `302` extensions,
 and [`cap-notify`]({{site.baseurl}}/specs/extensions/capability-negotiation.html#cap-notify)
 – a feature to let clients know when capabilities are added to or removed from
-to the server (for example, if the SASL authentication layer disconnects, the
+the server (for example, if the SASL authentication layer disconnects, the
 associated capability may be disabled for a time).
 
 
