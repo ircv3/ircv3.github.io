@@ -48,19 +48,16 @@ document.
 
 ## Capability Negotiation
 
-Capability negotiation is a vital part of IRCv3. Capabilities let us implement
-protocol changes in backwards-compatible ways, as well as convey various
-information on joining a server.
-
-CAPs are the primary way that IRCv3 features are enabled. As such, most
-software implementing IRCv3 extensions will want to implement capability
-negotiation.
+Capabilities let us implement protocol changes in backwards-compatible
+ways. They also convey various information on joining a server.
+Capability negotiation is a vital part of IRCv3, and lets clients request
+and enable the CAPs they support once they've joined a server.
 
 The [Capability Negotiation spec]({{site.baseurl}}/specs/extensions/capability-negotiation.html)
 conveys the basic listing and requesting of capabilities, and lays the
 framework which most IRCv3 specs use. It also goes over the `302` extensions,
 and [`cap-notify`]({{site.baseurl}}/specs/extensions/capability-negotiation.html#cap-notify)
-– a feature to make clients aware when capabilities are removed from and added
+– a feature to let clients know when capabilities are added to or removed from
 to the server (for example, if the SASL authentication layer disconnects, the
 associated capability may be disabled for a time).
 
@@ -84,6 +81,42 @@ developed and implemented independently from the IRC servers themselves
 **Note:** Message tags themselves are used as a foundation for other extensions
 and do not themselves offer any user-facing features. Specific message tags are
 defined in the various IRCv3 specifications.
+
+
+## Account Authentication and Registration
+
+Accounts have become a first-class feature on IRC. They store channel access
+and ownership information, preferences, settings, nickname ownership, and
+even more. Our extensions describe simple account creation and authentication.
+
+The **work-in-progress** [Account Registration spec]({{site.baseurl}}/specs/extensions/account-registration.html)
+lets clients build nice account registration interfaces, instead of making
+users manually send messages to service bots.
+
+SASL lets users authenticate in a standardised way across different IRC
+networks. It gives a way to authenticate while connecting, without having to
+message service bots after they've joined the server. Because SASL allows
+authentication before they've finished connecting, it lets clients join private
+and restricted channels without having to setup complex join-wait systems.
+
+The [v3.1 SASL spec]({{site.baseurl}}/specs/extensions/sasl-3.1.html) defines
+the `AUTHENTICATE` command and `sasl` cap, which work together to allow clients
+to authenticate to the network.
+
+The [v3.2 SASL spec]({{site.baseurl}}/specs/extensions/sasl-3.2.html) defines
+a way to advertise the authentication methods available to clients, allows for
+clients to re-authenticate after services is lost and reconnects, and defines
+what to do if the authentication layer is disconnected or reconnected.
+
+IRC SASL authentication primarily uses the same mechanisms as SASL in other
+protocols. Most commonly:
+
+* [PLAIN](https://tools.ietf.org/search/rfc4616) as defined by RFC 4616
+* [EXTERNAL](https://tools.ietf.org/html/rfc4422#appendix-A) as defined by RFC 4422
+* [SCRAM-SHA-256](https://tools.ietf.org/html/rfc7677) as defined by RFC 7677
+
+For further information on SASL mechanism support, see the
+[SASL Mechanisms page]({{site.baseurl}}/docs/sasl-mechs.html).
 
 
 ---
@@ -274,38 +307,6 @@ The `multiline` extension adds a new batch type and tag sent by clients and serv
 
 The **work-in-progress** [`multiline` spec]({{site.baseurl}}/specs/extensions/multiline.html) describes how to use the `draft/multiline` batch type and `draft/multiline-concat` tag to achieve this.
 
-## Authentication and Registration
-
-SASL allows users to authenticate in a standardised way across different IRC
-networks. This is in opposition to logging in with 'services' such as NickServ,
-and provides a pre-registration way to authenticate. Because SASL allows
-authentication before registration, it allows clients to join certain types of
-restricted channels much more effectively.
-
-The [v3.1 SASL spec]({{site.baseurl}}/specs/extensions/sasl-3.1.html) defines
-the `AUTHENTICATE` command and `sasl` cap, which work together to allow clients
-to authenticate to the network.
-
-The [v3.2 SASL spec]({{site.baseurl}}/specs/extensions/sasl-3.2.html) defines
-a way to advertise the authentication methods available to clients, allows for
-clients to re-authenticate after services is lost and reconnects, and defines
-what to do if the authentication layer is disconnected or reconnected.
-
-IRC SASL authentication primarily uses the same mechanisms as SASL in other
-protocols. Most commonly:
-
-* [PLAIN](https://tools.ietf.org/search/rfc4616) as defined by RFC 4616
-* [EXTERNAL](https://tools.ietf.org/html/rfc4422#appendix-A) as defined by RFC 4422
-* [SCRAM-SHA-256](https://tools.ietf.org/html/rfc7677) as defined by RFC 7677
-
-For further information on SASL mechanism support, see the
-[SASL Mechanisms page]({{site.baseurl}}/docs/sasl-mechs.html).
-
-
-The **work-in-progress** [Account Registration spec]({{site.baseurl}}/specs/extensions/account-registration.html)
-allows users to register accounts in a standardized way, without sending messages
-to service bots.
-
 ## [Server Time]({{site.baseurl}}/specs/extensions/server-time.html)
 
 The `server-time` extension allows clients to see the exact time that messages
@@ -378,7 +379,7 @@ UTF-8 traffic, allowing clients to set their incoming/outgoing encodings
 automatically.
 
 The [`UTF8ONLY` spec]({{site.baseurl}}/specs/extensions/utf8-only.html)
-details the `RPL_ISUPPORT` token and associated messages and functionality.
+details the `RPL_ISUPPORT` token, associated messages, and functionality.
 
 
 ## [WebIRC]({{site.baseurl}}/specs/extensions/webirc.html)
