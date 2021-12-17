@@ -214,22 +214,22 @@
           cap-3.2:
           cap-notify:
           chghost:
+          draft/chathistory:
+          draft/extended-monitor: 6.0+
           echo-message:
           extended-join:
-          labeled-response: 5.0.3+
+          invite-notify: 6.0+
+          labeled-response:
           message-tags:
+          monitor: 6.0+
           msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname: 6.0+
           starttls:
           sts:
           userhost-in-names:
           webirc:
           websockets:
-          draft/chathistory: 5.2+
-      partial:
-        stable:
-          monitor: "5.0+ add-on"
-          setname: "5.0+ add-on"
