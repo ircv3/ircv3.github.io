@@ -388,7 +388,7 @@
           chghost: 2.2+
           extended-join:
           invite-notify: 2.2+
-          message-tags: Git
+          message-tags: 3.3+
           monitor:
           multi-prefix:
           sasl-3.1:
