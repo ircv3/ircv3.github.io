@@ -392,11 +392,11 @@
           monitor:
           multi-prefix:
           sasl-3.1:
-          sasl-3.2: Git
+          sasl-3.2: 3.3+
           server-time:
-          setname: Git
+          setname: 3.3+
           userhost-in-names:
-          +typing: Git
+          +typing: 3.3+
         SASL:
           external:
           plain:
