@@ -281,26 +281,26 @@
         SASL:
           - plain
     - name: Quassel
-      # ref: knownCaps in https://github.com/quassel/quassel/blob/0.14-rc1/src/common/irccap.h
+      # ref: knownCaps in https://github.com/quassel/quassel/blob/0.14.0/src/common/irccap.h
       link: https://www.quassel-irc.org
       support:
         stable:
           account-notify:
-          account-tag: Git
+          account-tag: 0.14+
           away-notify:
           cap-notify:
           cap-3.1:
           cap-3.2:
           chghost:
-          echo-message: Git (opt in) # Supported, requires manual /CAP REQ to enable
+          echo-message: 0.14+ (opt in) # Supported, requires manual /CAP REQ to enable
           extended-join:
-          invite-notify: Git
-          message-tags: Git
+          invite-notify: 0.14+
+          message-tags: 0.14+
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
-          server-time: Git
-          setname: Git
+          server-time: 0.14+
+          setname: 0.14+
           userhost-in-names:
         SASL:
           - external
@@ -707,29 +707,28 @@
           msgid: "draft tag"
           setname: "draft cap"
     - name: Quasseldroid
-      # ref: https://github.com/quassel/quassel/blob/0.13.0/src/common/irccap.h#L134-L166
-      # Git: https://github.com/quassel/quassel/blob/c144bdee0d8ab0c195b3088f5c6e57e372e526f7/src/common/irccap.h#L178-L194
+      # ref: knownCaps in https://github.com/quassel/quassel/blob/0.14.0/src/common/irccap.h
       link: https://quasseldroid.info/
       os:
         - android
       support:
         stable:
           account-notify:
-          account-tag: Git core
+          account-tag: 0.14+ core
           away-notify:
           cap-3.1:
           cap-3.2:
           cap-notify:
           chghost:
-          echo-message: Git core (opt in) # Supported, requires manual /CAP REQ to enable
+          echo-message: 0.14+ core (opt in) # Supported, requires manual /CAP REQ to enable
           extended-join:
-          invite-notify: Git core
-          message-tags: Git core
+          invite-notify: 0.14+ core
+          message-tags: 0.14+ core
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
-          server-time: Git core
-          setname: Git core
+          server-time: 0.14+ core
+          setname: 0.14+ core
           userhost-in-names:
         SASL:
           - plain
