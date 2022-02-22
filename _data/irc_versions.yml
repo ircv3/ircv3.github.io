@@ -183,6 +183,12 @@ stable:
       description: WebSockets
       link: /specs/extensions/websocket.html
       hide-if-no-support: true
+    whox:
+      name: WHOX
+      description: WHOX Extension
+      link: /specs/extensions/whox.html
+      isupport:
+        - WHOX
 
     +typing:
       name: +typing

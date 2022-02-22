@@ -169,6 +169,11 @@ websockets:
   name: WebSockets
   shortname: WebSockets
   url: /extensions/websocket.html
+whox:
+  fullname: WHOX extension
+  name: WHOX extension
+  shortname: WHOX
+  url: /extensions/whox.html
 
 # deprecated specs
 metadata-3.2:
