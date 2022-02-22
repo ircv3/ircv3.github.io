@@ -52,6 +52,7 @@
           sts:
           webirc:
           websockets:
+          whox:
       na:
         stable:
           starttls: supports sts
@@ -77,6 +78,7 @@
           setname:
           sts:
           userhost-in-names:
+          whox:
       na:
         stable:
           starttls: supports sts
@@ -130,6 +132,7 @@
           userhost-in-names:
           webirc:
           websockets:
+          whox:
     - name: Nefarious IRCu
       # ref: https://github.com/evilnet/nefarious2/blob/2.0/ircd/m_cap.c#L59
       link: https://github.com/evilnet/nefarious2
@@ -144,6 +147,7 @@
           starttls:
           userhost-in-names:
           webirc:
+          whox:
     - name: Planio Team Chat
       link: https://plan.io/business-chat/
       support:
@@ -178,6 +182,7 @@
           starttls:
           userhost-in-names:
           webirc:
+          whox:
     - name: txircd
       link: https://github.com/ElementalAlchemist/txircd
       support:
@@ -233,3 +238,4 @@
           userhost-in-names:
           webirc:
           websockets:
+          whox:
