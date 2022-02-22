@@ -200,15 +200,21 @@ The `chathistory` extension standardizes a mechanism for clients to request mess
 The **work-in-progress** [`chathistory` spec]({{site.baseurl}}/specs/extensions/chathistory.html) describes the syntax and semantics of the new `CHATHISTORY` command.
 
 
-## [Changing Usernames and Hostnames]({{site.baseurl}}/specs/extensions/chghost.html)
+## Changing User Properties
 
-The `chghost` extension lets clients more easily see when other clients'
+Several extensions allow servers to notify clients of properties of other users that were historically considered nonchanging for the lifetime of a connection.
+
+
+The [`chghost` spec]({{site.baseurl}}/specs/extensions/chghost.html)
+describes the new `CHGHOST` message which lets clients more easily see when other clients'
 usernames and/or hostnames are changed. This replaces the clunky method of
 sending a fake `QUIT`, and then one or more fake `JOIN` messages instead.
 
-The [`chghost` spec]({{site.baseurl}}/specs/extensions/chghost.html)
-describes the new `CHGHOST` message which this extension uses, and how clients
-see these changes.
+The [`setname` spec]({{site.baseurl}}/specs/extensions/setname.html)
+describes the new `SETNAME` message which allows clients to update their realname (gecos)
+after connecting to the server, and see updates from other users.
+This is especially useful as some clients use the realname information
+for avatars and an additional name field.
 
 
 ## Client-Only Tags
@@ -326,17 +332,6 @@ connecting clients.
 The **work-in-progress** [SNI spec]({{site.baseurl}}/docs/sni.html) provides
 guidelines for clients and servers, allowing them to better detect the TLS
 certificate to send based on the server's hostname.
-
-
-## [Setname]({{site.baseurl}}/specs/extensions/setname.html)
-
-Setname allows clients to update their realname (gecos) after connecting to
-the server. This is especially useful as some clients use the realname information
-for avatars and an additional name field.
-
-The [setname spec]({{site.baseurl}}/specs/extensions/setname.html)
-describes how this is implemented, and how clients can update their names and see
-updates from other users.
 
 
 ## [Standard Replies]({{site.baseurl}}/specs/extensions/standard-replies.html)
