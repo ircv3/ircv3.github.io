@@ -350,6 +350,10 @@
       specs: 
         - webirc
       description: Existing command which provides the real IP address of clients to the server when connecting through a gateway.
+    - name: WHO
+      specs:
+        - whox
+      description: Not defined by IRCv3 but extended to allow clients to request more information.
 
 - name: RPL_ISUPPORT
   include_numeric: false
@@ -371,3 +375,7 @@
       specs:
         - utf8only
       description: Indicates the server only accepts UTF-8 encoded messages.
+    - name: WHOX
+      specs:
+        - whox
+      description: Indicates the server supports the extended WHO syntax
