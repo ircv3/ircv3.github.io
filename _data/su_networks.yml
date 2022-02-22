@@ -39,6 +39,7 @@
           sts:
           userhost-in-names:
           utf8only:
+          whox:
     - name: InspIRCd Testnet
       ircd-ver: InspIRCd-3
       net-address:
@@ -71,6 +72,7 @@
           starttls:
           sts:
           userhost-in-names:
+          whox:
     - name: IRCCloud Teams
       ircd-ver: irccloud-prattle
       net-address:
@@ -99,6 +101,7 @@
           setname:
           sts:
           userhost-in-names:
+          whox:
       na:
         stable:
           starttls: direct TLS only
@@ -137,6 +140,7 @@
           sts:
           userhost-in-names:
           webirc:
+          whox:
 
 - name: Networks
   note: >
@@ -190,6 +194,7 @@
           server-time:
           setname:
           userhost-in-names:
+          whox:
     - name: IRCHighWay
       ircd-ver: InspIRCd-2.0
       net-address:
@@ -269,8 +274,9 @@
           sasl-3.2:
           server-time:
           setname:
-          userhost-in-names:
           sts:
+          userhost-in-names:
+          whox:
       partial:
         stable:
           message-tags: No client tags
@@ -305,6 +311,7 @@
           setname:
           starttls:
           userhost-in-names:
+          whox:
     - name: PIRC.pl
       ircd-ver: UnrealIRCd-5
       net-address:
@@ -336,6 +343,7 @@
           starttls:
           sts:
           userhost-in-names:
+          whox:
     - name: tldr.chat
       ircd-ver: Ergo-2.8
       net-address:
@@ -408,3 +416,4 @@
           sts:
           userhost-in-names:
           utf8only:
+          whox:

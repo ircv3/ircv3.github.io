@@ -70,6 +70,7 @@
           - plain
     - name: Colloquy
       # ref: handleCapWithParameters() in https://github.com/colloquy/colloquy/blob/main/Chat%20Core/MVIRCChatConnection.m
+      # https://github.com/colloquy/colloquy/blob/4c47cfbaf686e1ac18937e5727b240d7df60d06d/Chat%20Core/MVIRCChatConnection.m#L2036
       link: http://www.colloquy.info
       support:
         stable:
@@ -90,6 +91,7 @@
           server-time:
           starttls:
           userhost-in-names:
+          whox:
         SASL:
           - plain
     - name: Glirc
@@ -117,6 +119,7 @@
           - scram-sha-256
     - name: HexChat
       # ref: https://github.com/hexchat/hexchat/blob/v2.10.3/src/common/inbound.c#L1728
+      # https://github.com/hexchat/hexchat/blob/dd6f53f5040738f1349d4f0147a2204dc6ffab16/src/common/modes.c#L923
       link: https://hexchat.github.io
       support:
         stable:
@@ -137,6 +140,7 @@
           setname: 2.16
           userhost-in-names:
           utf8only: 2.16
+          whox:
         SASL:
           - external
           - plain
@@ -162,6 +166,7 @@
           - plain
     - name: Irssi
       # ref: https://github.com/irssi/irssi/blob/8a5d5d384ed20cefa3fdc4a65d27fac3e4913a7b/src/irc/core/irc-servers.h#L17
+      # https://github.com/irssi/irssi/blob/afcb48384e1aa1667c21478fabaf238c78c4d6b8/src/irc/core/channels-query.c#L55-L57
       link: https://irssi.org
       support:
         stable:
@@ -178,6 +183,7 @@
           sasl-3.1:
           setname: Git
           starttls: Git
+          whox:
         SASL:
           - external
           - plain
@@ -186,6 +192,7 @@
           setname: "Git draft cap"
     - name: Konversation
       # ref: Server::initCapablityNames() in https://github.com/KDE/konversation/blob/v21.04.0/src/irc/server.cpp
+      # https://github.com/KDE/konversation/blob/a8ac257a30d0c56635a35b12bdb59c45b5868c37/src/irc/inputfilter.cpp#L1283
       link: https://konversation.kde.org
       support:
         stable:
@@ -201,11 +208,13 @@
           sasl-3.2: v21.04.0+
           server-time:
           userhost-in-names:
+          whox:
         SASL:
           - plain
           - external
     - name: KVIrc
       # ref: cap_add() in https://github.com/kvirc/KVIrc/blob/5.0.0/src/kvirc/kernel/KviIrcConnection.cpp
+      # https://github.com/kvirc/KVIrc/blob/5.0.0/src/kvirc/kernel/KviIrcConnection.cpp#L1997-L1999
       link: https://www.kvirc.net
       support:
         stable:
@@ -260,6 +269,7 @@
           starttls:
           sts:
           userhost-in-names:
+          whox:
         SASL:
           - external
           - plain
@@ -282,6 +292,7 @@
           - plain
     - name: Quassel
       # ref: knownCaps in https://github.com/quassel/quassel/blob/0.14.0/src/common/irccap.h
+      # https://github.com/quassel/quassel/blob/da9c1c9fcf25f9dbd9acb96e6c8d1ff148e55986/src/core/corenetwork.cpp#L1475-L1488
       link: https://www.quassel-irc.org
       support:
         stable:
@@ -302,6 +313,7 @@
           server-time: 0.14+
           setname: 0.14+
           userhost-in-names:
+          whox:
         SASL:
           - external
           - plain
@@ -377,6 +389,7 @@
     - name: WeeChat
       # ref: https://weechat.org/files/changelog/ChangeLog-devel.html or IRC_COMMAND_CAP_SUPPORTED_COMPLETION
       # in https://github.com/weechat/weechat/blob/master/src/plugins/irc/irc-command.h
+      # https://github.com/weechat/weechat/blob/c44b79dce7f2f2dec9e802b001dcf0acdfa049d0/src/plugins/irc/irc-channel.c#L790
       link: https://weechat.org
       support:
         stable:
@@ -396,6 +409,7 @@
           server-time:
           setname: 3.3+
           userhost-in-names:
+          whox:
           +typing: 3.3+
         SASL:
           external:
@@ -406,6 +420,7 @@
   software:
     - name: gamja
       # ref: https://git.sr.ht/~emersion/gamja/tree/master/item/lib/client.js#L3
+      # https://git.sr.ht/~emersion/gamja/tree/26cc073f41df1d1e7cfd5cdf6ebeb92daf31a108/item/lib/client.js#L40
       link: https://sr.ht/~emersion/gamja
       support:
         stable:
@@ -427,6 +442,7 @@
           sasl-3.2:
           server-time:
           setname:
+          whox:
         SASL:
           - plain
     - name: IRCCloud
@@ -458,6 +474,7 @@
           setname:
           sts:
           userhost-in-names:
+          whox:
           +draft/react:
           +draft/reply:
           +typing:
@@ -467,6 +484,7 @@
     - name: Kiwi IRC
       # ref: https://github.com/kiwiirc/kiwiirc
       #      https://github.com/kiwiirc/irc-framework/blob/v4.10.0/docs/ircv3.md
+      #      https://github.com/kiwiirc/kiwiirc/pull/653
       link: https://kiwiirc.com
       support:
         stable:
@@ -488,6 +506,7 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+          whox:
         SASL:
           - plain
     - name: The Lounge
@@ -531,6 +550,7 @@
         SASL:
           - plain
     - name: PIRC.pl web client
+      # ref: https://github.com/pirc-pl/pirc-gateway/blob/1fbe9c7269073a4d93f703e9f24f1239cfdde56c/js/gateway_cmds.js#L220-L221
       link: https://github.com/pirc-pl/pirc-gateway
       support:
         stable:
@@ -553,6 +573,7 @@
           server-time:
           setname:
           userhost-in-names:
+          whox:
           +typing:
         SASL:
           - plain
@@ -595,6 +616,7 @@
           starttls:
           sts:
           userhost-in-names:
+          whox:
         SASL:
           - plain
     - name: CoreIRC
@@ -658,6 +680,7 @@
           setname:
           sts:
           userhost-in-names:
+          whox:
           +draft/reply:
         SASL:
           - plain
@@ -708,6 +731,7 @@
           setname: "draft cap"
     - name: Quasseldroid
       # ref: knownCaps in https://github.com/quassel/quassel/blob/0.14.0/src/common/irccap.h
+      # https://github.com/quassel/quassel/blob/da9c1c9fcf25f9dbd9acb96e6c8d1ff148e55986/src/core/corenetwork.cpp#L1475-L1488
       link: https://quasseldroid.info/
       os:
         - android
@@ -730,6 +754,7 @@
           server-time: 0.14+ core
           setname: 0.14+ core
           userhost-in-names:
+          whox:
         SASL:
           - plain
           # external is supported if configured on the core via the desktop client
@@ -758,6 +783,7 @@
           server-time:
           sts:
           userhost-in-names:
+          whox:
     - name: KiwiBNC (as Server)
       link: https://github.com/kiwiirc/kiwibnc
       support:
@@ -890,6 +916,7 @@
           server-time:
           setname:
           utf8only:
+          whox:
         SASL:
           plain:
       partial:
@@ -920,6 +947,7 @@
           server-time:
           setname:
           utf8only:
+          whox:
         SASL:
           external:
           plain:
@@ -940,6 +968,7 @@
           multi-prefix:
           server-time:
           userhost-in-names:
+          whox:
     - name: ZNC (as Client)
       # ref: https://github.com/znc/znc/search?q=OnClientCapLs+extension%3Acpp
       #      mSupportedCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/src/IRCSock.cpp
@@ -955,6 +984,7 @@
           sasl-3.1:
           server-time:
           userhost-in-names:
+          whox:
         SASL:
           external:
           plain:
@@ -964,6 +994,7 @@
     - name: BitBot
       #ref: https://github.com/jesopo/bitbot/blob/b713cf76/src/core_modules/line_handler/ircv3.py
       #     https://github.com/jesopo/bitbot/tree/638eee0d/src/core_modules/ircv3_sasl
+      #     https://github.com/jesopo/bitbot/blob/c59fa577bba49a267bbb5078c802c6dc0babb099/src/IRCServer.py#L435-L438
       link: https://github.com/jesopo/bitbot
       support:
         stable:
@@ -990,6 +1021,7 @@
           setname:
           sts:
           userhost-in-names:
+          whox:
           +draft/reply:
           +typing:
         SASL:
@@ -999,6 +1031,7 @@
     - name: Eggdrop
       link: https://github.com/eggheads/eggdrop
       # ref: https://github.com/eggheads/eggdrop/blob/886c2ff6f943952018000c16cb48c08b8ab99127/eggdrop.conf#L1127
+      #      https://github.com/eggheads/eggdrop/blob/41a03be22281e3abb2a3d202434533bf6a0f5874/src/mod/irc.mod/irc.c#L282
       support:
         stable:
           account-notify: 1.9.0+
@@ -1018,6 +1051,7 @@
           sasl-3.2: Git (1.9.2)
           server-time: 1.9.0+
           setname: 1.9.0+
+          whox:
           +typing: 1.9.0+
         SASL:
           - plain
@@ -1026,6 +1060,7 @@
       # ref: https://github.com/progval/Limnoria/blob/master-2021-10-09/src/irclib.py#L1749
       #      https://github.com/progval/Limnoria/blob/master-2021-10-09/src/ircmsgs.py#L994
       #      https://github.com/progval/Limnoria/blob/master-2021-10-09/src/drivers/Socket.py#L216
+      #      https://github.com/progval/Limnoria/blob/master-2021-10-09/src/irclib.py#L2353
       link: https://github.com/progval/Limnoria
       support:
         stable:
@@ -1057,6 +1092,7 @@
           starttls:
           userhost-in-names:
           utf8only:
+          whox:
           +draft/react:
           +draft/reply:
         SASL:
@@ -1069,6 +1105,7 @@
       # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/cap.moon
       # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/data.moon
       # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/sasl.moon
+      # ref: https://github.com/wiseguiz/Moon-Moon/blob/0a24f8863d75e544602850c45934b9e7efb83638/handlers/hook_transformer.moon#L76-L77
       link: https://github.com/wiseguiz/Moon-Moon
       support:
         stable:
@@ -1090,6 +1127,7 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+          whox:
           +draft/reply:
           +typing:
         SASL:
@@ -1097,6 +1135,7 @@
           - external
     - name: PyLink (clientbot)
       #ref: IRCV3_CAPABILITIES in https://github.com/GLolol/PyLink/blob/devel/protocols/clientbot.py
+      #ref: https://github.com/jlu5/PyLink/blob/ac7339e4605cffe7feadeaf31df54d90996fd39e/protocols/clientbot.py#L771-L772
       link: https://code.overdrivenetworks.com/pylink
       support:
         stable:
@@ -1112,6 +1151,7 @@
           sasl-3.1:
           sasl-3.2:
           userhost-in-names: 2.0+
+          whox:
         SASL:
           - plain
           - external
@@ -1120,6 +1160,7 @@
       #     https://github.com/sopel-irc/sopel/blob/e5df2fa/sopel/coretasks.py#L345
       #     https://github.com/sopel-irc/sopel/issues/971
       #     https://github.com/sopel-irc/sopel/pull/1470
+      #     https://github.com/sopel-irc/sopel/blob/6e56fc6bce71ebfa15247332b7aa645033bdfb1a/sopel/coretasks.py#L768-L775
       link: https://sopel.chat
       support:
         stable:
@@ -1134,5 +1175,6 @@
           multi-prefix: "4.1.0+"
           sasl-3.1: "4.1.0+"
           server-time: "6.2.0+"
+          whox:
         SASL:
           - plain
