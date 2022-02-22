@@ -266,6 +266,31 @@ covers the `label` tag, and how clients should send and will receive
 labels.
 
 
+## Listing Users
+
+IRCv3 specifications extend traditional queries to carry more information about
+other users in a given channel.
+
+The [`multi-prefix` spec]({{site.baseurl}}/specs/extensions/multi-prefix.html)
+details the exact messages these changes apply to and how exactly it's used.
+This allows clients to see all the statuses
+(i.e. voice, chanop) that other clients have in a channel rather than just the
+highest. This improves data tracking for clients and bots, and allows clients
+to display the privilege level of other clients more correctly.
+
+The [`userhost-in-names` spec]({{site.baseurl}}/specs/extensions/userhost-in-names.html)
+describes how the `NAMES` message changes with this capability active, and how
+clients should interpret the changes.
+This allows clients to more easily see the
+user/hostnames of other clients when joining channels. This allows clients to
+better track info and automate client features more easily.
+
+Finally, the [`WHOX` spec]({{site.baseurl}}/specs/extensions/whox.html)
+describes how the `WHO` message and its replies changes with this capability active
+to allow clients to request more data, and how clients should interpret these changes.
+
+
+
 ## [Message IDs]({{site.baseurl}}/specs/extensions/message-ids.html)
 
 The `message-ids` extension allows servers to provide a network-unique
@@ -294,17 +319,6 @@ command, the relevant `RPL_ISUPPORT` token and the commands used with it.
 
 The **work-in-progress** [Extended Monitor spec]({{site.baseurl}}/specs/extensions/extended-monitor.html)
 builds upon the Monitor spec, and extends it to various events.
-
-
-## [Multiple Prefixes]({{site.baseurl}}/specs/extensions/multi-prefix.html)
-
-The `multi-prefix` extension allows clients to see all the statuses
-(i.e. voice, chanop) that other clients have in a channel rather than just the
-highest. This improves data tracking for clients and bots, and allows clients
-to display the privilege level of other clients more correctly.
-
-The [`multi-prefix` spec]({{site.baseurl}}/specs/extensions/multi-prefix.html)
-details the exact messages these changes apply to and how exactly it's used.
 
 
 ## [Multiline messages]({{site.baseurl}}/specs/extensions/multiline.html)
@@ -354,17 +368,6 @@ command with better security qualities.
 The [`sts` spec]({{site.baseurl}}/specs/extensions/sts.html) describes the `sts`
 capability, how it operates, and various implementation details for both clients
 and servers.
-
-
-## [Userhosts in NAMES]({{site.baseurl}}/specs/extensions/userhost-in-names.html)
-
-The `userhost-in-names` extension allows clients to more easily see the
-user/hostnames of other clients when joining channels. This allows clients to
-better track info and automate client features more easily.
-
-The [`userhost-in-names` spec]({{site.baseurl}}/specs/extensions/userhost-in-names.html)
-describes how the `NAMES` message changes with this capability active, and how
-clients should interpret the changes.
 
 
 ## [UTF8ONLY]({{site.baseurl}}/specs/extensions/utf8-only.html)
