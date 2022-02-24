@@ -268,12 +268,11 @@ labels.
 
 ## Listing Users
 
-IRCv3 specifications extend traditional queries to carry more information about
-other users in a given channel.
+IRCv3 specifications extend traditional queries (`NAMES`, `WHOIS`, `WHO`)
+to carry more information about other users in a given channel.
 
 The [`multi-prefix` spec]({{site.baseurl}}/specs/extensions/multi-prefix.html)
-details the exact messages these changes apply to and how exactly it's used.
-This allows clients to see all the statuses
+details changes to these queries, which allow clients to see all the statuses
 (i.e. voice, chanop) that other clients have in a channel rather than just the
 highest. This improves data tracking for clients and bots, and allows clients
 to display the privilege level of other clients more correctly.
