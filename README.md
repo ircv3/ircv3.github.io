@@ -47,7 +47,7 @@ You should make sure your manually installed local versions match that of [GitHu
 3. Add the spec to `_data/irc_versions.yml` - the name here is what's used in the support lists. Look at the `hide-if-no-support` and `hide-on-servers` options, they affect how the support tables are generated. Make sure you put it in the right place sorting-wise.
 4. Add the spec to `_data/specs.yml` - the name here is what's used in the registry.
 5. Add relevant numerics/capabilities/isupport tokens/... to `_data/registry.yml`
-5. Add the relevant support to the data files!
+6. Add the relevant support to the data files!
 
 ## Licenses
 
