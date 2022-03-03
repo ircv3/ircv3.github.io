@@ -10,3 +10,7 @@ ios:
 windows-phone:
   name: Windows Phone
   icon: windows
+
+linux:
+  name: Linux
+  icon: linux
