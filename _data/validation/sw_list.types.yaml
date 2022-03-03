@@ -40,6 +40,7 @@ software:
             - android
             - ios
             - windows-phone
+            - linux
         support:
           type: mapofmultis
           types:
