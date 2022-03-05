@@ -184,9 +184,11 @@
           cap-notify:
           chghost:
           echo-message:
+          extended-join:
           invite-notify:
           labeled-response:
           message-tags:
+          monitor:
           msgid:
           multi-prefix:
           sasl-3.1:
