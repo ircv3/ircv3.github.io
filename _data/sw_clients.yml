@@ -68,6 +68,24 @@
           sasl-3.1:
         SASL:
           - plain
+    - name: catgirl
+      # ref: https://git.causal.agency/catgirl/about/catgirl.1#STANDARDS
+      link: https://git.causal.agency/catgirl/about/
+      support:
+        stable:
+          cap-3.1:
+          chghost:
+          extended-join:
+          invite-notify:
+          message-tags:
+          multi-prefix:
+          sasl-3.1:
+          server-time:
+          setname:
+          userhost-in-names:
+        SASL:
+          - external
+          - plain
     - name: Colloquy
       # ref: handleCapWithParameters() in https://github.com/colloquy/colloquy/blob/main/Chat%20Core/MVIRCChatConnection.m
       # https://github.com/colloquy/colloquy/blob/4c47cfbaf686e1ac18937e5727b240d7df60d06d/Chat%20Core/MVIRCChatConnection.m#L2036
