@@ -856,6 +856,7 @@
           account-tag:
           away-notify:
           batch:
+          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -874,6 +875,7 @@
           setname:
           sts:
           userhost-in-names:
+          whox:
         SASL:
           external:
     - name: pounce (as Client)
@@ -885,6 +887,7 @@
           account-tag:
           away-notify:
           batch:
+          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -902,6 +905,7 @@
           server-time:
           setname:
           userhost-in-names:
+          whox:
         SASL:
           external:
           plain:
