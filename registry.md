@@ -42,7 +42,15 @@ This page lists the tags, capabilities, commands, batches and metadata keys that
       <td style="min-width: 10rem"{% if type.nomono %}{% else %} class="mono"{% endif %}>{{ val.name }}</td>
       {% if type.include_specs %}<td style="min-width: 13rem">
         {% for specname in val.specs %}
-          <a class="{% if site.data.specs[specname].deprecated %}deprecated{% endif %} {% if site.data.specs[specname].draft %}draft{% endif %} {% if site.data.specs[specname].proposed %}proposed{% endif %}" title="{{ site.data.specs[specname].name }}" href="{% if site.data.specs[specname].full-url %}{{ site.data.specs[specname].full-url }}{% else %}{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}{% endif %}">{{ site.data.specs[specname].shortname }}</a>{% if site.data.specs[specname].deprecated %}<sup> [deprecated]</sup>{% endif %}{% if site.data.specs[specname].draft %}<sup> [draft]</sup>{% endif %}{% if site.data.specs[specname].proposed %}<sup> [PR]</sup>{% endif %}{% if forloop.last %}{% else %},{% endif %}
+          {% if site.data.specs[specname].proposed %}
+            <a class="proposed" title="{{ site.data.specs[specname].name }}" href="{{ site.data.specs[specname].full-url }}">{{ site.data.specs[specname].shortname }}</a><sup> [PR]</sup>{% if forloop.last %}{% else %},{% endif %}
+          {% elsif site.data.specs[specname].deprecated %}
+            <a class="deprecated" title="{{ site.data.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}">{{ site.data.specs[specname].shortname }}</a><sup> [deprecated]</sup>{% if forloop.last %}{% else %},{% endif %}
+          {% elsif site.data.specs[specname].draft %}
+            <a class="draft" title="{{ site.data.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}">{{ site.data.specs[specname].shortname }}</a><sup> [draft]</sup>{% if forloop.last %}{% else %},{% endif %}
+          {% else %}
+            <a title="{{ site.data.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}">{{ site.data.specs[specname].shortname }}</a>{% if forloop.last %}{% else %},{% endif %}
+          {% endif %}
         {% endfor %}
       </td>{% endif %}
       <td>
@@ -119,7 +127,15 @@ This page lists the tags, capabilities, commands, batches and metadata keys that
       </td>
       <td>
         {% for specname in val.specs %}
-          <a class="{% if site.data.specs[specname].deprecated %}deprecated{% endif %} {% if site.data.specs[specname].draft %}draft{% endif %} {% if site.data.specs[specname].proposed %}proposed{% endif %}" title="{{ site.data.specs[specname].name }}" href="{% if site.data.specs[specname].full-url %}{{ site.data.specs[specname].full-url }}{% else %}{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}{% endif %}">{{ site.data.specs[specname].shortname }}</a>{% if site.data.specs[specname].deprecated %}<sup> [deprecated]</sup>{% endif %}{% if site.data.specs[specname].draft %}<sup> [draft]</sup>{% endif %}{% if site.data.specs[specname].proposed %}<sup> [PR]</sup>{% endif %}{% if forloop.last %}{% else %},{% endif %}
+          {% if site.data.specs[specname].proposed %}
+            <a class="proposed" title="{{ site.data.specs[specname].name }}" href="{{ site.data.specs[specname].full-url }}">{{ site.data.specs[specname].shortname }}</a><sup> [PR]</sup>{% if forloop.last %}{% else %},{% endif %}
+          {% elsif site.data.specs[specname].deprecated %}
+            <a class="deprecated" title="{{ site.data.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}">{{ site.data.specs[specname].shortname }}</a><sup> [deprecated]</sup>{% if forloop.last %}{% else %},{% endif %}
+          {% elsif site.data.specs[specname].draft %}
+            <a class="draft" title="{{ site.data.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}">{{ site.data.specs[specname].shortname }}</a><sup> [draft]</sup>{% if forloop.last %}{% else %},{% endif %}
+          {% else %}
+            <a title="{{ site.data.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}">{{ site.data.specs[specname].shortname }}</a>{% if forloop.last %}{% else %},{% endif %}
+          {% endif %}
         {% endfor %}
       </td>
       <td>
