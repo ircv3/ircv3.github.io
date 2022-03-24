@@ -42,14 +42,14 @@ This page lists the tags, capabilities, commands, batches and metadata keys that
       <td style="min-width: 10rem"{% if type.nomono %}{% else %} class="mono"{% endif %}>{{ val.name }}</td>
       {% if type.include_specs %}<td style="min-width: 13rem">
         {% for specname in val.specs %}
-          {% if site.data.specs[specname].proposed %}
-            <a class="proposed" title="{{ site.data.specs[specname].name }}" href="{{ site.data.specs[specname].full-url }}">{{ site.data.specs[specname].shortname }}</a><sup> [PR]</sup>{% if forloop.last %}{% else %},{% endif %}
-          {% elsif site.data.specs[specname].deprecated %}
-            <a class="deprecated" title="{{ site.data.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}">{{ site.data.specs[specname].shortname }}</a><sup> [deprecated]</sup>{% if forloop.last %}{% else %},{% endif %}
-          {% elsif site.data.specs[specname].draft %}
-            <a class="draft" title="{{ site.data.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}">{{ site.data.specs[specname].shortname }}</a><sup> [draft]</sup>{% if forloop.last %}{% else %},{% endif %}
+          {% if site.data.irc_versions.proposed contains specname %}
+            <a class="proposed" title="{{ site.data.irc_versions.proposed.specs[specname].name }}" href="{{ site.data.irc_versions.proposed.specs[specname].full-url }}">{{ site.data.irc_versions.proposed.specs[specname].name }}</a><sup> [PR]</sup>{% if forloop.last %}{% else %},{% endif %}
+          {% elsif site.data.irc_versions.stable.specs[specname].deprecated %}
+            <a class="deprecated" title="{{ site.data.irc_versions.stable.specs[specname].name }}" href="{{ site.baseurl }}{{ site.data.irc_versions.stable.specs[specname].link }}">{{ site.data.irc_versions.stable.specs[specname].name }}</a><sup> [deprecated]</sup>{% if forloop.last %}{% else %},{% endif %}
+          {% elsif site.data.irc_versions.stable.specs[specname].draft %}
+            <a class="draft" title="{{ site.data.irc_versions.stable.specs[specname].name }}" href="{{ site.baseurl }}{{ site.data.irc_versions.stable.specs[specname].link }}">{{ site.data.irc_versions.stable.specs[specname].name | replace: "draft/" }}</a><sup> [draft]</sup>{% if forloop.last %}{% else %},{% endif %}
           {% else %}
-            <a title="{{ site.data.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}">{{ site.data.specs[specname].shortname }}</a>{% if forloop.last %}{% else %},{% endif %}
+            <a title="{{ site.data.irc_versions.stable.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.irc_versions.stable.specs[specname].link }}">{{ site.data.irc_versions.stable.specs[specname].name }}</a>{% if forloop.last %}{% else %},{% endif %}
           {% endif %}
         {% endfor %}
       </td>{% endif %}
@@ -127,14 +127,14 @@ This page lists the tags, capabilities, commands, batches and metadata keys that
       </td>
       <td>
         {% for specname in val.specs %}
-          {% if site.data.specs[specname].proposed %}
-            <a class="proposed" title="{{ site.data.specs[specname].name }}" href="{{ site.data.specs[specname].full-url }}">{{ site.data.specs[specname].shortname }}</a><sup> [PR]</sup>{% if forloop.last %}{% else %},{% endif %}
-          {% elsif site.data.specs[specname].deprecated %}
-            <a class="deprecated" title="{{ site.data.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}">{{ site.data.specs[specname].shortname }}</a><sup> [deprecated]</sup>{% if forloop.last %}{% else %},{% endif %}
-          {% elsif site.data.specs[specname].draft %}
-            <a class="draft" title="{{ site.data.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}">{{ site.data.specs[specname].shortname }}</a><sup> [draft]</sup>{% if forloop.last %}{% else %},{% endif %}
+          {% if site.data.irc_versions.proposed contains specname %}
+            <a class="proposed" title="{{ site.data.irc_versions.proposed.specs[specname].name }}" href="{{ site.data.irc_versions.proposed.specs[specname].full-url }}">{{ site.data.irc_versions.proposed.specs[specname].name }}</a><sup> [PR]</sup>{% if forloop.last %}{% else %},{% endif %}
+          {% elsif site.data.irc_versions.stable.specs[specname].deprecated %}
+            <a class="deprecated" title="{{ site.data.irc_versions.stable.specs[specname].name }}" href="{{ site.baseurl }}{{ site.data.irc_versions.stable.specs[specname].link }}">{{ site.data.irc_versions.stable.specs[specname].name }}</a><sup> [deprecated]</sup>{% if forloop.last %}{% else %},{% endif %}
+          {% elsif site.data.irc_versions.stable.specs[specname].draft %}
+            <a class="draft" title="{{ site.data.irc_versions.stable.specs[specname].name }}" href="{{ site.baseurl }}{{ site.data.irc_versions.stable.specs[specname].link }}">{{ site.data.irc_versions.stable.specs[specname].name | replace: "draft/" }}</a><sup> [draft]</sup>{% if forloop.last %}{% else %},{% endif %}
           {% else %}
-            <a title="{{ site.data.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.specs[specname].url }}">{{ site.data.specs[specname].shortname }}</a>{% if forloop.last %}{% else %},{% endif %}
+            <a title="{{ site.data.irc_versions.stable.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.irc_versions.stable.specs[specname].link }}">{{ site.data.irc_versions.stable.specs[specname].name }}</a>{% if forloop.last %}{% else %},{% endif %}
           {% endif %}
         {% endfor %}
       </td>
