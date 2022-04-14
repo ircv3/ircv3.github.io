@@ -445,14 +445,18 @@
       link: https://sr.ht/~emersion/gamja
       support:
         stable:
+          account-notify:
           away-notify:
           batch:
-          cap-notify:
           cap-3.1:
           cap-3.2:
+          cap-notify:
           chghost:
+          draft/account-registration:
           draft/chathistory:
+          draft/extended-monitor:
           echo-message:
+          extended-join:
           invite-notify:
           labeled-response:
           message-tags:
