@@ -780,24 +780,30 @@
           - plain
           # external is supported if configured on the core via the desktop client
     - name: Goguma
-      # https://git.sr.ht/~emersion/goguma/tree/master/item/lib/client.dart#L35
+      # https://git.sr.ht/~emersion/goguma/tree/master/item/lib/client.dart#L60
       link: https://sr.ht/~emersion/goguma
       os:
         - android
         - linux
       support:
         stable:
+          away-notify:
           batch:
+          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
           draft/chathistory:
+          draft/extended-monitor:
           echo-message:
           message-tags:
+          monitor:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname:
+          whox:
         SASL:
           - plain
 
