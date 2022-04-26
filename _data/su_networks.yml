@@ -15,7 +15,6 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -40,6 +39,9 @@
           userhost-in-names:
           utf8only:
           whox:
+      partial:
+        stable:
+          bot-mode: Draft
     - name: InspIRCd Testnet
       ircd-ver: InspIRCd-3
       net-address:
@@ -117,7 +119,6 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -141,6 +142,9 @@
           userhost-in-names:
           webirc:
           whox:
+      partial:
+        stable:
+          bot-mode: Draft
 
 - name: Networks
   note: >
@@ -178,7 +182,6 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -197,6 +200,9 @@
           setname:
           userhost-in-names:
           whox:
+      partial:
+        stable:
+          bot-mode: Draft
     - name: IRCHighWay
       ircd-ver: InspIRCd-2.0
       net-address:
@@ -261,7 +267,6 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -281,6 +286,7 @@
           whox:
       partial:
         stable:
+          bot-mode: Draft
           message-tags: No client tags
     - name: tilde.chat
       ircd-ver: InspIRCd-3
@@ -294,7 +300,6 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -314,6 +319,9 @@
           starttls:
           userhost-in-names:
           whox:
+      partial:
+        stable:
+          bot-mode: Draft
     - name: PIRC.pl
       ircd-ver: UnrealIRCd-5
       net-address:
@@ -326,7 +334,6 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -346,6 +353,9 @@
           sts:
           userhost-in-names:
           whox:
+      partial:
+        stable:
+          bot-mode: Draft
     - name: tldr.chat
       ircd-ver: Ergo-2.8
       net-address:
@@ -358,7 +368,6 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -381,6 +390,9 @@
           sts:
           userhost-in-names:
           utf8only:
+      partial:
+        stable:
+          bot-mode: Draft
     - name: ergo.chat
       ircd-ver: Ergo-2.8
       net-address:
@@ -393,7 +405,6 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -419,3 +430,6 @@
           userhost-in-names:
           utf8only:
           whox:
+      partial:
+        stable:
+          bot-mode: Draft

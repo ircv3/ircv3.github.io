@@ -56,9 +56,8 @@ stable:
       name: Bot Mode
       description: Bot Mode
       link: /specs/extensions/bot-mode.html
-      hide-if-no-support: true
       tags:
-        - draft/bot
+        - bot
       isupport:
         - BOT
     chghost:

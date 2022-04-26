@@ -27,7 +27,6 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -56,6 +55,9 @@
       na:
         stable:
           starttls: supports sts
+      partial:
+        stable:
+          bot-mode: Draft
     - name: IRCCloud Teams
       # maintainer: jwheare
       link: https://blog.irccloud.com/private-teams-servers/
@@ -87,7 +89,6 @@
       link: https://github.com/ircd-hybrid/ircd-hybrid
       support:
         stable:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -100,6 +101,9 @@
           multi-prefix:
           userhost-in-names:
           webirc:
+      partial:
+        stable:
+          bot-mode: Draft
     - name: InspIRCd
       # maintainer: Sadie
       # ref: https://github.com/inspircd/inspircd/search?q="Cap%3A%3ACapability"
@@ -214,7 +218,6 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -239,3 +242,6 @@
           webirc:
           websockets:
           whox:
+      partial:
+        stable:
+          bot-mode: Draft
