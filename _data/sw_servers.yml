@@ -239,3 +239,6 @@
           webirc:
           websockets:
           whox:
+      partial:
+        stable:
+          draft/account-registration: "6.0+ add-on"
