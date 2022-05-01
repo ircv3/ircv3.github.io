@@ -241,4 +241,4 @@
           whox:
       partial:
         stable:
-          account-registration: "6.0+ add-on"
+          draft/account-registration: "6.0+ add-on"
