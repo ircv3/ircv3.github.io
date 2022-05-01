@@ -244,4 +244,5 @@
           whox:
       partial:
         stable:
+          account-registration: "6.0+ add-on"
           bot-mode: Draft
