@@ -292,9 +292,9 @@
           userhost-in-names:
           whox:
         SASL:
-          - external
-          - plain
-          - scram-sha-256: 7.68+
+          external
+          plain
+          scram-sha-256: 7.68+
     - name: Mozilla Thunderbird
       # ref: irc{CAP,EchoMessage,MultiPrefix,SASL,ServerTime,WatchMonitor}.jsm files in
       #      https://searchfox.org/comm-central/source/chat/protocols/irc/
