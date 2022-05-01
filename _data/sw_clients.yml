@@ -480,7 +480,6 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-notify:
           cap-3.1:
           cap-3.2:
@@ -507,6 +506,9 @@
         SASL:
           - plain
           - scram-sha-256
+      partial:
+        stable:
+          bot-mode: Draft
     - name: Kiwi IRC
       # ref: https://github.com/kiwiirc/kiwiirc
       #      https://github.com/kiwiirc/irc-framework/blob/v4.10.0/docs/ircv3.md
@@ -888,7 +890,7 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
+          bot-mode: Draft
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -919,7 +921,7 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
+          bot-mode: Draft
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -954,7 +956,7 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
+          bot-mode: Draft
           cap-3.1:
           cap-3.2:
           cap-notify:
