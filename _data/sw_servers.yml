@@ -219,7 +219,6 @@
           cap-3.2:
           cap-notify:
           chghost:
-          draft/account-registration: 6.0+ (3rd-Party Mod)
           draft/chathistory:
           draft/extended-monitor: 6.0+
           echo-message:
@@ -240,3 +239,6 @@
           webirc:
           websockets:
           whox:
+      partial:
+        stable:
+          account-registration: "6.0+ add-on"
