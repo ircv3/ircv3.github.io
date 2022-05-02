@@ -349,7 +349,7 @@
           cap-notify:
           cap-3.1:
           cap-3.2:
-          draft/chathistory:
+          chathistory:
           echo-message:
           invite-notify:
           message-tags:
@@ -358,7 +358,7 @@
           sasl-3.2:
           server-time:
           setname:
-          +typing:
+          typing-client-tag:
         SASL:
           plain:
     - name: Srain
@@ -432,7 +432,7 @@
           setname: 3.3+
           userhost-in-names:
           whox:
-          +typing: 3.3+
+          typing-client-tag: 3.3+
         SASL:
           external:
           plain:
@@ -453,9 +453,9 @@
           cap-3.2:
           cap-notify:
           chghost:
-          draft/account-registration:
-          draft/chathistory:
-          draft/extended-monitor:
+          account-registration:
+          chathistory:
+          extended-monitor:
           echo-message:
           extended-join:
           invite-notify:
@@ -492,7 +492,7 @@
           msgid:
           labeled-response:
           multi-prefix:
-          draft/multiline:
+          multiline:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -500,9 +500,9 @@
           sts:
           userhost-in-names:
           whox:
-          +draft/react:
-          +draft/reply:
-          +typing:
+          react-client-tag:
+          reply-client-tag:
+          typing-client-tag:
         SASL:
           - plain
           - scram-sha-256
@@ -602,7 +602,7 @@
           setname:
           userhost-in-names:
           whox:
-          +typing:
+          typing-client-tag:
         SASL:
           - plain
 
@@ -701,7 +701,7 @@
           message-tags:
           msgid:
           multi-prefix:
-          draft/multiline:
+          multiline:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -709,7 +709,7 @@
           sts:
           userhost-in-names:
           whox:
-          +draft/reply:
+          reply-client-tag:
         SASL:
           - plain
           - scram-sha-256
@@ -748,7 +748,7 @@
           starttls:
           sts:
           userhost-in-names:
-          +draft/react:
+          react-client-tag:
         SASL:
           - plain
       partial:
@@ -800,8 +800,8 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
-          draft/chathistory:
-          draft/extended-monitor:
+          chathistory:
+          extended-monitor:
           echo-message:
           message-tags:
           monitor:
@@ -834,7 +834,7 @@
           monitor:
           msgid:
           multi-prefix:
-          draft/multiline:
+          multiline:
           server-time:
           sts:
           userhost-in-names:
@@ -960,9 +960,9 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
-          draft/chathistory:
-          draft/event-playback:
-          draft/extended-monitor:
+          chathistory:
+          event-playback:
+          extended-monitor:
           echo-message:
           extended-join:
           invite-notify:
@@ -994,7 +994,7 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
-          draft/extended-monitor:
+          extended-monitor:
           extended-join:
           invite-notify:
           labeled-response:
@@ -1073,7 +1073,7 @@
           monitor:
           msgid:
           multi-prefix:
-          draft/multiline:
+          multiline:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -1081,8 +1081,8 @@
           sts:
           userhost-in-names:
           whox:
-          +draft/reply:
-          +typing:
+          reply-client-tag:
+          typing-client-tag:
         SASL:
           - plain
           - external
@@ -1111,7 +1111,7 @@
           server-time: 1.9.0+
           setname: 1.9.0+
           whox: 1.9.0+
-          +typing: 1.9.0+
+          typing-client-tag: 1.9.0+
         SASL:
           - plain
           - external
@@ -1124,7 +1124,7 @@
       support:
         stable:
           account-notify:
-          draft/account-registration:
+          account-registration:
           account-tag:
           away-notify:
           bot-mode:
@@ -1142,7 +1142,7 @@
           monitor:
           msgid:
           multi-prefix:
-          draft/multiline:
+          multiline:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -1152,8 +1152,8 @@
           userhost-in-names:
           utf8only:
           whox:
-          +draft/react:
-          +draft/reply:
+          react-client-tag:
+          reply-client-tag:
         SASL:
             - external
             - plain
@@ -1187,8 +1187,8 @@
           server-time:
           userhost-in-names:
           whox:
-          +draft/reply:
-          +typing:
+          reply-client-tag:
+          typing-client-tag:
         SASL:
           - plain
           - external
