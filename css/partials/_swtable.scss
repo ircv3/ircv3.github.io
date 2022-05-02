@@ -23,9 +23,8 @@
   width: 96vw;
   position: relative;
   left: calc(-48vw + 50%);
-  overflow: auto;
+  overflow-x: auto;
   margin: 0 auto;
-  max-height: 90vh;
 
   + .support-table {
     margin-top: 2em;
