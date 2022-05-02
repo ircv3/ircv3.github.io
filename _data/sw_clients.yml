@@ -480,12 +480,14 @@
           account-tag:
           away-notify:
           batch:
+          bot-mode:
           cap-notify:
           cap-3.1:
           cap-3.2:
           chghost:
           echo-message:
           extended-join:
+          extended-monitor:
           invite-notify:
           message-tags:
           monitor:
@@ -506,9 +508,6 @@
         SASL:
           - plain
           - scram-sha-256
-      partial:
-        stable:
-          bot-mode: Draft
     - name: Kiwi IRC
       # ref: https://github.com/kiwiirc/kiwiirc
       #      https://github.com/kiwiirc/irc-framework/blob/v4.10.0/docs/ircv3.md
@@ -696,6 +695,7 @@
           chghost:
           echo-message:
           extended-join:
+          extended-monitor:
           invite-notify:
           labeled-response:
           message-tags:
