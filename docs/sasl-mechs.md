@@ -14,14 +14,14 @@ IRC SASL authentication primarily uses the same mechanisms as SASL in other prot
 ### Client Support
 
 {% for type in site.data.sw_clients %}
-{% assign support_name = type.name %}
+#### {{ type.name }}
 {% for support in site.data.doc_sasl %}
 {% include support_list.html %}
 {% endfor %}
 {% endfor %}
 
 {% for type in site.data.sw_libraries %}
-{% assign support_name = type.name %}
+#### {{ type.name }}
 {% for support in site.data.doc_sasl %}
 {% include support_list.html %}
 {% endfor %}
