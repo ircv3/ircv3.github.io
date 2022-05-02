@@ -20,6 +20,9 @@
 }
 
 .support-table {
+  width: 96vw;
+  position: relative;
+  left: calc(-48vw + 50%);
   overflow: auto;
   margin: 0 auto;
   max-height: 90vh;
