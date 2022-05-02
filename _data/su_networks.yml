@@ -11,26 +11,26 @@
       support:
         stable:
           account-notify:
-          draft/account-registration:
+          account-registration:
           account-tag:
           away-notify:
           batch:
           cap-3.1:
           cap-3.2:
           cap-notify:
-          draft/channel-rename:
-          draft/chathistory:
+          channel-rename:
+          chathistory:
           chghost:
           echo-message:
           extended-join:
-          draft/extended-monitor:
+          extended-monitor:
           invite-notify:
           labeled-response:
           message-tags:
           monitor:
           msgid:
           multi-prefix:
-          draft/multiline:
+          multiline:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -99,7 +99,7 @@
           monitor:
           msgid:
           multi-prefix:
-          draft/multiline:
+          multiline:
           setname:
           sts:
           userhost-in-names:
@@ -123,8 +123,8 @@
           cap-3.2:
           cap-notify:
           chghost:
-          draft/chathistory:
-          draft/extended-monitor:
+          chathistory:
+          extended-monitor:
           echo-message:
           extended-join:
           invite-notify:
@@ -371,8 +371,8 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
-          draft/channel-rename:
-          draft/chathistory:
+          channel-rename:
+          chathistory:
           chghost:
           echo-message:
           extended-join:
@@ -382,7 +382,7 @@
           monitor:
           msgid:
           multi-prefix:
-          draft/multiline:
+          multiline:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -408,10 +408,10 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
-          draft/account-registration:
-          draft/channel-rename:
-          draft/chathistory:
-          draft/extended-monitor:
+          account-registration:
+          channel-rename:
+          chathistory:
+          extended-monitor:
           chghost:
           echo-message:
           extended-join:
@@ -421,7 +421,7 @@
           monitor:
           msgid:
           multi-prefix:
-          draft/multiline:
+          multiline:
           sasl-3.1:
           sasl-3.2:
           server-time:
