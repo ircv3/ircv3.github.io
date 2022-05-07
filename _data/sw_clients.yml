@@ -369,10 +369,14 @@
           cap-notify:
           cap-3.1:
           cap-3.2:
+          invite-notify:
           sasl-3.1:
           sasl-3.2:
+          server-time:
+          utf8only:
         SASL:
           - plain
+          - external
     - name: Swirc
       # ref: https://raw.githubusercontent.com/uhlin/swirc/master/CHANGELOG.md
       link: https://www.nifty-networks.net/swirc/
