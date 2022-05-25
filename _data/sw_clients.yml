@@ -817,6 +817,7 @@
           server-time:
           setname:
           whox:
+          typing-client-tag:
         SASL:
           - plain
 
