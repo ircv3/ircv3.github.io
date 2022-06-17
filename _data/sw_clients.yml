@@ -362,8 +362,8 @@
         SASL:
           plain:
     - name: Srain
-      # ref: https://doc.srain.im/en/latest/support.html
-      link: https://srain.im
+      # ref: https://srain.silverrainz.me/support.html
+      link: https://srain.silverrainz.me
       support:
         stable:
           cap-notify:
