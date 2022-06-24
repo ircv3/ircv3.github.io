@@ -49,7 +49,7 @@ This page lists the tags, capabilities, commands, batches and metadata keys that
           {% elsif site.data.irc_versions.stable.specs[specname].draft %}
             <a class="draft" title="{{ site.data.irc_versions.stable.specs[specname].name }}" href="{{ site.baseurl }}{{ site.data.irc_versions.stable.specs[specname].link }}">{{ site.data.irc_versions.stable.specs[specname].name | replace: "draft/" }}</a><sup> [draft]</sup>{% if forloop.last %}{% else %},{% endif %}
           {% else %}
-            <a title="{{ site.data.irc_versions.stable.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.irc_versions.stable.specs[specname].link }}">{{ site.data.irc_versions.stable.specs[specname].name }}</a>{% if forloop.last %}{% else %},{% endif %}
+            <a title="{{ site.data.irc_versions.stable.specs[specname].name }}" href="{{ site.baseurl }}{{ site.data.irc_versions.stable.specs[specname].link }}">{{ site.data.irc_versions.stable.specs[specname].name }}</a>{% if forloop.last %}{% else %},{% endif %}
           {% endif %}
         {% endfor %}
       </td>{% endif %}
@@ -134,7 +134,7 @@ This page lists the tags, capabilities, commands, batches and metadata keys that
           {% elsif site.data.irc_versions.stable.specs[specname].draft %}
             <a class="draft" title="{{ site.data.irc_versions.stable.specs[specname].name }}" href="{{ site.baseurl }}{{ site.data.irc_versions.stable.specs[specname].link }}">{{ site.data.irc_versions.stable.specs[specname].name | replace: "draft/" }}</a><sup> [draft]</sup>{% if forloop.last %}{% else %},{% endif %}
           {% else %}
-            <a title="{{ site.data.irc_versions.stable.specs[specname].name }}" href="{{ site.baseurl }}/specs{{ site.data.irc_versions.stable.specs[specname].link }}">{{ site.data.irc_versions.stable.specs[specname].name }}</a>{% if forloop.last %}{% else %},{% endif %}
+            <a title="{{ site.data.irc_versions.stable.specs[specname].name }}" href="{{ site.baseurl }}{{ site.data.irc_versions.stable.specs[specname].link }}">{{ site.data.irc_versions.stable.specs[specname].name }}</a>{% if forloop.last %}{% else %},{% endif %}
           {% endif %}
         {% endfor %}
       </td>
