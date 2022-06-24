@@ -420,6 +420,7 @@
       support:
         stable:
           account-notify:
+          account-tag: 3.5+
           away-notify:
           cap-notify:
           cap-3.1:
