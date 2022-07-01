@@ -459,6 +459,7 @@
           cap-notify:
           chghost:
           account-registration:
+          channel-context-client-tag:
           chathistory:
           extended-monitor:
           echo-message:
@@ -1002,6 +1003,7 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-context-client-tag:
           extended-monitor:
           extended-join:
           invite-notify:

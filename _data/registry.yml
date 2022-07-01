@@ -260,6 +260,10 @@
       specs:
         - typing-client-tag
       description: Allows users to see when other users are typing.
+    - name: +channel-context
+      specs:
+        - channel-context-client-tag
+      description: Indicates the channel a private message should be displayed in.
 
 - name: Batches
   include_numeric: false
