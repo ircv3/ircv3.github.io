@@ -199,6 +199,8 @@ The `chathistory` extension standardizes a mechanism for clients to request mess
 
 The **work-in-progress** [`chathistory` spec]({{site.baseurl}}/specs/extensions/chathistory.html) describes the syntax and semantics of the new `CHATHISTORY` command.
 
+The **work-in-progress** [`read-marker` spec]({{site.baseurl}}/specs/extensions/read-marker.html) adds a new command to synchronize read markers between several clients of the same user.
+
 
 ## Changing User Properties
 
@@ -225,6 +227,7 @@ and as such we detail them in their own section here.
 
 Here are the client-only tags the IRCv3 WG defines:
 
+* [The `channel-context` client-only tag]({{site.baseurl}}/specs/client-tags/channel-context.html) **[draft]** indicates the channel a private message should be displayed in.
 * [The `reply` client-only tag]({{site.baseurl}}/specs/client-tags/reply.html) **[draft]** marks that a given message is intended as a reply to a specific sent message.
 * [The `react` client-only tag]({{site.baseurl}}/specs/client-tags/react.html) **[draft]** sends a reaction to a specific sent message, allowing such functionality from other chat systems.
 * [The `typing` client-only tag]({{site.baseurl}}/specs/client-tags/typing.html) lets users know when another user is typing a message in their channel or private message.

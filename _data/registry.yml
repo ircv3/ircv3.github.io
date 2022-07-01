@@ -194,6 +194,10 @@
       specs:
         - multiline
       description: Allows clients and servers to use send messages that can exceed the usual byte length limit and that can contain line breaks.
+    - name: read-marker
+      specs:
+        - read-marker
+      description: Allows clients of the same user to synchronize read markers.
     - name: sasl
       specs:
         - sasl-3.1
@@ -260,6 +264,10 @@
       specs:
         - typing-client-tag
       description: Allows users to see when other users are typing.
+    - name: +channel-context
+      specs:
+        - channel-context-client-tag
+      description: Indicates the channel a private message should be displayed in.
 
 - name: Batches
   include_numeric: false
@@ -331,6 +339,10 @@
       specs: 
         - userhost-in-names
       description: Not defined by IRCv3 but extended to include account names.
+    - name: MARKREAD
+      specs:
+        - read-marker
+      description: Fetches or stores a read marker.
     - name: REGISTER
       specs:
         - account-registration

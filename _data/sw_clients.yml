@@ -349,6 +349,7 @@
           cap-notify:
           cap-3.1:
           cap-3.2:
+          channel-context-client-tag:
           chathistory:
           echo-message:
           invite-notify:
@@ -459,6 +460,7 @@
           cap-notify:
           chghost:
           account-registration:
+          channel-context-client-tag:
           chathistory:
           extended-monitor:
           echo-message:
@@ -469,6 +471,7 @@
           monitor:
           msgid:
           multi-prefix:
+          read-marker:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -489,6 +492,7 @@
           cap-notify:
           cap-3.1:
           cap-3.2:
+          channel-context-client-tag:
           chghost:
           echo-message:
           extended-join:
@@ -813,6 +817,7 @@
           message-tags:
           monitor:
           multi-prefix:
+          read-marker:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -978,6 +983,7 @@
           monitor:
           msgid:
           multi-prefix:
+          read-marker:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -1140,6 +1146,7 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-context-client-tag:
           chghost:
           echo-message:
           extended-join:

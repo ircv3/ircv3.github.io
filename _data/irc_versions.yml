@@ -254,6 +254,22 @@ stable:
       tags:
         - +draft/reply
 
+    channel-context-client-tag:
+      name: +draft/channel-context
+      description: Channel context client tag DRAFT
+      link: /specs/client-tags/channel-context.html
+      draft: true
+      tags:
+        - +draft/channel-context
+
+    read-marker:
+      name: draft/read-marker
+      description: Read marker DRAFT
+      link: /specs/extensions/read-marker.html
+      draft: true
+      caps:
+        - draft/read-marker
+
 proposed:
   name: Proposed Pull Requests
   specs:
