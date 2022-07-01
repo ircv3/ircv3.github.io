@@ -349,6 +349,7 @@
           cap-notify:
           cap-3.1:
           cap-3.2:
+          channel-context-client-tag:
           chathistory:
           echo-message:
           invite-notify:
@@ -491,6 +492,7 @@
           cap-notify:
           cap-3.1:
           cap-3.2:
+          channel-context-client-tag:
           chghost:
           echo-message:
           extended-join:
