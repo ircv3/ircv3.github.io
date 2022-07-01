@@ -470,6 +470,7 @@
           monitor:
           msgid:
           multi-prefix:
+          read-marker:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -814,6 +815,7 @@
           message-tags:
           monitor:
           multi-prefix:
+          read-marker:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -979,6 +981,7 @@
           monitor:
           msgid:
           multi-prefix:
+          read-marker:
           sasl-3.1:
           sasl-3.2:
           server-time:

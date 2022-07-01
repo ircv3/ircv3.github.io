@@ -262,6 +262,14 @@ stable:
       tags:
         - +draft/channel-context
 
+    read-marker:
+      name: draft/read-marker
+      description: Read marker DRAFT
+      link: /specs/extensions/read-marker.html
+      draft: true
+      caps:
+        - draft/read-marker
+
 proposed:
   name: Proposed Pull Requests
   specs:

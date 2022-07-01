@@ -199,6 +199,8 @@ The `chathistory` extension standardizes a mechanism for clients to request mess
 
 The **work-in-progress** [`chathistory` spec]({{site.baseurl}}/specs/extensions/chathistory.html) describes the syntax and semantics of the new `CHATHISTORY` command.
 
+The **work-in-progress** [`read-marker` spec]({{site.baseurl}}/specs/extensions/read-marker.html) adds a new command to synchronize read markers between several clients of the same user.
+
 
 ## Changing User Properties
 
