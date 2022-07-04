@@ -191,19 +191,20 @@
       link: https://irssi.org
       support:
         stable:
-          account-notify: Git
-          away-notify: Git
+          account-notify:
+          away-notify:
           cap-3.1:
-          cap-3.2: Git
-          cap-notify: Git
-          chghost: Git
-          extended-join: Git
-          invite-notify: Git
-          message-tags: Git
+          cap-3.2:
+          cap-notify:
+          chghost:
+          extended-join:
+          invite-notify:
+          message-tags:
           multi-prefix:
           sasl-3.1:
-          setname: Git
-          starttls: Git
+          server-time:
+          setname:
+          starttls:
           whox:
         SASL:
           - external
