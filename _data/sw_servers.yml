@@ -100,6 +100,7 @@
           multi-prefix:
           userhost-in-names:
           webirc:
+          whox:
       partial:
         stable:
           bot-mode: Draft
