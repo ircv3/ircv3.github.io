@@ -282,13 +282,13 @@
           extended-join:
           invite-notify:
           message-tags:
-          labeled-response: 7.62+
+          labeled-response:
           monitor:
           msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
-          setname: 7.62+
+          setname:
           server-time:
           starttls:
           sts:
@@ -298,7 +298,7 @@
         SASL:
           external:
           plain:
-          scram-sha-256: 7.68+
+          scram-sha-256:
     - name: Mozilla Thunderbird
       # ref: irc{CAP,EchoMessage,MultiPrefix,SASL,ServerTime,WatchMonitor}.jsm files in
       #      https://searchfox.org/comm-central/source/chat/protocols/irc/
