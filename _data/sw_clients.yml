@@ -273,10 +273,12 @@
           account-tag:
           away-notify:
           batch:
+          bot-mode:
           cap-notify:
           cap-3.1:
           cap-3.2:
           chghost:
+          echo-message:
           extended-join:
           invite-notify:
           message-tags:
@@ -291,6 +293,7 @@
           starttls:
           sts:
           userhost-in-names:
+          utf8only:
           whox:
         SASL:
           external:
