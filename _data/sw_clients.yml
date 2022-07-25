@@ -978,6 +978,7 @@
           cap-3.2:
           cap-notify:
           chathistory:
+          chghost:
           event-playback:
           extended-monitor:
           echo-message:
@@ -1012,6 +1013,8 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          chghost:
+          echo-message:
           extended-monitor:
           extended-join:
           invite-notify:
