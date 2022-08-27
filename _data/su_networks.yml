@@ -74,6 +74,8 @@
           starttls:
           sts:
           userhost-in-names:
+          utf8only:
+          webirc:
           whox:
     - name: IRCCloud Teams
       ircd-ver: irccloud-prattle
