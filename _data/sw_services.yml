@@ -21,3 +21,9 @@
         SASL:
           - external
           - plain
+    - name: Dalek
+      link: https://github.com/DalekIRC/Dalek-Services
+      support:
+        SASL:
+          - external
+          - plain
