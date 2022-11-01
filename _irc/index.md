@@ -319,7 +319,7 @@ implementations.
 The [Monitor spec]({{site.baseurl}}/specs/extensions/monitor.html) details this
 command, the relevant `RPL_ISUPPORT` token and the commands used with it.
 
-The **work-in-progress** [Extended Monitor spec]({{site.baseurl}}/specs/extensions/extended-monitor.html)
+The [Extended Monitor spec]({{site.baseurl}}/specs/extensions/extended-monitor.html)
 builds upon the Monitor spec, and extends it to various events.
 
 

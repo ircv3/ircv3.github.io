@@ -78,6 +78,12 @@ stable:
       link: /specs/extensions/extended-join.html
       caps:
         - extended-join
+    extended-monitor:
+      name: extended-monitor
+      description: Extended Monitor
+      link: /specs/extensions/extended-monitor.html
+      caps:
+        - extended-monitor
     invite-notify:
       name: invite-notify
       description: invite-notify Extension
@@ -212,14 +218,6 @@ stable:
       draft: true
       caps:
         - draft/channel-rename
-
-    extended-monitor:
-      name: draft/extended-monitor
-      description: Extended Monitor DRAFT
-      link: /specs/extensions/extended-monitor.html
-      draft: true
-      caps:
-        - extended-monitor
 
     multiline:
       name: draft/multiline
