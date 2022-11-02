@@ -61,6 +61,7 @@
           chghost:
           echo-message:
           extended-join:
+          extended-monitor:
           invite-notify:
           message-tags:
           monitor:
