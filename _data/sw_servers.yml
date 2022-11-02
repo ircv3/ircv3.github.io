@@ -121,8 +121,9 @@
           chghost:
           echo-message:
           extended-join:
+          extended-monitor: Git
           invite-notify:
-          labeled-response: 3.5+
+          labeled-response:
           message-tags:
           monitor:
           msgid:
@@ -130,7 +131,7 @@
           sasl-3.1:
           sasl-3.2:
           server-time:
-          setname: 3.6+
+          setname:
           starttls:
           sts:
           userhost-in-names:
