@@ -468,6 +468,7 @@
           chathistory:
           echo-message:
           extended-join:
+          extended-monitor: Gamja
           invite-notify:
           labeled-response:
           message-tags:
@@ -482,9 +483,6 @@
           whox:
         SASL:
           - plain
-      partial:
-        stable:
-          extended-monitor: "draft cap"
     - name: IRCCloud
       # maintainer: jwheare
       link: https://www.irccloud.com
@@ -823,6 +821,7 @@
           cap-notify:
           chathistory:
           echo-message:
+          extended-monitor: Git
           message-tags:
           monitor:
           multi-prefix:
@@ -835,9 +834,6 @@
           typing-client-tag:
         SASL:
           - plain
-      partial:
-        stable:
-          extended-monitor: "draft cap"
 
 - name: Bouncers
   software:
@@ -990,6 +986,7 @@
           event-playback:
           echo-message:
           extended-join:
+          extended-monitor: Git
           invite-notify:
           message-tags:
           monitor:
@@ -1006,7 +1003,6 @@
           plain:
       partial:
         stable:
-          extended-monitor: "draft cap"
           websockets: text only
     - name: soju (as Client)
       # ref: https://git.sr.ht/~emersion/soju/tree/master/upstream.go#L23
@@ -1024,6 +1020,7 @@
           chghost:
           echo-message:
           extended-join:
+          extended-monitor: Git
           invite-notify:
           labeled-response:
           message-tags:
@@ -1038,9 +1035,6 @@
         SASL:
           external:
           plain:
-      partial:
-        stable:
-          extended-monitor: "draft cap"
     - name: ZNC (as Server)
       # ref: https://github.com/znc/znc/search?q=OnServerCapAvailable+extension%3Acpp
       #      mSupportedCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/src/IRCSock.cpp
