@@ -152,6 +152,7 @@
           cap-3.2:
           chghost:
           extended-join:
+          extended-monitor: Git
           invite-notify: 2.16
           monitor:
           multi-prefix:
