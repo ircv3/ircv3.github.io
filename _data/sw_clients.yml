@@ -466,7 +466,6 @@
           account-registration:
           channel-context-client-tag:
           chathistory:
-          extended-monitor:
           echo-message:
           extended-join:
           invite-notify:
@@ -483,6 +482,9 @@
           whox:
         SASL:
           - plain
+      partial:
+        stable:
+          extended-monitor: "draft cap"
     - name: IRCCloud
       # maintainer: jwheare
       link: https://www.irccloud.com
@@ -500,7 +502,6 @@
           chghost:
           echo-message:
           extended-join:
-          extended-monitor:
           invite-notify:
           message-tags:
           monitor:
@@ -521,6 +522,9 @@
         SASL:
           - plain
           - scram-sha-256
+      partial:
+        stable:
+          extended-monitor: "draft cap"
     - name: Kiwi IRC
       # ref: https://github.com/kiwiirc/kiwiirc
       #      https://github.com/kiwiirc/irc-framework/blob/v4.10.0/docs/ircv3.md
@@ -709,7 +713,6 @@
           chghost:
           echo-message:
           extended-join:
-          extended-monitor:
           invite-notify:
           labeled-response:
           message-tags:
@@ -728,6 +731,9 @@
         SASL:
           - plain
           - scram-sha-256
+      partial:
+        stable:
+          extended-monitor: "draft cap"
     - name: LimeChat
       # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
       link: http://limechat.net/iphone/
@@ -816,7 +822,6 @@
           cap-3.2:
           cap-notify:
           chathistory:
-          extended-monitor:
           echo-message:
           message-tags:
           monitor:
@@ -830,6 +835,9 @@
           typing-client-tag:
         SASL:
           - plain
+      partial:
+        stable:
+          extended-monitor: "draft cap"
 
 - name: Bouncers
   software:
@@ -980,7 +988,6 @@
           chathistory:
           chghost:
           event-playback:
-          extended-monitor:
           echo-message:
           extended-join:
           invite-notify:
@@ -999,6 +1006,7 @@
           plain:
       partial:
         stable:
+          extended-monitor: "draft cap"
           websockets: text only
     - name: soju (as Client)
       # ref: https://git.sr.ht/~emersion/soju/tree/master/upstream.go#L23
@@ -1015,7 +1023,6 @@
           cap-notify:
           chghost:
           echo-message:
-          extended-monitor:
           extended-join:
           invite-notify:
           labeled-response:
@@ -1031,6 +1038,9 @@
         SASL:
           external:
           plain:
+      partial:
+        stable:
+          extended-monitor: "draft cap"
     - name: ZNC (as Server)
       # ref: https://github.com/znc/znc/search?q=OnServerCapAvailable+extension%3Acpp
       #      mSupportedCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/src/IRCSock.cpp

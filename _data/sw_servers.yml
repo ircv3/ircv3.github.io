@@ -35,7 +35,6 @@
           chghost:
           echo-message:
           extended-join:
-          extended-monitor:
           invite-notify:
           labeled-response:
           message-tags:
@@ -57,6 +56,9 @@
       na:
         stable:
           starttls: supports sts
+      partial:
+        stable:
+          extended-monitor: Draft
     - name: IRCCloud Teams
       # maintainer: jwheare
       link: https://blog.irccloud.com/private-teams-servers/
@@ -223,7 +225,6 @@
           cap-notify:
           chghost:
           chathistory:
-          extended-monitor: 6.0+
           echo-message:
           extended-join:
           invite-notify: 6.0+
@@ -246,3 +247,4 @@
         stable:
           account-registration: "6.0+ add-on"
           bot-mode: Draft
+          extended-monitor: "Draft, 6.0+"
