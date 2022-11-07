@@ -500,6 +500,7 @@
           chghost:
           echo-message:
           extended-join:
+          extended-monitor:
           invite-notify:
           message-tags:
           monitor:
@@ -520,9 +521,6 @@
         SASL:
           - plain
           - scram-sha-256
-      partial:
-        stable:
-          extended-monitor: "draft cap"
     - name: Kiwi IRC
       # ref: https://github.com/kiwiirc/kiwiirc
       #      https://github.com/kiwiirc/irc-framework/blob/v4.10.0/docs/ircv3.md
@@ -711,6 +709,7 @@
           chghost:
           echo-message:
           extended-join:
+          extended-monitor:
           invite-notify:
           labeled-response:
           message-tags:
@@ -729,9 +728,6 @@
         SASL:
           - plain
           - scram-sha-256
-      partial:
-        stable:
-          extended-monitor: "draft cap"
     - name: LimeChat
       # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
       link: http://limechat.net/iphone/
