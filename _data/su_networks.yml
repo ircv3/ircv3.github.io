@@ -440,7 +440,7 @@
    - name: BonoboNET
       ircd-ver: unrealircd-6
       net-address:
-        link: irc://
+        link: irc://honeypot.irc.bnet.eu.org
         display: bnet.eu.org
       link: https://bnet.eu.org
       support:
