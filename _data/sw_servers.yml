@@ -225,6 +225,7 @@
           chathistory:
           echo-message:
           extended-join:
+          extended-monitor: Git
           invite-notify: 6.0+
           labeled-response:
           message-tags:
@@ -245,4 +246,3 @@
         stable:
           account-registration: "6.0+ add-on"
           bot-mode: Draft
-          extended-monitor: "Draft, 6.0+"
