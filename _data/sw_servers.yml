@@ -35,7 +35,7 @@
           chghost:
           echo-message:
           extended-join:
-          extended-monitor:
+          extended-monitor: Git
           invite-notify:
           labeled-response:
           message-tags:
@@ -224,9 +224,9 @@
           cap-notify:
           chghost:
           chathistory:
-          extended-monitor: 6.0+
           echo-message:
           extended-join:
+          extended-monitor: Git
           invite-notify: 6.0+
           labeled-response:
           message-tags:

@@ -467,9 +467,9 @@
           account-registration:
           channel-context-client-tag:
           chathistory:
-          extended-monitor:
           echo-message:
           extended-join:
+          extended-monitor: Git
           invite-notify:
           labeled-response:
           message-tags:
@@ -817,8 +817,8 @@
           cap-3.2:
           cap-notify:
           chathistory:
-          extended-monitor:
           echo-message:
+          extended-monitor: Git
           message-tags:
           monitor:
           multi-prefix:
@@ -981,9 +981,9 @@
           chathistory:
           chghost:
           event-playback:
-          extended-monitor:
           echo-message:
           extended-join:
+          extended-monitor: Git
           invite-notify:
           message-tags:
           monitor:
@@ -1016,8 +1016,8 @@
           cap-notify:
           chghost:
           echo-message:
-          extended-monitor:
           extended-join:
+          extended-monitor: Git
           invite-notify:
           labeled-response:
           message-tags:

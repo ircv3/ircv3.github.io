@@ -23,7 +23,6 @@
           chghost:
           echo-message:
           extended-join:
-          extended-monitor:
           invite-notify:
           labeled-response:
           message-tags:
@@ -42,6 +41,7 @@
       partial:
         stable:
           bot-mode: Draft
+          extended-monitor: Draft
     - name: InspIRCd Testnet
       ircd-ver: InspIRCd-3
       net-address:
@@ -127,7 +127,6 @@
           cap-notify:
           chghost:
           chathistory:
-          extended-monitor:
           echo-message:
           extended-join:
           invite-notify:
@@ -148,6 +147,7 @@
       partial:
         stable:
           bot-mode: Draft
+          extended-monitor: Draft
 
 - name: Networks
   note: >
@@ -414,7 +414,6 @@
           account-registration:
           channel-rename:
           chathistory:
-          extended-monitor:
           chghost:
           echo-message:
           extended-join:
@@ -436,3 +435,4 @@
       partial:
         stable:
           bot-mode: Draft
+          extended-monitor: Draft
