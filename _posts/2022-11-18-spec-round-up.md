@@ -18,7 +18,7 @@ Following our tradition of the annual update, here's a summary of everything tha
 ### Specs updated
 
 * Nov 2021 [Account registration](https://ircv3.net/specs/extensions/account-registration) - Added `ACCOUNT_REQUIRED` fail code [#481](https://github.com/ircv3/ircv3-specifications/pull/481)
-- Oct 2022 [account-tag](https://ircv3.net/specs/extensions/account-tag) - Relaxed requirement that the tag be set on all messages [#505](https://github.com/ircv3/ircv3-specifications/pull/505)
+* Oct 2022 [account-tag](https://ircv3.net/specs/extensions/account-tag) - Relaxed requirement that the tag be set on all messages [#505](https://github.com/ircv3/ircv3-specifications/pull/505)
 
 ### On the Roadmap
 
