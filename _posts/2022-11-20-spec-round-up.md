@@ -1,8 +1,6 @@
 ---
 layout: post
 title: 2022 Spec round-up
-kramdown:
-  auto_id_prefix: 2022
 
 ---
 Following our tradition of the annual update, here's a summary of everything that's been happening since Nov 2021.
