@@ -71,14 +71,15 @@ generally what’s going on with the IRCv3 Working Group.</p>
 <div class="container content">
 
       <div class="post">
-          <h3><a href="https://github.com/ircv3/ircv3-specifications/milestone/4">Roadmap</a></h3>
+          <h2><a href="https://github.com/ircv3/ircv3-specifications/milestone/4">Roadmap</a></h2>
           <div class="post-content">
               <p>Our roadmap <a href="https://github.com/ircv3/ircv3-specifications/milestone/4"><sup>[link]</sup></a> always contains info on our direction moving forward, the sort of features we have planned and our priorities.</p>
           </div>
       </div>
 
       {% for post in site.posts limit:10 %}
-      {% comment %} turn h3 into h4, and add a prefix to ids to avoid duplicates within the same page {% endcomment %}
+      {% comment %} add a prefix to ids to avoid duplicates within the same page {% endcomment %}
+      {% assign h3_prefix = '<h3 id="' | append: post.id %}
       {% assign h4_prefix = '<h4 id="' | append: post.id %}
       {% assign h5_prefix = '<h5 id="' | append: post.id %}
       {% assign h6_prefix = '<h6 id="' | append: post.id %}
@@ -86,9 +87,10 @@ generally what’s going on with the IRCv3 Working Group.</p>
           <h3><a href="{{ post.url }}">{{ post.title | xml_escape }}</a> <span class="meta">{{ post.date | date_to_string }}</span></h3>
           <div class="post-content">
                {{ post.content
-                | replace: '<h5 id="', h6_prefix | replace: '</h5>', '</h6>'
-                | replace: '<h4 id="', h5_prefix | replace: '</h4>', '</h5>'
-                | replace: '<h3 id="', h4_prefix | replace: '</h3>', '</h4>'
+                | replace: '<h6 id="', h6_prefix
+                | replace: '<h5 id="', h5_prefix
+                | replace: '<h4 id="', h4_prefix
+                | replace: '<h3 id="', h3_prefix
                 }}
           </div>
       </div>
