@@ -63,7 +63,7 @@
         SASL:
           - PLAIN
     - name: BitchX
-      # ref: https://github.com/BitchX/BitchX/search?q=%22CAP+REQ%22&
+      # ref: https://github.com/BitchX/BitchX1.3/search?q=%22CAP+REQ%22&
       link: http://www.bitchx.com
       support:
         stable:
@@ -121,7 +121,7 @@
         SASL:
           - plain
     - name: Glirc
-      # ref: https://github.com/glguy/irc-core/blob/v2/src/Client/State/Network.hs#L686-L687
+      # ref: https://github.com/glguy/irc-core/blob/v2/src/Client/State/Network.hs#L766
       link: https://hackage.haskell.org/package/glirc
       support:
         stable:
@@ -145,8 +145,8 @@
           - scram-sha-1
           - scram-sha-256
     - name: HexChat
-      # ref: https://github.com/hexchat/hexchat/blob/v2.10.3/src/common/inbound.c#L1728
-      # https://github.com/hexchat/hexchat/blob/dd6f53f5040738f1349d4f0147a2204dc6ffab16/src/common/modes.c#L923
+      # ref: supported_caps in https://github.com/hexchat/hexchat/blob/v2.16.1/src/common/inbound.c#L1715
+      # inbound_005 in https://github.com/hexchat/hexchat/blob/v2.16.1/src/common/modes.c#L923
       link: https://hexchat.github.io
       support:
         stable:
@@ -173,7 +173,7 @@
           - external
           - plain
     - name: IceChat
-      # ref: CapREQ() in https://github.com/icechat/IceChat/blob/9.50P/src/IceChat/IRCConnection/ParseIRCData.cs
+      # ref: CapREQ() in https://github.com/icechat/IceChat/blob/9.53P/src/IceChat/IRCConnection/ParseIRCData.cs
       link: https://icechat.net
       support:
         stable:
@@ -195,8 +195,8 @@
         SASL:
           - plain
     - name: Irssi
-      # ref: https://github.com/irssi/irssi/blob/8a5d5d384ed20cefa3fdc4a65d27fac3e4913a7b/src/irc/core/irc-servers.h#L17
-      # https://github.com/irssi/irssi/blob/afcb48384e1aa1667c21478fabaf238c78c4d6b8/src/irc/core/channels-query.c#L55-L57
+      # ref: CAP_ in https://github.com/irssi/irssi/blob/1.4.3/src/irc/core/irc-servers.h#L17
+      # WHOX_ in https://github.com/irssi/irssi/blob/1.4.3/src/irc/core/channels-query.c#L55-L57
       link: https://irssi.org
       support:
         stable:
@@ -308,7 +308,7 @@
           scram-sha-256:
     - name: Mozilla Thunderbird
       # ref: irc{CAP,EchoMessage,MultiPrefix,SASL,ServerTime,WatchMonitor}.jsm files in
-      #      https://searchfox.org/comm-central/source/chat/protocols/irc/
+      #      https://github.com/mozilla/releases-comm-central/tree/219c6396225f9c262cef4fe7766f5c31cefe2a05/chat/protocols/irc
       link: https://www.thunderbird.net/
       support:
         stable:
@@ -427,9 +427,8 @@
           - external
           - plain
     - name: WeeChat
-      # ref: https://weechat.org/files/changelog/ChangeLog-devel.html or IRC_COMMAND_CAP_SUPPORTED_COMPLETION
-      # in https://github.com/weechat/weechat/blob/master/src/plugins/irc/irc-command.h
-      # https://github.com/weechat/weechat/blob/c44b79dce7f2f2dec9e802b001dcf0acdfa049d0/src/plugins/irc/irc-channel.c#L790
+      # ref: https://weechat.org/files/changelog/ChangeLog-devel.html or
+      # https://github.com/weechat/weechat/blob/v3.7.1/doc/en/weechat_user.en.adoc#irc_ircv3_support
       link: https://weechat.org
       support:
         stable:
