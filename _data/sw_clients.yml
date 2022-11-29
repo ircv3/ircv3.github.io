@@ -27,7 +27,9 @@
           setname: 3.9+
           starttls:
           sts: 3.4+
+          utf8only: 4.1+
           userhost-in-names:
+          whox: 4.0+
         SASL:
           external:
           plain:
@@ -57,6 +59,7 @@
           sts:
           tls:
           userhost-in-names:
+          whox:
         SASL:
           - PLAIN
     - name: BitchX
@@ -78,7 +81,9 @@
           extended-join:
           invite-notify:
           message-tags:
+          msgid:
           multi-prefix:
+          reply-client-tag:
           sasl-3.1:
           server-time:
           setname:
@@ -121,6 +126,7 @@
       support:
         stable:
           account-notify:
+          account-tag:
           away-notify:
           batch:
           cap-notify:
@@ -175,6 +181,7 @@
           account-tag:
           away-notify:
           cap-3.1:
+          cap-3.2:
           cap-notify:
           chghost:
           echo-message:
@@ -184,6 +191,7 @@
           multi-prefix:
           sasl-3.1:
           server-time:
+          sts:
         SASL:
           - plain
     - name: Irssi
@@ -210,9 +218,6 @@
         SASL:
           - external
           - plain
-      partial:
-        stable:
-          setname: "Git draft cap"
     - name: Konversation
       # ref: Server::initCapablityNames() in https://github.com/KDE/konversation/blob/v21.04.0/src/irc/server.cpp
       # https://github.com/KDE/konversation/blob/a8ac257a30d0c56635a35b12bdb59c45b5868c37/src/irc/inputfilter.cpp#L1283
@@ -251,6 +256,7 @@
           server-time: Git
           starttls:
           userhost-in-names: Git
+          whox:
         SASL:
           - external
           - plain
@@ -315,6 +321,7 @@
           sasl-3.1:
           sasl-3.2: 72.0+
           server-time: 60.0+
+          whox:
         SASL:
           - plain
     - name: Quassel
@@ -365,6 +372,7 @@
           server-time:
           setname:
           typing-client-tag:
+          whox:
         SASL:
           plain:
     - name: Srain
@@ -578,6 +586,7 @@
           sts:
           userhost-in-names:
           webirc:
+          whox:
         SASL:
           - external
           - plain
