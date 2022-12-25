@@ -35,7 +35,7 @@
           chghost:
           echo-message:
           extended-join:
-          extended-monitor: Git
+          extended-monitor:
           invite-notify:
           labeled-response:
           message-tags:
