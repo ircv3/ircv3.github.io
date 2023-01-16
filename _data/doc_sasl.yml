@@ -16,3 +16,8 @@ SASL:
       description: SASL SCRAM-SHA-256 mechanism
       required: true
       ext_link: https://tools.ietf.org/html/rfc7677
+    oauthbearer:
+      name: OAUTHBEARER
+      description: OAUTHBEARER SASL mechanism
+      required: true
+      ext_link: https://www.rfc-editor.org/rfc/rfc7628
