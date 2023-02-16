@@ -73,7 +73,7 @@
                     <div class="os-support">
                     {% for name in sw.os %}
                         {% if site.data.os[name] %}
-                            <i title="{{ site.data.os[name]["name"] }}" class="fa fa-{{ site.data.os[name]["icon"] }} os-support-{{ name | slugify }}"></i>
+                            <i title="{{ site.data.os[name]["name"] }}" class="fa-solid fa-{{ site.data.os[name]["icon"] }} os-support-{{ name | slugify }}"></i>
                         {% endif %}
                     {% endfor %}
                     </div>

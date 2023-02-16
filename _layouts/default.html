@@ -22,7 +22,9 @@ layout: compress
 
     <link rel="alternate" type="application/rss+xml" href="{{ site.baseurl }}/feed.xml" />
     
-    <link href="{{ site.baseurl }}/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/fontawesome/css/solid.min.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/fonts.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/pure.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet">
@@ -48,7 +50,7 @@ layout: compress
         <div class="copylink">
           <span><a href="{{ site.baseurl }}" class="wglink">{% include logo-fordark.html %} <span class="wglink-text">Working Group</span></a> {% include copy.html %} {{ site.time | date: "%Y" }}</span>
           <span class="nomobile" style="margin: 0 0.7rem;">&middot;</span>
-          <a class="nomobile rss-button" href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss-square"></i> RSS</a>
+          <a class="nomobile rss-button" href="{{ site.baseurl }}/feed.xml"><i class="fa-solid fa-rss-square"></i> RSS</a>
           <ul class="links nomobile" style="margin-top: 0.3rem">
             <li><a href="{{ site.baseurl }}/index.html">Home</a></li>
             <li><a href="{{ site.baseurl }}/wg.html">
@@ -60,8 +62,8 @@ layout: compress
               <span class="notablet">Specifications</span>
               <span class="tablet">Specs</span>
             </a></li>
-            <li class="iconsep"><a href="{{ site.github.owner_url }}"><span class="fa fw-fw fa-github"></span></a></li>
-            <li class="iconsep"><a href="https://twitter.com/ircv3"><span class="fa fw-fw fa-twitter"></span></a></li>
+            <li class="iconsep"><a href="{{ site.github.owner_url }}"><span class="fa-brands fw-fw fa-github"></span></a></li>
+            <li class="iconsep"><a href="https://twitter.com/ircv3"><span class="fa-brands fw-fw fa-twitter"></span></a></li>
           </ul>
         </div>
       </div>
