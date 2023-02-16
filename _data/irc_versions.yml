@@ -151,6 +151,12 @@ stable:
       link: /specs/extensions/setname.html
       caps:
         - setname
+    standard-replies:
+      name: standard-replies
+      description: standard-replies
+      link: /specs/extensions/standard-replies.html
+      caps:
+        - standard-replies
     starttls:
       name: starttls
       description: tls Extension (STARTTLS)

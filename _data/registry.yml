@@ -211,6 +211,10 @@
       specs:
         - setname
       description: Lets clients change their realname after connecting to the server.
+    - name: standard-replies
+      specs:
+        - standard-replies
+      description: Allows servers to use standard replies more broadly
     - name: tls
       specs:
         - starttls
@@ -388,6 +392,9 @@
       specs:
         - monitor
       description: Indicates the server supports the MONITOR command.
+    - name: MSGREFTYPES
+      specs:
+        - chathistory
     - name: UTF8ONLY
       specs:
         - utf8only

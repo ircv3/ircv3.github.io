@@ -166,6 +166,7 @@
           sasl-3.2:
           server-time:
           setname: 2.16
+          standard-replies: Git
           userhost-in-names:
           utf8only: 2.16
           whox:
@@ -371,6 +372,7 @@
           sasl-3.2:
           server-time:
           setname:
+          standard-replies: Git
           typing-client-tag:
           whox:
         SASL:
@@ -522,6 +524,7 @@
           sasl-3.2:
           server-time:
           setname:
+          standard-replies: Git
           sts:
           userhost-in-names:
           whox:
@@ -1181,6 +1184,7 @@
           server-time:
           setname:
           sts:
+          standard-replies: Git
           starttls:
           userhost-in-names:
           utf8only:

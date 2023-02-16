@@ -47,6 +47,7 @@
           sasl-3.1:
           sasl-3.2:
           server-time:
+          standard-replies: Git
           setname:
           userhost-in-names:
           utf8only:
@@ -132,6 +133,7 @@
           sasl-3.2:
           server-time:
           setname:
+          standard-replies: Git
           starttls:
           sts:
           userhost-in-names:
