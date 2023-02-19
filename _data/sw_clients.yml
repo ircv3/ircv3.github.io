@@ -506,6 +506,7 @@
           cap-notify:
           cap-3.1:
           cap-3.2:
+          channel-rename:
           channel-context-client-tag:
           chghost:
           echo-message:
