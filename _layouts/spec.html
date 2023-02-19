@@ -73,6 +73,7 @@ layout: default
 {% assign link = spec[1].link | split: "#" %}
 {% if link[0] == page.url %}
     {% assign software_names = "" | split: "" %}
+
     {% for swlist in site.data.sw_servers %}
         {% include spec_support.html %}
     {% endfor %}
@@ -83,6 +84,9 @@ layout: default
         {% include spec_support.html %}
     {% endfor %}
     {% for swlist in site.data.sw_services %}
+        {% include spec_support.html %}
+    {% endfor %}
+    {% for swlist in site.data.sw_bridges %}
         {% include spec_support.html %}
     {% endfor %}
 

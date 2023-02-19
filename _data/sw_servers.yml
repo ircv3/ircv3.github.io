@@ -1,22 +1,5 @@
 - name: Servers
   software:
-    - name: BitlBee
-      # ref: https://github.com/bitlbee/bitlbee/blob/3.6/irc_cap.c#L39
-      link: https://bitlbee.org/
-      support:
-        stable:
-          cap-3.1:
-          cap-3.2:
-          sasl-3.1:
-          sasl-3.2:
-          away-notify:
-          extended-join:
-          multi-prefix:
-          userhost-in-names:
-          server-time: 3.6
-      na:
-        stable:
-          webirc:
     - name: Ergo
       # ref: https://ergo.chat/specs.html
       link: https://ergo.chat/
