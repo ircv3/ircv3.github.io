@@ -1,0 +1,4 @@
+imports:
+  - sw_list.types.yaml
+root:
+  type: software
