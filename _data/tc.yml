@@ -37,12 +37,6 @@
   projects:
     - "[Libera.Chat](https://libera.chat/)"
 
-- nick: june
-  github: causal-agent
-  projects:
-    - "[catgirl](https://git.causal.agency/catgirl/about)"
-    - "[pounce](https://git.causal.agency/pounce/about)"
-
 - nick: justJanne
   github: justjanne
   projects:
