@@ -832,9 +832,11 @@
           cap-notify:
           chathistory:
           echo-message:
-          extended-monitor: Git
+          extended-monitor:
+          labeled-response:
           message-tags:
           monitor:
+          msgid:
           multi-prefix:
           read-marker:
           sasl-3.1:
@@ -842,6 +844,8 @@
           server-time:
           setname:
           whox:
+          channel-context-client-tag:
+          reply-client-tag:
           typing-client-tag:
         SASL:
           - plain
