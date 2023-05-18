@@ -1189,7 +1189,7 @@
           server-time:
           setname:
           sts:
-          standard-replies: Git
+          standard-replies:
           starttls:
           userhost-in-names:
           utf8only:
