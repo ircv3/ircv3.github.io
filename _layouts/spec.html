@@ -73,73 +73,21 @@ layout: default
 {% assign link = spec[1].link | split: "#" %}
 {% if link[0] == page.url %}
     {% assign software_names = "" | split: "" %}
+
     {% for swlist in site.data.sw_servers %}
-        {% for sw in swlist.software %}
-            {% for specname in sw.support.stable %}
-                {% if specname[0] == spec[0] %}
-                    {% assign newname = '<a href="' %}
-                    {% assign newname = newname | append: sw.link %}
-                    {% assign newname = newname | append: '">' %}
-                    {% assign newname = newname | append: sw.name %}
-                    {% assign newname = newname | append: '</a>' %}
-                    {% if software_names contains newname %}{% else %}
-                        {% assign newname = newname | split: "!@#$%^&*(" %}
-                        {% assign software_names = software_names | concat: newname %}
-                    {% endif %}
-                {% endif %}
-            {% endfor %}
-        {% endfor %}
+        {% include spec_support.html %}
     {% endfor %}
     {% for swlist in site.data.sw_clients %}
-        {% for sw in swlist.software %}
-            {% for specname in sw.support.stable %}
-                {% if specname[0] == spec[0] %}
-                    {% assign newname = '<a href="' %}
-                    {% assign newname = newname | append: sw.link %}
-                    {% assign newname = newname | append: '">' %}
-                    {% assign newname = newname | append: sw.name %}
-                    {% assign newname = newname | append: '</a>' %}
-                    {% if software_names contains newname %}{% else %}
-                        {% assign newname = newname | split: "!@#$%^&*(" %}
-                        {% assign software_names = software_names | concat: newname %}
-                    {% endif %}
-                {% endif %}
-            {% endfor %}
-        {% endfor %}
+        {% include spec_support.html %}
     {% endfor %}
     {% for swlist in site.data.sw_libraries %}
-        {% for sw in swlist.software %}
-            {% for specname in sw.support.stable %}
-                {% if specname[0] == spec[0] %}
-                    {% assign newname = '<a href="' %}
-                    {% assign newname = newname | append: sw.link %}
-                    {% assign newname = newname | append: '">' %}
-                    {% assign newname = newname | append: sw.name %}
-                    {% assign newname = newname | append: '</a>' %}
-                    {% if software_names contains newname %}{% else %}
-                        {% assign newname = newname | split: "!@#$%^&*(" %}
-                        {% assign software_names = software_names | concat: newname %}
-                    {% endif %}
-                {% endif %}
-            {% endfor %}
-        {% endfor %}
+        {% include spec_support.html %}
     {% endfor %}
     {% for swlist in site.data.sw_services %}
-        {% for sw in swlist.software %}
-            {% for specname in sw.support.stable %}
-                {% if specname[0] == spec[0] %}
-                    {% assign newname = '<a href="' %}
-                    {% assign newname = newname | append: sw.link %}
-                    {% assign newname = newname | append: '">' %}
-                    {% assign newname = newname | append: sw.name %}
-                    {% assign newname = newname | append: '</a>' %}
-                    {% if software_names contains newname %}{% else %}
-                        {% assign newname = newname | split: "!@#$%^&*(" %}
-                        {% assign software_names = software_names | concat: newname %}
-                    {% endif %}
-                {% endif %}
-            {% endfor %}
-        {% endfor %}
+        {% include spec_support.html %}
+    {% endfor %}
+    {% for swlist in site.data.sw_bridges %}
+        {% include spec_support.html %}
     {% endfor %}
 
     {% if 0 < software_names.size %}

@@ -31,8 +31,8 @@
 - name: ZNC
   url: https://znc.in/
 
-- name: Willow Chat
-  url: https://willowchat.github.io/
-
 - name: Palaver
   url: https://palaverapp.com/
+
+- name: SourceHut
+  url: https://sourcehut.org/

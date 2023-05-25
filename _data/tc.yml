@@ -1,3 +1,8 @@
+- nick: cc0
+  github: delthas
+  projects:
+    - "[Senpai](https://git.sr.ht/~taiite/senpai)"
+
 - nick: dan-
   github: DanielOaks
   projects:
@@ -15,6 +20,13 @@
     - "[bitlbee](https://www.bitlbee.org/)"
     - "[irssi](https://irssi.org/)"
 
+- nick: emersion
+  github: emersion
+  projects:
+    - "[gamja](https://git.sr.ht/~emersion/gamja/)"
+    - "[goguma](https://sr.ht/~emersion/goguma/)"
+    - "[soju](https://git.sr.ht/~emersion/soju/)"
+
 - nick: grawity
   github: grawity
   projects:
@@ -24,7 +36,6 @@
   github: jesopo
   projects:
     - "[Libera.Chat](https://libera.chat/)"
-    - "[BitBot](https://bitbot.dev/)"
 
 - nick: justJanne
   github: justjanne
@@ -63,4 +74,10 @@
 - nick: val
   github: progval
   projects:
-    - "[Limnoria](https://github.com/progval/Limnoria)"
+    - "[ircdocs](https://ircdocs.horse/)"
+    - "[Limnoria](https://github.com/ProgVal/Limnoria)"
+
+- nick: Valware
+  github: ValwareIRC
+  projects:
+    - "[DalekIRC](https://github.com/DalekIRC)"

@@ -19,16 +19,16 @@ windows:
 # mobile
 android:
   name: Android
-  icon: android
+  icon: "fa-brands fa-android"
 
 ios:
   name: iOS
-  icon: apple
+  icon: "fa-brands fa-apple"
 
 windows-phone:
   name: Windows Phone
-  icon: windows
+  icon: "fa-brands fa-windows"
 
 linux:
   name: Linux
-  icon: linux
+  icon: "fa-brands fa-linux"

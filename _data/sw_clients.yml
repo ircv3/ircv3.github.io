@@ -29,7 +29,9 @@
           setname: 3.9+
           starttls:
           sts: 3.4+
+          utf8only: 4.1+
           userhost-in-names:
+          whox: 4.0+
         SASL:
           external:
           plain:
@@ -63,10 +65,11 @@
           sts:
           tls:
           userhost-in-names:
+          whox:
         SASL:
           - PLAIN
     - name: BitchX
-      # ref: https://github.com/BitchX/BitchX/search?q=%22CAP+REQ%22&
+      # ref: https://github.com/BitchX/BitchX1.3/search?q=%22CAP+REQ%22&
       link: http://www.bitchx.com
       support:
         stable:
@@ -84,7 +87,9 @@
           extended-join:
           invite-notify:
           message-tags:
+          msgid:
           multi-prefix:
+          reply-client-tag:
           sasl-3.1:
           server-time:
           setname:
@@ -124,11 +129,12 @@
         SASL:
           - plain
     - name: Glirc
-      # ref: https://github.com/glguy/irc-core/blob/v2/src/Client/State/Network.hs#L686-L687
+      # ref: https://github.com/glguy/irc-core/blob/v2/src/Client/State/Network.hs#L766
       link: https://hackage.haskell.org/package/glirc
       support:
         stable:
           account-notify:
+          account-tag:
           away-notify:
           batch:
           cap-notify:
@@ -147,8 +153,8 @@
           - scram-sha-1
           - scram-sha-256
     - name: HexChat
-      # ref: https://github.com/hexchat/hexchat/blob/v2.10.3/src/common/inbound.c#L1728
-      # https://github.com/hexchat/hexchat/blob/dd6f53f5040738f1349d4f0147a2204dc6ffab16/src/common/modes.c#L923
+      # ref: supported_caps in https://github.com/hexchat/hexchat/blob/v2.16.1/src/common/inbound.c#L1715
+      # inbound_005 in https://github.com/hexchat/hexchat/blob/v2.16.1/src/common/modes.c#L923
       link: https://hexchat.github.io
       os:
         - bsd
@@ -173,6 +179,7 @@
           sasl-3.2:
           server-time:
           setname: 2.16
+          standard-replies: Git
           userhost-in-names:
           utf8only: 2.16
           whox:
@@ -180,7 +187,7 @@
           - external
           - plain
     - name: IceChat
-      # ref: CapREQ() in https://github.com/icechat/IceChat/blob/9.50P/src/IceChat/IRCConnection/ParseIRCData.cs
+      # ref: CapREQ() in https://github.com/icechat/IceChat/blob/9.53P/src/IceChat/IRCConnection/ParseIRCData.cs
       link: https://icechat.net
       os:
         - windows
@@ -190,6 +197,7 @@
           account-tag:
           away-notify:
           cap-3.1:
+          cap-3.2:
           cap-notify:
           chghost:
           echo-message:
@@ -199,11 +207,12 @@
           multi-prefix:
           sasl-3.1:
           server-time:
+          sts:
         SASL:
           - plain
     - name: Irssi
-      # ref: https://github.com/irssi/irssi/blob/8a5d5d384ed20cefa3fdc4a65d27fac3e4913a7b/src/irc/core/irc-servers.h#L17
-      # https://github.com/irssi/irssi/blob/afcb48384e1aa1667c21478fabaf238c78c4d6b8/src/irc/core/channels-query.c#L55-L57
+      # ref: CAP_ in https://github.com/irssi/irssi/blob/1.4.3/src/irc/core/irc-servers.h#L17
+      # WHOX_ in https://github.com/irssi/irssi/blob/1.4.3/src/irc/core/channels-query.c#L55-L57
       link: https://irssi.org
       os:
         - bsd
@@ -230,9 +239,6 @@
         SASL:
           - external
           - plain
-      partial:
-        stable:
-          setname: "Git draft cap"
     - name: Konversation
       # ref: Server::initCapablityNames() in https://github.com/KDE/konversation/blob/v21.04.0/src/irc/server.cpp
       # https://github.com/KDE/konversation/blob/a8ac257a30d0c56635a35b12bdb59c45b5868c37/src/irc/inputfilter.cpp#L1283
@@ -281,6 +287,7 @@
           server-time: Git
           starttls:
           userhost-in-names: Git
+          whox:
         SASL:
           - external
           - plain
@@ -336,7 +343,7 @@
           scram-sha-256:
     - name: Mozilla Thunderbird
       # ref: irc{CAP,EchoMessage,MultiPrefix,SASL,ServerTime,WatchMonitor}.jsm files in
-      #      https://searchfox.org/comm-central/source/chat/protocols/irc/
+      #      https://github.com/mozilla/releases-comm-central/tree/219c6396225f9c262cef4fe7766f5c31cefe2a05/chat/protocols/irc
       link: https://www.thunderbird.net/
       os:
         - bsd
@@ -354,6 +361,7 @@
           sasl-3.1:
           sasl-3.2: 72.0+
           server-time: 60.0+
+          whox:
         SASL:
           - plain
     - name: Quassel
@@ -408,7 +416,9 @@
           sasl-3.2:
           server-time:
           setname:
+          standard-replies: Git
           typing-client-tag:
+          whox:
         SASL:
           plain:
     - name: Srain
@@ -448,6 +458,7 @@
           sasl-3.1:
           server-time:
         SASL:
+          - external
           - plain
           - scram-sha-256
     - name: Textual
@@ -474,9 +485,8 @@
           - external
           - plain
     - name: WeeChat
-      # ref: https://weechat.org/files/changelog/ChangeLog-devel.html or IRC_COMMAND_CAP_SUPPORTED_COMPLETION
-      # in https://github.com/weechat/weechat/blob/master/src/plugins/irc/irc-command.h
-      # https://github.com/weechat/weechat/blob/c44b79dce7f2f2dec9e802b001dcf0acdfa049d0/src/plugins/irc/irc-channel.c#L790
+      # ref: https://weechat.org/files/changelog/ChangeLog-devel.html or
+      # https://github.com/weechat/weechat/blob/v3.7.1/doc/en/weechat_user.en.adoc#irc_ircv3_support
       link: https://weechat.org
       os:
         - bsd
@@ -528,7 +538,7 @@
           chathistory:
           echo-message:
           extended-join:
-          extended-monitor: Git
+          extended-monitor:
           invite-notify:
           labeled-response:
           message-tags:
@@ -543,6 +553,7 @@
           whox:
         SASL:
           - plain
+          - oauthbearer
     - name: IRCCloud
       # maintainer: jwheare
       link: https://www.irccloud.com
@@ -556,6 +567,7 @@
           cap-notify:
           cap-3.1:
           cap-3.2:
+          channel-rename:
           channel-context-client-tag:
           chghost:
           echo-message:
@@ -572,6 +584,7 @@
           sasl-3.2:
           server-time:
           setname:
+          standard-replies: Git
           sts:
           userhost-in-names:
           whox:
@@ -637,6 +650,7 @@
           sts:
           userhost-in-names:
           webirc:
+          whox:
         SASL:
           - external
           - plain
@@ -877,9 +891,11 @@
           cap-notify:
           chathistory:
           echo-message:
-          extended-monitor: Git
+          extended-monitor:
+          labeled-response:
           message-tags:
           monitor:
+          msgid:
           multi-prefix:
           read-marker:
           sasl-3.1:
@@ -887,6 +903,8 @@
           server-time:
           setname:
           whox:
+          channel-context-client-tag:
+          reply-client-tag:
           typing-client-tag:
         SASL:
           - plain
@@ -1230,6 +1248,7 @@
           server-time:
           setname:
           sts:
+          standard-replies:
           starttls:
           userhost-in-names:
           utf8only:
@@ -1271,28 +1290,6 @@
           whox:
           reply-client-tag:
           typing-client-tag:
-        SASL:
-          - plain
-          - external
-    - name: PyLink (clientbot)
-      #ref: IRCV3_CAPABILITIES in https://github.com/GLolol/PyLink/blob/devel/protocols/clientbot.py
-      #ref: https://github.com/jlu5/PyLink/blob/ac7339e4605cffe7feadeaf31df54d90996fd39e/protocols/clientbot.py#L771-L772
-      link: https://code.overdrivenetworks.com/pylink
-      support:
-        stable:
-          account-notify: 2.0+
-          account-tag: 2.0+
-          away-notify: 2.0+
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          chghost: 2.0+
-          extended-join: 2.0+
-          multi-prefix:
-          sasl-3.1:
-          sasl-3.2:
-          userhost-in-names: 2.0+
-          whox:
         SASL:
           - plain
           - external

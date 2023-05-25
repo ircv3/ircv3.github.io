@@ -1,22 +1,5 @@
 - name: Servers
   software:
-    - name: BitlBee
-      # ref: https://github.com/bitlbee/bitlbee/blob/3.6/irc_cap.c#L39
-      link: https://bitlbee.org/
-      support:
-        stable:
-          cap-3.1:
-          cap-3.2:
-          sasl-3.1:
-          sasl-3.2:
-          away-notify:
-          extended-join:
-          multi-prefix:
-          userhost-in-names:
-          server-time: 3.6
-      na:
-        stable:
-          webirc:
     - name: Ergo
       # ref: https://ergo.chat/specs.html
       link: https://ergo.chat/
@@ -31,11 +14,12 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-rename:
           chathistory:
           chghost:
           echo-message:
           extended-join:
-          extended-monitor: Git
+          extended-monitor:
           invite-notify:
           labeled-response:
           message-tags:
@@ -47,6 +31,7 @@
           sasl-3.1:
           sasl-3.2:
           server-time:
+          standard-replies: Git
           setname:
           userhost-in-names:
           utf8only:
@@ -121,7 +106,7 @@
           chghost:
           echo-message:
           extended-join:
-          extended-monitor: Git
+          extended-monitor: 3.15.0+
           invite-notify:
           labeled-response:
           message-tags:
@@ -132,6 +117,7 @@
           sasl-3.2:
           server-time:
           setname:
+          standard-replies: Git
           starttls:
           sts:
           userhost-in-names:
