@@ -2,19 +2,19 @@
 
 bsd:
   name: BSD
-  icon: freebsd
+  icon: "fa-brands fa-freebsd"
 
 linux:
   name: GNU/Linux
-  icon: linux
+  icon: "fa-brands fa-linux"
 
 macos:
   name: macOS
-  icon: apple
+  icon: "fa-brands fa-apple"
 
 windows:
   name: Windows
-  icon: windows
+  icon: "fa-brands fa-windows"
 
 # mobile
 android:
