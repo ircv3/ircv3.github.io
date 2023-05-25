@@ -48,20 +48,17 @@ document.
 
 ## Capability Negotiation
 
-Capability negotiation is a vital part of IRCv3. Capabilities let us implement
-protocol changes in backwards-compatible ways, as well as convey various
-information on joining a server.
-
-CAPs are the primary way that IRCv3 features are enabled. As such, most
-software implementing IRCv3 extensions will want to implement capability
-negotiation.
+Capabilities let us implement protocol changes in backwards-compatible
+ways. They also convey various information on joining a server.
+Capability negotiation is a vital part of IRCv3, and lets clients request
+and enable the CAPs they support once they've joined a server.
 
 The [Capability Negotiation spec]({{site.baseurl}}/specs/extensions/capability-negotiation.html)
 conveys the basic listing and requesting of capabilities, and lays the
 framework which most IRCv3 specs use. It also goes over the `302` extensions,
 and [`cap-notify`]({{site.baseurl}}/specs/extensions/capability-negotiation.html#cap-notify)
-– a feature to make clients aware when capabilities are removed from and added
-to the server (for example, if the SASL authentication layer disconnects, the
+– a feature to let clients know when capabilities are added to or removed from
+the server (for example, if the SASL authentication layer disconnects, the
 associated capability may be disabled for a time).
 
 
@@ -84,6 +81,42 @@ developed and implemented independently from the IRC servers themselves
 **Note:** Message tags themselves are used as a foundation for other extensions
 and do not themselves offer any user-facing features. Specific message tags are
 defined in the various IRCv3 specifications.
+
+
+## Account Authentication and Registration
+
+Accounts have become a first-class feature on IRC. They store channel access
+and ownership information, preferences, settings, nickname ownership, and
+even more. Our extensions describe simple account creation and authentication.
+
+The **work-in-progress** [Account Registration spec]({{site.baseurl}}/specs/extensions/account-registration.html)
+lets clients build nice account registration interfaces, instead of making
+users manually send messages to service bots.
+
+SASL lets users authenticate in a standardised way across different IRC
+networks. It gives a way to authenticate while connecting, without having to
+message service bots after they've joined the server. Because SASL allows
+authentication before they've finished connecting, it lets clients join private
+and restricted channels without having to setup complex join-wait systems.
+
+The [v3.1 SASL spec]({{site.baseurl}}/specs/extensions/sasl-3.1.html) defines
+the `AUTHENTICATE` command and `sasl` cap, which work together to allow clients
+to authenticate to the network.
+
+The [v3.2 SASL spec]({{site.baseurl}}/specs/extensions/sasl-3.2.html) defines
+a way to advertise the authentication methods available to clients, allows for
+clients to re-authenticate after services is lost and reconnects, and defines
+what to do if the authentication layer is disconnected or reconnected.
+
+IRC SASL authentication primarily uses the same mechanisms as SASL in other
+protocols. Most commonly:
+
+* [PLAIN](https://tools.ietf.org/search/rfc4616) as defined by RFC 4616
+* [EXTERNAL](https://tools.ietf.org/html/rfc4422#appendix-A) as defined by RFC 4422
+* [SCRAM-SHA-256](https://tools.ietf.org/html/rfc7677) as defined by RFC 7677
+
+For further information on SASL mechanism support, see the
+[SASL Mechanisms page]({{site.baseurl}}/docs/sasl-mechs.html).
 
 
 ---
@@ -135,6 +168,8 @@ The [`batch` spec]({{site.baseurl}}/specs/extensions/batch.html) describes
 the naming of new batch types, the semantics of batches and how clients should
 process them.
 
+The **work-in-progress** [client initiated batch extension]({{site.baseurl}}/specs/extensions/client-batch.html) describes client-to-server batches.
+
 **Note:** Batches themselves are used as a foundation for other extensions and
 do not themselves offer any user-facing features.
 
@@ -148,7 +183,7 @@ Here are the standalone batch types the IRCv3 WG defines:
 
 The Bot mode lets bots mark themselves as such. Other users will see the client as a bot in various ways, and should see a tag on that client's messages if they have requested the `message-tags` capability.
 
-The **work-in-progress** [Bot Mode spec]({{site.baseurl}}/specs/extensions/bot-mode.html) describes the mode and how to see bots that have set the mode on themselves.
+The [Bot Mode spec]({{site.baseurl}}/specs/extensions/bot-mode.html) describes the mode and how to see bots that have set the mode on themselves.
 
 
 ## [Channel renaming]({{site.baseurl}}/specs/extensions/channel-rename.html)
@@ -164,16 +199,24 @@ The `chathistory` extension standardizes a mechanism for clients to request mess
 
 The **work-in-progress** [`chathistory` spec]({{site.baseurl}}/specs/extensions/chathistory.html) describes the syntax and semantics of the new `CHATHISTORY` command.
 
+The **work-in-progress** [`read-marker` spec]({{site.baseurl}}/specs/extensions/read-marker.html) adds a new command to synchronize read markers between several clients of the same user.
 
-## [Changing Usernames and Hostnames]({{site.baseurl}}/specs/extensions/chghost.html)
 
-The `chghost` extension lets clients more easily see when other clients'
+## Changing User Properties
+
+Several extensions allow servers to notify clients of properties of other users that were historically considered nonchanging for the lifetime of a connection.
+
+
+The [`chghost` spec]({{site.baseurl}}/specs/extensions/chghost.html)
+describes the new `CHGHOST` message which lets clients more easily see when other clients'
 usernames and/or hostnames are changed. This replaces the clunky method of
 sending a fake `QUIT`, and then one or more fake `JOIN` messages instead.
 
-The [`chghost` spec]({{site.baseurl}}/specs/extensions/chghost.html)
-describes the new `CHGHOST` message which this extension uses, and how clients
-see these changes.
+The [`setname` spec]({{site.baseurl}}/specs/extensions/setname.html)
+describes the new `SETNAME` message which allows clients to update their realname (gecos)
+after connecting to the server, and see updates from other users.
+This is especially useful as some clients use the realname information
+for avatars and an additional name field.
 
 
 ## Client-Only Tags
@@ -184,6 +227,7 @@ and as such we detail them in their own section here.
 
 Here are the client-only tags the IRCv3 WG defines:
 
+* [The `channel-context` client-only tag]({{site.baseurl}}/specs/client-tags/channel-context.html) **[draft]** indicates the channel a private message should be displayed in.
 * [The `reply` client-only tag]({{site.baseurl}}/specs/client-tags/reply.html) **[draft]** marks that a given message is intended as a reply to a specific sent message.
 * [The `react` client-only tag]({{site.baseurl}}/specs/client-tags/react.html) **[draft]** sends a reaction to a specific sent message, allowing such functionality from other chat systems.
 * [The `typing` client-only tag]({{site.baseurl}}/specs/client-tags/typing.html) lets users know when another user is typing a message in their channel or private message.
@@ -225,6 +269,30 @@ covers the `label` tag, and how clients should send and will receive
 labels.
 
 
+## Listing Users
+
+IRCv3 specifications extend traditional queries (`NAMES`, `WHOIS`, `WHO`)
+to carry more information about other users in a given channel.
+
+The [`multi-prefix` spec]({{site.baseurl}}/specs/extensions/multi-prefix.html)
+details changes to these queries, which allow clients to see all the statuses
+(i.e. voice, chanop) that other clients have in a channel rather than just the
+highest. This improves data tracking for clients and bots, and allows clients
+to display the privilege level of other clients more correctly.
+
+The [`userhost-in-names` spec]({{site.baseurl}}/specs/extensions/userhost-in-names.html)
+describes how the `NAMES` message changes with this capability active, and how
+clients should interpret the changes.
+This allows clients to more easily see the
+user/hostnames of other clients when joining channels. This allows clients to
+better track info and automate client features more easily.
+
+Finally, the [`WHOX` spec]({{site.baseurl}}/specs/extensions/whox.html)
+describes how the `WHO` message and its replies changes with this capability active
+to allow clients to request more data, and how clients should interpret these changes.
+
+
+
 ## [Message IDs]({{site.baseurl}}/specs/extensions/message-ids.html)
 
 The `message-ids` extension allows servers to provide a network-unique
@@ -251,16 +319,8 @@ implementations.
 The [Monitor spec]({{site.baseurl}}/specs/extensions/monitor.html) details this
 command, the relevant `RPL_ISUPPORT` token and the commands used with it.
 
-
-## [Multiple Prefixes]({{site.baseurl}}/specs/extensions/multi-prefix.html)
-
-The `multi-prefix` extension allows clients to see all the statuses
-(i.e. voice, chanop) that other clients have in a channel rather than just the
-highest. This improves data tracking for clients and bots, and allows clients
-to display the privilege level of other clients more correctly.
-
-The [`multi-prefix` spec]({{site.baseurl}}/specs/extensions/multi-prefix.html)
-details the exact messages these changes apply to and how exactly it's used.
+The [Extended Monitor spec]({{site.baseurl}}/specs/extensions/extended-monitor.html)
+builds upon the Monitor spec, and extends it to various events.
 
 
 ## [Multiline messages]({{site.baseurl}}/specs/extensions/multiline.html)
@@ -268,34 +328,6 @@ details the exact messages these changes apply to and how exactly it's used.
 The `multiline` extension adds a new batch type and tag sent by clients and servers to send messages that can exceed the usual byte length limit and that can contain line breaks.
 
 The **work-in-progress** [`multiline` spec]({{site.baseurl}}/specs/extensions/multiline.html) describes how to use the `draft/multiline` batch type and `draft/multiline-concat` tag to achieve this.
-
-## SASL Authentication
-
-SASL allows users to authenticate in a standardised way across different IRC
-networks. This is in opposition to logging in with 'services' such as NickServ,
-and provides a pre-registration way to authenticate. Because SASL allows
-authentication before registration, it allows clients to join certain types of
-restricted channels much more effectively.
-
-The [v3.1 SASL spec]({{site.baseurl}}/specs/extensions/sasl-3.1.html) defines
-the `AUTHENTICATE` command and `sasl` cap, which work together to allow clients
-to authenticate to the network.
-
-The [v3.2 SASL spec]({{site.baseurl}}/specs/extensions/sasl-3.2.html) defines
-a way to advertise the authentication methods available to clients, allows for
-clients to re-authenticate after services is lost and reconnects, and defines
-what to do if the authentication layer is disconnected or reconnected.
-
-IRC SASL authentication primarily uses the same mechanisms as SASL in other
-protocols. Most commonly:
-
-* [PLAIN](https://tools.ietf.org/search/rfc4616) as defined by RFC 4616
-* [EXTERNAL](https://tools.ietf.org/html/rfc4422#appendix-A) as defined by RFC 4422
-* [SCRAM-SHA-256](https://tools.ietf.org/html/rfc7677) as defined by RFC 7677
-
-For further information on SASL mechanism support, see the
-[SASL Mechanisms page]({{site.baseurl}}/docs/sasl-mechs.html).
-
 
 ## [Server Time]({{site.baseurl}}/specs/extensions/server-time.html)
 
@@ -316,17 +348,6 @@ connecting clients.
 The **work-in-progress** [SNI spec]({{site.baseurl}}/docs/sni.html) provides
 guidelines for clients and servers, allowing them to better detect the TLS
 certificate to send based on the server's hostname.
-
-
-## [Setname]({{site.baseurl}}/specs/extensions/setname.html)
-
-Setname allows clients to update their realname (gecos) after connecting to
-the server. This is especially useful as some clients use the realname information
-for avatars and an additional name field.
-
-The [setname spec]({{site.baseurl}}/specs/extensions/setname.html)
-describes how this is implemented, and how clients can update their names and see
-updates from other users.
 
 
 ## [Standard Replies]({{site.baseurl}}/specs/extensions/standard-replies.html)
@@ -351,25 +372,14 @@ capability, how it operates, and various implementation details for both clients
 and servers.
 
 
-## [Userhosts in NAMES]({{site.baseurl}}/specs/extensions/userhost-in-names.html)
-
-The `userhost-in-names` extension allows clients to more easily see the
-user/hostnames of other clients when joining channels. This allows clients to
-better track info and automate client features more easily.
-
-The [`userhost-in-names` spec]({{site.baseurl}}/specs/extensions/userhost-in-names.html)
-describes how the `NAMES` message changes with this capability active, and how
-clients should interpret the changes.
-
-
 ## [UTF8ONLY]({{site.baseurl}}/specs/extensions/utf8-only.html)
 
 The `UTF8ONLY` ISUPPORT token lets servers indicate that they only support
 UTF-8 traffic, allowing clients to set their incoming/outgoing encodings
-automaticaly.
+automatically.
 
 The [`UTF8ONLY` spec]({{site.baseurl}}/specs/extensions/utf8-only.html)
-details the `RPL_ISUPPORT` token and associated messages and functionality.
+details the `RPL_ISUPPORT` token, associated messages, and functionality.
 
 
 ## [WebIRC]({{site.baseurl}}/specs/extensions/webirc.html)
@@ -381,6 +391,14 @@ web-based IRC clients.
 The [`WEBIRC` spec]({{site.baseurl}}/specs/extensions/webirc.html)
 describes how this command works, how to use it, and some best practices to
 keep in mind while implementing this feature.
+
+
+## [WebSocket]({{site.baseurl}}/specs/extensions/websocket.html)
+
+The **work-in-progress** [WebSocket spec]({{site.baseurl}}/specs/extensions/websocket.html)
+describes conventions for transporting IRC lines over the WebSocket protocol.
+This is necessary for browser-based clients, which cannot make conventional
+TCP connections to IRC servers.
 
 
 ---

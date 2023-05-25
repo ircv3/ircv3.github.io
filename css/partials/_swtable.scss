@@ -20,9 +20,11 @@
 }
 
 .support-table {
-  overflow: auto;
+  width: 96vw;
+  position: relative;
+  left: calc(-48vw + 50%);
+  overflow-x: auto;
   margin: 0 auto;
-  max-height: 90vh;
 
   + .support-table {
     margin-top: 2em;
@@ -329,7 +331,7 @@ tr.popup-above .support .hover-popup > div:after {
   color: #4d75b3;
 }
 .os-support-linux {
-  color: #826d2e;
+  color: #222;
 }
 .os-support-bsd {
   color: #a42f2f;

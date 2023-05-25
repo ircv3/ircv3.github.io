@@ -22,33 +22,38 @@
       link: https://ergo.chat/
       support:
         stable:
+          account-notify:
+          account-registration:
+          account-tag:
+          away-notify:
           batch:
           bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
-          sasl-3.1:
-          sasl-3.2:
-          account-notify:
-          account-tag:
-          away-notify:
-          draft/chathistory:
+          chathistory:
           chghost:
           echo-message:
           extended-join:
+          extended-monitor: Git
           invite-notify:
           labeled-response:
           message-tags:
           monitor:
           msgid:
           multi-prefix:
-          draft/multiline:
+          multiline:
+          read-marker:
+          sasl-3.1:
+          sasl-3.2:
           server-time:
           setname:
           userhost-in-names:
           utf8only:
           sts:
           webirc:
+          websockets:
+          whox:
       na:
         stable:
           starttls: supports sts
@@ -68,12 +73,13 @@
           labeled-response:
           message-tags:
           monitor:
-          draft/multiline:
+          multiline:
           msgid:
           multi-prefix:
           setname:
           sts:
           userhost-in-names:
+          whox:
       na:
         stable:
           starttls: supports sts
@@ -82,7 +88,6 @@
       link: https://github.com/ircd-hybrid/ircd-hybrid
       support:
         stable:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -95,6 +100,10 @@
           multi-prefix:
           userhost-in-names:
           webirc:
+          whox:
+      partial:
+        stable:
+          bot-mode: Draft
     - name: InspIRCd
       # maintainer: Sadie
       # ref: https://github.com/inspircd/inspircd/search?q="Cap%3A%3ACapability"
@@ -112,8 +121,9 @@
           chghost:
           echo-message:
           extended-join:
+          extended-monitor: Git
           invite-notify:
-          labeled-response: 3.5+
+          labeled-response:
           message-tags:
           monitor:
           msgid:
@@ -121,11 +131,13 @@
           sasl-3.1:
           sasl-3.2:
           server-time:
-          setname: 3.6+
+          setname:
           starttls:
           sts:
           userhost-in-names:
           webirc:
+          websockets:
+          whox:
     - name: Nefarious IRCu
       # ref: https://github.com/evilnet/nefarious2/blob/2.0/ircd/m_cap.c#L59
       link: https://github.com/evilnet/nefarious2
@@ -140,6 +152,7 @@
           starttls:
           userhost-in-names:
           webirc:
+          whox:
     - name: Planio Team Chat
       link: https://plan.io/business-chat/
       support:
@@ -174,6 +187,7 @@
           starttls:
           userhost-in-names:
           webirc:
+          whox:
     - name: txircd
       link: https://github.com/ElementalAlchemist/txircd
       support:
@@ -205,26 +219,31 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
           chghost:
+          chathistory:
           echo-message:
           extended-join:
-          labeled-response: 5.0.3+
+          extended-monitor: Git
+          invite-notify: 6.0+
+          labeled-response:
           message-tags:
+          monitor: 6.0+
           msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname: 6.0+
           starttls:
           sts:
           userhost-in-names:
           webirc:
-          draft/chathistory: 5.2+
+          websockets:
+          whox:
       partial:
         stable:
-          monitor: "5.0+ add-on"
-          setname: "5.0+ add-on"
+          account-registration: "6.0+ add-on"
+          bot-mode: Draft

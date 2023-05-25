@@ -44,6 +44,7 @@ software:
             - macos
             - windows
             - windows-phone
+            - linux
         support:
           type: mapofmultis
           types:

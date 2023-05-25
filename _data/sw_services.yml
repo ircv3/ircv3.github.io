@@ -15,3 +15,15 @@
           external:
           plain:
           scram-sha-256: "7.3+"
+    - name: X3
+      link: https://github.com/evilnet/x3
+      support:
+        SASL:
+          - external
+          - plain
+    - name: Dalek
+      link: https://github.com/DalekIRC/Dalek-Services
+      support:
+        SASL:
+          - external
+          - plain

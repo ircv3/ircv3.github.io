@@ -8,12 +8,12 @@ stable:
   specs:
     cap-3.1:
       name: CAP
-      description: Capability Negotiation
+      description: Client Capability Negotiation
       link: /specs/extensions/capability-negotiation.html
       required: true
     cap-3.2:
       name: CAP 302
-      description: Capability Negotiation 302 Extensions
+      description: Client Capability Negotiation 302 Extensions
       link: /specs/extensions/capability-negotiation.html#cap-ls-version
       required: true
     cap-notify:
@@ -56,9 +56,8 @@ stable:
       name: Bot Mode
       description: Bot Mode
       link: /specs/extensions/bot-mode.html
-      hide-if-no-support: true
       tags:
-        - draft/bot
+        - bot
       isupport:
         - BOT
     chghost:
@@ -79,6 +78,12 @@ stable:
       link: /specs/extensions/extended-join.html
       caps:
         - extended-join
+    extended-monitor:
+      name: extended-monitor
+      description: Extended Monitor
+      link: /specs/extensions/extended-monitor.html
+      caps:
+        - extended-monitor
     invite-notify:
       name: invite-notify
       description: invite-notify Extension
@@ -178,8 +183,19 @@ stable:
       description: WebIRC Extension
       link: /specs/extensions/webirc.html
       hide-if-no-support: true
+    websockets:
+      name: WebSockets
+      description: WebSockets
+      link: /specs/extensions/websocket.html
+      hide-if-no-support: true
+    whox:
+      name: WHOX
+      description: WHOX Extension
+      link: /specs/extensions/whox.html
+      isupport:
+        - WHOX
 
-    +typing:
+    typing-client-tag:
       name: +typing
       description: Typing client tag
       link: /specs/client-tags/typing.html
@@ -187,7 +203,15 @@ stable:
       tags:
         - +typing
 
-    draft/channel-rename:
+    account-registration:
+      name: draft/account-registration
+      description: Account Registration DRAFT
+      link: /specs/extensions/account-registration.html
+      draft: true
+      caps:
+        - draft/account-registration
+
+    channel-rename:
       name: draft/channel-rename
       description: Channel renaming DRAFT
       link: /specs/extensions/channel-rename.html
@@ -195,7 +219,7 @@ stable:
       caps:
         - draft/channel-rename
 
-    draft/multiline:
+    multiline:
       name: draft/multiline
       description: Multiline messages DRAFT
       link: /specs/extensions/multiline.html
@@ -205,7 +229,7 @@ stable:
       tags:
         - draft/multiline-concat
 
-    draft/chathistory:
+    chathistory:
       name: draft/chathistory
       description: CHATHISTORY Extension DRAFT
       link: /specs/extensions/chathistory.html
@@ -213,17 +237,41 @@ stable:
       caps:
         - draft/chathistory
 
-    +draft/react:
+    react-client-tag:
       name: +draft/react
       description: React client tag DRAFT
       link: /specs/client-tags/react.html
       draft: true
       tags:
         - +draft/react
-    +draft/reply:
+    reply-client-tag:
       name: +draft/reply
       description: Reply client tag DRAFT
       link: /specs/client-tags/reply.html
       draft: true
       tags:
         - +draft/reply
+
+    channel-context-client-tag:
+      name: +draft/channel-context
+      description: Channel context client tag DRAFT
+      link: /specs/client-tags/channel-context.html
+      draft: true
+      tags:
+        - +draft/channel-context
+
+    read-marker:
+      name: draft/read-marker
+      description: Read marker DRAFT
+      link: /specs/extensions/read-marker.html
+      draft: true
+      caps:
+        - draft/read-marker
+
+proposed:
+  name: Proposed Pull Requests
+  specs:
+    pr-resume:
+      name: PR#306 - resume
+      description: PR#306 - resume Extension
+      full-url: https://github.com/ircv3/ircv3-specifications/pull/306

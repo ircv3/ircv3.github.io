@@ -11,15 +11,15 @@
       support:
         stable:
           account-notify:
+          account-registration:
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
-          draft/channel-rename:
-          draft/chathistory:
+          channel-rename:
+          chathistory:
           chghost:
           echo-message:
           extended-join:
@@ -29,7 +29,7 @@
           monitor:
           msgid:
           multi-prefix:
-          draft/multiline:
+          multiline:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -37,6 +37,11 @@
           sts:
           userhost-in-names:
           utf8only:
+          whox:
+      partial:
+        stable:
+          bot-mode: Draft
+          extended-monitor: Draft
     - name: InspIRCd Testnet
       ircd-ver: InspIRCd-3
       net-address:
@@ -56,6 +61,7 @@
           chghost:
           echo-message:
           extended-join:
+          extended-monitor:
           invite-notify:
           message-tags:
           monitor:
@@ -69,6 +75,9 @@
           starttls:
           sts:
           userhost-in-names:
+          utf8only:
+          webirc:
+          whox:
     - name: IRCCloud Teams
       ircd-ver: irccloud-prattle
       net-address:
@@ -93,15 +102,16 @@
           monitor:
           msgid:
           multi-prefix:
-          draft/multiline:
+          multiline:
           setname:
           sts:
           userhost-in-names:
+          whox:
       na:
         stable:
           starttls: direct TLS only
     - name: UnrealIRCd Support
-      ircd-ver: UnrealIRCd-5
+      ircd-ver: UnrealIRCd-6
       net-address:
         link: ircs://irc.unrealircd.org:6697/
         display: irc.unrealircd.org
@@ -112,25 +122,32 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
           chghost:
-          draft/chathistory:
+          chathistory:
           echo-message:
           extended-join:
+          invite-notify:
           labeled-response:
           message-tags:
+          monitor:
           msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname:
           starttls:
           sts:
           userhost-in-names:
           webirc:
+          whox:
+      partial:
+        stable:
+          bot-mode: Draft
+          extended-monitor: Draft
 
 - name: Networks
   note: >
@@ -156,6 +173,39 @@
           sasl-3.1:
           starttls:
           userhost-in-names:
+    - name: IRC4Fun
+      ircd-ver: InspIRCd-3
+      net-address:
+        link: ircs://irc.irc4fun.net:6697/
+        display: irc.irc4fun.net
+      link: https://irc4fun.net
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          userhost-in-names:
+          whox:
+      partial:
+        stable:
+          bot-mode: Draft
     - name: IRCHighWay
       ircd-ver: InspIRCd-2.0
       net-address:
@@ -220,7 +270,6 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -235,10 +284,12 @@
           sasl-3.2:
           server-time:
           setname:
-          userhost-in-names:
           sts:
+          userhost-in-names:
+          whox:
       partial:
         stable:
+          bot-mode: Draft
           message-tags: No client tags
     - name: tilde.chat
       ircd-ver: InspIRCd-3
@@ -252,7 +303,6 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -271,6 +321,10 @@
           setname:
           starttls:
           userhost-in-names:
+          whox:
+      partial:
+        stable:
+          bot-mode: Draft
     - name: PIRC.pl
       ircd-ver: UnrealIRCd-5
       net-address:
@@ -283,7 +337,6 @@
           account-tag:
           away-notify:
           batch:
-          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -302,3 +355,84 @@
           starttls:
           sts:
           userhost-in-names:
+          whox:
+      partial:
+        stable:
+          bot-mode: Draft
+    - name: tldr.chat
+      ircd-ver: Ergo-2.8
+      net-address:
+        link: ircs://irc.tldr.chat:6697/
+        display: tldr.chat
+      link: https://tldr.chat/
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          channel-rename:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          multiline:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          sts:
+          userhost-in-names:
+          utf8only:
+      partial:
+        stable:
+          bot-mode: Draft
+    - name: ergo.chat
+      ircd-ver: Ergo-2.8
+      net-address:
+        link: ircs://irc.ergo.chat:6697/
+        display: ergo.chat
+      link: https://ergo.chat/about-network
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          account-registration:
+          channel-rename:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          multiline:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          sts:
+          userhost-in-names:
+          utf8only:
+          whox:
+      partial:
+        stable:
+          bot-mode: Draft
+          extended-monitor: Draft

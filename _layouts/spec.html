@@ -17,7 +17,7 @@ layout: default
     <p class="spec-status">
         <strong>Updated by:</strong>
         {% for name in page.updated-by %}
-            <a href="{{site.baseurl}}/specs{{site.data.specs[name].url}}">{{site.data.specs[name].name}}</a>{% if forloop.last %}{% else %},{% endif %}
+            <a href="{{site.baseurl}}{{site.data.irc_versions.stable.specs[name].link}}">{{site.data.irc_versions.stable.specs[name].name}}</a>{% if forloop.last %}{% else %},{% endif %}
         {% endfor %}
     </p>
     {% endif %}
@@ -25,7 +25,7 @@ layout: default
     <p class="spec-status">
         <strong>Updates:</strong>
         {% for name in page.updates %}
-            <a href="{{site.baseurl}}/specs{{site.data.specs[name].url}}">{{site.data.specs[name].name}}</a>{% if forloop.last %}{% else %},{% endif %}
+            <a href="{{site.baseurl}}{{site.data.irc_versions.stable.specs[name].link}}">{{site.data.irc_versions.stable.specs[name].name}}</a>{% if forloop.last %}{% else %},{% endif %}
         {% endfor %}
     </p>
     {% endif %}
@@ -33,7 +33,7 @@ layout: default
     <p class="spec-status">
         <strong>Extends:</strong>
         {% for name in page.extends %}
-            <a href="{{site.baseurl}}/specs{{site.data.specs[name].url}}">{{site.data.specs[name].name}}</a>{% if forloop.last %}{% else %},{% endif %}
+            <a href="{{site.baseurl}}{{site.data.irc_versions.stable.specs[name].link}}">{{site.data.irc_versions.stable.specs[name].name}}</a>{% if forloop.last %}{% else %},{% endif %}
         {% endfor %}
     </p>
     {% endif %}
@@ -41,7 +41,7 @@ layout: default
     <p class="spec-status">
         <strong>Extended by:</strong>
         {% for name in page.extended-by %}
-            <a href="{{site.baseurl}}/specs{{site.data.specs[name].url}}">{{site.data.specs[name].name}}</a>{% if forloop.last %}{% else %},{% endif %}
+            <a href="{{site.baseurl}}{{site.data.irc_versions.stable.specs[name].link}}">{{site.data.irc_versions.stable.specs[name].name}}</a>{% if forloop.last %}{% else %},{% endif %}
         {% endfor %}
     </p>
     {% endif %}

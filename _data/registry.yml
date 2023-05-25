@@ -14,6 +14,11 @@
       description: Indicates that the client being `WHOIS`'d is a bot
       specs:
         - bot-mode
+    - numeric: "354"
+      name: RPL_WHOSPCRPL
+      specs:
+        - whox
+      description: Not defined by IRCv3 but extended to allow servers to send more information.
     - numeric: "670"
       name: RPL_STARTTLS
       description: Indicates that the client may begin their TLS handshake
@@ -113,6 +118,10 @@
       specs:
         - account-notify
       description: Notifies clients when other clients in common channels authenticate with or deauthenticate from their account (e.g. NickServ, SASL).
+    - name: account-registration
+      specs:
+        - account-registration
+      description: Indicates support for the REGISTER/VERIFY commands, a standardised way for clients to register accounts.
     - name: account-tag
       specs:
         - account-tag
@@ -153,6 +162,10 @@
       specs:
         - extended-join
       description: Extends the JOIN message to include the account name of the joining client.
+    - name: extended-monitor
+      specs:
+        - extended-monitor
+      description: Extends the MONITOR spec to apply to more events.
     - name: invite-notify
       specs:
         - invite-notify
@@ -181,10 +194,10 @@
       specs:
         - multiline
       description: Allows clients and servers to use send messages that can exceed the usual byte length limit and that can contain line breaks.
-    - name: register
+    - name: read-marker
       specs:
-        - pr-register
-      description: Indicates support for the REGISTER/VERIFY commands, a standardised way for clients to register accounts.
+        - read-marker
+      description: Allows clients of the same user to synchronize read markers.
     - name: sasl
       specs:
         - sasl-3.1
@@ -251,6 +264,10 @@
       specs:
         - typing-client-tag
       description: Allows users to see when other users are typing.
+    - name: +channel-context
+      specs:
+        - channel-context-client-tag
+      description: Indicates the channel a private message should be displayed in.
 
 - name: Batches
   include_numeric: false
@@ -322,9 +339,13 @@
       specs: 
         - userhost-in-names
       description: Not defined by IRCv3 but extended to include account names.
+    - name: MARKREAD
+      specs:
+        - read-marker
+      description: Fetches or stores a read marker.
     - name: REGISTER
       specs:
-        - pr-register
+        - account-registration
       description: Lets clients register user accounts.
     - name: RENAME
       specs: 
@@ -340,12 +361,16 @@
       description: Lets clients send messages with tags but no text content.
     - name: VERIFY
       specs:
-        - pr-register
+        - account-registration
       description: Lets clients verify their newly-registered accounts.
     - name: WEBIRC
       specs: 
         - webirc
       description: Existing command which provides the real IP address of clients to the server when connecting through a gateway.
+    - name: WHO
+      specs:
+        - whox
+      description: Not defined by IRCv3 but extended to allow clients to request more information.
 
 - name: RPL_ISUPPORT
   include_numeric: false
@@ -367,3 +392,7 @@
       specs:
         - utf8only
       description: Indicates the server only accepts UTF-8 encoded messages.
+    - name: WHOX
+      specs:
+        - whox
+      description: Indicates the server supports the extended WHO syntax

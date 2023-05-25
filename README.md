@@ -40,6 +40,14 @@ You should make sure your manually installed local versions match that of [GitHu
 5. `git submodule update --init --recursive`
 6. `jekyll serve`
 
+## Adding New Spec
+
+1. Update the `spec` submodule. If the spec's a draft, confirm that it has the `work-in-progress: true` tag in the yaml header of the file.
+2. List the spec on `_irc/index.md`
+3. Add the spec to `_data/irc_versions.yml` - the name here is what's used in the support lists. Look at the `hide-if-no-support` and `hide-on-servers` options, they affect how the support tables are generated. Make sure you put it in the right place sorting-wise.
+4. Add relevant numerics/capabilities/isupport tokens/... to `_data/registry.yml`
+5. Add the relevant support to the data files!
+
 ## Licenses
 
 The RSS XML feed template was sourced from the [Jekyll RSS Feed Templates](https://github.com/snaptortoise/jekyll-rss-feeds) repo, and is used under this MIT license:
