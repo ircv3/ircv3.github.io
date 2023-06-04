@@ -75,6 +75,11 @@
       description: Indicates a joined channel has been renamed
       specs:
         - channel-rename
+    - command: NICK
+      code: NICKNAME_RESERVED
+      description: Indicates that the desired nickname cannot be claimed because it is reserved, either by another account or by the system
+      specs:
+        - standard-replies
     - command: REGISTER
       code: ACCOUNT_EXISTS
       description: Indicates that the desired account name (the user's nick) has already been registered.
