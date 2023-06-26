@@ -436,33 +436,33 @@
       support:
         stable:
           account-notify:
-          account-tag: 3.5+
+          account-tag:
           away-notify:
           batch: 4.0.0+
           bot-mode:
           cap-notify:
           cap-3.1:
-          cap-3.2: 2.2+
-          chghost: 2.2+
+          cap-3.2:
+          chghost:
           echo-message: 4.0.0+
           extended-join:
-          invite-notify: 2.2+
-          message-tags: 3.3+
+          invite-notify:
+          message-tags:
           monitor:
           multi-prefix:
           multiline: 4.0.0+
           sasl-3.1:
-          sasl-3.2: 3.3+
+          sasl-3.2:
           server-time:
-          setname: 3.3+
+          setname:
           userhost-in-names:
           utf8only: 4.0.0+
           whox:
-          typing-client-tag: 3.3+
+          typing-client-tag:
         SASL:
           external:
           plain:
-          scram-sha-256: 3.2+
+          scram-sha-256:
 
 - name: Web Clients
   software:
