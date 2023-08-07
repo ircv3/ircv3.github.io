@@ -257,6 +257,7 @@
           server-time: Git
           starttls:
           userhost-in-names: Git
+          utf8only: Git
           whox:
         SASL:
           - external
