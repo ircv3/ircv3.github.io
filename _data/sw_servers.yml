@@ -223,6 +223,7 @@
           sasl-3.2:
           server-time:
           setname: 6.0+
+          standard-replies: 6.1+
           starttls:
           sts:
           userhost-in-names:
