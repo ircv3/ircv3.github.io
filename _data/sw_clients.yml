@@ -329,6 +329,17 @@
           whox:
         SASL:
           - plain
+    - name: Pidgin
+      # maintainer: grim
+      link: https://pidgin.im/
+      support:
+        stable:
+          cap-3.1:
+          sasl-3.1:
+        SASL:
+          - plain
+          - scram-sha-1
+          - scram-sha-256
     - name: Quassel
       # ref: knownCaps in https://github.com/quassel/quassel/blob/0.14.0/src/common/irccap.h
       # https://github.com/quassel/quassel/blob/da9c1c9fcf25f9dbd9acb96e6c8d1ff148e55986/src/core/corenetwork.cpp#L1475-L1488
