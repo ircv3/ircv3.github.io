@@ -274,6 +274,22 @@ stable:
       caps:
         - draft/read-marker
 
+    no-implicit-names:
+      name: draft/no-implicit-names
+      description: Disable implicit NAMES responses DRAFT
+      link: /specs/extensions/no-implicit-names.html
+      draft: true
+      caps:
+        - draft/no-implicit-names
+
+    pre-away:
+      name: draft/pre-away
+      description: AWAY during connection registration
+      link: /specs/extensions/pre-away.html
+      draft: true
+      caps:
+        - draft/pre-away
+
 proposed:
   name: Proposed Pull Requests
   specs:
