@@ -194,6 +194,14 @@
       specs:
         - multiline
       description: Allows clients and servers to use send messages that can exceed the usual byte length limit and that can contain line breaks.
+    - name: no-implicit-names
+      specs:
+        - no-implicit-names
+      description: Disables implicit NAMES responses on JOIN.
+    - name: pre-away
+      specs:
+        - pre-away
+      description: Allows clients to send AWAY commands during connection registration.
     - name: read-marker
       specs:
         - read-marker
