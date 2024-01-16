@@ -219,6 +219,7 @@
           monitor: 6.0+
           msgid:
           multi-prefix:
+          no-implicit-names: 6.1.5+
           sasl-3.1:
           sasl-3.2:
           server-time:
