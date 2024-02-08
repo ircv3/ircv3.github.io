@@ -1,4 +1,20 @@
-# User Metadata
+- name: Channel Metadata
+  values:
+    - key: avatar
+      description: Avatar that graphical clients can show alongside the channel's name
+      format: URL with an optional `{size}` substitution denoting the size to load in pixels
+      examples: https://example.com/avatar/16/asdf.jpg
+    - key: display-name
+      description: >-
+        Alternative name to use instead of a channel for display purposes. Useful for gateways
+        to chat services that allow spaces and other characters in nicks. A channel name is
+        required for standard protocol level stuff but can be less prominent in the UI.
+        May contain emoji.
+      format: Any string
+      examples: |-
+        IRCv3 HQ
+        General Support Channel
+
 - name: User Metadata
   values:
     - key: avatar
