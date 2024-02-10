@@ -1072,15 +1072,18 @@
           plain:
     - name: ZNC (as Server)
       # ref: https://github.com/znc/znc/search?q=OnServerCapAvailable+extension%3Acpp
+      #      https://github.com/znc/znc/search?q=AddServerDependentCapability
       #      mSupportedCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/src/IRCSock.cpp
       #      m_mCoreCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/include/znc/Client.h
       link: https://znc.in/
       support:
         stable:
           account-notify:
+          account-tag: 1.9.0+
           away-notify:
           batch:
           cap-3.1:
+          cap-3.2: 1.9.0+
           cap-notify:
           echo-message:
           extended-join:
@@ -1090,14 +1093,18 @@
           whox:
     - name: ZNC (as Client)
       # ref: https://github.com/znc/znc/search?q=OnClientCapLs+extension%3Acpp
+      #      https://github.com/znc/znc/search?q=AddServerDependentCapability
       #      mSupportedCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/src/IRCSock.cpp
       #      m_mCoreCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/include/znc/Client.h
       link: https://znc.in/
       support:
         stable:
           account-notify:
+          account-tag: 1.9.0+
           away-notify:
           cap-3.1:
+          cap-3.2: 1.9.0+
+          cap-notify: 1.9.0+
           extended-join:
           multi-prefix:
           sasl-3.1:
