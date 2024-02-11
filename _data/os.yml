@@ -1,3 +1,21 @@
+# desktop
+
+bsd:
+  name: BSD
+  icon: "fa-brands fa-freebsd"
+
+linux:
+  name: GNU/Linux
+  icon: "fa-brands fa-linux"
+
+macos:
+  name: macOS
+  icon: "fa-brands fa-apple"
+
+windows:
+  name: Windows
+  icon: "fa-brands fa-windows"
+
 # mobile
 android:
   name: Android
