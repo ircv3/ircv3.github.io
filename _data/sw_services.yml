@@ -4,8 +4,9 @@
       link: https://anope.org
       support:
         SASL:
-          - external
-          - plain
+          anonymous: "2.1.0+"
+          external:
+          plain:
     - name: Atheme
       # ref: https://github.com/atheme/atheme/blob/09194357a0fc10afa78ed4138e5e5b241a06e826/doc/SASL
       # ref: https://github.com/atheme/atheme/blob/09194357a0fc10afa78ed4138e5e5b241a06e826/doc/SASL-SCRAM-SHA

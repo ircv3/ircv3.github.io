@@ -43,7 +43,7 @@
           bot-mode: Draft
           extended-monitor: Draft
     - name: InspIRCd Testnet
-      ircd-ver: InspIRCd-3
+      ircd-ver: InspIRCd-4
       net-address:
         link:  ircs://testnet.inspircd.org:6697/
         display: testnet.inspircd.org
@@ -72,6 +72,7 @@
           sasl-3.2:
           server-time:
           setname:
+          standard-replies:
           starttls:
           sts:
           userhost-in-names:

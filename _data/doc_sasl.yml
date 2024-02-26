@@ -1,6 +1,11 @@
 SASL:
   name: SASL Mechanism
   specs:
+    anonymous:
+      name:   ANONYMOUS
+      description: ANONYMOUS SASL mechanism
+      required: true
+      ext_link: "https://tools.ietf.org/html/rfc4505"
     external:
       name: EXTERNAL
       description: EXTERNAL SASL mechanism
