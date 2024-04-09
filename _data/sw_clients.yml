@@ -144,6 +144,23 @@
           - external
           - scram-sha-1
           - scram-sha-256
+    - name: Halloy
+      # ref: https://halloy.squidowl.org/index.html
+      link: https://halloy.squidowl.org
+      support:
+        stable:
+          away-notify:
+          batch:
+          cap-3.1:
+          echo-message:
+          invite-notify:
+          labeled-response:
+          sasl-3.1:
+          server-time:
+          userhost-in-names:
+        SASL:
+          - external
+          - plain
     - name: HexChat
       # ref: supported_caps in https://github.com/hexchat/hexchat/blob/v2.16.1/src/common/inbound.c#L1715
       # inbound_005 in https://github.com/hexchat/hexchat/blob/v2.16.1/src/common/modes.c#L923
