@@ -148,6 +148,10 @@ The [`away-notify` spec]({{site.baseurl}}/specs/extensions/away-notify.html)
 describes how to sign up for these notifications and the `AWAY` message to
 enable this. 
 
+The **work-in-progress** [`pre-away` spec]({{site.baseurl}}/specs/extensions/pre-away.html)
+provides a mechanism to indicate that a new connection was not initiated by
+an end user and does not indicate that the end user is present
+
 
 ## [Batches]({{site.baseurl}}/specs/extensions/batch.html)
 
@@ -187,6 +191,8 @@ The **work-in-progress** [`channel-rename` spec]({{site.baseurl}}/specs/extensio
 ## Persistence
 
 The **work-in-progress** [`chathistory` spec]({{site.baseurl}}/specs/extensions/chathistory.html) describes the syntax and semantics of the new `CHATHISTORY` command, which standardizes a mechanism for clients to request message history from servers or bouncers.
+
+The **work-in-progress** [`message-redaction` spec]({{site.baseurl}}/specs/extensions/message-redaction.html) adds a new command to remove a message from the history, and indicate to other clients they should hide it.
 
 The **work-in-progress** [`read-marker` spec]({{site.baseurl}}/specs/extensions/read-marker.html) adds a new command to synchronize read markers between several clients of the same user.
 
@@ -270,6 +276,10 @@ details changes to these queries, which allow clients to see all the statuses
 (i.e. voice, chanop) that other clients have in a channel rather than just the
 highest. This improves data tracking for clients and bots, and allows clients
 to display the privilege level of other clients more correctly.
+
+The **work-in-progress** [`no-implicit-names` spec]({{site.baseurl}}/specs/extensions/[no-implicit-names.html)
+allows clients to opt-out from automatically receiving a user list when joining
+a channel; reducing connection time for mobile clients.
 
 The [`userhost-in-names` spec]({{site.baseurl}}/specs/extensions/userhost-in-names.html)
 describes how the `NAMES` message changes with this capability active, and how
