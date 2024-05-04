@@ -764,7 +764,6 @@
           extended-monitor:
           invite-notify:
           labeled-response:
-          message-redaction:
           message-tags:
           monitor:
           msgid:
