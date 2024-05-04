@@ -273,10 +273,6 @@ details changes to these queries, which allow clients to see all the statuses
 highest. This improves data tracking for clients and bots, and allows clients
 to display the privilege level of other clients more correctly.
 
-The **work-in-progress** [`no-implicit-names` spec]({{site.baseurl}}/specs/extensions/[no-implicit-names.html)
-allows clients to opt-out from automatically receiving a user list when joining
-a channel; reducing connection time for mobile clients.
-
 The [`userhost-in-names` spec]({{site.baseurl}}/specs/extensions/userhost-in-names.html)
 describes how the `NAMES` message changes with this capability active, and how
 clients should interpret the changes.
