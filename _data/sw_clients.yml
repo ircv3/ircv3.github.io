@@ -908,7 +908,6 @@
           echo-message:
           extended-join:
           labeled-response:
-          message-redaction:
           message-tags:
           monitor:
           msgid:
