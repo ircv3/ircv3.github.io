@@ -148,10 +148,6 @@ The [`away-notify` spec]({{site.baseurl}}/specs/extensions/away-notify.html)
 describes how to sign up for these notifications and the `AWAY` message to
 enable this. 
 
-The **work-in-progress** [`pre-away` spec]({{site.baseurl}}/specs/extensions/pre-away.html)
-provides a mechanism to indicate that a new connection was not initiated by
-an end user and does not indicate that the end user is present
-
 
 ## [Batches]({{site.baseurl}}/specs/extensions/batch.html)
 

@@ -251,22 +251,6 @@ stable:
       caps:
         - draft/message-redaction
 
-    no-implicit-names:
-      name: draft/no-implicit-names
-      description: No Implicit Names DRAFT
-      link: /specs/extensions/no-implicit-names.html
-      draft: true
-      caps:
-        - draft/no-implicit-names
-
-    pre-away:
-      name: draft/pre-away
-      description: Pre-Away DRAFT
-      link: /specs/extensions/pre-away.html
-      draft: true
-      caps:
-        - draft/pre-away
-
     react-client-tag:
       name: +draft/react
       description: React client tag DRAFT
