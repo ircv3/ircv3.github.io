@@ -38,9 +38,12 @@ software:
           required: false
           values:
             - android
+            - bsd
             - ios
-            - windows-phone
             - linux
+            - macos
+            - windows
+            - windows-phone
         support:
           type: mapofmultis
           types:
