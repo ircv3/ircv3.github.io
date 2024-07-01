@@ -437,7 +437,7 @@
         stable:
           bot-mode: Draft
           extended-monitor: Draft
-   - name: BonoboNET
+    - name: BonoboNET
       ircd-ver: unrealircd-6
       net-address:
         link: irc://rany.irc.bnet.eu.org
