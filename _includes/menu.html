@@ -22,18 +22,20 @@
         </a></li>
         <li><a href="#" onclick="document.getElementById('support-dropdown-menu').className == 'dropdown-menu' ? document.getElementById('support-dropdown-menu').className += ' dropped' : document.getElementById('support-dropdown-menu').className = 'dropdown-menu'" class="dropdown-toggle">Support<span class="notablet"> Tables</span> <b class="caret"></b></a>
           <ul id="support-dropdown-menu" class="dropdown-menu">
-            <li><a href="{{ site.baseurl }}/support/networks.html"><span class="fa fa-fw fa-sitemap" aria-hidden="true"></span> <span class="support-dropdown-text">Networks</span></a></li>
-            <li><a href="{{ site.baseurl }}/software/clients.html"><span class="fa fa-fw fa-desktop" aria-hidden="true"></span> <span class="support-dropdown-text">Clients</span></a></li>
-            <li><a href="{{ site.baseurl }}/software/servers.html"><span class="fa fa-fw fa-server" aria-hidden="true"></span> <span class="support-dropdown-text">Servers</span></a></li>
-            <li><a href="{{ site.baseurl }}/software/libraries.html"><span class="fa fa-fw fa-code" aria-hidden="true"></span> <span class="support-dropdown-text">Libraries</span></a></li>
-            <li class="sep"><a href="{{ site.baseurl }}/docs/sasl-mechs.html"><span class="fa fa-fw fa-key" aria-hidden="true"></span> <span class="support-dropdown-text">SASL Mechanisms</span></a></li>
+            <li><a href="{{ site.baseurl }}/support/networks.html"><span class="fa-solid fa-fw fa-sitemap" aria-hidden="true"></span> <span class="support-dropdown-text">Networks</span></a></li>
+            <li><a href="{{ site.baseurl }}/software/clients.html"><span class="fa-solid fa-fw fa-desktop" aria-hidden="true"></span> <span class="support-dropdown-text">Clients</span></a></li>
+            <li><a href="{{ site.baseurl }}/software/servers.html"><span class="fa-solid fa-fw fa-server" aria-hidden="true"></span> <span class="support-dropdown-text">Servers</span></a></li>
+            <li><a href="{{ site.baseurl }}/software/bridges.html"><span class="fa-solid fa-fw fa-bridge" aria-hidden="true"></span> <span class="support-dropdown-text">Bridges</span></a></li>
+            <li><a href="{{ site.baseurl }}/software/libraries.html"><span class="fa-solid fa-fw fa-code" aria-hidden="true"></span> <span class="support-dropdown-text">Libraries</span></a></li>
+            <li class="sep"><a href="{{ site.baseurl }}/docs/sasl-mechs.html"><span class="fa-solid fa-fw fa-key" aria-hidden="true"></span> <span class="support-dropdown-text">SASL Mechanisms</span></a></li>
           </ul>
         </li>
-        <li class="iconsep"><a href="{{ site.github.owner_url }}" title="View on GitHub"><span class="fa fw-fw fa-github"></span></a></li>
-        <li class="iconsep"><a href="https://twitter.com/ircv3" title="IRCv3 on Twitter"><span class="fa fw-fw fa-twitter"></span></a></li>
-        <li class="iconsep{% if current[0] == 'contact.html' %} active{% endif %}"><a href="{{ site.baseurl }}/contact.html" title="Contact"><span class="fa fw-fw fa-comments" aria-hidden="true"></span></a></li>
+        <li class="iconsep"><a href="{{ site.github.owner_url }}" title="View on GitHub"><span class="fa-brands fw-fw fa-github"></span></a></li>
+        <li class="iconsep"><a href="https://twitter.com/ircv3" title="IRCv3 on Twitter"><span class="fa-brands fw-fw fa-twitter"></span></a></li>
+        <li class="iconsep"><a href="https://mastodon.social/@ircv3" title="IRCv3 on the Fediverse"><span class="fa-brands fw-fw fa-mastodon"></span></a></li>
+        <li class="iconsep{% if current[0] == 'contact.html' %} active{% endif %}"><a href="{{ site.baseurl }}/contact.html" title="Contact"><span class="fa-solid fw-fw fa-comments" aria-hidden="true"></span></a></li>
       </ul>
-      <a class="navbar-dropper mobile" href="#" onclick="document.getElementById('navbar-links').className == 'links' ? document.getElementById('navbar-links').className += ' dropped' : document.getElementById('navbar-links').className = 'links'" aria-label="Toggle navigation"><b class="fa fa-bars" aria-hidden="true"></b></a>
+      <a class="navbar-dropper mobile" href="#" onclick="document.getElementById('navbar-links').className == 'links' ? document.getElementById('navbar-links').className += ' dropped' : document.getElementById('navbar-links').className = 'links'" aria-label="Toggle navigation"><b class="fa-solid fa-bars" aria-hidden="true"></b></a>
     </div>
   </div>
 </div>

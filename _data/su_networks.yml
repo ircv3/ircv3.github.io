@@ -23,7 +23,6 @@
           chghost:
           echo-message:
           extended-join:
-          extended-monitor:
           invite-notify:
           labeled-response:
           message-tags:
@@ -42,8 +41,9 @@
       partial:
         stable:
           bot-mode: Draft
+          extended-monitor: Draft
     - name: InspIRCd Testnet
-      ircd-ver: InspIRCd-3
+      ircd-ver: InspIRCd-4
       net-address:
         link:  ircs://testnet.inspircd.org:6697/
         display: testnet.inspircd.org
@@ -72,6 +72,7 @@
           sasl-3.2:
           server-time:
           setname:
+          standard-replies:
           starttls:
           sts:
           userhost-in-names:
@@ -127,7 +128,6 @@
           cap-notify:
           chghost:
           chathistory:
-          extended-monitor:
           echo-message:
           extended-join:
           invite-notify:
@@ -148,6 +148,7 @@
       partial:
         stable:
           bot-mode: Draft
+          extended-monitor: Draft
 
 - name: Networks
   note: >
@@ -414,7 +415,6 @@
           account-registration:
           channel-rename:
           chathistory:
-          extended-monitor:
           chghost:
           echo-message:
           extended-join:
@@ -436,7 +436,7 @@
       partial:
         stable:
           bot-mode: Draft
-          
+          extended-monitor: Draft
    - name: BonoboNET
       ircd-ver: unrealircd-6
       net-address:
@@ -456,4 +456,4 @@
           multi-prefix:
           sasl-3.1:
           starttls:
-          userhost-in-names: 
+          userhost-in-names:

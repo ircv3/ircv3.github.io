@@ -19,20 +19,11 @@ page-header: >
 ---
 
 IRCv3 specifications build on top of the core IRC protocol. The primary core
-IRC protocol specifications are [`RFC1459`](https://tools.ietf.org/html/rfc1459),
-[`RFC2812`](https://tools.ietf.org/html/rfc2812) and [`RFC7194`](https://tools.ietf.org/html/rfc7194).
-To fully understand IRCv3, please read the core IRC protocol specifications
+is described by the ["Modern IRC" specification](https://modern.ircdocs.horse/),
+which supersedes historical IRC protocol specifications ([`RFC1459`](https://tools.ietf.org/html/rfc1459),
+[`RFC2812`](https://tools.ietf.org/html/rfc2812) and [`RFC7194`](https://tools.ietf.org/html/rfc7194)).
+To fully understand IRCv3, please read the "Modern IRC" specification
 followed by the IRCv3 specifications.
-
-**Note:** The core IRC protocol specifications have been widely acknowledged to
-be old, out-of-date, and to not fully or accurately describe how the IRC client
-protocol works today. One of our members has been working on updated core
-protocol specifications [here](https://modern.ircdocs.horse/) which you may find
-useful to consult. Look at core protocol specifications and the IRC ecosystem
-itself for a complete picture of how the IRC protocol works today.
-If you have any questions on the core IRC protocol, please feel free to ask us
-[directly]({{site.baseurl}}/contact.html) or with an issue in our
-[feedback](https://github.com/ircv3/ircv3-ideas) GitHub repository.
 
 The IRCv3 specifications are released when they are stable and have been widely
 tested. [In the past](http://web.archive.org/web/20160402092520/https://ircv3.net/irc/) the WG released specifications as versioned bundles
@@ -193,13 +184,15 @@ The `channel-rename` extension adds a new command sent by clients and servers th
 The **work-in-progress** [`channel-rename` spec]({{site.baseurl}}/specs/extensions/channel-rename.html) describes how to use the `RENAME` command to achieve this.
 
 
-## [Chathistory]({{site.baseurl}}/specs/extensions/chathistory.html)
+## Persistence
 
-The `chathistory` extension standardizes a mechanism for clients to request message history from servers or bouncers.
+The **work-in-progress** [`chathistory` spec]({{site.baseurl}}/specs/extensions/chathistory.html) describes the syntax and semantics of the new `CHATHISTORY` command, which standardizes a mechanism for clients to request message history from servers or bouncers.
 
-The **work-in-progress** [`chathistory` spec]({{site.baseurl}}/specs/extensions/chathistory.html) describes the syntax and semantics of the new `CHATHISTORY` command.
+The **work-in-progress** [`message-redaction` spec]({{site.baseurl}}/specs/extensions/message-redaction.html) adds a new command to remove a message from the history, and indicate to other clients they should hide it.
 
 The **work-in-progress** [`read-marker` spec]({{site.baseurl}}/specs/extensions/read-marker.html) adds a new command to synchronize read markers between several clients of the same user.
+
+The **work-in-progress** [`pre-away` spec]({{site.baseurl}}/specs/extensions/pre-away.html) allows clients to send `AWAY` commands during connection registration.
 
 
 ## Changing User Properties
@@ -287,10 +280,14 @@ This allows clients to more easily see the
 user/hostnames of other clients when joining channels. This allows clients to
 better track info and automate client features more easily.
 
-Finally, the [`WHOX` spec]({{site.baseurl}}/specs/extensions/whox.html)
+The [`WHOX` spec]({{site.baseurl}}/specs/extensions/whox.html)
 describes how the `WHO` message and its replies changes with this capability active
 to allow clients to request more data, and how clients should interpret these changes.
 
+The **work-in-progress** [`no-implicit-names` spec]({{site.baseurl}}/specs/extensions/no-implicit-names.html)
+allows clients to disable the implicit `NAMES` responses sent after `JOIN` in
+case they don't always need that information for all channels. Clients can
+still query that information as needed via the `NAMES` or `WHO` command.
 
 
 ## [Message IDs]({{site.baseurl}}/specs/extensions/message-ids.html)
@@ -319,7 +316,7 @@ implementations.
 The [Monitor spec]({{site.baseurl}}/specs/extensions/monitor.html) details this
 command, the relevant `RPL_ISUPPORT` token and the commands used with it.
 
-The **work-in-progress** [Extended Monitor spec]({{site.baseurl}}/specs/extensions/extended-monitor.html)
+The [Extended Monitor spec]({{site.baseurl}}/specs/extensions/extended-monitor.html)
 builds upon the Monitor spec, and extends it to various events.
 
 

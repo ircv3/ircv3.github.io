@@ -1,0 +1,130 @@
+- name: Bridges
+  software:
+    - name: BitlBee
+      # ref: https://github.com/bitlbee/bitlbee/blob/3.6/irc_cap.c#L39
+      link: https://bitlbee.org/
+      support:
+        stable:
+          cap-3.1:
+          cap-3.2:
+          sasl-3.1:
+          sasl-3.2:
+          away-notify:
+          extended-join:
+          multi-prefix:
+          userhost-in-names:
+          server-time: 3.6
+      na:
+        stable:
+          webirc:
+    - name: Heisenbridge (bouncer mode)
+      # ref: https://github.com/hifi/heisenbridge/blob/v1.14.2/heisenbridge/network_room.py#L1416
+      #      https://github.com/hifi/heisenbridge/blob/v1.14.2/heisenbridge/network_room.py#L1280-L1294
+      #      https://github.com/hifi/heisenbridge/blob/v1.14.2/heisenbridge/network_room.py#L476
+      link: https://github.com/hifi/heisenbridge
+      support:
+        stable:
+          cap-3.1:
+          chghost:
+          message-tags:
+          sasl-3.1:
+        SASL:
+            - external
+            - plain
+      na:
+        stable:
+          account-notify:
+          away-notify:
+          bot-mode:
+          channel-context-client-tag:
+          chghost:
+          userhost-in-names:
+    - name: matrix-appservice-irc
+      # ref: https://github.com/matrix-org/node-irc/blob/1.5.0/src/irc.ts#L339-L352
+      #      https://github.com/matrix-org/node-irc/blob/1.5.0/src/irc.ts#L1199
+      link: https://github.com/matrix-org/matrix-appservice-irc/
+      support:
+        stable:
+          cap-3.1:
+          cap-3.2:
+          sasl-3.1:
+        SASL:
+            - plain
+      na:
+        stable:
+          account-notify:
+          away-notify:
+          bot-mode:
+          channel-context-client-tag:
+          userhost-in-names:
+    - name: Matrix2051
+      # ref: https://github.com/progval/matrix2051/blob/477df0c740e0d411a2e5ec32f18efb28b59f2952/lib/irc/handler.ex#L39-L98
+      link: https://github.com/progval/matrix2051
+      support:
+        stable:
+          account-registration:
+          account-tag:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          channel-rename:
+          chathistory:
+          echo-message:
+          extended-join:
+          invite-notify:
+          labeled-response:
+          message-redaction:
+          message-tags:
+          msgid:
+          multiline:
+          no-implicit-names:
+          sasl-3.1:
+          server-time:
+          standard-replies:
+          userhost-in-names:
+          utf8only:
+          react-client-tag:
+          reply-client-tag:
+        SASL:
+            - plain
+      na:
+        stable:
+          account-notify:
+          away-notify:
+          bot-mode:
+          channel-context-client-tag:
+          chghost:
+    - name: Matterbridge
+      link: https://github.com/42wim/matterbridge
+      # ref: https://github.com/lrstanley/girc/blob/a92667a5c9b441e5a357168a962f58477219e794/cap.go
+      #      https://github.com/42wim/matterbridge/blob/v1.26.0/bridge/irc/irc.go
+      #      https://github.com/42wim/matterbridge/blob/v1.26.0/bridge/irc/handlers.go
+      support:
+        stable:
+          cap-3.1:
+          cap-3.2:
+          sasl-3.1:
+        SASL:
+            - plain
+    - name: PyLink (clientbot mode)
+      #ref: IRCV3_CAPABILITIES in https://github.com/GLolol/PyLink/blob/devel/protocols/clientbot.py
+      #ref: https://github.com/jlu5/PyLink/blob/ac7339e4605cffe7feadeaf31df54d90996fd39e/protocols/clientbot.py#L771-L772
+      link: https://code.overdrivenetworks.com/pylink
+      support:
+        stable:
+          account-notify: 2.0+
+          account-tag: 2.0+
+          away-notify: 2.0+
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost: 2.0+
+          extended-join: 2.0+
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          userhost-in-names: 2.0+
+          whox:
+        SASL:
+          - plain
+          - external

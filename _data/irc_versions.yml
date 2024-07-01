@@ -78,6 +78,12 @@ stable:
       link: /specs/extensions/extended-join.html
       caps:
         - extended-join
+    extended-monitor:
+      name: extended-monitor
+      description: Extended Monitor
+      link: /specs/extensions/extended-monitor.html
+      caps:
+        - extended-monitor
     invite-notify:
       name: invite-notify
       description: invite-notify Extension
@@ -145,6 +151,12 @@ stable:
       link: /specs/extensions/setname.html
       caps:
         - setname
+    standard-replies:
+      name: standard-replies
+      description: standard-replies
+      link: /specs/extensions/standard-replies.html
+      caps:
+        - standard-replies
     starttls:
       name: starttls
       description: tls Extension (STARTTLS)
@@ -213,14 +225,6 @@ stable:
       caps:
         - draft/channel-rename
 
-    extended-monitor:
-      name: draft/extended-monitor
-      description: Extended Monitor DRAFT
-      link: /specs/extensions/extended-monitor.html
-      draft: true
-      caps:
-        - extended-monitor
-
     multiline:
       name: draft/multiline
       description: Multiline messages DRAFT
@@ -238,6 +242,14 @@ stable:
       draft: true
       caps:
         - draft/chathistory
+
+    message-redaction:
+      name: draft/message-redaction
+      description: Message redaction DRAFT
+      link: /specs/extensions/message-redaction.html
+      draft: true
+      caps:
+        - draft/message-redaction
 
     react-client-tag:
       name: +draft/react
@@ -269,6 +281,22 @@ stable:
       draft: true
       caps:
         - draft/read-marker
+
+    no-implicit-names:
+      name: draft/no-implicit-names
+      description: Disable implicit NAMES responses DRAFT
+      link: /specs/extensions/no-implicit-names.html
+      draft: true
+      caps:
+        - draft/no-implicit-names
+
+    pre-away:
+      name: draft/pre-away
+      description: AWAY during connection registration
+      link: /specs/extensions/pre-away.html
+      draft: true
+      caps:
+        - draft/pre-away
 
 proposed:
   name: Proposed Pull Requests

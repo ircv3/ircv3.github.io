@@ -1,0 +1,17 @@
+{% comment %}included in _layouts/spec.html{% endcomment %}
+{% for sw in swlist.software %}
+    {% for specname in sw.support.stable %}
+        {% if specname[0] == spec[0] %}
+            {% assign newname = '<a href="' %}
+            {% assign newname = newname | append: sw.link %}
+            {% assign newname = newname | append: '">' %}
+            {% assign newname = newname | append: sw.name %}
+            {% assign newname = newname | append: '</a>' %}
+            {% if software_names contains newname %}{% else %}
+                {% assign newname = newname | split: "!@#$%^&*(" %}
+                {% assign software_names = software_names | concat: newname %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+

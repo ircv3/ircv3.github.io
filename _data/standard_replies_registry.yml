@@ -75,6 +75,26 @@
       description: Indicates a joined channel has been renamed
       specs:
         - channel-rename
+    - command: REDACT
+      code: INVALID_TARGET
+      description: The client tried to remove messages from a channel they do not have access to, or does not exist
+      specs:
+        - message-redaction
+    - command: REDACT
+      code: REDACT_FORBIDDEN
+      description: The client tried to remove messages from a channel they are not authorised to remove messages from
+      specs:
+        - message-redaction
+    - command: REDACT
+      code: REDACT_WINDOW_EXPIRED
+      description: The client tried to remove a message that cannot be removed anymore
+      specs:
+        - message-redaction
+    - command: REDACT
+      code: UNKNOWN_MSGID
+      description: The client tried to remove a message that does not exist, or is not available anymore
+      specs:
+        - message-redaction
     - command: REGISTER
       code: ACCOUNT_EXISTS
       description: Indicates that the desired account name (the user's nick) has already been registered.
