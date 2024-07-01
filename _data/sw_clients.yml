@@ -1044,12 +1044,14 @@
           event-playback:
           echo-message:
           extended-join:
-          extended-monitor: Git
+          extended-monitor:
           invite-notify:
           message-tags:
           monitor:
           msgid:
           multi-prefix:
+          no-implicit-names:
+          pre-away:
           read-marker:
           sasl-3.1:
           sasl-3.2:
