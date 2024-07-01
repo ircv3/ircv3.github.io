@@ -152,12 +152,18 @@
           away-notify:
           batch:
           cap-3.1:
+          cap-3.2: 2024.7+
+          cap-notify: 2024.7+
           echo-message:
           invite-notify:
           labeled-response:
+          message-tags: 2024.7+
+          multi-prefix: 2024.7+
           sasl-3.1:
           server-time:
           userhost-in-names:
+          utf8only: 2024.7+
+          whox: 2024.7+
         SASL:
           - external
           - plain
