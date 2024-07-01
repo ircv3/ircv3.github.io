@@ -243,6 +243,14 @@ stable:
       caps:
         - draft/chathistory
 
+    message-redaction:
+      name: draft/message-redaction
+      description: Message redaction DRAFT
+      link: /specs/extensions/message-redaction.html
+      draft: true
+      caps:
+        - draft/message-redaction
+
     react-client-tag:
       name: +draft/react
       description: React client tag DRAFT

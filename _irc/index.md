@@ -188,6 +188,8 @@ The **work-in-progress** [`channel-rename` spec]({{site.baseurl}}/specs/extensio
 
 The **work-in-progress** [`chathistory` spec]({{site.baseurl}}/specs/extensions/chathistory.html) describes the syntax and semantics of the new `CHATHISTORY` command, which standardizes a mechanism for clients to request message history from servers or bouncers.
 
+The **work-in-progress** [`message-redaction` spec]({{site.baseurl}}/specs/extensions/message-redaction.html) adds a new command to remove a message from the history, and indicate to other clients they should hide it.
+
 The **work-in-progress** [`read-marker` spec]({{site.baseurl}}/specs/extensions/read-marker.html) adds a new command to synchronize read markers between several clients of the same user.
 
 The **work-in-progress** [`pre-away` spec]({{site.baseurl}}/specs/extensions/pre-away.html) allows clients to send `AWAY` commands during connection registration.

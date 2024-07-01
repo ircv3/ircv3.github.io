@@ -558,6 +558,7 @@
           extended-join:
           extended-monitor:
           invite-notify:
+          message-redaction:
           message-tags:
           monitor:
           msgid:
@@ -877,10 +878,13 @@
           echo-message:
           extended-monitor:
           labeled-response:
+          message-redaction:
           message-tags:
           monitor:
           msgid:
           multi-prefix:
+          no-implicit-names:
+          pre-away:
           read-marker:
           sasl-3.1:
           sasl-3.2:
@@ -1231,6 +1235,7 @@
           invite-notify:
           labeled-response:
           metadata:
+          message-redaction:
           message-tags:
           monitor:
           msgid:
