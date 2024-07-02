@@ -92,7 +92,6 @@
           extended-join:
           invite-notify:
           message-tags:
-          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
@@ -137,12 +136,14 @@
           account-tag:
           away-notify:
           batch:
+          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
           chghost:
           echo-message:
           extended-join:
+          extended-monitor:
           invite-notify:
           labeled-response:
           message-tags:
@@ -153,6 +154,7 @@
           sasl-3.2:
           server-time:
           setname:
+          standard-replies:
           sts:
           userhost-in-names:
           webirc:
