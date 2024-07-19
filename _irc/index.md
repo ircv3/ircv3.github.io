@@ -120,9 +120,7 @@ logged into accounts. This allows for much greater integration between client
 bots and the network's authentication system, as well as better general display
 and authentication of client identities.
 
-The [`account-extban` spec]({{site.baseurl}}/specs/extensions/account-extban.html)
-defines a way to either prevent a specific user account from joining a channel,
-make it exempt from bans, or permanently allow it to an invite-only channel.
+The [`account-extban` spec]({{site.baseurl}}/specs/extensions/account-extban.html) defines an ISUPPORT token allowing clients to construct an EXTBAN targeting a specific user account, e.g. to prevent them from joining a channel, make it exempt from bans, or permanently allow it to an invite-only channel.
 
 The [`account-notify` spec]({{site.baseurl}}/specs/extensions/account-notify.html)
 defines a way for clients to be notified when other clients login to accounts.
