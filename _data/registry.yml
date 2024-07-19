@@ -400,6 +400,10 @@
   include_numeric: false
   include_specs: true
   values:
+    - name: ACCOUNTEXTBAN
+      specs:
+        - account-extban
+      description: Indicates the extended ban prefix(es) name(s) to refer to user accounts in ban/exception/invite lists.
     - name: BOT
       specs:
         - bot-mode

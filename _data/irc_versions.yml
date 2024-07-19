@@ -209,6 +209,13 @@ stable:
       tags:
         - +typing
 
+    account-extban:
+      name: draft/account-extban
+      description: Account Extended Ban DRAFT
+      link: /specs/extensions/account-extban.html
+      draft: true
+      caps:
+        - draft/account-extban
     account-registration:
       name: draft/account-registration
       description: Account Registration DRAFT
