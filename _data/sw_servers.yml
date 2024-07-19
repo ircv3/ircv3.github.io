@@ -163,6 +163,7 @@
           cap-notify:
           sasl-3.1:
           sasl-3.2:
+          account-extban:
           account-notify:
           account-tag:
           away-notify:
@@ -204,6 +205,7 @@
       link: https://www.unrealircd.org
       support:
         stable:
+          account-extban:
           account-notify:
           account-tag:
           away-notify:
