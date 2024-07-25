@@ -1219,6 +1219,7 @@
       link: https://github.com/progval/Limnoria
       support:
         stable:
+          account-extban:
           account-notify:
           account-registration:
           account-tag:
