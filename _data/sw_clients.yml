@@ -441,8 +441,10 @@
         stable:
           account-notify:
           away-notify:
+          batch:
           cap-3.1:
           invite-notify:
+          multi-prefix:
           sasl-3.1:
           server-time:
         SASL:
