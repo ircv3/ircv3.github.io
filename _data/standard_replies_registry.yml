@@ -75,6 +75,10 @@
       description: Indicates a joined channel has been renamed
       specs:
         - channel-rename
+    - command: NICK
+      code: NICKNAME_RESERVED
+      # https://github.com/ircv3/ircv3.github.io/pull/498
+      description: Indicates that the desired nickname cannot be claimed because it is reserved, either by another account or by the system
     - command: REDACT
       code: INVALID_TARGET
       description: The client tried to remove messages from a channel they do not have access to, or does not exist
