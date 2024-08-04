@@ -8,6 +8,7 @@ support:
       required: false
     specs:
       type: mapofdicts
+      required: false
       kids:
         name:
           type: string
