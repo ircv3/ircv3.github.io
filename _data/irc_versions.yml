@@ -307,8 +307,4 @@ stable:
 
 proposed:
   name: Proposed Pull Requests
-  specs:
-    pr-resume:
-      name: PR#306 - resume
-      description: PR#306 - resume Extension
-      full-url: https://github.com/ircv3/ircv3-specifications/pull/306
+  specs: {}

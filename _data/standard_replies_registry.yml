@@ -40,11 +40,6 @@
       description: Any other multiline error
       specs:
         - multiline
-    - command: BRB
-      code: CANNOT_BRB
-      description: Indicates that the BRB attempt was unsuccessful
-      specs:
-        - pr-resume
     - command: CHATHISTORY
       code: INVALID_PARAMS
       description: Indicates that the client sent invalid parameters with their `CHATHISTORY` command
@@ -164,26 +159,6 @@
       description: Indicates any other channel renaming failure
       specs:
         - channel-rename
-    - command: RESUME
-      code: CANNOT_RESUME
-      description: Indicates that the resume attempt was otherwise unsuccessful
-      specs:
-        - pr-resume
-    - command: RESUME
-      code: INSECURE_SESSION
-      description: Indicates that either the old or new session was not connected securely
-      specs:
-        - pr-resume
-    - command: RESUME
-      code: INVALID_TOKEN
-      description: Indicates that the provided resume token was not correct
-      specs:
-        - pr-resume
-    - command: RESUME
-      code: REGISTRATION_IS_COMPLETED
-      description: Indicates that resume failed because connection registration has already completed
-      specs:
-        - pr-resume
     - command: SETNAME
       code: CANNOT_CHANGE_REALNAME
       description: Indicates that the realname could not be otherwise changed
