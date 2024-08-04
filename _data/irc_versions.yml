@@ -307,4 +307,4 @@ stable:
 
 proposed:
   name: Proposed Pull Requests
-  specs:
+  specs: {}
