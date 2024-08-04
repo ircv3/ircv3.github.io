@@ -174,6 +174,10 @@
       specs: 
         - label
       description: Allows clients to correlate requests with server responses
+    - name: message-redaction
+      specs:
+        - message-redaction
+      description: Allows clients to remove messages from chat history.
     - name: message-tags
       specs: 
         - message-tags
@@ -194,6 +198,14 @@
       specs:
         - multiline
       description: Allows clients and servers to use send messages that can exceed the usual byte length limit and that can contain line breaks.
+    - name: no-implicit-names
+      specs:
+        - no-implicit-names
+      description: Disables implicit NAMES responses on JOIN.
+    - name: pre-away
+      specs:
+        - pre-away
+      description: Allows clients to send AWAY commands during connection registration.
     - name: read-marker
       specs:
         - read-marker
@@ -311,6 +323,10 @@
       specs: 
         - account-notify
       description: Notifies clients of new logins by friends.
+    - name: AWAY
+      specs: 
+        - pre-away
+      description: Not defined by IRCv3 but extended to work before connection registration, and take a special `*` parameter
     - name: CAP
       specs: 
         - cap
@@ -347,6 +363,10 @@
       specs:
         - read-marker
       description: Fetches or stores a read marker.
+    - name: REDACT
+      specs:
+        - message-redaction
+      description: Removes a message from the chat history.
     - name: REGISTER
       specs:
         - account-registration
@@ -380,6 +400,10 @@
   include_numeric: false
   include_specs: true
   values:
+    - name: ACCOUNTEXTBAN
+      specs:
+        - account-extban
+      description: Indicates the extended ban prefix(es) name(s) to refer to user accounts in ban/exception/invite lists.
     - name: BOT
       specs:
         - bot-mode

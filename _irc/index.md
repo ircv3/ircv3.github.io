@@ -120,6 +120,8 @@ logged into accounts. This allows for much greater integration between client
 bots and the network's authentication system, as well as better general display
 and authentication of client identities.
 
+The [`account-extban` spec]({{site.baseurl}}/specs/extensions/account-extban.html) defines an ISUPPORT token allowing clients to construct an EXTBAN targeting a specific user account, e.g. to prevent them from joining a channel, make it exempt from bans, or permanently allow it to an invite-only channel.
+
 The [`account-notify` spec]({{site.baseurl}}/specs/extensions/account-notify.html)
 defines a way for clients to be notified when other clients login to accounts.
 This spec defines the `ACCOUNT` message to enable this, use of the `a` WHOX
@@ -184,13 +186,15 @@ The `channel-rename` extension adds a new command sent by clients and servers th
 The **work-in-progress** [`channel-rename` spec]({{site.baseurl}}/specs/extensions/channel-rename.html) describes how to use the `RENAME` command to achieve this.
 
 
-## [Chathistory]({{site.baseurl}}/specs/extensions/chathistory.html)
+## Persistence
 
-The `chathistory` extension standardizes a mechanism for clients to request message history from servers or bouncers.
+The **work-in-progress** [`chathistory` spec]({{site.baseurl}}/specs/extensions/chathistory.html) describes the syntax and semantics of the new `CHATHISTORY` command, which standardizes a mechanism for clients to request message history from servers or bouncers.
 
-The **work-in-progress** [`chathistory` spec]({{site.baseurl}}/specs/extensions/chathistory.html) describes the syntax and semantics of the new `CHATHISTORY` command.
+The **work-in-progress** [`message-redaction` spec]({{site.baseurl}}/specs/extensions/message-redaction.html) adds a new command to remove a message from the history, and indicate to other clients they should hide it.
 
 The **work-in-progress** [`read-marker` spec]({{site.baseurl}}/specs/extensions/read-marker.html) adds a new command to synchronize read markers between several clients of the same user.
+
+The **work-in-progress** [`pre-away` spec]({{site.baseurl}}/specs/extensions/pre-away.html) allows clients to send `AWAY` commands during connection registration.
 
 
 ## Changing User Properties
@@ -278,10 +282,14 @@ This allows clients to more easily see the
 user/hostnames of other clients when joining channels. This allows clients to
 better track info and automate client features more easily.
 
-Finally, the [`WHOX` spec]({{site.baseurl}}/specs/extensions/whox.html)
+The [`WHOX` spec]({{site.baseurl}}/specs/extensions/whox.html)
 describes how the `WHO` message and its replies changes with this capability active
 to allow clients to request more data, and how clients should interpret these changes.
 
+The **work-in-progress** [`no-implicit-names` spec]({{site.baseurl}}/specs/extensions/no-implicit-names.html)
+allows clients to disable the implicit `NAMES` responses sent after `JOIN` in
+case they don't always need that information for all channels. Clients can
+still query that information as needed via the `NAMES` or `WHO` command.
 
 
 ## [Message IDs]({{site.baseurl}}/specs/extensions/message-ids.html)

@@ -144,6 +144,29 @@
           - external
           - scram-sha-1
           - scram-sha-256
+    - name: Halloy
+      # ref: https://halloy.squidowl.org/index.html
+      link: https://halloy.squidowl.org
+      support:
+        stable:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2: 2024.7+
+          cap-notify: 2024.7+
+          echo-message:
+          invite-notify:
+          labeled-response:
+          message-tags: 2024.7+
+          multi-prefix: 2024.7+
+          sasl-3.1:
+          server-time:
+          userhost-in-names:
+          utf8only: 2024.7+
+          whox: 2024.7+
+        SASL:
+          - external
+          - plain
     - name: HexChat
       # ref: supported_caps in https://github.com/hexchat/hexchat/blob/v2.16.1/src/common/inbound.c#L1715
       # inbound_005 in https://github.com/hexchat/hexchat/blob/v2.16.1/src/common/modes.c#L923
@@ -257,6 +280,7 @@
           server-time: Git
           starttls:
           userhost-in-names: Git
+          utf8only: Git
           whox:
         SASL:
           - external
@@ -288,6 +312,7 @@
           chghost:
           echo-message:
           extended-join:
+          extended-monitor:
           invite-notify:
           message-tags:
           labeled-response:
@@ -298,8 +323,10 @@
           sasl-3.2:
           setname:
           server-time:
+          standard-replies:
           starttls:
           sts:
+          typing-client-tag:
           userhost-in-names:
           utf8only:
           whox:
@@ -325,6 +352,17 @@
           whox:
         SASL:
           - plain
+    - name: Pidgin
+      # maintainer: grim
+      link: https://pidgin.im/
+      support:
+        stable:
+          cap-3.1:
+          sasl-3.1:
+        SASL:
+          - plain
+          - scram-sha-1
+          - scram-sha-256
     - name: Quassel
       # ref: knownCaps in https://github.com/quassel/quassel/blob/0.14.0/src/common/irccap.h
       # https://github.com/quassel/quassel/blob/da9c1c9fcf25f9dbd9acb96e6c8d1ff148e55986/src/core/corenetwork.cpp#L1475-L1488
@@ -353,8 +391,8 @@
           - external
           - plain
     - name: senpai
-      # ref: https://git.sr.ht/~taiite/senpai/tree/master/item/irc/session.go#L47
-      link: https://git.sr.ht/~taiite/senpai
+      # ref: https://git.sr.ht/~delthas/senpai/tree/master/item/irc/session.go#L53
+      link: https://git.sr.ht/~delthas/senpai
       support:
         stable:
           away-notify:
@@ -365,14 +403,17 @@
           channel-context-client-tag:
           chathistory:
           echo-message:
+          extended-monitor:
           invite-notify:
+          labeled-response: Git
           message-tags:
+          monitor:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
           server-time:
           setname:
-          standard-replies: Git
+          standard-replies:
           typing-client-tag:
           whox:
         SASL:
@@ -400,8 +441,10 @@
         stable:
           account-notify:
           away-notify:
+          batch:
           cap-3.1:
           invite-notify:
+          multi-prefix:
           sasl-3.1:
           server-time:
         SASL:
@@ -436,28 +479,33 @@
       support:
         stable:
           account-notify:
-          account-tag: 3.5+
+          account-tag:
           away-notify:
+          batch: 4.0.0+
+          bot-mode:
           cap-notify:
           cap-3.1:
-          cap-3.2: 2.2+
-          chghost: 2.2+
+          cap-3.2:
+          chghost:
+          echo-message: 4.0.0+
           extended-join:
-          invite-notify: 2.2+
-          message-tags: 3.3+
+          invite-notify:
+          message-tags:
           monitor:
           multi-prefix:
+          multiline: 4.0.0+
           sasl-3.1:
-          sasl-3.2: 3.3+
+          sasl-3.2:
           server-time:
-          setname: 3.3+
+          setname:
           userhost-in-names:
+          utf8only: 4.0.0+
           whox:
-          typing-client-tag: 3.3+
+          typing-client-tag:
         SASL:
           external:
           plain:
-          scram-sha-256: 3.2+
+          scram-sha-256:
 
 - name: Web Clients
   software:
@@ -515,6 +563,7 @@
           extended-join:
           extended-monitor:
           invite-notify:
+          message-redaction:
           message-tags:
           monitor:
           msgid:
@@ -582,7 +631,6 @@
           extended-join:
           invite-notify:
           message-tags:
-          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
@@ -822,6 +870,7 @@
       os:
         - android
         - linux
+        - ios
       support:
         stable:
           away-notify:
@@ -834,10 +883,13 @@
           echo-message:
           extended-monitor:
           labeled-response:
+          message-redaction:
           message-tags:
           monitor:
           msgid:
           multi-prefix:
+          no-implicit-names:
+          pre-away:
           read-marker:
           sasl-3.1:
           sasl-3.2:
@@ -1001,12 +1053,14 @@
           event-playback:
           echo-message:
           extended-join:
-          extended-monitor: Git
+          extended-monitor:
           invite-notify:
           message-tags:
           monitor:
           msgid:
           multi-prefix:
+          no-implicit-names:
+          pre-away:
           read-marker:
           sasl-3.1:
           sasl-3.2:
@@ -1052,15 +1106,18 @@
           plain:
     - name: ZNC (as Server)
       # ref: https://github.com/znc/znc/search?q=OnServerCapAvailable+extension%3Acpp
+      #      https://github.com/znc/znc/search?q=AddServerDependentCapability
       #      mSupportedCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/src/IRCSock.cpp
       #      m_mCoreCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/include/znc/Client.h
       link: https://znc.in/
       support:
         stable:
           account-notify:
+          account-tag: 1.9.0+
           away-notify:
           batch:
           cap-3.1:
+          cap-3.2: 1.9.0+
           cap-notify:
           echo-message:
           extended-join:
@@ -1070,14 +1127,18 @@
           whox:
     - name: ZNC (as Client)
       # ref: https://github.com/znc/znc/search?q=OnClientCapLs+extension%3Acpp
+      #      https://github.com/znc/znc/search?q=AddServerDependentCapability
       #      mSupportedCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/src/IRCSock.cpp
       #      m_mCoreCaps in https://github.com/znc/znc/blob/99687b0f2489826d35d59e662aebc9ec6cb34996/include/znc/Client.h
       link: https://znc.in/
       support:
         stable:
           account-notify:
+          account-tag: 1.9.0+
           away-notify:
           cap-3.1:
+          cap-3.2: 1.9.0+
+          cap-notify: 1.9.0+
           extended-join:
           multi-prefix:
           sasl-3.1:
@@ -1163,6 +1224,7 @@
       link: https://github.com/progval/Limnoria
       support:
         stable:
+          account-extban:
           account-notify:
           account-registration:
           account-tag:
@@ -1179,6 +1241,7 @@
           invite-notify:
           labeled-response:
           metadata:
+          message-redaction:
           message-tags:
           monitor:
           msgid:

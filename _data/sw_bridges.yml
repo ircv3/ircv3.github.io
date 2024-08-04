@@ -73,9 +73,11 @@
           extended-join:
           invite-notify:
           labeled-response:
+          message-redaction:
           message-tags:
           msgid:
           multiline:
+          no-implicit-names:
           sasl-3.1:
           server-time:
           standard-replies:
