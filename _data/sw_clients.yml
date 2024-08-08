@@ -1207,7 +1207,7 @@
           extended-monitor: 1.10.0+
           invite-notify: 1.9.0+
           message-tags: 1.9.0+
-          msg-id: 1.9.0+
+          msgid: 1.9.0+
           monitor: 1.9.2+
           sasl-3.1: 1.9.2+
           sasl-3.2: 1.9.2+
