@@ -1204,13 +1204,17 @@
           chghost: 1.9.0+
           echo-message: 1.9.0+
           extended-join: 1.9.0+
+          extended-monitor: 1.10.0+
           invite-notify: 1.9.0+
           message-tags: 1.9.0+
+          msg-id: 1.9.0+
           monitor: 1.9.2+
           sasl-3.1: 1.9.2+
           sasl-3.2: 1.9.2+
           server-time: 1.9.0+
           setname: 1.9.0+
+          standard-replies: 1.10.0+
+          userhost-in-names: 1.10.0+
           whox: 1.9.0+
           typing-client-tag: 1.9.0+
         SASL:
