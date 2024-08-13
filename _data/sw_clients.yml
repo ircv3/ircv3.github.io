@@ -120,25 +120,30 @@
           whox:
         SASL:
           - plain
-    - name: Glirc
-      # ref: https://github.com/glguy/irc-core/blob/v2/src/Client/State/Network.hs#L766
+    - name: glirc
+      # ref: selectCaps in https://github.com/glguy/irc-core/blob/v2/src/Client/State/Network.hs
       link: https://hackage.haskell.org/package/glirc
       support:
         stable:
-          account-notify:
-          account-tag:
-          away-notify:
+          account-notify: 2.28+
+          account-tag: 2.39+
+          away-notify: 2.40+
           batch:
           cap-notify:
           cap-3.1:
-          cap-3.2:
-          chghost:
-          extended-join:
+          cap-3.2: 2.30+
+          chghost: 2.30+
+          extended-join: 2.28+
+          extended-monitor: 2.41+
+          invite-notify: 2.41+
+          message-tags: 2.41+
           multi-prefix:
+          monitor: 2.36+
           sasl-3.1:
-          server-time:
-          sts:
-          userhost-in-names:
+          server-time: 2.28+
+          sts: 2.30+
+          userhost-in-names: 2.30+
+          whox: 2.40+
         SASL:
           - plain
           - external
