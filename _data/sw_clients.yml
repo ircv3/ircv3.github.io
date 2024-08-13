@@ -149,8 +149,6 @@
           - external
           - scram-sha-1
           - scram-sha-256
-          - ecdsa-nist256p-challenge
-          - ecdh-x25519-challenge
     - name: Halloy
       # ref: https://halloy.squidowl.org/index.html
       link: https://halloy.squidowl.org
