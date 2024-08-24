@@ -156,10 +156,13 @@
         stable:
           away-notify:
           batch:
+          account-notify: 2024.10+
           cap-3.1:
           cap-3.2: 2024.7+
           cap-notify: 2024.7+
+          chghost: 2024.10+
           echo-message:
+          extended-join: 2024.10+
           invite-notify:
           labeled-response:
           message-tags: 2024.7+
