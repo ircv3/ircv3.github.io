@@ -215,7 +215,6 @@
 
   .os-support {
     text-align: right;
-    margin-left: .5em;
     float: right;
   }
 }
@@ -322,14 +321,20 @@ tr.popup-above .support .hover-popup > div:after {
 .os-support-windows-phone {
   color: #229eda;
 }
-.os-support-ios {
+.os-support-ios, .os-support-macos {
   color: #444;
 }
 .os-support-android {
   color: #9fc234;
 }
+.os-support-windows {
+  color: #4d75b3;
+}
 .os-support-linux {
   color: #222;
+}
+.os-support-bsd {
+  color: #a42f2f;
 }
 
 @media only screen and (max-width: 500px)  {

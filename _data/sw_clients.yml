@@ -3,6 +3,8 @@
     - name: AdiIRC
       # ref: https://dev.adiirc.com/projects/adiirc/wiki/IRCv3
       link: https://www.adiirc.com
+      os:
+        - windows
       support:
         stable:
           account-notify:
@@ -37,6 +39,10 @@
     - name: Ambassador
       # ref: JSIRCV3_SUPPORTED_CAPS in https://github.com/Ascrod/ambassador/blob/7d2b260f1a069e2d11718c576d694f9343c096be/ambassador/js/lib/irc.js
       link: https://github.com/Ascrod/ambassador/
+      os:
+        - linux
+        - macos
+        - windows
       support:
         stable:
           account-notify:
@@ -98,6 +104,8 @@
       # ref: handleCapWithParameters() in https://github.com/colloquy/colloquy/blob/main/Chat%20Core/MVIRCChatConnection.m
       # https://github.com/colloquy/colloquy/blob/4c47cfbaf686e1ac18937e5727b240d7df60d06d/Chat%20Core/MVIRCChatConnection.m#L2036
       link: http://www.colloquy.info
+      os:
+        - macos
       support:
         stable:
           account-notify:
@@ -179,6 +187,11 @@
       # ref: supported_caps in https://github.com/hexchat/hexchat/blob/v2.16.1/src/common/inbound.c#L1715
       # inbound_005 in https://github.com/hexchat/hexchat/blob/v2.16.1/src/common/modes.c#L923
       link: https://hexchat.github.io
+      os:
+        - bsd
+        - linux
+        - macos
+        - windows
       support:
         stable:
           account-notify:
@@ -207,6 +220,8 @@
     - name: IceChat
       # ref: CapREQ() in https://github.com/icechat/IceChat/blob/9.53P/src/IceChat/IRCConnection/ParseIRCData.cs
       link: https://icechat.net
+      os:
+        - windows
       support:
         stable:
           account-notify:
@@ -230,6 +245,11 @@
       # ref: CAP_ in https://github.com/irssi/irssi/blob/1.4.3/src/irc/core/irc-servers.h#L17
       # WHOX_ in https://github.com/irssi/irssi/blob/1.4.3/src/irc/core/channels-query.c#L55-L57
       link: https://irssi.org
+      os:
+        - bsd
+        - linux
+        - macos
+        - windows
       support:
         stable:
           account-notify:
@@ -254,6 +274,11 @@
       # ref: Server::initCapablityNames() in https://github.com/KDE/konversation/blob/v21.04.0/src/irc/server.cpp
       # https://github.com/KDE/konversation/blob/a8ac257a30d0c56635a35b12bdb59c45b5868c37/src/irc/inputfilter.cpp#L1283
       link: https://konversation.kde.org
+      os:
+        - bsd
+        - linux
+        - macos
+        - windows
       support:
         stable:
           account-notify:
@@ -276,6 +301,11 @@
       # ref: cap_add() in https://github.com/kvirc/KVIrc/blob/5.0.0/src/kvirc/kernel/KviIrcConnection.cpp
       # https://github.com/kvirc/KVIrc/blob/5.0.0/src/kvirc/kernel/KviIrcConnection.cpp#L1997-L1999
       link: https://www.kvirc.net
+      os:
+        - bsd
+        - linux
+        - macos
+        - windows
       support:
         stable:
           account-notify: Git
@@ -296,6 +326,8 @@
     - name: LimeChat
       # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
       link: http://limechat.net/mac/
+      os:
+        - macos
       support:
         stable:
           cap-3.1:
@@ -307,6 +339,8 @@
       # ref: https://www.mirc.com/news.html
       #      https://www.mirc.com/versions.txt
       link: https://www.mirc.com
+      os:
+        - windows
       support:
         stable:
           account-notify:
@@ -346,6 +380,11 @@
       # ref: irc{CAP,EchoMessage,MultiPrefix,SASL,ServerTime,WatchMonitor}.jsm files in
       #      https://github.com/mozilla/releases-comm-central/tree/219c6396225f9c262cef4fe7766f5c31cefe2a05/chat/protocols/irc
       link: https://www.thunderbird.net/
+      os:
+        - bsd
+        - linux
+        - macos
+        - windows
       support:
         stable:
           cap-notify: 72.0+
@@ -375,6 +414,11 @@
       # ref: knownCaps in https://github.com/quassel/quassel/blob/0.14.0/src/common/irccap.h
       # https://github.com/quassel/quassel/blob/da9c1c9fcf25f9dbd9acb96e6c8d1ff148e55986/src/core/corenetwork.cpp#L1475-L1488
       link: https://www.quassel-irc.org
+      os:
+        - bsd
+        - linux
+        - macos
+        - windows
       support:
         stable:
           account-notify:
@@ -429,6 +473,11 @@
     - name: Srain
       # ref: https://srain.silverrainz.me/support.html
       link: https://srain.silverrainz.me
+      os:
+        - bsd
+        - linux
+        - macos
+        - windows
       support:
         stable:
           cap-notify:
@@ -445,6 +494,10 @@
     - name: Swirc
       # ref: https://raw.githubusercontent.com/uhlin/swirc/master/CHANGELOG.md
       link: https://www.nifty-networks.net/swirc/
+      os:
+        - bsd
+        - linux
+        - windows
       support:
         stable:
           account-notify:
@@ -463,6 +516,8 @@
       # ref: isCapabilitySupported in https://github.com/Codeux-Software/Textual/blob/55498fb845baf9efe1df93bc4e463edbe5c2057f/Sources/App/Classes/IRC/IRCClient.m
       # ref: https://github.com/Codeux-Software/Textual/blob/v6.0.1/Classes/IRC/IRCClient.m#L4590
       link: https://www.codeux.com/textual
+      os:
+        - macos
       support:
         stable:
           away-notify:
@@ -484,6 +539,10 @@
       # ref: https://weechat.org/files/changelog/ChangeLog-devel.html or
       # https://github.com/weechat/weechat/blob/v3.7.1/doc/en/weechat_user.en.adoc#irc_ircv3_support
       link: https://weechat.org
+      os:
+        - bsd
+        - linux
+        - macos
       support:
         stable:
           account-notify:
