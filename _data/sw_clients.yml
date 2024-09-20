@@ -1321,14 +1321,20 @@
           account-notify: "6.2.0+"
           account-tag: "6.2.0+"
           away-notify: "6.2.0+"
+          bot-mode: "8.0.0+"
           cap-3.1: "4.1.0+"
           cap-3.2: "6.0.0+"
           cap-notify: "6.2.0+"
-          echo-message: "Git (7.0.0+)"
+          chghost: "8.0.0+"
+          echo-message: "7.0.0+"
           extended-join: "6.2.0+"
+          message-tags: "8.0.0+"
           multi-prefix: "4.1.0+"
           sasl-3.1: "4.1.0+"
+          sasl-3.2: "7.1.0+"
           server-time: "6.2.0+"
-          whox:
+          userhost-in-names: "8.0.0+"
+          whox: "6.2.0+"
         SASL:
-          - plain
+          plain: "4.1.0+"
+          external: "8.0.0+"
