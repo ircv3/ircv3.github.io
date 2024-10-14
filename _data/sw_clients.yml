@@ -278,17 +278,17 @@
       link: https://www.kvirc.net
       support:
         stable:
-          account-notify: Git
-          away-notify: Git
+          account-notify:
+          away-notify:
           cap-3.1:
-          chghost: Git
-          extended-join: Git
-          multi-prefix: Git
+          chghost:
+          extended-join:
+          multi-prefix:
           sasl-3.1:
-          server-time: Git
+          server-time:
           starttls:
-          userhost-in-names: Git
-          utf8only: Git
+          userhost-in-names:
+          utf8only:
           whox:
         SASL:
           - external
