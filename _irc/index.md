@@ -308,6 +308,15 @@ and do not themselves offer any user-facing features. Specific IRCv3
 extensions will note their use of (and dependency on) message IDs.
 
 
+## [Metadata]({{site.baseurl}}/specs/extensions/metadata.html)
+
+The **work-in-progress** [`metadata-2`]({{site.baseurl}}/specs/extensions/metadata.html)
+specification is a framework to associate information to users. It succeeds
+the v3.2 `METADATA` command, which was found to have issues related to rate-limiting
+and excessive notifications, which made it impossible for servers in widespread
+use to implement.
+
+
 ## [Monitor]({{site.baseurl}}/specs/extensions/monitor.html)
 
 The `MONITOR` command acts as a standardized way for clients to be alerted when
@@ -408,15 +417,6 @@ TCP connections to IRC servers.
 These extensions have been explicitly **deprecated**. We no longer recommend
 implementing them. Generally, these extensions have either been superseded,
 or other major implementation issues have been discovered with them.
-
-
-## [v3.2 Metadata]({{site.baseurl}}/specs/core/metadata-3.2.html)
-
-The v3.2 `METADATA` command was found to have issues related to rate-limiting
-and excessive notifications, which made it impossible for servers in widespread
-use to implement. A new Metadata specification is being written to address
-these issues and overhaul the notification system, so we do not recommend
-implementing this spec.
 
 
 ## [STARTTLS]({{site.baseurl}}/specs/deprecated/tls.html)

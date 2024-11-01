@@ -104,11 +104,11 @@ stable:
       link: /specs/extensions/message-tags.html
       caps:
         - message-tags
-    metadata3.2:
-      name: Metadata v3.2
-      description: Metadata v3.2 [DEPRECATED]
-      link: /specs/core/metadata-3.2.html
-      deprecated: true
+    metadata:
+      name: Metadata
+      description: Metadata
+      link: /specs/extensions/metadata.html
+      draft: true
     monitor:
       name: Monitor
       description: Monitor

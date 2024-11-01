@@ -54,6 +54,41 @@
       description: Indicates to a client that their monitor list is full
       specs:
         - monitor
+    - numeric: "760"
+      name: RPL_WHOISKEYVALUE
+      description: Provides user metadata within a `WHOIS` response
+      specs:
+        - metadata
+    - numeric: "761"
+      name: RPL_KEYVALUE
+      description: Provides user metadata as a response to a `METADATA` command, or to notify a user's metadata changed
+      specs:
+        - metadata
+    - numeric: "766"
+      name: RPL_KEYNOTSET
+      description: Indicates lack of te requested kind of user metadata as a response to a `METADATA` command, or a notification it was deleted
+      specs:
+        - metadata
+    - numeric: "770"
+      name: RPL_METADATASUBOK
+      description: Indicates success of the `METADATA SUB` command
+      specs:
+        - metadata
+    - numeric: "771"
+      name: RPL_METADATAUNSUBOK
+      description: Indicates success of the `METADATA UNSUB` command
+      specs:
+        - metadata
+    - numeric: "772"
+      name: RPL_METADATASUBS
+      description: Lists metadata keys a client is currently subscribed to, as a response to `METADATA SUBS`
+      specs:
+        - metadata
+    - numeric: "774"
+      name: RPL_METADATASYNCLATER
+      description: Indicates that metadata cannot currently be sent, as a reply to a `JOIN` or `METADATA SYNC` command. The client should request `METADATA SYNC` later
+      specs:
+        - metadata
     - numeric: "900"
       name: RPL_LOGGEDIN
       description: Indicates that the client is logged in
@@ -182,10 +217,14 @@
       specs: 
         - message-tags
       description: Allows clients and servers to use tags more broadly
-    - name: metadata
+    - name: metadata-2
       specs:
-        - metadata-3.2
+        - metadata
       description: Lets clients store metadata about themselves with the server, for other clients to request and retrieve later.
+    - name: metadata-notify-2
+      specs:
+        - metadata
+      description: Lets clients be notified of changes to other users' metadata
     - name: monitor
       specs:
         - monitor
@@ -349,7 +388,7 @@
       description: Not defined by IRCv3 but extended to include usernames and hostnames.
     - name: METADATA
       specs: 
-        - metadata-3.2
+        - metadata
       description: Lets clients store metadata about themselves with the server, for other clients to request and retrieve later.
     - name: MONITOR
       specs: 

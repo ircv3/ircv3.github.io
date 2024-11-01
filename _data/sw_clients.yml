@@ -1252,7 +1252,6 @@
           extended-join:
           invite-notify:
           labeled-response:
-          metadata:
           message-redaction:
           message-tags:
           monitor:
