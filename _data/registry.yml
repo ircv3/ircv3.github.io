@@ -220,11 +220,7 @@
     - name: metadata-2
       specs:
         - metadata
-      description: Lets clients store metadata about themselves with the server, for other clients to request and retrieve later.
-    - name: metadata-notify-2
-      specs:
-        - metadata
-      description: Lets clients be notified of changes to other users' metadata
+      description: Lets clients store metadata about themselves with the server, for other clients to request, retrieve, and be notified later later.
     - name: monitor
       specs:
         - monitor
