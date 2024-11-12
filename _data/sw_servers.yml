@@ -193,7 +193,6 @@
           echo-message:
           extended-join:
           invite-notify:
-          metadata:
           monitor:
           multi-prefix:
           server-time:

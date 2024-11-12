@@ -79,6 +79,51 @@
       description: The client tried to remove messages from a channel they do not have access to, or does not exist
       specs:
         - message-redaction
+    - command: METADATA
+      code: INVALID_TARGET
+      description: The client requested metadata about a non-existent user
+      specs:
+        - metadata
+    - command: METADATA
+      code: KEY_INVALID
+      description: The client tried to get or set an invalid kind of metadata
+      specs:
+        - metadata
+    - command: METADATA
+      code: KEY_NO_PERMISSION
+      description: The client tried to get or set a kind of metadata it is not allowed to
+      specs:
+        - metadata
+    - command: METADATA
+      code: KEY_NOT_SET
+      description: The client tried to remove a metadata key that already does not exist
+      specs:
+        - metadata
+    - command: METADATA
+      code: LIMIT_REACHED
+      description: The client tried to set too many metadata items in a time period
+      specs:
+        - metadata
+    - command: METADATA
+      code: RATE_LIMITED
+      description: The client tried to set too many metadata items in a time period, and should retry in the given number of seconds
+      specs:
+        - metadata
+    - command: METADATA
+      code: SUBCOMMAND_INVALID
+      description: The client sent a `METADATA` command that was not understood
+      specs:
+        - metadata
+    - command: METADATA
+      code: TOO_MANY_SUBS 
+      description: The client tried to subscribe to updates to too many kinds of metadata
+      specs:
+        - metadata
+    - command: METADATA
+      code: VALUE_INVALID
+      description: The client tried to set a metadata item to an invalid value
+      specs:
+        - metadata
     - command: REDACT
       code: REDACT_FORBIDDEN
       description: The client tried to remove messages from a channel they are not authorised to remove messages from
