@@ -17,7 +17,7 @@ Sadly, none during this time span. We'll try to do better next year.
 * Oct 2023 [`no-implicit-names`](https://ircv3.net/specs/extensions/no-implicit-names) - Allows clients to opt out from receiving the user list when joining a channel. This is useful for clients with limited bandwith, to defer loading the user list to the time it is needed, or the connection is less busy; or to avoid redundancy with [WHOX](https://ircv3.net/specs/extensions/whox) [#527](https://github.com/ircv3/ircv3-specifications/pull/527)
 * Apr 2024 [`message-redaction`](https://ircv3.net/specs/extensions/message-redaction)- Allows removing messages from the chat history, or to ask other clients to hide a message [#524](https://github.com/ircv3/ircv3-specifications/pull/524), [#538](https://github.com/ircv3/ircv3-specifications/pull/538)
 * Jul 2024 [`account-extban`](https://ircv3.net/specs/extensions/account-extban) - Standardizes support most servers already had for banning accounts (rather than hostmasks), through a new ISUPPORT token [#464](https://github.com/ircv3/ircv3-specifications/pull/464)
-* Sep 2024 [`metadata-2`] - Latest incarnation of a specification meant to support arbitrary public information on users. The previous version of this specification was deprecated in 2016 due to performance issues [#501](https://github.com/ircv3/ircv3-specifications/pull/501)
+* Sep 2024 [`metadata-2`](https://ircv3.net/specs/extensions/metadata) - Latest incarnation of a specification meant to support arbitrary public information on users. The previous version of this specification was deprecated in 2016 due to performance issues [#501](https://github.com/ircv3/ircv3-specifications/pull/501)
 
 ### Specs updated
 
