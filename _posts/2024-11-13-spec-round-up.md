@@ -38,6 +38,6 @@ Highlights from our ongoing [roadmap](https://github.com/ircv3/ircv3-specificati
 
 We now have an account on the Fediverse, follow us at [@ircv3@mastodon.social](https://mastodon.social/@ircv3).
 
-We updated the [specifications page]({{ site.baseurl }}/irc/) to replace [`RFC1459`](https://tools.ietf.org/html/rfc1459), [`RFC2812`](https://tools.ietf.org/html/rfc2812) and [`RFC7194`](https://tools.ietf.org/html/rfc7194) with ["Modern IRC"](https://modern.ircdocs.horse/) as the base specification IRCv3 builds upon. The latter as matured enough in recent years that we are confident it is a strict improvement over the RFCs in terms of accuracy and completeness. [#469](https://github.com/ircv3/ircv3.github.io/pull/469)
+We updated the [specifications page]({{ site.baseurl }}/irc/) to replace [`RFC1459`](https://tools.ietf.org/html/rfc1459), [`RFC2812`](https://tools.ietf.org/html/rfc2812) and [`RFC7194`](https://tools.ietf.org/html/rfc7194) with ["Modern IRC"](https://modern.ircdocs.horse/) as the base specification IRCv3 builds upon. The latter has matured enough in recent years that we are confident it is a strict improvement over the RFCs in terms of accuracy and completeness. [#469](https://github.com/ircv3/ircv3.github.io/pull/469)
 
 Finally, we recommend you check out [Sable](https://github.com/Libera-Chat/sable), an interesting new IRCd developed by Libera.Chat, with built-in services and gossiping instead of a spanning-tree.
