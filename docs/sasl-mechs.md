@@ -7,7 +7,7 @@ page-header: >
 ---
 IRC SASL authentication primarily uses the same mechanisms as SASL in other protocols. Most commonly:
 
-* [PLAIN](https://tools.ietf.org/search/rfc4616) as defined by RFC 4616
+* [PLAIN](https://tools.ietf.org/html/rfc4616) as defined by RFC 4616
 * [EXTERNAL](https://tools.ietf.org/html/rfc4422#appendix-A) as defined by RFC 4422
 * [SCRAM-SHA-256](https://tools.ietf.org/html/rfc7677) as defined by RFC 7677
 

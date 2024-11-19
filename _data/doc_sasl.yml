@@ -10,7 +10,7 @@ SASL:
       name: PLAIN
       description: PLAIN SASL mechanism
       required: true
-      ext_link: https://tools.ietf.org/search/rfc4616
+      ext_link: https://tools.ietf.org/html/rfc4616
     scram-sha-256:
       name: SCRAM-SHA-256
       description: SASL SCRAM-SHA-256 mechanism
@@ -20,4 +20,4 @@ SASL:
       name: OAUTHBEARER
       description: OAUTHBEARER SASL mechanism
       required: true
-      ext_link: https://www.rfc-editor.org/rfc/rfc7628
+      ext_link: https://tools.ietf.org/html/rfc7628
