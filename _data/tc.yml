@@ -23,9 +23,9 @@
 - nick: emersion
   github: emersion
   projects:
-    - "[gamja](https://git.sr.ht/~emersion/gamja/)"
-    - "[goguma](https://sr.ht/~emersion/goguma/)"
-    - "[soju](https://git.sr.ht/~emersion/soju/)"
+    - "[gamja](https://codeberg.org/emersion/gamja)"
+    - "[goguma](https://codeberg.org/emersion/goguma)"
+    - "[soju](https://soju.im)"
 
 - nick: grawity
   github: grawity
