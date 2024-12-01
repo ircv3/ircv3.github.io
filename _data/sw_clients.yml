@@ -523,9 +523,8 @@
 - name: Web Clients
   software:
     - name: gamja
-      # ref: https://git.sr.ht/~emersion/gamja/tree/master/item/lib/client.js#L3
-      # https://git.sr.ht/~emersion/gamja/tree/26cc073f41df1d1e7cfd5cdf6ebeb92daf31a108/item/lib/client.js#L40
-      link: https://sr.ht/~emersion/gamja
+      # ref: https://codeberg.org/emersion/gamja/src/branch/master/lib/client.js#L3
+      link: https://codeberg.org/emersion/gamja
       support:
         stable:
           account-notify:
@@ -878,8 +877,8 @@
           - plain
           # external is supported if configured on the core via the desktop client
     - name: Goguma
-      # https://git.sr.ht/~emersion/goguma/tree/master/item/lib/client.dart#L60
-      link: https://sr.ht/~emersion/goguma
+      # ref: https://codeberg.org/emersion/goguma/src/branch/master/lib/client.dart#L77
+      link: https://codeberg.org/emersion/goguma
       os:
         - android
         - linux
@@ -1048,9 +1047,8 @@
         stable:
           sts: TLS-only
     - name: soju (as Server)
-      # ref: https://git.sr.ht/~emersion/soju/tree/master/downstream.go#L117
-      # ref: https://git.sr.ht/~emersion/soju/tree/master/downstream.go#L133
-      link: https://sr.ht/~emersion/soju
+      # ref: https://codeberg.org/emersion/soju/src/branch/master/downstream.go#L221
+      link: https://codeberg.org/emersion/soju
       support:
         stable:
           account-notify:
@@ -1087,8 +1085,8 @@
         stable:
           websockets: text only
     - name: soju (as Client)
-      # ref: https://git.sr.ht/~emersion/soju/tree/master/upstream.go#L23
-      link: https://sr.ht/~emersion/soju
+      # ref: https://codeberg.org/emersion/soju/src/branch/master/upstream.go#L28
+      link: https://codeberg.org/emersion/soju
       support:
         stable:
           account-notify:
