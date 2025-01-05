@@ -360,43 +360,6 @@
       partial:
         stable:
           bot-mode: Draft
-    - name: tldr.chat
-      ircd-ver: Ergo-2.8
-      net-address:
-        link: ircs://irc.tldr.chat:6697/
-        display: tldr.chat
-      link: https://tldr.chat/
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          channel-rename:
-          chathistory:
-          chghost:
-          echo-message:
-          extended-join:
-          invite-notify:
-          labeled-response:
-          message-tags:
-          monitor:
-          msgid:
-          multi-prefix:
-          multiline:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          setname:
-          sts:
-          userhost-in-names:
-          utf8only:
-      partial:
-        stable:
-          bot-mode: Draft
     - name: ergo.chat
       ircd-ver: Ergo-2.8
       net-address:
