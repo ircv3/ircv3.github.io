@@ -292,6 +292,44 @@
         stable:
           bot-mode: Draft
           message-tags: No client tags
+    - name: Teranova
+      ircd-ver: InspIRCd-4
+      net-address:
+        link:  ircs://irc.teranova.net:6697/
+        display: irc.teranova.net
+      link: https://www.teranova.net/
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          bot-mode:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          monitor:
+          labeled-response:
+          msgid:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          standard-replies:
+          starttls:
+          sts:
+          userhost-in-names:
+          webirc:
+          whox:
+      partial:
+        stable:
+          message-tags: No client tags
     - name: tilde.chat
       ircd-ver: InspIRCd-3
       net-address:
