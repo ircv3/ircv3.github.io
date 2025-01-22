@@ -169,7 +169,7 @@
           multi-prefix: 2024.7+
           extended-monitor: 2024.11+
           monitor: 2024.11+
-          chathistory: git
+          chathistory: Git
           sasl-3.1:
           server-time:
           userhost-in-names:
