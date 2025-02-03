@@ -169,7 +169,9 @@
           multi-prefix: 2024.7+
           extended-monitor: 2024.11+
           monitor: 2024.11+
+          msgid: 2024.12+
           chathistory: 2025.1+
+          read-marker: 2024.12+
           sasl-3.1:
           server-time:
           setname: 2025.1+
