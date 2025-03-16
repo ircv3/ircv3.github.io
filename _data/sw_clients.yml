@@ -1141,9 +1141,14 @@
           echo-message:
           extended-join:
           multi-prefix:
+          sasl-3.1: 1.10.0+
+          sasl-3.2: 1.10.0+
           server-time:
           userhost-in-names:
           whox:
+        SASL:
+          external: 1.10.0+
+          plain: 1.10.0+
     - name: ZNC (as Client)
       # ref: https://github.com/znc/znc/search?q=OnClientCapLs+extension%3Acpp
       #      https://github.com/znc/znc/search?q=AddServerDependentCapability
