@@ -662,16 +662,6 @@
         SASL:
           - external
           - plain
-    - name: Mibbit
-      # ref: https://wiki.mibbit.com/index.php/SASL
-      #      does not send CAP LS when connecting to a server
-      link: https://www.mibbit.com
-      support:
-        stable:
-          cap-3.1:
-          sasl-3.1:
-        SASL:
-          - plain
     - name: PIRC.pl web client
       # ref: https://github.com/pirc-pl/pirc-gateway/blob/1fbe9c7269073a4d93f703e9f24f1239cfdde56c/js/gateway_cmds.js#L220-L221
       link: https://github.com/pirc-pl/pirc-gateway

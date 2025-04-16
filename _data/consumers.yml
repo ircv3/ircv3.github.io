@@ -4,14 +4,8 @@
 - name: mIRC
   url: https://www.mirc.com/
 
-- name: Mibbit
-  url: https://www.mibbit.com/
-
 - name: ngIRCd
   url: https://ngircd.barton.de/
-
-- name: BitchX
-  url: http://www.bitchx.com/
 
 - name: The Lounge
   url: https://thelounge.chat/
