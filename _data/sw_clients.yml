@@ -1048,6 +1048,7 @@
       link: https://codeberg.org/emersion/soju
       support:
         stable:
+          account-extban:
           account-notify:
           account-tag:
           away-notify:
@@ -1064,6 +1065,7 @@
           extended-monitor:
           invite-notify:
           message-tags:
+          metadata:
           monitor:
           msgid:
           multi-prefix:
@@ -1086,6 +1088,7 @@
       link: https://codeberg.org/emersion/soju
       support:
         stable:
+          account-extban:
           account-notify:
           account-tag:
           away-notify:
