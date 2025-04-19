@@ -1130,6 +1130,7 @@
           chghost: 1.10.0+
           echo-message:
           extended-join:
+          invite-notify: 1.10.0+
           message-tags: 1.10.0+
           multi-prefix:
           sasl-3.1: 1.10.0+
@@ -1156,6 +1157,7 @@
           cap-notify: 1.9.0+
           chghost: 1.10.0+
           extended-join:
+          invite-notify: 1.10.0+
           message-tags: 1.10.0+
           multi-prefix:
           sasl-3.1:
