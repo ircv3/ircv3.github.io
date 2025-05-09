@@ -240,3 +240,4 @@
           account-registration: "6.0+ add-on"
           bot-mode: Draft
           message-redaction: "6.0+ add-on"
+          channel-rename: "6.1+ add-on"
