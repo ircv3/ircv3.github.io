@@ -690,6 +690,28 @@
           typing-client-tag:
         SASL:
           - plain
+    - name: ObsidianIRC
+      #ref https://github.com/ObsidianIRC/ObsidianIRC/blob/609af22ee1c30087e8d9125951f749501398617d/src/store/index.ts#L704 (Replies)
+      #ref https://github.com/ObsidianIRC/ObsidianIRC/blob/609af22ee1c30087e8d9125951f749501398617d/src/store/index.ts#L1035-L1083 (Typing)
+      #ref https://github.com/ObsidianIRC/ObsidianIRC/blob/609af22ee1c30087e8d9125951f749501398617d/src/lib/ircClient.ts#L450 (SASL)
+      link: https://github.com/ObsidianIRC/ObsidianIRC
+      support:
+        stable:
+          cap-3.1:
+          cap-3.2:
+          echo-message:
+          extended-join:
+          message-tags:
+          msgid:
+          multi-prefix:
+          sasl-3.1:
+          server-time:
+          whox:
+          typing-client-tag:
+          reply-client-tag:
+          no-implicit-names:
+        SASL:
+          - plain
 
 - name: Mobile Clients
   software:
