@@ -24,6 +24,7 @@
           labeled-response:
           message-redaction:
           message-tags:
+          metadata: Git
           monitor:
           msgid:
           multi-prefix:

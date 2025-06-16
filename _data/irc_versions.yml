@@ -109,6 +109,8 @@ stable:
       description: Metadata
       link: /specs/extensions/metadata.html
       draft: true
+      caps:
+        - draft/metadata-2
     monitor:
       name: Monitor
       description: Monitor
