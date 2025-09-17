@@ -939,6 +939,7 @@
           setname:
           whox:
           channel-context-client-tag:
+          react-client-tag:
           reply-client-tag:
           typing-client-tag:
         SASL:
