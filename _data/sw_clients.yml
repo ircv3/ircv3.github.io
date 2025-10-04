@@ -710,13 +710,28 @@
         stable:
           cap-3.1:
           cap-3.2:
+          cap-notify:
+          account-notify:
+          account-tag:
+          account-registration:
+          away-notify:
+          batch:
+          bot-mode:
+          channel-rename:
+          chathistory:
           echo-message:
           extended-join:
+          message-redaction:
           message-tags:
           msgid:
+          multiline:
           multi-prefix:
+          react-client-tag:
           sasl-3.1:
           server-time:
+          setname:
+          standard-replies:
+          userhost-in-names:
           whox:
           typing-client-tag:
           reply-client-tag:
