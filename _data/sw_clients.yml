@@ -722,10 +722,12 @@
           chghost:
           echo-message:
           extended-join:
+          extended-monitor:
           invite-notify:
           message-redaction:
           message-tags:
           metadata:
+          monitor:
           msgid:
           multiline:
           multi-prefix:
