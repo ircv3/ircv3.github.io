@@ -708,34 +708,42 @@
       link: https://github.com/ObsidianIRC/ObsidianIRC
       support:
         stable:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
           account-notify:
           account-tag:
           account-registration:
           away-notify:
           batch:
           bot-mode:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
           channel-rename:
           chathistory:
+          chghost:
           echo-message:
           extended-join:
+          extended-monitor:
+          invite-notify:
           message-redaction:
           message-tags:
+          metadata:
+          monitor:
           msgid:
           multiline:
           multi-prefix:
-          react-client-tag:
+          no-implicit-names:
           sasl-3.1:
+          sasl-3.2:
           server-time:
           setname:
           standard-replies:
           userhost-in-names:
           whox:
-          typing-client-tag:
+          # Client tags
+          channel-context-client-tag:
+          react-client-tag:
           reply-client-tag:
-          no-implicit-names:
+          typing-client-tag:
         SASL:
           - plain
 
