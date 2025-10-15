@@ -172,9 +172,9 @@
           echo-message:
           extended-join:
           invite-notify:
-          message-tags:
+          message-tags: 2025-10-10
           monitor:
-          msgid:
+          msgid: 2025-10-10
           multi-prefix:
           server-time:
           starttls:
