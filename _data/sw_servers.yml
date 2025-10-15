@@ -172,7 +172,9 @@
           echo-message:
           extended-join:
           invite-notify:
+          message-tags:
           monitor:
+          msgid:
           multi-prefix:
           server-time:
           starttls:
