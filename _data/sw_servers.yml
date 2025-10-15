@@ -210,6 +210,7 @@
           account-tag:
           away-notify:
           batch:
+          bot-mode:
           cap-3.1:
           cap-3.2:
           cap-notify:
@@ -217,7 +218,7 @@
           chathistory:
           echo-message:
           extended-join:
-          extended-monitor: Git
+          extended-monitor: 6.0+
           invite-notify: 6.0+
           labeled-response:
           message-tags:
@@ -239,6 +240,6 @@
       partial:
         stable:
           account-registration: "6.0+ add-on"
-          bot-mode: Draft
           message-redaction: "6.0+ add-on"
           channel-rename: "6.1+ add-on"
+          metadata: "6.1+ add-on"
