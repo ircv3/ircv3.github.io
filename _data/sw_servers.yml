@@ -219,6 +219,7 @@
           chghost:
           chathistory:
           echo-message:
+          extended-isupport: 6.2+
           extended-join:
           extended-monitor: 6.0+
           invite-notify: 6.0+
@@ -236,6 +237,7 @@
           starttls:
           sts:
           userhost-in-names:
+          utf8only: 6.2+
           webirc:
           websockets:
           whox:
