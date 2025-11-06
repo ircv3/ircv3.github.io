@@ -251,6 +251,14 @@ stable:
       caps:
         - draft/chathistory
 
+    extended-isupport:
+      name: draft/extended-isupport
+      description: extended-isupport Extension DRAFT
+      link: /specs/extensions/extended-isupport.html
+      draft: true
+      caps:
+        - draft/extended-isupport
+
     message-redaction:
       name: draft/message-redaction
       description: Message redaction DRAFT
@@ -258,6 +266,12 @@ stable:
       draft: true
       caps:
         - draft/message-redaction
+
+    network-icon:
+      name: draft/network-icon
+      description: Network Icon DRAFT
+      link: /specs/extensions/network-icon.html
+      draft: true
 
     react-client-tag:
       name: +draft/react
