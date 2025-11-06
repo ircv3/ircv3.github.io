@@ -1121,6 +1121,7 @@
           extended-join:
           extended-monitor:
           invite-notify:
+          message-redaction:
           message-tags:
           metadata:
           monitor:
@@ -1160,6 +1161,7 @@
           extended-monitor: Git
           invite-notify:
           labeled-response:
+          message-redaction:
           message-tags:
           monitor:
           multi-prefix:
