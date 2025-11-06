@@ -193,6 +193,10 @@
       specs:
         - chathistory
       description: Lets clients request JOIN/MODE/etc messages as part of history.
+    - name: extended-isupport
+      specs:
+        - extended-isupport
+      description: Enables clients to request ISUPPORT before connection registration.
     - name: extended-join
       specs:
         - extended-join
@@ -345,6 +349,11 @@
         - netsplitjoin-batch
       description: Indicates that the given clients are quitting as the result of a netsplit (two servers disconnecting).
 
+    - name: draft/isupport
+      specs:
+        - extended-isupport
+      description: Indicates that the given messages belong to a single ISUPPORT burst.
+
 - name: Messages
   include_numeric: false
   include_specs: true
@@ -378,6 +387,10 @@
       specs: 
         - invite-notify
       description: Not defined by IRCv3 but extended to alert other clients that someone's been invited to one of their channels.
+    - name: ISUPPORT
+      specs:
+        - extended-isupport
+      description: Requests ISUPPORT server information.
     - name: JOIN
       specs: 
         - extended-join
@@ -462,3 +475,8 @@
       specs:
         - whox
       description: Indicates the server supports the extended WHO syntax
+
+    - name: draft/ICON
+      specs:
+        - network-icon
+      description: Advertises a server icon.
