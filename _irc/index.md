@@ -253,9 +253,9 @@ interpret these notifications.
 ## `ISUPPORT`
 
 The **work-in-progress** [`extended-isupport` spec]({{site.baseurl}}/specs/extensions/extended-isupport.html)
-allows clients to fetch the `ISUPPORT` metadata prior connection registration,
-introduces a new command to fetch `ISUPPORT` and a new batch type to delimit
-`ISUPPORT` bursts.
+allows clients to fetch the `ISUPPORT` metadata prior to connection
+registration, introduces a new command to fetch `ISUPPORT` and a new batch type
+to delimit `ISUPPORT` bursts.
 
 The **work-in-progress** [network icon spec]({{site.baseurl}}/specs/extensions/network-icon.html)
 introduces a new `ISUPPORT` token to advertise a network icon.
