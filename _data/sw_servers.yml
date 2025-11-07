@@ -1,5 +1,17 @@
 - name: Servers
   software:
+    - name: Codename IRCat
+      link: https://ircat.xyz
+      support:
+        stable:
+          account-tag:
+          cap-3.1:
+          cap-3.2:
+          server-time:
+          webirc:
+        partial:
+          stable:
+            away-notify: Draft
     - name: Ergo
       # ref: https://ergo.chat/specs.html
       link: https://ergo.chat/
