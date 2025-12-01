@@ -128,6 +128,28 @@
           webirc:
           websockets:
           whox:
+    - name: juno
+      # ref: $mod->register_capability() calls in https://github.com/cooper/juno/search?q=$mod->register_capability
+      link: https://github.com/cooper/juno
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          standard-replies:
+          userhost-in-names:
+          utf8only:
+          whox:
+      partial:
+        stable:
+          message-tags: "not sent over S2S"
     - name: Nefarious IRCu
       # ref: https://github.com/evilnet/nefarious2/blob/2.0/ircd/m_cap.c#L59
       link: https://github.com/evilnet/nefarious2
