@@ -1184,11 +1184,11 @@
       support:
         stable:
           account-notify:
-          account-tag: 1.9.0+
+          account-tag:
           away-notify:
           batch:
           cap-3.1:
-          cap-3.2: 1.9.0+
+          cap-3.2:
           cap-notify:
           chghost: 1.10.0+
           echo-message:
@@ -1213,11 +1213,11 @@
       support:
         stable:
           account-notify:
-          account-tag: 1.9.0+
+          account-tag:
           away-notify:
           cap-3.1:
-          cap-3.2: 1.9.0+
-          cap-notify: 1.9.0+
+          cap-3.2:
+          cap-notify:
           chghost: 1.10.0+
           extended-join:
           invite-notify: 1.10.0+
