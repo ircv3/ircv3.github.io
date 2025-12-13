@@ -250,6 +250,7 @@
           monitor: 6.0+
           msgid:
           multi-prefix:
+          network-icon: 6.2.2+
           no-implicit-names: 6.1.5+
           sasl-3.1:
           sasl-3.2:
