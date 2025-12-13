@@ -299,6 +299,7 @@
           account-notify:
           away-notify:
           cap-3.1:
+          cap-notify: 5.2.10+
           chghost:
           extended-join:
           multi-prefix:
