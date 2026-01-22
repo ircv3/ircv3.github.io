@@ -947,13 +947,17 @@
           cap-notify:
           chathistory:
           echo-message:
+          extended-isupport:
+          extended-join:
           extended-monitor:
           labeled-response:
           message-redaction:
           message-tags:
+          metadata:
           monitor:
           msgid:
           multi-prefix:
+          network-icon:
           no-implicit-names:
           pre-away:
           read-marker:
