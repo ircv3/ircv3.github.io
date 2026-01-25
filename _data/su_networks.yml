@@ -441,7 +441,7 @@
     - name: BonoboNET
       ircd-ver: unrealircd-6
       net-address:
-        link: irc://rany.irc.bnet.eu.org
+        link: ircs://rany.irc.bnet.eu.org
         display: rany.bnet.eu.org
       link: https://bnet.eu.org
       support:
