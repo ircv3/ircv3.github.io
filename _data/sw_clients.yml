@@ -850,7 +850,6 @@
           setname:
           userhost-in-names:
           standard-replies:
-          sts:
           whox:
           reply-client-tag:
           channel-context-client-tag:
@@ -859,7 +858,6 @@
         SASL:
           - external
           - plain
-          - scram-sha-256
     - name: IRCCloud
       # maintainer: jwheare
       link: https://www.irccloud.com
