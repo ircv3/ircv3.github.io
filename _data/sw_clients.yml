@@ -820,6 +820,46 @@
           - external
           - plain
           - scram-sha-256
+    - name: AndroidIRCx
+      link: https://play.google.com/store/apps/details?id=com.androidircx
+      os:
+        - android
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          bot-mode:
+          cap-notify:
+          cap-3.1:
+          cap-3.2:
+          chghost:
+          echo-message:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          userhost-in-names:
+          standard-replies:
+          sts:
+          whox:
+          reply-client-tag:
+          channel-context-client-tag:
+          react-client-tag:
+          typing-client-tag:
+        SASL:
+          - external
+          - plain
+          - scram-sha-256
     - name: IRCCloud
       # maintainer: jwheare
       link: https://www.irccloud.com
