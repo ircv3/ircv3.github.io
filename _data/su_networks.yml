@@ -458,3 +458,30 @@
           sasl-3.1:
           starttls:
           userhost-in-names:
+    - name: DBase
+      ircd-ver: unrealircd-6
+      net-address:
+        link: ircs://irc.dbase.in.rs:6697/
+        display: irc.dbase.in.rs
+      link: https://irc.dbase.in.rs
+      support:
+        stable:
+          sasl:
+          tls:
+          away-notify:
+          invite-notify:
+          extended-join:
+          userhost-in-names:
+          multi-prefix:
+          cap-notify:
+          setname:
+          chghost:
+          account-notify:
+          account-tag:
+          message-tags:
+          batch:
+          server-time:
+          echo-message:
+          labeled-response:
+          extended-monitor:
+          standard-replies:
