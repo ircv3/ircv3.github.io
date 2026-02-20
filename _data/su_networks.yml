@@ -45,7 +45,7 @@
     - name: InspIRCd Testnet
       ircd-ver: InspIRCd-4
       net-address:
-        link:  ircs://testnet.inspircd.org:6697/
+        link: ircs://testnet.inspircd.org:6697/
         display: testnet.inspircd.org
       link: https://www.inspircd.org/
       support:
@@ -82,7 +82,7 @@
     - name: IRCCloud Teams
       ircd-ver: irccloud-prattle
       net-address:
-        link:  ircs://team-irc.irccloud.com:6697/
+        link: ircs://team-irc.irccloud.com:6697/
         display: team-irc.irccloud.com
         exit-early: true
       link: https://blog.irccloud.com/private-teams-servers/
@@ -154,6 +154,66 @@
   note: >
     These are real-world networks that have agreed to be listed on this page and support some level of IRCv3 functionality. This is by no means an exhaustive list, just a number of networks that support IRCv3 specs.
   software:
+    - name: BonoboNET
+      ircd-ver: unrealircd-6
+      net-address:
+        link: ircs://rany.irc.bnet.eu.org:6697/
+        display: rany.bnet.eu.org
+      link: https://bnet.eu.org
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          extended-join:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          starttls:
+          userhost-in-names:
+    - name: ergo.chat
+      ircd-ver: Ergo-2.8
+      net-address:
+        link: ircs://irc.ergo.chat:6697/
+        display: ergo.chat
+      link: https://ergo.chat/about-network
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          account-registration:
+          channel-rename:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          multiline:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          sts:
+          userhost-in-names:
+          utf8only:
+          whox:
+      partial:
+        stable:
+          bot-mode: Draft
+          extended-monitor: Draft
     - name: EsperNet
       ircd-ver: charybdis-3.5.3
       net-address:
@@ -174,6 +234,30 @@
           sasl-3.1:
           starttls:
           userhost-in-names:
+    - name: hackint
+      ircd-ver: solanum-1.0-dev
+      net-address:
+        link: ircs://irc.hackint.org:6697
+        display: irc.hackint.org
+      link: https://www.hackint.org/
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          cap-3.1:
+          cap-3.2:
+          chghost:
+          extended-join:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          userhost-in-names:
+          account-tag:
+          cap-notify:
+          echo-message:
+          message-tags:
+          server-time:
+          whox:
     - name: IRC4Fun
       ircd-ver: InspIRCd-3
       net-address:
@@ -244,10 +328,44 @@
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
+    - name: PIRC.pl
+      ircd-ver: UnrealIRCd-5
+      net-address:
+        link: ircs://irc.pirc.pl:6697/
+        display: irc.pirc.pl
+      link: https://pirc.pl/
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          setname:
+          server-time:
+          starttls:
+          sts:
+          userhost-in-names:
+          whox:
+      partial:
+        stable:
+          bot-mode: Draft
     - name: Rizon
       ircd-ver: plexus-4
       net-address:
-        link:  ircs://irc.rizon.net:6697/
+        link: ircs://irc.rizon.net:6697/
         display: irc.rizon.net
       link: https://rizon.net/
       support:
@@ -295,7 +413,7 @@
     - name: Teranova
       ircd-ver: InspIRCd-4
       net-address:
-        link:  ircs://irc.teranova.net:6697/
+        link: ircs://irc.teranova.net:6697/
         display: irc.teranova.net
       link: https://www.teranova.net/
       support:
@@ -364,121 +482,3 @@
       partial:
         stable:
           bot-mode: Draft
-    - name: PIRC.pl
-      ircd-ver: UnrealIRCd-5
-      net-address:
-        link: ircs://irc.pirc.pl:6697/
-        display: irc.pirc.pl
-      link: https://pirc.pl/
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          chghost:
-          echo-message:
-          extended-join:
-          labeled-response:
-          message-tags:
-          monitor:
-          msgid:
-          multi-prefix:
-          sasl-3.1:
-          sasl-3.2:
-          setname:
-          server-time:
-          starttls:
-          sts:
-          userhost-in-names:
-          whox:
-      partial:
-        stable:
-          bot-mode: Draft
-    - name: ergo.chat
-      ircd-ver: Ergo-2.8
-      net-address:
-        link: ircs://irc.ergo.chat:6697/
-        display: ergo.chat
-      link: https://ergo.chat/about-network
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          account-registration:
-          channel-rename:
-          chathistory:
-          chghost:
-          echo-message:
-          extended-join:
-          invite-notify:
-          labeled-response:
-          message-tags:
-          monitor:
-          msgid:
-          multi-prefix:
-          multiline:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          setname:
-          sts:
-          userhost-in-names:
-          utf8only:
-          whox:
-      partial:
-        stable:
-          bot-mode: Draft
-          extended-monitor: Draft
-    - name: BonoboNET
-      ircd-ver: unrealircd-6
-      net-address:
-        link: ircs://rany.irc.bnet.eu.org:6697/
-        display: rany.bnet.eu.org
-      link: https://bnet.eu.org
-      support:
-        stable:
-          account-notify:
-          away-notify:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          chghost:
-          extended-join:
-          monitor:
-          multi-prefix:
-          sasl-3.1:
-          starttls:
-          userhost-in-names:
-    - name: hackint
-      ircd-ver: solanum-1.0-dev
-      net-address:
-        link: ircs://irc.hackint.org:6697
-        display: irc.hackint.org
-      link: https://www.hackint.org/
-      support:
-        stable:
-          account-notify:
-          away-notify:
-          cap-3.1:
-          cap-3.2:
-          chghost:
-          extended-join:
-          multi-prefix:
-          sasl-3.1:
-          sasl-3.2:
-          userhost-in-names:
-          account-tag:
-          cap-notify:
-          echo-message:
-          message-tags:
-          server-time:
-          whox:
