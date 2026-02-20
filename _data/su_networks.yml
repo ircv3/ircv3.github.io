@@ -458,3 +458,23 @@
           sasl-3.1:
           starttls:
           userhost-in-names:
+    - name: hackint
+      ircd-ver: solanum-1.0-dev
+      net-address:
+        link: ircs://irc.hackint.org:6697
+        display: irc.hackint.org
+      link: https://www.hackint.org/
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          chghost:
+          extended-join:
+          multi-prefix:
+          sasl-3.1:
+          userhost-in-names:
+          account-tag:
+          cap-notify:
+          echo-message:
+          message-tags:
+          server-time:
