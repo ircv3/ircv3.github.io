@@ -40,6 +40,21 @@
       description: Any other multiline error
       specs:
         - multiline
+    - command: BATCH
+      code: INVALID_REFTAG
+      description: The provided reference tag contains disallowed characters
+      specs:
+        - client-batch
+    - command: BATCH
+      code: TIMEOUT
+      description: The batch was left open for too long
+      specs:
+        - client-batch
+    - command: BATCH
+      code: UNKNOWN_TYPE
+      description: The batch type is not recognized by the server
+      specs:
+        - client-batch
     - command: CHATHISTORY
       code: INVALID_PARAMS
       description: Indicates that the client sent invalid parameters with their `CHATHISTORY` command

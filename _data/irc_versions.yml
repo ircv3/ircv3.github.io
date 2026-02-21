@@ -52,6 +52,10 @@ stable:
         - batch
       tags:
         - batch
+    client-batch:
+      name: client-batch
+      description: Client initiated batch Extension
+      link: /specs/extensions/client-batch.html
     bot-mode:
       name: Bot Mode
       description: Bot Mode
@@ -275,18 +279,19 @@ stable:
 
     react-client-tag:
       name: +draft/react
-      description: React client tag DRAFT
+      description: React and unreact client tags DRAFT
       link: /specs/client-tags/react.html
       draft: true
       tags:
         - +draft/react
+        - +draft/unreact
     reply-client-tag:
-      name: +draft/reply
-      description: Reply client tag DRAFT
+      name: +reply
+      description: Reply client tag
       link: /specs/client-tags/reply.html
-      draft: true
+      hide-if-no-support: true
       tags:
-        - +draft/reply
+        - +reply
 
     channel-context-client-tag:
       name: +draft/channel-context
