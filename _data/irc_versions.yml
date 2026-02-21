@@ -56,6 +56,7 @@ stable:
       name: client-batch
       description: Client initiated batch Extension
       link: /specs/extensions/client-batch.html
+      draft: true
     bot-mode:
       name: Bot Mode
       description: Bot Mode
