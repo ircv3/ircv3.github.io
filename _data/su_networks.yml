@@ -318,16 +318,21 @@
           account-notify:
           account-tag:
           away-notify:
+          batch:
           cap-3.1:
           cap-3.2:
           cap-notify:
           chghost:
           echo-message:
           extended-join:
+          invite-notify:
+          message-tags:
           monitor:
+          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
+          server-time:
     - name: PIRC.pl
       ircd-ver: UnrealIRCd-5
       net-address:
