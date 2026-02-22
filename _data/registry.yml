@@ -311,6 +311,10 @@
       specs:
         - react-client-tag
       description: Sends a reaction to a specific sent message.
+    - name: +unreact
+      specs:
+        - react-client-tag
+      description: Removes a reaction from a specific sent message.
     - name: +reply
       specs:
         - reply-client-tag

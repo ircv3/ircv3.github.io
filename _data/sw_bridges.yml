@@ -84,9 +84,11 @@
           userhost-in-names:
           utf8only:
           react-client-tag:
-          reply-client-tag:
         SASL:
             - plain
+      partial:
+        stable:
+          reply-client-tag: "draft cap"
       na:
         stable:
           account-notify:
