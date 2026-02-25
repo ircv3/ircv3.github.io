@@ -540,6 +540,24 @@
           external:
           plain:
           scram-sha-256:
+    - name: xC
+      # ref: https://git.janouch.name/p/xK/src/branch/master/NEWS
+      link: https://git.janouch.name/p/xK
+      support:
+        stable:
+          away-notify:
+          cap-notify:
+          cap-3.1:
+          cap-3.2:
+          chghost:
+          echo-message:
+          invite-notify:
+          message-tags:
+          multi-prefix:
+          sasl-3.1:
+          server-time:
+        SASL:
+          external:
 
 - name: Web Clients
   software:
