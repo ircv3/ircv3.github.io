@@ -326,13 +326,15 @@
           echo-message:
           extended-join:
           invite-notify:
-          message-tags: Limited client tags
           monitor:
           msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
           server-time:
+      partial:
+        stable:
+          message-tags: Filtered client tags
     - name: PIRC.pl
       ircd-ver: UnrealIRCd-5
       net-address:
