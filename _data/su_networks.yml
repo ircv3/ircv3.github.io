@@ -326,7 +326,7 @@
           echo-message:
           extended-join:
           invite-notify:
-          message-tags:
+          message-tags: Limited client tags
           monitor:
           msgid:
           multi-prefix:
