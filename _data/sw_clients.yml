@@ -625,7 +625,7 @@
           sasl-3.2:
           server-time:
           setname:
-          standard-replies: Git
+          standard-replies:
           sts:
           userhost-in-names:
           whox:
