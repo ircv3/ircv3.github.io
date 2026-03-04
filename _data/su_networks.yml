@@ -243,20 +243,23 @@
       support:
         stable:
           account-notify:
+          account-tag:
           away-notify:
+          batch:
           cap-3.1:
           cap-3.2:
+          cap-notify:
           chghost:
+          echo-message:
           extended-join:
+          message-tags:
+          monitor:
+          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
-          userhost-in-names:
-          account-tag:
-          cap-notify:
-          echo-message:
-          message-tags:
           server-time:
+          userhost-in-names:
           whox:
     - name: IRC4Fun
       ircd-ver: InspIRCd-3
