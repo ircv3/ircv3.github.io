@@ -56,6 +56,15 @@
       format: Valid URL
       examples: |-
         https://example.com/bot-info.html
+    - key: pronouns
+      description: >-
+        Text that can be displayed in a user's profile so that others know how to refer to them.
+
+        Should not be parsed or localized.
+      format: Any string
+      examples: |-
+        they/them
+        she/her (妳/她)
     - key: status
       description: Status text that can be shown for users without making them 'away'
       format: Any string
