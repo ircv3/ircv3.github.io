@@ -60,7 +60,7 @@
       description: >-
         Text that can be displayed in a user's profile so that others know how to refer to them.
 
-        Should not be parsed or localized.
+        This value should be used as-is, and software reading this value should not parse or localize it
       format: Any string
       examples: |-
         they/them
