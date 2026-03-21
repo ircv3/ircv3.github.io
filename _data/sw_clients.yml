@@ -192,6 +192,9 @@
           userhost-in-names:
           utf8only: 2024.7+
           whox: 2024.7+
+          react-client-tag: 2026.4+
+          typing-client-tag: 2026.5+
+          multiline: 2026.5+
         SASL:
           - external
           - plain
@@ -991,11 +994,9 @@
           channel-context-client-tag:
           react-client-tag:
           typing-client-tag:
+          reply-client-tag:
         SASL:
           - plain
-      partial:
-        stable:
-          reply-client-tag: "draft cap"
 
 - name: Bouncers
   software:
