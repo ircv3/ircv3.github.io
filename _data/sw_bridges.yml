@@ -6,6 +6,7 @@
       support:
         stable:
           multi-prefix: 3.0+
+          sasl-3.1: 9.0+
           webirc:
         SASL:
           plain: 9.0+
