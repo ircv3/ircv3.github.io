@@ -1,13 +1,12 @@
 - name: Bridges
   software:
     - name: Biboumi
-      # ref: TODO
       link: https://biboumi.codeberg.page/
       support:
         stable:
           multi-prefix: 3.0+
           sasl-3.1: 9.0+
-          webirc:
+          webirc: 3.0+
         SASL:
           plain: 9.0+
       partial:
