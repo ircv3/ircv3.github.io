@@ -755,7 +755,6 @@
           msgid:
           multiline:
           multi-prefix:
-          no-implicit-names:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -771,6 +770,7 @@
           - plain
       partial:
         stable:
+          no-implicit-names: "draft cap"
           reply-client-tag: "draft cap"
 
 - name: Mobile Clients
@@ -924,7 +924,7 @@
         stable:
           labeled-response: "draft cap"
           message-tags: "draft cap"
-          msgid: "draft tag"
+
           setname: "draft cap"
     - name: Quasseldroid
       # ref: knownCaps in https://github.com/quassel/quassel/blob/0.14.0/src/common/irccap.h
@@ -983,7 +983,6 @@
           msgid:
           multi-prefix:
           network-icon:
-          no-implicit-names:
           pre-away:
           read-marker:
           sasl-3.1:
@@ -997,6 +996,9 @@
           reply-client-tag:
         SASL:
           - plain
+      partial:
+        stable:
+          no-implicit-names: "draft cap"
 
 - name: Bouncers
   software:
@@ -1160,7 +1162,6 @@
           monitor:
           msgid:
           multi-prefix:
-          no-implicit-names:
           pre-away:
           read-marker:
           sasl-3.1:
@@ -1173,8 +1174,10 @@
           plain:
       partial:
         stable:
-          websockets: text only
           bot-mode: "draft cap"
+          no-implicit-names: "draft cap"
+          websockets: text only
+
     - name: soju (as Client)
       # ref: https://codeberg.org/emersion/soju/src/branch/master/upstream.go#L28
       link: https://codeberg.org/emersion/soju

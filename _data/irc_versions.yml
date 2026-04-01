@@ -126,6 +126,12 @@ stable:
       link: /specs/extensions/multi-prefix.html
       caps:
         - multi-prefix
+    no-implicit-names:
+      name: no-implicit-names
+      description: Disable implicit NAMES responses
+      link: /specs/extensions/no-implicit-names.html
+      caps:
+        - no-implicit-names
     sasl-3.1:
       name: SASL v3.1
       description: SASL v3.1
@@ -284,14 +290,6 @@ stable:
       description: Network Icon DRAFT
       link: /specs/extensions/network-icon.html
       draft: true
-
-    no-implicit-names:
-      name: draft/no-implicit-names
-      description: Disable implicit NAMES responses DRAFT
-      link: /specs/extensions/no-implicit-names.html
-      draft: true
-      caps:
-        - draft/no-implicit-names
 
     pre-away:
       name: draft/pre-away
