@@ -249,6 +249,53 @@
           sts:
         SASL:
           - plain
+    - name: IRCafe
+      # ref: https://github.com/wodencafe/ircafe#ircv3-and-bouncer-support
+      # ref: https://github.com/wodencafe/ircafe/blob/main/src/main/java/cafe/woden/ircclient/irc/ircv3/Ircv3CapabilityCatalog.java
+      # ref: https://github.com/wodencafe/ircafe/blob/main/src/main/java/cafe/woden/ircclient/ui/servers/ServerEditorDialog.java
+      link: https://github.com/wodencafe/ircafe
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-notify:
+          cap-3.1:
+          cap-3.2:
+          channel-context-client-tag:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          labeled-response:
+          message-redaction:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          multiline:
+          read-marker:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          standard-replies:
+          sts:
+          userhost-in-names:
+          whox:
+          react-client-tag:
+          typing-client-tag:
+        SASL:
+          - external
+          - plain
+          - scram-sha-1
+          - scram-sha-256
+      partial:
+        stable:
+          reply-client-tag: "draft cap"
     - name: Irssi
       # ref: CAP_ in https://github.com/irssi/irssi/blob/1.4.3/src/irc/core/irc-servers.h#L17
       # WHOX_ in https://github.com/irssi/irssi/blob/1.4.3/src/irc/core/channels-query.c#L55-L57
