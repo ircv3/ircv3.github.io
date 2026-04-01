@@ -251,8 +251,8 @@
           - plain
     - name: IRCafe
       # ref: https://github.com/wodencafe/ircafe#ircv3-and-bouncer-support
-      # ref: https://github.com/wodencafe/ircafe/blob/main/src/main/java/cafe/woden/ircclient/irc/ircv3/Ircv3CapabilityCatalog.java
-      # ref: https://github.com/wodencafe/ircafe/blob/main/src/main/java/cafe/woden/ircclient/ui/servers/ServerEditorDialog.java
+      # ref: https://github.com/wodencafe/ircafe/blob/master/src/main/java/cafe/woden/ircclient/irc/ircv3/Ircv3CapabilityCatalog.java
+      # ref: https://github.com/wodencafe/ircafe/blob/master/src/main/java/cafe/woden/ircclient/ui/servers/ServerEditorDialog.java
       link: https://github.com/wodencafe/ircafe
       support:
         stable:
