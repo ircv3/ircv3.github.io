@@ -111,6 +111,7 @@
       link: https://www.inspircd.org
       support:
         stable:
+          account-extban: 4.10.0+
           account-notify:
           account-tag:
           away-notify:
