@@ -41,7 +41,6 @@
           msgid:
           multi-prefix:
           multiline:
-          no-implicit-names:
           pre-away:
           read-marker:
           sasl-3.1:
@@ -58,6 +57,10 @@
       na:
         stable:
           starttls: supports sts
+      partial:
+        stable:
+          no-implicit-names: "draft cap"
+
     - name: IRCCloud Teams
       # maintainer: jwheare
       link: https://blog.irccloud.com/private-teams-servers/
@@ -125,6 +128,7 @@
           extended-join:
           extended-monitor:
           invite-notify:
+          no-implicit-names: 4.10.0+
           labeled-response:
           message-tags:
           monitor:
@@ -265,7 +269,6 @@
           msgid:
           multi-prefix:
           network-icon: 6.2.2+
-          no-implicit-names: 6.1.5+
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -281,6 +284,7 @@
       partial:
         stable:
           account-registration: "6.0+ add-on"
-          message-redaction: "6.0+ add-on"
           channel-rename: "6.1+ add-on"
+          message-redaction: "6.0+ add-on"
           metadata: "6.1+ add-on"
+          no-implicit-names: "draft cap"

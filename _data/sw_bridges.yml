@@ -87,7 +87,6 @@
           message-tags:
           msgid:
           multiline:
-          no-implicit-names:
           sasl-3.1:
           server-time:
           standard-replies:
@@ -98,6 +97,7 @@
             - plain
       partial:
         stable:
+          no-implicit-names: "draft cap"
           reply-client-tag: "draft cap"
       na:
         stable:

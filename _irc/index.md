@@ -297,7 +297,7 @@ The [`WHOX` spec]({{site.baseurl}}/specs/extensions/whox.html)
 describes how the `WHO` message and its replies changes with this capability active
 to allow clients to request more data, and how clients should interpret these changes.
 
-The **work-in-progress** [`no-implicit-names` spec]({{site.baseurl}}/specs/extensions/no-implicit-names.html)
+The [`no-implicit-names` spec]({{site.baseurl}}/specs/extensions/no-implicit-names.html)
 allows clients to disable the implicit `NAMES` responses sent after `JOIN` in
 case they don't always need that information for all channels. Clients can
 still query that information as needed via the `NAMES` or `WHO` command.
