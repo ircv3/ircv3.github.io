@@ -141,6 +141,7 @@
           standard-replies:
           starttls:
           sts:
+          utf8only: 4.10.0+
           userhost-in-names:
           webirc:
           websockets:
