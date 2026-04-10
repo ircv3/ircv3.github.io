@@ -263,6 +263,33 @@
           server-time:
           userhost-in-names:
           whox:
+    - name: HybridIRC
+      ircd-ver: InspIRCd-4
+      net-address:
+        link: ircs://irc.hybridirc.com:6697
+        display: irc.hybridirc.com
+      link: https://www.hybridirc.com/
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          labeled-response:
+          message-tags:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          standard-replies:
+          userhost-in-names:
     - name: IRC4Fun
       ircd-ver: InspIRCd-3
       net-address:
