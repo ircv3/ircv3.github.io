@@ -275,6 +275,8 @@
           account-tag:
           away-notify:
           batch:
+          cap-3.1:
+          cap-3.2:
           cap-notify:
           chghost:
           echo-message:
@@ -284,12 +286,15 @@
           labeled-response:
           message-tags:
           multi-prefix:
+          monitor:
+          msgid:
           sasl-3.1:
           sasl-3.2:
           server-time:
           setname:
           standard-replies:
           userhost-in-names:
+          whox:
     - name: IRC4Fun
       ircd-ver: InspIRCd-3
       net-address:
