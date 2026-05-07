@@ -625,6 +625,7 @@
           labeled-response:
           multi-prefix:
           multiline:
+          network-icon:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -882,6 +883,7 @@
           userhost-in-names:
           whox:
           reply-client-tag:
+          typing-client-tag:
         SASL:
           - plain
           - scram-sha-256
