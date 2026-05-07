@@ -619,11 +619,13 @@
           invite-notify:
           message-redaction:
           message-tags:
+          metadata:
           monitor:
           msgid:
           labeled-response:
           multi-prefix:
           multiline:
+          network-icon:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -865,8 +867,10 @@
           extended-join:
           extended-monitor:
           invite-notify:
+          message-redaction:
           labeled-response:
           message-tags:
+          metadata:
           monitor:
           msgid:
           multi-prefix:
@@ -879,6 +883,7 @@
           userhost-in-names:
           whox:
           reply-client-tag:
+          typing-client-tag:
         SASL:
           - plain
           - scram-sha-256
