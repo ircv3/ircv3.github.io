@@ -866,6 +866,7 @@
           extended-join:
           extended-monitor:
           invite-notify:
+          message-redaction:
           labeled-response:
           message-tags:
           metadata:
