@@ -619,6 +619,7 @@
           invite-notify:
           message-redaction:
           message-tags:
+          metadata:
           monitor:
           msgid:
           labeled-response:
@@ -867,6 +868,7 @@
           invite-notify:
           labeled-response:
           message-tags:
+          metadata:
           monitor:
           msgid:
           multi-prefix:
