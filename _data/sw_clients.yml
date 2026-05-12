@@ -750,6 +750,7 @@
           extended-join:
           extended-monitor:
           invite-notify:
+          labeled-response:
           message-redaction:
           message-tags:
           metadata:
@@ -757,6 +758,9 @@
           msgid:
           multiline:
           multi-prefix:
+          network-icon:
+          no-implicit-names:
+          read-marker:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -768,13 +772,12 @@
           channel-context-client-tag:
           react-client-tag:
           typing-client-tag:
+          reply-client-tag:
         SASL:
           - plain
-      partial:
-        stable:
-          no-implicit-names: "draft cap"
-          reply-client-tag: "draft cap"
-
+          - external
+          - scram-sha-256
+          - oauthbearer
 - name: Mobile Clients
   software:
     - name: IRC for Android
