@@ -778,7 +778,6 @@
           - external
           - scram-sha-256
           - oauthbearer
-          - ircv3bearer
 - name: Mobile Clients
   software:
     - name: IRC for Android
