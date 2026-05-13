@@ -195,7 +195,7 @@
         stable:
           webirc:
     - name: Solanum
-      # ref: https://github.com/solanum-ircd/solanum/search?q=MAPI_CAP_CLIENT
+      # ref: https://github.com/solanum-ircd/solanum/search?q=%28"capability_put%28cli_capindex"+OR+MAPI_CAP_CLIENT%29
       link: https://github.com/solanum-ircd/solanum
       support:
         stable:
@@ -213,10 +213,12 @@
           echo-message:
           extended-join:
           invite-notify:
+          labeled-response: 2026-05-12
           message-tags: 2025-10-10
           monitor:
           msgid: 2025-10-10
           multi-prefix:
+          no-implicit-names: 2026-03-19
           server-time:
           starttls:
           userhost-in-names:
