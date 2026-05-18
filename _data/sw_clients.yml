@@ -667,6 +667,7 @@
           server-time:
           userhost-in-names:
           whox:
+          typing-client-tag:
         SASL:
           - plain
     - name: The Lounge
