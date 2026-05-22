@@ -236,6 +236,46 @@
           sasl-3.1:
           starttls:
           userhost-in-names:
+    - name: FailNET
+      ircd-ver: Ergo-2.18
+      net-address:
+        link: ircs://irc.fail:6697/
+        display: FailNET
+      link: https://irc.fail
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          account-registration:
+          channel-rename:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          multiline:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          sts:
+          userhost-in-names:
+          utf8only:
+          whox:
+      partial:
+        stable:
+          bot-mode: Draft
+          extended-monitor: Draft
     - name: hackint
       ircd-ver: solanum-1.0-dev
       net-address:
