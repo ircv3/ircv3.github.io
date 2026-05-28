@@ -169,16 +169,19 @@
         stable:
           away-notify:
           batch:
+          bot-mode: 2026.7+
           account-notify: 2024.10+
           cap-3.1:
           cap-3.2: 2024.7+
           cap-notify: 2024.7+
+          channel-context-client-tag: 2026.6+
           chghost: 2024.10+
           echo-message:
           extended-join: 2024.10+
           invite-notify:
           labeled-response:
           message-tags: 2024.7+
+          metadata: 2026.7+
           multi-prefix: 2024.7+
           extended-monitor: 2024.11+
           monitor: 2024.11+
@@ -193,6 +196,7 @@
           utf8only: 2024.7+
           whox: 2024.7+
           react-client-tag: 2026.4+
+          reply-client-tag: 2026.7+
           typing-client-tag: 2026.5+
           multiline: 2026.5+
         SASL:
