@@ -1013,6 +1013,56 @@
       partial:
         stable:
           no-implicit-names: "draft cap"
+    - name: HexDroid
+      # ref: buildCapReqList https://github.com/boxlabss/HexDroid/blob/main/app/src/main/java/com/boxlabs/hexdroid/IrcSession.kt#L230
+      # hasCap() callsites: https://github.com/boxlabss/HexDroid/blob/main/app/src/main/java/com/boxlabs/hexdroid/IrcCore.kt
+      # SASL mechanisms: enum SaslMechanism in IrcCore.kt
+      link: https://play.google.com/store/apps/details?id=com.boxlabs.hexdroid
+      os:
+        - android
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          multiline:
+          pre-away:
+          read-marker:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          standard-replies:
+          userhost-in-names:
+          utf8only:
+          whox:
+          # Client tags (outgoing)
+          react-client-tag:
+          reply-client-tag:
+          typing-client-tag:
+        SASL:
+          - plain
+          - external
+          - scram-sha-256
+      partial:
+        stable:
+          channel-rename: "draft cap"
+          no-implicit-names: "draft cap"
 
 - name: Bouncers
   software:
