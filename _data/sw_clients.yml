@@ -1014,7 +1014,7 @@
         stable:
           no-implicit-names: "draft cap"
     - name: HexDroid
-      # ref: buildCapReqList https://github.com/boxlabss/HexDroid/blob/main/app/src/main/java/com/boxlabs/hexdroid/IrcSession.kt#L230
+      # ref: buildCapReqList https://github.com/boxlabss/HexDroid/blob/97a35ec05580baab710c21c184db07dc0beda989/app/src/main/java/com/boxlabs/hexdroid/IrcSession.kt#L230-L352
       # hasCap() callsites: https://github.com/boxlabss/HexDroid/blob/main/app/src/main/java/com/boxlabs/hexdroid/IrcCore.kt
       # SASL mechanisms: enum SaslMechanism in IrcCore.kt
       link: https://play.google.com/store/apps/details?id=com.boxlabs.hexdroid
