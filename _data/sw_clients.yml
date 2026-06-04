@@ -565,6 +565,35 @@
           server-time:
         SASL:
           external:
+          
+    - name: ZoiteChat
+      link: https://zoitechat.org
+      support:
+        stable:
+          account-notify:
+          account-tag: 
+          away-notify:
+          cap-notify:
+          cap-3.1:
+          cap-3.2:
+          chghost:
+          extended-join:
+          extended-monitor: 
+          invite-notify:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname: 
+          standard-replies:
+          sts: 2.17.4+
+          userhost-in-names:
+          utf8only: 
+          whox:
+        SASL:
+          - external
+          - plain
 
 - name: Web Clients
   software:
