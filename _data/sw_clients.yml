@@ -436,7 +436,6 @@
           cap-notify:
           cap-3.1:
           cap-3.2:
-          channel-context-client-tag:
           chathistory:
           echo-message:
           extended-monitor:
@@ -452,6 +451,9 @@
           standard-replies:
           typing-client-tag:
           whox:
+      partial:
+        stable:
+          channel-context-client-tag: "draft cap"
         SASL:
           plain:
     - name: Srain
@@ -581,7 +583,6 @@
           cap-notify:
           chghost:
           account-registration:
-          channel-context-client-tag:
           chathistory:
           echo-message:
           extended-join:
@@ -598,6 +599,9 @@
           server-time:
           setname:
           whox:
+      partial:
+        stable:
+          channel-context-client-tag: "draft cap"
         SASL:
           - plain
           - oauthbearer
@@ -615,7 +619,6 @@
           cap-3.1:
           cap-3.2:
           channel-rename:
-          channel-context-client-tag:
           chghost:
           echo-message:
           extended-join:
@@ -641,6 +644,9 @@
           react-client-tag:
           reply-client-tag:
           typing-client-tag:
+      partial:
+        stable:
+          channel-context-client-tag: "draft cap"
         SASL:
           - plain
           - scram-sha-256
@@ -1004,7 +1010,6 @@
           server-time:
           setname:
           whox:
-          channel-context-client-tag:
           react-client-tag:
           typing-client-tag:
           reply-client-tag:
@@ -1012,6 +1017,7 @@
           - plain
       partial:
         stable:
+          channel-context-client-tag: "draft cap"
           no-implicit-names: "draft cap"
 
 - name: Bouncers
@@ -1372,7 +1378,6 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
-          channel-context-client-tag:
           chghost:
           echo-message:
           extended-join:
@@ -1401,6 +1406,7 @@
             - scram-sha-256
       partial:
         stable:
+          channel-context-client-tag: "draft cap"
           reply-client-tag: "draft cap"
     - name: Moon Moon
       # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/irc.moon

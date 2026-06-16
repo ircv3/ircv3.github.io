@@ -204,7 +204,15 @@ stable:
       link: /specs/extensions/whox.html
       isupport:
         - WHOX
-      
+
+    channel-context-client-tag:
+      name: +channel-context
+      description: Channel context client tag
+      link: /specs/client-tags/channel-context.html
+      hide-if-no-support: true
+      tags:
+        - +channel-context
+
     reply-client-tag:
       name: +reply
       description: Reply client tag
@@ -306,14 +314,6 @@ stable:
       draft: true
       caps:
         - draft/read-marker
-
-    channel-context-client-tag:
-      name: +draft/channel-context
-      description: Channel context client tag DRAFT
-      link: /specs/client-tags/channel-context.html
-      draft: true
-      tags:
-        - +draft/channel-context
 
     react-client-tag:
       name: +draft/react
