@@ -2,6 +2,7 @@ title: IRCv3 Working Group
 markdown: kramdown
 highlighter: rouge
 url: https://ircv3.net
+baseurl: ""
 repository: ircv3/ircv3.github.io
 kramdown:
   input: GFM
