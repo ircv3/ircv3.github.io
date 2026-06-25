@@ -374,6 +374,43 @@
       partial:
         stable:
           message-tags: Filtered client tags
+    - name: Newnet
+      ircd-ver: InspIRCd-4
+      net-address:
+        link: ircs://irc.newnet.net:6697/
+        display: irc.newnet.net
+      link: https://www.newnet.net/
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          bot-mode:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          monitor:
+          labeled-response:
+          message-tags:
+          msgid:
+          multi-prefix:
+          no-implicit-names:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          standard-replies:
+          starttls:
+          sts:
+          userhost-in-names:
+          webirc:
+          whox:
     - name: PIRC.pl
       ircd-ver: UnrealIRCd-5
       net-address:
