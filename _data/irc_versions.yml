@@ -324,6 +324,16 @@ stable:
         - +draft/react
         - +draft/unreact
 
+    oper-tag:
+      name: draft/oper-tag
+      description: oper-tag Extension DRAFT
+      link: /specs/extensions/oper-tag.html
+      draft: true
+      caps:
+        - draft/oper-tag
+      tags:
+        - draft/oper
+
 proposed:
   name: Proposed Pull Requests
   specs: {}
