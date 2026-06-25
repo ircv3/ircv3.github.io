@@ -327,7 +327,7 @@
       specs:
         - channel-context-client-tag
       description: Indicates the channel a private message should be displayed in.
-    - name: draft/oper
+    - name: oper
       specs:
         - oper-tag
       description: Indicates that the source of the message is an IRC operator.
@@ -357,7 +357,7 @@
         - netsplitjoin-batch
       description: Indicates that the given clients are quitting as the result of a netsplit (two servers disconnecting).
 
-    - name: draft/isupport
+    - name: isupport
       specs:
         - extended-isupport
       description: Indicates that the given messages belong to a single ISUPPORT burst.
@@ -484,7 +484,7 @@
         - whox
       description: Indicates the server supports the extended WHO syntax
 
-    - name: draft/ICON
+    - name: ICON
       specs:
         - network-icon
       description: Advertises a server icon.
