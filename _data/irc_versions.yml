@@ -204,7 +204,15 @@ stable:
       link: /specs/extensions/whox.html
       isupport:
         - WHOX
-      
+
+    channel-context-client-tag:
+      name: +channel-context
+      description: Channel context client tag
+      link: /specs/client-tags/channel-context.html
+      hide-if-no-support: true
+      tags:
+        - +channel-context
+
     reply-client-tag:
       name: +reply
       description: Reply client tag
@@ -307,14 +315,6 @@ stable:
       caps:
         - draft/read-marker
 
-    channel-context-client-tag:
-      name: +draft/channel-context
-      description: Channel context client tag DRAFT
-      link: /specs/client-tags/channel-context.html
-      draft: true
-      tags:
-        - +draft/channel-context
-
     react-client-tag:
       name: +draft/react
       description: React and unreact client tags DRAFT
@@ -323,6 +323,16 @@ stable:
       tags:
         - +draft/react
         - +draft/unreact
+
+    oper-tag:
+      name: draft/oper-tag
+      description: oper-tag Extension DRAFT
+      link: /specs/extensions/oper-tag.html
+      draft: true
+      caps:
+        - draft/oper-tag
+      tags:
+        - draft/oper
 
 proposed:
   name: Proposed Pull Requests

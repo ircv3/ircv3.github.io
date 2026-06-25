@@ -327,6 +327,10 @@
       specs:
         - channel-context-client-tag
       description: Indicates the channel a private message should be displayed in.
+    - name: draft/oper
+      specs:
+        - oper-tag
+      description: Indicates that the source of the message is an IRC operator.
 
 - name: Batches
   include_numeric: false

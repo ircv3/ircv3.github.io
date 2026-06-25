@@ -222,7 +222,7 @@ and as such we detail them in their own section here.
 
 Here are the client-only tags the IRCv3 WG defines:
 
-* [The `channel-context` client-only tag]({{site.baseurl}}/specs/client-tags/channel-context.html) **[draft]** indicates the channel a private message should be displayed in.
+* [The `channel-context` client-only tag]({{site.baseurl}}/specs/client-tags/channel-context.html) indicates the channel a private message should be displayed in.
 * [The `reply` client-only tag]({{site.baseurl}}/specs/client-tags/reply.html) marks that a given message is intended as a reply to a specific sent message.
 * [The `react` client-only tag]({{site.baseurl}}/specs/client-tags/react.html) **[draft]** sends a reaction to a specific sent message, allowing such functionality from other chat systems.
 * [The `typing` client-only tag]({{site.baseurl}}/specs/client-tags/typing.html) lets users know when another user is typing a message in their channel or private message.
@@ -302,6 +302,10 @@ allows clients to disable the implicit `NAMES` responses sent after `JOIN` in
 case they don't always need that information for all channels. Clients can
 still query that information as needed via the `NAMES` or `WHO` command.
 
+The **work-in-progress** [`oper-tag` spec]({{site.baseurl}}/specs/extensions/oper-tag.html)
+defines a way for clients to receive a message tag on messages specifying that
+the source of the message is from an IRC operator. This is useful for letting
+users know that a message is from a trusted source.
 
 ## [Message IDs]({{site.baseurl}}/specs/extensions/message-ids.html)
 
