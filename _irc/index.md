@@ -302,6 +302,10 @@ allows clients to disable the implicit `NAMES` responses sent after `JOIN` in
 case they don't always need that information for all channels. Clients can
 still query that information as needed via the `NAMES` or `WHO` command.
 
+The **work-in-progress** [`oper-tag` spec]({{site.baseurl}}/specs/extensions/oper-tag.html)
+defines a way for clients to receive a message tag on messages specifying that
+the source of the message is from an IRC operator. This is useful for letting
+users know that a message is from a trusted source.
 
 ## [Message IDs]({{site.baseurl}}/specs/extensions/message-ids.html)
 
