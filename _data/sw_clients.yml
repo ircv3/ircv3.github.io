@@ -577,10 +577,13 @@
           cap-3.1:
           cap-3.2:
           chghost:
+          echo-message:
           extended-join:
           extended-monitor: 
           invite-notify:
+          message-tags: 2.18.3+
           monitor:
+          msgid: 2.18.3+
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
@@ -591,9 +594,14 @@
           userhost-in-names:
           utf8only: 
           whox:
+          reply-client-tag: 2.18.3+
+          typing-client-tag: 2.18.3+
         SASL:
           - external
           - plain
+          - scram-sha-1
+          - scram-sha-256
+          - scram-sha-512
 
 - name: Web Clients
   software:
