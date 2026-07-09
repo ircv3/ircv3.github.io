@@ -331,6 +331,39 @@
         # server-time:  # only supports znc's vendor prefixed version
         SASL:
           - plain
+    - name: Mango
+      link: https://mangoirc.chat
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          react-client-tag:
+          read-marker:
+          reply-client-tag:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          sts:
+          tls:
+          typing-client-tag:
+          userhost-in-names:
+        SASL:
+          - plain
     - name: mIRC
       # ref: https://www.mirc.com/news.html
       #      https://www.mirc.com/versions.txt
@@ -911,6 +944,41 @@
         stable:
           cap-3.1:
           sasl-3.1:
+        SASL:
+          - plain
+    - name: Mango
+      link: https://mangoirc.chat
+      os:
+        - ios
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          labeled-response:
+          message-tags:
+          monitor:
+          msgid:
+          multi-prefix:
+          react-client-tag:
+          read-marker:
+          reply-client-tag:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          sts:
+          tls:
+          typing-client-tag:
+          userhost-in-names:
         SASL:
           - plain
     - name: Palaver
