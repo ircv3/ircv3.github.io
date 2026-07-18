@@ -224,26 +224,6 @@
           userhost-in-names:
           webirc:
           whox:
-    - name: txircd
-      link: https://github.com/ElementalAlchemist/txircd
-      support:
-        stable:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          chghost:
-          echo-message:
-          extended-join:
-          invite-notify:
-          monitor:
-          multi-prefix:
-          server-time:
-          starttls:
-          userhost-in-names:
     - name: UnrealIRCd
       # ref: ClientCapabilityAdd() calls in https://github.com/unrealircd/unrealircd/search?q=ClientCapabilityAdd
       #      (src/modules/m_cap.c has four matches, two not shown)
