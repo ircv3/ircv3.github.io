@@ -61,6 +61,56 @@
         stable:
           no-implicit-names: "draft cap"
 
+    - name: ferrixd
+      # maintainer: JosunLP
+      link: https://josunlp.github.io/ferrixd/
+      support:
+        stable:
+          account-extban:
+          account-notify:
+          account-registration:
+          account-tag:
+          away-notify:
+          batch:
+          bot-mode:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          channel-rename:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-isupport:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          labeled-response:
+          message-redaction:
+          message-tags:
+          metadata:
+          monitor:
+          msgid:
+          multi-prefix:
+          multiline:
+          network-icon:
+          no-implicit-names:
+          pre-away:
+          read-marker:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          standard-replies:
+          sts:
+          userhost-in-names:
+          utf8only:
+          webirc:
+          websockets:
+          whox:
+        na:
+          stable:
+            starttls: supports sts
+
     - name: IRCCloud Teams
       # maintainer: jwheare
       link: https://blog.irccloud.com/private-teams-servers/
