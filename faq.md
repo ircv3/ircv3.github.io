@@ -22,6 +22,16 @@ The client protocol is how clients and servers talk to each other. The server-to
 
 Plain and simple, a server's S2S protocol only needs to be understood by that same server software or services software. Even if we wanted to mandate server-to-server implementation details or architecture, servers could disregard these without clients being able to tell in any way (as the server would still expose the same protocol to the client). We don't work on the S2S protocols because they're an implementation detail. So long as those servers expose the client protocol, it's IRC.
 
+> [!NOTE]
+> Test
+> ```code test
+> more code
+> again
+> ```
+> ok then
+>
+> bye
+
 ### Who runs IRCv3?
 
 Originally, we were setup by the Atheme group to develop extensions to the IRC client protocol. These days, the direction of the IRCv3 WG is led by [our contributors]({{site.baseurl}}/charter.html) and the WG Chair.
