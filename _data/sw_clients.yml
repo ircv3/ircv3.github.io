@@ -711,6 +711,39 @@
         SASL:
           - external
           - plain
+    - name: Lurker
+      # ref: requestCap() calls in https://github.com/amiantos/lurker/blob/9df7bb9194203d95fd6aabe860e400655dfb2fad/server/services/ircConnection.ts#L584-L600
+      #      connect() options, for chghost and echo-message, in https://github.com/amiantos/lurker/blob/9df7bb9194203d95fd6aabe860e400655dfb2fad/server/services/ircConnection.ts#L3162-L3169
+      #      sendTyping() in https://github.com/amiantos/lurker/blob/9df7bb9194203d95fd6aabe860e400655dfb2fad/server/services/ircConnection.ts#L4529
+      #      base caps in https://github.com/kiwiirc/irc-framework/blob/v4.14.0/docs/ircv3.md
+      link: https://github.com/amiantos/lurker
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          message-tags:
+          monitor:
+          msgid:
+          multiline:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
+          whox:
+          typing-client-tag:
+        SASL:
+          - plain
     - name: PIRC.pl web client
       # ref: https://github.com/pirc-pl/pirc-gateway/blob/1fbe9c7269073a4d93f703e9f24f1239cfdde56c/js/gateway_cmds.js#L220-L221
       link: https://github.com/pirc-pl/pirc-gateway
@@ -1087,6 +1120,22 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+    - name: Lurker (as Server)
+      # ref: SUPPORTED_CAPS in https://github.com/amiantos/lurker/blob/9df7bb9194203d95fd6aabe860e400655dfb2fad/server/services/bouncer.ts#L88-L104
+      link: https://github.com/amiantos/lurker
+      support:
+        stable:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          chathistory:
+          echo-message:
+          message-tags:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+        SASL:
+          - plain
     - name: pounce (as Server)
       # ref: https://git.causal.agency/pounce/about/pounce.1#Client_Configuration
       link: https://git.causal.agency/pounce/about/
