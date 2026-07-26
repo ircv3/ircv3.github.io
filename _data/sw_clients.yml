@@ -199,6 +199,7 @@
           reply-client-tag: 2026.7+
           typing-client-tag: 2026.5+
           multiline: 2026.5+
+          no-implicit-names: 2026.8+
         SASL:
           - external
           - plain
