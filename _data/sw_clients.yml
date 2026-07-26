@@ -288,7 +288,7 @@
           cap-3.1:
           cap-3.2: v20.11.80+
           cap-notify: v21.03.80+
-          chghost:  v21.03.80+
+          chghost: v21.03.80+
           extended-join:
           multi-prefix:
           sasl-3.1:
@@ -711,6 +711,36 @@
         SASL:
           - external
           - plain
+    - name: Lurker
+      # ref: https://docs.lurker.chat/IRCV3
+      link: https://github.com/amiantos/lurker
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          message-tags:
+          monitor:
+          msgid:
+          multiline:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
+          whox:
+          typing-client-tag:
+        SASL:
+          - plain
     - name: PIRC.pl web client
       # ref: https://github.com/pirc-pl/pirc-gateway/blob/1fbe9c7269073a4d93f703e9f24f1239cfdde56c/js/gateway_cmds.js#L220-L221
       link: https://github.com/pirc-pl/pirc-gateway
@@ -1087,6 +1117,22 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+    - name: Lurker (as Server)
+      # ref: https://docs.lurker.chat/IRCV3
+      link: https://github.com/amiantos/lurker
+      support:
+        stable:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          chathistory:
+          echo-message:
+          message-tags:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+        SASL:
+          - plain
     - name: pounce (as Server)
       # ref: https://git.causal.agency/pounce/about/pounce.1#Client_Configuration
       link: https://git.causal.agency/pounce/about/
@@ -1401,9 +1447,9 @@
           whox:
           react-client-tag:
         SASL:
-            - external
-            - plain
-            - scram-sha-256
+          - external
+          - plain
+          - scram-sha-256
       partial:
         stable:
           channel-context-client-tag: "draft cap"
