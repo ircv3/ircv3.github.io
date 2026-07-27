@@ -251,6 +251,7 @@
           monitor: 6.0+
           msgid:
           multi-prefix:
+          multiline: 6.2.4+
           network-icon: 6.2.2+
           sasl-3.1:
           sasl-3.2:
