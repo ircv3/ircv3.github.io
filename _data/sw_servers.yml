@@ -272,3 +272,24 @@
           message-redaction: "6.0+ add-on"
           metadata: "6.1+ add-on"
           no-implicit-names: "draft cap"
+    - name: ircu2
+      link: https://github.com/UndernetIRC/ircu2
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          message-tags:
+          userhost-in-names:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          webirc:
+          websockets:
+          whox:
