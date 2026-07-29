@@ -51,7 +51,8 @@
     </thead>
     <tbody>
         {% assign sw_index = 0 %}
-        {% for sw in type.software %}
+        {% assign sorted_software = type.software | sort_natural: "name" %}
+        {% for sw in sorted_software %}
         {% assign sw_index = sw_index | plus: 1 %}
         {% if sw_index < popup_above_after %}
             {% assign popup_above = false %}
