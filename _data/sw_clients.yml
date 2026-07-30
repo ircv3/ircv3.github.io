@@ -62,6 +62,63 @@
           whox:
         SASL:
           - PLAIN
+    - name: bIRC
+      # ref: https://birc.app/ircv3
+      link: https://birc.app
+      support:
+        stable:
+          account-extban:
+          account-notify:
+          account-registration:
+          account-tag:
+          away-notify:
+          batch:
+          bot-mode:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          channel-context-client-tag:
+          channel-rename:
+          chathistory:
+          chghost:
+          client-batch:
+          echo-message:
+          extended-isupport:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          labeled-response:
+          message-redaction:
+          message-tags:
+          metadata:
+          monitor:
+          msgid:
+          multi-prefix:
+          multiline:
+          network-icon:
+          no-implicit-names:
+          oper-tag:
+          pre-away:
+          react-client-tag:
+          read-marker:
+          reply-client-tag:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          standard-replies:
+          starttls:
+          sts:
+          typing-client-tag:
+          userhost-in-names:
+          utf8only:
+          websockets:
+          whox:
+        SASL:
+          - external
+          - oauthbearer
+          - plain
+          - scram-sha-256
     - name: BitchX
       # ref: https://github.com/BitchX/BitchX1.3/search?q=%22CAP+REQ%22&
       link: https://github.com/BitchX/BitchX1.3
