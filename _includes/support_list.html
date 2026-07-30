@@ -70,8 +70,11 @@
                 {% if sw.note %}
                     <div class="sw-note">{{ sw.note | markdownify }}</div>
                 {% endif %}
-                {% if sw.os %}
+                {% if sw.os or sw.ai %}
                     <div class="os-support">
+                    {% if sw.ai %}
+                         <i title="Development assisted using AI" class="fa-solid fa-robot os-support-ai"></i>
+                    {% endif %}
                     {% for name in sw.os %}
                         {% if site.data.os[name] %}
                             <i title="{{ site.data.os[name]["name"] }}" class="{{ site.data.os[name]["icon"] }} os-support-{{ name | slugify }}"></i>
