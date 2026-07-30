@@ -332,6 +332,42 @@
         # server-time:  # only supports znc's vendor prefixed version
         SASL:
           - plain
+    - name: Mango
+      link: https://mangoirc.chat
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          channel-context-client-tag:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          labeled-response:
+          message-tags:
+          metadata:
+          monitor:
+          msgid:
+          multiline:
+          multi-prefix:
+          read-marker:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          userhost-in-names:
+          react-client-tag:
+          typing-client-tag:
+        SASL:
+          - plain
+      partial:
+        stable:
+          reply-client-tag: "draft cap"
     - name: mIRC
       # ref: https://www.mirc.com/news.html
       #      https://www.mirc.com/versions.txt
@@ -949,6 +985,44 @@
           sasl-3.1:
         SASL:
           - plain
+    - name: Mango
+      link: https://mangoirc.chat
+      os:
+        - ios
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          channel-context-client-tag:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          labeled-response:
+          message-tags:
+          metadata:
+          monitor:
+          msgid:
+          multiline:
+          multi-prefix:
+          read-marker:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          userhost-in-names:
+          react-client-tag:
+          typing-client-tag:
+        SASL:
+          - plain
+      partial:
+        stable:
+          reply-client-tag: "draft cap"
     - name: Palaver
       # ref: https://palaverapp.com/guides/capabilities.html
       # maintainer: kylef
