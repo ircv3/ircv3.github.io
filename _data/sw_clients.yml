@@ -257,6 +257,9 @@
           typing-client-tag: 2026.5+
           multiline: 2026.5+
           no-implicit-names: 2026.8+
+          network-icon: 2026.7+
+          message-redaction: 2026.7+
+          websockets: 2026.7+
         SASL:
           - external
           - plain
