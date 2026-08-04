@@ -502,6 +502,7 @@
       link: https://www.teranova.net/
       support:
         stable:
+          account-extban:
           account-notify:
           account-tag:
           away-notify:
@@ -519,6 +520,7 @@
           labeled-response:
           msgid:
           multi-prefix:
+          no-implicit-names:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -531,7 +533,7 @@
           whox:
       partial:
         stable:
-          message-tags: No client tags
+          message-tags: Known client tags
     - name: tilde.chat
       ircd-ver: InspIRCd-3
       net-address:
