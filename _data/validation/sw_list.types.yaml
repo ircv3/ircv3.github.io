@@ -13,6 +13,9 @@ software:
           type: string
         link:
           type: string
+        ai:
+          type: boolean
+          required: false
         ircd-ver:
           type: string
           required: false
