@@ -923,6 +923,31 @@
           - external
           - scram-sha-256
           - oauthbearer
+    - name: jWebIRC
+      link: https://github.com/WarPigs1602/jwebirc
+      ai: true
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          message-tags:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
+        SASL:
+          - plain
+          - scram-sha-256
+          - scram-sha-512
 - name: Mobile Clients
   software:
     - name: IRC for Android
