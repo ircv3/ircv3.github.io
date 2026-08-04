@@ -533,7 +533,7 @@
           whox:
       partial:
         stable:
-          message-tags: Known client tags
+          message-tags: Filtered client tags
     - name: tilde.chat
       ircd-ver: InspIRCd-3
       net-address:
