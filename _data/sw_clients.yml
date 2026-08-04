@@ -924,6 +924,7 @@
           - oauthbearer
     - name: jWebIRC
       link: https://github.com/WarPigs1602/jwebirc
+      ai: true
       support:
         stable:
           account-notify:
