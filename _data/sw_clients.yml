@@ -944,6 +944,8 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+          # Client tags
+          typing-client-tag:
         SASL:
           - plain
           - scram-sha-256
