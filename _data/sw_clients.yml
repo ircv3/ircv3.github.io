@@ -34,34 +34,6 @@
           external:
           plain:
           scram-sha-256: 3.4+
-    - name: Ambassador
-      # ref: JSIRCV3_SUPPORTED_CAPS in https://github.com/Ascrod/ambassador/blob/7d2b260f1a069e2d11718c576d694f9343c096be/ambassador/js/lib/irc.js
-      link: https://github.com/Ascrod/ambassador/
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          chghost:
-          echo-message:
-          extended-join:
-          invite-notify:
-          message-tags:
-          monitor:
-          multi-prefix:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          sts:
-          tls:
-          userhost-in-names:
-          whox:
-        SASL:
-          - PLAIN
     - name: bIRC
       # ref: https://birc.app/ircv3
       link: https://birc.app
@@ -164,32 +136,6 @@
         SASL:
           - external
           - plain
-    - name: Colloquy
-      # ref: handleCapWithParameters() in https://github.com/colloquy/colloquy/blob/main/Chat%20Core/MVIRCChatConnection.m
-      # https://github.com/colloquy/colloquy/blob/4c47cfbaf686e1ac18937e5727b240d7df60d06d/Chat%20Core/MVIRCChatConnection.m#L2036
-      link: https://colloquy.app
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          cap-notify:
-          cap-3.1:
-          cap-3.2:
-          chghost:
-          echo-message:
-          extended-join:
-          invite-notify:
-          monitor:
-          multi-prefix:
-          sasl-3.1:
-          server-time:
-          starttls:
-          userhost-in-names:
-          whox:
-        SASL:
-          - plain
     - name: glirc
       # ref: selectCaps in https://github.com/glguy/irc-core/blob/v2/src/Client/State/Network.hs
       link: https://hackage.haskell.org/package/glirc
@@ -263,57 +209,6 @@
         SASL:
           - external
           - plain
-    - name: HexChat
-      # ref: supported_caps in https://github.com/hexchat/hexchat/blob/v2.16.1/src/common/inbound.c#L1715
-      # inbound_005 in https://github.com/hexchat/hexchat/blob/v2.16.1/src/common/modes.c#L923
-      link: https://hexchat.github.io
-      support:
-        stable:
-          account-notify:
-          account-tag: 2.16
-          away-notify:
-          cap-notify:
-          cap-3.1:
-          cap-3.2:
-          chghost:
-          extended-join:
-          extended-monitor: Git
-          invite-notify: 2.16
-          monitor:
-          multi-prefix:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          setname: 2.16
-          standard-replies: Git
-          userhost-in-names:
-          utf8only: 2.16
-          whox:
-        SASL:
-          - external
-          - plain
-    - name: IceChat
-      # ref: CapREQ() in https://github.com/icechat/IceChat/blob/9.53P/src/IceChat/IRCConnection/ParseIRCData.cs
-      link: https://icechat.net
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          chghost:
-          echo-message:
-          extended-join:
-          invite-notify:
-          monitor:
-          multi-prefix:
-          sasl-3.1:
-          server-time:
-          sts:
-        SASL:
-          - plain
     - name: Irssi
       # ref: CAP_ in https://github.com/irssi/irssi/blob/1.4.3/src/irc/core/irc-servers.h#L17
       # WHOX_ in https://github.com/irssi/irssi/blob/1.4.3/src/irc/core/channels-query.c#L55-L57
@@ -381,16 +276,6 @@
           whox:
         SASL:
           - external
-          - plain
-    - name: LimeChat
-      # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
-      link: http://limechat.net/mac/
-      support:
-        stable:
-          cap-3.1:
-          sasl-3.2:
-        # server-time:  # only supports znc's vendor prefixed version
-        SASL:
           - plain
     - name: Mango
       link: https://mangoirc.chat
@@ -963,34 +848,6 @@
           sasl-3.1:
           multi-prefix:
         # SASL mechanisms unknown
-    - name: Colloquy
-      # ref: didConnectToHost in https://github.com/colloquy/colloquy/blob/main/Chat%20Core/MVIRCChatConnection.m#L2393
-      link: http://www.colloquy.info
-      os:
-        - ios
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          chghost:
-          echo-message:
-          extended-join:
-          invite-notify:
-          monitor:
-          multi-prefix:
-          sasl-3.1:
-          server-time:
-          starttls:
-          sts:
-          userhost-in-names:
-          whox:
-        SASL:
-          - plain
     - name: CoreIRC
       link: https://play.google.com/store/apps/details?id=co.aureolin.coreirc
       os:
@@ -1062,17 +919,6 @@
         SASL:
           - plain
           - scram-sha-256
-    - name: LimeChat
-      # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
-      link: http://limechat.net/iphone/
-      os:
-        - ios
-      support:
-        stable:
-          cap-3.1:
-          sasl-3.1:
-        SASL:
-          - plain
     - name: Mango
       link: https://mangoirc.chat
       os:
@@ -1605,42 +1451,6 @@
       partial:
         stable:
           channel-context-client-tag: "draft cap"
-          reply-client-tag: "draft cap"
-    - name: Moon Moon
-      # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/irc.moon
-      # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/batch.moon
-      # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/cap.moon
-      # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/data.moon
-      # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/sasl.moon
-      # ref: https://github.com/wiseguiz/Moon-Moon/blob/0a24f8863d75e544602850c45934b9e7efb83638/handlers/hook_transformer.moon#L76-L77
-      link: https://github.com/wiseguiz/Moon-Moon
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          chghost:
-          echo-message:
-          extended-join:
-          invite-notify:
-          message-tags:
-          msgid:
-          multi-prefix:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          userhost-in-names:
-          whox:
-          typing-client-tag:
-        SASL:
-          - plain
-          - external
-      partial:
-        stable:
           reply-client-tag: "draft cap"
     - name: Sopel (ex Willie)
       #ref: https://github.com/sopel-irc/sopel/blob/v5.3.0/willie/coretasks.py#L357
