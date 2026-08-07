@@ -8,60 +8,36 @@
           account-notify:
           account-tag:
           away-notify:
-          batch: 3.0+
-          cap-3.1:
-          cap-3.2: 3.0+
-          cap-notify: 3.0+
-          chghost:
-          echo-message:
-          extended-join:
-          invite-notify:
-          labeled-response: 3.9+
-          message-tags: 3.4+
-          monitor:
-          msgid: 3.4+
-          multi-prefix:
-          sasl-3.1:
-          sasl-3.2: 3.0+
-          server-time:
-          setname: 3.9+
-          starttls:
-          sts: 3.4+
-          utf8only: 4.1+
-          userhost-in-names:
-          whox: 4.0+
-        SASL:
-          external:
-          plain:
-          scram-sha-256: 3.4+
-    - name: Ambassador
-      # ref: JSIRCV3_SUPPORTED_CAPS in https://github.com/Ascrod/ambassador/blob/7d2b260f1a069e2d11718c576d694f9343c096be/ambassador/js/lib/irc.js
-      link: https://github.com/Ascrod/ambassador/
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
           batch:
+          bot-mode: 4.4+
           cap-3.1:
           cap-3.2:
           cap-notify:
           chghost:
           echo-message:
           extended-join:
+          extended-monitor: 4.4+
           invite-notify:
+          labeled-response:
           message-tags:
           monitor:
+          msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
           server-time:
+          setname:
+          starttls:
+          standard-replies: 4.4+
           sts:
-          tls:
+          utf8only:
           userhost-in-names:
           whox:
         SASL:
-          - PLAIN
+          external:
+          plain:
+          scram-sha-256: 3.4+
+
     - name: bIRC
       # ref: https://birc.app/ircv3
       link: https://birc.app
@@ -77,7 +53,6 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
-          channel-context-client-tag:
           channel-rename:
           chathistory:
           chghost:
@@ -99,9 +74,7 @@
           no-implicit-names:
           oper-tag:
           pre-away:
-          react-client-tag:
           read-marker:
-          reply-client-tag:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -109,16 +82,21 @@
           standard-replies:
           starttls:
           sts:
-          typing-client-tag:
           userhost-in-names:
           utf8only:
           websockets:
           whox:
+          # Client tags
+          channel-context-client-tag:
+          react-client-tag:
+          reply-client-tag:
+          typing-client-tag:
         SASL:
           - external
           - oauthbearer
           - plain
           - scram-sha-256
+
     - name: BitchX
       # ref: https://github.com/BitchX/BitchX1.3/search?q=%22CAP+REQ%22&
       link: https://github.com/BitchX/BitchX1.3
@@ -128,6 +106,7 @@
           sasl-3.1:
         SASL:
           - plain
+
     - name: catgirl
       # ref: https://git.causal.agency/catgirl/about/catgirl.1#STANDARDS
       link: https://git.causal.agency/catgirl/about/
@@ -143,7 +122,10 @@
           sasl-3.1:
           server-time:
           setname:
+          standard-replies:
           userhost-in-names:
+          # Client tags
+          reply-client-tag:
         SASL:
           - external
           - plain
@@ -153,167 +135,100 @@
       na:
         stable:
           sts: TLS-only
+
     - name: Circe
       # ref: https://github.com/emacs-circe/circe/wiki/Features#ircv3-support
       link: https://github.com/emacs-circe/circe
       support:
         stable:
           cap-3.1:
+          chghost:
           extended-join:
+          message-tags:
           sasl-3.1:
+          server-time:
+          setname:
+          standard-replies:
         SASL:
           - external
           - plain
-    - name: Colloquy
-      # ref: handleCapWithParameters() in https://github.com/colloquy/colloquy/blob/main/Chat%20Core/MVIRCChatConnection.m
-      # https://github.com/colloquy/colloquy/blob/4c47cfbaf686e1ac18937e5727b240d7df60d06d/Chat%20Core/MVIRCChatConnection.m#L2036
-      link: https://colloquy.app
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          cap-notify:
-          cap-3.1:
-          cap-3.2:
-          chghost:
-          echo-message:
-          extended-join:
-          invite-notify:
-          monitor:
-          multi-prefix:
-          sasl-3.1:
-          server-time:
-          starttls:
-          userhost-in-names:
-          whox:
-        SASL:
-          - plain
+
     - name: glirc
       # ref: selectCaps in https://github.com/glguy/irc-core/blob/v2/src/Client/State/Network.hs
       link: https://hackage.haskell.org/package/glirc
       support:
         stable:
-          account-notify: 2.28+
-          account-tag: 2.39+
-          away-notify: 2.40+
-          batch:
-          cap-notify:
-          cap-3.1:
-          cap-3.2: 2.30+
-          chghost: 2.30+
-          extended-join: 2.28+
-          extended-monitor: 2.41+
-          invite-notify: 2.41+
-          message-tags: 2.41+
-          multi-prefix:
-          monitor: 2.36+
-          sasl-3.1:
-          server-time: 2.28+
-          sts: 2.30+
-          userhost-in-names: 2.30+
-          whox: 2.40+
-        SASL:
-          - plain
-          - external
-          - scram-sha-1
-          - scram-sha-256
-    - name: Halloy
-      # ref: https://halloy.chat/#ircv3-capabilities
-      link: https://halloy.chat
-      support:
-        stable:
-          away-notify:
-          batch:
-          bot-mode: 2026.7+
-          account-notify: 2024.10+
-          cap-3.1:
-          cap-3.2: 2024.7+
-          cap-notify: 2024.7+
-          channel-context-client-tag: 2026.6+
-          chghost: 2024.10+
-          echo-message:
-          extended-join: 2024.10+
-          invite-notify:
-          labeled-response:
-          message-tags: 2024.7+
-          metadata: 2026.7+
-          multi-prefix: 2024.7+
-          extended-monitor: 2024.11+
-          monitor: 2024.11+
-          msgid: 2024.12+
-          chathistory: 2025.1+
-          read-marker: 2024.12+
-          sasl-3.1:
-          server-time:
-          setname: 2025.1+
-          standard-replies: 2025.1+
-          userhost-in-names:
-          utf8only: 2024.7+
-          whox: 2024.7+
-          react-client-tag: 2026.4+
-          reply-client-tag: 2026.7+
-          typing-client-tag: 2026.5+
-          multiline: 2026.5+
-          no-implicit-names: 2026.8+
-          network-icon: 2026.7+
-          message-redaction: 2026.7+
-          websockets: 2026.7+
-        SASL:
-          - external
-          - plain
-    - name: HexChat
-      # ref: supported_caps in https://github.com/hexchat/hexchat/blob/v2.16.1/src/common/inbound.c#L1715
-      # inbound_005 in https://github.com/hexchat/hexchat/blob/v2.16.1/src/common/modes.c#L923
-      link: https://hexchat.github.io
-      support:
-        stable:
-          account-notify:
-          account-tag: 2.16
-          away-notify:
-          cap-notify:
-          cap-3.1:
-          cap-3.2:
-          chghost:
-          extended-join:
-          extended-monitor: Git
-          invite-notify: 2.16
-          monitor:
-          multi-prefix:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          setname: 2.16
-          standard-replies: Git
-          userhost-in-names:
-          utf8only: 2.16
-          whox:
-        SASL:
-          - external
-          - plain
-    - name: IceChat
-      # ref: CapREQ() in https://github.com/icechat/IceChat/blob/9.53P/src/IceChat/IRCConnection/ParseIRCData.cs
-      link: https://icechat.net
-      support:
-        stable:
           account-notify:
           account-tag:
           away-notify:
+          batch:
           cap-3.1:
           cap-3.2:
           cap-notify:
           chghost:
-          echo-message:
           extended-join:
+          extended-monitor:
           invite-notify:
+          message-tags:
           monitor:
           multi-prefix:
           sasl-3.1:
           server-time:
           sts:
+          userhost-in-names:
+          whox:
         SASL:
           - plain
+          - external
+          - scram-sha-1
+          - scram-sha-256
+
+    - name: Halloy
+      # ref: https://halloy.chat/#ircv3-capabilities
+      link: https://halloy.chat
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          batch:
+          bot-mode: 2026.7+
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          labeled-response:
+          message-redaction: 2026.7+
+          message-tags:
+          metadata: 2026.7+
+          monitor:
+          msgid:
+          multi-prefix:
+          multiline: 2026.5+
+          network-icon: 2026.7+
+          no-implicit-names: 2026.8+
+          read-marker:
+          sasl-3.1:
+          server-time:
+          setname:
+          standard-replies:
+          userhost-in-names:
+          utf8only:
+          websockets: 2026.7+
+          whox:
+          # Client tags
+          channel-context-client-tag: 2026.6+
+          react-client-tag: 2026.4+
+          reply-client-tag: 2026.7+
+          typing-client-tag: 2026.5+
+        SASL:
+          - external
+          - plain
+
     - name: Irssi
       # ref: CAP_ in https://github.com/irssi/irssi/blob/1.4.3/src/irc/core/irc-servers.h#L17
       # WHOX_ in https://github.com/irssi/irssi/blob/1.4.3/src/irc/core/channels-query.c#L55-L57
@@ -338,8 +253,9 @@
         SASL:
           - external
           - plain
+
     - name: Konversation
-      # ref: Server::initCapablityNames() in https://github.com/KDE/konversation/blob/v21.04.0/src/irc/server.cpp
+      # ref: Server::initCapablityNames() in hhttps://github.com/KDE/konversation/blob/master/src/irc/server.cpp
       # https://github.com/KDE/konversation/blob/a8ac257a30d0c56635a35b12bdb59c45b5868c37/src/irc/inputfilter.cpp#L1283
       link: https://konversation.kde.org
       support:
@@ -347,19 +263,20 @@
           account-notify:
           away-notify:
           cap-3.1:
-          cap-3.2: v20.11.80+
-          cap-notify: v21.03.80+
-          chghost:  v21.03.80+
+          cap-3.2:
+          cap-notify:
+          chghost:
           extended-join:
           multi-prefix:
           sasl-3.1:
-          sasl-3.2: v21.04.0+
+          sasl-3.2:
           server-time:
           userhost-in-names:
           whox:
         SASL:
           - plain
           - external
+
     - name: KVIrc
       # ref: cap_add() in https://github.com/kvirc/KVIrc/blob/5.0.0/src/kvirc/kernel/KviIrcConnection.cpp
       # https://github.com/kvirc/KVIrc/blob/5.0.0/src/kvirc/kernel/KviIrcConnection.cpp#L1997-L1999
@@ -382,16 +299,7 @@
         SASL:
           - external
           - plain
-    - name: LimeChat
-      # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
-      link: http://limechat.net/mac/
-      support:
-        stable:
-          cap-3.1:
-          sasl-3.2:
-        # server-time:  # only supports znc's vendor prefixed version
-        SASL:
-          - plain
+
     - name: Mango
       link: https://mangoirc.chat
       support:
@@ -403,7 +311,6 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
-          channel-context-client-tag:
           chathistory:
           chghost:
           echo-message:
@@ -421,6 +328,8 @@
           server-time:
           setname:
           userhost-in-names:
+          # Client tags
+          channel-context-client-tag:
           react-client-tag:
           typing-client-tag:
         SASL:
@@ -428,6 +337,7 @@
       partial:
         stable:
           reply-client-tag: "draft cap"
+
     - name: mIRC
       # ref: https://www.mirc.com/news.html
       #      https://www.mirc.com/versions.txt
@@ -459,32 +369,35 @@
           standard-replies:
           starttls:
           sts:
-          typing-client-tag:
           userhost-in-names:
           utf8only:
           whox:
+          # Client tags
+          typing-client-tag:
         SASL:
-          external:
-          plain:
-          scram-sha-256:
+          - external
+          - plain
+          - scram-sha-256
+
     - name: Mozilla Thunderbird
       # ref: irc{CAP,EchoMessage,MultiPrefix,SASL,ServerTime,WatchMonitor}.jsm files in
       #      https://github.com/mozilla/releases-comm-central/tree/219c6396225f9c262cef4fe7766f5c31cefe2a05/chat/protocols/irc
       link: https://www.thunderbird.net/
       support:
         stable:
-          cap-notify: 72.0+
           cap-3.1:
-          cap-3.2: 72.0+
-          echo-message: 73.0+
+          cap-3.2:
+          cap-notify:
+          echo-message:
           monitor:
           multi-prefix:
           sasl-3.1:
-          sasl-3.2: 72.0+
-          server-time: 60.0+
+          sasl-3.2:
+          server-time:
           whox:
         SASL:
           - plain
+
     - name: Pidgin
       # maintainer: grim
       link: https://pidgin.im/
@@ -496,6 +409,7 @@
           - plain
           - scram-sha-1
           - scram-sha-256
+
     - name: Quassel
       # ref: knownCaps in https://github.com/quassel/quassel/blob/0.14.0/src/common/irccap.h
       # https://github.com/quassel/quassel/blob/da9c1c9fcf25f9dbd9acb96e6c8d1ff148e55986/src/core/corenetwork.cpp#L1475-L1488
@@ -505,11 +419,10 @@
           account-notify:
           account-tag: 0.14+
           away-notify:
-          cap-notify:
           cap-3.1:
           cap-3.2:
+          cap-notify:
           chghost:
-          echo-message: 0.14+ (opt in) # Supported, requires manual /CAP REQ to enable
           extended-join:
           invite-notify: 0.14+
           message-tags: 0.14+
@@ -523,6 +436,10 @@
         SASL:
           - external
           - plain
+      partial:
+        stable:
+          echo-message: Manual /CAP REQ
+
     - name: senpai
       # ref: https://git.sr.ht/~delthas/senpai/tree/master/item/irc/session.go#L53
       link: https://git.sr.ht/~delthas/senpai
@@ -530,9 +447,9 @@
         stable:
           away-notify:
           batch:
-          cap-notify:
           cap-3.1:
           cap-3.2:
+          cap-notify:
           chathistory:
           echo-message:
           extended-monitor:
@@ -548,19 +465,20 @@
           standard-replies:
           typing-client-tag:
           whox:
+        SASL:
+          - plain
       partial:
         stable:
           channel-context-client-tag: "draft cap"
-        SASL:
-          plain:
+
     - name: Srain
       # ref: https://srain.silverrainz.me/support.html
       link: https://srain.silverrainz.me
       support:
         stable:
-          cap-notify:
           cap-3.1:
           cap-3.2:
+          cap-notify:
           invite-notify:
           sasl-3.1:
           sasl-3.2:
@@ -569,6 +487,7 @@
         SASL:
           - plain
           - external
+
     - name: Swirc
       # ref: https://raw.githubusercontent.com/uhlin/swirc/master/CHANGELOG.md
       link: https://www.nifty-networks.net/swirc/
@@ -591,6 +510,7 @@
           - external
           - plain
           - scram-sha-256
+
     - name: Textual
       # ref: isCapabilitySupported in https://github.com/Codeux-Software/Textual/blob/55498fb845baf9efe1df93bc4e463edbe5c2057f/Sources/App/Classes/IRC/IRCClient.m
       # ref: https://github.com/Codeux-Software/Textual/blob/v6.0.1/Classes/IRC/IRCClient.m#L4590
@@ -601,7 +521,7 @@
           batch:
           cap-3.1:
           cap-3.2:
-          chghost: v7.1.1+
+          chghost:
           echo-message:
           monitor:
           multi-prefix:
@@ -612,6 +532,7 @@
         SASL:
           - external
           - plain
+
     - name: WeeChat
       # ref: https://weechat.org/files/changelog/ChangeLog-devel.html or
       # https://github.com/weechat/weechat/blob/v3.7.1/doc/en/weechat_user.en.adoc#irc_ircv3_support
@@ -621,40 +542,42 @@
           account-notify:
           account-tag:
           away-notify:
-          batch: 4.0.0+
+          batch:
           bot-mode:
-          cap-notify:
           cap-3.1:
           cap-3.2:
+          cap-notify:
           chghost:
-          echo-message: 4.0.0+
+          echo-message:
           extended-join:
           invite-notify:
           message-tags:
           monitor:
           multi-prefix:
-          multiline: 4.0.0+
+          multiline:
           sasl-3.1:
           sasl-3.2:
           server-time:
           setname:
           userhost-in-names:
-          utf8only: 4.0.0+
+          utf8only:
           whox:
+          # Client tags
           typing-client-tag:
         SASL:
-          external:
-          plain:
-          scram-sha-256:
+          - external
+          - plain
+          - scram-sha-256
+
     - name: xC
       # ref: https://git.janouch.name/p/xK/src/branch/master/NEWS
       link: https://git.janouch.name/p/xK
       support:
         stable:
           away-notify:
-          cap-notify:
           cap-3.1:
           cap-3.2:
+          cap-notify:
           chghost:
           echo-message:
           invite-notify:
@@ -663,7 +586,7 @@
           sasl-3.1:
           server-time:
         SASL:
-          external:
+          - external
           
     - name: ZoiteChat
       link: https://zoitechat.org
@@ -708,14 +631,14 @@
       support:
         stable:
           account-notify:
+          account-registration:
           away-notify:
           batch:
           cap-3.1:
           cap-3.2:
           cap-notify:
-          chghost:
-          account-registration:
           chathistory:
+          chghost:
           echo-message:
           extended-join:
           extended-monitor:
@@ -731,12 +654,13 @@
           server-time:
           setname:
           whox:
-      partial:
-        stable:
-          channel-context-client-tag: "draft cap"
         SASL:
           - plain
           - oauthbearer
+      partial:
+        stable:
+          channel-context-client-tag: "draft cap"
+
     - name: IRCCloud
       # maintainer: jwheare
       link: https://www.irccloud.com
@@ -776,12 +700,13 @@
           react-client-tag:
           reply-client-tag:
           typing-client-tag:
-      partial:
-        stable:
-          channel-context-client-tag: "draft cap"
         SASL:
           - plain
           - scram-sha-256
+      partial:
+        stable:
+          channel-context-client-tag: "draft cap"
+
     - name: Kiwi IRC
       # ref: https://github.com/kiwiirc/kiwiirc
       #      https://github.com/kiwiirc/irc-framework/blob/v4.10.0/docs/ircv3.md
@@ -812,10 +737,12 @@
           typing-client-tag:
         SASL:
           - plain
+
     - name: The Lounge
       # ref: https://github.com/thelounge/thelounge/projects/1
       #      https://github.com/kiwiirc/irc-framework/blob/master/docs/ircv3.md
       link: https://thelounge.chat/
+      ai: true
       support:
         stable:
           account-notify:
@@ -843,6 +770,7 @@
         SASL:
           - external
           - plain
+
     - name: PIRC.pl web client
       # ref: https://github.com/pirc-pl/pirc-gateway/blob/1fbe9c7269073a4d93f703e9f24f1239cfdde56c/js/gateway_cmds.js#L220-L221
       link: https://github.com/pirc-pl/pirc-gateway
@@ -852,15 +780,15 @@
           account-tag:
           away-notify:
           batch:
-          cap-notify:
           cap-3.1:
           cap-3.2:
+          cap-notify:
           chghost:
           echo-message:
           extended-join:
+          labeled-response:
           message-tags:
           msgid:
-          labeled-response:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
@@ -868,9 +796,11 @@
           setname:
           userhost-in-names:
           whox:
+          # Client tags
           typing-client-tag:
         SASL:
           - plain
+
     - name: ObsidianIRC
       #ref https://github.com/ObsidianIRC/ObsidianIRC/blob/609af22ee1c30087e8d9125951f749501398617d/src/store/index.ts#L704 (Replies)
       #ref https://github.com/ObsidianIRC/ObsidianIRC/blob/609af22ee1c30087e8d9125951f749501398617d/src/store/index.ts#L1035-L1083 (Typing)
@@ -880,8 +810,8 @@
       support:
         stable:
           account-notify:
-          account-tag:
           account-registration:
+          account-tag:
           away-notify:
           batch:
           bot-mode:
@@ -901,8 +831,8 @@
           metadata:
           monitor:
           msgid:
-          multiline:
           multi-prefix:
+          multiline:
           network-icon:
           no-implicit-names:
           read-marker:
@@ -916,13 +846,14 @@
           # Client tags
           channel-context-client-tag:
           react-client-tag:
-          typing-client-tag:
           reply-client-tag:
+          typing-client-tag:
         SASL:
           - plain
           - external
           - scram-sha-256
           - oauthbearer
+
     - name: jWebIRC
       link: https://github.com/WarPigs1602/jwebirc
       ai: true
@@ -950,6 +881,7 @@
           - plain
           - scram-sha-256
           - scram-sha-512
+
 - name: Mobile Clients
   software:
     - name: IRC for Android
@@ -960,37 +892,10 @@
       support:
         stable:
           cap-3.1:
-          sasl-3.1:
           multi-prefix:
+          sasl-3.1:
         # SASL mechanisms unknown
-    - name: Colloquy
-      # ref: didConnectToHost in https://github.com/colloquy/colloquy/blob/main/Chat%20Core/MVIRCChatConnection.m#L2393
-      link: http://www.colloquy.info
-      os:
-        - ios
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          chghost:
-          echo-message:
-          extended-join:
-          invite-notify:
-          monitor:
-          multi-prefix:
-          sasl-3.1:
-          server-time:
-          starttls:
-          sts:
-          userhost-in-names:
-          whox:
-        SASL:
-          - plain
+
     - name: CoreIRC
       link: https://play.google.com/store/apps/details?id=co.aureolin.coreirc
       os:
@@ -1001,9 +906,9 @@
           account-tag:
           away-notify:
           batch:
-          cap-notify:
           cap-3.1:
           cap-3.2:
+          cap-notify:
           chghost:
           echo-message:
           extended-join:
@@ -1022,159 +927,9 @@
           - external
           - plain
           - scram-sha-256
-    - name: IRCCloud
-      # maintainer: jwheare
-      link: https://www.irccloud.com
-      os:
-        - android
-        - ios
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          cap-notify:
-          cap-3.1:
-          cap-3.2:
-          chghost:
-          echo-message:
-          extended-join:
-          extended-monitor:
-          invite-notify:
-          message-redaction:
-          labeled-response:
-          message-tags:
-          metadata:
-          monitor:
-          msgid:
-          multi-prefix:
-          multiline:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          setname:
-          sts:
-          userhost-in-names:
-          whox:
-          reply-client-tag:
-          typing-client-tag:
-        SASL:
-          - plain
-          - scram-sha-256
-    - name: LimeChat
-      # ref: https://github.com/psychs/limechat/blob/2.42/Classes/IRC/IRCClient.m#L3681
-      link: http://limechat.net/iphone/
-      os:
-        - ios
-      support:
-        stable:
-          cap-3.1:
-          sasl-3.1:
-        SASL:
-          - plain
-    - name: Mango
-      link: https://mangoirc.chat
-      os:
-        - ios
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          channel-context-client-tag:
-          chathistory:
-          chghost:
-          echo-message:
-          extended-join:
-          labeled-response:
-          message-tags:
-          metadata:
-          monitor:
-          msgid:
-          multiline:
-          multi-prefix:
-          read-marker:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          setname:
-          userhost-in-names:
-          react-client-tag:
-          typing-client-tag:
-        SASL:
-          - plain
-      partial:
-        stable:
-          reply-client-tag: "draft cap"
-    - name: Palaver
-      # ref: https://palaverapp.com/guides/capabilities.html
-      # maintainer: kylef
-      link: https://palaverapp.com/
-      os:
-        - ios
-      support:
-        stable:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          account-tag:
-          batch:
-          chghost:
-          echo-message:
-          invite-notify:
-          monitor:
-          multi-prefix:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          starttls:
-          sts:
-          userhost-in-names:
-          react-client-tag:
-        SASL:
-          - plain
-      partial:
-        stable:
-          labeled-response: "draft cap"
-          message-tags: "draft cap"
 
-          setname: "draft cap"
-    - name: Quasseldroid
-      # ref: knownCaps in https://github.com/quassel/quassel/blob/0.14.0/src/common/irccap.h
-      # https://github.com/quassel/quassel/blob/da9c1c9fcf25f9dbd9acb96e6c8d1ff148e55986/src/core/corenetwork.cpp#L1475-L1488
-      link: https://quasseldroid.info/
-      os:
-        - android
-      support:
-        stable:
-          account-notify:
-          account-tag: 0.14+ core
-          away-notify:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          chghost:
-          echo-message: 0.14+ core (opt in) # Supported, requires manual /CAP REQ to enable
-          extended-join:
-          invite-notify: 0.14+ core
-          message-tags: 0.14+ core
-          multi-prefix:
-          sasl-3.1:
-          sasl-3.2:
-          server-time: 0.14+ core
-          setname: 0.14+ core
-          userhost-in-names:
-          whox:
-        SASL:
-          - plain
-          # external is supported if configured on the core via the desktop client
     - name: Goguma
-      # ref: https://codeberg.org/emersion/goguma/src/branch/master/lib/client.dart#L77
+      # ref: _getDefaultCaps in https://codeberg.org/emersion/goguma/src/branch/master/lib/client.dart
       link: https://codeberg.org/emersion/goguma
       os:
         - android
@@ -1208,6 +963,7 @@
           server-time:
           setname:
           whox:
+          # Client tags
           react-client-tag:
           typing-client-tag:
           reply-client-tag:
@@ -1217,6 +973,153 @@
         stable:
           channel-context-client-tag: "draft cap"
           no-implicit-names: "draft cap"
+
+    - name: IRCCloud
+      # maintainer: jwheare
+      link: https://www.irccloud.com
+      os:
+        - android
+        - ios
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-notify:
+          cap-3.1:
+          cap-3.2:
+          chghost:
+          echo-message:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          message-redaction:
+          labeled-response:
+          message-tags:
+          metadata:
+          monitor:
+          msgid:
+          multi-prefix:
+          multiline:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          sts:
+          userhost-in-names:
+          whox:
+          reply-client-tag:
+          typing-client-tag:
+        SASL:
+          - plain
+          - scram-sha-256
+
+    - name: Mango
+      link: https://mangoirc.chat
+      os:
+        - ios
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          labeled-response:
+          message-tags:
+          metadata:
+          monitor:
+          msgid:
+          multi-prefix:
+          multiline:
+          read-marker:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          userhost-in-names:
+          # Client tags
+          channel-context-client-tag:
+          react-client-tag:
+          typing-client-tag:
+        SASL:
+          - plain
+      partial:
+        stable:
+          reply-client-tag: "draft cap"
+
+    - name: Palaver
+      # ref: https://palaverapp.com/guides/capabilities.html
+      # maintainer: kylef
+      link: https://palaverapp.com/
+      os:
+        - ios
+      support:
+        stable:
+          account-tag:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          invite-notify:
+          monitor:
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          starttls:
+          sts:
+          userhost-in-names:
+          # Client tags
+          react-client-tag:
+        SASL:
+          - plain
+      partial:
+        stable:
+          labeled-response: "draft cap"
+          message-tags: "draft cap"
+          setname: "draft cap"
+
+    - name: Quasseldroid
+      # ref: knownCaps in https://github.com/quassel/quassel/blob/0.14.0/src/common/irccap.h
+      # https://github.com/quassel/quassel/blob/da9c1c9fcf25f9dbd9acb96e6c8d1ff148e55986/src/core/corenetwork.cpp#L1475-L1488
+      link: https://quasseldroid.info/
+      os:
+        - android
+      support:
+        stable:
+          account-notify:
+          account-tag: 0.14+ core
+          away-notify:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          extended-join:
+          invite-notify: 0.14+ core
+          message-tags: 0.14+ core
+          multi-prefix:
+          sasl-3.1:
+          sasl-3.2:
+          server-time: 0.14+ core
+          setname: 0.14+ core
+          userhost-in-names:
+          whox:
+        SASL:
+          - plain
+          # external is supported if configured on the core via the desktop client
+      partial:
+        stable:
+          echo-message: Manual /CAP REQ
 
 - name: Bouncers
   software:
@@ -1314,7 +1217,7 @@
           userhost-in-names:
           whox:
         SASL:
-          external:
+          - external
       partial:
         stable:
           bot-mode: "draft cap"
@@ -1346,8 +1249,8 @@
           userhost-in-names:
           whox:
         SASL:
-          external:
-          plain:
+          - external
+          - plain
       partial:
         stable:
           bot-mode: "draft cap"
@@ -1389,7 +1292,7 @@
           utf8only:
           whox:
         SASL:
-          plain:
+          - plain
       partial:
         stable:
           bot-mode: "draft cap"
@@ -1427,8 +1330,8 @@
           utf8only:
           whox:
         SASL:
-          external:
-          plain:
+          - external
+          - plain
     - name: ZNC (as Server)
       # ref: https://github.com/znc/znc/search?q=OnServerCapAvailable+extension%3Acpp
       #      https://github.com/znc/znc/search?q=AddServerDependentCapability
@@ -1605,42 +1508,6 @@
       partial:
         stable:
           channel-context-client-tag: "draft cap"
-          reply-client-tag: "draft cap"
-    - name: Moon Moon
-      # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/irc.moon
-      # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/batch.moon
-      # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/cap.moon
-      # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/data.moon
-      # ref: https://github.com/wiseguiz/Moon-Moon/blob/master/plugins/sasl.moon
-      # ref: https://github.com/wiseguiz/Moon-Moon/blob/0a24f8863d75e544602850c45934b9e7efb83638/handlers/hook_transformer.moon#L76-L77
-      link: https://github.com/wiseguiz/Moon-Moon
-      support:
-        stable:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          chghost:
-          echo-message:
-          extended-join:
-          invite-notify:
-          message-tags:
-          msgid:
-          multi-prefix:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          userhost-in-names:
-          whox:
-          typing-client-tag:
-        SASL:
-          - plain
-          - external
-      partial:
-        stable:
           reply-client-tag: "draft cap"
     - name: Sopel (ex Willie)
       #ref: https://github.com/sopel-irc/sopel/blob/v5.3.0/willie/coretasks.py#L357
