@@ -18,6 +18,7 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-context-client-tag:
           channel-rename:
           chathistory:
           chghost:
@@ -30,11 +31,14 @@
           msgid:
           multi-prefix:
           multiline:
+          react-client-tag:
+          reply-client-tag:
           sasl-3.1:
           sasl-3.2:
           server-time:
           setname:
           sts:
+          typing-client-tag:
           userhost-in-names:
           utf8only:
           whox:
@@ -59,17 +63,20 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-context-client-tag:
           chghost:
           echo-message:
           extended-join:
           extended-monitor:
           invite-notify:
+          labeled-response:
           message-tags:
           monitor:
-          labeled-response:
           msgid:
           multi-prefix:
           no-implicit-names:
+          react-client-tag:
+          reply-client-tag:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -77,6 +84,7 @@
           standard-replies:
           starttls:
           sts:
+          typing-client-tag:
           userhost-in-names:
           utf8only:
           webirc:
@@ -98,6 +106,7 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-context-client-tag:
           echo-message:
           extended-join:
           labeled-response:
@@ -106,8 +115,11 @@
           msgid:
           multi-prefix:
           multiline:
+          react-client-tag:
+          reply-client-tag:
           setname:
           sts:
+          typing-client-tag:
           userhost-in-names:
           whox:
       na:
@@ -123,6 +135,9 @@
         stable:
           account-notify:
           account-tag:
+          channel-context-client-tag:
+          reply-client-tag:
+          typing-client-tag:
           away-notify:
           batch:
           cap-3.1:
@@ -134,7 +149,6 @@
           extended-join:
           invite-notify:
           labeled-response:
-          message-tags:
           monitor:
           msgid:
           multi-prefix:
@@ -152,6 +166,7 @@
         stable:
           bot-mode: Draft
           extended-monitor: Draft
+          message-tags: Filtered client tags
 
 - name: Networks
   note: >
@@ -170,13 +185,19 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-context-client-tag:
           chghost:
           extended-join:
           monitor:
           multi-prefix:
+          reply-client-tag:
           sasl-3.1:
           starttls:
+          typing-client-tag:
           userhost-in-names:
+      partial:
+        stable:
+          message-tags: Filtered client tags
     - name: ergo.chat
       ircd-ver: Ergo-2.8
       net-address:
@@ -186,13 +207,14 @@
       support:
         stable:
           account-notify:
+          account-registration:
           account-tag:
           away-notify:
           batch:
           cap-3.1:
           cap-3.2:
           cap-notify:
-          account-registration:
+          channel-context-client-tag:
           channel-rename:
           chathistory:
           chghost:
@@ -205,11 +227,14 @@
           msgid:
           multi-prefix:
           multiline:
+          react-client-tag:
+          reply-client-tag:
           sasl-3.1:
           sasl-3.2:
           server-time:
           setname:
           sts:
+          typing-client-tag:
           userhost-in-names:
           utf8only:
           whox:
@@ -255,15 +280,18 @@
           chghost:
           echo-message:
           extended-join:
-          message-tags:
           monitor:
           msgid:
           multi-prefix:
           sasl-3.1:
           sasl-3.2:
           server-time:
+          typing-client-tag:
           userhost-in-names:
           whox:
+      partial:
+        stable:
+          message-tags: Filtered client tags
     - name: HybridIRC
       ircd-ver: InspIRCd-4
       net-address:
@@ -279,6 +307,7 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-context-client-tag:
           chghost:
           echo-message:
           extended-join:
@@ -286,18 +315,21 @@
           invite-notify:
           labeled-response:
           message-tags:
-          multi-prefix:
           monitor:
           msgid:
+          multi-prefix:
+          react-client-tag:
+          reply-client-tag:
           sasl-3.1:
           sasl-3.2:
           server-time:
           setname:
           standard-replies:
+          typing-client-tag:
           userhost-in-names:
           whox:
     - name: IRC4Fun
-      ircd-ver: InspIRCd-3
+      ircd-ver: InspIRCd-4
       net-address:
         link: ircs://irc.irc4fun.net:6697/
         display: irc.irc4fun.net
@@ -311,19 +343,24 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-context-client-tag:
           chghost:
           echo-message:
           extended-join:
           invite-notify:
           labeled-response:
+          message-redaction:
           message-tags:
           monitor:
           msgid:
           multi-prefix:
+          react-client-tag:
+          reply-client-tag:
           sasl-3.1:
           sasl-3.2:
           server-time:
           setname:
+          typing-client-tag:
           userhost-in-names:
           whox:
       partial:
@@ -371,6 +408,7 @@
           sasl-3.1:
           sasl-3.2:
           server-time:
+          typing-client-tag:
           whox:
       partial:
         stable:
@@ -391,17 +429,20 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-context-client-tag:
           chghost:
           echo-message:
           extended-join:
           extended-monitor:
           invite-notify:
-          monitor:
           labeled-response:
           message-tags:
+          monitor:
           msgid:
           multi-prefix:
           no-implicit-names:
+          react-client-tag:
+          reply-client-tag:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -409,11 +450,12 @@
           standard-replies:
           starttls:
           sts:
+          typing-client-tag:
           userhost-in-names:
           webirc:
           whox:
     - name: PIRC.pl
-      ircd-ver: UnrealIRCd-5
+      ircd-ver: UnrealIRCd-6
       net-address:
         link: ircs://irc.pirc.pl:6697/
         display: irc.pirc.pl
@@ -427,25 +469,28 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-context-client-tag:
           chghost:
           echo-message:
           extended-join:
           labeled-response:
-          message-tags:
           monitor:
           msgid:
           multi-prefix:
+          reply-client-tag:
           sasl-3.1:
           sasl-3.2:
-          setname:
           server-time:
+          setname:
           starttls:
           sts:
+          typing-client-tag:
           userhost-in-names:
           whox:
       partial:
         stable:
           bot-mode: Draft
+          message-tags: Filtered client tags
     - name: Rizon
       ircd-ver: plexus-4
       net-address:
@@ -476,24 +521,28 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-context-client-tag:
           chghost:
           echo-message:
           extended-join:
           invite-notify:
           labeled-response:
+          message-tags:
           msgid:
           multi-prefix:
+          react-client-tag:
+          reply-client-tag:
           sasl-3.1:
           sasl-3.2:
           server-time:
           setname:
           sts:
+          typing-client-tag:
           userhost-in-names:
           whox:
       partial:
         stable:
           bot-mode: Draft
-          message-tags: No client tags
     - name: Teranova
       ircd-ver: InspIRCd-4
       net-address:
@@ -502,6 +551,7 @@
       link: https://www.teranova.net/
       support:
         stable:
+          account-extban:
           account-notify:
           account-tag:
           away-notify:
@@ -510,15 +560,19 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-context-client-tag:
           chghost:
           echo-message:
           extended-join:
           extended-monitor:
           invite-notify:
-          monitor:
           labeled-response:
+          monitor:
           msgid:
           multi-prefix:
+          no-implicit-names:
+          react-client-tag:
+          reply-client-tag:
           sasl-3.1:
           sasl-3.2:
           server-time:
@@ -526,12 +580,13 @@
           standard-replies:
           starttls:
           sts:
+          typing-client-tag:
           userhost-in-names:
           webirc:
           whox:
       partial:
         stable:
-          message-tags: No client tags
+          message-tags: Filtered client tags
     - name: tilde.chat
       ircd-ver: InspIRCd-3
       net-address:
@@ -547,6 +602,7 @@
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-context-client-tag:
           chghost:
           echo-message:
           extended-join:
@@ -556,11 +612,14 @@
           monitor:
           msgid:
           multi-prefix:
+          react-client-tag:
+          reply-client-tag:
           sasl-3.1:
           sasl-3.2:
           server-time:
           setname:
           starttls:
+          typing-client-tag:
           userhost-in-names:
           whox:
       partial:
