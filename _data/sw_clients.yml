@@ -336,6 +336,7 @@
           userhost-in-names:
           utf8only:
           websockets: 3.1+
+          whox: 3.1+
           # Client tags
           channel-context-client-tag:
           react-client-tag:
@@ -1059,6 +1060,7 @@
           userhost-in-names:
           utf8only:
           websockets: 3.1+
+          whox: 3.1+
           # Client tags
           channel-context-client-tag:
           react-client-tag:
