@@ -308,35 +308,41 @@
           account-tag:
           away-notify:
           batch:
+          bot-mode: 3.1+
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-rename: 3.0.7+
           chathistory:
           chghost:
           echo-message:
           extended-join:
+          extended-monitor: 3.0.7+
           labeled-response:
+          message-redaction: 3.0.7+
           message-tags:
           metadata:
           monitor:
           msgid:
           multiline:
           multi-prefix:
+          network-icon: 3.0.7+
           read-marker:
           sasl-3.1:
           sasl-3.2:
           server-time:
           setname:
+          standard-replies: 3.0.7+
           userhost-in-names:
+          utf8only:
+          websockets: "3.1+ (text only)"
           # Client tags
           channel-context-client-tag:
           react-client-tag:
+          reply-client-tag: 3.0.7+
           typing-client-tag:
         SASL:
           - plain
-      partial:
-        stable:
-          reply-client-tag: "draft cap"
 
     - name: mIRC
       # ref: https://www.mirc.com/news.html
@@ -1025,35 +1031,41 @@
           account-tag:
           away-notify:
           batch:
+          bot-mode: 3.1+
           cap-3.1:
           cap-3.2:
           cap-notify:
+          channel-rename: 3.0.7+
           chathistory:
           chghost:
           echo-message:
           extended-join:
+          extended-monitor: 3.0.7+
           labeled-response:
+          message-redaction: 3.0.7+
           message-tags:
           metadata:
           monitor:
           msgid:
           multi-prefix:
           multiline:
+          network-icon: 3.0.7+
           read-marker:
           sasl-3.1:
           sasl-3.2:
           server-time:
           setname:
+          standard-replies: 3.0.7+
           userhost-in-names:
+          utf8only:
+          websockets: "3.1+ (text only)"
           # Client tags
           channel-context-client-tag:
           react-client-tag:
+          reply-client-tag: 3.0.7+
           typing-client-tag:
         SASL:
           - plain
-      partial:
-        stable:
-          reply-client-tag: "draft cap"
 
     - name: Palaver
       # ref: https://palaverapp.com/guides/capabilities.html
