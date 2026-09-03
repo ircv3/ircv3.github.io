@@ -333,6 +333,7 @@
           server-time:
           setname:
           standard-replies: 3.0.7+
+          sts: 3.1+
           userhost-in-names:
           utf8only:
           websockets: 3.1+
@@ -1057,6 +1058,7 @@
           server-time:
           setname:
           standard-replies: 3.0.7+
+          sts: 3.1+
           userhost-in-names:
           utf8only:
           websockets: 3.1+
