@@ -1485,29 +1485,30 @@
       #      https://github.com/eggheads/eggdrop/blob/41a03be22281e3abb2a3d202434533bf6a0f5874/src/mod/irc.mod/irc.c#L282
       support:
         stable:
-          account-notify: 1.9.0+
-          account-tag: 1.9.0+
-          away-notify: 1.9.1+
-          bot-mode: 1.9.2+
-          cap-3.1: 1.9.0+
-          cap-3.2: 1.9.2+
-          cap-notify: 1.9.2+
-          chghost: 1.9.0+
-          echo-message: 1.9.0+
-          extended-join: 1.9.0+
-          extended-monitor: 1.10.0+
-          invite-notify: 1.9.0+
-          message-tags: 1.9.0+
-          msgid: 1.9.0+
-          monitor: 1.9.2+
-          sasl-3.1: 1.9.2+
-          sasl-3.2: 1.9.2+
-          server-time: 1.9.0+
-          setname: 1.9.0+
-          standard-replies: 1.10.0+
-          userhost-in-names: 1.10.0+
-          whox: 1.9.0+
-          typing-client-tag: 1.9.0+
+          account-extban: 1.10.2
+          account-notify: 1.9.0
+          account-tag: 1.9.0
+          away-notify: 1.9.1
+          bot-mode: 1.9.2
+          cap-3.1: 1.9.0
+          cap-3.2: 1.9.2
+          cap-notify: 1.9.2
+          chghost: 1.9.0
+          echo-message: 1.9.0
+          extended-join: 1.9.0
+          extended-monitor: 1.10.0
+          invite-notify: 1.9.0
+          message-tags: 1.9.0
+          msgid: 1.9.0
+          monitor: 1.9.2
+          sasl-3.1: 1.9.2
+          sasl-3.2: 1.9.2
+          server-time: 1.9.0
+          setname: 1.9.0
+          standard-replies: 1.10.0
+          userhost-in-names: 1.10.0
+          whox: 1.9.0
+          typing-client-tag: 1.9.0
         SASL:
           - plain
           - external
