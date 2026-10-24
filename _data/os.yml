@@ -14,3 +14,7 @@ windows-phone:
 linux:
   name: Linux
   icon: "fa-brands fa-linux"
+
+windows:
+  name: Windows
+  icon: "fa-brands fa-windows"
