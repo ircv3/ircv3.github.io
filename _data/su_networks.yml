@@ -198,6 +198,35 @@
       partial:
         stable:
           message-tags: Filtered client tags
+    - name: ChatNet
+      ircd-ver: cnircd (Solanum fork)
+      net-address:
+        link: ircs://irc.chatnet.gg:6697/
+        display: irc.chatnet.gg
+      link: https://www.chatnet.gg/
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          chghost:
+          echo-message:
+          extended-join:
+          invite-notify:
+          labeled-response:
+          message-tags:
+          multi-prefix:
+          no-implicit-names:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          starttls:
+          sts:
+          userhost-in-names:
     - name: ergo.chat
       ircd-ver: Ergo-2.8
       net-address:
