@@ -92,6 +92,14 @@ body
         top: 0.165em
         position: relative
 
+// only widens the icons to a label on the collapsed menu
+.links .iconsep a .iconsep-label
+    display: none
+    @include mobile
+        display: inline-block
+        margin-left: 0.6rem
+        vertical-align: 0.12em
+
 .navbar-dropper
     float: right
     padding: 0.8rem
