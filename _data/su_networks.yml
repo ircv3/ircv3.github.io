@@ -46,49 +46,6 @@
         stable:
           bot-mode: Draft
           extended-monitor: Draft
-    - name: InspIRCd Testnet
-      ircd-ver: InspIRCd-5
-      net-address:
-        link: ircs://testnet.inspircd.org:6697/
-        display: testnet.inspircd.org
-      link: https://www.inspircd.org/
-      support:
-        stable:
-          account-extban:
-          account-notify:
-          account-tag:
-          away-notify:
-          batch:
-          bot-mode:
-          cap-3.1:
-          cap-3.2:
-          cap-notify:
-          channel-context-client-tag:
-          chghost:
-          echo-message:
-          extended-join:
-          extended-monitor:
-          invite-notify:
-          labeled-response:
-          message-tags:
-          monitor:
-          msgid:
-          multi-prefix:
-          no-implicit-names:
-          react-client-tag:
-          reply-client-tag:
-          sasl-3.1:
-          sasl-3.2:
-          server-time:
-          setname:
-          standard-replies:
-          starttls:
-          sts:
-          typing-client-tag:
-          userhost-in-names:
-          utf8only:
-          webirc:
-          whox:
     - name: IRCCloud Teams
       ircd-ver: irccloud-prattle
       net-address:
