@@ -1,5 +1,53 @@
 - name: Servers
   software:
+    - name: briskd
+      # ref: https://github.com/egorsmkv/briskd/blob/master/src/briskd_cap.erl
+      link: https://github.com/egorsmkv/briskd
+      support:
+        stable:
+          account-extban:
+          account-notify:
+          account-registration:
+          account-tag:
+          away-notify:
+          batch:
+          bot-mode:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          channel-rename:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-isupport:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          labeled-response:
+          message-redaction:
+          message-tags:
+          metadata:
+          monitor:
+          msgid:
+          multi-prefix:
+          multiline:
+          network-icon:
+          no-implicit-names:
+          oper-tag:
+          pre-away:
+          read-marker:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          setname:
+          standard-replies:
+          starttls:
+          sts:
+          userhost-in-names:
+          utf8only:
+          webirc:
+          websockets:
+          whox:
     - name: Codename IRCat
       link: https://ircat.xyz
       support:
