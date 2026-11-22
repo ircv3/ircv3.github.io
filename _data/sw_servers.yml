@@ -3,6 +3,7 @@
     - name: briskd
       # ref: https://github.com/egorsmkv/briskd/blob/master/src/briskd_cap.erl
       link: https://github.com/egorsmkv/briskd
+      ai: true
       support:
         stable:
           account-extban:
