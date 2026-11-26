@@ -796,6 +796,46 @@
         SASL:
           - plain
 
+    - name: Lurker
+      # ref: requestCap in https://github.com/amiantos/lurker/blob/v2.7.2/server/services/ircConnection.ts#L1738-L1776
+      #      want in https://github.com/kiwiirc/irc-framework/blob/v4.14.0/src/commands/handlers/registration.js#L138-L153
+      #      https://docs.lurker.chat/IRCV3
+      link: https://github.com/amiantos/lurker
+      ai: true
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          channel-rename:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          message-redaction:
+          message-tags:
+          metadata:
+          monitor:
+          msgid:
+          multi-prefix:
+          multiline:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
+          whox:
+          react-client-tag:
+          reply-client-tag:
+          typing-client-tag:
+        SASL:
+          - external
+          - plain
+
     - name: The Lounge
       # ref: https://github.com/thelounge/thelounge/projects/1
       #      https://github.com/kiwiirc/irc-framework/blob/master/docs/ircv3.md
@@ -1100,6 +1140,49 @@
           - plain
           - scram-sha-256
 
+    - name: Lurker
+      # ref: requestCap in https://github.com/amiantos/lurker/blob/v2.7.2/server/services/ircConnection.ts#L1738-L1776
+      #      want in https://github.com/kiwiirc/irc-framework/blob/v4.14.0/src/commands/handlers/registration.js#L138-L153
+      #      https://docs.lurker.chat/IRCV3
+      link: https://github.com/amiantos/lurker
+      ai: true
+      os:
+        - android
+        - ios
+      support:
+        stable:
+          account-notify:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          channel-rename:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          message-redaction:
+          message-tags:
+          metadata:
+          monitor:
+          msgid:
+          multi-prefix:
+          multiline:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
+          whox:
+          react-client-tag:
+          reply-client-tag:
+          typing-client-tag:
+        SASL:
+          - external
+          - plain
+
     - name: Mango
       link: https://mangoirc.chat
       os:
@@ -1281,6 +1364,41 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+    - name: Lurker (as Server)
+      # ref: SUPPORTED_CAPS, PASSTHROUGH_CAPS in https://github.com/amiantos/lurker/blob/v2.7.2/server/services/bouncer.ts#L133-L200
+      #      https://docs.lurker.chat/IRCV3#attaching-your-own-irc-client
+      link: https://github.com/amiantos/lurker
+      ai: true
+      support:
+        stable:
+          account-notify:
+          account-tag:
+          away-notify:
+          batch:
+          cap-3.1:
+          cap-3.2:
+          cap-notify:
+          channel-rename:
+          chathistory:
+          chghost:
+          echo-message:
+          extended-join:
+          extended-monitor:
+          invite-notify:
+          message-redaction:
+          message-tags:
+          metadata:
+          monitor:
+          msgid:
+          multi-prefix:
+          pre-away:
+          read-marker:
+          sasl-3.1:
+          sasl-3.2:
+          server-time:
+          userhost-in-names:
+        SASL:
+          - plain
     - name: pounce (as Server)
       # ref: https://git.causal.agency/pounce/about/pounce.1#Client_Configuration
       link: https://git.causal.agency/pounce/about/
