@@ -70,3 +70,10 @@
       format: Any string
       examples: |-
         Working from home
+    - key: timezone
+      description: The user's time zone, so that clients can show their local time.
+      format: IANA Time Zone Database identifier
+      examples: |-
+        Europe/Berlin
+        America/Los_Angeles
+        Asia/Kolkata
